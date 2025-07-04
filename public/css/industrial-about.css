@@ -1,0 +1,548 @@
+/* INDUSTRIAL ABOUT PAGE STYLES */
+
+/* About Hero */
+.about-industrial-hero {
+    background: var(--gradient-steel);
+    padding: 140px 0 80px;
+    position: relative;
+    overflow: hidden;
+    min-height: 80vh;
+    display: flex;
+    align-items: center;
+    border-bottom: 4px solid var(--industrial-orange);
+}
+
+.about-industrial-hero::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background: repeating-linear-gradient(
+        45deg,
+        transparent,
+        transparent 35px,
+        rgba(255, 107, 53, 0.03) 35px,
+        rgba(255, 107, 53, 0.03) 70px
+    );
+}
+
+.about-hero-grid {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 80px;
+    align-items: center;
+    position: relative;
+    z-index: 2;
+}
+
+.about-hero-content {
+    max-width: 600px;
+}
+
+.about-headline {
+    font-family: var(--font-industrial);
+    font-size: clamp(48px, 8vw, 96px);
+    line-height: 0.9;
+    text-transform: uppercase;
+    margin-bottom: 24px;
+}
+
+.about-subtitle {
+    font-family: var(--font-work);
+    font-size: 22px;
+    color: var(--metal-silver);
+    line-height: 1.5;
+    margin-bottom: 48px;
+}
+
+/* Hero Stats */
+.hero-stats-grid {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 24px;
+}
+
+.hero-stat-card {
+    background: rgba(255, 107, 53, 0.1);
+    border: 2px solid var(--industrial-orange);
+    padding: 24px;
+    text-align: center;
+    position: relative;
+    overflow: hidden;
+}
+
+.hero-stat-card::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 4px;
+    background: var(--gradient-fire);
+}
+
+.stat-big {
+    font-family: var(--font-industrial);
+    font-size: 56px;
+    color: var(--safety-yellow);
+    display: block;
+    text-shadow: 2px 2px 0px rgba(0,0,0,0.3);
+}
+
+.stat-suffix {
+    font-family: var(--font-industrial);
+    font-size: 32px;
+    color: var(--industrial-orange);
+}
+
+.stat-label {
+    display: block;
+    font-family: var(--font-work);
+    font-size: 12px;
+    color: var(--metal-silver);
+    text-transform: uppercase;
+    letter-spacing: 2px;
+    margin-top: 8px;
+}
+
+/* Hero Visual */
+.about-hero-visual {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.construction-badge {
+    animation: badgeRotate 20s linear infinite;
+}
+
+@keyframes badgeRotate {
+    from { transform: rotate(0deg); }
+    to { transform: rotate(360deg); }
+}
+
+/* Story Timeline */
+.our-industrial-story {
+    background: var(--steel-dark);
+    padding: 100px 0;
+    position: relative;
+}
+
+.story-header {
+    text-align: center;
+    margin-bottom: 80px;
+}
+
+.story-timeline {
+    position: relative;
+    max-width: 900px;
+    margin: 0 auto;
+}
+
+.story-timeline::before {
+    content: '';
+    position: absolute;
+    left: 100px;
+    top: 0;
+    bottom: 0;
+    width: 4px;
+    background: var(--industrial-orange);
+}
+
+.timeline-item {
+    display: grid;
+    grid-template-columns: 120px 1fr;
+    gap: 40px;
+    margin-bottom: 60px;
+    position: relative;
+    transition: all 0.5s ease;
+}
+
+.timeline-item.visible {
+    opacity: 1 !important;
+    transform: translateX(0) !important;
+}
+
+.timeline-year {
+    font-family: var(--font-industrial);
+    font-size: 48px;
+    color: var(--safety-yellow);
+    text-align: right;
+    position: relative;
+}
+
+.timeline-year::after {
+    content: '';
+    position: absolute;
+    right: -42px;
+    top: 50%;
+    transform: translateY(-50%);
+    width: 24px;
+    height: 24px;
+    background: var(--industrial-orange);
+    border: 4px solid var(--steel-dark);
+    border-radius: 50%;
+}
+
+.timeline-content {
+    background: var(--steel-gray);
+    padding: 40px;
+    border: 3px solid var(--concrete);
+    position: relative;
+}
+
+.timeline-content::before {
+    content: '';
+    position: absolute;
+    left: -20px;
+    top: 40px;
+    width: 0;
+    height: 0;
+    border-top: 15px solid transparent;
+    border-bottom: 15px solid transparent;
+    border-right: 20px solid var(--concrete);
+}
+
+.timeline-content h3 {
+    font-family: var(--font-industrial);
+    font-size: 32px;
+    color: var(--industrial-orange);
+    margin-bottom: 16px;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+}
+
+.timeline-content p {
+    font-family: var(--font-work);
+    color: var(--metal-silver);
+    line-height: 1.6;
+    font-size: 18px;
+}
+
+/* Industrial Values */
+.industrial-values {
+    background: var(--steel-gray);
+    padding: 100px 0;
+    position: relative;
+}
+
+.industrial-values::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    height: 4px;
+    background: var(--gradient-fire);
+}
+
+.values-industrial-grid {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 40px;
+}
+
+.value-industrial-card {
+    background: var(--steel-dark);
+    border: 3px solid var(--concrete);
+    padding: 60px;
+    position: relative;
+    transition: all 0.3s ease;
+}
+
+.value-industrial-card:hover {
+    transform: translateY(-8px);
+    box-shadow: 0 20px 0px rgba(0,0,0,0.5);
+    border-color: var(--industrial-orange);
+}
+
+.value-number {
+    position: absolute;
+    top: 20px;
+    right: 20px;
+    font-family: var(--font-industrial);
+    font-size: 72px;
+    color: var(--concrete);
+    opacity: 0.3;
+}
+
+.value-icon-wrapper {
+    margin-bottom: 30px;
+}
+
+.value-industrial-card h3 {
+    font-family: var(--font-industrial);
+    font-size: 36px;
+    color: var(--white);
+    margin-bottom: 20px;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+}
+
+.value-industrial-card p {
+    font-family: var(--font-work);
+    color: var(--metal-silver);
+    line-height: 1.6;
+    font-size: 18px;
+}
+
+/* Industrial Team */
+.industrial-team {
+    background: var(--steel-dark);
+    padding: 100px 0;
+    position: relative;
+}
+
+.team-industrial-grid {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 40px;
+}
+
+.team-industrial-card {
+    background: var(--steel-gray);
+    border: 4px solid var(--industrial-orange);
+    padding: 40px;
+    position: relative;
+    transition: all 0.3s ease;
+}
+
+.team-industrial-card:hover {
+    transform: translateY(-8px) rotate(-1deg);
+    box-shadow: 0 20px 0px rgba(0,0,0,0.5);
+}
+
+.team-badge {
+    position: absolute;
+    top: -20px;
+    right: 30px;
+    background: var(--safety-yellow);
+    color: var(--steel-dark);
+    padding: 8px 20px;
+    font-family: var(--font-work);
+    font-weight: 900;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+    font-size: 12px;
+    transform: rotate(-5deg);
+    box-shadow: 4px 4px 0px rgba(0,0,0,0.3);
+}
+
+.team-avatar {
+    margin-bottom: 30px;
+}
+
+.avatar-industrial {
+    width: 100px;
+    height: 100px;
+    background: var(--industrial-orange);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-family: var(--font-industrial);
+    font-size: 48px;
+    color: var(--white);
+    border: 4px solid var(--steel-dark);
+    transform: rotate(-5deg);
+    box-shadow: 6px 6px 0px rgba(0,0,0,0.3);
+}
+
+.team-industrial-card h3 {
+    font-family: var(--font-industrial);
+    font-size: 28px;
+    color: var(--white);
+    margin-bottom: 8px;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+}
+
+.team-role {
+    font-family: var(--font-work);
+    font-size: 14px;
+    color: var(--industrial-orange);
+    text-transform: uppercase;
+    letter-spacing: 2px;
+    margin-bottom: 20px;
+}
+
+.team-bio {
+    font-family: var(--font-work);
+    color: var(--metal-silver);
+    line-height: 1.6;
+    margin-bottom: 20px;
+}
+
+.team-stats {
+    display: flex;
+    gap: 20px;
+}
+
+.team-stats span {
+    background: rgba(255, 107, 53, 0.2);
+    padding: 8px 16px;
+    font-family: var(--font-work);
+    font-size: 12px;
+    color: var(--safety-yellow);
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    font-weight: 700;
+}
+
+/* Industrial Achievements */
+.industrial-achievements {
+    background: var(--steel-gray);
+    padding: 100px 0;
+    position: relative;
+}
+
+.industrial-achievements::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    height: 4px;
+    background: var(--gradient-fire);
+}
+
+.achievements-industrial-grid {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 32px;
+}
+
+.achievement-industrial-card {
+    background: var(--steel-dark);
+    border: 2px solid var(--industrial-orange);
+    padding: 40px 24px;
+    text-align: center;
+    position: relative;
+    transition: all 0.3s ease;
+}
+
+.achievement-industrial-card:hover {
+    transform: translateY(-8px);
+    box-shadow: 0 16px 0px rgba(0,0,0,0.5);
+}
+
+.achievement-icon-wrapper {
+    margin-bottom: 24px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 80px;
+}
+
+.big-number {
+    font-family: var(--font-industrial);
+    font-size: 64px;
+    color: var(--safety-yellow);
+    text-shadow: 2px 2px 0px rgba(0,0,0,0.3);
+}
+
+.achievement-industrial-card h3 {
+    font-family: var(--font-work);
+    font-size: 18px;
+    color: var(--white);
+    margin-bottom: 8px;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+}
+
+.achievement-industrial-card p {
+    font-family: var(--font-work);
+    color: var(--metal-silver);
+    font-size: 14px;
+}
+
+/* About CTA */
+.about-cta {
+    background: var(--gradient-fire);
+    padding: 120px 0;
+    position: relative;
+    overflow: hidden;
+    text-align: center;
+}
+
+.about-cta::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background: repeating-linear-gradient(
+        90deg,
+        transparent,
+        transparent 50px,
+        rgba(0,0,0,0.1) 50px,
+        rgba(0,0,0,0.1) 100px
+    );
+}
+
+.about-cta .cta-content {
+    position: relative;
+    z-index: 2;
+}
+
+.cta-buttons-group {
+    display: flex;
+    gap: 24px;
+    justify-content: center;
+    flex-wrap: wrap;
+    margin-top: 40px;
+}
+
+/* Responsive */
+@media (max-width: 1200px) {
+    .about-hero-grid {
+        grid-template-columns: 1fr;
+        gap: 60px;
+    }
+    
+    .about-hero-visual {
+        display: none;
+    }
+    
+    .values-industrial-grid,
+    .team-industrial-grid {
+        grid-template-columns: 1fr;
+    }
+}
+
+@media (max-width: 768px) {
+    .about-headline {
+        font-size: 48px;
+    }
+    
+    .hero-stats-grid {
+        grid-template-columns: 1fr;
+        gap: 16px;
+    }
+    
+    .timeline-item {
+        grid-template-columns: 1fr;
+        margin-left: 40px;
+    }
+    
+    .story-timeline::before {
+        left: 20px;
+    }
+    
+    .timeline-year {
+        text-align: left;
+        font-size: 36px;
+        margin-bottom: 20px;
+    }
+    
+    .timeline-year::after {
+        left: -42px;
+        right: auto;
+    }
+    
+    .achievements-industrial-grid {
+        grid-template-columns: 1fr;
+    }
+}

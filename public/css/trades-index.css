@@ -1,0 +1,324 @@
+/* Trades Index Page Styling */
+
+/* Hero Section for Trades Index */
+.trades-hero {
+    background: var(--gradient-steel);
+    padding: 120px 0 80px;
+    text-align: center;
+    position: relative;
+    overflow: hidden;
+}
+
+.trades-hero::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-image: 
+        repeating-linear-gradient(45deg, transparent, transparent 35px, rgba(255, 107, 53, 0.05) 35px, rgba(255, 107, 53, 0.05) 70px);
+    pointer-events: none;
+}
+
+.trades-hero-content {
+    position: relative;
+    z-index: 2;
+}
+
+.trades-hero-title {
+    font-family: 'Bebas Neue', sans-serif;
+    font-size: clamp(3rem, 7vw, 5rem);
+    color: white;
+    margin-bottom: 20px;
+    letter-spacing: 3px;
+}
+
+.trades-hero-subtitle {
+    font-size: 1.5rem;
+    color: rgba(255, 255, 255, 0.9);
+    margin-bottom: 40px;
+    font-weight: 500;
+}
+
+.trades-count {
+    display: inline-flex;
+    align-items: center;
+    gap: 15px;
+    background: rgba(255, 107, 53, 0.2);
+    border: 2px solid var(--industrial-orange);
+    padding: 15px 30px;
+    border-radius: 50px;
+    margin-bottom: 30px;
+}
+
+.trades-count strong {
+    font-family: 'Bebas Neue', sans-serif;
+    font-size: 2.5rem;
+    color: var(--industrial-orange);
+}
+
+/* Trades Grid Section */
+.trades-index-section {
+    padding: 80px 0;
+    background: #f5f5f5;
+}
+
+.trades-index-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(320px, 1fr));
+    gap: 30px;
+    margin: 60px 0;
+}
+
+.trade-index-card {
+    background: white;
+    padding: 45px 35px;
+    border-radius: 12px;
+    box-shadow: 0 3px 15px rgba(0,0,0,0.08);
+    text-align: center;
+    transition: all 0.3s ease;
+    text-decoration: none;
+    color: inherit;
+    border: 3px solid transparent;
+    position: relative;
+    overflow: hidden;
+}
+
+.trade-index-card::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    height: 4px;
+    background: var(--industrial-orange);
+    transform: scaleX(0);
+    transition: transform 0.3s ease;
+}
+
+.trade-index-card:hover::before {
+    transform: scaleX(1);
+}
+
+.trade-index-card:hover {
+    transform: translateY(-8px);
+    box-shadow: 0 8px 30px rgba(0,0,0,0.12);
+    border-color: var(--industrial-orange);
+}
+
+.trade-icon-large {
+    font-size: 64px;
+    margin-bottom: 20px;
+    display: block;
+    transition: transform 0.3s ease;
+}
+
+.trade-index-card:hover .trade-icon-large {
+    transform: scale(1.1);
+}
+
+.trade-index-card h3 {
+    font-family: 'Work Sans', sans-serif;
+    font-size: 1.6rem;
+    color: var(--steel-dark);
+    margin-bottom: 12px;
+    font-weight: 700;
+}
+
+.trade-index-card p {
+    color: #666;
+    font-size: 1rem;
+    margin-bottom: 25px;
+    line-height: 1.5;
+}
+
+.trade-stat-badge {
+    display: inline-block;
+    background: rgba(255, 107, 53, 0.1);
+    color: var(--industrial-orange);
+    padding: 8px 20px;
+    border-radius: 25px;
+    font-weight: 700;
+    font-size: 1.1rem;
+    margin-bottom: 15px;
+}
+
+.trade-cta-text {
+    color: var(--industrial-orange);
+    font-weight: 600;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    font-size: 0.9rem;
+    opacity: 0;
+    transform: translateY(10px);
+    transition: all 0.3s ease;
+}
+
+.trade-index-card:hover .trade-cta-text {
+    opacity: 1;
+    transform: translateY(0);
+}
+
+/* Popular Trades Highlight */
+.popular-trades {
+    background: var(--steel-dark);
+    padding: 60px 0;
+    margin: 80px 0;
+}
+
+.popular-trades h2 {
+    text-align: center;
+    color: white;
+    font-family: 'Bebas Neue', sans-serif;
+    font-size: 2.5rem;
+    margin-bottom: 40px;
+}
+
+.popular-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    gap: 20px;
+}
+
+.popular-trade {
+    background: rgba(255, 107, 53, 0.1);
+    border: 2px solid var(--industrial-orange);
+    padding: 20px;
+    text-align: center;
+    color: white;
+    text-decoration: none;
+    transition: all 0.3s ease;
+}
+
+.popular-trade:hover {
+    background: var(--industrial-orange);
+    transform: translateY(-3px);
+}
+
+/* Services Overview */
+.services-overview {
+    padding: 60px 0;
+    background: white;
+}
+
+.services-overview h2 {
+    text-align: center;
+    font-family: 'Bebas Neue', sans-serif;
+    font-size: 2.5rem;
+    color: var(--steel-dark);
+    margin-bottom: 50px;
+}
+
+.services-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+    gap: 30px;
+}
+
+.service-highlight {
+    text-align: center;
+    padding: 30px;
+}
+
+.service-icon {
+    font-size: 48px;
+    margin-bottom: 20px;
+    color: var(--industrial-orange);
+}
+
+.service-highlight h3 {
+    font-size: 1.5rem;
+    margin-bottom: 15px;
+    color: var(--steel-dark);
+}
+
+.service-highlight p {
+    color: #666;
+    line-height: 1.6;
+}
+
+/* Location Links */
+.location-links-section {
+    background: #f5f5f5;
+    padding: 60px 0;
+}
+
+.location-links-section h2 {
+    text-align: center;
+    font-size: 2rem;
+    color: var(--steel-dark);
+    margin-bottom: 40px;
+}
+
+.location-links-grid {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 15px;
+    justify-content: center;
+}
+
+.location-link-tag {
+    background: white;
+    border: 2px solid #ddd;
+    padding: 10px 20px;
+    border-radius: 25px;
+    text-decoration: none;
+    color: var(--steel-dark);
+    font-weight: 600;
+    transition: all 0.3s ease;
+}
+
+.location-link-tag:hover {
+    border-color: var(--industrial-orange);
+    background: var(--industrial-orange);
+    color: white;
+}
+
+/* CTA Section */
+.trades-cta-section {
+    background: var(--gradient-fire);
+    padding: 80px 0;
+    text-align: center;
+    color: white;
+}
+
+.trades-cta-section h2 {
+    font-family: 'Bebas Neue', sans-serif;
+    font-size: 3rem;
+    margin-bottom: 20px;
+}
+
+.trades-cta-section p {
+    font-size: 1.3rem;
+    margin-bottom: 40px;
+    opacity: 0.95;
+}
+
+.cta-buttons-group {
+    display: flex;
+    gap: 20px;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+    .trades-hero-title {
+        font-size: 2.5rem;
+    }
+    
+    .trades-index-grid {
+        grid-template-columns: 1fr;
+        gap: 20px;
+    }
+    
+    .trade-index-card {
+        padding: 35px 25px;
+    }
+    
+    .cta-buttons-group {
+        flex-direction: column;
+        align-items: center;
+    }
+}

@@ -1,0 +1,306 @@
+/* Contact Page Fix */
+
+/* Fix body background */
+body {
+    background-color: #f5f5f5 !important;
+    color: #1a1a1a !important;
+}
+
+/* Ensure header is properly styled */
+.industrial-header {
+    background: #1a1a1a;
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    z-index: 1000;
+    padding: 0 24px;
+}
+
+/* Fix main content spacing */
+main {
+    padding-top: 100px !important;
+    background: transparent !important;
+}
+
+/* Fix contact sections */
+.contact-industrial-hero {
+    background: #1a1a1a !important;
+    color: white !important;
+}
+
+.contact-industrial-main {
+    background: #f5f5f5 !important;
+    color: #1a1a1a !important;
+}
+
+/* Ensure containers have proper width */
+.container {
+    width: 100%;
+    max-width: 1400px;
+    margin: 0 auto;
+    padding: 0 24px;
+}
+
+/* Debug - make form visible */
+.contact-form-industrial {
+    background: white !important;
+    border: 4px solid #1a1a1a !important;
+    padding: 48px !important;
+    box-shadow: 8px 8px 0 rgba(0,0,0,0.2) !important;
+    display: block !important;
+    min-height: 600px !important;
+}
+
+/* Ensure form is visible */
+.industrial-form {
+    display: flex !important;
+    flex-direction: column !important;
+    gap: 24px !important;
+}
+
+.form-row-industrial {
+    display: grid !important;
+    grid-template-columns: 1fr 1fr !important;
+    gap: 24px !important;
+}
+
+/* Ensure grid is working */
+.contact-industrial-grid {
+    display: grid !important;
+    grid-template-columns: 2fr 1fr !important;
+    gap: 60px !important;
+}
+
+/* Make form inputs visible */
+.form-group-industrial input,
+.form-group-industrial select,
+.form-group-industrial textarea {
+    background: #f5f5f5 !important;
+    border: 2px solid #1a1a1a !important;
+    padding: 16px !important;
+    width: 100% !important;
+    box-sizing: border-box !important;
+}
+
+/* Ensure labels are visible */
+.form-group-industrial label {
+    display: block !important;
+    font-weight: 700 !important;
+    margin-bottom: 8px !important;
+    color: #1a1a1a !important;
+}
+
+/* Fix sidebar */
+.sidebar-card-industrial {
+    background: white !important;
+    border: 4px solid #1a1a1a !important;
+    padding: 32px !important;
+    display: block !important;
+}
+
+/* Make all text visible */
+h1, h2, h3, h4, h5, h6, p, span, label, a, li {
+    color: inherit !important;
+}
+
+.text-outline {
+    -webkit-text-stroke: 3px #ff6b35 !important;
+}
+
+.text-fill {
+    color: #ffd93d !important;
+}
+
+/* Fix phone box */
+.phone-industrial-box {
+    background: #1a1a1a !important;
+    color: white !important;
+}
+
+.phone-number-industrial {
+    color: #ff6b35 !important;
+}
+
+/* Fix footer */
+.industrial-footer {
+    background: #1a1a1a !important;
+    color: white !important;
+}
+
+/* Office Section Styles */
+.office-industrial {
+    background: white !important;
+    padding: 80px 0 !important;
+    color: #1a1a1a !important;
+}
+
+.office-header {
+    text-align: center !important;
+    margin-bottom: 60px !important;
+}
+
+.section-title {
+    font-family: 'Bebas Neue', sans-serif !important;
+    font-size: 64px !important;
+    color: #1a1a1a !important;
+    margin-bottom: 16px !important;
+}
+
+.section-subtitle {
+    font-size: 20px !important;
+    color: #666 !important;
+}
+
+.office-industrial-grid {
+    display: grid !important;
+    grid-template-columns: 1fr 2fr !important;
+    gap: 60px !important;
+    align-items: start !important;
+}
+
+.office-info-card {
+    background: #f5f5f5 !important;
+    border: 4px solid #1a1a1a !important;
+    padding: 48px !important;
+    box-shadow: 8px 8px 0 rgba(0,0,0,0.2) !important;
+}
+
+.office-badge {
+    margin-bottom: 24px !important;
+}
+
+.office-info-card h3 {
+    font-family: 'Bebas Neue', sans-serif !important;
+    font-size: 36px !important;
+    margin-bottom: 24px !important;
+    letter-spacing: 2px !important;
+    color: #1a1a1a !important;
+}
+
+.office-address {
+    font-style: normal !important;
+    line-height: 1.8 !important;
+    margin-bottom: 32px !important;
+    font-size: 16px !important;
+    color: #333 !important;
+}
+
+.office-schedule h4 {
+    font-family: 'Work Sans', sans-serif !important;
+    font-weight: 700 !important;
+    margin-bottom: 16px !important;
+    color: #1a1a1a !important;
+}
+
+.schedule-grid {
+    display: grid !important;
+    gap: 12px !important;
+}
+
+.schedule-item {
+    display: flex !important;
+    justify-content: space-between !important;
+    padding: 12px 0 !important;
+    border-bottom: 1px solid #ddd !important;
+}
+
+.schedule-item.closed {
+    color: #999 !important;
+}
+
+.day {
+    font-weight: 600 !important;
+    color: #333 !important;
+}
+
+.time {
+    color: #ff6b35 !important;
+    font-weight: 500 !important;
+}
+
+.office-features {
+    margin-top: 32px !important;
+}
+
+.office-feature {
+    display: flex !important;
+    align-items: center !important;
+    gap: 12px !important;
+    margin-bottom: 12px !important;
+    color: #333 !important;
+}
+
+.office-feature svg {
+    color: #ff6b35 !important;
+}
+
+/* Map Container */
+.map-industrial {
+    background: #ddd !important;
+    border: 4px solid #1a1a1a !important;
+    height: 500px !important;
+    position: relative !important;
+    overflow: hidden !important;
+}
+
+.map-placeholder {
+    width: 100% !important;
+    height: 100% !important;
+    object-fit: cover !important;
+}
+
+/* Fix for embedded map */
+.map-industrial img,
+.map-industrial iframe {
+    width: 100% !important;
+    height: 100% !important;
+    border: none !important;
+}
+
+.map-overlay {
+    position: absolute !important;
+    bottom: 24px !important;
+    left: 24px !important;
+    background: white !important;
+    padding: 16px 24px !important;
+    border: 2px solid #1a1a1a !important;
+    box-shadow: 4px 4px 0 rgba(0,0,0,0.3) !important;
+}
+
+.map-overlay a {
+    color: #ff6b35 !important;
+    text-decoration: none !important;
+    font-weight: 700 !important;
+    text-transform: uppercase !important;
+    letter-spacing: 1px !important;
+}
+
+/* Responsive fix */
+@media (max-width: 1024px) {
+    .contact-industrial-grid {
+        grid-template-columns: 1fr !important;
+    }
+    
+    .office-industrial-grid {
+        grid-template-columns: 1fr !important;
+    }
+    
+    .map-industrial {
+        height: 400px !important;
+    }
+}
+
+@media (max-width: 768px) {
+    .office-info-card {
+        padding: 32px !important;
+    }
+    
+    .section-title {
+        font-size: 48px !important;
+    }
+    
+    .map-industrial {
+        height: 300px !important;
+    }
+}

@@ -1,0 +1,241 @@
+/* Override global white text for trade pages */
+body {
+    color: #333 !important;
+}
+
+/* Specific fixes for trade content */
+.trade-content,
+.trade-content * {
+    color: #333 !important;
+}
+
+.trade-content h1,
+.trade-content h2,
+.trade-content h3,
+.trade-content h4,
+.trade-content h5,
+.trade-content h6 {
+    color: #1a1a1a !important;
+}
+
+.trade-content strong,
+.trade-content b {
+    color: #000 !important;
+    font-weight: 700;
+}
+
+/* List items specifically */
+.industrial-list li {
+    color: #333 !important;
+}
+
+/* Benefits bar fix */
+.benefits-bar {
+    color: white !important;
+}
+
+.benefits-bar * {
+    color: white !important;
+}
+
+/* Hero section should stay white */
+.trade-hero,
+.trade-hero * {
+    color: white !important;
+}
+
+/* Navigation should stay white */
+.industrial-header,
+.industrial-header * {
+    color: white !important;
+}
+
+/* Footer should stay light */
+.industrial-footer {
+    background: #1a1a1a !important;
+    color: #c0c0c0 !important;
+    padding: 60px 0 0 !important;
+}
+
+.industrial-footer * {
+    color: #c0c0c0 !important;
+}
+
+.industrial-footer h3,
+.industrial-footer h4 {
+    color: #ff6b35 !important;
+    font-family: 'Work Sans', sans-serif;
+    font-weight: 700;
+    text-transform: uppercase;
+    margin-bottom: 20px;
+}
+
+.industrial-footer a {
+    color: #c0c0c0 !important;
+    text-decoration: none;
+    transition: all 0.3s ease;
+}
+
+.industrial-footer a:hover {
+    color: white !important;
+}
+
+.footer-content {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 40px;
+    padding: 0 0 40px;
+}
+
+.footer-section {
+    color: #c0c0c0 !important;
+}
+
+.footer-section ul {
+    list-style: none;
+    padding: 0;
+}
+
+.footer-section li {
+    margin-bottom: 10px;
+}
+
+.footer-bottom {
+    background: rgba(0,0,0,0.3);
+    padding: 20px 0;
+    text-align: center;
+    margin-top: 40px;
+}
+
+.footer-bottom p {
+    margin: 0;
+    color: #888 !important;
+}
+
+/* Related trades section */
+.related-trades {
+    background: #f5f5f5;
+}
+
+.related-trades h2 {
+    color: #1a1a1a !important;
+}
+
+.trade-link {
+    color: #333 !important;
+}
+
+/* Sidebar cards */
+.sidebar-card {
+    color: #333 !important;
+}
+
+.sidebar-card * {
+    color: inherit !important;
+}
+
+.sidebar-card h3 {
+    color: #1a1a1a !important;
+}
+
+/* Trust card specific */
+.trust-card {
+    background: white;
+    color: #333 !important;
+}
+
+/* Contact card */
+.contact-card {
+    background: #1a1a1a;
+    color: white !important;
+}
+
+.contact-card * {
+    color: white !important;
+}
+
+/* Guide card */
+.guide-card {
+    background: white;
+    color: #333 !important;
+}
+
+/* Case study section - should have light text on dark background */
+.case-study {
+    background: #1a1a1a !important;
+    color: white !important;
+}
+
+.case-study * {
+    color: white !important;
+}
+
+.case-study p,
+.case-study blockquote,
+.case-study blockquote p {
+    color: rgba(255, 255, 255, 0.9) !important;
+    font-style: italic;
+}
+
+.case-study cite {
+    color: #ff6b35 !important;
+    font-style: normal;
+    font-weight: 600;
+}
+
+/* Override the global dark text for case studies */
+.trade-content .case-study p,
+.trade-content .case-study blockquote,
+.trade-content .case-study blockquote p,
+.trade-content .case-study span {
+    color: rgba(255, 255, 255, 0.9) !important;
+}
+
+.trade-content .case-study cite {
+    color: #ff6b35 !important;
+}
+
+/* Local areas section - dark background needs white text */
+.local-areas {
+    background: #2d2d2d !important;
+    color: white !important;
+}
+
+.local-areas * {
+    color: white !important;
+}
+
+/* Area tags */
+.area-tag {
+    color: white !important;
+    border-color: #ff6b35 !important;
+}
+
+.area-tag:hover {
+    background: #ff6b35 !important;
+    color: white !important;
+}
+
+/* Local case study section */
+.local-case-study {
+    background: linear-gradient(135deg, #ff6b35 0%, #ff8554 100%) !important;
+    color: white !important;
+}
+
+.local-case-study * {
+    color: white !important;
+}
+
+/* Any dark card should have white text */
+.sidebar-card.contact-card,
+.sidebar-card.dark-card,
+.card-dark {
+    background: #1a1a1a !important;
+    color: white !important;
+}
+
+.sidebar-card.contact-card *,
+.sidebar-card.dark-card *,
+.card-dark * {
+    color: white !important;
+}

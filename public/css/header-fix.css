@@ -1,0 +1,262 @@
+/* Global Header Fix for All Pages */
+
+/* Ensure header is always visible and styled */
+.industrial-header {
+    background: #1a1a1a !important;
+    position: fixed !important;
+    top: 0 !important;
+    left: 0 !important;
+    right: 0 !important;
+    z-index: 9999 !important;
+    padding: 0 !important;
+    min-height: 80px !important;
+    display: flex !important;
+    align-items: center !important;
+}
+
+/* Header container */
+.header-container {
+    width: 100% !important;
+    max-width: 1400px !important;
+    margin: 0 auto !important;
+    padding: 0 24px !important;
+    display: flex !important;
+    align-items: center !important;
+    justify-content: space-between !important;
+    height: 80px !important;
+}
+
+/* Logo section */
+.industrial-logo {
+    display: flex !important;
+    align-items: center !important;
+    gap: 16px !important;
+    text-decoration: none !important;
+    color: white !important;
+    flex-shrink: 0 !important;
+}
+
+.logo-badge {
+    width: 50px !important;
+    height: 50px !important;
+    background: #ff6b35 !important;
+    display: flex !important;
+    align-items: center !important;
+    justify-content: center !important;
+    font-family: 'Bebas Neue', sans-serif !important;
+    font-size: 28px !important;
+    font-weight: 900 !important;
+    color: white !important;
+    transform: rotate(-5deg) !important;
+    box-shadow: 4px 4px 0 rgba(0,0,0,0.5) !important;
+}
+
+.logo-text {
+    display: flex !important;
+    flex-direction: column !important;
+}
+
+.logo-text h1,
+.logo-text .h1-style {
+    font-family: 'Bebas Neue', sans-serif !important;
+    font-size: 28px !important;
+    margin: 0 !important;
+    color: white !important;
+    font-weight: 400 !important;
+    letter-spacing: 2px !important;
+}
+
+.logo-text span:last-child {
+    font-size: 12px !important;
+    color: #ffd93d !important;
+    letter-spacing: 1px !important;
+    text-transform: uppercase !important;
+}
+
+/* Navigation menu */
+.industrial-nav {
+    display: flex !important;
+    align-items: center !important;
+    flex: 1 !important;
+    justify-content: center !important;
+}
+
+.industrial-nav ul {
+    display: flex !important;
+    list-style: none !important;
+    gap: 40px !important;
+    margin: 0 !important;
+    padding: 0 !important;
+    align-items: center !important;
+}
+
+.industrial-nav li {
+    list-style: none !important;
+    margin: 0 !important;
+    padding: 0 !important;
+}
+
+.industrial-nav a {
+    color: white !important;
+    text-decoration: none !important;
+    font-family: 'Work Sans', sans-serif !important;
+    font-weight: 600 !important;
+    font-size: 16px !important;
+    letter-spacing: 0.5px !important;
+    text-transform: uppercase !important;
+    transition: color 0.3s ease !important;
+    padding: 5px 0 !important;
+    position: relative !important;
+    display: inline-block !important;
+}
+
+.industrial-nav a:hover {
+    color: #ff6b35 !important;
+}
+
+.industrial-nav a[aria-current="page"],
+.industrial-nav a.active {
+    color: #ffd93d !important;
+}
+
+/* Underline effect */
+.industrial-nav a::after {
+    content: '' !important;
+    position: absolute !important;
+    bottom: -2px !important;
+    left: 0 !important;
+    width: 0 !important;
+    height: 2px !important;
+    background: #ff6b35 !important;
+    transition: width 0.3s ease !important;
+}
+
+.industrial-nav a:hover::after {
+    width: 100% !important;
+}
+
+/* CTA Button */
+.industrial-cta {
+    background: #ff6b35 !important;
+    color: white !important;
+    padding: 12px 32px !important;
+    text-decoration: none !important;
+    font-family: 'Bebas Neue', sans-serif !important;
+    font-size: 20px !important;
+    letter-spacing: 1px !important;
+    text-transform: uppercase !important;
+    box-shadow: 4px 4px 0 rgba(0,0,0,0.5) !important;
+    transition: all 0.2s ease !important;
+    display: inline-flex !important;
+    align-items: center !important;
+    gap: 8px !important;
+    flex-shrink: 0 !important;
+}
+
+.industrial-cta:hover {
+    transform: translate(-2px, -2px) !important;
+    box-shadow: 6px 6px 0 rgba(0,0,0,0.5) !important;
+    background: #ff8c42 !important;
+}
+
+.industrial-cta svg {
+    width: 20px !important;
+    height: 20px !important;
+}
+
+/* Mobile menu button (hidden on desktop) */
+.mobile-menu-toggle {
+    display: none !important;
+}
+
+/* Responsive adjustments */
+@media (max-width: 1200px) {
+    .industrial-nav ul {
+        gap: 24px !important;
+    }
+}
+
+@media (max-width: 1024px) {
+    .header-container {
+        padding: 0 16px !important;
+    }
+    
+    .industrial-nav ul {
+        gap: 20px !important;
+    }
+    
+    .industrial-nav a {
+        font-size: 14px !important;
+    }
+    
+    .industrial-cta {
+        padding: 10px 24px !important;
+        font-size: 18px !important;
+    }
+}
+
+@media (max-width: 768px) {
+    /* Show mobile menu toggle */
+    .mobile-menu-toggle {
+        display: block !important;
+        background: none !important;
+        border: none !important;
+        cursor: pointer !important;
+        padding: 10px !important;
+        margin-left: auto !important;
+    }
+    
+    .mobile-menu-toggle span {
+        display: block !important;
+        width: 25px !important;
+        height: 3px !important;
+        background: white !important;
+        margin: 5px 0 !important;
+        transition: all 0.3s ease !important;
+    }
+    
+    /* Hide desktop nav on mobile */
+    .industrial-nav {
+        position: fixed !important;
+        top: 80px !important;
+        right: -100% !important;
+        width: 280px !important;
+        height: calc(100vh - 80px) !important;
+        background: #1a1a1a !important;
+        transition: right 0.3s ease !important;
+        flex-direction: column !important;
+        padding: 40px 20px !important;
+        border-left: 2px solid #ff6b35 !important;
+    }
+    
+    .industrial-nav.mobile-open {
+        right: 0 !important;
+    }
+    
+    .industrial-nav ul {
+        flex-direction: column !important;
+        gap: 24px !important;
+        width: 100% !important;
+    }
+    
+    .industrial-nav a {
+        font-size: 18px !important;
+        width: 100% !important;
+        padding: 10px 0 !important;
+    }
+    
+    /* Hide desktop CTA on mobile */
+    .header-container > .industrial-cta {
+        display: none !important;
+    }
+}
+
+/* Ensure body has padding for fixed header */
+body {
+    padding-top: 80px !important;
+}
+
+/* Fix main content spacing */
+main {
+    padding-top: 0 !important;
+}
