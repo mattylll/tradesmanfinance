@@ -542,6 +542,8 @@ body::before {
     align-items: center;
     justify-content: center;
     z-index: 9999;
+    opacity: 1;
+    transition: opacity 0.3s ease-out;
 }
 
 .loader-content {
