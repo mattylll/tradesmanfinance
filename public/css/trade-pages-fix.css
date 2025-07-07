@@ -96,22 +96,16 @@
 .hero-title {
     font-family: var(--font-industrial);
     font-size: clamp(4rem, 10vw, 8rem);
-    color: transparent;
-    background: linear-gradient(45deg, #ff6b35, #ffd93d, #ff6b35);
-    background-size: 200% 200%;
-    -webkit-background-clip: text;
-    background-clip: text;
+    color: var(--industrial-orange);
     text-transform: uppercase;
     letter-spacing: -2px;
     line-height: 0.9;
     margin-bottom: 1.5rem;
-    animation: gradientShift 3s ease-in-out infinite;
+    text-shadow: 
+        3px 3px 0 rgba(0,0,0,0.5),
+        0 0 30px rgba(255, 107, 53, 0.5);
 }
 
-@keyframes gradientShift {
-    0%, 100% { background-position: 0% 50%; }
-    50% { background-position: 100% 50%; }
-}
 
 .hero-subtitle {
     font-family: var(--font-work);
