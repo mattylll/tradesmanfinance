@@ -1,241 +1,485 @@
-/* Override global white text for trade pages */
-body {
-    color: #333 !important;
+/* Trade Pages Complete Styling */
+
+/* Trade Hero Section */
+.trade-hero {
+    background: var(--gradient-steel);
+    padding: 120px 0 80px;
+    position: relative;
+    overflow: hidden;
 }
 
-/* Specific fixes for trade content */
-.trade-content,
-.trade-content * {
-    color: #333 !important;
+.trade-hero::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background: url('data:image/svg+xml,<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 100 100"><rect x="0" y="0" width="2" height="2" fill="%23333" opacity="0.1"/></svg>');
+    background-size: 10px 10px;
 }
 
-.trade-content h1,
-.trade-content h2,
-.trade-content h3,
-.trade-content h4,
-.trade-content h5,
-.trade-content h6 {
-    color: #1a1a1a !important;
+.hero-content {
+    position: relative;
+    z-index: 1;
+    text-align: center;
+    max-width: 900px;
+    margin: 0 auto;
 }
 
-.trade-content strong,
-.trade-content b {
-    color: #000 !important;
-    font-weight: 700;
-}
-
-/* List items specifically */
-.industrial-list li {
-    color: #333 !important;
-}
-
-/* Benefits bar fix */
-.benefits-bar {
-    color: white !important;
-}
-
-.benefits-bar * {
-    color: white !important;
-}
-
-/* Hero section should stay white */
-.trade-hero,
-.trade-hero * {
-    color: white !important;
-}
-
-/* Navigation should stay white */
-.industrial-header,
-.industrial-header * {
-    color: white !important;
-}
-
-/* Footer should stay light */
-.industrial-footer {
-    background: #1a1a1a !important;
-    color: #c0c0c0 !important;
-    padding: 60px 0 0 !important;
-}
-
-.industrial-footer * {
-    color: #c0c0c0 !important;
-}
-
-.industrial-footer h3,
-.industrial-footer h4 {
-    color: #ff6b35 !important;
-    font-family: 'Work Sans', sans-serif;
-    font-weight: 700;
+.hero-title {
+    font-family: var(--font-industrial);
+    font-size: clamp(3rem, 8vw, 6rem);
+    color: var(--industrial-orange);
     text-transform: uppercase;
-    margin-bottom: 20px;
+    letter-spacing: 2px;
+    margin-bottom: 1rem;
+    text-shadow: 3px 3px 0 rgba(0,0,0,0.3);
 }
 
-.industrial-footer a {
-    color: #c0c0c0 !important;
-    text-decoration: none;
-    transition: all 0.3s ease;
+.hero-subtitle {
+    font-family: var(--font-work);
+    font-size: 1.5rem;
+    color: var(--white);
+    margin-bottom: 1rem;
+    font-weight: 600;
 }
 
-.industrial-footer a:hover {
-    color: white !important;
+.hero-description {
+    font-size: 1.125rem;
+    color: var(--off-white);
+    margin-bottom: 2rem;
+    line-height: 1.6;
+    max-width: 700px;
+    margin-left: auto;
+    margin-right: auto;
 }
 
-.footer-content {
+.hero-stats {
+    display: flex;
+    justify-content: center;
+    gap: 3rem;
+    margin-bottom: 2rem;
+    flex-wrap: wrap;
+}
+
+.stat {
+    text-align: center;
+}
+
+.stat-number {
+    display: block;
+    font-family: var(--font-industrial);
+    font-size: 2.5rem;
+    color: var(--industrial-orange);
+    text-shadow: 2px 2px 0 rgba(0,0,0,0.3);
+}
+
+.stat-label {
+    display: block;
+    color: var(--metal-silver);
+    text-transform: uppercase;
+    font-size: 0.875rem;
+    letter-spacing: 1px;
+}
+
+/* Pain Points Section */
+.pain-points {
+    padding: 80px 0;
+    background: var(--off-white);
+}
+
+.pain-grid {
     display: grid;
-    grid-template-columns: repeat(4, 1fr);
-    gap: 40px;
-    padding: 0 0 40px;
+    grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+    gap: 2rem;
+    margin-top: 3rem;
 }
 
-.footer-section {
-    color: #c0c0c0 !important;
+.pain-card {
+    background: white;
+    padding: 2rem;
+    border-radius: 8px;
+    box-shadow: 0 4px 6px rgba(0,0,0,0.1);
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
 }
 
-.footer-section ul {
+.pain-card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 8px 12px rgba(0,0,0,0.15);
+}
+
+.pain-icon {
+    font-size: 3rem;
+    margin-bottom: 1rem;
+    display: block;
+}
+
+.pain-card h3 {
+    font-family: var(--font-work);
+    font-size: 1.5rem;
+    color: var(--steel-dark);
+    margin-bottom: 1rem;
+    font-weight: 700;
+}
+
+.pain-card p {
+    color: var(--concrete);
+    line-height: 1.6;
+    font-size: 1rem;
+}
+
+/* Benefits Section */
+.benefits-section {
+    padding: 80px 0;
+    background: var(--steel-dark);
+    color: var(--white);
+}
+
+.benefits-content {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 4rem;
+    align-items: center;
+}
+
+.benefits-text h2 {
+    font-family: var(--font-industrial);
+    font-size: 2.5rem;
+    color: var(--industrial-orange);
+    margin-bottom: 1.5rem;
+    text-transform: uppercase;
+}
+
+.lead {
+    font-size: 1.25rem;
+    margin-bottom: 2rem;
+    color: var(--metal-silver);
+    line-height: 1.6;
+}
+
+.benefits-list {
     list-style: none;
     padding: 0;
+    margin-bottom: 2rem;
 }
 
-.footer-section li {
-    margin-bottom: 10px;
+.benefits-list li {
+    padding: 1rem 0;
+    border-bottom: 1px solid rgba(255,255,255,0.1);
+    line-height: 1.6;
+    color: var(--off-white);
 }
 
-.footer-bottom {
-    background: rgba(0,0,0,0.3);
-    padding: 20px 0;
-    text-align: center;
-    margin-top: 40px;
+.benefits-list li:last-child {
+    border-bottom: none;
 }
 
-.footer-bottom p {
-    margin: 0;
-    color: #888 !important;
+.benefits-list strong {
+    color: var(--industrial-orange);
+    display: inline-block;
+    margin-right: 0.5rem;
 }
 
-/* Related trades section */
-.related-trades {
-    background: #f5f5f5;
+.testimonial-card {
+    background: var(--steel-gray);
+    padding: 2rem;
+    border-radius: 8px;
+    border-left: 4px solid var(--industrial-orange);
 }
 
-.related-trades h2 {
-    color: #1a1a1a !important;
-}
-
-.trade-link {
-    color: #333 !important;
-}
-
-/* Sidebar cards */
-.sidebar-card {
-    color: #333 !important;
-}
-
-.sidebar-card * {
-    color: inherit !important;
-}
-
-.sidebar-card h3 {
-    color: #1a1a1a !important;
-}
-
-/* Trust card specific */
-.trust-card {
-    background: white;
-    color: #333 !important;
-}
-
-/* Contact card */
-.contact-card {
-    background: #1a1a1a;
-    color: white !important;
-}
-
-.contact-card * {
-    color: white !important;
-}
-
-/* Guide card */
-.guide-card {
-    background: white;
-    color: #333 !important;
-}
-
-/* Case study section - should have light text on dark background */
-.case-study {
-    background: #1a1a1a !important;
-    color: white !important;
-}
-
-.case-study * {
-    color: white !important;
-}
-
-.case-study p,
-.case-study blockquote,
-.case-study blockquote p {
-    color: rgba(255, 255, 255, 0.9) !important;
+.testimonial-card p {
     font-style: italic;
+    font-size: 1.125rem;
+    line-height: 1.6;
+    margin-bottom: 1rem;
+    color: var(--off-white);
 }
 
-.case-study cite {
-    color: #ff6b35 !important;
+.testimonial-card cite {
+    display: block;
+    color: var(--industrial-orange);
     font-style: normal;
     font-weight: 600;
 }
 
-/* Override the global dark text for case studies */
-.trade-content .case-study p,
-.trade-content .case-study blockquote,
-.trade-content .case-study blockquote p,
-.trade-content .case-study span {
-    color: rgba(255, 255, 255, 0.9) !important;
+/* Finance Options */
+.finance-options {
+    padding: 80px 0;
+    background: var(--off-white);
 }
 
-.trade-content .case-study cite {
-    color: #ff6b35 !important;
+.options-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    gap: 2rem;
+    margin-top: 3rem;
 }
 
-/* Local areas section - dark background needs white text */
-.local-areas {
-    background: #2d2d2d !important;
-    color: white !important;
+.option-card {
+    background: white;
+    padding: 2rem;
+    border-radius: 8px;
+    box-shadow: 0 4px 6px rgba(0,0,0,0.1);
+    border-top: 4px solid var(--industrial-orange);
 }
 
-.local-areas * {
-    color: white !important;
+.option-card h3 {
+    font-family: var(--font-work);
+    font-size: 1.5rem;
+    color: var(--steel-dark);
+    margin-bottom: 0.5rem;
+    font-weight: 700;
 }
 
-/* Area tags */
-.area-tag {
-    color: white !important;
-    border-color: #ff6b35 !important;
+.option-card p {
+    color: var(--concrete);
+    margin-bottom: 1.5rem;
+    font-style: italic;
 }
 
-.area-tag:hover {
-    background: #ff6b35 !important;
-    color: white !important;
+.option-card ul {
+    list-style: none;
+    padding: 0;
 }
 
-/* Local case study section */
-.local-case-study {
-    background: linear-gradient(135deg, #ff6b35 0%, #ff8554 100%) !important;
-    color: white !important;
+.option-card li {
+    padding: 0.5rem 0;
+    padding-left: 1.5rem;
+    position: relative;
+    color: var(--concrete);
 }
 
-.local-case-study * {
-    color: white !important;
+.option-card li::before {
+    content: '✓';
+    position: absolute;
+    left: 0;
+    color: var(--industrial-orange);
+    font-weight: bold;
 }
 
-/* Any dark card should have white text */
-.sidebar-card.contact-card,
-.sidebar-card.dark-card,
-.card-dark {
-    background: #1a1a1a !important;
-    color: white !important;
+/* Equipment Section */
+.equipment-section {
+    padding: 80px 0;
+    background: var(--steel-gray);
+    color: var(--white);
 }
 
-.sidebar-card.contact-card *,
-.sidebar-card.dark-card *,
-.card-dark * {
-    color: white !important;
+.equipment-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
+    gap: 2rem;
+    margin-top: 3rem;
+}
+
+.equipment-item {
+    background: var(--steel-dark);
+    padding: 1.5rem;
+    border-radius: 8px;
+    border-left: 3px solid var(--industrial-orange);
+}
+
+.equipment-item h4 {
+    font-family: var(--font-work);
+    font-size: 1.25rem;
+    color: var(--industrial-orange);
+    margin-bottom: 0.5rem;
+}
+
+.equipment-item p {
+    color: var(--metal-silver);
+    font-size: 0.95rem;
+    line-height: 1.5;
+}
+
+/* Process Section */
+.how-it-works {
+    padding: 80px 0;
+    background: var(--off-white);
+}
+
+.process-steps {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    gap: 2rem;
+    margin-top: 3rem;
+}
+
+.process-step {
+    text-align: center;
+    position: relative;
+}
+
+.step-number {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    width: 60px;
+    height: 60px;
+    background: var(--industrial-orange);
+    color: var(--white);
+    font-family: var(--font-industrial);
+    font-size: 2rem;
+    border-radius: 50%;
+    margin-bottom: 1rem;
+}
+
+.process-step h3 {
+    font-family: var(--font-work);
+    font-size: 1.5rem;
+    color: var(--steel-dark);
+    margin-bottom: 0.5rem;
+}
+
+.process-step p {
+    color: var(--concrete);
+    line-height: 1.6;
+}
+
+/* FAQ Section */
+.faq-section {
+    padding: 80px 0;
+    background: white;
+}
+
+.faq-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(400px, 1fr));
+    gap: 2rem;
+    margin-top: 3rem;
+}
+
+.faq-item {
+    padding: 1.5rem;
+    background: var(--off-white);
+    border-radius: 8px;
+    border-left: 3px solid var(--industrial-orange);
+}
+
+.faq-item h3 {
+    font-family: var(--font-work);
+    font-size: 1.25rem;
+    color: var(--steel-dark);
+    margin-bottom: 0.75rem;
+    font-weight: 600;
+}
+
+.faq-item p {
+    color: var(--concrete);
+    line-height: 1.6;
+}
+
+/* Trust Section */
+.trust-section {
+    padding: 60px 0;
+    background: var(--steel-dark);
+    color: var(--white);
+}
+
+.trust-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+    gap: 2rem;
+    margin-top: 2rem;
+}
+
+.trust-stat {
+    text-align: center;
+}
+
+.trust-number {
+    display: block;
+    font-family: var(--font-industrial);
+    font-size: 3rem;
+    color: var(--industrial-orange);
+    text-shadow: 2px 2px 0 rgba(0,0,0,0.3);
+}
+
+.trust-label {
+    display: block;
+    color: var(--metal-silver);
+    text-transform: uppercase;
+    font-size: 0.875rem;
+    letter-spacing: 1px;
+    margin-top: 0.5rem;
+}
+
+/* Section Title */
+.section-title {
+    font-family: var(--font-industrial);
+    font-size: clamp(2rem, 5vw, 3rem);
+    color: var(--steel-dark);
+    text-align: center;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+    margin-bottom: 1rem;
+}
+
+.benefits-section .section-title,
+.equipment-section .section-title,
+.trust-section .section-title {
+    color: var(--industrial-orange);
+}
+
+/* Container */
+.container {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 20px;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+    .hero-stats {
+        gap: 2rem;
+    }
+    
+    .benefits-content {
+        grid-template-columns: 1fr;
+        gap: 2rem;
+    }
+    
+    .faq-grid {
+        grid-template-columns: 1fr;
+    }
+    
+    .pain-grid,
+    .options-grid {
+        grid-template-columns: 1fr;
+    }
+    
+    .process-steps {
+        grid-template-columns: 1fr;
+    }
+    
+    .equipment-grid {
+        grid-template-columns: 1fr;
+    }
+}
+
+/* Fix text colors for readability */
+.pain-points,
+.finance-options,
+.how-it-works,
+.faq-section {
+    color: var(--steel-dark);
+}
+
+.pain-points *,
+.finance-options *,
+.how-it-works *,
+.faq-section * {
+    color: inherit;
+}
+
+/* Keep hero and dark sections white */
+.trade-hero,
+.trade-hero *,
+.benefits-section,
+.benefits-section *,
+.equipment-section,
+.equipment-section *,
+.trust-section,
+.trust-section * {
+    color: var(--white);
 }
