@@ -96,6 +96,9 @@ document.addEventListener('DOMContentLoaded', function() {
             sessionStorage.setItem('calculatorData', JSON.stringify(calculatorData));
         }
         
+        // Make storeCalculatorData globally available for onclick
+        window.storeCalculatorData = storeCalculatorData;
+        
         // Update storage when values change
         [loanAmountInput, loanTermInput, interestRateInput].forEach(input => {
             input.addEventListener('input', storeCalculatorData);

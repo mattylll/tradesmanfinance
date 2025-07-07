@@ -283,7 +283,67 @@
     <!-- Industrial Calculator Section -->
     <section class="calculator-section industrial-calculator-section" id="calculator-section" aria-label="Loan calculator">
         <div class="container">
-            <!-- Calculator will be injected here by JavaScript -->
+            <div class="calculator-header">
+                <h2 class="section-title">BUILD YOUR DEAL</h2>
+                <p class="section-subtitle">See what you could afford in seconds</p>
+            </div>
+            
+            <div class="calculator-container">
+                <div class="calculator-form">
+                    <div class="calc-input-group">
+                        <label for="loanAmount">HOW MUCH YOU NEED</label>
+                        <div class="input-with-slider">
+                            <input type="number" id="loanAmount" value="50000" min="1000" max="500000" step="1000">
+                            <input type="range" id="loanAmountSlider" value="50000" min="1000" max="500000" step="1000">
+                        </div>
+                        <span class="input-hint">£1,000 - £500,000</span>
+                    </div>
+                    
+                    <div class="calc-input-group">
+                        <label for="loanTerm">HOW LONG FOR</label>
+                        <div class="input-with-slider">
+                            <input type="number" id="loanTerm" value="36" min="6" max="60" step="6">
+                            <input type="range" id="loanTermSlider" value="36" min="6" max="60" step="6">
+                        </div>
+                        <span class="input-hint">6 - 60 months</span>
+                    </div>
+                    
+                    <div class="calc-input-group">
+                        <label for="interestRate">INTEREST RATE</label>
+                        <div class="input-with-slider">
+                            <input type="number" id="interestRate" value="9.9" min="4.9" max="29.9" step="0.1">
+                            <input type="range" id="interestRateSlider" value="9.9" min="4.9" max="29.9" step="0.1">
+                        </div>
+                        <span class="input-hint">4.9% - 29.9% APR</span>
+                    </div>
+                </div>
+                
+                <div class="calc-results">
+                    <div class="result-card primary">
+                        <span class="result-label">MONTHLY PAYMENT</span>
+                        <span class="result-value" id="monthlyPayment">£1,589</span>
+                    </div>
+                    <div class="result-card">
+                        <span class="result-label">TOTAL INTEREST</span>
+                        <span class="result-value" id="totalInterest">£7,204</span>
+                    </div>
+                    <div class="result-card">
+                        <span class="result-label">TOTAL TO REPAY</span>
+                        <span class="result-value" id="totalAmount">£57,204</span>
+                    </div>
+                    
+                    <div class="calculator-actions">
+                        <a href="contact.html" class="btn-massive-industrial" onclick="storeCalculatorData()">
+                            APPLY NOW
+                            <svg width="32" height="32" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="3">
+                                <path d="M5 12h14M12 5l7 7-7 7"/>
+                            </svg>
+                        </a>
+                        <p class="calculator-note">Takes 2 minutes. No obligation.</p>
+                    </div>
+                </div>
+            </div>
+            
             <noscript>
                 <p class="noscript-message">Please enable JavaScript to use the loan calculator.</p>
             </noscript>
@@ -597,71 +657,4 @@
                     
                     <div class="footer-links-section">
                         <h3>WHAT WE DO</h3>
-                        <ul role="list">
-                            <li><a href="services.html#equipment">Equipment Finance</a></li>
-                            <li><a href="services.html#business">Business Loans</a></li>
-                            <li><a href="services.html#invoice">Invoice Finance</a></li>
-                            <li><a href="services.html#vehicle">Vehicle Finance</a></li>
-                        </ul>
-                    </div>
-                    
-                    <div class="footer-links-section">
-                        <h3>THE COMPANY</h3>
-                        <ul role="list">
-                            <li><a href="about.html">About Us</a></li>
-                            <li><a href="#">How It Works</a></li>
-                            <li><a href="#">FAQs</a></li>
-                            <li><a href="contact.html">Get in Touch</a></li>
-                        </ul>
-                    </div>
-                    
-                    <div class="footer-trust">
-                        <h3>WHY TRUST US</h3>
-                        <div class="trust-badges">
-                            <div class="trust-badge-item">
-                                <span class="badge-icon">50K+</span>
-                                <span class="badge-text">Happy Trades</span>
-                            </div>
-                            <div class="trust-badge-item">
-                                <span class="badge-icon">£50M</span>
-                                <span class="badge-text">Funded</span>
-                            </div>
-                            <div class="trust-badge-item">
-                                <span class="badge-icon">24hr</span>
-                                <span class="badge-text">Decisions</span>
-                            </div>
-                        </div>
-                        <p style="margin-top: 20px; font-size: 12px; color: #808080;">We're a finance broker, not a lender. We find you the best deals.</p>
-                    </div>
-                </div>
-            </div>
-        </div>
-        <div class="footer-bottom">
-            <div class="container">
-                <div class="footer-bottom-content">
-                    <p>&copy; 2025 Tradesman Finance Ltd. Company Reg: 123456. Built in Britain.</p>
-                    <div class="footer-legal">
-                        <a href="privacy-policy.html">Privacy</a>
-                        <span>|</span>
-                        <a href="#">Terms</a>
-                        <span>|</span>
-                        <a href="#">Cookies</a>
-                        <span>|</span>
-                        <a href="accessibility-statement.html">Accessibility</a>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </footer>
-
-    <!-- Scripts -->
-    <script src="public/js/industrial-animations.js" type="module"></script>
-    <script src="public/js/industrial-init.js"></script>
-    <script src="public/js/main.js"></script>
-    <script src="public/js/stats-animation.js"></script>
-    <script src="public/js/industrial-animations.js"></script>
-    <script src="public/js/industrial-init.js"></script>
-    <script src="public/js/accessible-calculator.js"></script>
-    <script src="public/js/loader-fix.js"></script>
-</body>
-</html>
+        
