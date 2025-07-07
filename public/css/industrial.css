@@ -544,6 +544,14 @@ body::before {
     z-index: 9999;
     opacity: 1;
     transition: opacity 0.3s ease-out;
+    animation: hideLoader 0s ease-in 4s forwards;
+}
+
+@keyframes hideLoader {
+    to {
+        display: none;
+        opacity: 0;
+    }
 }
 
 .loader-content {
