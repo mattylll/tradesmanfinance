@@ -777,12 +777,24 @@
 
 /* Keep hero and dark sections white */
 .trade-hero,
-.trade-hero *,
 .benefits-section,
 .benefits-section *,
 .equipment-section,
 .equipment-section *,
 .trust-section,
 .trust-section * {
+    color: var(--white);
+}
+
+/* But allow hero title to be orange */
+.trade-hero .hero-title {
+    color: var(--industrial-orange) !important;
+}
+
+/* Keep other hero text white */
+.trade-hero .hero-subtitle,
+.trade-hero .hero-description,
+.trade-hero .stat-label,
+.trade-hero .stat-number {
     color: var(--white);
 }
