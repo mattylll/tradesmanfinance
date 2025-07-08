@@ -25,7 +25,6 @@ class TradeForm {
         // Create form container
         this.container = document.getElementById(this.config.containerId);
         if (!this.container) {
-            console.error('TradeForm: Container not found:', this.config.containerId);
             return;
         }
         
@@ -135,12 +134,10 @@ class TradeForm {
             
             // Add step HTML based on type
             const stepHTML = this.createStepHTML(step);
-            console.log('Generated HTML:', stepHTML);
             stepContent.innerHTML = stepHTML;
             
             // Append to container
             this.stepContainer.appendChild(stepContent);
-            console.log('Step container after append:', this.stepContainer.innerHTML);
             
             // Make sure content is visible
             stepContent.style.display = 'block';
@@ -149,7 +146,13 @@ class TradeForm {
             
             // Apply typewriter effect to question if applicable
             if (step.question && stepIndex > 0) {
-                this.typewriterEffect(stepContent.querySelector('.step-question'));
+                const questionElement = stepContent.querySelector('.step-question');
+                if (questionElement) {
+                    // Show the question immediately for now
+                    questionElement.textContent = step.question;
+                    // Optionally add typewriter effect later
+                    // this.typewriterEffect(questionElement);
+                }
             }
             
             // Focus first input
@@ -168,17 +171,11 @@ class TradeForm {
             this.bindStepEvents(step, stepContent);
         };
 
-        // If this is the first step, show immediately
-        if (stepIndex === 0 && this.stepContainer.innerHTML === '') {
-            showStepContent();
-        } else {
-            // Otherwise, fade out first
-            this.fadeOut(this.stepContainer, showStepContent);
-        }
+        // Always show content immediately for now to avoid animation issues
+        showStepContent();
     }
     
     createStepHTML(step) {
-        console.log('Creating step HTML for:', step);
         let html = '';
         
         // Add trade icon if welcome step

@@ -151,6 +151,7 @@
     color: var(--steel-dark);
     margin-bottom: 0.5rem;
     line-height: 1.2;
+    display: block;
 }
 
 .step-subtitle {
@@ -196,6 +197,7 @@
 /* Input Groups */
 .input-group {
     margin-bottom: 2rem;
+    display: block;
 }
 
 .form-input-large,
@@ -206,9 +208,11 @@
     font-family: var(--font-work);
     font-weight: 500;
     background: var(--off-white);
-    border: 3px solid transparent;
+    border: 3px solid var(--steel-gray);
     border-radius: 8px;
     transition: all 0.3s ease;
+    display: block;
+    color: var(--steel-dark);
 }
 
 .form-input-large:focus,
