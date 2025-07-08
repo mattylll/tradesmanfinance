@@ -24,7 +24,10 @@ class TradeForm {
     init() {
         // Create form container
         this.container = document.getElementById(this.config.containerId);
-        if (!this.container) return;
+        if (!this.container) {
+            console.error('TradeForm: Container not found:', this.config.containerId);
+            return;
+        }
         
         // Clear container and add form class
         this.container.innerHTML = '';
@@ -135,6 +138,9 @@ class TradeForm {
             
             // Append to container
             this.stepContainer.appendChild(stepContent);
+            
+            // Make sure content is visible
+            stepContent.style.display = 'block';
             
             // Fade in
             this.fadeIn(stepContent);
@@ -468,6 +474,8 @@ class TradeForm {
     }
     
     typewriterEffect(element) {
+        if (!element || !element.dataset.text) return;
+        
         const text = element.dataset.text;
         element.textContent = '';
         let index = 0;
@@ -497,6 +505,7 @@ class TradeForm {
     }
     
     fadeIn(element) {
+        element.style.display = 'block';
         element.style.opacity = '0';
         element.style.transform = 'translateX(20px)';
         

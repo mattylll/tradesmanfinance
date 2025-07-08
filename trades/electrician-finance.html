@@ -99,7 +99,7 @@
                     <li><a href="../contact.html">Contact</a></li>
                 </ul>
             </nav>
-            <a href="../contact.html" class="industrial-cta">
+            <a href="#electrician-form-container" class="industrial-cta" onclick="scrollToForm()">
                 Get Funded Now
             </a>
         </div>
@@ -129,7 +129,7 @@
                                 <span class="stat-label">Available</span>
                             </div>
                         </div>
-                        <a href="../contact.html" class="btn-massive-industrial">
+                        <a href="#electrician-form-container" class="btn-massive-industrial" onclick="scrollToForm()">
                             GET FUNDED NOW
                             <svg width="32" height="32" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="3">
                                 <path d="M5 12h14M12 5l7 7-7 7"/>
@@ -199,7 +199,7 @@
                                 <strong>Bad Credit Electrician Loans:</strong> CCJs, defaults or missed payments? We consider your current situation, not just credit history
                             </li>
                         </ul>
-                        <a href="../contact.html" class="btn-industrial">Check Your Rate</a>
+                        <a href="#electrician-form-container" class="btn-industrial" onclick="scrollToForm()">Check Your Rate</a>
                     </div>
                     <div class="benefits-image">
                         <div class="testimonial-card">
@@ -362,7 +362,7 @@
                     <h2 class="cta-headline">READY TO POWER UP YOUR BUSINESS?</h2>
                     <p class="cta-subtitle">Get your electrician finance sorted in 24 hours</p>
                     <div class="cta-buttons">
-                        <a href="../contact.html" class="btn-massive-industrial">
+                        <a href="#electrician-form-container" class="btn-massive-industrial" onclick="scrollToForm()">
                             APPLY NOW
                             <svg width="32" height="32" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="3">
                                 <path d="M5 12h14M12 5l7 7-7 7"/>
@@ -502,6 +502,28 @@
                 const form = new TradeForm(config);
             }
         });
+        
+        // Scroll to form function
+        function scrollToForm() {
+            event.preventDefault();
+            const formSection = document.getElementById('electrician-form-container');
+            if (formSection) {
+                const offset = 100; // Account for fixed header
+                const elementPosition = formSection.getBoundingClientRect().top;
+                const offsetPosition = elementPosition + window.pageYOffset - offset;
+                
+                window.scrollTo({
+                    top: offsetPosition,
+                    behavior: 'smooth'
+                });
+                
+                // Focus on first input after scroll
+                setTimeout(() => {
+                    const firstInput = formSection.querySelector('input, button');
+                    if (firstInput) firstInput.focus();
+                }, 1000);
+            }
+        }
     </script>
 </body>
 </html>
