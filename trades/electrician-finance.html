@@ -21,6 +21,8 @@
     <link rel="stylesheet" href="../public/css/accessibility.css?v=1.0">
     <link rel="stylesheet" href="../public/css/header-fix.css?v=1.0">
     <link rel="stylesheet" href="../public/css/trade-pages-fix.css?v=1.0">
+    <link rel="stylesheet" href="../public/css/trade-forms.css?v=1.0">
+    <link rel="stylesheet" href="../public/css/trade-form-section.css?v=1.0">
     
     <!-- Schema.org markup for Google -->
     <script type="application/ld+json">
@@ -378,6 +380,15 @@
             </div>
         </section>
 
+        <!-- Application Form Section -->
+        <section class="trade-form-section">
+            <div class="container">
+                <h2 class="section-title">QUICK APPLICATION</h2>
+                <p class="section-subtitle">Complete our smart form in just 3 minutes</p>
+                <div id="electrician-form-container"></div>
+            </div>
+        </section>
+
         <!-- Trust Section -->
         <section class="trust-section">
             <div class="container">
@@ -480,5 +491,17 @@
     <!-- Scripts -->
     <script src="../public/js/main.js"></script>
     <script src="../public/js/loader-fix.js"></script>
+    <script src="../public/js/trade-forms.js"></script>
+    <script src="../public/js/trade-form-configs.js"></script>
+    <script>
+        // Initialize electrician form
+        document.addEventListener('DOMContentLoaded', function() {
+            if (window.TradeForm && window.tradeFormConfigs && window.tradeFormConfigs.electrician) {
+                const config = window.tradeFormConfigs.electrician;
+                config.containerId = 'electrician-form-container';
+                const form = new TradeForm(config);
+            }
+        });
+    </script>
 </body>
 </html>
