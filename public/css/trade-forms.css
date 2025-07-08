@@ -257,8 +257,8 @@
 }
 
 .select-card {
-    background: var(--off-white);
-    border: 3px solid var(--off-white);
+    background: var(--white);
+    border: 3px solid var(--steel-gray);
     border-radius: 12px;
     padding: 2rem 1.5rem;
     text-align: center;
@@ -282,6 +282,7 @@
 .select-card:hover {
     transform: translateY(-5px);
     box-shadow: 0 10px 20px rgba(0,0,0,0.1);
+    border-color: var(--industrial-orange);
 }
 
 .select-card:hover::before {
@@ -305,11 +306,13 @@
     font-weight: 700;
     font-size: 1.25rem;
     margin-bottom: 0.5rem;
+    color: var(--steel-dark);
 }
 
 .card-description {
     font-size: 0.875rem;
     opacity: 0.8;
+    color: var(--concrete);
 }
 
 /* Checkbox Cards */
@@ -331,13 +334,14 @@
 }
 
 .checkbox-card-content {
-    background: var(--off-white);
-    border: 3px solid var(--off-white);
+    background: var(--white);
+    border: 3px solid var(--steel-gray);
     border-radius: 12px;
     padding: 1.5rem;
     text-align: center;
     transition: all 0.3s ease;
     position: relative;
+    color: var(--steel-dark);
 }
 
 .checkbox-card:hover .checkbox-card-content {
@@ -474,8 +478,8 @@
 }
 
 .emoji-option {
-    background: var(--off-white);
-    border: 3px solid var(--off-white);
+    background: var(--white);
+    border: 3px solid var(--steel-gray);
     border-radius: 16px;
     padding: 1.5rem;
     text-align: center;
