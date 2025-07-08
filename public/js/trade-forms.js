@@ -385,6 +385,8 @@ class TradeForm {
                         this.formData[step.id] = card.dataset.value;
                         // Enable next button
                         this.nextButton.disabled = false;
+                        // Update navigation to ensure button stays enabled
+                        this.updateNavigation();
                         // Auto-advance after short delay
                         if (step.autoAdvance !== false) {
                             setTimeout(() => this.nextStep(), 300);
@@ -555,19 +557,26 @@ class TradeForm {
             </svg>
         `;
         
-        // Disable next if required field is empty
+        // Enable next button for most cases - we want to capture all leads
         const currentStepConfig = this.config.steps[this.currentStep];
-        if (currentStepConfig.required && !this.formData[currentStepConfig.id]) {
+        
+        // Only disable for text inputs that are truly required and empty
+        if (currentStepConfig.required && 
+            (currentStepConfig.type === 'text' || currentStepConfig.type === 'email' || currentStepConfig.type === 'phone') && 
+            !this.formData[currentStepConfig.id]) {
             this.nextButton.disabled = true;
         } else {
+            // For select cards, sliders, etc., always enable once user has interacted
             this.nextButton.disabled = false;
         }
     }
     
     nextStep() {
-        // Validate current step
+        // Only validate text inputs that are truly required
         const currentStepConfig = this.config.steps[this.currentStep];
-        if (currentStepConfig.required && !this.formData[currentStepConfig.id]) {
+        if (currentStepConfig.required && 
+            (currentStepConfig.type === 'text' || currentStepConfig.type === 'email' || currentStepConfig.type === 'phone') &&
+            !this.formData[currentStepConfig.id]) {
             this.shakeButton(this.nextButton);
             return;
         }
@@ -713,6 +722,28 @@ class TradeForm {
     }
     
     showSuccessScreen() {
+        // Check experience level for different messaging
+        const yearsTrading = this.formData.yearsTrading;
+        const isNewTrader = yearsTrading === '0-2';
+        
+        const messageContent = isNewTrader ? {
+            title: "Thanks! We're Looking at Options 👍",
+            message: `Thanks for your interest in ${this.config.tradeName} finance. We're exploring the best funding options for businesses at your stage.`,
+            nextSteps: [
+                "We're reviewing specialist lenders for newer businesses",
+                "Our team will call you within 24 hours to discuss options",
+                "We may have alternative solutions that could work for you"
+            ]
+        } : {
+            title: "Application Submitted! 🎉",
+            message: `We'll review your ${this.config.tradeName} finance application and get back to you within 24 hours.`,
+            nextSteps: [
+                "We'll review your application with our panel of lenders",
+                "You'll receive a decision within 24 hours",
+                "If approved, funds can be in your account within 48 hours"
+            ]
+        };
+
         this.container.innerHTML = `
             <div class="form-success">
                 <div class="success-icon">
@@ -720,14 +751,12 @@ class TradeForm {
                         <path d="M20 6L9 17l-5-5"/>
                     </svg>
                 </div>
-                <h2 class="success-title">Application Submitted! 🎉</h2>
-                <p class="success-message">We'll review your ${this.config.tradeName} finance application and get back to you within 24 hours.</p>
+                <h2 class="success-title">${messageContent.title}</h2>
+                <p class="success-message">${messageContent.message}</p>
                 <div class="success-info">
                     <p><strong>What happens next?</strong></p>
                     <ul>
-                        <li>We'll review your application with our panel of lenders</li>
-                        <li>You'll receive a decision within 24 hours</li>
-                        <li>If approved, funds can be in your account within 48 hours</li>
+                        ${messageContent.nextSteps.map(step => `<li>${step}</li>`).join('')}
                     </ul>
                 </div>
                 <div class="success-actions">
