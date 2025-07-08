@@ -496,11 +496,24 @@
     <script>
         // Initialize electrician form
         document.addEventListener('DOMContentLoaded', function() {
-            if (window.TradeForm && window.tradeFormConfigs && window.tradeFormConfigs.electrician) {
-                const config = window.tradeFormConfigs.electrician;
-                config.containerId = 'electrician-form-container';
-                const form = new TradeForm(config);
-            }
+            console.log('DOM loaded, checking for TradeForm...');
+            
+            // Wait a bit for scripts to load
+            setTimeout(() => {
+                if (window.TradeForm && window.tradeFormConfigs && window.tradeFormConfigs.electrician) {
+                    console.log('Initializing electrician form...');
+                    const config = window.tradeFormConfigs.electrician;
+                    config.containerId = 'electrician-form-container';
+                    console.log('Config:', config);
+                    const form = new TradeForm(config);
+                } else {
+                    console.error('TradeForm or configs not found:', {
+                        TradeForm: !!window.TradeForm,
+                        tradeFormConfigs: !!window.tradeFormConfigs,
+                        electrician: !!(window.tradeFormConfigs && window.tradeFormConfigs.electrician)
+                    });
+                }
+            }, 100);
         });
         
         // Scroll to form function

@@ -124,8 +124,8 @@ class TradeForm {
         // Update current step
         this.currentStep = stepIndex;
         
-        // Clear container with fade out
-        this.fadeOut(this.stepContainer, () => {
+        // Function to show the step content
+        const showStepContent = () => {
             this.stepContainer.innerHTML = '';
             
             // Create step content
@@ -134,19 +134,21 @@ class TradeForm {
             stepContent.setAttribute('data-step', stepIndex);
             
             // Add step HTML based on type
-            stepContent.innerHTML = this.createStepHTML(step);
+            const stepHTML = this.createStepHTML(step);
+            console.log('Generated HTML:', stepHTML);
+            stepContent.innerHTML = stepHTML;
             
             // Append to container
             this.stepContainer.appendChild(stepContent);
+            console.log('Step container after append:', this.stepContainer.innerHTML);
             
             // Make sure content is visible
             stepContent.style.display = 'block';
-            
-            // Fade in
-            this.fadeIn(stepContent);
+            stepContent.style.opacity = '1';
+            stepContent.style.transform = 'translateX(0)';
             
             // Apply typewriter effect to question if applicable
-            if (step.question) {
+            if (step.question && stepIndex > 0) {
                 this.typewriterEffect(stepContent.querySelector('.step-question'));
             }
             
@@ -164,10 +166,19 @@ class TradeForm {
             
             // Bind step-specific events
             this.bindStepEvents(step, stepContent);
-        });
+        };
+
+        // If this is the first step, show immediately
+        if (stepIndex === 0 && this.stepContainer.innerHTML === '') {
+            showStepContent();
+        } else {
+            // Otherwise, fade out first
+            this.fadeOut(this.stepContainer, showStepContent);
+        }
     }
     
     createStepHTML(step) {
+        console.log('Creating step HTML for:', step);
         let html = '';
         
         // Add trade icon if welcome step
