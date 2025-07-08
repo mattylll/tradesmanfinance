@@ -139,6 +139,31 @@ const tradeFormConfigs = {
                 ]
             },
             {
+                type: 'select-cards',
+                id: 'numberOfDirectors',
+                question: "How many directors in your company?",
+                required: true,
+                summaryLabel: 'Number of directors',
+                options: [
+                    { value: '1', label: 'Just me', icon: '👤', description: 'Sole director' },
+                    { value: '2', label: '2 directors', icon: '👥', description: 'Two directors' },
+                    { value: '3', label: '3 directors', icon: '👥', description: 'Three directors' },
+                    { value: '4+', label: '4+ directors', icon: '👥', description: 'Multiple directors' }
+                ]
+            },
+            {
+                type: 'select-cards',
+                id: 'directorsHomeowners',
+                question: "Are the directors homeowners?",
+                required: true,
+                summaryLabel: 'Directors homeowners',
+                options: [
+                    { value: 'all', label: 'All directors', icon: '🏠', description: 'All own property' },
+                    { value: 'some', label: 'Some directors', icon: '🏠', description: 'Some own property' },
+                    { value: 'none', label: 'None', icon: '🏠', description: 'No property owners' }
+                ]
+            },
+            {
                 type: 'textarea',
                 id: 'additionalInfo',
                 question: "Anything else we should know?",
@@ -275,6 +300,31 @@ const tradeFormConfigs = {
                 ]
             },
             {
+                type: 'select-cards',
+                id: 'numberOfDirectors',
+                question: "How many directors in your company?",
+                required: true,
+                summaryLabel: 'Number of directors',
+                options: [
+                    { value: '1', label: 'Just me', icon: '👤', description: 'Sole director' },
+                    { value: '2', label: '2 directors', icon: '👥', description: 'Two directors' },
+                    { value: '3', label: '3 directors', icon: '👥', description: 'Three directors' },
+                    { value: '4+', label: '4+ directors', icon: '👥', description: 'Multiple directors' }
+                ]
+            },
+            {
+                type: 'select-cards',
+                id: 'directorsHomeowners',
+                question: "Are the directors homeowners?",
+                required: true,
+                summaryLabel: 'Directors homeowners',
+                options: [
+                    { value: 'all', label: 'All directors', icon: '🏠', description: 'All own property' },
+                    { value: 'some', label: 'Some directors', icon: '🏠', description: 'Some own property' },
+                    { value: 'none', label: 'None', icon: '🏠', description: 'No property owners' }
+                ]
+            },
+            {
                 type: 'textarea',
                 id: 'additionalInfo',
                 question: "Anything else?",
@@ -408,6 +458,38 @@ const tradeFormConfigs = {
                 ]
             },
             {
+                type: 'select-cards',
+                id: 'numberOfDirectors',
+                question: "How many directors in your company?",
+                required: true,
+                summaryLabel: 'Number of directors',
+                options: [
+                    { value: '1', label: 'Just me', icon: '👤', description: 'Sole director' },
+                    { value: '2', label: '2 directors', icon: '👥', description: 'Two directors' },
+                    { value: '3', label: '3 directors', icon: '👥', description: 'Three directors' },
+                    { value: '4+', label: '4+ directors', icon: '👥', description: 'Multiple directors' }
+                ]
+            },
+            {
+                type: 'select-cards',
+                id: 'directorsHomeowners',
+                question: "Are the directors homeowners?",
+                required: true,
+                summaryLabel: 'Directors homeowners',
+                options: [
+                    { value: 'all', label: 'All directors', icon: '🏠', description: 'All own property' },
+                    { value: 'some', label: 'Some directors', icon: '🏠', description: 'Some own property' },
+                    { value: 'none', label: 'None', icon: '🏠', description: 'No property owners' }
+                ]
+            },
+            {
+                type: 'textarea',
+                id: 'additionalInfo',
+                question: "Anything else we should know?",
+                placeholder: 'E.g., specific equipment model, upcoming contract, etc.',
+                summaryLabel: 'Additional info'
+            },
+            {
                 type: 'summary',
                 id: 'summary',
                 question: "Nearly there! Review your details:"
@@ -507,6 +589,38 @@ const tradeFormConfigs = {
                     { value: 'fair', emoji: '😐', label: 'Average' },
                     { value: 'poor', emoji: '😟', label: 'Needs work' }
                 ]
+            },
+            {
+                type: 'select-cards',
+                id: 'numberOfDirectors',
+                question: "How many directors in your company?",
+                required: true,
+                summaryLabel: 'Number of directors',
+                options: [
+                    { value: '1', label: 'Just me', icon: '👤', description: 'Sole director' },
+                    { value: '2', label: '2 directors', icon: '👥', description: 'Two directors' },
+                    { value: '3', label: '3 directors', icon: '👥', description: 'Three directors' },
+                    { value: '4+', label: '4+ directors', icon: '👥', description: 'Multiple directors' }
+                ]
+            },
+            {
+                type: 'select-cards',
+                id: 'directorsHomeowners',
+                question: "Are the directors homeowners?",
+                required: true,
+                summaryLabel: 'Directors homeowners',
+                options: [
+                    { value: 'all', label: 'All directors', icon: '🏠', description: 'All own property' },
+                    { value: 'some', label: 'Some directors', icon: '🏠', description: 'Some own property' },
+                    { value: 'none', label: 'None', icon: '🏠', description: 'No property owners' }
+                ]
+            },
+            {
+                type: 'textarea',
+                id: 'additionalInfo',
+                question: "Anything else we should know?",
+                placeholder: 'E.g., specific equipment model, upcoming contract, etc.',
+                summaryLabel: 'Additional info'
             },
             {
                 type: 'summary',
@@ -609,6 +723,38 @@ const tradeFormConfigs = {
                     { value: 'fair', emoji: '😐', label: 'Fair' },
                     { value: 'poor', emoji: '😟', label: 'Poor' }
                 ]
+            },
+            {
+                type: 'select-cards',
+                id: 'numberOfDirectors',
+                question: "How many directors in your company?",
+                required: true,
+                summaryLabel: 'Number of directors',
+                options: [
+                    { value: '1', label: 'Just me', icon: '👤', description: 'Sole director' },
+                    { value: '2', label: '2 directors', icon: '👥', description: 'Two directors' },
+                    { value: '3', label: '3 directors', icon: '👥', description: 'Three directors' },
+                    { value: '4+', label: '4+ directors', icon: '👥', description: 'Multiple directors' }
+                ]
+            },
+            {
+                type: 'select-cards',
+                id: 'directorsHomeowners',
+                question: "Are the directors homeowners?",
+                required: true,
+                summaryLabel: 'Directors homeowners',
+                options: [
+                    { value: 'all', label: 'All directors', icon: '🏠', description: 'All own property' },
+                    { value: 'some', label: 'Some directors', icon: '🏠', description: 'Some own property' },
+                    { value: 'none', label: 'None', icon: '🏠', description: 'No property owners' }
+                ]
+            },
+            {
+                type: 'textarea',
+                id: 'additionalInfo',
+                question: "Anything else we should know?",
+                placeholder: 'E.g., specific equipment model, upcoming contract, etc.',
+                summaryLabel: 'Additional info'
             },
             {
                 type: 'summary',
@@ -726,6 +872,38 @@ const tradeFormConfigs = {
                 ]
             },
             {
+                type: 'select-cards',
+                id: 'numberOfDirectors',
+                question: "How many directors in your company?",
+                required: true,
+                summaryLabel: 'Number of directors',
+                options: [
+                    { value: '1', label: 'Just me', icon: '👤', description: 'Sole director' },
+                    { value: '2', label: '2 directors', icon: '👥', description: 'Two directors' },
+                    { value: '3', label: '3 directors', icon: '👥', description: 'Three directors' },
+                    { value: '4+', label: '4+ directors', icon: '👥', description: 'Multiple directors' }
+                ]
+            },
+            {
+                type: 'select-cards',
+                id: 'directorsHomeowners',
+                question: "Are the directors homeowners?",
+                required: true,
+                summaryLabel: 'Directors homeowners',
+                options: [
+                    { value: 'all', label: 'All directors', icon: '🏠', description: 'All own property' },
+                    { value: 'some', label: 'Some directors', icon: '🏠', description: 'Some own property' },
+                    { value: 'none', label: 'None', icon: '🏠', description: 'No property owners' }
+                ]
+            },
+            {
+                type: 'textarea',
+                id: 'additionalInfo',
+                question: "Anything else we should know?",
+                placeholder: 'E.g., specific equipment model, upcoming contract, etc.',
+                summaryLabel: 'Additional info'
+            },
+            {
                 type: 'summary',
                 id: 'summary',
                 question: "Great! Let's review:"
@@ -825,6 +1003,38 @@ const tradeFormConfigs = {
                     { value: 'fair', emoji: '😐', label: 'Average' },
                     { value: 'poor', emoji: '😟', label: 'Needs work' }
                 ]
+            },
+            {
+                type: 'select-cards',
+                id: 'numberOfDirectors',
+                question: "How many directors in your company?",
+                required: true,
+                summaryLabel: 'Number of directors',
+                options: [
+                    { value: '1', label: 'Just me', icon: '👤', description: 'Sole director' },
+                    { value: '2', label: '2 directors', icon: '👥', description: 'Two directors' },
+                    { value: '3', label: '3 directors', icon: '👥', description: 'Three directors' },
+                    { value: '4+', label: '4+ directors', icon: '👥', description: 'Multiple directors' }
+                ]
+            },
+            {
+                type: 'select-cards',
+                id: 'directorsHomeowners',
+                question: "Are the directors homeowners?",
+                required: true,
+                summaryLabel: 'Directors homeowners',
+                options: [
+                    { value: 'all', label: 'All directors', icon: '🏠', description: 'All own property' },
+                    { value: 'some', label: 'Some directors', icon: '🏠', description: 'Some own property' },
+                    { value: 'none', label: 'None', icon: '🏠', description: 'No property owners' }
+                ]
+            },
+            {
+                type: 'textarea',
+                id: 'additionalInfo',
+                question: "Anything else we should know?",
+                placeholder: 'E.g., specific equipment model, upcoming contract, etc.',
+                summaryLabel: 'Additional info'
             },
             {
                 type: 'summary',
@@ -928,6 +1138,38 @@ const tradeFormConfigs = {
                 ]
             },
             {
+                type: 'select-cards',
+                id: 'numberOfDirectors',
+                question: "How many directors in your company?",
+                required: true,
+                summaryLabel: 'Number of directors',
+                options: [
+                    { value: '1', label: 'Just me', icon: '👤', description: 'Sole director' },
+                    { value: '2', label: '2 directors', icon: '👥', description: 'Two directors' },
+                    { value: '3', label: '3 directors', icon: '👥', description: 'Three directors' },
+                    { value: '4+', label: '4+ directors', icon: '👥', description: 'Multiple directors' }
+                ]
+            },
+            {
+                type: 'select-cards',
+                id: 'directorsHomeowners',
+                question: "Are the directors homeowners?",
+                required: true,
+                summaryLabel: 'Directors homeowners',
+                options: [
+                    { value: 'all', label: 'All directors', icon: '🏠', description: 'All own property' },
+                    { value: 'some', label: 'Some directors', icon: '🏠', description: 'Some own property' },
+                    { value: 'none', label: 'None', icon: '🏠', description: 'No property owners' }
+                ]
+            },
+            {
+                type: 'textarea',
+                id: 'additionalInfo',
+                question: "Anything else we should know?",
+                placeholder: 'E.g., specific equipment model, upcoming contract, etc.',
+                summaryLabel: 'Additional info'
+            },
+            {
                 type: 'summary',
                 id: 'summary',
                 question: "Nearly done! Check your details:"
@@ -1027,6 +1269,38 @@ const tradeFormConfigs = {
                     { value: 'fair', emoji: '😐', label: 'Fair' },
                     { value: 'poor', emoji: '😟', label: 'Poor' }
                 ]
+            },
+            {
+                type: 'select-cards',
+                id: 'numberOfDirectors',
+                question: "How many directors in your company?",
+                required: true,
+                summaryLabel: 'Number of directors',
+                options: [
+                    { value: '1', label: 'Just me', icon: '👤', description: 'Sole director' },
+                    { value: '2', label: '2 directors', icon: '👥', description: 'Two directors' },
+                    { value: '3', label: '3 directors', icon: '👥', description: 'Three directors' },
+                    { value: '4+', label: '4+ directors', icon: '👥', description: 'Multiple directors' }
+                ]
+            },
+            {
+                type: 'select-cards',
+                id: 'directorsHomeowners',
+                question: "Are the directors homeowners?",
+                required: true,
+                summaryLabel: 'Directors homeowners',
+                options: [
+                    { value: 'all', label: 'All directors', icon: '🏠', description: 'All own property' },
+                    { value: 'some', label: 'Some directors', icon: '🏠', description: 'Some own property' },
+                    { value: 'none', label: 'None', icon: '🏠', description: 'No property owners' }
+                ]
+            },
+            {
+                type: 'textarea',
+                id: 'additionalInfo',
+                question: "Anything else we should know?",
+                placeholder: 'E.g., specific equipment model, upcoming contract, etc.',
+                summaryLabel: 'Additional info'
             },
             {
                 type: 'summary',
@@ -1143,6 +1417,38 @@ const tradeFormConfigs = {
                 ]
             },
             {
+                type: 'select-cards',
+                id: 'numberOfDirectors',
+                question: "How many directors in your company?",
+                required: true,
+                summaryLabel: 'Number of directors',
+                options: [
+                    { value: '1', label: 'Just me', icon: '👤', description: 'Sole director' },
+                    { value: '2', label: '2 directors', icon: '👥', description: 'Two directors' },
+                    { value: '3', label: '3 directors', icon: '👥', description: 'Three directors' },
+                    { value: '4+', label: '4+ directors', icon: '👥', description: 'Multiple directors' }
+                ]
+            },
+            {
+                type: 'select-cards',
+                id: 'directorsHomeowners',
+                question: "Are the directors homeowners?",
+                required: true,
+                summaryLabel: 'Directors homeowners',
+                options: [
+                    { value: 'all', label: 'All directors', icon: '🏠', description: 'All own property' },
+                    { value: 'some', label: 'Some directors', icon: '🏠', description: 'Some own property' },
+                    { value: 'none', label: 'None', icon: '🏠', description: 'No property owners' }
+                ]
+            },
+            {
+                type: 'textarea',
+                id: 'additionalInfo',
+                question: "Anything else we should know?",
+                placeholder: 'E.g., specific equipment model, upcoming contract, etc.',
+                summaryLabel: 'Additional info'
+            },
+            {
                 type: 'summary',
                 id: 'summary',
                 question: "Let's check everything:"
@@ -1257,6 +1563,38 @@ const tradeFormConfigs = {
                 ]
             },
             {
+                type: 'select-cards',
+                id: 'numberOfDirectors',
+                question: "How many directors in your company?",
+                required: true,
+                summaryLabel: 'Number of directors',
+                options: [
+                    { value: '1', label: 'Just me', icon: '👤', description: 'Sole director' },
+                    { value: '2', label: '2 directors', icon: '👥', description: 'Two directors' },
+                    { value: '3', label: '3 directors', icon: '👥', description: 'Three directors' },
+                    { value: '4+', label: '4+ directors', icon: '👥', description: 'Multiple directors' }
+                ]
+            },
+            {
+                type: 'select-cards',
+                id: 'directorsHomeowners',
+                question: "Are the directors homeowners?",
+                required: true,
+                summaryLabel: 'Directors homeowners',
+                options: [
+                    { value: 'all', label: 'All directors', icon: '🏠', description: 'All own property' },
+                    { value: 'some', label: 'Some directors', icon: '🏠', description: 'Some own property' },
+                    { value: 'none', label: 'None', icon: '🏠', description: 'No property owners' }
+                ]
+            },
+            {
+                type: 'textarea',
+                id: 'additionalInfo',
+                question: "Anything else we should know?",
+                placeholder: 'E.g., specific equipment model, upcoming contract, etc.',
+                summaryLabel: 'Additional info'
+            },
+            {
                 type: 'summary',
                 id: 'summary',
                 question: "Right, let's review:"
@@ -1356,6 +1694,38 @@ const tradeFormConfigs = {
                     { value: 'fair', emoji: '😐', label: 'Needs water' },
                     { value: 'poor', emoji: '😟', label: 'Bit wilted' }
                 ]
+            },
+            {
+                type: 'select-cards',
+                id: 'numberOfDirectors',
+                question: "How many directors in your company?",
+                required: true,
+                summaryLabel: 'Number of directors',
+                options: [
+                    { value: '1', label: 'Just me', icon: '👤', description: 'Sole director' },
+                    { value: '2', label: '2 directors', icon: '👥', description: 'Two directors' },
+                    { value: '3', label: '3 directors', icon: '👥', description: 'Three directors' },
+                    { value: '4+', label: '4+ directors', icon: '👥', description: 'Multiple directors' }
+                ]
+            },
+            {
+                type: 'select-cards',
+                id: 'directorsHomeowners',
+                question: "Are the directors homeowners?",
+                required: true,
+                summaryLabel: 'Directors homeowners',
+                options: [
+                    { value: 'all', label: 'All directors', icon: '🏠', description: 'All own property' },
+                    { value: 'some', label: 'Some directors', icon: '🏠', description: 'Some own property' },
+                    { value: 'none', label: 'None', icon: '🏠', description: 'No property owners' }
+                ]
+            },
+            {
+                type: 'textarea',
+                id: 'additionalInfo',
+                question: "Anything else we should know?",
+                placeholder: 'E.g., specific equipment model, upcoming contract, etc.',
+                summaryLabel: 'Additional info'
             },
             {
                 type: 'summary',
@@ -1459,6 +1829,38 @@ const tradeFormConfigs = {
                 ]
             },
             {
+                type: 'select-cards',
+                id: 'numberOfDirectors',
+                question: "How many directors in your company?",
+                required: true,
+                summaryLabel: 'Number of directors',
+                options: [
+                    { value: '1', label: 'Just me', icon: '👤', description: 'Sole director' },
+                    { value: '2', label: '2 directors', icon: '👥', description: 'Two directors' },
+                    { value: '3', label: '3 directors', icon: '👥', description: 'Three directors' },
+                    { value: '4+', label: '4+ directors', icon: '👥', description: 'Multiple directors' }
+                ]
+            },
+            {
+                type: 'select-cards',
+                id: 'directorsHomeowners',
+                question: "Are the directors homeowners?",
+                required: true,
+                summaryLabel: 'Directors homeowners',
+                options: [
+                    { value: 'all', label: 'All directors', icon: '🏠', description: 'All own property' },
+                    { value: 'some', label: 'Some directors', icon: '🏠', description: 'Some own property' },
+                    { value: 'none', label: 'None', icon: '🏠', description: 'No property owners' }
+                ]
+            },
+            {
+                type: 'textarea',
+                id: 'additionalInfo',
+                question: "Anything else we should know?",
+                placeholder: 'E.g., specific equipment model, upcoming contract, etc.',
+                summaryLabel: 'Additional info'
+            },
+            {
                 type: 'summary',
                 id: 'summary',
                 question: "Great! Review your application:"
@@ -1558,6 +1960,38 @@ const tradeFormConfigs = {
                     { value: 'fair', emoji: '😐', label: 'Fair' },
                     { value: 'poor', emoji: '😟', label: 'Needs work' }
                 ]
+            },
+            {
+                type: 'select-cards',
+                id: 'numberOfDirectors',
+                question: "How many directors in your company?",
+                required: true,
+                summaryLabel: 'Number of directors',
+                options: [
+                    { value: '1', label: 'Just me', icon: '👤', description: 'Sole director' },
+                    { value: '2', label: '2 directors', icon: '👥', description: 'Two directors' },
+                    { value: '3', label: '3 directors', icon: '👥', description: 'Three directors' },
+                    { value: '4+', label: '4+ directors', icon: '👥', description: 'Multiple directors' }
+                ]
+            },
+            {
+                type: 'select-cards',
+                id: 'directorsHomeowners',
+                question: "Are the directors homeowners?",
+                required: true,
+                summaryLabel: 'Directors homeowners',
+                options: [
+                    { value: 'all', label: 'All directors', icon: '🏠', description: 'All own property' },
+                    { value: 'some', label: 'Some directors', icon: '🏠', description: 'Some own property' },
+                    { value: 'none', label: 'None', icon: '🏠', description: 'No property owners' }
+                ]
+            },
+            {
+                type: 'textarea',
+                id: 'additionalInfo',
+                question: "Anything else we should know?",
+                placeholder: 'E.g., specific equipment model, upcoming contract, etc.',
+                summaryLabel: 'Additional info'
             },
             {
                 type: 'summary',
@@ -1661,6 +2095,38 @@ const tradeFormConfigs = {
                 ]
             },
             {
+                type: 'select-cards',
+                id: 'numberOfDirectors',
+                question: "How many directors in your company?",
+                required: true,
+                summaryLabel: 'Number of directors',
+                options: [
+                    { value: '1', label: 'Just me', icon: '👤', description: 'Sole director' },
+                    { value: '2', label: '2 directors', icon: '👥', description: 'Two directors' },
+                    { value: '3', label: '3 directors', icon: '👥', description: 'Three directors' },
+                    { value: '4+', label: '4+ directors', icon: '👥', description: 'Multiple directors' }
+                ]
+            },
+            {
+                type: 'select-cards',
+                id: 'directorsHomeowners',
+                question: "Are the directors homeowners?",
+                required: true,
+                summaryLabel: 'Directors homeowners',
+                options: [
+                    { value: 'all', label: 'All directors', icon: '🏠', description: 'All own property' },
+                    { value: 'some', label: 'Some directors', icon: '🏠', description: 'Some own property' },
+                    { value: 'none', label: 'None', icon: '🏠', description: 'No property owners' }
+                ]
+            },
+            {
+                type: 'textarea',
+                id: 'additionalInfo',
+                question: "Anything else we should know?",
+                placeholder: 'E.g., specific equipment model, upcoming contract, etc.',
+                summaryLabel: 'Additional info'
+            },
+            {
                 type: 'summary',
                 id: 'summary',
                 question: "Perfect! Review your details:"
@@ -1760,6 +2226,38 @@ const tradeFormConfigs = {
                     { value: 'fair', emoji: '😐', label: 'OK' },
                     { value: 'poor', emoji: '😟', label: 'Needs a key' }
                 ]
+            },
+            {
+                type: 'select-cards',
+                id: 'numberOfDirectors',
+                question: "How many directors in your company?",
+                required: true,
+                summaryLabel: 'Number of directors',
+                options: [
+                    { value: '1', label: 'Just me', icon: '👤', description: 'Sole director' },
+                    { value: '2', label: '2 directors', icon: '👥', description: 'Two directors' },
+                    { value: '3', label: '3 directors', icon: '👥', description: 'Three directors' },
+                    { value: '4+', label: '4+ directors', icon: '👥', description: 'Multiple directors' }
+                ]
+            },
+            {
+                type: 'select-cards',
+                id: 'directorsHomeowners',
+                question: "Are the directors homeowners?",
+                required: true,
+                summaryLabel: 'Directors homeowners',
+                options: [
+                    { value: 'all', label: 'All directors', icon: '🏠', description: 'All own property' },
+                    { value: 'some', label: 'Some directors', icon: '🏠', description: 'Some own property' },
+                    { value: 'none', label: 'None', icon: '🏠', description: 'No property owners' }
+                ]
+            },
+            {
+                type: 'textarea',
+                id: 'additionalInfo',
+                question: "Anything else we should know?",
+                placeholder: 'E.g., specific equipment model, upcoming contract, etc.',
+                summaryLabel: 'Additional info'
             },
             {
                 type: 'summary',
@@ -1876,6 +2374,38 @@ const tradeFormConfigs = {
                 ]
             },
             {
+                type: 'select-cards',
+                id: 'numberOfDirectors',
+                question: "How many directors in your company?",
+                required: true,
+                summaryLabel: 'Number of directors',
+                options: [
+                    { value: '1', label: 'Just me', icon: '👤', description: 'Sole director' },
+                    { value: '2', label: '2 directors', icon: '👥', description: 'Two directors' },
+                    { value: '3', label: '3 directors', icon: '👥', description: 'Three directors' },
+                    { value: '4+', label: '4+ directors', icon: '👥', description: 'Multiple directors' }
+                ]
+            },
+            {
+                type: 'select-cards',
+                id: 'directorsHomeowners',
+                question: "Are the directors homeowners?",
+                required: true,
+                summaryLabel: 'Directors homeowners',
+                options: [
+                    { value: 'all', label: 'All directors', icon: '🏠', description: 'All own property' },
+                    { value: 'some', label: 'Some directors', icon: '🏠', description: 'Some own property' },
+                    { value: 'none', label: 'None', icon: '🏠', description: 'No property owners' }
+                ]
+            },
+            {
+                type: 'textarea',
+                id: 'additionalInfo',
+                question: "Anything else we should know?",
+                placeholder: 'E.g., specific equipment model, upcoming contract, etc.',
+                summaryLabel: 'Additional info'
+            },
+            {
                 type: 'summary',
                 id: 'summary',
                 question: "Perfect! Let's review:"
@@ -1977,6 +2507,38 @@ const tradeFormConfigs = {
                 ]
             },
             {
+                type: 'select-cards',
+                id: 'numberOfDirectors',
+                question: "How many directors in your company?",
+                required: true,
+                summaryLabel: 'Number of directors',
+                options: [
+                    { value: '1', label: 'Just me', icon: '👤', description: 'Sole director' },
+                    { value: '2', label: '2 directors', icon: '👥', description: 'Two directors' },
+                    { value: '3', label: '3 directors', icon: '👥', description: 'Three directors' },
+                    { value: '4+', label: '4+ directors', icon: '👥', description: 'Multiple directors' }
+                ]
+            },
+            {
+                type: 'select-cards',
+                id: 'directorsHomeowners',
+                question: "Are the directors homeowners?",
+                required: true,
+                summaryLabel: 'Directors homeowners',
+                options: [
+                    { value: 'all', label: 'All directors', icon: '🏠', description: 'All own property' },
+                    { value: 'some', label: 'Some directors', icon: '🏠', description: 'Some own property' },
+                    { value: 'none', label: 'None', icon: '🏠', description: 'No property owners' }
+                ]
+            },
+            {
+                type: 'textarea',
+                id: 'additionalInfo',
+                question: "Anything else we should know?",
+                placeholder: 'E.g., specific equipment model, upcoming contract, etc.',
+                summaryLabel: 'Additional info'
+            },
+            {
                 type: 'summary',
                 id: 'summary',
                 question: "Great! Review your application:"
@@ -2076,6 +2638,38 @@ const tradeFormConfigs = {
                     { value: 'fair', emoji: '😐', label: 'Fair' },
                     { value: 'poor', emoji: '😟', label: 'Bit shaky' }
                 ]
+            },
+            {
+                type: 'select-cards',
+                id: 'numberOfDirectors',
+                question: "How many directors in your company?",
+                required: true,
+                summaryLabel: 'Number of directors',
+                options: [
+                    { value: '1', label: 'Just me', icon: '👤', description: 'Sole director' },
+                    { value: '2', label: '2 directors', icon: '👥', description: 'Two directors' },
+                    { value: '3', label: '3 directors', icon: '👥', description: 'Three directors' },
+                    { value: '4+', label: '4+ directors', icon: '👥', description: 'Multiple directors' }
+                ]
+            },
+            {
+                type: 'select-cards',
+                id: 'directorsHomeowners',
+                question: "Are the directors homeowners?",
+                required: true,
+                summaryLabel: 'Directors homeowners',
+                options: [
+                    { value: 'all', label: 'All directors', icon: '🏠', description: 'All own property' },
+                    { value: 'some', label: 'Some directors', icon: '🏠', description: 'Some own property' },
+                    { value: 'none', label: 'None', icon: '🏠', description: 'No property owners' }
+                ]
+            },
+            {
+                type: 'textarea',
+                id: 'additionalInfo',
+                question: "Anything else we should know?",
+                placeholder: 'E.g., specific equipment model, upcoming contract, etc.',
+                summaryLabel: 'Additional info'
             },
             {
                 type: 'summary',
@@ -2190,6 +2784,38 @@ const tradeFormConfigs = {
                     { value: 'fair', emoji: '😐', label: 'Fair' },
                     { value: 'poor', emoji: '😟', label: 'Needs rebuilding' }
                 ]
+            },
+            {
+                type: 'select-cards',
+                id: 'numberOfDirectors',
+                question: "How many directors in your company?",
+                required: true,
+                summaryLabel: 'Number of directors',
+                options: [
+                    { value: '1', label: 'Just me', icon: '👤', description: 'Sole director' },
+                    { value: '2', label: '2 directors', icon: '👥', description: 'Two directors' },
+                    { value: '3', label: '3 directors', icon: '👥', description: 'Three directors' },
+                    { value: '4+', label: '4+ directors', icon: '👥', description: 'Multiple directors' }
+                ]
+            },
+            {
+                type: 'select-cards',
+                id: 'directorsHomeowners',
+                question: "Are the directors homeowners?",
+                required: true,
+                summaryLabel: 'Directors homeowners',
+                options: [
+                    { value: 'all', label: 'All directors', icon: '🏠', description: 'All own property' },
+                    { value: 'some', label: 'Some directors', icon: '🏠', description: 'Some own property' },
+                    { value: 'none', label: 'None', icon: '🏠', description: 'No property owners' }
+                ]
+            },
+            {
+                type: 'textarea',
+                id: 'additionalInfo',
+                question: "Anything else we should know?",
+                placeholder: 'E.g., specific equipment model, upcoming contract, etc.',
+                summaryLabel: 'Additional info'
             },
             {
                 type: 'summary',
