@@ -1,11 +1,11 @@
 /* Dropdown Menu Styles for Trades and Locations */
 
-/* Dropdown container */
+/* Use the existing industrial.css dropdown system */
 .nav-dropdown {
     position: relative !important;
 }
 
-/* Dropdown trigger - add arrow indicator */
+/* Override the industrial dropdown arrow to use ::after instead of ::before */
 .nav-dropdown > a::after {
     content: '▼' !important;
     font-size: 10px !important;
@@ -33,7 +33,7 @@
     transition: all 0.3s ease !important;
     margin-top: 20px !important;
     box-shadow: 0 10px 30px rgba(0,0,0,0.5) !important;
-    z-index: 1000 !important;
+    z-index: 9999 !important;
     display: none !important;
 }
 
@@ -145,6 +145,7 @@
     
     /* Remove dropdown arrow on mobile */
     .nav-dropdown > a::after {
+        content: none !important;
         display: none !important;
     }
     
@@ -176,7 +177,7 @@
         padding-right: 40px !important;
     }
     
-    .nav-dropdown > a::after {
+    .nav-dropdown > a::before {
         content: '+' !important;
         position: absolute !important;
         right: 0 !important;
@@ -187,7 +188,7 @@
         margin: 0 !important;
     }
     
-    .nav-dropdown.mobile-expanded > a::after {
+    .nav-dropdown.mobile-expanded > a::before {
         content: '−' !important;
     }
 }
@@ -208,9 +209,9 @@
     animation: dropdownSlide 0.3s ease forwards !important;
 }
 
-/* Ensure dropdown stays above other content */
+/* Ensure header stays above other content */
 .industrial-header {
-    z-index: 9999 !important;
+    z-index: 10000 !important;
 }
 
 /* Dropdown responsive adjustments */
