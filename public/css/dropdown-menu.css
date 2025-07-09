@@ -1,51 +1,6 @@
-/* Dropdown Menu Styles for Trades and Locations */
+/* Dropdown Menu Extensions for Trades and Locations */
 
-/* Use the existing industrial.css dropdown system */
-.nav-dropdown {
-    position: relative !important;
-}
-
-/* Override the industrial dropdown arrow to use ::after instead of ::before */
-.nav-dropdown > a::after {
-    content: '▼' !important;
-    font-size: 10px !important;
-    margin-left: 6px !important;
-    display: inline-block !important;
-    transition: transform 0.3s ease !important;
-}
-
-.nav-dropdown:hover > a::after {
-    transform: rotate(180deg) !important;
-}
-
-/* Dropdown menu */
-.industrial-nav .dropdown-menu {
-    position: absolute !important;
-    top: 100% !important;
-    left: 50% !important;
-    transform: translateX(-50%) !important;
-    background: #1a1a1a !important;
-    border: 2px solid #333 !important;
-    border-top: 3px solid #ff6b35 !important;
-    min-width: 280px !important;
-    opacity: 0 !important;
-    visibility: hidden !important;
-    transition: all 0.3s ease !important;
-    margin-top: 20px !important;
-    box-shadow: 0 10px 30px rgba(0,0,0,0.5) !important;
-    z-index: 9999 !important;
-    display: none !important;
-}
-
-/* Show dropdown on hover */
-.industrial-nav .nav-dropdown:hover .dropdown-menu {
-    opacity: 1 !important;
-    visibility: visible !important;
-    margin-top: 10px !important;
-    display: block !important;
-}
-
-/* Dropdown sections */
+/* Custom dropdown section styling */
 .dropdown-section {
     padding: 20px !important;
     border-bottom: 1px solid #333 !important;
@@ -83,6 +38,7 @@
     text-transform: none !important;
     letter-spacing: 0 !important;
     display: block !important;
+    border-bottom: none !important;
 }
 
 .dropdown-links a:hover {
@@ -115,27 +71,6 @@
     text-transform: uppercase !important;
 }
 
-/* Ensure dropdowns are initially hidden - override industrial.css */
-.industrial-nav .dropdown-menu {
-    display: none !important;
-    opacity: 0 !important;
-    visibility: hidden !important;
-}
-
-/* Override industrial.css has-dropdown hover */
-.industrial-nav .has-dropdown:hover .dropdown-menu {
-    display: none !important;
-    opacity: 0 !important;
-    visibility: hidden !important;
-}
-
-/* Show dropdown on hover for desktop */
-.industrial-nav .nav-dropdown:hover .dropdown-menu {
-    display: block !important;
-    opacity: 1 !important;
-    visibility: visible !important;
-}
-
 /* Mobile styles */
 @media (max-width: 768px) {
     /* Hide dropdown on mobile - use regular mobile menu */
@@ -144,7 +79,7 @@
     }
     
     /* Remove dropdown arrow on mobile */
-    .nav-dropdown > a::after {
+    .has-dropdown > a::before {
         content: none !important;
         display: none !important;
     }
@@ -156,7 +91,7 @@
         display: none !important;
     }
     
-    .nav-dropdown.mobile-expanded .mobile-submenu {
+    .has-dropdown.mobile-expanded .mobile-submenu {
         display: block !important;
     }
     
@@ -172,12 +107,12 @@
     }
     
     /* Mobile dropdown toggle */
-    .nav-dropdown > a {
+    .has-dropdown > a {
         position: relative !important;
         padding-right: 40px !important;
     }
     
-    .nav-dropdown > a::before {
+    .has-dropdown > a::after {
         content: '+' !important;
         position: absolute !important;
         right: 0 !important;
@@ -188,30 +123,14 @@
         margin: 0 !important;
     }
     
-    .nav-dropdown.mobile-expanded > a::before {
+    .has-dropdown.mobile-expanded > a::after {
         content: '−' !important;
     }
 }
 
-/* Dropdown arrow animation */
-@keyframes dropdownSlide {
-    from {
-        opacity: 0;
-        transform: translateX(-50%) translateY(-10px);
-    }
-    to {
-        opacity: 1;
-        transform: translateX(-50%) translateY(0);
-    }
-}
-
-.nav-dropdown:hover .dropdown-menu {
-    animation: dropdownSlide 0.3s ease forwards !important;
-}
-
-/* Ensure header stays above other content */
-.industrial-header {
-    z-index: 10000 !important;
+/* Ensure dropdown has higher width for our content */
+.industrial-nav .dropdown-menu {
+    min-width: 280px !important;
 }
 
 /* Dropdown responsive adjustments */

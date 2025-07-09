@@ -2,7 +2,7 @@
 
 document.addEventListener('DOMContentLoaded', function() {
     // Mobile dropdown toggles
-    const navDropdowns = document.querySelectorAll('.nav-dropdown');
+    const navDropdowns = document.querySelectorAll('.has-dropdown');
     
     navDropdowns.forEach(dropdown => {
         const link = dropdown.querySelector('a');
@@ -67,7 +67,7 @@ document.addEventListener('DOMContentLoaded', function() {
                 spans[2].style.transform = 'none';
                 
                 // Close all dropdowns when closing mobile menu
-                document.querySelectorAll('.nav-dropdown').forEach(dropdown => {
+                document.querySelectorAll('.has-dropdown').forEach(dropdown => {
                     dropdown.classList.remove('mobile-expanded');
                 });
             }
@@ -90,7 +90,7 @@ document.addEventListener('DOMContentLoaded', function() {
                 }
                 
                 // Close all dropdowns
-                document.querySelectorAll('.nav-dropdown').forEach(dropdown => {
+                document.querySelectorAll('.has-dropdown').forEach(dropdown => {
                     dropdown.classList.remove('mobile-expanded');
                 });
             }
