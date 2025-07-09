@@ -15,6 +15,9 @@
     <link rel="stylesheet" href="../../../public/css/accessibility.css?v=1.0">
     <link rel="stylesheet" href="../../../public/css/header-fix.css?v=1.0">
     <link rel="stylesheet" href="../../../public/css/locations.css?v=1.0">
+    <link rel="stylesheet" href="../../../public/css/dropdown-menu.css?v=1.0">
+    <link rel="stylesheet" href="../../../public/css/location-overview.css?v=1.0">
+    <link rel="stylesheet" href="../../../public/css/location-trade-cards.css?v=1.0">
 </head>
 <body>
     <!-- Loading Screen -->
@@ -29,28 +32,106 @@
     </div>
 
     <!-- Industrial Header -->
-    <header class="industrial-header" id="header">
+    <header class="industrial-header" id="header" role="banner">
         <div class="header-container">
-            <a href="../../../index.html" class="industrial-logo">
-                <div class="logo-badge">TF</div>
+            <a href="../../../index.html" class="industrial-logo" aria-label="Tradesman Finance - Home">
+                <div class="logo-badge" aria-hidden="true">TF</div>
                 <div class="logo-text">
-                    <span class="h1-style">Tradesman Finance</span>
-                    <span>Built Tough for Business</span>
+                    <span class="h1-style" aria-hidden="true">Tradesman Finance</span>
+                    <span aria-hidden="true">Built Tough for Business</span>
                 </div>
             </a>
-            <nav class="industrial-nav">
-                <ul>
+            <nav class="industrial-nav" role="navigation" aria-label="Main navigation">
+                <ul role="list">
                     <li><a href="../../../index.html">Home</a></li>
                     <li><a href="../../../services.html">Services</a></li>
-                    <li><a href="../../../trades/">Trades</a></li>
-                    <li><a href="../../locations/">Locations</a></li>
+                    
+                    <!-- Trades Dropdown -->
+                    <li class="nav-dropdown">
+                        <a href="../../../trades/">Trades</a>
+                        <div class="dropdown-menu">
+                            <div class="dropdown-section">
+                                <h3>Core Trades</h3>
+                                <div class="dropdown-grid">
+                                    <a href="../../../trades/electrician-finance.html">Electrician Finance</a>
+                                    <a href="../../../trades/plumber-finance.html">Plumber Finance</a>
+                                    <a href="../../../trades/builder-finance.html">Builder Finance</a>
+                                    <a href="../../../trades/carpenter-finance.html">Carpenter Finance</a>
+                                    <a href="../../../trades/heating-engineer-finance.html">Heating Engineer Finance</a>
+                                </div>
+                            </div>
+                            <div class="dropdown-section">
+                                <h3>More Trades</h3>
+                                <div class="dropdown-links">
+                                    <a href="../../../trades/roofer-finance.html">Roofer Finance</a>
+                                    <a href="../../../trades/painter-decorator-finance.html">Painter & Decorator Finance</a>
+                                    <a href="../../../trades/plasterer-finance.html">Plasterer Finance</a>
+                                    <a href="../../../trades/">View All 20 Trades →</a>
+                                </div>
+                            </div>
+                        </div>
+                        
+                        <!-- Mobile submenu -->
+                        <div class="mobile-submenu">
+                            <a href="../../../trades/electrician-finance.html">Electrician Finance</a>
+                            <a href="../../../trades/plumber-finance.html">Plumber Finance</a>
+                            <a href="../../../trades/builder-finance.html">Builder Finance</a>
+                            <a href="../../../trades/carpenter-finance.html">Carpenter Finance</a>
+                            <a href="../../../trades/heating-engineer-finance.html">Heating Engineer Finance</a>
+                            <a href="../../../trades/">View All Trades →</a>
+                        </div>
+                    </li>
+                    
+                    <!-- Locations Dropdown -->
+                    <li class="nav-dropdown">
+                        <a href="../../../trades/locations/">Locations</a>
+                        <div class="dropdown-menu">
+                            <div class="dropdown-section">
+                                <h3>Major Cities</h3>
+                                <div class="dropdown-links">
+                                    <a href="../../../trades/locations/london/">London <span class="featured-badge">Featured</span></a>
+                                    <a href="../../../trades/locations/birmingham/">Birmingham <span class="featured-badge">Featured</span></a>
+                                    <a href="../../../trades/locations/manchester/">Manchester <span class="featured-badge">Featured</span></a>
+                                    <a href="../../../trades/locations/leeds/">Leeds</a>
+                                    <a href="../../../trades/locations/glasgow/">Glasgow</a>
+                                </div>
+                            </div>
+                            <div class="dropdown-section">
+                                <h3>More Locations</h3>
+                                <div class="dropdown-links">
+                                    <a href="../../../trades/locations/sheffield/">Sheffield</a>
+                                    <a href="../../../trades/locations/liverpool/">Liverpool</a>
+                                    <a href="../../../trades/locations/bristol/">Bristol</a>
+                                    <a href="../../../trades/locations/">View All Locations →</a>
+                                </div>
+                            </div>
+                        </div>
+                        
+                        <!-- Mobile submenu -->
+                        <div class="mobile-submenu">
+                            <a href="../../../trades/locations/london/">London</a>
+                            <a href="../../../trades/locations/birmingham/">Birmingham</a>
+                            <a href="../../../trades/locations/manchester/">Manchester</a>
+                            <a href="../../../trades/locations/leeds/">Leeds</a>
+                            <a href="../../../trades/locations/glasgow/">Glasgow</a>
+                            <a href="../../../trades/locations/">View All Locations →</a>
+                        </div>
+                    </li>
+                    
                     <li><a href="../../../about.html">About</a></li>
                     <li><a href="../../../contact.html">Contact</a></li>
                 </ul>
             </nav>
-            <a href="../../../contact.html" class="industrial-cta">
+            <a href="../../../contact.html" class="industrial-cta" aria-label="Get funded now">
                 Get Funded Now
             </a>
+            
+            <!-- Mobile menu toggle -->
+            <button class="mobile-menu-toggle" aria-label="Toggle menu">
+                <span></span>
+                <span></span>
+                <span></span>
+            </button>
         </div>
     </header>
 
@@ -182,6 +263,94 @@
                             <li>Havering (RM)</li>
                             <li>All M25 Areas</li>
                         </ul>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Trades Services Section -->
+        <section class="trades-services-overview">
+            <div class="container">
+                <h2 class="section-title">LONDON TRADES WE FINANCE</h2>
+                <p class="section-subtitle">Click on your trade for specialist London finance options</p>
+                
+                <div class="trades-grid">
+                    <!-- Electricians -->
+                    <a href="electrician-finance.html" class="trade-service-card clickable">
+                        <div class="trade-icon">⚡</div>
+                        <h3>LONDON ELECTRICIANS</h3>
+                        <ul class="service-list">
+                            <li>Crossrail electrical systems</li>
+                            <li>Data centre installations</li>
+                            <li>Luxury residential rewiring</li>
+                            <li>Commercial office fit-outs</li>
+                        </ul>
+                        <span class="trade-cta">London Electrician Finance →</span>
+                    </a>
+
+                    <!-- Plumbers -->
+                    <a href="plumber-finance.html" class="trade-service-card clickable">
+                        <div class="trade-icon">🔧</div>
+                        <h3>LONDON PLUMBERS</h3>
+                        <ul class="service-list">
+                            <li>High-rise heating systems</li>
+                            <li>Thames Water compliance</li>
+                            <li>Luxury bathroom installations</li>
+                            <li>Emergency call-out services</li>
+                        </ul>
+                        <span class="trade-cta">London Plumber Finance →</span>
+                    </a>
+
+                    <!-- Builders -->
+                    <a href="builder-finance.html" class="trade-service-card clickable">
+                        <div class="trade-icon">🏗️</div>
+                        <h3>LONDON BUILDERS</h3>
+                        <ul class="service-list">
+                            <li>Basement conversions</li>
+                            <li>Loft extensions & dormers</li>
+                            <li>Listed building restoration</li>
+                            <li>New build developments</li>
+                        </ul>
+                        <span class="trade-cta">London Builder Finance →</span>
+                    </a>
+
+                    <!-- Carpenters -->
+                    <a href="carpenter-finance.html" class="trade-service-card clickable">
+                        <div class="trade-icon">🔨</div>
+                        <h3>LONDON CARPENTERS</h3>
+                        <ul class="service-list">
+                            <li>Shoreditch office fit-outs</li>
+                            <li>West End retail spaces</li>
+                            <li>Period property restoration</li>
+                            <li>Bespoke kitchen installations</li>
+                        </ul>
+                        <span class="trade-cta">London Carpenter Finance →</span>
+                    </a>
+
+                    <!-- Heating Engineers -->
+                    <a href="heating-engineer-finance.html" class="trade-service-card clickable">
+                        <div class="trade-icon">🔥</div>
+                        <h3>LONDON HEATING ENGINEERS</h3>
+                        <ul class="service-list">
+                            <li>District heating networks</li>
+                            <li>Smart building systems</li>
+                            <li>ULEZ-compliant installations</li>
+                            <li>Heat pump specialists</li>
+                        </ul>
+                        <span class="trade-cta">London Heating Finance →</span>
+                    </a>
+
+                    <!-- Other Trades -->
+                    <div class="trade-service-card">
+                        <div class="trade-icon">🏠</div>
+                        <h3>ALL OTHER TRADES</h3>
+                        <ul class="service-list">
+                            <li>Roofers & scaffolders</li>
+                            <li>Painters & decorators</li>
+                            <li>Plasterers & tilers</li>
+                            <li>All construction trades</li>
+                        </ul>
+                        <a href="../../../trades/" class="trade-cta">View All Trades →</a>
                     </div>
                 </div>
             </div>
@@ -359,5 +528,6 @@
     <!-- Scripts -->
     <script src="../../../public/js/main.js"></script>
     <script src="../../../public/js/loader-fix.js"></script>
+    <script src="../../../public/js/dropdown-menu.js"></script>
 </body>
 </html>

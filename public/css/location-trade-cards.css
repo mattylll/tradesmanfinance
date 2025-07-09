@@ -1,0 +1,104 @@
+/* Clickable Trade Cards for Location Pages */
+
+/* Make trade cards clickable */
+.trade-service-card.clickable {
+    display: block;
+    text-decoration: none;
+    color: inherit;
+    transition: all 0.3s ease;
+    cursor: pointer;
+}
+
+.trade-service-card.clickable:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 10px 30px rgba(0,0,0,0.15);
+    border-color: #ff6b35;
+}
+
+.trade-service-card.clickable .trade-cta {
+    display: inline-flex;
+    align-items: center;
+    color: #ff6b35;
+    font-weight: 600;
+    transition: color 0.3s ease;
+}
+
+.trade-service-card.clickable:hover .trade-cta {
+    color: #ff8555;
+}
+
+/* Section subtitle for trade selection */
+.trades-services .section-subtitle {
+    text-align: center;
+    font-size: 1.125rem;
+    color: #666;
+    margin: -10px 0 40px;
+}
+
+/* Adjust trade grid for better linking */
+.trades-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(350px, 1fr));
+    gap: 30px;
+    margin-top: 30px;
+}
+
+/* Style adjustments for linked cards */
+.trade-service-card {
+    background: #fff;
+    border: 2px solid #e0e0e0;
+    padding: 40px;
+    text-align: center;
+    position: relative;
+    min-height: 350px;
+    display: flex;
+    flex-direction: column;
+}
+
+.trade-service-card .trade-icon {
+    font-size: 3rem;
+    margin-bottom: 20px;
+}
+
+.trade-service-card h3 {
+    font-size: 1.5rem;
+    color: #1a1a1a;
+    margin-bottom: 20px;
+    font-weight: 700;
+}
+
+.trade-service-card .service-list {
+    list-style: none;
+    padding: 0;
+    margin: 0 0 30px;
+    flex-grow: 1;
+    text-align: left;
+}
+
+.trade-service-card .service-list li {
+    padding: 8px 0;
+    color: #666;
+    position: relative;
+    padding-left: 25px;
+}
+
+.trade-service-card .service-list li::before {
+    content: '✓';
+    position: absolute;
+    left: 0;
+    color: #ff6b35;
+    font-weight: bold;
+}
+
+/* Mobile adjustments */
+@media (max-width: 768px) {
+    .trades-grid {
+        grid-template-columns: 1fr;
+        gap: 20px;
+    }
+    
+    .trade-service-card {
+        min-height: auto;
+        padding: 30px;
+    }
+}

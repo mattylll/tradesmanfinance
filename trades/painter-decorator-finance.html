@@ -14,6 +14,7 @@
     <link rel="stylesheet" href="../public/css/industrial-components.css?v=1.0">
     <link rel="stylesheet" href="../public/css/accessibility.css?v=1.0">
     <link rel="stylesheet" href="../public/css/header-fix.css?v=1.0">
+    <link rel="stylesheet" href="../public/css/dropdown-menu.css?v=1.0">
     <link rel="stylesheet" href="../public/css/trade-pages-fix.css?v=1.0">
     
     <!-- Schema.org markup for Painter Decorator Finance -->
@@ -77,29 +78,107 @@
         </div>
     </div>
 
-    <!-- Industrial Header -->
-    <header class="industrial-header" id="header">
+        <!-- Industrial Header -->
+    <header class="industrial-header" id="header" role="banner">
         <div class="header-container">
-            <a href="../index.html" class="industrial-logo">
-                <div class="logo-badge">TF</div>
+            <a href="../index.html" class="industrial-logo" aria-label="Tradesman Finance - Home">
+                <div class="logo-badge" aria-hidden="true">TF</div>
                 <div class="logo-text">
-                    <span class="h1-style">Tradesman Finance</span>
-                    <span>Built Tough for Business</span>
+                    <span class="h1-style" aria-hidden="true">Tradesman Finance</span>
+                    <span aria-hidden="true">Built Tough for Business</span>
                 </div>
             </a>
-            <nav class="industrial-nav">
-                <ul>
+            <nav class="industrial-nav" role="navigation" aria-label="Main navigation">
+                <ul role="list">
                     <li><a href="../index.html">Home</a></li>
                     <li><a href="../services.html">Services</a></li>
-                    <li><a href="../trades/">Trades</a></li>
-                    <li><a href="../trades/locations/london/">Locations</a></li>
+                    
+                    <!-- Trades Dropdown -->
+                    <li class="nav-dropdown">
+                        <a href="../trades/">Trades</a>
+                        <div class="dropdown-menu">
+                            <div class="dropdown-section">
+                                <h3>Core Trades</h3>
+                                <div class="dropdown-grid">
+                                    <a href="../trades/electrician-finance.html">Electrician Finance</a>
+                                    <a href="../trades/plumber-finance.html">Plumber Finance</a>
+                                    <a href="../trades/builder-finance.html">Builder Finance</a>
+                                    <a href="../trades/carpenter-finance.html">Carpenter Finance</a>
+                                    <a href="../trades/heating-engineer-finance.html">Heating Engineer Finance</a>
+                                </div>
+                            </div>
+                            <div class="dropdown-section">
+                                <h3>More Trades</h3>
+                                <div class="dropdown-links">
+                                    <a href="../trades/roofer-finance.html">Roofer Finance</a>
+                                    <a href="../trades/painter-decorator-finance.html">Painter & Decorator Finance</a>
+                                    <a href="../trades/plasterer-finance.html">Plasterer Finance</a>
+                                    <a href="../trades/">View All 20 Trades →</a>
+                                </div>
+                            </div>
+                        </div>
+                        
+                        <!-- Mobile submenu -->
+                        <div class="mobile-submenu">
+                            <a href="../trades/electrician-finance.html">Electrician Finance</a>
+                            <a href="../trades/plumber-finance.html">Plumber Finance</a>
+                            <a href="../trades/builder-finance.html">Builder Finance</a>
+                            <a href="../trades/carpenter-finance.html">Carpenter Finance</a>
+                            <a href="../trades/heating-engineer-finance.html">Heating Engineer Finance</a>
+                            <a href="../trades/">View All Trades →</a>
+                        </div>
+                    </li>
+                    
+                    <!-- Locations Dropdown -->
+                    <li class="nav-dropdown">
+                        <a href="../trades/locations/">Locations</a>
+                        <div class="dropdown-menu">
+                            <div class="dropdown-section">
+                                <h3>Major Cities</h3>
+                                <div class="dropdown-links">
+                                    <a href="../trades/locations/london/">London <span class="featured-badge">Featured</span></a>
+                                    <a href="../trades/locations/birmingham/">Birmingham <span class="featured-badge">Featured</span></a>
+                                    <a href="../trades/locations/manchester/">Manchester <span class="featured-badge">Featured</span></a>
+                                    <a href="../trades/locations/leeds/">Leeds</a>
+                                    <a href="../trades/locations/glasgow/">Glasgow</a>
+                                </div>
+                            </div>
+                            <div class="dropdown-section">
+                                <h3>More Locations</h3>
+                                <div class="dropdown-links">
+                                    <a href="../trades/locations/sheffield/">Sheffield</a>
+                                    <a href="../trades/locations/liverpool/">Liverpool</a>
+                                    <a href="../trades/locations/bristol/">Bristol</a>
+                                    <a href="../trades/locations/">View All Locations →</a>
+                                </div>
+                            </div>
+                        </div>
+                        
+                        <!-- Mobile submenu -->
+                        <div class="mobile-submenu">
+                            <a href="../trades/locations/london/">London</a>
+                            <a href="../trades/locations/birmingham/">Birmingham</a>
+                            <a href="../trades/locations/manchester/">Manchester</a>
+                            <a href="../trades/locations/leeds/">Leeds</a>
+                            <a href="../trades/locations/glasgow/">Glasgow</a>
+                            <a href="../trades/locations/">View All Locations →</a>
+                        </div>
+                    </li>
+                    
                     <li><a href="../about.html">About</a></li>
                     <li><a href="../contact.html">Contact</a></li>
                 </ul>
             </nav>
-            <a href="../contact.html" class="industrial-cta">
+            <a href="../contact.html" class="industrial-cta" aria-label="Get funded now">
                 Get Funded Now
             </a>
+            
+            <!-- Mobile menu toggle -->
+            <button class="mobile-menu-toggle" aria-label="Toggle menu">
+                <span></span>
+                <span></span>
+                <span></span>
+            </button>
         </div>
     </header>
 
@@ -493,5 +572,6 @@
     <!-- Scripts -->
     <script src="../public/js/main.js"></script>
     <script src="../public/js/loader-fix.js"></script>
+    <script src="../public/js/dropdown-menu.js"></script>
 </body>
 </html>

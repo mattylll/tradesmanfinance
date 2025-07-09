@@ -1,0 +1,453 @@
+/* Location Overview Pages Styles */
+
+/* Location Hero Section */
+.location-hero {
+    background: linear-gradient(135deg, #1a1a1a 0%, #2d2d2d 100%);
+    padding: 120px 0 80px;
+    position: relative;
+    overflow: hidden;
+}
+
+.location-hero::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background: url('data:image/svg+xml,<svg width="60" height="60" viewBox="0 0 60 60" xmlns="http://www.w3.org/2000/svg"><g fill="none" fill-rule="evenodd"><g fill="%23333" fill-opacity="0.1"><polygon points="30 30 0 0 0 30"/><polygon points="30 30 60 0 60 30"/><polygon points="30 30 0 60 0 30"/><polygon points="30 30 60 60 60 30"/></g></g></svg>');
+    opacity: 0.1;
+}
+
+.location-hero .hero-content {
+    position: relative;
+    z-index: 2;
+}
+
+.location-hero .hero-inner {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 20px;
+    text-align: center;
+}
+
+.location-hero .hero-title {
+    font-family: 'Bebas Neue', sans-serif;
+    font-size: clamp(3rem, 8vw, 5rem);
+    color: #fff;
+    margin: 0 0 20px;
+    letter-spacing: 2px;
+    line-height: 1.1;
+}
+
+.location-hero .hero-subtitle {
+    font-size: 1.5rem;
+    color: #ff6b35;
+    margin-bottom: 20px;
+    font-weight: 600;
+}
+
+.location-hero .hero-description {
+    font-size: 1.125rem;
+    color: #e0e0e0;
+    max-width: 800px;
+    margin: 0 auto 40px;
+    line-height: 1.6;
+}
+
+/* Cities Grid Section */
+.cities-grid-section {
+    padding: 80px 0;
+    background: #f5f5f5;
+}
+
+.cities-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(280px, 1fr));
+    gap: 20px;
+    margin-top: 40px;
+}
+
+.city-card {
+    background: #fff;
+    border: 2px solid #e0e0e0;
+    padding: 30px;
+    text-decoration: none;
+    color: #333;
+    position: relative;
+    transition: all 0.3s ease;
+    display: flex;
+    flex-direction: column;
+}
+
+.city-card:hover {
+    border-color: #ff6b35;
+    transform: translateY(-5px);
+    box-shadow: 0 10px 30px rgba(0,0,0,0.1);
+}
+
+.city-card.featured {
+    border-color: #ff6b35;
+    background: linear-gradient(135deg, #fff 0%, #fff5f2 100%);
+}
+
+.city-card h3 {
+    font-size: 1.5rem;
+    color: #1a1a1a;
+    margin: 0 0 10px;
+    font-weight: 700;
+}
+
+.city-card p {
+    color: #666;
+    margin: 0 0 15px;
+    flex-grow: 1;
+}
+
+.city-stat {
+    font-size: 0.875rem;
+    color: #ff6b35;
+    font-weight: 600;
+}
+
+.city-card .arrow {
+    position: absolute;
+    right: 20px;
+    bottom: 20px;
+    font-size: 1.5rem;
+    color: #ff6b35;
+    transition: transform 0.3s ease;
+}
+
+.city-card:hover .arrow {
+    transform: translateX(5px);
+}
+
+/* Trade Services Overview */
+.trade-services-overview {
+    padding: 80px 0;
+    background: #1a1a1a;
+}
+
+.trade-services-overview .section-title {
+    color: #fff;
+}
+
+.trade-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(350px, 1fr));
+    gap: 30px;
+    margin-top: 50px;
+}
+
+.trade-overview-card {
+    background: #2d2d2d;
+    border: 2px solid #333;
+    padding: 40px;
+    position: relative;
+}
+
+.trade-overview-card .trade-icon {
+    font-size: 3rem;
+    margin-bottom: 20px;
+    display: block;
+}
+
+.trade-overview-card h3 {
+    color: #fff;
+    font-size: 1.5rem;
+    margin-bottom: 15px;
+    font-weight: 700;
+}
+
+.trade-overview-card p {
+    color: #b0b0b0;
+    margin-bottom: 20px;
+    line-height: 1.6;
+}
+
+.trade-overview-card ul {
+    list-style: none;
+    padding: 0;
+    margin: 0 0 20px;
+}
+
+.trade-overview-card li {
+    color: #e0e0e0;
+    padding: 5px 0;
+    padding-left: 20px;
+    position: relative;
+}
+
+.trade-overview-card li::before {
+    content: '→';
+    position: absolute;
+    left: 0;
+    color: #ff6b35;
+}
+
+.trade-link {
+    color: #ff6b35;
+    text-decoration: none;
+    font-weight: 600;
+    display: inline-flex;
+    align-items: center;
+    transition: color 0.3s ease;
+}
+
+.trade-link:hover {
+    color: #ff8555;
+}
+
+/* Regional Market Section */
+.regional-market {
+    padding: 80px 0;
+    background: #f5f5f5;
+}
+
+.market-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+    gap: 30px;
+    margin: 40px 0 60px;
+}
+
+.market-stat {
+    text-align: center;
+    padding: 30px;
+    background: #fff;
+    border: 2px solid #e0e0e0;
+}
+
+.market-stat h3 {
+    font-size: 2.5rem;
+    color: #ff6b35;
+    margin: 0 0 10px;
+    font-weight: 900;
+}
+
+.market-stat p {
+    font-size: 1.125rem;
+    color: #333;
+    margin: 0 0 5px;
+    font-weight: 700;
+}
+
+.market-stat span {
+    font-size: 0.875rem;
+    color: #666;
+}
+
+.market-content {
+    background: #fff;
+    padding: 50px;
+    border: 2px solid #e0e0e0;
+}
+
+.market-content h3 {
+    font-size: 1.875rem;
+    color: #1a1a1a;
+    margin-bottom: 40px;
+    text-align: center;
+    font-weight: 700;
+}
+
+.market-columns {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    gap: 40px;
+}
+
+.market-column h4 {
+    color: #ff6b35;
+    font-size: 1.25rem;
+    margin-bottom: 20px;
+    font-weight: 700;
+}
+
+.market-column ul {
+    list-style: none;
+    padding: 0;
+}
+
+.market-column li {
+    padding: 8px 0;
+    color: #666;
+    position: relative;
+    padding-left: 25px;
+}
+
+.market-column li::before {
+    content: '✓';
+    position: absolute;
+    left: 0;
+    color: #ff6b35;
+    font-weight: bold;
+}
+
+/* Finance Products Overview */
+.finance-products-overview {
+    padding: 80px 0;
+    background: #fff;
+}
+
+.products-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(350px, 1fr));
+    gap: 30px;
+    margin-top: 50px;
+}
+
+.product-card {
+    background: #f5f5f5;
+    border: 2px solid #e0e0e0;
+    padding: 40px;
+    position: relative;
+    transition: all 0.3s ease;
+}
+
+.product-card:hover {
+    border-color: #ff6b35;
+    transform: translateY(-5px);
+    box-shadow: 0 10px 30px rgba(0,0,0,0.1);
+}
+
+.product-card h3 {
+    font-size: 1.5rem;
+    color: #1a1a1a;
+    margin-bottom: 10px;
+    font-weight: 700;
+}
+
+.product-card p {
+    color: #ff6b35;
+    font-size: 1.125rem;
+    margin-bottom: 20px;
+    font-weight: 600;
+}
+
+.product-card ul {
+    list-style: none;
+    padding: 0;
+}
+
+.product-card li {
+    padding: 8px 0;
+    color: #666;
+    position: relative;
+    padding-left: 25px;
+}
+
+.product-card li::before {
+    content: '•';
+    position: absolute;
+    left: 0;
+    color: #ff6b35;
+    font-weight: bold;
+    font-size: 1.2rem;
+}
+
+/* Success Stories Section */
+.success-stories {
+    padding: 80px 0;
+    background: #1a1a1a;
+}
+
+.success-stories .section-title {
+    color: #fff;
+}
+
+.stories-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(350px, 1fr));
+    gap: 30px;
+    margin-top: 50px;
+}
+
+.story-card {
+    background: #2d2d2d;
+    border: 2px solid #333;
+    padding: 40px;
+    position: relative;
+}
+
+.story-card::before {
+    content: '"';
+    position: absolute;
+    top: 20px;
+    left: 20px;
+    font-size: 3rem;
+    color: #ff6b35;
+    opacity: 0.3;
+}
+
+.story-card h3 {
+    color: #fff;
+    font-size: 1.25rem;
+    margin-bottom: 20px;
+    font-weight: 700;
+}
+
+.story-card p {
+    color: #e0e0e0;
+    line-height: 1.6;
+    margin-bottom: 20px;
+    font-style: italic;
+}
+
+.story-card cite {
+    color: #ff6b35;
+    font-style: normal;
+    font-weight: 600;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+    .location-hero {
+        padding: 100px 0 60px;
+    }
+    
+    .location-hero .hero-title {
+        font-size: 2.5rem;
+    }
+    
+    .location-hero .hero-subtitle {
+        font-size: 1.25rem;
+    }
+    
+    .market-columns {
+        grid-template-columns: 1fr;
+    }
+    
+    .market-content {
+        padding: 30px;
+    }
+    
+    .trade-grid,
+    .products-grid,
+    .stories-grid {
+        grid-template-columns: 1fr;
+    }
+}
+
+/* Special styling for county pages */
+.county-intro {
+    padding: 60px 0;
+    background: #fff;
+    text-align: center;
+}
+
+.county-intro h2 {
+    font-size: 2rem;
+    color: #1a1a1a;
+    margin-bottom: 20px;
+    font-weight: 700;
+}
+
+.county-intro p {
+    font-size: 1.125rem;
+    color: #666;
+    max-width: 800px;
+    margin: 0 auto;
+    line-height: 1.6;
+}
