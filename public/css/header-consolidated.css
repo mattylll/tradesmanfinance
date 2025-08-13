@@ -1,0 +1,490 @@
+/* =================================================================
+   CONSOLIDATED HEADER STYLES - Production Ready
+   Replaces: header-fix.css, dropdown-menu.css, dropdown-fix.css
+   ================================================================= */
+
+:root {
+    --header-bg: #1a1a1a;
+    --header-height: 80px;
+    --nav-text: #ffffff;
+    --nav-hover: #ff6b35;
+    --nav-active: #ffd93d;
+    --dropdown-bg: #1a1a1a;
+    --dropdown-border: #333;
+    --dropdown-hover-bg: #ff6b35;
+    --mobile-menu-width: 280px;
+    --z-header: 1000;
+    --z-dropdown: 1001;
+    --transition-speed: 0.3s;
+}
+
+/* =================================================================
+   BASE HEADER STRUCTURE
+   ================================================================= */
+
+.industrial-header {
+    background: var(--header-bg);
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    z-index: var(--z-header);
+    height: var(--header-height);
+    box-shadow: 0 2px 10px rgba(0,0,0,0.3);
+}
+
+.header-container {
+    width: 100%;
+    max-width: 1400px;
+    margin: 0 auto;
+    padding: 0 24px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    height: 100%;
+}
+
+/* Body padding to account for fixed header */
+body {
+    padding-top: var(--header-height);
+}
+
+/* =================================================================
+   LOGO SECTION
+   ================================================================= */
+
+.industrial-logo {
+    display: flex;
+    align-items: center;
+    gap: 16px;
+    text-decoration: none;
+    color: var(--nav-text);
+    flex-shrink: 0;
+    transition: transform var(--transition-speed) ease;
+}
+
+.industrial-logo:hover {
+    transform: translateX(2px);
+}
+
+.logo-badge {
+    width: 50px;
+    height: 50px;
+    background: var(--nav-hover);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-family: 'Bebas Neue', sans-serif;
+    font-size: 28px;
+    font-weight: 900;
+    color: white;
+    transform: rotate(-5deg);
+    box-shadow: 4px 4px 0 rgba(0,0,0,0.5);
+    transition: transform var(--transition-speed) ease;
+}
+
+.industrial-logo:hover .logo-badge {
+    transform: rotate(-5deg) scale(1.05);
+}
+
+.logo-text {
+    display: flex;
+    flex-direction: column;
+}
+
+.logo-text .h1-style {
+    font-family: 'Bebas Neue', sans-serif;
+    font-size: 28px;
+    margin: 0;
+    color: var(--nav-text);
+    font-weight: 400;
+    letter-spacing: 2px;
+}
+
+.logo-text span:last-child {
+    font-size: 12px;
+    color: var(--nav-active);
+    letter-spacing: 1px;
+    text-transform: uppercase;
+}
+
+/* =================================================================
+   NAVIGATION MENU
+   ================================================================= */
+
+.industrial-nav {
+    display: flex;
+    align-items: center;
+    flex: 1;
+    justify-content: center;
+}
+
+.industrial-nav ul {
+    display: flex;
+    list-style: none;
+    gap: 40px;
+    margin: 0;
+    padding: 0;
+    align-items: center;
+}
+
+.industrial-nav li {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    position: relative;
+}
+
+.industrial-nav a {
+    color: var(--nav-text);
+    text-decoration: none;
+    font-family: 'Work Sans', sans-serif;
+    font-weight: 600;
+    font-size: 16px;
+    letter-spacing: 0.5px;
+    text-transform: uppercase;
+    transition: color var(--transition-speed) ease;
+    padding: 5px 0;
+    position: relative;
+    display: inline-block;
+}
+
+.industrial-nav a:hover {
+    color: var(--nav-hover);
+}
+
+.industrial-nav a[aria-current="page"],
+.industrial-nav a.active {
+    color: var(--nav-active);
+}
+
+/* Underline animation */
+.industrial-nav > ul > li > a::after {
+    content: '';
+    position: absolute;
+    bottom: -2px;
+    left: 0;
+    width: 0;
+    height: 2px;
+    background: var(--nav-hover);
+    transition: width var(--transition-speed) ease;
+}
+
+.industrial-nav > ul > li > a:hover::after {
+    width: 100%;
+}
+
+/* =================================================================
+   DROPDOWN MENUS
+   ================================================================= */
+
+.has-dropdown {
+    position: relative;
+}
+
+/* Dropdown arrow indicator */
+.has-dropdown > a::before {
+    content: '▼';
+    font-size: 10px;
+    margin-left: 6px;
+    display: inline-block;
+    transition: transform var(--transition-speed) ease;
+}
+
+.has-dropdown:hover > a::before {
+    transform: rotate(180deg);
+}
+
+/* Dropdown menu container */
+.dropdown-menu {
+    position: absolute;
+    top: calc(100% + 10px);
+    left: 50%;
+    transform: translateX(-50%);
+    background: var(--dropdown-bg);
+    border: 2px solid var(--dropdown-border);
+    border-top: 3px solid var(--nav-hover);
+    min-width: 300px;
+    z-index: var(--z-dropdown);
+    box-shadow: 0 10px 30px rgba(0,0,0,0.5);
+    opacity: 0;
+    visibility: hidden;
+    transition: opacity var(--transition-speed) ease, visibility var(--transition-speed) ease;
+}
+
+/* Show dropdown on hover */
+.has-dropdown:hover .dropdown-menu {
+    opacity: 1;
+    visibility: visible;
+}
+
+/* Dropdown sections */
+.dropdown-section {
+    padding: 20px;
+    border-bottom: 1px solid var(--dropdown-border);
+}
+
+.dropdown-section:last-child {
+    border-bottom: none;
+}
+
+.dropdown-section h3 {
+    font-family: 'Bebas Neue', sans-serif;
+    font-size: 18px;
+    color: var(--nav-hover);
+    margin: 0 0 12px 0;
+    letter-spacing: 1px;
+    text-transform: uppercase;
+}
+
+/* Dropdown links */
+.dropdown-links {
+    display: flex;
+    flex-direction: column;
+    gap: 4px;
+}
+
+.dropdown-grid {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 8px;
+}
+
+.dropdown-links a,
+.dropdown-grid a {
+    color: #ccc;
+    text-decoration: none;
+    font-family: 'Work Sans', sans-serif;
+    font-size: 14px;
+    font-weight: 500;
+    padding: 8px 12px;
+    border-radius: 4px;
+    transition: all 0.2s ease;
+    text-transform: none;
+    letter-spacing: 0;
+    display: block;
+}
+
+.dropdown-links a:hover,
+.dropdown-grid a:hover {
+    background: var(--dropdown-hover-bg);
+    color: white;
+    transform: translateX(4px);
+}
+
+/* Remove underline effect for dropdown links */
+.dropdown-links a::after,
+.dropdown-grid a::after {
+    display: none;
+}
+
+/* =================================================================
+   CTA BUTTON
+   ================================================================= */
+
+.industrial-cta {
+    background: var(--nav-hover);
+    color: white;
+    padding: 12px 32px;
+    text-decoration: none;
+    font-family: 'Bebas Neue', sans-serif;
+    font-size: 20px;
+    letter-spacing: 1px;
+    text-transform: uppercase;
+    box-shadow: 4px 4px 0 rgba(0,0,0,0.5);
+    transition: all 0.2s ease;
+    display: inline-flex;
+    align-items: center;
+    gap: 8px;
+    flex-shrink: 0;
+}
+
+.industrial-cta:hover {
+    transform: translate(-2px, -2px);
+    box-shadow: 6px 6px 0 rgba(0,0,0,0.5);
+    background: #ff8c42;
+}
+
+.industrial-cta svg {
+    width: 20px;
+    height: 20px;
+}
+
+/* =================================================================
+   MOBILE MENU
+   ================================================================= */
+
+.mobile-menu-toggle {
+    display: none;
+    background: none;
+    border: none;
+    cursor: pointer;
+    padding: 10px;
+    position: relative;
+    z-index: calc(var(--z-header) + 2);
+}
+
+.mobile-menu-toggle span {
+    display: block;
+    width: 25px;
+    height: 3px;
+    background: white;
+    margin: 5px 0;
+    transition: all var(--transition-speed) ease;
+    transform-origin: center;
+}
+
+/* Hamburger to X animation */
+.mobile-menu-toggle.active span:nth-child(1) {
+    transform: rotate(45deg) translateY(8px);
+}
+
+.mobile-menu-toggle.active span:nth-child(2) {
+    opacity: 0;
+}
+
+.mobile-menu-toggle.active span:nth-child(3) {
+    transform: rotate(-45deg) translateY(-8px);
+}
+
+/* Mobile submenu (hidden by default) */
+.mobile-submenu {
+    display: none;
+    padding-left: 20px;
+    margin-top: 10px;
+}
+
+.mobile-submenu a {
+    font-size: 16px;
+    color: #ccc;
+    padding: 8px 0;
+    display: block;
+    text-transform: none;
+}
+
+.mobile-submenu a:hover {
+    color: var(--nav-hover);
+}
+
+/* =================================================================
+   RESPONSIVE BREAKPOINTS
+   ================================================================= */
+
+@media (max-width: 1200px) {
+    .industrial-nav ul {
+        gap: 24px;
+    }
+    
+    .dropdown-menu {
+        min-width: 260px;
+    }
+}
+
+@media (max-width: 1024px) {
+    .header-container {
+        padding: 0 16px;
+    }
+    
+    .industrial-nav ul {
+        gap: 20px;
+    }
+    
+    .industrial-nav a {
+        font-size: 14px;
+    }
+    
+    .industrial-cta {
+        padding: 10px 24px;
+        font-size: 18px;
+    }
+}
+
+@media (max-width: 768px) {
+    /* Show mobile toggle */
+    .mobile-menu-toggle {
+        display: block;
+        margin-left: auto;
+    }
+    
+    /* Hide desktop CTA on mobile */
+    .header-container > .industrial-cta {
+        display: none;
+    }
+    
+    /* Mobile navigation panel */
+    .industrial-nav {
+        position: fixed;
+        top: var(--header-height);
+        right: -100%;
+        width: var(--mobile-menu-width);
+        height: calc(100vh - var(--header-height));
+        background: var(--header-bg);
+        transition: right var(--transition-speed) ease;
+        flex-direction: column;
+        justify-content: flex-start;
+        padding: 40px 20px;
+        border-left: 2px solid var(--nav-hover);
+        overflow-y: auto;
+    }
+    
+    .industrial-nav.mobile-open {
+        right: 0;
+    }
+    
+    .industrial-nav ul {
+        flex-direction: column;
+        gap: 16px;
+        width: 100%;
+    }
+    
+    .industrial-nav li {
+        width: 100%;
+    }
+    
+    .industrial-nav a {
+        font-size: 18px;
+        width: 100%;
+        padding: 10px 0;
+        display: block;
+    }
+    
+    /* Hide desktop dropdown on mobile */
+    .dropdown-menu {
+        display: none !important;
+    }
+    
+    /* Remove dropdown arrow on mobile */
+    .has-dropdown > a::before {
+        content: '+';
+        float: right;
+        font-size: 24px;
+        margin: 0;
+        transition: transform var(--transition-speed) ease;
+    }
+    
+    .has-dropdown.mobile-expanded > a::before {
+        transform: rotate(45deg);
+    }
+    
+    /* Show mobile submenu when expanded */
+    .has-dropdown.mobile-expanded .mobile-submenu {
+        display: block;
+    }
+    
+    /* Remove underline animation on mobile */
+    .industrial-nav > ul > li > a::after {
+        display: none;
+    }
+}
+
+@media (max-width: 480px) {
+    .logo-text .h1-style {
+        font-size: 24px;
+    }
+    
+    .logo-badge {
+        width: 40px;
+        height: 40px;
+        font-size: 24px;
+    }
+}

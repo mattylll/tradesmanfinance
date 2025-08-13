@@ -236,31 +236,46 @@ document.addEventListener('DOMContentLoaded', function() {
      */
     async function submitFormToAPI(data) {
         const apiUrl = window.location.hostname === 'localhost' 
-            ? 'http://localhost:3000/api/contact' 
-            : '/api/contact';
+            ? 'http://localhost:3001/api/leads/submit' 
+            : '/api/leads/submit';
         
         try {
-            // First, fetch CSRF token
-            const csrfResponse = await fetch(apiUrl.replace('/contact', '/csrf-token'), {
-                credentials: 'include'
-            });
-            const csrfData = await csrfResponse.json();
+            // Restructure data to match backend schema
+            const submissionData = {
+                firstName: data.name?.split(' ')[0] || '',
+                lastName: data.name?.split(' ').slice(1).join(' ') || '',
+                email: data.email,
+                phone: data.phone || '',
+                businessName: data.business || data.businessName || 'Not specified',
+                tradeType: data.trade || 'builder', // Default to builder if not specified
+                location: {
+                    city: data.city || '',
+                    postcode: data.postcode || ''
+                },
+                financeDetails: {
+                    purpose: data.service || 'working-capital',
+                    amount: parseInt(data.amount) || 50000,
+                    urgency: data.urgency || 'this-month'
+                },
+                businessInfo: {
+                    yearsTrading: parseInt(data.yearsTrading) || 1,
+                    monthlyRevenue: parseInt(data.monthlyRevenue) || 10000
+                }
+            };
             
             const response = await fetch(apiUrl, {
                 method: 'POST',
                 headers: {
-                    'Content-Type': 'application/json',
-                    'X-CSRF-Token': csrfData.csrfToken
+                    'Content-Type': 'application/json'
                 },
-                credentials: 'include',
-                body: JSON.stringify(data)
+                body: JSON.stringify(submissionData)
             });
             
             const result = await response.json();
             
             if (!response.ok) {
-                // Handle CSRF errors specifically
-                if (response.status === 403 && result.message.includes('CSRF')) {
+                // Handle specific error cases
+                if (response.status === 409) {
                     throw new Error('Security validation failed. Please refresh the page and try again.');
                 }
                 throw new Error(result.message || 'Submission failed');

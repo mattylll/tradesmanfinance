@@ -693,35 +693,77 @@ class TradeForm {
         `;
         
         try {
-            // Add trade identification
-            this.formData.trade = this.config.tradeId;
-            this.formData.tradeName = this.config.tradeName;
+            // Restructure form data to match backend schema
+            const submissionData = {
+                firstName: this.formData.name?.split(' ')[0] || '',
+                lastName: this.formData.name?.split(' ').slice(1).join(' ') || '',
+                email: this.formData.email,
+                phone: this.formData.phone,
+                businessName: this.formData.businessName,
+                tradeType: this.config.tradeId,
+                location: {
+                    city: this.formData.location || '',
+                    postcode: this.formData.postcode || ''
+                },
+                financeDetails: {
+                    purpose: this.formData.financeType || 'equipment',
+                    amount: parseInt(this.formData.amount) || 0,
+                    urgency: this.formData.urgency || 'this-month',
+                    specificNeeds: this.formData.specificNeeds || ''
+                },
+                businessInfo: {
+                    yearsTrading: parseInt(this.formData.yearsTrading) || 0,
+                    monthlyRevenue: parseInt(this.formData.monthlyRevenue) || 0,
+                    companyNumber: this.formData.companyNumber || '',
+                    vatRegistered: this.formData.vatRegistered === 'yes',
+                    employees: parseInt(this.formData.employees) || 0,
+                    accreditations: this.formData.accreditations ? [this.formData.accreditations] : []
+                }
+            };
             
             // Submit to API
-            const response = await fetch('/api/trade-application', {
+            const response = await fetch('/api/leads/submit', {
                 method: 'POST',
                 headers: {
                     'Content-Type': 'application/json'
                 },
-                body: JSON.stringify(this.formData)
+                body: JSON.stringify(submissionData)
             });
             
             if (response.ok) {
+                const result = await response.json();
+                
                 // Clear saved progress
                 localStorage.removeItem(`tradeForm_${this.config.tradeId}`);
                 
-                // Show success screen
-                this.showSuccessScreen();
+                // Store lead ID for reference
+                this.leadId = result.leadId;
+                
+                // Show success screen with personalized message
+                this.showSuccessScreen(result.estimatedResponseTime);
             } else {
-                throw new Error('Submission failed');
+                const error = await response.json();
+                throw new Error(error.message || 'Submission failed');
             }
         } catch (error) {
             console.error('Form submission error:', error);
-            this.showErrorScreen();
+            
+            // Reset button
+            this.nextButton.disabled = false;
+            this.nextButton.innerHTML = `
+                Try Again
+                <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="3">
+                    <path d="M5 12h14M12 5l7 7-7 7"/>
+                </svg>
+            `;
+            
+            // Show specific error message
+            const errorMessage = error.message || 'Sorry, there was an error submitting your application. Please try again or call us directly.';
+            this.showErrorScreen(errorMessage);
         }
     }
     
-    showSuccessScreen() {
+    showSuccessScreen(estimatedResponseTime = '2 hours') {
         // Check experience level for different messaging
         const yearsTrading = this.formData.yearsTrading;
         const isNewTrader = yearsTrading === '0-2';
@@ -767,12 +809,12 @@ class TradeForm {
         `;
     }
     
-    showErrorScreen() {
+    showErrorScreen(errorMessage = 'Don\'t worry, your information is safe. Please try again or give us a call.') {
         this.container.innerHTML = `
             <div class="form-error">
                 <div class="error-icon">⚠️</div>
                 <h2 class="error-title">Oops! Something went wrong</h2>
-                <p class="error-message">Don't worry, your information is safe. Please try again or give us a call.</p>
+                <p class="error-message">${errorMessage}</p>
                 <div class="error-actions">
                     <button type="button" class="btn-industrial" onclick="location.reload()">Try Again</button>
                     <a href="tel:02037780274" class="btn-industrial-outline">

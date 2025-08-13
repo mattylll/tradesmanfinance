@@ -1,0 +1,4 @@
+User-agent: *
+Allow: /
+
+Sitemap: https://tradesmanfinance.co.uk/sitemap.xml
