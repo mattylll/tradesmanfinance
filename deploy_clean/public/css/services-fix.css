@@ -1,0 +1,609 @@
+/* Services Page Complete Fix */
+
+/* Fix body background */
+body {
+    background-color: #1a1a1a !important;
+    color: white !important;
+}
+
+/* Services Hero Section */
+.services-industrial-hero {
+    background: linear-gradient(135deg, #1a1a1a 0%, #2d2d2d 100%) !important;
+    padding: 140px 0 80px !important;
+    position: relative !important;
+    overflow: hidden !important;
+}
+
+.services-hero-content {
+    text-align: center !important;
+    max-width: 800px !important;
+    margin: 0 auto !important;
+    position: relative !important;
+    z-index: 2 !important;
+}
+
+.services-headline {
+    font-family: 'Bebas Neue', sans-serif !important;
+    font-size: clamp(48px, 8vw, 96px) !important;
+    line-height: 0.9 !important;
+    margin-bottom: 24px !important;
+}
+
+.text-outline {
+    color: transparent !important;
+    -webkit-text-stroke: 3px #ff6b35 !important;
+    display: block !important;
+}
+
+.text-fill {
+    color: #ffd93d !important;
+    display: block !important;
+}
+
+.services-subtitle {
+    font-size: 24px !important;
+    color: #ccc !important;
+    max-width: 600px !important;
+    margin: 0 auto !important;
+}
+
+/* Floating tools background */
+.hero-tools {
+    position: absolute !important;
+    top: 0 !important;
+    left: 0 !important;
+    width: 100% !important;
+    height: 100% !important;
+    pointer-events: none !important;
+}
+
+.floating-tool-bg {
+    position: absolute !important;
+    opacity: 0.1 !important;
+}
+
+.tool-1 {
+    top: 20% !important;
+    right: 10% !important;
+    animation: float 6s ease-in-out infinite !important;
+}
+
+.tool-2 {
+    bottom: 20% !important;
+    left: 10% !important;
+    animation: float 8s ease-in-out infinite !important;
+}
+
+@keyframes float {
+    0%, 100% { transform: translateY(0) rotate(0deg); }
+    50% { transform: translateY(-20px) rotate(10deg); }
+}
+
+/* Services Main Section */
+.services-main {
+    background: #0d0d0d !important;
+    padding: 100px 0 !important;
+    position: relative !important;
+}
+
+/* Services Grid */
+.services-industrial-grid {
+    display: grid !important;
+    grid-template-columns: repeat(auto-fit, minmax(400px, 1fr)) !important;
+    gap: 60px !important;
+    max-width: 1400px !important;
+    margin: 0 auto !important;
+}
+
+/* Service Cards */
+.service-industrial-card {
+    background: #1a1a1a !important;
+    border: 4px solid #333 !important;
+    padding: 48px !important;
+    position: relative !important;
+    transition: all 0.3s ease !important;
+    display: flex !important;
+    flex-direction: column !important;
+}
+
+.service-industrial-card:hover {
+    transform: translateY(-10px) !important;
+    border-color: #ff6b35 !important;
+    box-shadow: 0 20px 40px rgba(255, 107, 53, 0.3) !important;
+}
+
+.service-industrial-card.featured {
+    border-color: #ff6b35 !important;
+    box-shadow: 0 0 0 4px rgba(255, 107, 53, 0.2) !important;
+}
+
+/* Featured Badge */
+.featured-badge {
+    position: absolute !important;
+    top: -20px !important;
+    right: 20px !important;
+    background: #ff6b35 !important;
+    color: white !important;
+    padding: 8px 24px !important;
+    font-family: 'Bebas Neue', sans-serif !important;
+    font-size: 18px !important;
+    letter-spacing: 1px !important;
+}
+
+/* Service Header */
+.service-header {
+    display: flex !important;
+    justify-content: space-between !important;
+    align-items: flex-start !important;
+    margin-bottom: 32px !important;
+}
+
+.service-number {
+    font-family: 'Bebas Neue', sans-serif !important;
+    font-size: 72px !important;
+    color: rgba(255, 107, 53, 0.3) !important;
+    line-height: 1 !important;
+}
+
+.service-icon-large {
+    width: 100px !important;
+    height: 100px !important;
+}
+
+/* Service Title */
+.service-title {
+    font-family: 'Bebas Neue', sans-serif !important;
+    font-size: 48px !important;
+    color: white !important;
+    margin-bottom: 16px !important;
+    letter-spacing: 2px !important;
+}
+
+.service-tagline {
+    font-size: 20px !important;
+    color: #ff6b35 !important;
+    margin-bottom: 32px !important;
+    font-weight: 600 !important;
+}
+
+/* Service Details Grid */
+.service-details {
+    margin-bottom: 32px !important;
+}
+
+.detail-grid {
+    display: grid !important;
+    grid-template-columns: repeat(2, 1fr) !important;
+    gap: 24px !important;
+    padding: 24px !important;
+    background: rgba(255, 107, 53, 0.1) !important;
+    border: 2px solid rgba(255, 107, 53, 0.3) !important;
+}
+
+.detail-item {
+    text-align: center !important;
+}
+
+.detail-label {
+    display: block !important;
+    font-size: 12px !important;
+    color: #999 !important;
+    margin-bottom: 8px !important;
+    text-transform: uppercase !important;
+    letter-spacing: 1px !important;
+}
+
+.detail-value {
+    display: block !important;
+    font-family: 'Bebas Neue', sans-serif !important;
+    font-size: 32px !important;
+    color: #ffd93d !important;
+}
+
+/* Service Checklist */
+.service-checklist {
+    margin-bottom: 32px !important;
+}
+
+.service-checklist h3 {
+    font-family: 'Work Sans', sans-serif !important;
+    font-size: 20px !important;
+    color: white !important;
+    margin-bottom: 16px !important;
+    font-weight: 700 !important;
+}
+
+.service-checklist ul {
+    list-style: none !important;
+    padding: 0 !important;
+    margin: 0 !important;
+}
+
+.service-checklist li {
+    display: flex !important;
+    align-items: center !important;
+    gap: 12px !important;
+    padding: 8px 0 !important;
+    color: #ccc !important;
+    font-size: 16px !important;
+}
+
+.service-checklist li span {
+    color: #ff6b35 !important;
+    font-size: 20px !important;
+    font-weight: bold !important;
+}
+
+/* Service Examples */
+.service-examples {
+    margin-bottom: 32px !important;
+}
+
+.service-examples h3 {
+    font-family: 'Work Sans', sans-serif !important;
+    font-size: 20px !important;
+    color: white !important;
+    margin-bottom: 16px !important;
+    font-weight: 700 !important;
+}
+
+.example-tags {
+    display: flex !important;
+    flex-wrap: wrap !important;
+    gap: 12px !important;
+}
+
+.example-tags span {
+    background: #333 !important;
+    color: #ccc !important;
+    padding: 8px 16px !important;
+    font-size: 14px !important;
+    border: 1px solid #444 !important;
+    transition: all 0.2s ease !important;
+}
+
+.example-tags span:hover {
+    background: #ff6b35 !important;
+    color: white !important;
+    border-color: #ff6b35 !important;
+}
+
+/* Service Button */
+.service-industrial-button {
+    display: inline-flex !important;
+    align-items: center !important;
+    gap: 12px !important;
+    background: #ff6b35 !important;
+    color: white !important;
+    padding: 20px 48px !important;
+    text-decoration: none !important;
+    font-family: 'Bebas Neue', sans-serif !important;
+    font-size: 24px !important;
+    letter-spacing: 2px !important;
+    box-shadow: 6px 6px 0 rgba(0,0,0,0.5) !important;
+    transition: all 0.2s ease !important;
+    margin-top: auto !important;
+}
+
+.service-industrial-button:hover {
+    transform: translate(-3px, -3px) !important;
+    box-shadow: 9px 9px 0 rgba(0,0,0,0.5) !important;
+    background: #ff8c42 !important;
+}
+
+/* FAQ Section */
+.services-faq {
+    background: #1a1a1a !important;
+    padding: 100px 0 !important;
+    color: white !important;
+}
+
+.faq-header {
+    text-align: center !important;
+    margin-bottom: 60px !important;
+}
+
+.faq-header h2 {
+    font-family: 'Bebas Neue', sans-serif !important;
+    font-size: 64px !important;
+    color: white !important;
+    margin-bottom: 16px !important;
+}
+
+.faq-header p {
+    font-size: 20px !important;
+    color: #ccc !important;
+}
+
+/* Comparison Section */
+.comparison-section {
+    background: #0d0d0d !important;
+    padding: 100px 0 !important;
+}
+
+.comparison-header-text {
+    text-align: center !important;
+    margin-bottom: 60px !important;
+}
+
+.comparison-header-text h2 {
+    font-family: 'Bebas Neue', sans-serif !important;
+    font-size: 72px !important;
+    color: white !important;
+    margin-bottom: 16px !important;
+    letter-spacing: 3px !important;
+}
+
+.comparison-header-text p {
+    font-size: 20px !important;
+    color: #999 !important;
+}
+
+/* Comparison Table */
+.comparison-table {
+    max-width: 1200px !important;
+    margin: 0 auto !important;
+    background: #1a1a1a !important;
+    border: 4px solid #333 !important;
+    overflow: hidden !important;
+    box-shadow: 0 20px 40px rgba(0,0,0,0.5) !important;
+}
+
+/* Table Header */
+.comparison-header {
+    display: grid !important;
+    grid-template-columns: 200px repeat(4, 1fr) !important;
+    background: #ff6b35 !important;
+    color: white !important;
+}
+
+.comparison-header .comparison-cell {
+    padding: 20px !important;
+    font-family: 'Bebas Neue', sans-serif !important;
+    font-size: 24px !important;
+    text-align: center !important;
+    border-right: 2px solid rgba(255,255,255,0.2) !important;
+    letter-spacing: 1px !important;
+}
+
+.comparison-header .comparison-cell:first-child {
+    background: #e55a2b !important;
+    text-align: left !important;
+}
+
+.comparison-header .comparison-cell:last-child {
+    border-right: none !important;
+}
+
+/* Table Rows */
+.comparison-row {
+    display: grid !important;
+    grid-template-columns: 200px repeat(4, 1fr) !important;
+    border-bottom: 2px solid #333 !important;
+}
+
+.comparison-row:last-child {
+    border-bottom: none !important;
+}
+
+.comparison-row:nth-child(even) {
+    background: rgba(255,255,255,0.02) !important;
+}
+
+/* Table Cells */
+.comparison-cell {
+    padding: 24px 16px !important;
+    text-align: center !important;
+    border-right: 2px solid #333 !important;
+    color: #ccc !important;
+    font-size: 16px !important;
+    position: relative !important;
+}
+
+.comparison-cell:last-child {
+    border-right: none !important;
+}
+
+/* Feature Column */
+.comparison-cell.feature {
+    background: rgba(255,107,53,0.1) !important;
+    font-family: 'Work Sans', sans-serif !important;
+    font-weight: 700 !important;
+    text-align: left !important;
+    color: white !important;
+    text-transform: uppercase !important;
+    letter-spacing: 1px !important;
+    font-size: 14px !important;
+}
+
+/* Highlighted Cells */
+.comparison-cell.highlight {
+    background: rgba(255,217,61,0.1) !important;
+    color: #ffd93d !important;
+    font-weight: 700 !important;
+    font-size: 18px !important;
+}
+
+/* Good/Check Cells */
+.comparison-cell.good {
+    color: #4CAF50 !important;
+    font-weight: 600 !important;
+}
+
+/* Hover Effect */
+.comparison-row:hover {
+    background: rgba(255,107,53,0.05) !important;
+}
+
+.comparison-row:hover .comparison-cell {
+    color: white !important;
+}
+
+.comparison-row:hover .comparison-cell.feature {
+    background: rgba(255,107,53,0.2) !important;
+}
+
+/* CTA Section */
+.services-cta-section {
+    background: linear-gradient(135deg, #ff6b35 0%, #ffd93d 100%) !important;
+    padding: 100px 0 !important;
+    text-align: center !important;
+}
+
+/* Services CTA (different from main CTA) */
+.services-cta {
+    background: #1a1a1a !important;
+    padding: 100px 0 !important;
+    text-align: center !important;
+}
+
+.cta-headline {
+    font-family: 'Bebas Neue', sans-serif !important;
+    font-size: 72px !important;
+    color: white !important;
+    margin-bottom: 16px !important;
+    text-shadow: 4px 4px 0 rgba(0,0,0,0.3) !important;
+}
+
+.cta-subtitle {
+    font-size: 24px !important;
+    color: white !important;
+    margin-bottom: 48px !important;
+}
+
+.cta-features {
+    display: flex !important;
+    justify-content: center !important;
+    gap: 60px !important;
+    margin-bottom: 48px !important;
+}
+
+.cta-feature {
+    display: flex !important;
+    flex-direction: column !important;
+    align-items: center !important;
+    gap: 12px !important;
+}
+
+.cta-feature svg {
+    color: #ffd93d !important;
+}
+
+.cta-feature span {
+    font-family: 'Work Sans', sans-serif !important;
+    font-weight: 700 !important;
+    color: white !important;
+    text-transform: uppercase !important;
+    letter-spacing: 1px !important;
+    font-size: 14px !important;
+}
+
+.btn-massive-industrial {
+    display: inline-flex !important;
+    align-items: center !important;
+    gap: 16px !important;
+    background: white !important;
+    color: #1a1a1a !important;
+    padding: 24px 60px !important;
+    text-decoration: none !important;
+    font-family: 'Bebas Neue', sans-serif !important;
+    font-size: 32px !important;
+    letter-spacing: 2px !important;
+    box-shadow: 8px 8px 0 rgba(0,0,0,0.3) !important;
+    transition: all 0.2s ease !important;
+}
+
+.btn-massive-industrial:hover {
+    transform: translate(-4px, -4px) !important;
+    box-shadow: 12px 12px 0 rgba(0,0,0,0.3) !important;
+}
+
+.cta-content h2 {
+    font-family: 'Bebas Neue', sans-serif !important;
+    font-size: 72px !important;
+    color: white !important;
+    margin-bottom: 16px !important;
+    text-shadow: 4px 4px 0 rgba(0,0,0,0.3) !important;
+}
+
+.cta-content p {
+    font-size: 24px !important;
+    color: white !important;
+    margin-bottom: 48px !important;
+}
+
+/* Responsive Design */
+@media (max-width: 1200px) {
+    .services-industrial-grid {
+        grid-template-columns: repeat(auto-fit, minmax(350px, 1fr)) !important;
+        gap: 40px !important;
+    }
+    
+    .comparison-table {
+        margin: 0 20px !important;
+    }
+    
+    .comparison-header,
+    .comparison-row {
+        grid-template-columns: 150px repeat(4, 1fr) !important;
+    }
+    
+    .comparison-cell {
+        padding: 16px 8px !important;
+        font-size: 14px !important;
+    }
+}
+
+@media (max-width: 768px) {
+    .services-industrial-grid {
+        grid-template-columns: 1fr !important;
+        padding: 0 20px !important;
+    }
+    
+    .service-industrial-card {
+        padding: 32px !important;
+    }
+    
+    .service-title {
+        font-size: 36px !important;
+    }
+    
+    .detail-grid {
+        grid-template-columns: 1fr !important;
+    }
+    
+    .services-headline {
+        font-size: 48px !important;
+    }
+    
+    .cta-content h2,
+    .cta-headline,
+    .comparison-header-text h2 {
+        font-size: 48px !important;
+    }
+    
+    /* Mobile comparison table - scroll horizontally */
+    .comparison-table {
+        overflow-x: auto !important;
+        -webkit-overflow-scrolling: touch !important;
+    }
+    
+    .comparison-header,
+    .comparison-row {
+        min-width: 700px !important;
+    }
+    
+    .comparison-header .comparison-cell {
+        font-size: 18px !important;
+    }
+    
+    .cta-features {
+        flex-direction: column !important;
+        gap: 32px !important;
+    }
+    
+    .btn-massive-industrial {
+        font-size: 24px !important;
+        padding: 20px 40px !important;
+    }
+}

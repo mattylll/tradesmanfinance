@@ -721,13 +721,35 @@ class TradeForm {
                 }
             };
             
-            // Submit to API
-            const response = await fetch('/api/leads/submit', {
+            // Submit to Formspree
+            const FORMSPREE_ENDPOINT = 'https://formspree.io/f/mdklyrlp';
+            
+            // Convert to FormData for Formspree
+            const formData = new FormData();
+            formData.append('name', submissionData.name);
+            formData.append('email', submissionData.email);
+            formData.append('phone', submissionData.phone);
+            formData.append('businessName', submissionData.businessName);
+            formData.append('tradeType', submissionData.tradeType);
+            formData.append('location', `${submissionData.location.city} ${submissionData.location.postcode}`);
+            formData.append('financeAmount', submissionData.financeDetails.amount);
+            formData.append('financePurpose', submissionData.financeDetails.purpose);
+            formData.append('urgency', submissionData.financeDetails.urgency);
+            formData.append('specificNeeds', submissionData.financeDetails.specificNeeds);
+            formData.append('yearsTrading', submissionData.businessInfo.yearsTrading);
+            formData.append('monthlyRevenue', submissionData.businessInfo.monthlyRevenue);
+            formData.append('companyNumber', submissionData.businessInfo.companyNumber);
+            formData.append('vatRegistered', submissionData.businessInfo.vatRegistered ? 'Yes' : 'No');
+            formData.append('employees', submissionData.businessInfo.employees);
+            formData.append('accreditations', submissionData.businessInfo.accreditations.join(', '));
+            formData.append('_subject', `New ${this.config.tradeName} Finance Enquiry - ${submissionData.businessName}`);
+            
+            const response = await fetch(FORMSPREE_ENDPOINT, {
                 method: 'POST',
+                body: formData,
                 headers: {
-                    'Content-Type': 'application/json'
-                },
-                body: JSON.stringify(submissionData)
+                    'Accept': 'application/json'
+                }
             });
             
             if (response.ok) {
@@ -736,17 +758,23 @@ class TradeForm {
                 // Clear saved progress
                 localStorage.removeItem(`tradeForm_${this.config.tradeId}`);
                 
-                // Store lead ID for reference
-                this.leadId = result.leadId;
+                // Formspree doesn't return a lead ID, so we'll generate one locally
+                this.leadId = `TF-${Date.now()}`;
                 
-                // Show success screen with personalized message
-                this.showSuccessScreen(result.estimatedResponseTime);
+                // Show success screen
+                this.showSuccessScreen();
             } else {
                 const error = await response.json();
-                throw new Error(error.message || 'Submission failed');
+                // Handle Formspree errors format
+                if (error.errors) {
+                    const errorMessages = error.errors.map(err => err.message || err).join(', ');
+                    throw new Error(errorMessages);
+                } else {
+                    throw new Error(error.message || 'Submission failed');
+                }
             }
         } catch (error) {
-            console.error('Form submission error:', error);
+            // Log error silently in production
             
             // Reset button
             this.nextButton.disabled = false;

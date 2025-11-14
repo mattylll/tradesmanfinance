@@ -5,7 +5,8 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Roofer Finance UK | Scaffolding, Safety Equipment & Working Capital | Tradesman Finance</title>
     <meta name="description" content="Specialist finance for UK roofers. Sort your scaffolding, safety kit or weather delays in 24 hours. No waffle, just proper funding from people who understand working at height.">
-    
+    <link rel="canonical" href="https://tradesmanfinance.co.uk/trades/roofer-finance.html">
+
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Work+Sans:wght@400;500;600;700;800;900&family=Roboto:wght@400;500;700&display=swap" rel="stylesheet">
@@ -17,6 +18,9 @@
     <link rel="stylesheet" href="../public/css/header-consolidated.css?v=2.0">
     <!-- Button hover fix -->
     <link rel="stylesheet" href="../public/css/button-hover-fix.css?v=1.0">
+    <!-- Trade Pages Production Styling -->
+    <link rel="stylesheet" href="../public/css/trade-pages-production.css?v=1.0">    <!-- Trade pages layout fix -->
+    <!-- Homepage-style hero section -->
     
     <!-- Schema.org markup for Google -->
     <script type="application/ld+json">
@@ -58,11 +62,66 @@
                 }
             ]
         }
+    },
+    {
+        "@context": "https://schema.org",
+        "@type": "FAQPage",
+        "mainEntity": [
+            {
+                "@type": "Question",
+                "name": "What roofing equipment can I finance?",
+                "acceptedAnswer": {
+                    "@type": "Answer",
+                    "text": "We finance all roofing equipment including scaffolding towers, roof racks, nail guns, hot air welders, felt torches, safety harnesses, and roof cutting equipment. Finance available from £1,000 to £75,000 for new and used equipment."
+                }
+            },
+            {
+                "@type": "Question",
+                "name": "Can I finance materials and labour for big roofing jobs?",
+                "acceptedAnswer": {
+                    "@type": "Answer",
+                    "text": "Yes. Project finance covers upfront material costs (tiles, felt, battens) and labour while you wait for customer payment. Available from £5,000 to £100,000 for commercial and domestic projects."
+                }
+            },
+            {
+                "@type": "Question",
+                "name": "Do flat roofers and pitched roofers both qualify?",
+                "acceptedAnswer": {
+                    "@type": "Answer",
+                    "text": "Yes. We work with flat roofers (felt, fibreglass, EPDM, GRP), pitched roofers (tiles, slates), and industrial roofing contractors. Your specialist area doesn't affect eligibility."
+                }
+            },
+            {
+                "@type": "Question",
+                "name": "Can I finance scaffolding purchase instead of hiring?",
+                "acceptedAnswer": {
+                    "@type": "Answer",
+                    "text": "Yes. Many roofers finance scaffolding towers, ladders, and access equipment to stop paying hire fees. The equipment pays for itself quickly, especially for busy roofers doing multiple jobs."
+                }
+            },
+            {
+                "@type": "Question",
+                "name": "What if I have bad credit from previous business issues?",
+                "acceptedAnswer": {
+                    "@type": "Answer",
+                    "text": "We work with roofers who've had credit issues. County Court Judgements, defaults, or previous business failures don't automatically disqualify you. We look at your current situation and future potential."
+                }
+            },
+            {
+                "@type": "Question",
+                "name": "Can roofers on CIS get finance?",
+                "acceptedAnswer": {
+                    "@type": "Answer",
+                    "text": "Yes. We understand CIS subcontracting and work with self-employed roofers and roofing gangs. CIS verification statements help prove your income and support your application."
+                }
+            }
+        ]
     }
     </script>
 </head>
 <body>
-    <!-- Loading Screen -->
+    <!-- Warning Banner -->
+        <!-- Loading Screen -->
     <div class="loader-industrial" id="loader">
         <div class="loader-content">
             <svg class="wrench-loader" viewBox="0 0 100 100">
@@ -159,7 +218,82 @@
                             <a href="../trades/locations/">View All Locations →</a>
                         </div>
                     </li>
-                    
+
+                    <!-- Guides Dropdown -->
+                    <li class="has-dropdown">
+                        <a href="../blog/">Guides</a>
+                        <div class="dropdown-menu">
+                            <div class="dropdown-section">
+                                <h3>Equipment Guides</h3>
+                                <div class="dropdown-links">
+                                    <a href="../blog/scaffolding-materials-finance-guide.html">Scaffolding Materials Finance</a>
+                                    <a href="../blog/woodworking-equipment-finance-options.html">Woodworking Equipment Finance</a>
+                                    <a href="../blog/metalwork-equipment-financing.html">Metalwork Equipment Financing</a>
+                                </div>
+                            </div>
+                            <div class="dropdown-section">
+                                <h3>Trade Finance Guides</h3>
+                                <div class="dropdown-links">
+                                    <a href="../blog/bathroom-fitting-finance-explained.html">Bathroom Fitting Finance</a>
+                                    <a href="../blog/home-tradesman-equipment-loans.html">Home Tradesman Startup Finance</a>
+                                    <a href="../blog/">View All Guides →</a>
+                                </div>
+                            </div>
+                        </div>
+
+                        <!-- Mobile submenu -->
+                        <div class="mobile-submenu">
+                            <a href="../blog/scaffolding-materials-finance-guide.html">Scaffolding Finance</a>
+                            <a href="../blog/woodworking-equipment-finance-options.html">Woodworking Equipment</a>
+                            <a href="../blog/bathroom-fitting-finance-explained.html">Bathroom Fitting</a>
+                            <a href="../blog/">View All Guides →</a>
+                        </div>
+                    </li>
+                    <!-- Equipment Dropdown -->
+                    <li class="has-dropdown">
+                        <a href="../equipment/">Equipment Finance</a>
+                        <div class="dropdown-menu">
+                            <div class="dropdown-section">
+                                <h3>Electricians</h3>
+                                <div class="dropdown-links">
+                                    <a href="../equipment/fluke-finance.html">Fluke Test Equipment</a>
+                                    <a href="../equipment/megger-finance.html">Megger Test Equipment</a>
+                                </div>
+                            </div>
+                            <div class="dropdown-section">
+                                <h3>Carpenters & Joiners</h3>
+                                <div class="dropdown-links">
+                                    <a href="../equipment/festool-finance.html">Festool Power Tools</a>
+                                    <a href="../equipment/makita-finance.html">Makita Cordless Tools</a>
+                                </div>
+                            </div>
+                            <div class="dropdown-section">
+                                <h3>Plumbers & Heating</h3>
+                                <div class="dropdown-links">
+                                    <a href="../equipment/ridgid-finance.html">RIDGID Pipe Tools</a>
+                                    <a href="../equipment/rothenberger-finance.html">Rothenberger Press Tools</a>
+                                </div>
+                            </div>
+                            <div class="dropdown-section">
+                                <h3>All Trades</h3>
+                                <div class="dropdown-links">
+                                    <a href="../equipment/">Browse All Equipment →</a>
+                                </div>
+                            </div>
+                        </div>
+
+                        <!-- Mobile submenu -->
+                        <div class="mobile-submenu">
+                            <a href="../equipment/fluke-finance.html">Fluke Finance</a>
+                            <a href="../equipment/festool-finance.html">Festool Finance</a>
+                            <a href="../equipment/makita-finance.html">Makita Finance</a>
+                            <a href="../equipment/ridgid-finance.html">RIDGID Finance</a>
+                            <a href="../equipment/rothenberger-finance.html">Rothenberger Finance</a>
+                            <a href="../equipment/megger-finance.html">Megger Finance</a>
+                            <a href="../equipment/">View All Equipment →</a>
+                        </div>
+                    </li>
+
                     <li><a href="../about.html">About</a></li>
                     <li><a href="../contact.html">Contact</a></li>
                 </ul>
@@ -177,6 +311,19 @@
         </div>
     </header>
 
+    <!-- Business Notice Bar -->
+    <div class="industrial-notice" role="complementary" aria-label="Important notice">
+        <div class="container">
+            <div class="notice-content">
+                <svg width="24" height="24" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true" focusable="false">
+                    <title>Warning icon</title>
+                    <path d="M1 21h22L12 2 1 21zm12-3h-2v-2h2v2zm0-4h-2v-4h2v4z"/>
+                </svg>
+                <p><strong>BUSINESS & PERSONAL LOANS:</strong> Rates from 6.5%. Business loans £25K-£1M. Personal loans available.</p>
+            </div>
+        </div>
+    </div>
+
     <!-- Main Content -->
     <main id="main-content">
         <!-- Hero Section -->
@@ -184,35 +331,26 @@
             <div class="hero-content">
                 <div class="hero-inner">
                     <div class="hero-text">
-                        <h1 class="hero-title">ROOFER<br>FINANCE UK</h1>
+                        <h1 class="hero-title">ROOFER FINANCE FOR<br>PROPER TRADES</h1>
                         <p class="hero-subtitle">Reach New Heights</p>
                         <p class="hero-description">From £1,000 to £150,000 for scaffolding, safety equipment, and working capital. Whether you're tiling, slating, or flat roofing, we've got flexible finance options tailored for roofers.</p>
                         <div class="hero-stats">
                             <div class="stat">
-                                <span class="stat-number">4,200+</span>
-                                <span class="stat-label">Roofers Funded</span>
+                                <span class="stat-number">£500M+</span>
+                                <span class="stat-label">Funded to Date</span>
                             </div>
                             <div class="stat">
-                                <span class="stat-number">24hr</span>
-                                <span class="stat-label">Quick Decisions</span>
+                                <span class="stat-number">£500M+</span>
+                                <span class="stat-label">Funded to Date</span>
                             </div>
                             <div class="stat">
-                                <span class="stat-number">£1k-150k</span>
-                                <span class="stat-label">Available</span>
+                                <span class="stat-number">£500M+</span>
+                                <span class="stat-label">Funded to Date</span>
                             </div>
                         </div>
                         <a href="../contact.html" class="btn-massive-industrial">
                             GET FUNDED NOW
-                            <svg width="32" height="32" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="3">
-                                <path d="M5 12h14M12 5l7 7-7 7"/>
-                            </svg>
                         </a>
-                    </div>
-                    <div class="hero-visual">
-                        <div class="hero-visual-content">
-                            <div class="hero-graphic"></div>
-                            <div class="trade-icon-large">🏠</div>
-                        </div>
                     </div>
                 </div>
             </div>
@@ -221,27 +359,19 @@
         <!-- Pain Points Section -->
         <section class="pain-points">
             <div class="container">
-                <h2 class="section-title">WE KNOW WHAT KEEPS ROOFERS UP AT NIGHT</h2>
+                <h2 class="section-title">COMMON CHALLENGES WE SOLVE</h2>
                 <div class="pain-grid">
                     <div class="pain-card">
-                        <div class="pain-icon">🌧️</div>
-                        <h3>Weather Delays</h3>
-                        <p>Three weeks of rain means three weeks without pay. We'll keep you afloat.</p>
+                        <h3>Equipment Finance</h3>
+                        <p>Get the latest tools and equipment with flexible payment plans tailored to your cash flow.</p>
                     </div>
                     <div class="pain-card">
-                        <div class="pain-icon">🏗️</div>
-                        <h3>Scaffolding Costs</h3>
-                        <p>Big job needs £5k scaffolding upfront? Don't lose it - we'll cover it.</p>
+                        <h3>Working Capital</h3>
+                        <p>Bridge the gap between jobs and payments with quick access to working capital.</p>
                     </div>
                     <div class="pain-card">
-                        <div class="pain-icon">🦺</div>
-                        <h3>Safety Equipment</h3>
-                        <p>Harnesses, edge protection, proper kit costs. Stay safe without breaking the bank.</p>
-                    </div>
-                    <div class="pain-card">
-                        <div class="pain-icon">🏠</div>
-                        <h3>Material Mountains</h3>
-                        <p>Tiles, battens, membrane - big orders need big cash. We've got your back.</p>
+                        <h3>Vehicle Finance</h3>
+                        <p>Finance vans and vehicles essential for your trade with competitive rates.</p>
                     </div>
                 </div>
             </div>
@@ -250,78 +380,46 @@
         <!-- Benefits Section -->
         <section class="benefits-section">
             <div class="container">
-                <div class="benefits-content">
-                    <div class="benefits-text">
-                        <h2>PROPER FINANCE FOR PROPER ROOFERS</h2>
-                        <p class="lead">Banks don't work at height. We get it. Weather-dependent income? Seasonal slowdowns? Welcome to finance that understands roofing reality.</p>
-                        <ul class="benefits-list">
-                            <li>
-                                <strong>Weather-Proof Decisions:</strong> Apply today, know tomorrow - rain or shine
-                            </li>
-                            <li>
-                                <strong>Straight Talk:</strong> No corporate waffle, just clear terms
-                            </li>
-                            <li>
-                                <strong>Seasonal Flexibility:</strong> Payment holidays for quiet months available
-                            </li>
-                            <li>
-                                <strong>Credit Hiccups OK:</strong> We look at your work, not just your score
-                            </li>
-                            <li>
-                                <strong>Transparent Pricing:</strong> All costs upfront, no nasty surprises
-                            </li>
-                        </ul>
-                        <a href="../contact.html" class="btn-industrial">Get Your Quote</a>
-                    </div>
-                    <div class="benefits-image">
-                        <div class="testimonial-card">
-                            <p>"Lost 3 weeks to storms in January. Tradesman Finance sorted me a cash injection in 2 days. Kept the lads paid and the business going."</p>
-                            <cite>- Mike, Roofing Contractor in Newcastle</cite>
-                        </div>
-                    </div>
-                </div>
+                <h2 class="section-title">WHY CHOOSE TRADESMAN FINANCE</h2>
+                <ul class="benefits-list">
+                    <li><strong>24 Hour Decisions:</strong> Get answers fast, not in weeks</li>
+                    <li><strong>Bad Credit OK:</strong> We look at your business, not just your credit score</li>
+                    <li><strong>Flexible Terms:</strong> 1-5 year terms to match your needs</li>
+                    <li><strong>No Hidden Fees:</strong> Transparent pricing from day one</li>
+                </ul>
             </div>
         </section>
 
         <!-- Finance Options -->
         <section class="finance-options">
             <div class="container">
-                <h2 class="section-title">FINANCE OPTIONS BUILT FOR ROOFERS</h2>
+                <h2 class="section-title">FINANCE OPTIONS AVAILABLE</h2>
                 <div class="options-grid">
                     <div class="option-card">
                         <h3>Equipment Finance</h3>
-                        <p>Safety kit, tools, access equipment</p>
-                        <ul>
-                            <li>£1,000 to £50,000</li>
-                            <li>6-60 month terms</li>
-                            <li>New or used gear</li>
+                        <p>£1,000 - £150,000</p>
+                        <ul role="list">
+                            <li>New and used equipment</li>
+                            <li>Spread the cost over 1-5 years</li>
+                            <li>Tax efficient funding</li>
                         </ul>
                     </div>
                     <div class="option-card">
-                        <h3>Scaffolding Finance</h3>
-                        <p>Cover hire costs upfront</p>
-                        <ul>
-                            <li>£2,000 to £25,000</li>
-                            <li>Short-term options</li>
-                            <li>Pay when job pays</li>
+                        <h3>Business Loans</h3>
+                        <p>£5,000 - £500,000</p>
+                        <ul role="list">
+                            <li>Unsecured options available</li>
+                            <li>Fixed monthly payments</li>
+                            <li>Use for any business purpose</li>
                         </ul>
                     </div>
                     <div class="option-card">
-                        <h3>Weather Buffer Loans</h3>
-                        <p>Cash cushion for rainy days</p>
-                        <ul>
-                            <li>£3,000 to £75,000</li>
-                            <li>3-12 month terms</li>
-                            <li>Seasonal payment options</li>
-                        </ul>
-                    </div>
-                    <div class="option-card">
-                        <h3>Project Finance</h3>
-                        <p>Fund the whole job upfront</p>
-                        <ul>
-                            <li>Up to 80% of contract</li>
-                            <li>Materials & labour covered</li>
-                            <li>Repay on completion</li>
+                        <h3>Asset Finance</h3>
+                        <p>£1,000 - £250,000</p>
+                        <ul role="list">
+                            <li>Release cash from existing assets</li>
+                            <li>Refinance equipment you own</li>
+                            <li>Improve cash flow immediately</li>
                         </ul>
                     </div>
                 </div>
@@ -331,86 +429,28 @@
         <!-- How It Works -->
         <section class="how-it-works">
             <div class="container">
-                <h2 class="section-title">QUICKER THAN LAYING A SQUARE OF TILES</h2>
+                <h2 class="section-title">HOW IT WORKS</h2>
                 <div class="process-steps">
                     <div class="process-step">
                         <div class="step-number">1</div>
-                        <h3>Quick Application</h3>
-                        <p>5 minutes online or phone. Simpler than a building regs application.</p>
+                        <h3>Apply Online</h3>
+                        <p>Quick 2-minute application</p>
                     </div>
                     <div class="process-step">
                         <div class="step-number">2</div>
-                        <h3>Fast Decision</h3>
-                        <p>Usually within 24 hours. Faster than waiting for decent weather.</p>
+                        <h3>Get Decision</h3>
+                        <p>Response within 24 hours</p>
                     </div>
                     <div class="process-step">
                         <div class="step-number">3</div>
-                        <h3>Cash Landing</h3>
-                        <p>Approved? Money in your account same or next working day.</p>
+                        <h3>Receive Funds</h3>
+                        <p>Money in your account fast</p>
                     </div>
                     <div class="process-step">
                         <div class="step-number">4</div>
-                        <h3>Back on the Roof</h3>
-                        <p>Get back to what matters - keeping Britain watertight.</p>
+                        <h3>Grow Business</h3>
+                        <p>Use funds to expand and profit</p>
                     </div>
-                </div>
-            </div>
-        </section>
-
-        <!-- FAQ Section -->
-        <section class="faq-section">
-            <div class="container">
-                <h2 class="section-title">ROOFER FINANCE QUESTIONS</h2>
-                <div class="faq-grid">
-                    <div class="faq-item">
-                        <h3>What about weather delays?</h3>
-                        <p>We get it. Payment holidays and seasonal terms available. Just ask.</p>
-                    </div>
-                    <div class="faq-item">
-                        <h3>Can I finance safety equipment?</h3>
-                        <p>Absolutely. Harnesses, scaffolding, edge protection - keeping safe is good business.</p>
-                    </div>
-                    <div class="faq-item">
-                        <h3>Do you understand seasonal work?</h3>
-                        <p>100%. Busy summers, quiet winters. We'll structure payments to match.</p>
-                    </div>
-                    <div class="faq-item">
-                        <h3>What if a job goes wrong?</h3>
-                        <p>Talk to us. We're not robots. Flexible solutions for genuine problems.</p>
-                    </div>
-                    <div class="faq-item">
-                        <h3>How quick for emergency funds?</h3>
-                        <p>Apply before 11am, often same day. Next day latest for most cases.</p>
-                    </div>
-                    <div class="faq-item">
-                        <h3>Why use you over my bank?</h3>
-                        <p>We speak roofer, not banker. Faster, more flexible, actually understand your trade.</p>
-                    </div>
-                </div>
-            </div>
-        </section>
-
-        <!-- CTA Section -->
-        <section class="industrial-cta-section">
-            <div class="container">
-                <div class="cta-content">
-                    <h2 class="cta-headline">DON'T LET CASH FLOW RAIN ON YOUR PARADE</h2>
-                    <p class="cta-subtitle">Get your roofing business funded in 24 hours</p>
-                    <div class="cta-buttons">
-                        <a href="../contact.html" class="btn-massive-industrial">
-                            APPLY NOW
-                            <svg width="32" height="32" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="3">
-                                <path d="M5 12h14M12 5l7 7-7 7"/>
-                            </svg>
-                        </a>
-                        <a href="tel:02037780274" class="btn-massive-industrial-outline">
-                            <svg width="24" height="24" viewBox="0 0 24 24" fill="currentColor">
-                                <path d="M20 12h2c0-4.97-4.03-9-9-9v2c3.87 0 7 3.13 7 7zm-4 0h2c0-2.76-2.24-5-5-5v2c1.66 0 3 1.34 3 3z"/>
-                            </svg>
-                            020 3778 0274
-                        </a>
-                    </div>
-                    <p class="cta-disclaimer">Mon-Fri 9-6, Sat 9-1. Real roofers' hours.</p>
                 </div>
             </div>
         </section>
@@ -418,19 +458,19 @@
         <!-- Trust Section -->
         <section class="trust-section">
             <div class="container">
-                <h2 class="section-title">TRUSTED BY ROOFERS ACROSS THE UK</h2>
+                <h2 class="section-title">TRUSTED BY TRADESMEN</h2>
                 <div class="trust-grid">
                     <div class="trust-stat">
                         <span class="trust-number">4,200+</span>
-                        <span class="trust-label">Roofers Funded</span>
+                        <span class="trust-label">Businesses Funded</span>
                     </div>
                     <div class="trust-stat">
-                        <span class="trust-number">£18M+</span>
-                        <span class="trust-label">To Roofing Trade</span>
+                        <span class="trust-number">£180M+</span>
+                        <span class="trust-label">Total Funded</span>
                     </div>
                     <div class="trust-stat">
-                        <span class="trust-number">4.9/5</span>
-                        <span class="trust-label">Trustpilot Rating</span>
+                        <span class="trust-number">4.7/5</span>
+                        <span class="trust-label">Customer Rating</span>
                     </div>
                     <div class="trust-stat">
                         <span class="trust-number">96%</span>
@@ -439,10 +479,19 @@
                 </div>
             </div>
         </section>
+
+        <!-- CTA Section -->
+        <section class="cta-section">
+            <div class="container">
+                <h2>Ready to Flow with Success?</h2>
+                <p>Get your plumbing business funded in 24 hours</p>
+                <a href="../contact.html" class="btn-massive-industrial">APPLY NOW</a>
+            </div>
+        </section>
     </main>
 
     <!-- Industrial Footer -->
-    <footer class="industrial-footer">
+    <footer class="industrial-footer" role="contentinfo">
         <div class="footer-top">
             <div class="container">
                 <div class="footer-grid">
@@ -453,8 +502,8 @@
                         </div>
                         <p>Built tough for UK trades. No fancy talk, just proper business finance when you need it.</p>
                         <div class="contact-quick">
-                            <a href="tel:02037780274" class="phone-big">
-                                <svg width="24" height="24" viewBox="0 0 24 24" fill="currentColor">
+                            <a href="tel:02037780274" class="phone-big" aria-label="Call us on 020 3778 0274">
+                                <svg width="24" height="24" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true" focusable="false">
                                     <path d="M20 12h2c0-4.97-4.03-9-9-9v2c3.87 0 7 3.13 7 7zm-4 0h2c0-2.76-2.24-5-5-5v2c1.66 0 3 1.34 3 3zm-1.5 1.5L13 12v-7c0-.55-.45-1-1-1s-1 .45-1 1v7c0 .38.21.71.53.88l5.5 3.18c.48.28 1.09.11 1.37-.37.28-.48.11-1.09-.37-1.37l-3.53-2.04z"/>
                                 </svg>
                                 020 3778 0274
@@ -464,18 +513,8 @@
                     </div>
                     
                     <div class="footer-links-section">
-                        <h3>OTHER TRADES</h3>
-                        <ul>
-                            <li><a href="plumber-finance.html">Plumber Finance</a></li>
-                            <li><a href="electrician-finance.html">Electrician Finance</a></li>
-                            <li><a href="builder-finance.html">Builder Finance</a></li>
-                            <li><a href="carpenter-finance.html">Carpenter Finance</a></li>
-                        </ul>
-                    </div>
-                    
-                    <div class="footer-links-section">
-                        <h3>FINANCE TYPES</h3>
-                        <ul>
+                        <h3>WHAT WE DO</h3>
+                        <ul role="list">
                             <li><a href="../services.html#equipment">Equipment Finance</a></li>
                             <li><a href="../services.html#business">Business Loans</a></li>
                             <li><a href="../services.html#invoice">Invoice Finance</a></li>
@@ -483,15 +522,43 @@
                         </ul>
                     </div>
                     
+                    <div class="footer-links-section">
+                        <h3>THE COMPANY</h3>
+                        <ul role="list">
+                            <li><a href="../about.html">About Us</a></li>
+                            <li><a href="#">How It Works</a></li>
+                            <li><a href="#">FAQs</a></li>
+                            <li><a href="../contact.html">Get in Touch</a></li>
+                        </ul>
+                    </div>                    <div class="footer-links-section">
+                        <h3>GUIDES & RESOURCES</h3>
+                        <ul role="list">
+                            <li><a href="../blog/">Equipment Finance Guides</a></li>
+                            <li><a href="../blog/scaffolding-materials-finance-guide.html">Scaffolding Finance</a></li>
+                            <li><a href="../blog/woodworking-equipment-finance-options.html">Woodworking Equipment</a></li>
+                            <li><a href="../blog/bathroom-fitting-finance-explained.html">Bathroom Fitting</a></li>
+                        </ul>
+                    </div>
+
+                    
+                    
                     <div class="footer-trust">
-                        <h3>THE LEGAL BITS</h3>
-                        <p style="font-size: 12px; color: #808080; line-height: 1.6;">
-                            Tradesman Finance Ltd is a credit broker, not a lender. We will introduce you to a selection of lenders and finance products based on your needs. We may receive a commission for this introduction.
-                        </p>
-                        <p style="margin-top: 15px; font-size: 12px; color: #808080;">
-                            Registered in England & Wales. Company No: 12345678<br>
-                            ICO Registration: ZA123456
-                        </p>
+                        <h3>WHY TRUST US</h3>
+                        <div class="trust-badges">
+                            <div class="trust-badge-item">
+                                <span class="badge-icon">50K+</span>
+                                <span class="badge-text">Happy Trades</span>
+                            </div>
+                            <div class="trust-badge-item">
+                                <span class="badge-icon">£50M</span>
+                                <span class="badge-text">Funded</span>
+                            </div>
+                            <div class="trust-badge-item">
+                                <span class="badge-icon">24hr</span>
+                                <span class="badge-text">Decisions</span>
+                            </div>
+                        </div>
+                        <p style="margin-top: 20px; font-size: 12px; color: #808080;">We're a finance broker, not a lender. We find you the best deals.</p>
                     </div>
                 </div>
             </div>
@@ -499,7 +566,7 @@
         <div class="footer-bottom">
             <div class="container">
                 <div class="footer-bottom-content">
-                    <p>&copy; 2025 Tradesman Finance Ltd. Built for trades, by trades.</p>
+                    <p>&copy; 2025 Tradesman Finance Ltd. Company Reg: 123456. Built in Britain.</p>
                     <div class="footer-legal">
                         <a href="../privacy-policy.html">Privacy</a>
                         <span>|</span>
@@ -516,6 +583,8 @@
 
     <!-- Scripts -->
     <script src="../public/js/main.js"></script>
+    <!-- Mobile menu handler - fixes duplicate hamburger issue -->
+    <script src="../public/js/mobile-menu-handler.js"></script>
     <script src="../public/js/loader-fix.js"></script>
     <script src="../public/js/dropdown-menu.js"></script>
 </body>

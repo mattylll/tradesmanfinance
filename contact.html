@@ -31,10 +31,14 @@
     <link rel="stylesheet" href="/public/css/accessibility.css?v=1.0">
     <link rel="stylesheet" href="/public/css/contact-fix.css?v=1.0">
     <link rel="stylesheet" href="/public/css/contact-map-fix.css?v=1.1">
+    <!-- Dropdown menu styles -->
+    <link rel="stylesheet" href="/public/css/dropdown-menu.css?v=1.0">
     <!-- Consolidated header styles -->
     <link rel="stylesheet" href="/public/css/header-consolidated.css?v=2.0">
     <!-- Button hover fix -->
     <link rel="stylesheet" href="/public/css/button-hover-fix.css?v=1.0">
+    <!-- Mobile menu fix - MUST be loaded last -->
+    <link rel="stylesheet" href="/public/css/mobile-menu-fix.css?v=1.0">
 </head>
 <body>
     <!-- Loading Screen -->
@@ -134,7 +138,37 @@
                             <a href="/trades/locations/">View All Locations →</a>
                         </div>
                     </li>
-                    
+
+                    <!-- Guides Dropdown -->
+                    <li class="has-dropdown">
+                        <a href="/blog/">Guides</a>
+                        <div class="dropdown-menu">
+                            <div class="dropdown-section">
+                                <h3>Equipment Guides</h3>
+                                <div class="dropdown-links">
+                                    <a href="/blog/scaffolding-materials-finance-guide.html">Scaffolding Materials Finance</a>
+                                    <a href="/blog/woodworking-equipment-finance-options.html">Woodworking Equipment Finance</a>
+                                    <a href="/blog/metalwork-equipment-financing.html">Metalwork Equipment Financing</a>
+                                </div>
+                            </div>
+                            <div class="dropdown-section">
+                                <h3>Trade Finance Guides</h3>
+                                <div class="dropdown-links">
+                                    <a href="/blog/bathroom-fitting-finance-explained.html">Bathroom Fitting Finance</a>
+                                    <a href="/blog/home-tradesman-equipment-loans.html">Home Tradesman Startup Finance</a>
+                                    <a href="/blog/">View All Guides →</a>
+                                </div>
+                            </div>
+                        </div>
+
+                        <!-- Mobile submenu -->
+                        <div class="mobile-submenu">
+                            <a href="/blog/scaffolding-materials-finance-guide.html">Scaffolding Finance</a>
+                            <a href="/blog/woodworking-equipment-finance-options.html">Woodworking Equipment</a>
+                            <a href="/blog/bathroom-fitting-finance-explained.html">Bathroom Fitting</a>
+                            <a href="/blog/">View All Guides →</a>
+                        </div>
+                    </li>
                     <li><a href="/about.html">About</a></li>
                     <li><a href="/contact.html">Contact</a></li>
                 </ul>
@@ -233,7 +267,15 @@
                         <div class="form-row-industrial">
                             <div class="form-group-industrial">
                                 <label for="amount">HOW MUCH YOU NEED</label>
-                                <input type="text" id="amount" name="amount" placeholder="£50,000">
+                                <div class="input-with-reset">
+                                    <input type="text" id="amount" name="amount" placeholder="£50,000">
+                                    <button type="button" id="clearQuote" class="btn-clear-quote" title="Clear finance quote">
+                                        <svg width="16" height="16" viewBox="0 0 24 24" fill="currentColor">
+                                            <path d="M19 6.41L17.59 5 12 10.59 6.41 5 5 6.41 10.59 12 5 17.59 6.41 19 12 13.41 17.59 19 19 17.59 13.41 12z"/>
+                                        </svg>
+                                        Clear Quote
+                                    </button>
+                                </div>
                                 <span class="form-hint-industrial">BALLPARK FIGURE IS FINE</span>
                             </div>
                             <div class="form-group-industrial">
@@ -488,7 +530,17 @@
                         </div>
                         <p style="margin-top: 20px; font-size: 12px; color: #808080;">We're a finance broker, not a lender. We find you the best deals.</p>
                     </div>
-                </div>
+                                    <div class="footer-links-section">
+                        <h3>GUIDES & RESOURCES</h3>
+                        <ul role="list">
+                            <li><a href="/blog/">Equipment Finance Guides</a></li>
+                            <li><a href="/blog/scaffolding-materials-finance-guide.html">Scaffolding Finance</a></li>
+                            <li><a href="/blog/woodworking-equipment-finance-options.html">Woodworking Equipment</a></li>
+                            <li><a href="/blog/bathroom-fitting-finance-explained.html">Bathroom Fitting</a></li>
+                        </ul>
+                    </div>
+
+                    </div></div>
             </div>
         </div>
         <div class="footer-bottom">
@@ -510,7 +562,16 @@
     <!-- Scripts -->
     <script src="/public/js/industrial-animations.js" type="module"></script>
     <script src="/public/js/industrial-init.js"></script>
+    <!-- Form Calculator Integration -->
+    <script src="/public/js/form-calculator-integration.js"></script>
+    
+    <!-- Formspree Integration - Form Submissions -->
+    <script src="/public/js/formspree-integration.js"></script>
+    
+    <!-- Main JavaScript -->
     <script src="/public/js/main.js"></script>
+    <!-- Mobile menu handler - fixes duplicate hamburger issue -->
+    <script src="/public/js/mobile-menu-handler.js"></script>
     <script>
         // Contact page specific animations
         window.addEventListener('load', () => {
@@ -575,9 +636,9 @@
                     };
                     
                     // Get API URL
-                    const apiUrl = window.location.hostname === 'localhost' 
-                        ? 'http://localhost:3000/api' 
-                        : '/api';
+                    const apiUrl = window.location.hostname === 'localhost' || window.location.hostname === '127.0.0.1'
+                        ? 'http://localhost:3001/api' 
+                        : 'https://api.tradesmanfinance.co.uk/api';
                     
                     // Fetch CSRF token
                     const csrfResponse = await fetch(`${apiUrl}/csrf-token`, {
@@ -632,5 +693,7 @@
     <script src="/public/js/loader-fix.js"></script>
     <!-- Fixed dropdown menu functionality -->
     <script src="/public/js/dropdown-menu-fixed.js"></script>
+    <!-- Calculator to Form Integration -->
+    <script src="/public/js/form-calculator-integration.js"></script>
 </body>
 </html>

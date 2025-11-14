@@ -1,0 +1,123 @@
+/* Aggressive Hero Section Compacting - Removes all excess space */
+/* Load this LAST after all other CSS files */
+
+/* Main hero section - make it as compact as possible */
+.construction-hero,
+section.construction-hero {
+    /* Remove ALL height constraints */
+    min-height: 0 !important;
+    max-height: none !important;
+    height: auto !important;
+    
+    /* Minimal padding */
+    padding: 15px 0 15px !important;
+    margin: 0 !important;
+    
+    /* Standard block display */
+    display: block !important;
+    overflow: visible !important;
+}
+
+/* Hero grid - make it compact */
+.hero-grid,
+.construction-hero .hero-grid {
+    /* Remove ALL height constraints */
+    min-height: 0 !important;
+    max-height: none !important;
+    height: auto !important;
+    
+    /* Keep grid but make it compact */
+    display: grid !important;
+    grid-template-columns: 1fr 1fr;
+    gap: 30px !important;
+    align-items: flex-start !important;
+    padding: 0 !important;
+    margin: 0 !important;
+}
+
+/* Hero content area */
+.hero-content {
+    padding: 0 !important;
+    margin: 0 !important;
+}
+
+/* Headlines and text - reduce spacing */
+.hero-headline,
+.construction-hero h1 {
+    margin: 0 0 15px 0 !important;
+    padding: 0 !important;
+}
+
+.hero-subtitle,
+.construction-hero p {
+    margin: 0 0 20px 0 !important;
+    padding: 0 !important;
+}
+
+/* Button group */
+.button-group {
+    margin: 0 0 20px 0 !important;
+    padding: 0 !important;
+}
+
+/* Stats grid at bottom */
+.stats-grid {
+    margin: 0 !important;
+    padding: 0 !important;
+    gap: 15px !important;
+}
+
+/* Hide any background decorative elements */
+.construction-bg,
+#constructionScene,
+.hero-bg,
+.construction-hero::before,
+.construction-hero::after {
+    display: none !important;
+}
+
+/* Calculator preview box on the right */
+.hero-visual,
+.calculator-preview {
+    padding: 0 !important;
+    margin: 0 !important;
+}
+
+/* Mobile responsive */
+@media (max-width: 768px) {
+    .construction-hero {
+        padding: 10px 0 !important;
+    }
+    
+    .hero-grid,
+    .construction-hero .hero-grid {
+        grid-template-columns: 1fr !important;
+        gap: 15px !important;
+    }
+    
+    .hero-headline {
+        font-size: 2rem !important;
+        margin-bottom: 10px !important;
+    }
+}
+
+/* Ensure the section after hero follows immediately */
+.construction-hero + section,
+.construction-hero + * {
+    margin-top: 0 !important;
+}
+
+/* Override any container padding that might be adding space */
+.construction-hero .container {
+    padding-top: 0 !important;
+    padding-bottom: 0 !important;
+}
+
+/* Force auto-sizing based on content */
+@media (min-width: 769px) {
+    .construction-hero {
+        /* Let content determine height */
+        height: auto !important;
+        min-height: 0 !important;
+    }
+}

@@ -1,0 +1,295 @@
+/* Trade Pages Final Fix - Proper spacing and layout */
+
+/* Override previous problematic styles */
+.trade-hero {
+    background: #1a1a1a !important;
+    padding: 60px 0 60px !important; /* Reasonable padding */
+    min-height: auto !important;
+    height: auto !important;
+    position: relative;
+    overflow: hidden;
+}
+
+/* Ensure warning banner displays properly */
+.warning-banner {
+    background: #ffd93d;
+    color: #1a1a1a;
+    padding: 12px 20px;
+    text-align: center;
+    font-weight: 700;
+    font-size: 0.95rem;
+    letter-spacing: 0.5px;
+    position: relative;
+    z-index: 100;
+    margin: 0;
+}
+
+/* Hero content with proper spacing */
+.hero-content {
+    position: relative;
+    z-index: 10;
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 20px;
+}
+
+/* Hero title - SEO optimized size */
+.hero-title {
+    font-family: 'Bebas Neue', sans-serif !important;
+    font-size: clamp(2.5rem, 5vw, 4rem) !important;
+    color: #ff6b35 !important;
+    text-transform: uppercase;
+    line-height: 1 !important;
+    margin-bottom: 20px !important;
+    letter-spacing: 1px;
+}
+
+/* Subtitle */
+.hero-subtitle {
+    font-family: 'Bebas Neue', sans-serif !important;
+    font-size: 1.8rem !important;
+    color: #ffd93d !important;
+    text-transform: uppercase;
+    line-height: 1 !important;
+    margin-bottom: 20px !important;
+}
+
+/* Description */
+.hero-description {
+    font-size: 1.1rem !important;
+    color: #e0e0e0 !important;
+    line-height: 1.6 !important;
+    margin-bottom: 30px !important;
+    max-width: 800px;
+}
+
+/* Stats with proper spacing */
+.hero-stats {
+    display: flex !important;
+    gap: 20px !important;
+    margin-bottom: 30px !important;
+    flex-wrap: wrap;
+}
+
+.stat {
+    background: transparent !important;
+    border: 2px solid #ff6b35 !important;
+    padding: 20px !important;
+    text-align: center !important;
+    flex: 1;
+    min-width: 150px;
+}
+
+.stat-number {
+    display: block !important;
+    font-family: 'Bebas Neue', sans-serif !important;
+    font-size: 2.5rem !important;
+    color: #ff6b35 !important;
+    line-height: 1 !important;
+    margin-bottom: 5px !important;
+}
+
+.stat-label {
+    display: block !important;
+    font-size: 0.85rem !important;
+    color: #fff !important;
+    text-transform: uppercase !important;
+    letter-spacing: 1px !important;
+}
+
+/* CTA Button */
+.btn-massive-industrial {
+    display: inline-block !important;
+    background: #ff6b35 !important;
+    color: #fff !important;
+    padding: 15px 35px !important;
+    font-size: 1rem !important;
+    font-weight: 700 !important;
+    text-transform: uppercase !important;
+    letter-spacing: 1px !important;
+    border: none !important;
+    text-decoration: none !important;
+    transition: all 0.3s ease !important;
+    cursor: pointer;
+}
+
+.btn-massive-industrial:hover {
+    background: #ff8c42 !important;
+    transform: translateY(-2px) !important;
+}
+
+/* Content sections with proper spacing */
+.pain-points,
+.benefits-section,
+.finance-options,
+.equipment-section,
+.how-it-works,
+.faq-section,
+.trust-section,
+.cta-section {
+    padding: 60px 0 !important;
+}
+
+/* Alternating backgrounds */
+.pain-points,
+.finance-options,
+.how-it-works {
+    background: #f5f5f5 !important;
+}
+
+.benefits-section,
+.equipment-section,
+.trust-section {
+    background: #2d2d2d !important;
+    color: #fff !important;
+}
+
+.faq-section {
+    background: #fff !important;
+}
+
+/* Section titles */
+.section-title {
+    font-family: 'Bebas Neue', sans-serif !important;
+    font-size: 2.5rem !important;
+    text-align: center;
+    margin-bottom: 40px !important;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+}
+
+/* Container */
+.container {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 20px;
+}
+
+/* Grid layouts */
+.pain-grid,
+.options-grid,
+.equipment-grid,
+.process-steps,
+.faq-grid,
+.trust-grid {
+    display: grid;
+    gap: 30px;
+    margin-top: 40px;
+}
+
+.pain-grid,
+.options-grid {
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+}
+
+.equipment-grid {
+    grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
+}
+
+.process-steps {
+    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+}
+
+.faq-grid {
+    grid-template-columns: repeat(auto-fit, minmax(400px, 1fr));
+}
+
+.trust-grid {
+    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+}
+
+/* Cards */
+.pain-card,
+.option-card {
+    background: white;
+    padding: 30px;
+    border-radius: 8px;
+    box-shadow: 0 2px 10px rgba(0,0,0,0.1);
+}
+
+.pain-card h3,
+.option-card h3 {
+    font-size: 1.4rem;
+    margin-bottom: 15px;
+    color: #1a1a1a;
+}
+
+.equipment-item {
+    background: rgba(255,255,255,0.05);
+    padding: 20px;
+    border-left: 3px solid #ff6b35;
+}
+
+.process-step {
+    text-align: center;
+}
+
+.step-number {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    width: 60px;
+    height: 60px;
+    background: #ff6b35;
+    color: white;
+    font-size: 1.5rem;
+    border-radius: 50%;
+    margin-bottom: 15px;
+}
+
+.faq-item {
+    background: #f5f5f5;
+    padding: 25px;
+    border-left: 3px solid #ff6b35;
+}
+
+/* Mobile responsive */
+@media (max-width: 768px) {
+    .trade-hero {
+        padding: 40px 0 !important;
+    }
+    
+    .hero-title {
+        font-size: 2rem !important;
+    }
+    
+    .hero-subtitle {
+        font-size: 1.3rem !important;
+    }
+    
+    .hero-stats {
+        flex-direction: column;
+    }
+    
+    .stat {
+        min-width: 100%;
+    }
+    
+    .pain-grid,
+    .options-grid,
+    .equipment-grid,
+    .process-steps,
+    .faq-grid,
+    .trust-grid {
+        grid-template-columns: 1fr;
+    }
+}
+
+/* Ensure all content is visible */
+* {
+    opacity: 1 !important;
+    visibility: visible !important;
+}
+
+/* Remove any animations that cause issues */
+.trade-hero *,
+.pain-points *,
+.benefits-section *,
+.finance-options *,
+.equipment-section *,
+.how-it-works *,
+.faq-section *,
+.trust-section * {
+    animation: none !important;
+    transform: none !important;
+}

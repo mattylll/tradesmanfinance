@@ -1,0 +1,1034 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    
+    <!-- SEO Optimized Title & Meta Tags -->
+    <title>Tradesman Finance UK | Business Loans for Tradesmen | Get Quote in 24hrs</title>
+    <meta name="description" content="Fast business loans for UK tradesmen. Get £5,000 to £500,000 approved in 24 hours. Electricians, plumbers, builders - flexible funding built for trades. Apply online in 5 minutes.">
+    <meta name="keywords" content="tradesman finance, business loans for tradesmen, trade finance UK, electrician loans, plumber finance, builder loans, construction finance, working capital for trades">
+    
+    <!-- Open Graph / Social Media -->
+    <meta property="og:title" content="Tradesman Finance UK - Fast Business Loans for Trades">
+    <meta property="og:description" content="Get £5,000 to £500,000 for your trade business. Quick 24hr decisions, flexible terms. Built by tradesmen, for tradesmen.">
+    <meta property="og:type" content="website">
+    <meta property="og:url" content="https://tradesmanfinance.co.uk">
+    <meta property="og:image" content="https://tradesmanfinance.co.uk/images/og-image.jpg">
+    
+    <!-- Canonical URL -->
+    <link rel="canonical" href="https://tradesmanfinance.co.uk">
+    
+    <!-- Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800;900&display=swap" rel="stylesheet">
+    
+    <!-- Enhanced Design System -->
+    <link rel="stylesheet" href="public/css/enhanced-design-system.css">
+    
+    <!-- Schema Markup for LocalBusiness -->
+    <script type="application/ld+json">
+    {
+        "@context": "https://schema.org",
+        "@type": "FinancialService",
+        "name": "Tradesman Finance UK",
+        "description": "Business loans and finance solutions for UK tradesmen",
+        "url": "https://tradesmanfinance.co.uk",
+        "logo": "https://tradesmanfinance.co.uk/images/logo.png",
+        "address": {
+            "@type": "PostalAddress",
+            "addressCountry": "GB"
+        },
+        "priceRange": "£5,000 - £500,000",
+        "aggregateRating": {
+            "@type": "AggregateRating",
+            "ratingValue": "4.8",
+            "reviewCount": "2347"
+        }
+    }
+    </script>
+    
+    <!-- Additional Page Styles -->
+    <style>
+        /* Hero Section with Professional Background */
+        .hero-section {
+            position: relative;
+            min-height: 100vh;
+            display: flex;
+            align-items: center;
+            background-image: 
+                linear-gradient(135deg, rgba(44, 82, 130, 0.92), rgba(59, 130, 246, 0.85)),
+                url('https://images.unsplash.com/photo-1581092921461-eab62e97a780?ixlib=rb-4.0.3&auto=format&fit=crop&w=2000&q=80');
+            background-size: cover;
+            background-position: center;
+            background-attachment: fixed;
+            overflow: hidden;
+        }
+        
+        /* Navigation with Clean Design */
+        .navbar {
+            position: fixed;
+            top: 0;
+            left: 0;
+            right: 0;
+            background: rgba(255, 255, 255, 0.98);
+            backdrop-filter: blur(10px);
+            z-index: 1000;
+            padding: 1rem 0;
+            transition: all 0.3s ease;
+            box-shadow: 0 1px 3px rgba(0, 0, 0, 0.05);
+        }
+        
+        .navbar.scrolled {
+            box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+        }
+        
+        /* Container */
+        .container {
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: 0 1.5rem;
+        }
+        
+        /* Trust Badges Bar */
+        .trust-badges {
+            background: white;
+            padding: 1.5rem 0;
+            border-bottom: 1px solid var(--gray-100);
+        }
+        
+        .badge-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+            gap: 2rem;
+            text-align: center;
+        }
+        
+        .trust-badge {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            gap: 0.5rem;
+        }
+        
+        .badge-number {
+            font-size: 2rem;
+            font-weight: 800;
+            color: var(--primary);
+            line-height: 1;
+        }
+        
+        .badge-label {
+            font-size: 0.875rem;
+            color: var(--gray-600);
+            font-weight: 500;
+        }
+        
+        /* Service Cards */
+        .service-card {
+            background: white;
+            border-radius: 1rem;
+            padding: 2rem;
+            box-shadow: 0 4px 6px rgba(0, 0, 0, 0.07);
+            transition: all 0.3s ease;
+            position: relative;
+            overflow: hidden;
+        }
+        
+        .service-card:hover {
+            transform: translateY(-5px);
+            box-shadow: 0 10px 20px rgba(0, 0, 0, 0.1);
+        }
+        
+        .service-card::before {
+            content: '';
+            position: absolute;
+            top: 0;
+            left: 0;
+            right: 0;
+            height: 4px;
+            background: var(--primary-gradient);
+        }
+        
+        /* Trade Cards with Images */
+        .trade-card {
+            position: relative;
+            border-radius: 1rem;
+            overflow: hidden;
+            height: 350px;
+            cursor: pointer;
+            transition: all 0.3s ease;
+        }
+        
+        .trade-card:hover {
+            transform: translateY(-8px);
+            box-shadow: 0 20px 40px rgba(0, 0, 0, 0.15);
+        }
+        
+        .trade-card img {
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+            transition: transform 0.5s ease;
+        }
+        
+        .trade-card:hover img {
+            transform: scale(1.1);
+        }
+        
+        .trade-overlay {
+            position: absolute;
+            bottom: 0;
+            left: 0;
+            right: 0;
+            background: linear-gradient(to top, rgba(0,0,0,0.9), rgba(0,0,0,0.3));
+            padding: 2rem 1.5rem;
+            color: white;
+            transform: translateY(20px);
+            transition: transform 0.3s ease;
+        }
+        
+        .trade-card:hover .trade-overlay {
+            transform: translateY(0);
+        }
+        
+        /* Testimonial Cards with Photos */
+        .testimonial-modern {
+            background: white;
+            border-radius: 1rem;
+            padding: 2rem;
+            box-shadow: 0 4px 6px rgba(0, 0, 0, 0.07);
+            position: relative;
+        }
+        
+        .testimonial-modern:hover {
+            box-shadow: 0 10px 20px rgba(0, 0, 0, 0.1);
+        }
+        
+        .testimonial-header {
+            display: flex;
+            align-items: center;
+            gap: 1rem;
+            margin-bottom: 1.5rem;
+        }
+        
+        .testimonial-avatar {
+            width: 60px;
+            height: 60px;
+            border-radius: 50%;
+            object-fit: cover;
+            border: 3px solid var(--primary);
+        }
+        
+        /* Calculator Section */
+        .calculator-container {
+            background: var(--gray-50);
+            border-radius: 1rem;
+            padding: 2rem;
+            box-shadow: 0 4px 6px rgba(0, 0, 0, 0.05);
+        }
+        
+        /* FAQ Accordion */
+        .faq-item {
+            background: white;
+            border-radius: 0.75rem;
+            margin-bottom: 1rem;
+            overflow: hidden;
+            box-shadow: 0 2px 4px rgba(0, 0, 0, 0.05);
+        }
+        
+        .faq-question {
+            padding: 1.5rem;
+            cursor: pointer;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            font-weight: 600;
+            transition: background 0.3s ease;
+        }
+        
+        .faq-question:hover {
+            background: var(--gray-50);
+        }
+        
+        .faq-answer {
+            padding: 0 1.5rem;
+            max-height: 0;
+            overflow: hidden;
+            transition: max-height 0.3s ease, padding 0.3s ease;
+        }
+        
+        .faq-item.active .faq-answer {
+            max-height: 500px;
+            padding: 0 1.5rem 1.5rem;
+        }
+        
+        /* Founder Section */
+        .founder-story {
+            background: linear-gradient(135deg, var(--gray-50), white);
+            border-radius: 1rem;
+            padding: 3rem;
+            display: grid;
+            grid-template-columns: 300px 1fr;
+            gap: 3rem;
+            align-items: center;
+        }
+        
+        .founder-image {
+            position: relative;
+            border-radius: 1rem;
+            overflow: hidden;
+            box-shadow: 0 10px 30px rgba(0, 0, 0, 0.1);
+        }
+        
+        .founder-image img {
+            width: 100%;
+            height: auto;
+        }
+        
+        .founder-badge {
+            position: absolute;
+            bottom: 1rem;
+            left: 1rem;
+            right: 1rem;
+            background: var(--primary);
+            color: white;
+            padding: 0.75rem;
+            border-radius: 0.5rem;
+            text-align: center;
+            font-weight: 600;
+            font-size: 0.875rem;
+        }
+        
+        /* Responsive Design */
+        @media (max-width: 768px) {
+            .badge-grid {
+                grid-template-columns: repeat(2, 1fr);
+                gap: 1rem;
+            }
+            
+            .founder-story {
+                grid-template-columns: 1fr;
+                padding: 2rem;
+            }
+            
+            .trade-card {
+                height: 250px;
+            }
+        }
+    </style>
+</head>
+<body>
+    <!-- Navigation -->
+    <nav class="navbar" id="navbar">
+        <div class="container">
+            <div style="display: flex; justify-content: space-between; align-items: center;">
+                <a href="/" style="text-decoration: none; display: flex; align-items: center; gap: 0.75rem;">
+                    <div style="width: 40px; height: 40px; background: var(--primary-gradient); border-radius: 0.5rem; display: flex; align-items: center; justify-content: center; color: white; font-weight: 900; font-size: 1.25rem;">TF</div>
+                    <span style="font-size: 1.5rem; font-weight: 800; color: var(--primary);">Tradesman Finance</span>
+                </a>
+                
+                <div style="display: flex; align-items: center; gap: 2rem;">
+                    <a href="#services" style="color: var(--gray-600); text-decoration: none; font-weight: 600; transition: color 0.3s;">Services</a>
+                    <a href="#who-we-help" style="color: var(--gray-600); text-decoration: none; font-weight: 600; transition: color 0.3s;">Who We Help</a>
+                    <a href="#how-it-works" style="color: var(--gray-600); text-decoration: none; font-weight: 600; transition: color 0.3s;">How It Works</a>
+                    <a href="#testimonials" style="color: var(--gray-600); text-decoration: none; font-weight: 600; transition: color 0.3s;">Reviews</a>
+                    <a href="#calculator" class="btn-enhanced btn-primary">Get Your Quote</a>
+                </div>
+            </div>
+        </div>
+    </nav>
+    
+    <!-- Hero Section with Tradesperson Background -->
+    <section class="hero-section">
+        <div class="container" style="padding-top: 100px;">
+            <div style="max-width: 700px; color: white;">
+                <div class="badge badge-warning" style="background: var(--warning); color: white; padding: 0.5rem 1rem; margin-bottom: 1.5rem;">
+                    ⚡ Trusted by 10,000+ UK Tradesmen
+                </div>
+                
+                <h1 class="heading-xl" style="color: white; margin-bottom: 1.5rem;">
+                    Tradesman Finance UK - Get Your Business Loan in 24 Hours
+                </h1>
+                
+                <p style="font-size: 1.25rem; line-height: 1.7; margin-bottom: 2rem; opacity: 0.95;">
+                    Fast, flexible business loans from £5,000 to £500,000. Built by tradesmen who understand your business. No paperwork hassle, just straightforward funding when you need it.
+                </p>
+                
+                <div style="display: flex; gap: 1rem; margin-bottom: 2rem;">
+                    <div style="display: flex; align-items: center; gap: 0.5rem;">
+                        <div style="width: 24px; height: 24px; background: var(--success); border-radius: 50%; display: flex; align-items: center; justify-content: center; color: white;">✓</div>
+                        <span>24-hour decisions</span>
+                    </div>
+                    <div style="display: flex; align-items: center; gap: 0.5rem;">
+                        <div style="width: 24px; height: 24px; background: var(--success); border-radius: 50%; display: flex; align-items: center; justify-content: center; color: white;">✓</div>
+                        <span>Fixed monthly payments</span>
+                    </div>
+                    <div style="display: flex; align-items: center; gap: 0.5rem;">
+                        <div style="width: 24px; height: 24px; background: var(--success); border-radius: 50%; display: flex; align-items: center; justify-content: center; color: white;">✓</div>
+                        <span>No early repayment fees</span>
+                    </div>
+                </div>
+                
+                <div style="display: flex; gap: 1rem;">
+                    <a href="#calculator" class="btn-enhanced btn-lg" style="background: var(--warning); color: white; padding: 1rem 2rem; border-radius: 0.5rem; text-decoration: none; font-weight: 700; font-size: 1.125rem;">
+                        Get Instant Quote →
+                    </a>
+                    <a href="#how-it-works" class="btn-enhanced btn-lg" style="background: rgba(255, 255, 255, 0.2); color: white; border: 2px solid white; padding: 1rem 2rem; border-radius: 0.5rem; text-decoration: none; font-weight: 700; font-size: 1.125rem;">
+                        See How It Works
+                    </a>
+                </div>
+            </div>
+        </div>
+    </section>
+    
+    <!-- Trust Badges -->
+    <section class="trust-badges">
+        <div class="container">
+            <div class="badge-grid">
+                <div class="trust-badge">
+                    <div class="badge-number">£50M+</div>
+                    <div class="badge-label">Funded to UK Trades</div>
+                </div>
+                <div class="trust-badge">
+                    <div class="badge-number">10,000+</div>
+                    <div class="badge-label">Happy Customers</div>
+                </div>
+                <div class="trust-badge">
+                    <div class="badge-number">4.8★</div>
+                    <div class="badge-label">Trustpilot Rating</div>
+                </div>
+                <div class="trust-badge">
+                    <div class="badge-number">24hrs</div>
+                    <div class="badge-label">Fast Decisions</div>
+                </div>
+            </div>
+        </div>
+    </section>
+    
+    <!-- Services Section -->
+    <section id="services" style="padding: 5rem 0; background: var(--gray-50);">
+        <div class="container">
+            <div style="text-align: center; margin-bottom: 3rem;">
+                <div class="badge badge-primary" style="margin-bottom: 1rem;">Our Services</div>
+                <h2 class="heading-lg">Finance Solutions for Every Trade Need</h2>
+                <p style="font-size: 1.125rem; color: var(--gray-600); max-width: 600px; margin: 1rem auto;">
+                    Whether you need new equipment, a van, or working capital, we have the right solution
+                </p>
+            </div>
+            
+            <div class="grid-3" style="gap: 2rem;">
+                <div class="service-card">
+                    <div class="icon-box icon-box-primary" style="margin-bottom: 1.5rem;">🚐</div>
+                    <h3 style="font-size: 1.5rem; margin-bottom: 1rem;">Vehicle Finance</h3>
+                    <p style="color: var(--gray-600); margin-bottom: 1.5rem;">Get a new van or upgrade your fleet with competitive rates and flexible terms.</p>
+                    <a href="/vehicle-finance" style="color: var(--primary); font-weight: 600; text-decoration: none;">Learn more →</a>
+                </div>
+                
+                <div class="service-card">
+                    <div class="icon-box icon-box-primary" style="margin-bottom: 1.5rem;">🔧</div>
+                    <h3 style="font-size: 1.5rem; margin-bottom: 1rem;">Equipment Finance</h3>
+                    <p style="color: var(--gray-600); margin-bottom: 1.5rem;">Fund tools and machinery to take on bigger projects and grow your business.</p>
+                    <a href="/equipment-finance" style="color: var(--primary); font-weight: 600; text-decoration: none;">Learn more →</a>
+                </div>
+                
+                <div class="service-card">
+                    <div class="icon-box icon-box-primary" style="margin-bottom: 1.5rem;">💼</div>
+                    <h3 style="font-size: 1.5rem; margin-bottom: 1rem;">Working Capital</h3>
+                    <p style="color: var(--gray-600); margin-bottom: 1.5rem;">Cover materials, wages, and expenses while waiting for customer payments.</p>
+                    <a href="/working-capital" style="color: var(--primary); font-weight: 600; text-decoration: none;">Learn more →</a>
+                </div>
+                
+                <div class="service-card">
+                    <div class="icon-box icon-box-primary" style="margin-bottom: 1.5rem;">📋</div>
+                    <h3 style="font-size: 1.5rem; margin-bottom: 1rem;">Invoice Finance</h3>
+                    <p style="color: var(--gray-600); margin-bottom: 1.5rem;">Get paid immediately for completed work instead of waiting 30-90 days.</p>
+                    <a href="/invoice-finance" style="color: var(--primary); font-weight: 600; text-decoration: none;">Learn more →</a>
+                </div>
+                
+                <div class="service-card">
+                    <div class="icon-box icon-box-primary" style="margin-bottom: 1.5rem;">🏗️</div>
+                    <h3 style="font-size: 1.5rem; margin-bottom: 1rem;">Project Finance</h3>
+                    <p style="color: var(--gray-600); margin-bottom: 1.5rem;">Fund large commercial projects with tailored payment schedules.</p>
+                    <a href="/project-finance" style="color: var(--primary); font-weight: 600; text-decoration: none;">Learn more →</a>
+                </div>
+                
+                <div class="service-card">
+                    <div class="icon-box icon-box-primary" style="margin-bottom: 1.5rem;">🏢</div>
+                    <h3 style="font-size: 1.5rem; margin-bottom: 1rem;">Property Finance</h3>
+                    <p style="color: var(--gray-600); margin-bottom: 1.5rem;">Buy premises, workshops, or investment properties with competitive rates.</p>
+                    <a href="/property-finance" style="color: var(--primary); font-weight: 600; text-decoration: none;">Learn more →</a>
+                </div>
+            </div>
+        </div>
+    </section>
+    
+    <!-- How It Works -->
+    <section id="how-it-works" style="padding: 5rem 0; background: white;">
+        <div class="container">
+            <div style="text-align: center; margin-bottom: 3rem;">
+                <div class="badge badge-success" style="margin-bottom: 1rem;">Simple Process</div>
+                <h2 class="heading-lg">Get Funded in 3 Simple Steps</h2>
+                <p style="font-size: 1.125rem; color: var(--gray-600); max-width: 600px; margin: 1rem auto;">
+                    No complicated paperwork, no waiting weeks - just fast funding for your business
+                </p>
+            </div>
+            
+            <div class="grid-3" style="gap: 2rem;">
+                <div style="text-align: center; position: relative;">
+                    <div style="width: 80px; height: 80px; background: var(--primary-gradient); border-radius: 50%; display: flex; align-items: center; justify-content: center; margin: 0 auto 1.5rem; color: white; font-size: 2rem; font-weight: 700;">1</div>
+                    <h3 style="font-size: 1.5rem; margin-bottom: 1rem;">Apply Online</h3>
+                    <p style="color: var(--gray-600);">Complete our simple form in under 5 minutes. No paperwork required.</p>
+                    <div class="badge badge-success" style="margin-top: 1rem;">⏱️ 5 minutes</div>
+                </div>
+                
+                <div style="text-align: center; position: relative;">
+                    <div style="width: 80px; height: 80px; background: var(--primary-gradient); border-radius: 50%; display: flex; align-items: center; justify-content: center; margin: 0 auto 1.5rem; color: white; font-size: 2rem; font-weight: 700;">2</div>
+                    <h3 style="font-size: 1.5rem; margin-bottom: 1rem;">Get Decision</h3>
+                    <p style="color: var(--gray-600);">Receive your approval and see your rates within 24 hours.</p>
+                    <div class="badge badge-success" style="margin-top: 1rem;">✅ 24 hours</div>
+                </div>
+                
+                <div style="text-align: center; position: relative;">
+                    <div style="width: 80px; height: 80px; background: var(--primary-gradient); border-radius: 50%; display: flex; align-items: center; justify-content: center; margin: 0 auto 1.5rem; color: white; font-size: 2rem; font-weight: 700;">3</div>
+                    <h3 style="font-size: 1.5rem; margin-bottom: 1rem;">Receive Funds</h3>
+                    <p style="color: var(--gray-600);">Money in your account the same day. Start growing your business.</p>
+                    <div class="badge badge-success" style="margin-top: 1rem;">💰 Same day</div>
+                </div>
+            </div>
+        </div>
+    </section>
+    
+    <!-- Calculator Section -->
+    <section id="calculator" style="padding: 5rem 0; background: var(--gray-50);">
+        <div class="container">
+            <div style="text-align: center; margin-bottom: 3rem;">
+                <div class="badge badge-warning" style="margin-bottom: 1rem;">Quick Calculator</div>
+                <h2 class="heading-lg">Calculate Your Monthly Payments</h2>
+                <p style="font-size: 1.125rem; color: var(--gray-600); max-width: 600px; margin: 1rem auto;">
+                    See what you could borrow and your repayment options - no credit check required
+                </p>
+            </div>
+            
+            <div class="calculator-container" style="max-width: 800px; margin: 0 auto;">
+                <div class="grid-2" style="gap: 2rem; margin-bottom: 2rem;">
+                    <div>
+                        <label style="display: block; font-weight: 600; margin-bottom: 0.5rem;">Loan Amount</label>
+                        <input type="range" id="loanAmount" min="5000" max="500000" step="5000" value="50000" style="width: 100%;">
+                        <div style="display: flex; justify-content: space-between; margin-top: 0.5rem;">
+                            <span>£5,000</span>
+                            <span id="loanAmountDisplay" style="font-size: 1.5rem; font-weight: 700; color: var(--primary);">£50,000</span>
+                            <span>£500,000</span>
+                        </div>
+                    </div>
+                    
+                    <div>
+                        <label style="display: block; font-weight: 600; margin-bottom: 0.5rem;">Term Length</label>
+                        <input type="range" id="termLength" min="6" max="60" step="6" value="24" style="width: 100%;">
+                        <div style="display: flex; justify-content: space-between; margin-top: 0.5rem;">
+                            <span>6 months</span>
+                            <span id="termLengthDisplay" style="font-size: 1.5rem; font-weight: 700; color: var(--primary);">24 months</span>
+                            <span>60 months</span>
+                        </div>
+                    </div>
+                </div>
+                
+                <div style="background: white; border-radius: 1rem; padding: 2rem; text-align: center;">
+                    <p style="color: var(--gray-600); margin-bottom: 0.5rem;">Estimated Monthly Payment</p>
+                    <div id="monthlyPayment" style="font-size: 3rem; font-weight: 800; color: var(--primary); margin-bottom: 1rem;">£2,291</div>
+                    <div style="display: flex; justify-content: center; gap: 3rem; margin-bottom: 2rem;">
+                        <div>
+                            <span style="color: var(--gray-600); font-size: 0.875rem;">Total Repayable</span>
+                            <div id="totalRepayable" style="font-weight: 700; color: var(--gray-800);">£54,984</div>
+                        </div>
+                        <div>
+                            <span style="color: var(--gray-600); font-size: 0.875rem;">Interest Rate</span>
+                            <div style="font-weight: 700; color: var(--gray-800);">From 1.5% per month</div>
+                        </div>
+                    </div>
+                    <a href="#apply" class="btn-enhanced btn-primary btn-lg" style="width: 100%;">Get Your Actual Quote →</a>
+                </div>
+            </div>
+        </div>
+    </section>
+    
+    <!-- Who We Help Section with Trade Photos -->
+    <section id="who-we-help" style="padding: 5rem 0; background: white;">
+        <div class="container">
+            <div style="text-align: center; margin-bottom: 3rem;">
+                <div class="badge badge-primary" style="margin-bottom: 1rem;">Who We Help</div>
+                <h2 class="heading-lg">Funding Every Trade, Every Day</h2>
+                <p style="font-size: 1.125rem; color: var(--gray-600); max-width: 600px; margin: 1rem auto;">
+                    From sole traders to established companies, we understand your unique challenges
+                </p>
+            </div>
+            
+            <div class="grid-3" style="gap: 2rem;">
+                <div class="trade-card">
+                    <img src="https://images.unsplash.com/photo-1621905251189-08b45d6a269e?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&q=80" alt="Electrician at work">
+                    <div class="trade-overlay">
+                        <h3 style="font-size: 1.5rem; margin-bottom: 0.5rem;">Electricians</h3>
+                        <p style="font-size: 0.875rem; opacity: 0.9;">Fund testing equipment, vans, or cover material costs for large projects</p>
+                    </div>
+                </div>
+                
+                <div class="trade-card">
+                    <img src="https://images.unsplash.com/photo-1607472586893-edb57bdc0e39?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&q=80" alt="Plumber working">
+                    <div class="trade-overlay">
+                        <h3 style="font-size: 1.5rem; margin-bottom: 0.5rem;">Plumbers</h3>
+                        <p style="font-size: 0.875rem; opacity: 0.9;">Stock up on supplies, upgrade tools, or expand your service area</p>
+                    </div>
+                </div>
+                
+                <div class="trade-card">
+                    <img src="https://images.unsplash.com/photo-1504307651254-35680f356dfd?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&q=80" alt="Builder on construction site">
+                    <div class="trade-overlay">
+                        <h3 style="font-size: 1.5rem; margin-bottom: 0.5rem;">Builders</h3>
+                        <p style="font-size: 0.875rem; opacity: 0.9;">Take on bigger projects with working capital for materials and labour</p>
+                    </div>
+                </div>
+                
+                <div class="trade-card">
+                    <img src="https://images.unsplash.com/photo-1598257006458-087169a1f08d?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&q=80" alt="Carpenter working">
+                    <div class="trade-overlay">
+                        <h3 style="font-size: 1.5rem; margin-bottom: 0.5rem;">Carpenters</h3>
+                        <p style="font-size: 0.875rem; opacity: 0.9;">Invest in machinery, workshop space, or quality materials</p>
+                    </div>
+                </div>
+                
+                <div class="trade-card">
+                    <img src="https://images.unsplash.com/photo-1562259949-e8e7689d7828?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&q=80" alt="Roofer at work">
+                    <div class="trade-overlay">
+                        <h3 style="font-size: 1.5rem; margin-bottom: 0.5rem;">Roofers</h3>
+                        <p style="font-size: 0.875rem; opacity: 0.9;">Scale your team, invest in safety equipment, or fund large jobs</p>
+                    </div>
+                </div>
+                
+                <div class="trade-card">
+                    <img src="https://images.unsplash.com/photo-1589939705384-5185137a7f0f?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&q=80" alt="Painter decorating">
+                    <div class="trade-overlay">
+                        <h3 style="font-size: 1.5rem; margin-bottom: 0.5rem;">Painters & Decorators</h3>
+                        <p style="font-size: 0.875rem; opacity: 0.9;">Stock quality paints, upgrade equipment, or manage cash flow</p>
+                    </div>
+                </div>
+            </div>
+            
+            <div style="text-align: center; margin-top: 3rem;">
+                <a href="/all-trades" class="btn-enhanced btn-outline btn-lg">See All Trades We Support →</a>
+            </div>
+        </div>
+    </section>
+    
+    <!-- Why We're Different - Founder Story -->
+    <section style="padding: 5rem 0; background: var(--gray-50);">
+        <div class="container">
+            <div style="text-align: center; margin-bottom: 3rem;">
+                <div class="badge badge-primary" style="margin-bottom: 1rem;">Our Story</div>
+                <h2 class="heading-lg">Built By Tradesmen, For Tradesmen</h2>
+            </div>
+            
+            <div class="founder-story">
+                <div class="founder-image">
+                    <img src="https://images.unsplash.com/photo-1507003211169-0a1dd7228f2d?ixlib=rb-4.0.3&auto=format&fit=crop&w=600&q=80" alt="Founder">
+                    <div class="founder-badge">Former Electrician, Now Helping 10,000+ Trades</div>
+                </div>
+                
+                <div>
+                    <h3 style="font-size: 2rem; margin-bottom: 1.5rem; color: var(--primary);">A Message from Our Founder</h3>
+                    <p style="font-size: 1.125rem; line-height: 1.8; color: var(--gray-700); margin-bottom: 2rem;">
+                        "I spent 15 years as an electrician, building my business from a van to a team of 20. I know the late nights quoting, the cash flow struggles waiting for payment, and the frustration when banks don't understand seasonal work.
+                    </p>
+                    <p style="font-size: 1.125rem; line-height: 1.8; color: var(--gray-700); margin-bottom: 2rem;">
+                        That's why we built Tradesman Finance differently. No suits judging your business from a spreadsheet. Just straightforward funding from people who understand what it takes to run a trade business."
+                    </p>
+                    <p style="font-style: italic; color: var(--gray-600); margin-bottom: 2rem;">
+                        - Mike Harrison, Founder & Former Electrician
+                    </p>
+                    
+                    <div class="grid-2" style="gap: 1.5rem;">
+                        <div style="display: flex; gap: 1rem;">
+                            <div class="icon-box icon-box-success">✓</div>
+                            <div>
+                                <strong>We speak your language</strong>
+                                <p style="font-size: 0.875rem; color: var(--gray-600); margin-top: 0.25rem;">No financial jargon, just straight talk</p>
+                            </div>
+                        </div>
+                        <div style="display: flex; gap: 1rem;">
+                            <div class="icon-box icon-box-success">✓</div>
+                            <div>
+                                <strong>Flexible for seasonality</strong>
+                                <p style="font-size: 0.875rem; color: var(--gray-600); margin-top: 0.25rem;">We understand busy and quiet periods</p>
+                            </div>
+                        </div>
+                        <div style="display: flex; gap: 1rem;">
+                            <div class="icon-box icon-box-success">✓</div>
+                            <div>
+                                <strong>Quick decisions</strong>
+                                <p style="font-size: 0.875rem; color: var(--gray-600); margin-top: 0.25rem;">Because opportunities don't wait</p>
+                            </div>
+                        </div>
+                        <div style="display: flex; gap: 1rem;">
+                            <div class="icon-box icon-box-success">✓</div>
+                            <div>
+                                <strong>Fair and transparent</strong>
+                                <p style="font-size: 0.875rem; color: var(--gray-600); margin-top: 0.25rem;">No hidden fees or surprises</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    
+    <!-- Testimonials with Face Photos -->
+    <section id="testimonials" style="padding: 5rem 0; background: white;">
+        <div class="container">
+            <div style="text-align: center; margin-bottom: 3rem;">
+                <div class="badge badge-success" style="margin-bottom: 1rem;">Success Stories</div>
+                <h2 class="heading-lg">Real Tradesmen, Real Results</h2>
+                <p style="font-size: 1.125rem; color: var(--gray-600); max-width: 600px; margin: 1rem auto;">
+                    Join thousands of tradesmen who've grown their business with our support
+                </p>
+            </div>
+            
+            <div class="grid-3" style="gap: 2rem;">
+                <div class="testimonial-modern">
+                    <div class="testimonial-header">
+                        <img src="https://i.pravatar.cc/150?img=11" alt="James Wilson" class="testimonial-avatar">
+                        <div>
+                            <div style="font-weight: 700;">James Wilson</div>
+                            <div style="font-size: 0.875rem; color: var(--gray-600);">Electrician, Manchester</div>
+                            <div style="color: var(--warning);">⭐⭐⭐⭐⭐</div>
+                        </div>
+                    </div>
+                    <p style="line-height: 1.6; color: var(--gray-700);">
+                        "Got £35,000 to buy a new van and testing equipment. The whole process took less than a day. Absolute game changer for my electrical business."
+                    </p>
+                    <div class="badge badge-success" style="margin-top: 1rem;">£35,000 Vehicle Finance</div>
+                </div>
+                
+                <div class="testimonial-modern">
+                    <div class="testimonial-header">
+                        <img src="https://i.pravatar.cc/150?img=48" alt="Sarah Thompson" class="testimonial-avatar">
+                        <div>
+                            <div style="font-weight: 700;">Sarah Thompson</div>
+                            <div style="font-size: 0.875rem; color: var(--gray-600);">Plumber, Birmingham</div>
+                            <div style="color: var(--warning);">⭐⭐⭐⭐⭐</div>
+                        </div>
+                    </div>
+                    <p style="line-height: 1.6; color: var(--gray-700);">
+                        "Used the funding to take on a large commercial project. Made £50k profit and paid back early with no penalties. Brilliant service."
+                    </p>
+                    <div class="badge badge-success" style="margin-top: 1rem;">£75,000 Project Finance</div>
+                </div>
+                
+                <div class="testimonial-modern">
+                    <div class="testimonial-header">
+                        <img src="https://i.pravatar.cc/150?img=33" alt="Dave Collins" class="testimonial-avatar">
+                        <div>
+                            <div style="font-weight: 700;">Dave Collins</div>
+                            <div style="font-size: 0.875rem; color: var(--gray-600);">Builder, London</div>
+                            <div style="color: var(--warning);">⭐⭐⭐⭐⭐</div>
+                        </div>
+                    </div>
+                    <p style="line-height: 1.6; color: var(--gray-700);">
+                        "Finally found funding that understands construction. Got approved despite seasonal income. Now taking on bigger projects."
+                    </p>
+                    <div class="badge badge-success" style="margin-top: 1rem;">£100,000 Working Capital</div>
+                </div>
+                
+                <div class="testimonial-modern">
+                    <div class="testimonial-header">
+                        <img src="https://i.pravatar.cc/150?img=15" alt="Tom Richards" class="testimonial-avatar">
+                        <div>
+                            <div style="font-weight: 700;">Tom Richards</div>
+                            <div style="font-size: 0.875rem; color: var(--gray-600);">Carpenter, Leeds</div>
+                            <div style="color: var(--warning);">⭐⭐⭐⭐⭐</div>
+                        </div>
+                    </div>
+                    <p style="line-height: 1.6; color: var(--gray-700);">
+                        "Bought new machinery and expanded my workshop. The team understood exactly what I needed. Can't recommend enough."
+                    </p>
+                    <div class="badge badge-success" style="margin-top: 1rem;">£45,000 Equipment Finance</div>
+                </div>
+                
+                <div class="testimonial-modern">
+                    <div class="testimonial-header">
+                        <img src="https://i.pravatar.cc/150?img=60" alt="Lisa Brown" class="testimonial-avatar">
+                        <div>
+                            <div style="font-weight: 700;">Lisa Brown</div>
+                            <div style="font-size: 0.875rem; color: var(--gray-600);">Painter, Bristol</div>
+                            <div style="color: var(--warning);">⭐⭐⭐⭐⭐</div>
+                        </div>
+                    </div>
+                    <p style="line-height: 1.6; color: var(--gray-700);">
+                        "As a female decorator, banks never took me seriously. These guys treated me like a professional. Got funded same day!"
+                    </p>
+                    <div class="badge badge-success" style="margin-top: 1rem;">£20,000 Business Loan</div>
+                </div>
+                
+                <div class="testimonial-modern">
+                    <div class="testimonial-header">
+                        <img src="https://i.pravatar.cc/150?img=8" alt="Steve Johnson" class="testimonial-avatar">
+                        <div>
+                            <div style="font-weight: 700;">Steve Johnson</div>
+                            <div style="font-size: 0.875rem; color: var(--gray-600);">Roofer, Newcastle</div>
+                            <div style="color: var(--warning);">⭐⭐⭐⭐⭐</div>
+                        </div>
+                    </div>
+                    <p style="line-height: 1.6; color: var(--gray-700);">
+                        "Expanded from solo to a team of 5. The funding helped me buy vans and equipment. Best decision I've made."
+                    </p>
+                    <div class="badge badge-success" style="margin-top: 1rem;">£150,000 Growth Finance</div>
+                </div>
+            </div>
+        </div>
+    </section>
+    
+    <!-- FAQ Section -->
+    <section style="padding: 5rem 0; background: var(--gray-50);">
+        <div class="container">
+            <div style="text-align: center; margin-bottom: 3rem;">
+                <div class="badge badge-primary" style="margin-bottom: 1rem;">FAQs</div>
+                <h2 class="heading-lg">Common Questions</h2>
+                <p style="font-size: 1.125rem; color: var(--gray-600); max-width: 600px; margin: 1rem auto;">
+                    Everything you need to know about getting funded
+                </p>
+            </div>
+            
+            <div style="max-width: 800px; margin: 0 auto;">
+                <div class="faq-item">
+                    <div class="faq-question">
+                        <span>What are the eligibility requirements?</span>
+                        <span>+</span>
+                    </div>
+                    <div class="faq-answer">
+                        <p>You need to be a UK registered business, trading for at least 6 months, with a minimum monthly turnover of £5,000. We consider all credit histories and focus on your business performance.</p>
+                    </div>
+                </div>
+                
+                <div class="faq-item">
+                    <div class="faq-question">
+                        <span>How quickly can I get the money?</span>
+                        <span>+</span>
+                    </div>
+                    <div class="faq-answer">
+                        <p>Most applications are approved within 24 hours, and funds are transferred the same day you accept the offer. For larger amounts, it may take up to 48 hours.</p>
+                    </div>
+                </div>
+                
+                <div class="faq-item">
+                    <div class="faq-question">
+                        <span>What documents do I need?</span>
+                        <span>+</span>
+                    </div>
+                    <div class="faq-answer">
+                        <p>Just 3 months of business bank statements and proof of ID. That's it! No lengthy forms, business plans, or accounts required.</p>
+                    </div>
+                </div>
+                
+                <div class="faq-item">
+                    <div class="faq-question">
+                        <span>Can I pay back early?</span>
+                        <span>+</span>
+                    </div>
+                    <div class="faq-answer">
+                        <p>Yes! There are no early repayment penalties. If business is good and you want to clear the loan early, you can do so at any time and save on interest.</p>
+                    </div>
+                </div>
+                
+                <div class="faq-item">
+                    <div class="faq-question">
+                        <span>Will this affect my credit score?</span>
+                        <span>+</span>
+                    </div>
+                    <div class="faq-answer">
+                        <p>Checking your rate is a soft credit check that won't affect your score. We only run a full credit check if you decide to proceed with the funding.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    
+    <!-- Strong CTA Section -->
+    <section style="padding: 5rem 0; background: var(--primary-gradient); color: white; text-align: center;">
+        <div class="container">
+            <div class="badge" style="background: var(--warning); color: white; padding: 0.5rem 1rem; margin-bottom: 1.5rem; display: inline-block;">
+                Limited Time: Get Your First Month at 0% Interest
+            </div>
+            
+            <h2 class="heading-xl" style="color: white; margin-bottom: 1.5rem;">
+                Ready to Grow Your Trade Business?
+            </h2>
+            
+            <p style="font-size: 1.25rem; max-width: 600px; margin: 0 auto 2rem; opacity: 0.95;">
+                Join 10,000+ tradesmen who've taken their business to the next level with our support. Check your rate in 60 seconds with no impact on your credit score.
+            </p>
+            
+            <div style="display: flex; gap: 1rem; justify-content: center;">
+                <a href="#apply" class="btn-enhanced btn-lg" style="background: white; color: var(--primary); padding: 1rem 2rem; border-radius: 0.5rem; text-decoration: none; font-weight: 700; font-size: 1.125rem;">
+                    Get Your Quote Now →
+                </a>
+                <a href="tel:0800123456" class="btn-enhanced btn-lg" style="background: transparent; color: white; border: 2px solid white; padding: 1rem 2rem; border-radius: 0.5rem; text-decoration: none; font-weight: 700; font-size: 1.125rem;">
+                    📞 Call 0800 123 456
+                </a>
+            </div>
+            
+            <p style="margin-top: 2rem; opacity: 0.8; font-size: 0.875rem;">
+                FCA Authorised • No obligation quote • Your data is secure
+            </p>
+        </div>
+    </section>
+    
+    <!-- Footer -->
+    <footer style="background: var(--gray-900); color: white; padding: 3rem 0;">
+        <div class="container">
+            <div class="grid-4" style="gap: 3rem; margin-bottom: 3rem;">
+                <div>
+                    <h3 style="font-size: 1.5rem; margin-bottom: 1rem;">Tradesman Finance</h3>
+                    <p style="color: var(--gray-400); line-height: 1.6;">
+                        Fast, flexible funding built specifically for UK trade businesses. Get the cash you need to grow.
+                    </p>
+                    <div style="margin-top: 1rem;">
+                        <div class="badge badge-success">FCA Authorised</div>
+                    </div>
+                </div>
+                
+                <div>
+                    <h4 style="margin-bottom: 1rem;">Quick Links</h4>
+                    <ul style="list-style: none; padding: 0;">
+                        <li style="margin-bottom: 0.5rem;"><a href="/how-it-works" style="color: var(--gray-400); text-decoration: none;">How It Works</a></li>
+                        <li style="margin-bottom: 0.5rem;"><a href="/calculator" style="color: var(--gray-400); text-decoration: none;">Loan Calculator</a></li>
+                        <li style="margin-bottom: 0.5rem;"><a href="/about" style="color: var(--gray-400); text-decoration: none;">About Us</a></li>
+                        <li style="margin-bottom: 0.5rem;"><a href="/contact" style="color: var(--gray-400); text-decoration: none;">Contact</a></li>
+                    </ul>
+                </div>
+                
+                <div>
+                    <h4 style="margin-bottom: 1rem;">Trades We Help</h4>
+                    <ul style="list-style: none; padding: 0;">
+                        <li style="margin-bottom: 0.5rem;"><a href="/electrician-finance" style="color: var(--gray-400); text-decoration: none;">Electrician Finance</a></li>
+                        <li style="margin-bottom: 0.5rem;"><a href="/plumber-finance" style="color: var(--gray-400); text-decoration: none;">Plumber Finance</a></li>
+                        <li style="margin-bottom: 0.5rem;"><a href="/builder-finance" style="color: var(--gray-400); text-decoration: none;">Builder Finance</a></li>
+                        <li style="margin-bottom: 0.5rem;"><a href="/all-trades" style="color: var(--gray-400); text-decoration: none;">All Trades →</a></li>
+                    </ul>
+                </div>
+                
+                <div>
+                    <h4 style="margin-bottom: 1rem;">Legal</h4>
+                    <ul style="list-style: none; padding: 0;">
+                        <li style="margin-bottom: 0.5rem;"><a href="/terms" style="color: var(--gray-400); text-decoration: none;">Terms of Service</a></li>
+                        <li style="margin-bottom: 0.5rem;"><a href="/privacy" style="color: var(--gray-400); text-decoration: none;">Privacy Policy</a></li>
+                        <li style="margin-bottom: 0.5rem;"><a href="/complaints" style="color: var(--gray-400); text-decoration: none;">Complaints</a></li>
+                        <li style="margin-bottom: 0.5rem;"><a href="/fca" style="color: var(--gray-400); text-decoration: none;">FCA Information</a></li>
+                    </ul>
+                </div>
+            </div>
+            
+            <div style="border-top: 1px solid var(--gray-800); padding-top: 2rem; text-align: center; color: var(--gray-400);">
+                <p>© 2024 Tradesman Finance UK. All rights reserved. Company No. 12345678. FCA Reference: 123456</p>
+                <p style="margin-top: 0.5rem; font-size: 0.875rem;">
+                    Tradesman Finance is a trading name of TF Finance Ltd, registered in England & Wales.
+                </p>
+            </div>
+        </div>
+    </footer>
+    
+    <!-- Scripts -->
+    <script>
+        // Navbar scroll effect
+        window.addEventListener('scroll', function() {
+            const navbar = document.getElementById('navbar');
+            if (window.scrollY > 50) {
+                navbar.classList.add('scrolled');
+            } else {
+                navbar.classList.remove('scrolled');
+            }
+        });
+        
+        // Calculator functionality
+        const loanAmount = document.getElementById('loanAmount');
+        const termLength = document.getElementById('termLength');
+        const loanAmountDisplay = document.getElementById('loanAmountDisplay');
+        const termLengthDisplay = document.getElementById('termLengthDisplay');
+        const monthlyPayment = document.getElementById('monthlyPayment');
+        const totalRepayable = document.getElementById('totalRepayable');
+        
+        function updateCalculator() {
+            const amount = parseInt(loanAmount.value);
+            const term = parseInt(termLength.value);
+            const interestRate = 0.015; // 1.5% per month
+            
+            const monthly = (amount * (1 + (interestRate * term))) / term;
+            const total = monthly * term;
+            
+            loanAmountDisplay.textContent = '£' + amount.toLocaleString();
+            termLengthDisplay.textContent = term + ' months';
+            monthlyPayment.textContent = '£' + Math.round(monthly).toLocaleString();
+            totalRepayable.textContent = '£' + Math.round(total).toLocaleString();
+        }
+        
+        loanAmount.addEventListener('input', updateCalculator);
+        termLength.addEventListener('input', updateCalculator);
+        
+        // FAQ Accordion
+        document.querySelectorAll('.faq-question').forEach(question => {
+            question.addEventListener('click', function() {
+                const item = this.parentElement;
+                const isActive = item.classList.contains('active');
+                
+                document.querySelectorAll('.faq-item').forEach(i => i.classList.remove('active'));
+                
+                if (!isActive) {
+                    item.classList.add('active');
+                    this.querySelector('span:last-child').textContent = '−';
+                } else {
+                    this.querySelector('span:last-child').textContent = '+';
+                }
+                
+                document.querySelectorAll('.faq-item:not(.active) .faq-question span:last-child').forEach(span => {
+                    span.textContent = '+';
+                });
+            });
+        });
+        
+        // Smooth scrolling
+        document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+            anchor.addEventListener('click', function (e) {
+                e.preventDefault();
+                const target = document.querySelector(this.getAttribute('href'));
+                if (target) {
+                    target.scrollIntoView({
+                        behavior: 'smooth',
+                        block: 'start'
+                    });
+                }
+            });
+        });
+        
+        // Intersection Observer for animations
+        const observerOptions = {
+            threshold: 0.1,
+            rootMargin: '0px 0px -50px 0px'
+        };
+        
+        const observer = new IntersectionObserver(function(entries) {
+            entries.forEach(entry => {
+                if (entry.isIntersecting) {
+                    entry.target.style.opacity = '1';
+                    entry.target.style.transform = 'translateY(0)';
+                }
+            });
+        }, observerOptions);
+        
+        // Observe all cards
+        document.querySelectorAll('.service-card, .trade-card, .testimonial-modern').forEach(card => {
+            card.style.opacity = '0';
+            card.style.transform = 'translateY(20px)';
+            card.style.transition = 'all 0.6s ease';
+            observer.observe(card);
+        });
+    </script>
+</body>
+</html>

@@ -235,9 +235,9 @@ document.addEventListener('DOMContentLoaded', function() {
      * @throws {Error} When submission fails
      */
     async function submitFormToAPI(data) {
-        const apiUrl = window.location.hostname === 'localhost' 
+        const apiUrl = window.location.hostname === 'localhost' || window.location.hostname === '127.0.0.1'
             ? 'http://localhost:3001/api/leads/submit' 
-            : '/api/leads/submit';
+            : 'https://api.tradesmanfinance.co.uk/api/leads/submit';
         
         try {
             // Restructure data to match backend schema
@@ -283,7 +283,7 @@ document.addEventListener('DOMContentLoaded', function() {
             
             return result;
         } catch (error) {
-            console.error('Form submission error:', error);
+            // Log error silently in production
             throw error;
         }
     }
@@ -344,43 +344,27 @@ document.addEventListener('DOMContentLoaded', function() {
         });
     });
     
-    // Mobile menu toggle
+    // Mobile menu toggle - Skip if mobile-menu-handler.js is loaded
+    // Check for existing toggle button (by class or ID)
+    const existingToggle = document.querySelector('.mobile-menu-toggle');
+    if (existingToggle) {
+        // Mobile menu is handled by mobile-menu-handler.js
+        return; // Exit early to prevent duplicate functionality
+    }
+    
+    // Legacy mobile menu code (kept for backward compatibility)
     const mobileMenuToggle = document.getElementById('mobileMenuToggle');
     const nav = document.querySelector('nav') || document.querySelector('.industrial-nav');
     const header = document.querySelector('header') || document.querySelector('.industrial-header');
     
-    // Create mobile menu toggle if it doesn't exist (for industrial theme)
-    if (!mobileMenuToggle && header) {
-        const menuToggle = document.createElement('button');
-        menuToggle.id = 'mobileMenuToggle';
-        menuToggle.className = 'mobile-menu-toggle';
-        menuToggle.setAttribute('aria-label', 'Toggle mobile menu');
-        menuToggle.setAttribute('aria-expanded', 'false');
-        
-        // Create hamburger lines
-        for (let i = 0; i < 3; i++) {
-            const span = document.createElement('span');
-            menuToggle.appendChild(span);
-        }
-        
-        // Insert before the nav or CTA button
-        const headerContainer = header.querySelector('.header-container');
-        if (headerContainer) {
-            const cta = headerContainer.querySelector('.industrial-cta');
-            if (cta) {
-                headerContainer.insertBefore(menuToggle, cta);
-            } else {
-                headerContainer.appendChild(menuToggle);
-            }
-        }
+    // Only create overlay if no existing mobile menu handler
+    if (!document.querySelector('.mobile-menu-overlay')) {
+        const overlay = document.createElement('div');
+        overlay.className = 'mobile-menu-overlay';
+        document.body.appendChild(overlay);
     }
     
-    // Create mobile menu overlay
-    const overlay = document.createElement('div');
-    overlay.className = 'mobile-menu-overlay';
-    document.body.appendChild(overlay);
-    
-    const updatedMobileMenuToggle = document.getElementById('mobileMenuToggle');
+    const updatedMobileMenuToggle = mobileMenuToggle;
     
     if (updatedMobileMenuToggle && nav) {
         updatedMobileMenuToggle.addEventListener('click', function() {

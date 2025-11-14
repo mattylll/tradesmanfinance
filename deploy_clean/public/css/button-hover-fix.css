@@ -1,0 +1,126 @@
+/* =================================================================
+   BUTTON HOVER FIX - Prevents buttons from disappearing on hover
+   ================================================================= */
+
+/* Primary Industrial Button */
+.btn-primary-industrial,
+.btn-industrial {
+    background: #ff6b35 !important;
+    color: white !important;
+    transition: all 0.3s ease !important;
+}
+
+.btn-primary-industrial:hover,
+.btn-industrial:hover {
+    background: #ff8c42 !important;
+    color: white !important;
+    transform: translate(-3px, -3px);
+    box-shadow: 9px 9px 0px rgba(0,0,0,0.5);
+}
+
+/* Secondary Industrial Button */
+.btn-secondary-industrial {
+    background: #2d2d2d !important;
+    color: white !important;
+    transition: all 0.3s ease !important;
+}
+
+.btn-secondary-industrial:hover {
+    background: #404040 !important;
+    color: white !important;
+    transform: translate(-3px, -3px);
+    box-shadow: 9px 9px 0px rgba(0,0,0,0.5);
+}
+
+/* Massive Industrial Button (Calculator Apply) */
+.btn-massive-industrial {
+    background: #ff6b35 !important;
+    color: white !important;
+    transition: all 0.3s ease !important;
+}
+
+.btn-massive-industrial:hover {
+    background: #ff8c42 !important;
+    color: white !important;
+    transform: translateY(-2px);
+    box-shadow: 0 6px 30px rgba(255,107,53,0.4);
+}
+
+/* Link buttons that look like buttons */
+a.btn-primary-industrial,
+a.btn-industrial,
+a.btn-secondary-industrial,
+a.btn-massive-industrial {
+    text-decoration: none !important;
+    display: inline-block !important;
+}
+
+/* Ensure text remains visible */
+.btn-primary-industrial span,
+.btn-industrial span,
+.btn-secondary-industrial span,
+.btn-massive-industrial span {
+    color: white !important;
+}
+
+/* Fix for any button with class containing 'btn' and 'industrial' */
+[class*="btn"][class*="industrial"] {
+    opacity: 1 !important;
+    visibility: visible !important;
+}
+
+[class*="btn"][class*="industrial"]:hover {
+    opacity: 1 !important;
+    visibility: visible !important;
+}
+
+/* Specific fix for CTA buttons */
+.industrial-cta {
+    background: #ff6b35 !important;
+    color: white !important;
+    transition: all 0.2s ease !important;
+}
+
+.industrial-cta:hover {
+    background: #ff8c42 !important;
+    color: white !important;
+    transform: translate(-2px, -2px);
+    box-shadow: 6px 6px 0 rgba(0,0,0,0.5);
+}
+
+/* Fix for form submit buttons */
+button[type="submit"].btn-industrial,
+button[type="submit"].btn-primary-industrial {
+    background: #ff6b35 !important;
+    color: white !important;
+    border: none !important;
+    cursor: pointer !important;
+}
+
+button[type="submit"].btn-industrial:hover,
+button[type="submit"].btn-primary-industrial:hover {
+    background: #ff8c42 !important;
+    color: white !important;
+}
+
+/* Ensure SVG icons in buttons remain visible */
+.btn-primary-industrial svg,
+.btn-industrial svg,
+.btn-massive-industrial svg,
+.industrial-cta svg {
+    stroke: currentColor !important;
+    fill: none !important;
+    opacity: 1 !important;
+}
+
+/* Mobile touch states */
+@media (hover: none) {
+    .btn-primary-industrial:active,
+    .btn-industrial:active,
+    .btn-secondary-industrial:active,
+    .btn-massive-industrial:active,
+    .industrial-cta:active {
+        transform: translate(-1px, -1px);
+        box-shadow: 3px 3px 0 rgba(0,0,0,0.5);
+    }
+}

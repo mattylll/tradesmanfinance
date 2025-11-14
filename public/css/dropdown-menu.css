@@ -1,5 +1,32 @@
 /* Dropdown Menu Extensions for Trades and Locations */
 
+/* CRITICAL: Position dropdown parents correctly */
+.has-dropdown {
+    position: relative !important;
+}
+
+/* CRITICAL: Hide dropdowns by default on desktop */
+.dropdown-menu {
+    display: none !important;
+    position: absolute !important;
+    top: calc(100% + 10px) !important;
+    left: 50% !important;
+    transform: translateX(-50%) !important;
+    background: #1a1a1a !important;
+    border: 2px solid #333 !important;
+    border-top: 3px solid #ff6b35 !important;
+    min-width: 300px !important;
+    z-index: 10000 !important;
+    box-shadow: 0 10px 30px rgba(0,0,0,0.5) !important;
+}
+
+/* Show dropdown on hover - desktop only */
+@media (min-width: 769px) {
+    .has-dropdown:hover > .dropdown-menu {
+        display: block !important;
+    }
+}
+
 /* Custom dropdown section styling */
 .dropdown-section {
     padding: 20px !important;
@@ -71,26 +98,33 @@
     text-transform: uppercase !important;
 }
 
+/* Mobile submenu - hidden by default */
+.mobile-submenu {
+    display: none !important;
+}
+
 /* Mobile styles */
 @media (max-width: 768px) {
-    /* Hide dropdown on mobile - use regular mobile menu */
-    .industrial-nav .dropdown-menu {
+    /* Hide desktop dropdown on mobile - use mobile submenu instead */
+    .dropdown-menu {
         display: none !important;
     }
-    
+
     /* Remove dropdown arrow on mobile */
     .has-dropdown > a::before {
         content: none !important;
         display: none !important;
     }
-    
+
     /* Mobile submenu styles */
     .mobile-submenu {
         padding-left: 20px !important;
         margin-top: 10px !important;
+        background: #f5f5f5 !important;
+        padding: 15px 20px !important;
         display: none !important;
     }
-    
+
     .has-dropdown.mobile-expanded .mobile-submenu {
         display: block !important;
     }

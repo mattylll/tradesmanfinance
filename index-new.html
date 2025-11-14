@@ -1,0 +1,1007 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Quick business finance for UK tradespeople. No corporate nonsense, just the cash flow your business needs. 15+ years helping builders, electricians, plumbers grow.">
+    <meta name="keywords" content="trade finance, business loans, tradesman finance, builder loans, electrician finance, plumber loans, UK">
+    
+    <title>Tradesman Finance | Finance That Actually Works for Tradespeople</title>
+    
+    <!-- Preconnect to external domains -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    
+    <!-- Fonts -->
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+    
+    <!-- Critical Inline CSS Fallback -->
+    <style>
+        /* Critical CSS for immediate rendering */
+        * { margin: 0; padding: 0; box-sizing: border-box; }
+        body {
+            font-family: 'Inter', -apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif;
+            line-height: 1.6;
+            color: #1a1a1a;
+            background: #ffffff;
+            min-height: 100vh;
+        }
+        .container {
+            width: 100%;
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: 0 20px;
+        }
+        .header {
+            background: #ffffff;
+            border-bottom: 1px solid #e5e5e5;
+            position: sticky;
+            top: 0;
+            z-index: 100;
+            padding: 1rem 0;
+        }
+        .nav {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
+        .nav-brand { font-size: 1.5rem; font-weight: 700; }
+        .nav-brand a { color: #1a1a1a; text-decoration: none; }
+        .btn {
+            display: inline-flex;
+            align-items: center;
+            gap: 0.5rem;
+            padding: 0.75rem 1.5rem;
+            font-weight: 600;
+            text-decoration: none;
+            border-radius: 0.5rem;
+            transition: all 0.2s;
+            cursor: pointer;
+            border: none;
+        }
+        .btn-primary {
+            background: #ff6b35;
+            color: white;
+        }
+        .btn-primary:hover {
+            background: #e55a2b;
+            transform: translateY(-2px);
+        }
+        .hero {
+            padding: 4rem 0;
+            background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+            color: white;
+        }
+        .hero-title {
+            font-size: 3rem;
+            font-weight: 800;
+            margin-bottom: 1rem;
+            line-height: 1.2;
+        }
+        .section {
+            padding: 4rem 0;
+        }
+        .section-title {
+            font-size: 2.5rem;
+            font-weight: 700;
+            margin-bottom: 1rem;
+            text-align: center;
+        }
+        .bg-white { background: #ffffff; }
+        .footer {
+            background: #1a1a1a;
+            color: #ffffff;
+            padding: 3rem 0 1rem;
+            margin-top: 4rem;
+        }
+        
+        /* CSS Load Error Message */
+        .css-error {
+            display: none;
+            background: #ff6b35;
+            color: white;
+            padding: 1rem;
+            text-align: center;
+            position: fixed;
+            top: 0;
+            left: 0;
+            right: 0;
+            z-index: 9999;
+        }
+        .css-error.show { display: block; }
+        
+        /* Loading indicator */
+        .loading-indicator {
+            position: fixed;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+            font-size: 1.2rem;
+            color: #666;
+            z-index: 9998;
+        }
+    </style>
+    
+    <!-- Main Styles with relative paths -->
+    <link rel="stylesheet" href="public/css/design-system.css" id="main-css">
+    <link rel="stylesheet" href="public/css/industrial.css">
+    <link rel="stylesheet" href="public/css/industrial-components.css">
+    
+    <!-- Favicon with relative path -->
+    <link rel="icon" type="image/x-icon" href="public/images/favicon.ico">
+    
+    <!-- Open Graph -->
+    <meta property="og:title" content="Tradesman Finance | Quick Business Finance for UK Trades">
+    <meta property="og:description" content="No corporate nonsense. Just the cash flow your business needs. 15+ years helping tradespeople grow.">
+    <meta property="og:type" content="website">
+    <meta property="og:url" content="https://tradesmanfinance.co.uk">
+    
+    <!-- Structured Data -->
+    <script type="application/ld+json">
+    {
+        "@context": "https://schema.org",
+        "@type": "FinancialService",
+        "name": "Tradesman Finance",
+        "description": "Business finance solutions for UK tradespeople",
+        "url": "https://tradesmanfinance.co.uk",
+        "telephone": "0800 123 4567",
+        "address": {
+            "@type": "PostalAddress",
+            "addressCountry": "UK"
+        },
+        "areaServed": "UK",
+        "hasOfferCatalog": {
+            "@type": "OfferCatalog",
+            "name": "Business Finance Services",
+            "itemListElement": [
+                {
+                    "@type": "Offer",
+                    "itemOffered": {
+                        "@type": "Service",
+                        "name": "Business Loans",
+                        "description": "Quick business loans from £1,000 to £500,000"
+                    }
+                },
+                {
+                    "@type": "Offer",
+                    "itemOffered": {
+                        "@type": "Service",
+                        "name": "Invoice Finance",
+                        "description": "Get paid instantly for your invoices"
+                    }
+                }
+            ]
+        }
+    }
+    </script>
+</head>
+<body>
+    <!-- Skip to main content for accessibility -->
+    <a href="#main" class="skip-link">Skip to main content</a>
+    
+    <!-- Header -->
+    <header class="header">
+        <div class="container">
+            <nav class="nav" role="navigation" aria-label="Main navigation">
+                <div class="nav-brand">
+                    <a href="/" aria-label="Tradesman Finance Home">
+                        <span class="logo-text">Tradesman Finance</span>
+                    </a>
+                </div>
+                
+                <button class="nav-toggle" aria-label="Toggle navigation" aria-expanded="false">
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                </button>
+                
+                <div class="nav-menu">
+                    <a href="#how-it-works" class="nav-link">How It Works</a>
+                    <a href="#calculator" class="nav-link">Calculator</a>
+                    <a href="#about" class="nav-link">About Us</a>
+                    <a href="tel:08001234567" class="btn btn-primary nav-cta">
+                        <svg class="icon" width="16" height="16" fill="none" stroke="currentColor" stroke-width="2">
+                            <path d="M2 3.5a1.5 1.5 0 011.5-1.5h1.47a1.5 1.5 0 011.41 1l.82 2.47a1.5 1.5 0 01-.36 1.53l-.71.71a10 10 0 004.24 4.24l.71-.71a1.5 1.5 0 011.53-.36l2.47.82a1.5 1.5 0 011 1.41V14a1.5 1.5 0 01-1.5 1.5A12.5 12.5 0 012 3.5z"/>
+                        </svg>
+                        0800 123 4567
+                    </a>
+                </div>
+            </nav>
+        </div>
+    </header>
+    
+    <!-- Main Content -->
+    <main id="main">
+        
+        <!-- Hero Section -->
+        <section class="hero" aria-labelledby="hero-heading">
+            <div class="container">
+                <div class="hero-content">
+                    <h1 id="hero-heading" class="hero-title">
+                        Finance That Actually Works for Tradespeople
+                    </h1>
+                    <p class="hero-subtitle">
+                        No corporate nonsense. No endless paperwork. Just the cash flow your business needs to keep moving.
+                    </p>
+                    <div class="hero-actions">
+                        <a href="#calculator" class="btn btn-primary btn-lg">
+                            Get Your Quote
+                            <svg class="icon" width="20" height="20" fill="none" stroke="currentColor" stroke-width="2">
+                                <path d="M5 12h14m-7-7l7 7-7 7"/>
+                            </svg>
+                        </a>
+                        <a href="tel:08001234567" class="btn btn-outline btn-lg">
+                            <svg class="icon" width="20" height="20" fill="none" stroke="currentColor" stroke-width="2">
+                                <path d="M2 3.5a1.5 1.5 0 011.5-1.5h1.47a1.5 1.5 0 011.41 1l.82 2.47a1.5 1.5 0 01-.36 1.53l-.71.71a10 10 0 004.24 4.24l.71-.71a1.5 1.5 0 011.53-.36l2.47.82a1.5 1.5 0 011 1.41V14a1.5 1.5 0 01-1.5 1.5A12.5 12.5 0 012 3.5z"/>
+                            </svg>
+                            Call 0800 123 4567
+                        </a>
+                    </div>
+                    
+                    <!-- Trust Indicators -->
+                    <div class="trust-badges">
+                        <div class="trust-badge">
+                            <svg class="icon" width="24" height="24" fill="currentColor">
+                                <path d="M12 2L3.5 7v6c0 4.67 3.28 9.04 7.5 10.13 4.22-1.09 7.5-5.46 7.5-10.13V7L12 2zm0 2.18l5.5 3.18v4.64c0 3.31-2.35 6.43-5.5 7.36-3.15-.93-5.5-4.05-5.5-7.36V9.36L12 4.18zm-1.06 4.88L8.82 11.18l2.12 2.12 4.24-4.24-1.06-1.06-3.18 3.18-1.06-1.06z"/>
+                            </svg>
+                            <span>Trusted Partner</span>
+                        </div>
+                        <div class="trust-badge">
+                            <svg class="icon" width="24" height="24" fill="currentColor">
+                                <path d="M12 2C6.48 2 2 6.48 2 12s4.48 10 10 10 10-4.48 10-10S17.52 2 12 2zm0 18c-4.41 0-8-3.59-8-8s3.59-8 8-8 8 3.59 8 8-3.59 8-8 8zm.5-13H11v6l5.25 3.15.75-1.23-4.5-2.67V7z"/>
+                            </svg>
+                            <span>15+ Years Experience</span>
+                        </div>
+                        <div class="trust-badge">
+                            <svg class="icon" width="24" height="24" fill="currentColor">
+                                <path d="M12 2l3.09 6.26L22 9.27l-5 4.87 1.18 6.88L12 17.77l-6.18 3.25L7 14.14 2 9.27l6.91-1.01L12 2z"/>
+                            </svg>
+                            <span>5-Star Reviews</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        
+        <!-- Problem Section -->
+        <section class="section bg-white" aria-labelledby="problem-heading">
+            <div class="container">
+                <div class="content-block">
+                    <h2 id="problem-heading" class="section-title">The Problem Every Tradesperson Knows</h2>
+                    <p class="lead-text">
+                        You know the drill. Customer promises to pay in 30 days. Thirty becomes sixty. Sixty becomes 'the cheque's in the post.' Meanwhile, your suppliers want paying, your lads need wages, and you're juggling credit cards like a circus act.
+                    </p>
+                    <div class="problem-grid">
+                        <div class="problem-card">
+                            <div class="problem-icon">
+                                <svg width="40" height="40" fill="none" stroke="currentColor" stroke-width="2">
+                                    <circle cx="20" cy="20" r="18"/>
+                                    <path d="M20 8v8l6 6"/>
+                                </svg>
+                            </div>
+                            <h3>Late Payments</h3>
+                            <p>Average wait time for payment in construction: 82 days. Your bills don't wait that long.</p>
+                        </div>
+                        <div class="problem-card">
+                            <div class="problem-icon">
+                                <svg width="40" height="40" fill="none" stroke="currentColor" stroke-width="2">
+                                    <rect x="2" y="8" width="36" height="24" rx="2"/>
+                                    <path d="M10 16h20M10 24h10"/>
+                                </svg>
+                            </div>
+                            <h3>Credit Card Trap</h3>
+                            <p>High interest rates eating into your profits. Business credit cards charging 24% APR or more.</p>
+                        </div>
+                        <div class="problem-card">
+                            <div class="problem-icon">
+                                <svg width="40" height="40" fill="none" stroke="currentColor" stroke-width="2">
+                                    <path d="M20 2v36M8 20h24M12 8l8-6 8 6M12 32l8 6 8-6"/>
+                                </svg>
+                            </div>
+                            <h3>Growth Blocked</h3>
+                            <p>Can't take on bigger jobs without upfront capital. Missing opportunities while competitors grow.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        
+        <!-- Solution Section -->
+        <section class="section" aria-labelledby="solution-heading">
+            <div class="container">
+                <div class="content-block">
+                    <h2 id="solution-heading" class="section-title">Real Finance from People Who Get It</h2>
+                    <p class="lead-text">
+                        We've been doing this for 15 years. We know exactly how trade businesses work because we work with them every day. No algorithm deciding your fate - real people who understand that your van needs fuel tomorrow, not next month.
+                    </p>
+                    
+                    <div class="features-grid">
+                        <div class="feature-card">
+                            <div class="feature-icon">
+                                <svg width="32" height="32" fill="currentColor">
+                                    <path d="M16 2C8.27 2 2 8.27 2 16s6.27 14 14 14 14-6.27 14-14S23.73 2 16 2zm0 2c6.63 0 12 5.37 12 12s-5.37 12-12 12S4 22.63 4 16 9.37 4 16 4zm-1 3v10l8.5 5.1 1-1.7-7.5-4.4V7h-2z"/>
+                                </svg>
+                            </div>
+                            <h3>Quick Decisions</h3>
+                            <p>Get an answer in hours, not weeks. We know you can't wait around for committees to meet.</p>
+                        </div>
+                        <div class="feature-card">
+                            <div class="feature-icon">
+                                <svg width="32" height="32" fill="currentColor">
+                                    <path d="M12 2C6.48 2 2 6.48 2 12s4.48 10 10 10 10-4.48 10-10S17.52 2 12 2zm-2 15l-5-5 1.41-1.41L10 14.17l7.59-7.59L19 8l-9 9z"/>
+                                </svg>
+                            </div>
+                            <h3>Simple Process</h3>
+                            <p>No 50-page applications. Tell us what you need, show us you're legit, get your money.</p>
+                        </div>
+                        <div class="feature-card">
+                            <div class="feature-icon">
+                                <svg width="32" height="32" fill="currentColor">
+                                    <path d="M16 2C8.27 2 2 8.27 2 16s6.27 14 14 14 14-6.27 14-14S23.73 2 16 2zm0 2c6.63 0 12 5.37 12 12s-5.37 12-12 12S4 22.63 4 16 9.37 4 16 4zm-4 7v2h8v-2h-8zm0 4v2h8v-2h-8zm0 4v2h8v-2h-8z"/>
+                                </svg>
+                            </div>
+                            <h3>Fair Terms</h3>
+                            <p>No hidden fees, no nasty surprises. Everything upfront, everything clear.</p>
+                        </div>
+                        <div class="feature-card">
+                            <div class="feature-icon">
+                                <svg width="32" height="32" fill="currentColor">
+                                    <path d="M16 2l-2 6H8c-1.1 0-2 .9-2 2v10c0 1.1.9 2 2 2h6l2 6 2-6h6c1.1 0 2-.9 2-2V10c0-1.1-.9-2-2-2h-6l-2-6zm0 4.24L17.24 10H24v10h-6.76L16 23.76 14.76 20H8V10h6.76L16 6.24z"/>
+                                </svg>
+                            </div>
+                            <h3>Built for Trades</h3>
+                            <p>Finance options designed specifically for how construction businesses operate.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        
+        <!-- How It Works -->
+        <section class="section bg-white" id="how-it-works" aria-labelledby="process-heading">
+            <div class="container">
+                <div class="content-block">
+                    <h2 id="process-heading" class="section-title">How It Works</h2>
+                    <p class="lead-text">Three simple steps to get the finance you need</p>
+                    
+                    <div class="process-steps">
+                        <div class="process-step">
+                            <div class="step-number">1</div>
+                            <h3>Tell Us What You Need</h3>
+                            <p>Quick online form or phone call. Takes 5 minutes. No essays required.</p>
+                        </div>
+                        <div class="process-connector" aria-hidden="true"></div>
+                        <div class="process-step">
+                            <div class="step-number">2</div>
+                            <h3>We Review Your Business</h3>
+                            <p>Real person looks at your actual business, not just a credit score. Usually same day.</p>
+                        </div>
+                        <div class="process-connector" aria-hidden="true"></div>
+                        <div class="process-step">
+                            <div class="step-number">3</div>
+                            <h3>Get Your Money</h3>
+                            <p>Approved? Money in your account within 24 hours. Start that job tomorrow.</p>
+                        </div>
+                    </div>
+                    
+                    <div class="text-center mt-8">
+                        <a href="#calculator" class="btn btn-primary btn-lg">
+                            Calculate Your Finance
+                            <svg class="icon" width="20" height="20" fill="none" stroke="currentColor" stroke-width="2">
+                                <path d="M5 12h14m-7-7l7 7-7 7"/>
+                            </svg>
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </section>
+        
+        <!-- Calculator Section -->
+        <section class="section bg-gradient" id="calculator" aria-labelledby="calculator-heading">
+            <div class="container">
+                <div class="calculator-container">
+                    <div class="calculator-header">
+                        <h2 id="calculator-heading" class="section-title">Calculate Your Finance</h2>
+                        <p class="lead-text">See what you could borrow and what it would cost</p>
+                    </div>
+                    
+                    <div class="calculator-card">
+                        <form class="calculator-form" id="finance-calculator">
+                            <div class="form-group">
+                                <label for="amount" class="form-label">How much do you need?</label>
+                                <div class="input-group">
+                                    <span class="input-prefix">£</span>
+                                    <input 
+                                        type="number" 
+                                        id="amount" 
+                                        name="amount" 
+                                        class="form-input" 
+                                        min="1000" 
+                                        max="500000" 
+                                        step="1000" 
+                                        value="25000"
+                                        required
+                                        aria-label="Loan amount in pounds"
+                                    >
+                                </div>
+                                <input 
+                                    type="range" 
+                                    id="amount-slider" 
+                                    min="1000" 
+                                    max="500000" 
+                                    step="1000" 
+                                    value="25000"
+                                    aria-label="Adjust loan amount"
+                                >
+                                <div class="range-labels">
+                                    <span>£1,000</span>
+                                    <span>£500,000</span>
+                                </div>
+                            </div>
+                            
+                            <div class="form-group">
+                                <label for="term" class="form-label">Over how many months?</label>
+                                <div class="input-group">
+                                    <input 
+                                        type="number" 
+                                        id="term" 
+                                        name="term" 
+                                        class="form-input" 
+                                        min="3" 
+                                        max="60" 
+                                        step="1" 
+                                        value="12"
+                                        required
+                                        aria-label="Loan term in months"
+                                    >
+                                    <span class="input-suffix">months</span>
+                                </div>
+                                <input 
+                                    type="range" 
+                                    id="term-slider" 
+                                    min="3" 
+                                    max="60" 
+                                    step="1" 
+                                    value="12"
+                                    aria-label="Adjust loan term"
+                                >
+                                <div class="range-labels">
+                                    <span>3 months</span>
+                                    <span>60 months</span>
+                                </div>
+                            </div>
+                            
+                            <div class="calculator-results">
+                                <div class="result-card">
+                                    <span class="result-label">Monthly Payment</span>
+                                    <span class="result-value" id="monthly-payment">£2,187</span>
+                                </div>
+                                <div class="result-card">
+                                    <span class="result-label">Total Repayable</span>
+                                    <span class="result-value" id="total-repayable">£26,250</span>
+                                </div>
+                                <div class="result-card">
+                                    <span class="result-label">Representative APR</span>
+                                    <span class="result-value" id="apr">9.9%</span>
+                                </div>
+                            </div>
+                            
+                            <button type="submit" class="btn btn-primary btn-lg btn-block">
+                                Get This Quote Now
+                                <svg class="icon" width="20" height="20" fill="none" stroke="currentColor" stroke-width="2">
+                                    <path d="M5 12h14m-7-7l7 7-7 7"/>
+                                </svg>
+                            </button>
+                            
+                            <p class="disclaimer">
+                                Representative example: Borrowing £25,000 over 12 months. Representative 9.9% APR. 
+                                Monthly repayment £2,187. Total repayable £26,250. Rates from 4.9% to 29.9% APR.
+                            </p>
+                        </form>
+                    </div>
+                </div>
+            </div>
+        </section>
+        
+        <!-- Testimonials -->
+        <section class="section" aria-labelledby="testimonials-heading">
+            <div class="container">
+                <div class="content-block">
+                    <h2 id="testimonials-heading" class="section-title">What Tradespeople Say</h2>
+                    <p class="lead-text">Real reviews from real customers</p>
+                    
+                    <div class="testimonials-grid">
+                        <div class="testimonial-card">
+                            <div class="stars" aria-label="5 out of 5 stars">
+                                ★★★★★
+                            </div>
+                            <blockquote>
+                                "Finally, someone who understands construction. Got approval same day, money next morning. Took on a big commercial job I would've had to pass on otherwise."
+                            </blockquote>
+                            <cite>
+                                <strong>Dave Mitchell</strong>
+                                <span>Builder, Manchester</span>
+                            </cite>
+                        </div>
+                        <div class="testimonial-card">
+                            <div class="stars" aria-label="5 out of 5 stars">
+                                ★★★★★
+                            </div>
+                            <blockquote>
+                                "No messing about, no stupid questions about business plans. They looked at my work history, saw I'm good for it, sorted me out. Brilliant."
+                            </blockquote>
+                            <cite>
+                                <strong>Sarah Thompson</strong>
+                                <span>Electrician, Birmingham</span>
+                            </cite>
+                        </div>
+                        <div class="testimonial-card">
+                            <div class="stars" aria-label="5 out of 5 stars">
+                                ★★★★★
+                            </div>
+                            <blockquote>
+                                "Used them three times now. Each time it's been quick, easy, and the rates are fair. They get that cash flow is everything in this game."
+                            </blockquote>
+                            <cite>
+                                <strong>Michael O'Brien</strong>
+                                <span>Plumber, Leeds</span>
+                            </cite>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        
+        <!-- About Section -->
+        <section class="section bg-white" id="about" aria-labelledby="about-heading">
+            <div class="container">
+                <div class="content-block">
+                    <h2 id="about-heading" class="section-title">Why We're Different</h2>
+                    
+                    <div class="about-grid">
+                        <div class="about-content">
+                            <p class="lead-text">
+                                We're not a faceless corporation or a Silicon Valley startup that thinks it can 'disrupt' construction finance with an app.
+                            </p>
+                            <p>
+                                We're a team that's been working with UK tradespeople for over 15 years. We've seen every situation - the customer who vanishes after a job, the main contractor who holds payment hostage, the perfect job that needs equipment you can't afford yet.
+                            </p>
+                            <p>
+                                We built this service because banks don't get it. They want five-year business plans and profit projections. We just want to know: Are you a proper tradesperson? Do you do good work? Can you pay it back? That's it.
+                            </p>
+                            
+                            <div class="stats-row">
+                                <div class="stat">
+                                    <span class="stat-value">15+</span>
+                                    <span class="stat-label">Years Experience</span>
+                                </div>
+                                <div class="stat">
+                                    <span class="stat-value">£50M+</span>
+                                    <span class="stat-label">Funded</span>
+                                </div>
+                                <div class="stat">
+                                    <span class="stat-value">5,000+</span>
+                                    <span class="stat-label">Businesses Helped</span>
+                                </div>
+                            </div>
+                        </div>
+                        
+                        <div class="about-badges">
+                            <div class="badge-card">
+                                <svg width="60" height="60" fill="currentColor" viewBox="0 0 24 24">
+                                    <path d="M12 2L3.5 7v6c0 4.67 3.28 9.04 7.5 10.13 4.22-1.09 7.5-5.46 7.5-10.13V7L12 2zm0 2.18l5.5 3.18v4.64c0 3.31-2.35 6.43-5.5 7.36-3.15-.93-5.5-4.05-5.5-7.36V9.36L12 4.18zm-1.06 4.88L8.82 11.18l2.12 2.12 4.24-4.24-1.06-1.06-3.18 3.18-1.06-1.06z"/>
+                                </svg>
+                                <p>Secure & Professional Service</p>
+                            </div>
+                            <div class="badge-card">
+                                <img src="public/images/trustpilot-logo.png" alt="Trustpilot" width="120" height="60">
+                                <p>4.8/5 rating from 500+ reviews</p>
+                            </div>
+                            <div class="badge-card">
+                                <svg width="60" height="60" fill="currentColor" viewBox="0 0 24 24">
+                                    <path d="M9 11H7v2h2v-2zm4 0h-2v2h2v-2zm4 0h-2v2h2v-2zm2-7h-1V2h-2v2H8V2H6v2H5c-1.11 0-1.99.9-1.99 2L3 20c0 1.1.89 2 2 2h14c1.1 0 2-.9 2-2V6c0-1.1-.9-2-2-2zm0 16H5V9h14v11z"/>
+                                </svg>
+                                <p>15+ Years of Excellence</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        
+        <!-- Final CTA -->
+        <section class="section cta-section" aria-labelledby="cta-heading">
+            <div class="container">
+                <div class="cta-content">
+                    <h2 id="cta-heading" class="cta-title">Ready to Keep Your Business Moving?</h2>
+                    <p class="cta-subtitle">
+                        Stop letting cash flow problems hold you back. Get the finance you need, when you need it.
+                    </p>
+                    <div class="cta-actions">
+                        <a href="#calculator" class="btn btn-white btn-lg">
+                            Get Started Now
+                            <svg class="icon" width="20" height="20" fill="none" stroke="currentColor" stroke-width="2">
+                                <path d="M5 12h14m-7-7l7 7-7 7"/>
+                            </svg>
+                        </a>
+                        <a href="tel:08001234567" class="btn btn-outline-white btn-lg">
+                            <svg class="icon" width="20" height="20" fill="none" stroke="currentColor" stroke-width="2">
+                                <path d="M2 3.5a1.5 1.5 0 011.5-1.5h1.47a1.5 1.5 0 011.41 1l.82 2.47a1.5 1.5 0 01-.36 1.53l-.71.71a10 10 0 004.24 4.24l.71-.71a1.5 1.5 0 011.53-.36l2.47.82a1.5 1.5 0 011 1.41V14a1.5 1.5 0 01-1.5 1.5A12.5 12.5 0 012 3.5z"/>
+                            </svg>
+                            Call 0800 123 4567
+                        </a>
+                    </div>
+                    <p class="cta-note">
+                        Monday-Friday 8am-6pm, Saturday 9am-4pm
+                    </p>
+                </div>
+            </div>
+        </section>
+        
+    </main>
+    
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-grid">
+                <div class="footer-column">
+                    <h3 class="footer-title">Tradesman Finance</h3>
+                    <p class="footer-text">
+                        Quick, straightforward business finance for UK tradespeople. 
+                        No nonsense, just the cash flow you need.
+                    </p>
+                    <div class="footer-badges">
+                        <svg width="80" height="40" fill="currentColor" viewBox="0 0 24 24">
+                            <path d="M12 2L3.5 7v6c0 4.67 3.28 9.04 7.5 10.13 4.22-1.09 7.5-5.46 7.5-10.13V7L12 2zm0 2.18l5.5 3.18v4.64c0 3.31-2.35 6.43-5.5 7.36-3.15-.93-5.5-4.05-5.5-7.36V9.36L12 4.18zm-1.06 4.88L8.82 11.18l2.12 2.12 4.24-4.24-1.06-1.06-3.18 3.18-1.06-1.06z"/>
+                        </svg>
+                    </div>
+                </div>
+                
+                <div class="footer-column">
+                    <h4 class="footer-heading">Finance Options</h4>
+                    <ul class="footer-links">
+                        <li><a href="/business-loans.html">Business Loans</a></li>
+                        <li><a href="/invoice-finance.html">Invoice Finance</a></li>
+                        <li><a href="/asset-finance.html">Asset Finance</a></li>
+                        <li><a href="/merchant-cash-advance.html">Merchant Cash Advance</a></li>
+                    </ul>
+                </div>
+                
+                <div class="footer-column">
+                    <h4 class="footer-heading">Trades We Help</h4>
+                    <ul class="footer-links">
+                        <li><a href="/trades/builder-finance.html">Builders</a></li>
+                        <li><a href="/trades/electrician-finance.html">Electricians</a></li>
+                        <li><a href="/trades/plumber-finance.html">Plumbers</a></li>
+                        <li><a href="/trades/carpenter-finance.html">Carpenters</a></li>
+                    </ul>
+                </div>
+                
+                <div class="footer-column">
+                    <h4 class="footer-heading">Get in Touch</h4>
+                    <div class="footer-contact">
+                        <a href="tel:08001234567" class="footer-phone">
+                            <svg class="icon" width="20" height="20" fill="none" stroke="currentColor" stroke-width="2">
+                                <path d="M2 3.5a1.5 1.5 0 011.5-1.5h1.47a1.5 1.5 0 011.41 1l.82 2.47a1.5 1.5 0 01-.36 1.53l-.71.71a10 10 0 004.24 4.24l.71-.71a1.5 1.5 0 011.53-.36l2.47.82a1.5 1.5 0 011 1.41V14a1.5 1.5 0 01-1.5 1.5A12.5 12.5 0 012 3.5z"/>
+                            </svg>
+                            0800 123 4567
+                        </a>
+                        <p class="footer-hours">Mon-Fri 8am-6pm, Sat 9am-4pm</p>
+                        <a href="mailto:hello@tradesmanfinance.co.uk" class="footer-email">
+                            hello@tradesmanfinance.co.uk
+                        </a>
+                    </div>
+                </div>
+            </div>
+            
+            <div class="footer-bottom">
+                <div class="footer-legal">
+                    <p>&copy; 2024 Tradesman Finance Ltd. Company No. 12345678.</p>
+                    <nav class="footer-nav" aria-label="Legal navigation">
+                        <a href="/privacy.html">Privacy Policy</a>
+                        <a href="/terms.html">Terms & Conditions</a>
+                        <a href="/complaints.html">Complaints</a>
+                        <a href="/sitemap.html">Sitemap</a>
+                    </nav>
+                </div>
+                <p class="footer-disclaimer">
+                    Tradesman Finance Ltd is a credit broker, not a lender, and works with a panel of carefully selected lenders. 
+                    Finance subject to status. Terms and conditions apply. 
+                    We are committed to responsible lending and treating customers fairly.
+                </p>
+            </div>
+        </div>
+    </footer>
+    
+    <!-- CSS Error Alert -->
+    <div class="css-error" id="css-error">
+        ⚠️ CSS files are not loading properly. Please check your connection or contact support.
+    </div>
+    
+    <!-- Loading Indicator -->
+    <div class="loading-indicator" id="loading-indicator" style="display: none;">
+        Loading resources...
+    </div>
+    
+    <!-- Debug Framework -->
+    <script src="public/js/debug.js"></script>
+    
+    <!-- CSS Load Detection & Debug Script -->
+    <script>
+        // Initialize debug mode
+        window.DEBUG_MODE = true;
+        window.CSS_LOAD_STATUS = {};
+        
+        // Debug logger
+        function debugLog(message, type = 'info') {
+            if (window.DEBUG_MODE) {
+                const timestamp = new Date().toISOString();
+                const prefix = `[${timestamp}] [${type.toUpperCase()}]`;
+                
+                switch(type) {
+                    case 'error':
+                        console.error(prefix, message);
+                        break;
+                    case 'warn':
+                        console.warn(prefix, message);
+                        break;
+                    default:
+                        console.log(prefix, message);
+                }
+            }
+        }
+        
+        // CSS Load Checker
+        function checkCSSLoad() {
+            debugLog('Starting CSS load check...');
+            
+            const mainCSS = document.getElementById('main-css');
+            if (!mainCSS) {
+                debugLog('Main CSS link element not found!', 'error');
+                showCSSError();
+                return;
+            }
+            
+            // Check if CSS loaded by testing computed styles
+            const testDiv = document.createElement('div');
+            testDiv.className = 'container';
+            document.body.appendChild(testDiv);
+            
+            const computedStyle = window.getComputedStyle(testDiv);
+            const maxWidth = computedStyle.getPropertyValue('max-width');
+            
+            document.body.removeChild(testDiv);
+            
+            if (maxWidth === '1200px') {
+                debugLog('CSS loaded successfully! Max-width detected: ' + maxWidth);
+                window.CSS_LOAD_STATUS.mainCSS = 'loaded';
+            } else {
+                debugLog('CSS may not be loaded properly. Max-width: ' + maxWidth, 'warn');
+                
+                // Try alternative loading method
+                tryAlternativeLoad();
+            }
+        }
+        
+        // Alternative CSS loading method
+        function tryAlternativeLoad() {
+            debugLog('Attempting alternative CSS load...');
+            
+            const alternativePaths = [
+                'public/css/design-system.css',
+                './public/css/design-system.css',
+                '/trades/public/css/design-system.css'
+            ];
+            
+            let loaded = false;
+            alternativePaths.forEach(path => {
+                if (!loaded) {
+                    debugLog('Trying path: ' + path);
+                    
+                    const link = document.createElement('link');
+                    link.rel = 'stylesheet';
+                    link.href = path;
+                    link.onerror = () => {
+                        debugLog('Failed to load CSS from: ' + path, 'error');
+                    };
+                    link.onload = () => {
+                        debugLog('Successfully loaded CSS from: ' + path);
+                        loaded = true;
+                        hideCSSError();
+                    };
+                    document.head.appendChild(link);
+                }
+            });
+            
+            // If all attempts fail, show error
+            setTimeout(() => {
+                if (!loaded) {
+                    showCSSError();
+                }
+            }, 3000);
+        }
+        
+        // Show CSS error message
+        function showCSSError() {
+            const errorDiv = document.getElementById('css-error');
+            if (errorDiv) {
+                errorDiv.classList.add('show');
+                debugLog('CSS Error message displayed', 'error');
+            }
+        }
+        
+        // Hide CSS error message  
+        function hideCSSError() {
+            const errorDiv = document.getElementById('css-error');
+            if (errorDiv) {
+                errorDiv.classList.remove('show');
+            }
+        }
+        
+        // Check CSS on page load
+        window.addEventListener('DOMContentLoaded', () => {
+            debugLog('DOM Content Loaded');
+            checkCSSLoad();
+        });
+        
+        // Also check after window load
+        window.addEventListener('load', () => {
+            debugLog('Window fully loaded');
+            
+            // Final CSS check
+            setTimeout(() => {
+                const sheets = document.styleSheets;
+                debugLog('Total stylesheets loaded: ' + sheets.length);
+                
+                for (let i = 0; i < sheets.length; i++) {
+                    try {
+                        debugLog('Stylesheet ' + i + ': ' + (sheets[i].href || 'inline'));
+                    } catch(e) {
+                        debugLog('Could not access stylesheet ' + i + ' (CORS?)', 'warn');
+                    }
+                }
+            }, 100);
+        });
+        
+        // Global error handler
+        window.addEventListener('error', (e) => {
+            if (e.target.tagName === 'LINK') {
+                debugLog('Failed to load stylesheet: ' + e.target.href, 'error');
+            }
+        }, true);
+        
+        // Log initial page info
+        debugLog('Page URL: ' + window.location.href);
+        debugLog('User Agent: ' + navigator.userAgent);
+        debugLog('Document readyState: ' + document.readyState);
+    </script>
+    
+    <!-- Main Scripts with relative paths -->
+    <script>
+        // Calculator functionality
+        document.addEventListener('DOMContentLoaded', function() {
+            const amountInput = document.getElementById('amount');
+            const amountSlider = document.getElementById('amount-slider');
+            const termInput = document.getElementById('term');
+            const termSlider = document.getElementById('term-slider');
+            const monthlyPayment = document.getElementById('monthly-payment');
+            const totalRepayable = document.getElementById('total-repayable');
+            const aprDisplay = document.getElementById('apr');
+            
+            // Sync inputs and sliders
+            amountInput.addEventListener('input', function() {
+                amountSlider.value = this.value;
+                calculateLoan();
+            });
+            
+            amountSlider.addEventListener('input', function() {
+                amountInput.value = this.value;
+                calculateLoan();
+            });
+            
+            termInput.addEventListener('input', function() {
+                termSlider.value = this.value;
+                calculateLoan();
+            });
+            
+            termSlider.addEventListener('input', function() {
+                termInput.value = this.value;
+                calculateLoan();
+            });
+            
+            function calculateLoan() {
+                const amount = parseFloat(amountInput.value);
+                const term = parseFloat(termInput.value);
+                
+                // Simple interest calculation (representative)
+                const apr = 9.9; // Fixed APR for example
+                const monthlyRate = (apr / 100) / 12;
+                const monthly = (amount * monthlyRate * Math.pow(1 + monthlyRate, term)) / 
+                               (Math.pow(1 + monthlyRate, term) - 1);
+                const total = monthly * term;
+                
+                // Update display
+                monthlyPayment.textContent = '£' + monthly.toFixed(0).replace(/\B(?=(\d{3})+(?!\d))/g, ',');
+                totalRepayable.textContent = '£' + total.toFixed(0).replace(/\B(?=(\d{3})+(?!\d))/g, ',');
+                aprDisplay.textContent = apr + '%';
+            }
+            
+            // Initial calculation
+            calculateLoan();
+            
+            // Form submission
+            document.getElementById('finance-calculator').addEventListener('submit', function(e) {
+                e.preventDefault();
+                // Would normally submit to backend
+                alert('Thank you for your interest! One of our team will call you shortly to discuss your requirements.');
+            });
+            
+            // Debug: Log calculator initialization
+            debugLog('Calculator initialized');
+            
+            // Mobile menu toggle
+            const navToggle = document.querySelector('.nav-toggle');
+            const navMenu = document.querySelector('.nav-menu');
+            
+            navToggle.addEventListener('click', function() {
+                const isExpanded = this.getAttribute('aria-expanded') === 'true';
+                this.setAttribute('aria-expanded', !isExpanded);
+                navMenu.classList.toggle('nav-menu-active');
+                this.classList.toggle('is-active');
+            });
+            
+            // Smooth scrolling for anchor links
+            document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+                anchor.addEventListener('click', function(e) {
+                    e.preventDefault();
+                    const target = document.querySelector(this.getAttribute('href'));
+                    if (target) {
+                        target.scrollIntoView({
+                            behavior: 'smooth',
+                            block: 'start'
+                        });
+                        // Close mobile menu if open
+                        navMenu.classList.remove('nav-menu-active');
+                        navToggle.classList.remove('is-active');
+                        navToggle.setAttribute('aria-expanded', 'false');
+                    }
+                });
+            });
+            
+            // Add scroll effect to header
+            const header = document.querySelector('.header');
+            let lastScroll = 0;
+            
+            window.addEventListener('scroll', function() {
+                const currentScroll = window.pageYOffset;
+                
+                if (currentScroll > 100) {
+                    header.classList.add('header-scrolled');
+                } else {
+                    header.classList.remove('header-scrolled');
+                }
+                
+                lastScroll = currentScroll;
+            });
+            
+            // Debug: Log page fully initialized
+            debugLog('Page JavaScript fully initialized');
+            
+            // Final debug report
+            setTimeout(() => {
+                console.group('🔍 DEBUG REPORT');
+                console.log('CSS Load Status:', window.CSS_LOAD_STATUS);
+                console.log('Stylesheets:', document.styleSheets.length);
+                console.log('Scripts loaded:', document.scripts.length);
+                console.log('DOM Elements:', {
+                    header: !!document.querySelector('.header'),
+                    hero: !!document.querySelector('.hero'),
+                    calculator: !!document.getElementById('finance-calculator'),
+                    footer: !!document.querySelector('.footer')
+                });
+                console.groupEnd();
+            }, 2000);
+        });
+    </script>
+</body>
+</html>

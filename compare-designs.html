@@ -1,0 +1,422 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Design Comparison - TradesmanFinance</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+        
+        body {
+            font-family: 'Inter', -apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif;
+            background: #1a1a1a;
+            color: white;
+            overflow: hidden;
+        }
+        
+        .comparison-header {
+            position: fixed;
+            top: 0;
+            left: 0;
+            right: 0;
+            height: 80px;
+            background: #111;
+            border-bottom: 2px solid #333;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            gap: 40px;
+            z-index: 1000;
+            box-shadow: 0 4px 20px rgba(0,0,0,0.5);
+        }
+        
+        .version-selector {
+            display: flex;
+            gap: 20px;
+            align-items: center;
+        }
+        
+        .version-btn {
+            padding: 12px 24px;
+            background: #2d2d2d;
+            border: 2px solid #444;
+            color: #fff;
+            font-size: 14px;
+            font-weight: 600;
+            border-radius: 8px;
+            cursor: pointer;
+            transition: all 0.3s ease;
+            text-transform: uppercase;
+            letter-spacing: 0.5px;
+        }
+        
+        .version-btn:hover {
+            background: #3d3d3d;
+            border-color: #666;
+            transform: translateY(-2px);
+        }
+        
+        .version-btn.active {
+            background: #2C5282;
+            border-color: #2C5282;
+            box-shadow: 0 4px 12px rgba(44, 82, 130, 0.4);
+        }
+        
+        .version-btn.old.active {
+            background: #ff6b35;
+            border-color: #ff6b35;
+            box-shadow: 0 4px 12px rgba(255, 107, 53, 0.4);
+        }
+        
+        .comparison-controls {
+            display: flex;
+            gap: 15px;
+            align-items: center;
+        }
+        
+        .slider-container {
+            display: flex;
+            align-items: center;
+            gap: 10px;
+            padding: 8px 16px;
+            background: #2d2d2d;
+            border-radius: 8px;
+        }
+        
+        .slider-container label {
+            font-size: 12px;
+            text-transform: uppercase;
+            letter-spacing: 0.5px;
+            color: #aaa;
+        }
+        
+        input[type="range"] {
+            width: 300px;
+            height: 4px;
+            background: #444;
+            outline: none;
+            opacity: 0.9;
+            transition: opacity 0.2s;
+            border-radius: 2px;
+        }
+        
+        input[type="range"]:hover {
+            opacity: 1;
+        }
+        
+        input[type="range"]::-webkit-slider-thumb {
+            appearance: none;
+            width: 20px;
+            height: 20px;
+            background: #2C5282;
+            cursor: pointer;
+            border-radius: 50%;
+            border: 2px solid #fff;
+            box-shadow: 0 2px 8px rgba(0,0,0,0.3);
+        }
+        
+        .iframe-container {
+            position: fixed;
+            top: 80px;
+            left: 0;
+            right: 0;
+            bottom: 0;
+            display: flex;
+            align-items: stretch;
+            background: #000;
+        }
+        
+        .iframe-wrapper {
+            flex: 1;
+            position: relative;
+            overflow: hidden;
+        }
+        
+        .iframe-wrapper iframe {
+            width: 100%;
+            height: 100%;
+            border: none;
+            background: white;
+        }
+        
+        .version-label {
+            position: absolute;
+            top: 20px;
+            left: 20px;
+            padding: 8px 16px;
+            background: rgba(0,0,0,0.8);
+            border-radius: 6px;
+            font-size: 12px;
+            font-weight: 600;
+            text-transform: uppercase;
+            letter-spacing: 1px;
+            z-index: 10;
+            backdrop-filter: blur(10px);
+        }
+        
+        .version-label.old {
+            background: rgba(255, 107, 53, 0.9);
+        }
+        
+        .version-label.new {
+            background: rgba(44, 82, 130, 0.9);
+        }
+        
+        .divider {
+            width: 4px;
+            background: #333;
+            position: relative;
+            cursor: col-resize;
+            transition: background 0.3s ease;
+        }
+        
+        .divider:hover {
+            background: #555;
+        }
+        
+        .divider::before {
+            content: '⋮';
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+            color: #888;
+            font-size: 24px;
+            pointer-events: none;
+        }
+        
+        .loading-overlay {
+            position: absolute;
+            top: 0;
+            left: 0;
+            right: 0;
+            bottom: 0;
+            background: rgba(0,0,0,0.9);
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            z-index: 100;
+            transition: opacity 0.3s ease;
+        }
+        
+        .loading-overlay.hidden {
+            opacity: 0;
+            pointer-events: none;
+        }
+        
+        .loading-spinner {
+            width: 50px;
+            height: 50px;
+            border: 3px solid #333;
+            border-top-color: #2C5282;
+            border-radius: 50%;
+            animation: spin 1s linear infinite;
+        }
+        
+        @keyframes spin {
+            to { transform: rotate(360deg); }
+        }
+        
+        .info-badge {
+            position: fixed;
+            bottom: 20px;
+            right: 20px;
+            padding: 12px 20px;
+            background: rgba(0,0,0,0.9);
+            border: 1px solid #333;
+            border-radius: 8px;
+            font-size: 13px;
+            backdrop-filter: blur(10px);
+            z-index: 100;
+        }
+        
+        .info-badge span {
+            color: #2C5282;
+            font-weight: 600;
+        }
+    </style>
+</head>
+<body>
+    <div class="comparison-header">
+        <div class="version-selector">
+            <button class="version-btn old" onclick="showVersion('old')">
+                🔨 Industrial Design (Current)
+            </button>
+            <button class="version-btn new active" onclick="showVersion('new')">
+                ✨ Professional Design (New)
+            </button>
+            <button class="version-btn" onclick="showVersion('split')">
+                ⚡ Split View
+            </button>
+        </div>
+        
+        <div class="comparison-controls" id="splitControls" style="display: none;">
+            <div class="slider-container">
+                <label>Split Position:</label>
+                <input type="range" id="splitSlider" min="20" max="80" value="50" oninput="adjustSplit(this.value)">
+                <span id="splitValue">50%</span>
+            </div>
+        </div>
+    </div>
+    
+    <div class="iframe-container" id="container">
+        <div class="iframe-wrapper" id="leftFrame" style="display: none;">
+            <div class="version-label old">Industrial Design</div>
+            <div class="loading-overlay">
+                <div class="loading-spinner"></div>
+            </div>
+            <iframe src="index.html"></iframe>
+        </div>
+        
+        <div class="divider" id="divider" style="display: none;"></div>
+        
+        <div class="iframe-wrapper" id="rightFrame">
+            <div class="version-label new">Professional Design</div>
+            <div class="loading-overlay">
+                <div class="loading-spinner"></div>
+            </div>
+            <iframe src="index-new.html"></iframe>
+        </div>
+    </div>
+    
+    <div class="info-badge">
+        Press <span>ESC</span> to toggle views | Use <span>←→</span> arrows to adjust split
+    </div>
+    
+    <script>
+        let currentView = 'new';
+        let isDragging = false;
+        let startX = 0;
+        let startSplit = 50;
+        
+        // Remove loading overlays when iframes load
+        document.querySelectorAll('iframe').forEach(iframe => {
+            iframe.onload = function() {
+                const overlay = this.parentElement.querySelector('.loading-overlay');
+                if (overlay) {
+                    setTimeout(() => overlay.classList.add('hidden'), 500);
+                }
+            };
+        });
+        
+        function showVersion(version) {
+            currentView = version;
+            const leftFrame = document.getElementById('leftFrame');
+            const rightFrame = document.getElementById('rightFrame');
+            const divider = document.getElementById('divider');
+            const splitControls = document.getElementById('splitControls');
+            const buttons = document.querySelectorAll('.version-btn');
+            
+            // Update button states
+            buttons.forEach(btn => btn.classList.remove('active'));
+            
+            if (version === 'old') {
+                leftFrame.style.display = 'block';
+                leftFrame.style.flex = '1';
+                rightFrame.style.display = 'none';
+                divider.style.display = 'none';
+                splitControls.style.display = 'none';
+                buttons[0].classList.add('active');
+            } else if (version === 'new') {
+                leftFrame.style.display = 'none';
+                rightFrame.style.display = 'block';
+                rightFrame.style.flex = '1';
+                divider.style.display = 'none';
+                splitControls.style.display = 'none';
+                buttons[1].classList.add('active');
+            } else if (version === 'split') {
+                leftFrame.style.display = 'block';
+                rightFrame.style.display = 'block';
+                divider.style.display = 'block';
+                splitControls.style.display = 'flex';
+                adjustSplit(50);
+                buttons[2].classList.add('active');
+            }
+        }
+        
+        function adjustSplit(value) {
+            const leftFrame = document.getElementById('leftFrame');
+            const rightFrame = document.getElementById('rightFrame');
+            
+            leftFrame.style.flex = `0 0 ${value}%`;
+            rightFrame.style.flex = `0 0 ${100 - value}%`;
+            
+            document.getElementById('splitValue').textContent = `${value}%`;
+        }
+        
+        // Keyboard shortcuts
+        document.addEventListener('keydown', (e) => {
+            if (e.key === 'Escape') {
+                // Toggle between views
+                if (currentView === 'old') showVersion('new');
+                else if (currentView === 'new') showVersion('split');
+                else showVersion('old');
+            } else if (e.key === 'ArrowLeft' && currentView === 'split') {
+                const slider = document.getElementById('splitSlider');
+                slider.value = Math.max(20, parseInt(slider.value) - 5);
+                adjustSplit(slider.value);
+            } else if (e.key === 'ArrowRight' && currentView === 'split') {
+                const slider = document.getElementById('splitSlider');
+                slider.value = Math.min(80, parseInt(slider.value) + 5);
+                adjustSplit(slider.value);
+            }
+        });
+        
+        // Draggable divider
+        const divider = document.getElementById('divider');
+        const container = document.getElementById('container');
+        
+        divider.addEventListener('mousedown', (e) => {
+            isDragging = true;
+            startX = e.clientX;
+            const slider = document.getElementById('splitSlider');
+            startSplit = parseInt(slider.value);
+            document.body.style.cursor = 'col-resize';
+            e.preventDefault();
+        });
+        
+        document.addEventListener('mousemove', (e) => {
+            if (!isDragging) return;
+            
+            const deltaX = e.clientX - startX;
+            const containerWidth = container.offsetWidth;
+            const deltaPercent = (deltaX / containerWidth) * 100;
+            const newSplit = Math.min(80, Math.max(20, startSplit + deltaPercent));
+            
+            document.getElementById('splitSlider').value = newSplit;
+            adjustSplit(newSplit);
+        });
+        
+        document.addEventListener('mouseup', () => {
+            isDragging = false;
+            document.body.style.cursor = 'default';
+        });
+        
+        // Sync scroll positions
+        let syncScroll = false;
+        document.querySelectorAll('iframe').forEach(iframe => {
+            iframe.onload = function() {
+                const iframeWindow = iframe.contentWindow;
+                iframeWindow.addEventListener('scroll', () => {
+                    if (!syncScroll && currentView === 'split') {
+                        syncScroll = true;
+                        document.querySelectorAll('iframe').forEach(otherIframe => {
+                            if (otherIframe !== iframe) {
+                                otherIframe.contentWindow.scrollTo(
+                                    iframeWindow.scrollX,
+                                    iframeWindow.scrollY
+                                );
+                            }
+                        });
+                        setTimeout(() => syncScroll = false, 10);
+                    }
+                });
+            };
+        });
+    </script>
+</body>
+</html>

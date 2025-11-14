@@ -418,6 +418,34 @@
     box-shadow: 12px 12px 0 rgba(0,0,0,0.3);
 }
 
+/* Fix CTA button styling for location pages */
+.btn-massive-industrial {
+    display: inline-flex !important;
+    align-items: center !important;
+    gap: 16px !important;
+    background: #ff6b35 !important;
+    color: white !important;
+    padding: 24px 60px !important;
+    text-decoration: none !important;
+    font-family: 'Bebas Neue', sans-serif !important;
+    font-size: 32px !important;
+    letter-spacing: 2px !important;
+    box-shadow: 8px 8px 0 rgba(0,0,0,0.3) !important;
+    transition: all 0.2s ease !important;
+    border: none !important;
+}
+
+.btn-massive-industrial:hover {
+    transform: translate(-4px, -4px) !important;
+    box-shadow: 12px 12px 0 rgba(0,0,0,0.3) !important;
+    background: #ff8555 !important;
+}
+
+.btn-massive-industrial svg {
+    stroke: currentColor !important;
+    fill: none !important;
+}
+
 /* City-specific styling */
 .trades-services {
     padding: 80px 0;

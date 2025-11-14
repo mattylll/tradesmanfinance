@@ -1,0 +1,180 @@
+/* Calculator Section Improvements - Better layout and typography */
+/* Load this after calculator-redesign.css */
+
+/* Main calculator section - reduce padding */
+.calculator-section,
+#calculator-section {
+    padding: 40px 0 !important; /* Reduced from default */
+    margin: 0 !important;
+}
+
+/* Container adjustments */
+.calculator-container {
+    padding: 30px !important; /* Reduced internal padding */
+    margin: 0 auto !important;
+    max-width: 1200px !important;
+}
+
+/* Left panel (input section) improvements */
+.calculator-inputs {
+    padding: 30px !important; /* Reduced from default */
+}
+
+/* Make the heading much larger and bolder */
+.calculator-inputs h2,
+.calc-input h2 {
+    font-size: 2.5rem !important; /* Much larger */
+    font-weight: 900 !important;
+    margin-bottom: 15px !important;
+    line-height: 1.2 !important;
+    color: #1a1a1a !important;
+}
+
+/* Subtitle text larger */
+.calculator-inputs p,
+.calc-input p {
+    font-size: 1.2rem !important; /* Larger subtitle */
+    margin-bottom: 25px !important;
+    color: #666 !important;
+}
+
+/* Input labels - make them bigger and bolder */
+.input-group label,
+.slider-group label {
+    font-size: 1rem !important; /* Larger labels */
+    font-weight: 700 !important;
+    text-transform: uppercase;
+    letter-spacing: 0.5px;
+    margin-bottom: 15px !important;
+    color: #1a1a1a !important;
+}
+
+/* Value displays - make them much larger */
+.slider-value,
+.amount-display {
+    font-size: 2.5rem !important; /* Much larger values */
+    font-weight: 900 !important;
+    color: #ff6b35 !important;
+    margin: 10px 0 !important;
+}
+
+/* Unit labels (GBP, months, APR) */
+.slider-value span,
+.unit-label {
+    font-size: 1.2rem !important;
+    font-weight: 600 !important;
+    color: #666 !important;
+    margin-left: 10px !important;
+}
+
+/* Slider improvements */
+.slider-container {
+    margin: 20px 0 30px 0 !important; /* Better spacing */
+}
+
+/* Range labels at ends of slider */
+.slider-labels {
+    display: flex;
+    justify-content: space-between;
+    margin-top: 10px !important;
+    font-size: 0.95rem !important;
+    color: #999 !important;
+}
+
+/* Right panel (results) adjustments */
+.calculator-results,
+.calc-results {
+    padding: 40px !important;
+    background: #2d2d2d !important;
+}
+
+/* Results heading */
+.calculator-results h3,
+.calc-results h3 {
+    font-size: 1.8rem !important;
+    margin-bottom: 10px !important;
+}
+
+/* Results subtitle */
+.calculator-results p,
+.calc-results p {
+    font-size: 1rem !important;
+    opacity: 0.8;
+    margin-bottom: 30px !important;
+}
+
+/* Apply button in calculator */
+.calculator-results .btn-industrial,
+.calc-results .btn-industrial {
+    width: 100% !important;
+    padding: 20px !important;
+    font-size: 1.3rem !important;
+    margin-top: 30px !important;
+}
+
+/* Remove FCA Regulated badge - hide it */
+.badge:contains("FCA Regulated"),
+.feature-badge:contains("FCA"),
+svg + span:contains("FCA Regulated"),
+[class*="badge"]:contains("FCA") {
+    display: none !important;
+}
+
+/* Hide any element with FCA text in calculator */
+.calculator-section *:contains("FCA Regulated") {
+    display: none !important;
+}
+
+/* Badges at bottom - better spacing */
+.calc-features {
+    margin-top: 30px !important;
+    padding-top: 30px !important;
+    border-top: 1px solid rgba(255,255,255,0.1);
+}
+
+.calc-features .feature {
+    font-size: 1rem !important;
+    padding: 5px 0 !important;
+}
+
+/* Responsive improvements */
+@media (max-width: 768px) {
+    .calculator-container {
+        padding: 20px !important;
+    }
+    
+    .calculator-inputs h2 {
+        font-size: 2rem !important;
+    }
+    
+    .slider-value,
+    .amount-display {
+        font-size: 2rem !important;
+    }
+    
+    .calculator-inputs,
+    .calculator-results {
+        padding: 20px !important;
+    }
+}
+
+/* Grid layout adjustment for better proportions */
+@media (min-width: 769px) {
+    .calculator-grid,
+    .calc-grid {
+        grid-template-columns: 1.2fr 1fr !important; /* Give more space to left panel */
+        gap: 0 !important; /* Remove gap between panels */
+    }
+}
+
+/* Input group spacing */
+.input-group,
+.slider-group {
+    margin-bottom: 35px !important; /* Better spacing between inputs */
+}
+
+/* Last input group */
+.input-group:last-child,
+.slider-group:last-child {
+    margin-bottom: 0 !important;
+}

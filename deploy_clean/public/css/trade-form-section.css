@@ -1,0 +1,64 @@
+/**
+ * Trade Form Section Styling
+ * Integrates the multi-step forms into trade pages
+ */
+
+/* Form Section */
+.trade-form-section {
+    padding: 80px 0;
+    background: linear-gradient(135deg, var(--off-white) 0%, var(--white) 100%);
+    position: relative;
+    overflow: hidden;
+}
+
+.trade-form-section::before {
+    content: '';
+    position: absolute;
+    top: -50%;
+    right: -10%;
+    width: 600px;
+    height: 600px;
+    background: radial-gradient(circle, rgba(255, 107, 53, 0.05) 0%, transparent 70%);
+    border-radius: 50%;
+}
+
+.trade-form-section .section-title {
+    font-family: var(--font-industrial);
+    font-size: clamp(2.5rem, 5vw, 4rem);
+    color: var(--steel-dark);
+    text-align: center;
+    margin-bottom: 0.5rem;
+    text-transform: uppercase;
+}
+
+.trade-form-section .section-subtitle {
+    font-size: 1.25rem;
+    color: var(--concrete);
+    text-align: center;
+    margin-bottom: 3rem;
+}
+
+/* Form Container Overrides */
+.trade-form-section .trade-form-container {
+    background: transparent;
+}
+
+.trade-form-section .trade-form-wrapper {
+    box-shadow: 0 20px 60px rgba(0,0,0,0.15);
+    border: 3px solid var(--steel-gray);
+}
+
+/* Mobile Responsive */
+@media (max-width: 768px) {
+    .trade-form-section {
+        padding: 60px 0;
+    }
+    
+    .trade-form-section .section-title {
+        font-size: 2rem;
+    }
+    
+    .trade-form-section .section-subtitle {
+        font-size: 1rem;
+    }
+}

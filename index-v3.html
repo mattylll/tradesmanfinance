@@ -1,0 +1,1319 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tradesman Finance - Fast Business Funding for UK Trades</title>
+    <meta name="description" content="Get £5,000 to £500,000 for your trade business. Quick decisions, flexible terms. Built for electricians, plumbers, builders and more.">
+    
+    <!-- Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700;900&display=swap" rel="stylesheet">
+    
+    <style>
+        :root {
+            --primary: #2C5282;
+            --primary-dark: #1a365d;
+            --accent: #3B82F6;
+            --accent-light: #60A5FA;
+            --success: #10B981;
+            --warning: #F59E0B;
+            --gray-50: #F7FAFC;
+            --gray-100: #EDF2F7;
+            --gray-200: #E2E8F0;
+            --gray-300: #CBD5E0;
+            --gray-600: #4A5568;
+            --gray-800: #1A202C;
+            --white: #FFFFFF;
+            --shadow-sm: 0 1px 3px rgba(0,0,0,0.12);
+            --shadow-md: 0 4px 6px rgba(0,0,0,0.1);
+            --shadow-lg: 0 10px 25px rgba(0,0,0,0.1);
+            --shadow-xl: 0 20px 40px rgba(0,0,0,0.15);
+        }
+
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: 'Inter', sans-serif;
+            color: var(--gray-800);
+            line-height: 1.6;
+            overflow-x: hidden;
+        }
+
+        /* Navigation */
+        nav {
+            position: fixed;
+            top: 0;
+            width: 100%;
+            background: rgba(255, 255, 255, 0.98);
+            backdrop-filter: blur(10px);
+            z-index: 1000;
+            box-shadow: var(--shadow-sm);
+            transition: all 0.3s ease;
+        }
+
+        nav.scrolled {
+            box-shadow: var(--shadow-md);
+        }
+
+        .nav-container {
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: 1rem 2rem;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
+
+        .logo {
+            font-size: 1.5rem;
+            font-weight: 900;
+            color: var(--primary);
+            text-decoration: none;
+            display: flex;
+            align-items: center;
+            gap: 0.5rem;
+        }
+
+        .logo-icon {
+            width: 32px;
+            height: 32px;
+            background: linear-gradient(135deg, var(--accent), var(--primary));
+            border-radius: 8px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            color: white;
+            font-weight: 900;
+        }
+
+        .nav-links {
+            display: flex;
+            gap: 2rem;
+            align-items: center;
+        }
+
+        .nav-links a {
+            color: var(--gray-600);
+            text-decoration: none;
+            font-weight: 600;
+            transition: color 0.3s ease;
+        }
+
+        .nav-links a:hover {
+            color: var(--primary);
+        }
+
+        .nav-cta {
+            background: var(--accent);
+            color: white;
+            padding: 0.75rem 1.5rem;
+            border-radius: 8px;
+            text-decoration: none;
+            font-weight: 600;
+            transition: all 0.3s ease;
+            box-shadow: 0 2px 10px rgba(59, 130, 246, 0.3);
+        }
+
+        .nav-cta:hover {
+            background: var(--primary);
+            transform: translateY(-2px);
+            box-shadow: 0 4px 20px rgba(59, 130, 246, 0.4);
+        }
+
+        /* Hero Section - Split Design */
+        .hero {
+            margin-top: 80px;
+            min-height: calc(100vh - 80px);
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            position: relative;
+            overflow: hidden;
+        }
+
+        .hero-left {
+            background: var(--white);
+            padding: 4rem 2rem 4rem 4rem;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            position: relative;
+        }
+
+        .hero-right {
+            background: linear-gradient(135deg, var(--primary), var(--accent));
+            position: relative;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            padding: 2rem;
+        }
+
+        .hero-badge {
+            display: inline-block;
+            background: var(--success);
+            color: white;
+            padding: 0.5rem 1rem;
+            border-radius: 50px;
+            font-size: 0.875rem;
+            font-weight: 600;
+            margin-bottom: 1.5rem;
+            animation: slideDown 0.8s ease;
+        }
+
+        h1 {
+            font-size: clamp(2.5rem, 5vw, 4rem);
+            font-weight: 900;
+            line-height: 1.1;
+            margin-bottom: 1.5rem;
+            animation: slideUp 0.8s ease;
+        }
+
+        .highlight {
+            color: var(--accent);
+            position: relative;
+        }
+
+        .hero-subtitle {
+            font-size: 1.25rem;
+            color: var(--gray-600);
+            margin-bottom: 2rem;
+            animation: slideUp 0.8s ease 0.1s both;
+        }
+
+        .hero-features {
+            display: flex;
+            gap: 2rem;
+            margin-bottom: 2rem;
+            animation: slideUp 0.8s ease 0.2s both;
+        }
+
+        .hero-feature {
+            display: flex;
+            align-items: center;
+            gap: 0.5rem;
+            font-weight: 600;
+        }
+
+        .check-icon {
+            width: 24px;
+            height: 24px;
+            background: var(--success);
+            border-radius: 50%;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            color: white;
+        }
+
+        .hero-buttons {
+            display: flex;
+            gap: 1rem;
+            animation: slideUp 0.8s ease 0.3s both;
+        }
+
+        .btn-primary {
+            background: var(--accent);
+            color: white;
+            padding: 1rem 2rem;
+            border-radius: 8px;
+            text-decoration: none;
+            font-weight: 700;
+            font-size: 1.125rem;
+            transition: all 0.3s ease;
+            box-shadow: 0 4px 20px rgba(59, 130, 246, 0.3);
+            display: inline-block;
+        }
+
+        .btn-primary:hover {
+            background: var(--primary);
+            transform: translateY(-2px);
+            box-shadow: 0 6px 30px rgba(59, 130, 246, 0.4);
+        }
+
+        .btn-secondary {
+            background: var(--white);
+            color: var(--primary);
+            padding: 1rem 2rem;
+            border: 2px solid var(--gray-200);
+            border-radius: 8px;
+            text-decoration: none;
+            font-weight: 700;
+            font-size: 1.125rem;
+            transition: all 0.3s ease;
+            display: inline-block;
+        }
+
+        .btn-secondary:hover {
+            border-color: var(--accent);
+            color: var(--accent);
+            transform: translateY(-2px);
+        }
+
+        /* Geometric Shapes */
+        .hero-shape {
+            position: absolute;
+            opacity: 0.1;
+        }
+
+        .shape-1 {
+            width: 300px;
+            height: 300px;
+            background: white;
+            border-radius: 50%;
+            top: 10%;
+            right: 10%;
+            animation: float 6s ease-in-out infinite;
+        }
+
+        .shape-2 {
+            width: 200px;
+            height: 200px;
+            background: white;
+            transform: rotate(45deg);
+            bottom: 20%;
+            left: 20%;
+            animation: float 8s ease-in-out infinite reverse;
+        }
+
+        /* Calculator Preview Card */
+        .calculator-preview {
+            background: white;
+            border-radius: 16px;
+            padding: 2rem;
+            box-shadow: var(--shadow-xl);
+            max-width: 400px;
+            animation: slideUp 1s ease;
+        }
+
+        .calc-header {
+            font-size: 1.25rem;
+            font-weight: 700;
+            margin-bottom: 1.5rem;
+            color: var(--gray-800);
+        }
+
+        .calc-amount {
+            background: var(--gray-50);
+            padding: 1.5rem;
+            border-radius: 12px;
+            margin-bottom: 1.5rem;
+        }
+
+        .calc-label {
+            font-size: 0.875rem;
+            color: var(--gray-600);
+            margin-bottom: 0.5rem;
+        }
+
+        .calc-value {
+            font-size: 2.5rem;
+            font-weight: 900;
+            color: var(--primary);
+        }
+
+        .calc-slider {
+            width: 100%;
+            margin: 1rem 0;
+        }
+
+        .calc-stats {
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            gap: 1rem;
+            margin-bottom: 1.5rem;
+        }
+
+        .calc-stat {
+            padding: 1rem;
+            background: var(--gray-50);
+            border-radius: 8px;
+        }
+
+        .calc-stat-label {
+            font-size: 0.75rem;
+            color: var(--gray-600);
+            margin-bottom: 0.25rem;
+        }
+
+        .calc-stat-value {
+            font-size: 1.25rem;
+            font-weight: 700;
+            color: var(--gray-800);
+        }
+
+        /* Stats Bar */
+        .stats-bar {
+            background: var(--gray-50);
+            padding: 3rem 0;
+            border-top: 1px solid var(--gray-200);
+            border-bottom: 1px solid var(--gray-200);
+        }
+
+        .stats-container {
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: 0 2rem;
+            display: grid;
+            grid-template-columns: repeat(4, 1fr);
+            gap: 2rem;
+        }
+
+        .stat-item {
+            text-align: center;
+        }
+
+        .stat-number {
+            font-size: 3rem;
+            font-weight: 900;
+            color: var(--primary);
+            line-height: 1;
+            margin-bottom: 0.5rem;
+        }
+
+        .stat-label {
+            color: var(--gray-600);
+            font-weight: 600;
+        }
+
+        /* Problem/Solution Section */
+        .problem-solution {
+            padding: 5rem 0;
+            background: white;
+        }
+
+        .section-container {
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: 0 2rem;
+        }
+
+        .section-header {
+            text-align: center;
+            margin-bottom: 4rem;
+        }
+
+        .section-badge {
+            display: inline-block;
+            background: var(--warning);
+            color: white;
+            padding: 0.5rem 1rem;
+            border-radius: 50px;
+            font-size: 0.875rem;
+            font-weight: 600;
+            margin-bottom: 1rem;
+        }
+
+        h2 {
+            font-size: clamp(2rem, 4vw, 3rem);
+            font-weight: 900;
+            margin-bottom: 1rem;
+        }
+
+        .section-subtitle {
+            font-size: 1.25rem;
+            color: var(--gray-600);
+        }
+
+        .comparison-grid {
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            gap: 3rem;
+            margin-top: 3rem;
+        }
+
+        .comparison-card {
+            padding: 2rem;
+            border-radius: 16px;
+            position: relative;
+            transition: transform 0.3s ease;
+        }
+
+        .comparison-card:hover {
+            transform: translateY(-5px);
+        }
+
+        .card-problem {
+            background: var(--gray-50);
+            border: 2px solid var(--gray-200);
+        }
+
+        .card-solution {
+            background: linear-gradient(135deg, #EBF8FF, #DBEAFE);
+            border: 2px solid var(--accent-light);
+            box-shadow: var(--shadow-lg);
+        }
+
+        .card-icon {
+            width: 60px;
+            height: 60px;
+            border-radius: 12px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            font-size: 2rem;
+            margin-bottom: 1.5rem;
+        }
+
+        .icon-problem {
+            background: var(--gray-200);
+            color: var(--gray-600);
+        }
+
+        .icon-solution {
+            background: var(--accent);
+            color: white;
+        }
+
+        .card-title {
+            font-size: 1.5rem;
+            font-weight: 700;
+            margin-bottom: 1rem;
+        }
+
+        .card-list {
+            list-style: none;
+        }
+
+        .card-list li {
+            padding: 0.75rem 0;
+            padding-left: 2rem;
+            position: relative;
+        }
+
+        .card-list li:before {
+            content: '';
+            position: absolute;
+            left: 0;
+            top: 50%;
+            transform: translateY(-50%);
+            width: 20px;
+            height: 20px;
+            border-radius: 50%;
+        }
+
+        .card-problem .card-list li:before {
+            content: '✕';
+            background: var(--gray-300);
+            color: var(--gray-600);
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            font-size: 0.75rem;
+        }
+
+        .card-solution .card-list li:before {
+            content: '✓';
+            background: var(--success);
+            color: white;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            font-size: 0.75rem;
+        }
+
+        /* How It Works */
+        .how-it-works {
+            padding: 5rem 0;
+            background: var(--gray-50);
+        }
+
+        .process-grid {
+            display: grid;
+            grid-template-columns: repeat(3, 1fr);
+            gap: 2rem;
+            margin-top: 3rem;
+        }
+
+        .process-card {
+            background: white;
+            padding: 2rem;
+            border-radius: 16px;
+            text-align: center;
+            position: relative;
+            transition: all 0.3s ease;
+        }
+
+        .process-card:hover {
+            transform: translateY(-5px);
+            box-shadow: var(--shadow-xl);
+        }
+
+        .process-number {
+            position: absolute;
+            top: -20px;
+            left: 50%;
+            transform: translateX(-50%);
+            width: 40px;
+            height: 40px;
+            background: var(--accent);
+            color: white;
+            border-radius: 50%;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            font-weight: 900;
+            font-size: 1.25rem;
+            box-shadow: var(--shadow-md);
+        }
+
+        .process-icon {
+            width: 80px;
+            height: 80px;
+            margin: 1rem auto 1.5rem;
+            background: linear-gradient(135deg, var(--accent-light), var(--accent));
+            border-radius: 16px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            font-size: 2.5rem;
+        }
+
+        .process-title {
+            font-size: 1.25rem;
+            font-weight: 700;
+            margin-bottom: 1rem;
+        }
+
+        .process-description {
+            color: var(--gray-600);
+            line-height: 1.6;
+        }
+
+        .process-time {
+            display: inline-block;
+            margin-top: 1rem;
+            padding: 0.5rem 1rem;
+            background: var(--success);
+            color: white;
+            border-radius: 50px;
+            font-size: 0.875rem;
+            font-weight: 600;
+        }
+
+        /* Testimonials */
+        .testimonials {
+            padding: 5rem 0;
+            background: white;
+        }
+
+        .testimonial-grid {
+            display: grid;
+            grid-template-columns: repeat(3, 1fr);
+            gap: 2rem;
+            margin-top: 3rem;
+        }
+
+        .testimonial-card {
+            background: var(--gray-50);
+            padding: 2rem;
+            border-radius: 16px;
+            position: relative;
+            transition: all 0.3s ease;
+        }
+
+        .testimonial-card:hover {
+            transform: translateY(-5px);
+            box-shadow: var(--shadow-lg);
+            background: white;
+        }
+
+        .quote-mark {
+            font-size: 3rem;
+            color: var(--accent);
+            opacity: 0.3;
+            line-height: 1;
+            margin-bottom: 1rem;
+        }
+
+        .testimonial-text {
+            font-size: 1.125rem;
+            line-height: 1.6;
+            margin-bottom: 1.5rem;
+            color: var(--gray-800);
+        }
+
+        .testimonial-author {
+            display: flex;
+            align-items: center;
+            gap: 1rem;
+        }
+
+        .author-avatar {
+            width: 50px;
+            height: 50px;
+            border-radius: 50%;
+            background: linear-gradient(135deg, var(--accent), var(--primary));
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            color: white;
+            font-weight: 700;
+            font-size: 1.25rem;
+        }
+
+        .author-info {
+            flex: 1;
+        }
+
+        .author-name {
+            font-weight: 700;
+            color: var(--gray-800);
+        }
+
+        .author-role {
+            font-size: 0.875rem;
+            color: var(--gray-600);
+        }
+
+        .rating {
+            display: flex;
+            gap: 0.25rem;
+            margin-top: 0.5rem;
+        }
+
+        .star {
+            color: var(--warning);
+        }
+
+        /* CTA Section */
+        .cta-section {
+            padding: 5rem 0;
+            background: linear-gradient(135deg, var(--primary), var(--accent));
+            text-align: center;
+            position: relative;
+            overflow: hidden;
+        }
+
+        .cta-content {
+            position: relative;
+            z-index: 1;
+        }
+
+        .cta-badge {
+            display: inline-block;
+            background: var(--warning);
+            color: white;
+            padding: 0.5rem 1rem;
+            border-radius: 50px;
+            font-size: 0.875rem;
+            font-weight: 600;
+            margin-bottom: 1rem;
+        }
+
+        .cta-title {
+            color: white;
+            font-size: clamp(2rem, 4vw, 3rem);
+            font-weight: 900;
+            margin-bottom: 1rem;
+        }
+
+        .cta-subtitle {
+            color: rgba(255, 255, 255, 0.9);
+            font-size: 1.25rem;
+            margin-bottom: 2rem;
+        }
+
+        .cta-buttons {
+            display: flex;
+            gap: 1rem;
+            justify-content: center;
+        }
+
+        .btn-white {
+            background: white;
+            color: var(--primary);
+            padding: 1rem 2rem;
+            border-radius: 8px;
+            text-decoration: none;
+            font-weight: 700;
+            font-size: 1.125rem;
+            transition: all 0.3s ease;
+            box-shadow: 0 4px 20px rgba(0, 0, 0, 0.2);
+        }
+
+        .btn-white:hover {
+            transform: translateY(-2px);
+            box-shadow: 0 6px 30px rgba(0, 0, 0, 0.3);
+        }
+
+        .btn-outline-white {
+            background: transparent;
+            color: white;
+            padding: 1rem 2rem;
+            border: 2px solid white;
+            border-radius: 8px;
+            text-decoration: none;
+            font-weight: 700;
+            font-size: 1.125rem;
+            transition: all 0.3s ease;
+        }
+
+        .btn-outline-white:hover {
+            background: white;
+            color: var(--primary);
+            transform: translateY(-2px);
+        }
+
+        /* Background Pattern */
+        .pattern {
+            position: absolute;
+            opacity: 0.1;
+            pointer-events: none;
+        }
+
+        .pattern-1 {
+            width: 400px;
+            height: 400px;
+            background: white;
+            border-radius: 50%;
+            top: -200px;
+            left: -200px;
+        }
+
+        .pattern-2 {
+            width: 300px;
+            height: 300px;
+            background: white;
+            bottom: -150px;
+            right: -150px;
+            transform: rotate(45deg);
+        }
+
+        /* Footer */
+        footer {
+            background: var(--gray-800);
+            color: white;
+            padding: 3rem 0 2rem;
+        }
+
+        .footer-container {
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: 0 2rem;
+            display: grid;
+            grid-template-columns: 2fr 1fr 1fr 1fr;
+            gap: 3rem;
+        }
+
+        .footer-brand {
+            font-size: 1.5rem;
+            font-weight: 900;
+            margin-bottom: 1rem;
+        }
+
+        .footer-description {
+            color: var(--gray-300);
+            line-height: 1.6;
+            margin-bottom: 1.5rem;
+        }
+
+        .footer-heading {
+            font-weight: 700;
+            margin-bottom: 1rem;
+        }
+
+        .footer-links {
+            list-style: none;
+        }
+
+        .footer-links li {
+            margin-bottom: 0.5rem;
+        }
+
+        .footer-links a {
+            color: var(--gray-300);
+            text-decoration: none;
+            transition: color 0.3s ease;
+        }
+
+        .footer-links a:hover {
+            color: white;
+        }
+
+        .footer-bottom {
+            margin-top: 3rem;
+            padding-top: 2rem;
+            border-top: 1px solid var(--gray-600);
+            text-align: center;
+            color: var(--gray-300);
+        }
+
+        /* Animations */
+        @keyframes slideDown {
+            from {
+                opacity: 0;
+                transform: translateY(-20px);
+            }
+            to {
+                opacity: 1;
+                transform: translateY(0);
+            }
+        }
+
+        @keyframes slideUp {
+            from {
+                opacity: 0;
+                transform: translateY(20px);
+            }
+            to {
+                opacity: 1;
+                transform: translateY(0);
+            }
+        }
+
+        @keyframes float {
+            0%, 100% {
+                transform: translateY(0);
+            }
+            50% {
+                transform: translateY(-20px);
+            }
+        }
+
+        @keyframes countUp {
+            from {
+                opacity: 0;
+                transform: scale(0.5);
+            }
+            to {
+                opacity: 1;
+                transform: scale(1);
+            }
+        }
+
+        /* Mobile Responsiveness */
+        @media (max-width: 768px) {
+            .nav-links {
+                display: none;
+            }
+
+            .hero {
+                grid-template-columns: 1fr;
+                min-height: auto;
+            }
+
+            .hero-left {
+                padding: 3rem 2rem;
+            }
+
+            .hero-right {
+                min-height: 400px;
+            }
+
+            .stats-container {
+                grid-template-columns: repeat(2, 1fr);
+            }
+
+            .comparison-grid,
+            .process-grid,
+            .testimonial-grid {
+                grid-template-columns: 1fr;
+            }
+
+            .footer-container {
+                grid-template-columns: 1fr;
+                gap: 2rem;
+            }
+
+            .hero-buttons,
+            .cta-buttons {
+                flex-direction: column;
+            }
+
+            .btn-primary,
+            .btn-secondary,
+            .btn-white,
+            .btn-outline-white {
+                width: 100%;
+                text-align: center;
+            }
+        }
+    </style>
+</head>
+<body>
+    <!-- Navigation -->
+    <nav id="navbar">
+        <div class="nav-container">
+            <a href="/" class="logo">
+                <div class="logo-icon">TF</div>
+                Tradesman Finance
+            </a>
+            <div class="nav-links">
+                <a href="#how-it-works">How it Works</a>
+                <a href="#calculator">Calculator</a>
+                <a href="#testimonials">Success Stories</a>
+                <a href="#" class="nav-cta">Get Funded</a>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <section class="hero">
+        <div class="hero-left">
+            <span class="hero-badge">✨ Trusted by 10,000+ UK Tradesmen</span>
+            <h1>Get Your Trade Business <span class="highlight">£5,000 to £500,000</span> in 24 Hours</h1>
+            <p class="hero-subtitle">Stop waiting weeks for bank loans. Get the cash you need to grow your business, win bigger contracts, and scale faster.</p>
+            
+            <div class="hero-features">
+                <div class="hero-feature">
+                    <div class="check-icon">✓</div>
+                    <span>No paperwork hassle</span>
+                </div>
+                <div class="hero-feature">
+                    <div class="check-icon">✓</div>
+                    <span>Fixed monthly payments</span>
+                </div>
+            </div>
+
+            <div class="hero-buttons">
+                <a href="#" class="btn-primary">Check Your Rate</a>
+                <a href="#calculator" class="btn-secondary">Use Calculator</a>
+            </div>
+        </div>
+
+        <div class="hero-right">
+            <div class="hero-shape shape-1"></div>
+            <div class="hero-shape shape-2"></div>
+            
+            <div class="calculator-preview">
+                <div class="calc-header">Quick Funding Calculator</div>
+                <div class="calc-amount">
+                    <div class="calc-label">You could borrow:</div>
+                    <div class="calc-value">£25,000</div>
+                    <input type="range" class="calc-slider" min="5000" max="500000" value="25000">
+                </div>
+                <div class="calc-stats">
+                    <div class="calc-stat">
+                        <div class="calc-stat-label">Monthly Payment</div>
+                        <div class="calc-stat-value">£2,250</div>
+                    </div>
+                    <div class="calc-stat">
+                        <div class="calc-stat-label">Total Repayable</div>
+                        <div class="calc-stat-value">£27,000</div>
+                    </div>
+                </div>
+                <a href="#" class="btn-primary" style="width: 100%; text-align: center;">Get This Rate</a>
+            </div>
+        </div>
+    </section>
+
+    <!-- Stats Bar -->
+    <section class="stats-bar">
+        <div class="stats-container">
+            <div class="stat-item">
+                <div class="stat-number" data-target="500">£500M+</div>
+                <div class="stat-label">Funded to Date</div>
+            </div>
+            <div class="stat-item">
+                <div class="stat-number" data-target="10000">10,000+</div>
+                <div class="stat-label">Businesses Helped</div>
+            </div>
+            <div class="stat-item">
+                <div class="stat-number" data-target="24">24 hrs</div>
+                <div class="stat-label">Average Approval</div>
+            </div>
+            <div class="stat-item">
+                <div class="stat-number" data-target="98">98%</div>
+                <div class="stat-label">Approval Rate</div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Problem/Solution Section -->
+    <section class="problem-solution">
+        <div class="section-container">
+            <div class="section-header">
+                <span class="section-badge">⚡ The Problem We Solve</span>
+                <h2>Banks Don't Understand <span class="highlight">Trade Businesses</span></h2>
+                <p class="section-subtitle">We built funding specifically for electricians, plumbers, builders and trades</p>
+            </div>
+
+            <div class="comparison-grid">
+                <div class="comparison-card card-problem">
+                    <div class="card-icon icon-problem">🏦</div>
+                    <h3 class="card-title">Traditional Banks</h3>
+                    <ul class="card-list">
+                        <li>3-6 weeks waiting time</li>
+                        <li>Mountains of paperwork</li>
+                        <li>Need 3 years of accounts</li>
+                        <li>Personal guarantees required</li>
+                        <li>Low approval rates</li>
+                    </ul>
+                </div>
+
+                <div class="comparison-card card-solution">
+                    <div class="card-icon icon-solution">🚀</div>
+                    <h3 class="card-title">Tradesman Finance</h3>
+                    <ul class="card-list">
+                        <li>24-hour fast decision</li>
+                        <li>Simple online application</li>
+                        <li>6 months trading history</li>
+                        <li>No personal guarantee</li>
+                        <li>98% approval rate</li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- How It Works -->
+    <section class="how-it-works" id="how-it-works">
+        <div class="section-container">
+            <div class="section-header">
+                <span class="section-badge">✨ Simple Process</span>
+                <h2>Get Funded in <span class="highlight">3 Simple Steps</span></h2>
+                <p class="section-subtitle">No hassle, no paperwork, just fast funding for your business</p>
+            </div>
+
+            <div class="process-grid">
+                <div class="process-card">
+                    <div class="process-number">1</div>
+                    <div class="process-icon">📝</div>
+                    <h3 class="process-title">Quick Application</h3>
+                    <p class="process-description">Fill out our simple online form in under 5 minutes. No complicated paperwork or lengthy forms.</p>
+                    <span class="process-time">⏱️ 5 minutes</span>
+                </div>
+
+                <div class="process-card">
+                    <div class="process-number">2</div>
+                    <div class="process-icon">✅</div>
+                    <h3 class="process-title">Instant Decision</h3>
+                    <p class="process-description">Get an instant decision and see your approved amount and terms immediately.</p>
+                    <span class="process-time">⚡ Instant</span>
+                </div>
+
+                <div class="process-card">
+                    <div class="process-number">3</div>
+                    <div class="process-icon">💰</div>
+                    <h3 class="process-title">Get Your Cash</h3>
+                    <p class="process-description">Funds hit your business account within 24 hours. Start using it immediately.</p>
+                    <span class="process-time">🚀 24 hours</span>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Testimonials -->
+    <section class="testimonials" id="testimonials">
+        <div class="section-container">
+            <div class="section-header">
+                <span class="section-badge">⭐ Success Stories</span>
+                <h2>What <span class="highlight">Tradesmen Say</span> About Us</h2>
+                <p class="section-subtitle">Real results from real trade businesses across the UK</p>
+            </div>
+
+            <div class="testimonial-grid">
+                <div class="testimonial-card">
+                    <div class="quote-mark">"</div>
+                    <p class="testimonial-text">Got £35,000 to buy new equipment. The whole process took less than a day. Game changer for my electrical business.</p>
+                    <div class="testimonial-author">
+                        <div class="author-avatar">JW</div>
+                        <div class="author-info">
+                            <div class="author-name">James Wilson</div>
+                            <div class="author-role">Electrician, Manchester</div>
+                            <div class="rating">
+                                <span class="star">⭐</span>
+                                <span class="star">⭐</span>
+                                <span class="star">⭐</span>
+                                <span class="star">⭐</span>
+                                <span class="star">⭐</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="testimonial-card">
+                    <div class="quote-mark">"</div>
+                    <p class="testimonial-text">Used the funding to take on a large commercial project. Made £50k profit and paid back early with no penalties.</p>
+                    <div class="testimonial-author">
+                        <div class="author-avatar">ST</div>
+                        <div class="author-info">
+                            <div class="author-name">Sarah Thompson</div>
+                            <div class="author-role">Plumber, Birmingham</div>
+                            <div class="rating">
+                                <span class="star">⭐</span>
+                                <span class="star">⭐</span>
+                                <span class="star">⭐</span>
+                                <span class="star">⭐</span>
+                                <span class="star">⭐</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="testimonial-card">
+                    <div class="quote-mark">"</div>
+                    <p class="testimonial-text">Finally found funding that understands construction. Got approved despite seasonal income fluctuations.</p>
+                    <div class="testimonial-author">
+                        <div class="author-avatar">MC</div>
+                        <div class="author-info">
+                            <div class="author-name">Mike Collins</div>
+                            <div class="author-role">Builder, London</div>
+                            <div class="rating">
+                                <span class="star">⭐</span>
+                                <span class="star">⭐</span>
+                                <span class="star">⭐</span>
+                                <span class="star">⭐</span>
+                                <span class="star">⭐</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- CTA Section -->
+    <section class="cta-section">
+        <div class="pattern pattern-1"></div>
+        <div class="pattern pattern-2"></div>
+        
+        <div class="section-container">
+            <div class="cta-content">
+                <span class="cta-badge">🔥 Limited Time Offer</span>
+                <h2 class="cta-title">Ready to Grow Your Trade Business?</h2>
+                <p class="cta-subtitle">Join 10,000+ tradesmen who've already secured funding. Check your rate in 60 seconds.</p>
+                
+                <div class="cta-buttons">
+                    <a href="#" class="btn-white">Get Funded Now</a>
+                    <a href="#calculator" class="btn-outline-white">Calculate First</a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer>
+        <div class="footer-container">
+            <div>
+                <div class="footer-brand">Tradesman Finance</div>
+                <p class="footer-description">Fast, flexible funding built specifically for UK trade businesses. Get the cash you need to grow.</p>
+            </div>
+            
+            <div>
+                <h4 class="footer-heading">Quick Links</h4>
+                <ul class="footer-links">
+                    <li><a href="#">How It Works</a></li>
+                    <li><a href="#">Calculator</a></li>
+                    <li><a href="#">About Us</a></li>
+                    <li><a href="#">Contact</a></li>
+                </ul>
+            </div>
+            
+            <div>
+                <h4 class="footer-heading">Trades</h4>
+                <ul class="footer-links">
+                    <li><a href="#">Electricians</a></li>
+                    <li><a href="#">Plumbers</a></li>
+                    <li><a href="#">Builders</a></li>
+                    <li><a href="#">All Trades</a></li>
+                </ul>
+            </div>
+            
+            <div>
+                <h4 class="footer-heading">Legal</h4>
+                <ul class="footer-links">
+                    <li><a href="#">Terms of Service</a></li>
+                    <li><a href="#">Privacy Policy</a></li>
+                    <li><a href="#">Cookie Policy</a></li>
+                    <li><a href="#">FCA Information</a></li>
+                </ul>
+            </div>
+        </div>
+        
+        <div class="footer-bottom">
+            <p>&copy; 2024 Tradesman Finance. All rights reserved. Registered in England & Wales.</p>
+        </div>
+    </footer>
+
+    <script>
+        // Navbar scroll effect
+        window.addEventListener('scroll', function() {
+            const navbar = document.getElementById('navbar');
+            if (window.scrollY > 50) {
+                navbar.classList.add('scrolled');
+            } else {
+                navbar.classList.remove('scrolled');
+            }
+        });
+
+        // Smooth scrolling for anchor links
+        document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+            anchor.addEventListener('click', function (e) {
+                e.preventDefault();
+                const target = document.querySelector(this.getAttribute('href'));
+                if (target) {
+                    target.scrollIntoView({
+                        behavior: 'smooth',
+                        block: 'start'
+                    });
+                }
+            });
+        });
+
+        // Calculator functionality
+        const slider = document.querySelector('.calc-slider');
+        const calcValue = document.querySelector('.calc-value');
+        const monthlyPayment = document.querySelector('.calc-stat-value');
+        const totalRepayable = document.querySelectorAll('.calc-stat-value')[1];
+
+        if (slider) {
+            slider.addEventListener('input', function() {
+                const amount = parseInt(this.value);
+                const monthly = Math.round(amount * 0.09); // 9% monthly
+                const total = Math.round(amount * 1.08); // 8% total cost
+                
+                calcValue.textContent = `£${amount.toLocaleString()}`;
+                monthlyPayment.textContent = `£${monthly.toLocaleString()}`;
+                totalRepayable.textContent = `£${total.toLocaleString()}`;
+            });
+        }
+
+        // Animate stats on scroll
+        const observerOptions = {
+            threshold: 0.5,
+            rootMargin: '0px'
+        };
+
+        const observer = new IntersectionObserver(function(entries) {
+            entries.forEach(entry => {
+                if (entry.isIntersecting) {
+                    entry.target.style.animation = 'countUp 0.8s ease forwards';
+                }
+            });
+        }, observerOptions);
+
+        document.querySelectorAll('.stat-number').forEach(stat => {
+            observer.observe(stat);
+        });
+
+        // Animate cards on scroll
+        const cards = document.querySelectorAll('.process-card, .testimonial-card, .comparison-card');
+        cards.forEach((card, index) => {
+            card.style.opacity = '0';
+            card.style.transform = 'translateY(30px)';
+            card.style.transition = 'all 0.6s ease';
+            card.style.transitionDelay = `${index * 0.1}s`;
+        });
+
+        const cardObserver = new IntersectionObserver(function(entries) {
+            entries.forEach(entry => {
+                if (entry.isIntersecting) {
+                    entry.target.style.opacity = '1';
+                    entry.target.style.transform = 'translateY(0)';
+                }
+            });
+        }, { threshold: 0.1 });
+
+        cards.forEach(card => {
+            cardObserver.observe(card);
+        });
+    </script>
+</body>
+</html>

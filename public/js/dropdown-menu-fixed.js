@@ -54,8 +54,8 @@ document.addEventListener('DOMContentLoaded', function() {
     // ================================================================
     
     navDropdowns.forEach(dropdown => {
-        const link = dropdown.querySelector('> a');
-        
+        const link = dropdown.querySelector(':scope > a');
+
         if (link) {
             link.addEventListener('click', function(e) {
                 // Only handle clicks on mobile
@@ -184,7 +184,7 @@ document.addEventListener('DOMContentLoaded', function() {
     
     // Add ARIA to dropdowns
     navDropdowns.forEach(dropdown => {
-        const link = dropdown.querySelector('> a');
+        const link = dropdown.querySelector(':scope > a');
         const submenu = dropdown.querySelector('.mobile-submenu, .dropdown-menu');
         
         if (link && submenu) {

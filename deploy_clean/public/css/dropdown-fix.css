@@ -1,0 +1,62 @@
+/* Emergency Dropdown Fix - Force proper dropdown behavior */
+
+/* Hide all dropdown menus by default */
+.industrial-nav .dropdown-menu {
+    display: none !important;
+    position: absolute !important;
+    top: 100% !important;
+    left: 50% !important;
+    transform: translateX(-50%) !important;
+    background: #1a1a1a !important;
+    border: 2px solid #333 !important;
+    border-top: 3px solid #ff6b35 !important;
+    min-width: 280px !important;
+    z-index: 10000 !important;
+    box-shadow: 0 10px 30px rgba(0,0,0,0.5) !important;
+}
+
+/* Show dropdown only on hover */
+.industrial-nav .has-dropdown:hover .dropdown-menu {
+    display: block !important;
+}
+
+/* Ensure the nav items are positioned correctly */
+.industrial-nav .has-dropdown {
+    position: relative !important;
+}
+
+/* Hide mobile submenu on desktop */
+.mobile-submenu {
+    display: none !important;
+}
+
+/* Fix header z-index */
+.industrial-header {
+    z-index: 99999 !important;
+    position: relative !important;
+}
+
+/* Ensure nav displays horizontally */
+.industrial-nav ul {
+    display: flex !important;
+    align-items: center !important;
+    list-style: none !important;
+    margin: 0 !important;
+    padding: 0 !important;
+}
+
+.industrial-nav li {
+    display: inline-block !important;
+    position: relative !important;
+}
+
+/* Mobile styles */
+@media (max-width: 768px) {
+    .industrial-nav .dropdown-menu {
+        display: none !important;
+    }
+    
+    .has-dropdown.mobile-expanded .mobile-submenu {
+        display: block !important;
+    }
+}

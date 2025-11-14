@@ -1,0 +1,175 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Design Version Testing</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+        body {
+            font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif;
+            background: #1a1a1a;
+            color: white;
+            padding: 20px;
+        }
+        .header {
+            text-align: center;
+            margin-bottom: 30px;
+        }
+        h1 {
+            font-size: 24px;
+            margin-bottom: 20px;
+        }
+        .versions {
+            display: flex;
+            gap: 20px;
+            flex-wrap: wrap;
+            justify-content: center;
+        }
+        .version-card {
+            background: #2d2d2d;
+            border-radius: 8px;
+            padding: 20px;
+            text-align: center;
+            min-width: 200px;
+        }
+        .version-card h2 {
+            font-size: 18px;
+            margin-bottom: 10px;
+            color: #ffffff;
+        }
+        .version-card p {
+            font-size: 14px;
+            color: #999;
+            margin-bottom: 15px;
+        }
+        .btn {
+            display: inline-block;
+            padding: 10px 20px;
+            background: #2C5282;
+            color: white;
+            text-decoration: none;
+            border-radius: 6px;
+            font-weight: 600;
+            transition: background 0.2s;
+        }
+        .btn:hover {
+            background: #1e3a5f;
+        }
+        .btn-old {
+            background: #ff6b35;
+        }
+        .btn-old:hover {
+            background: #e55a2b;
+        }
+        .btn-v2 {
+            background: #48BB78;
+        }
+        .btn-v2:hover {
+            background: #38A169;
+        }
+        .status {
+            margin-top: 30px;
+            padding: 20px;
+            background: #2d2d2d;
+            border-radius: 8px;
+        }
+        .status h3 {
+            margin-bottom: 10px;
+        }
+        .check {
+            color: #48BB78;
+        }
+        .cross {
+            color: #F56565;
+        }
+    </style>
+</head>
+<body>
+    <div class="header">
+        <h1>🔧 TradesmanFinance Design Versions</h1>
+        <p>Test different versions to find the right design</p>
+    </div>
+    
+    <div class="versions">
+        <div class="version-card">
+            <h2>Original Industrial</h2>
+            <p>Current live design with orange/yellow industrial theme</p>
+            <a href="index.html" class="btn btn-old">View Original</a>
+        </div>
+        
+        <div class="version-card">
+            <h2>Version 1 (Broken)</h2>
+            <p>First attempt - CSS issues, purple gradient problem</p>
+            <a href="index-new.html" class="btn">View V1</a>
+        </div>
+        
+        <div class="version-card">
+            <h2>Version 2 (Too Bland)</h2>
+            <p>Minimal design - too generic and boring</p>
+            <a href="index-v2.html" class="btn">View V2</a>
+        </div>
+        
+        <div class="version-card">
+            <h2>Version 3 (Enhanced)</h2>
+            <p>Bold design but lacks human touch</p>
+            <a href="index-v3.html" class="btn">View V3</a>
+        </div>
+        
+        <div class="version-card">
+            <h2>👷 Version 4 (Human)</h2>
+            <p>Professional with authentic tradesperson imagery</p>
+            <a href="index-v4.html" class="btn">View V4</a>
+        </div>
+        
+        <div class="version-card">
+            <h2>SEO (Old Design)</h2>
+            <p>SEO good but wrong design system</p>
+            <a href="index-seo.html" class="btn">View SEO</a>
+        </div>
+        
+        <div class="version-card">
+            <h2>Final (Needs Polish)</h2>
+            <p>Good but feels flat</p>
+            <a href="index-final.html" class="btn">View Final</a>
+        </div>
+        
+        <div class="version-card">
+            <h2>✨ ENHANCED FINAL</h2>
+            <p>Premium animations + Full polish + SEO</p>
+            <a href="index-enhanced.html" class="btn btn-v2">View Enhanced</a>
+        </div>
+        
+        <div class="version-card">
+            <h2>Comparison Tool</h2>
+            <p>Side-by-side comparison of designs</p>
+            <a href="compare-designs.html" class="btn">Compare</a>
+        </div>
+        
+        <div class="version-card">
+            <h2>Debug Dashboard</h2>
+            <p>Monitor errors and performance</p>
+            <a href="debug-dashboard.html" class="btn">Debug</a>
+        </div>
+    </div>
+    
+    <div class="status">
+        <h3>Design Requirements Status:</h3>
+        <ul style="list-style: none; line-height: 1.8;">
+            <li><span class="check">✓</span> Deep Steel Blue (#2C5282) primary color</li>
+            <li><span class="check">✓</span> Inter font throughout</li>
+            <li><span class="check">✓</span> Clean, professional aesthetic</li>
+            <li><span class="check">✓</span> No gradients or flashy effects</li>
+            <li><span class="check">✓</span> Direct, no-nonsense messaging</li>
+            <li><span class="check">✓</span> Mobile responsive</li>
+            <li><span class="check">✓</span> Fast loading</li>
+            <li><span class="cross">✗</span> Calculator component (pending)</li>
+            <li><span class="cross">✗</span> All sections (pending)</li>
+        </ul>
+    </div>
+</body>
+</html>

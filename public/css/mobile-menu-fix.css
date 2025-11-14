@@ -1,0 +1,199 @@
+/* Mobile Menu Fix - Resolves duplicate hamburger menu issue */
+/* This file should be loaded LAST in the CSS cascade */
+
+/* Hide any duplicate mobile menu toggles */
+.mobile-menu-toggle + .mobile-menu-toggle {
+    display: none !important;
+}
+
+/* Ensure only one mobile menu toggle is visible */
+.header-container .mobile-menu-toggle {
+    display: none !important;
+    position: relative;
+    background: none;
+    border: none;
+    padding: 8px;
+    cursor: pointer;
+    z-index: 1001;
+    margin-left: auto;
+}
+
+/* Mobile menu toggle spans */
+.header-container .mobile-menu-toggle span {
+    display: block;
+    width: 24px;
+    height: 3px;
+    background: #333;
+    margin: 5px 0;
+    transition: all 0.3s ease;
+    transform-origin: center;
+}
+
+/* Active state animations */
+.header-container .mobile-menu-toggle.active span:nth-child(1),
+.header-container .mobile-menu-toggle.is-active span:nth-child(1) {
+    transform: rotate(45deg) translateY(8px);
+}
+
+.header-container .mobile-menu-toggle.active span:nth-child(2),
+.header-container .mobile-menu-toggle.is-active span:nth-child(2) {
+    opacity: 0;
+}
+
+.header-container .mobile-menu-toggle.active span:nth-child(3),
+.header-container .mobile-menu-toggle.is-active span:nth-child(3) {
+    transform: rotate(-45deg) translateY(-8px);
+}
+
+/* Mobile breakpoint - show menu toggle */
+@media (max-width: 768px) {
+    .header-container .mobile-menu-toggle {
+        display: block !important;
+    }
+    
+    /* Hide desktop navigation */
+    .industrial-nav {
+        display: none !important;
+        position: fixed;
+        top: 70px;
+        left: 0;
+        right: 0;
+        background: #fff;
+        border-top: 3px solid #ff6b35;
+        box-shadow: 0 4px 20px rgba(0,0,0,0.1);
+        z-index: 999;
+        max-height: calc(100vh - 70px);
+        overflow-y: auto;
+    }
+    
+    /* Show nav when active */
+    .industrial-nav.mobile-active {
+        display: block !important;
+    }
+    
+    /* Mobile nav styles */
+    .industrial-nav ul {
+        flex-direction: column;
+        padding: 20px;
+    }
+    
+    .industrial-nav li {
+        width: 100%;
+        margin: 0;
+        border-bottom: 1px solid #eee;
+    }
+    
+    .industrial-nav a {
+        display: block;
+        padding: 15px 0;
+        font-size: 16px;
+    }
+    
+    /* Hide desktop CTA on mobile */
+    .industrial-cta {
+        display: none !important;
+    }
+    
+    /* Mobile dropdown handling */
+    .has-dropdown .dropdown-menu {
+        display: none !important;
+        position: static;
+        width: 100%;
+        box-shadow: none;
+        background: #f5f5f5;
+        margin-top: 0;
+        padding: 10px 0;
+    }
+    
+    .has-dropdown.mobile-expanded .dropdown-menu {
+        display: block !important;
+    }
+    
+    /* Mobile submenu styles */
+    .mobile-submenu {
+        display: none;
+        background: #f9f9f9;
+        padding: 10px 20px;
+        margin-top: 10px;
+    }
+    
+    .has-dropdown.mobile-expanded .mobile-submenu {
+        display: block;
+    }
+    
+    .mobile-submenu a {
+        display: block;
+        padding: 10px 0;
+        font-size: 14px;
+        color: #666;
+        border-bottom: 1px solid #eee;
+    }
+    
+    .mobile-submenu a:last-child {
+        border-bottom: none;
+    }
+    
+    /* Adjust header layout for mobile */
+    .header-container {
+        padding: 10px 15px;
+    }
+    
+    .industrial-logo .logo-text {
+        font-size: 14px;
+    }
+    
+    .industrial-logo .logo-text span:first-child {
+        font-size: 18px;
+    }
+    
+    .industrial-logo .logo-text span:last-child {
+        display: none;
+    }
+    
+    .logo-badge {
+        width: 35px;
+        height: 35px;
+        font-size: 16px;
+    }
+}
+
+/* Tablet adjustments */
+@media (min-width: 769px) and (max-width: 1024px) {
+    .industrial-nav {
+        display: flex !important;
+    }
+    
+    .mobile-menu-toggle {
+        display: none !important;
+    }
+    
+    .industrial-cta {
+        display: inline-flex !important;
+    }
+}
+
+/* Ensure no double hamburgers on any screen size */
+@media (max-width: 1024px) {
+    /* Remove any pseudo-element hamburgers */
+    .mobile-menu-toggle::before,
+    .mobile-menu-toggle::after,
+    .header-container::before,
+    .header-container::after,
+    .industrial-header::before,
+    .industrial-header::after {
+        content: none !important;
+        display: none !important;
+    }
+    
+    /* Ensure only the actual button spans are visible */
+    .mobile-menu-toggle > span {
+        display: block !important;
+    }
+    
+    /* Hide any additional menu toggles that might exist */
+    button[class*="menu"]:not(.mobile-menu-toggle),
+    div[class*="hamburger"],
+    span[class*="hamburger"] {
+        display: none !important;
+    }
+}

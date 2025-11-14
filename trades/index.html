@@ -5,7 +5,8 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Finance by Trade - Specialist Funding for UK Tradesmen | Tradesman Finance</title>
     <meta name="description" content="Specialist finance solutions for every UK trade. From plumbers to roofers, we understand your business and offer tailored funding options.">
-    
+    <link rel="canonical" href="https://tradesmanfinance.co.uk/trades/">
+
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Work+Sans:wght@400;500;600;700;800;900&family=Roboto:wght@400;500;700&display=swap" rel="stylesheet">
@@ -14,6 +15,8 @@
     <link rel="stylesheet" href="../public/css/industrial-components.css?v=1.0">
     <link rel="stylesheet" href="../public/css/accessibility.css?v=1.0">
     <link rel="stylesheet" href="../public/css/header-fix.css?v=1.0">
+    <!-- Mobile menu fix - MUST be loaded last -->
+    <link rel="stylesheet" href="/public/css/mobile-menu-fix.css?v=1.0">
 </head>
 <body>
     <!-- Loading Screen -->
@@ -43,6 +46,7 @@
                     <li><a href="../services.html">Services</a></li>
                     <li><a href="../trades/" aria-current="page">Trades</a></li>
                     <li><a href="../trades/locations/london/">Locations</a></li>
+                    <li><a href="../blog/">Guides</a></li>
                     <li><a href="../about.html">About</a></li>
                     <li><a href="../contact.html">Contact</a></li>
                 </ul>
@@ -226,7 +230,17 @@
                             <li><a href="#">FAQs</a></li>
                             <li><a href="../contact.html">Get in Touch</a></li>
                         </ul>
+                    </div>                    <div class="footer-links-section">
+                        <h3>GUIDES & RESOURCES</h3>
+                        <ul role="list">
+                            <li><a href="../blog/">Equipment Finance Guides</a></li>
+                            <li><a href="../blog/scaffolding-materials-finance-guide.html">Scaffolding Finance</a></li>
+                            <li><a href="../blog/woodworking-equipment-finance-options.html">Woodworking Equipment</a></li>
+                            <li><a href="../blog/bathroom-fitting-finance-explained.html">Bathroom Fitting</a></li>
+                        </ul>
                     </div>
+
+                    
                     
                     <div class="footer-trust">
                         <h3>WHY TRUST US</h3>
@@ -269,6 +283,8 @@
 
     <!-- Scripts -->
     <script src="../public/js/main.js"></script>
+    <!-- Mobile menu handler - fixes duplicate hamburger issue -->
+    <script src="../public/js/mobile-menu-handler.js"></script>
     <script src="../public/js/loader-fix.js"></script>
 </body>
 </html>

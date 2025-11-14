@@ -1,0 +1,648 @@
+/* Location Pages Styles */
+
+/* Locations Hero */
+.locations-hero,
+.location-hero {
+    background: var(--gradient-steel);
+    padding: 140px 0 80px;
+    text-align: center;
+    position: relative;
+    overflow: hidden;
+}
+
+.locations-hero::before,
+.location-hero::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background: repeating-linear-gradient(
+        45deg,
+        transparent,
+        transparent 10px,
+        rgba(255, 107, 53, 0.05) 10px,
+        rgba(255, 107, 53, 0.05) 20px
+    );
+}
+
+/* Location Headline */
+.location-headline {
+    font-family: 'Bebas Neue', sans-serif;
+    font-size: clamp(60px, 10vw, 120px);
+    line-height: 0.9;
+    margin-bottom: 24px;
+}
+
+.location-subtitle {
+    font-size: 24px;
+    color: #ccc;
+    max-width: 600px;
+    margin: 0 auto;
+}
+
+/* Locations Main */
+.locations-main {
+    padding: 80px 0;
+    background: #0d0d0d;
+}
+
+.locations-intro {
+    text-align: center;
+    margin-bottom: 60px;
+}
+
+.locations-intro h2 {
+    font-family: 'Bebas Neue', sans-serif;
+    font-size: 48px;
+    color: white;
+    margin-bottom: 16px;
+}
+
+.locations-intro p {
+    font-size: 20px;
+    color: #ccc;
+    max-width: 800px;
+    margin: 0 auto;
+}
+
+/* Locations Grid */
+.locations-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    gap: 40px;
+    margin-bottom: 80px;
+}
+
+.location-card {
+    background: #1a1a1a;
+    border: 3px solid #333;
+    padding: 32px;
+    transition: all 0.3s ease;
+}
+
+.location-card:hover {
+    border-color: #ff6b35;
+    transform: translateY(-5px);
+    box-shadow: 0 10px 30px rgba(255, 107, 53, 0.3);
+}
+
+.location-card.featured {
+    border-color: #ff6b35;
+    position: relative;
+}
+
+.location-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 24px;
+}
+
+.location-header h3 {
+    font-family: 'Bebas Neue', sans-serif;
+    font-size: 32px;
+    color: white;
+    letter-spacing: 1px;
+}
+
+.location-badge {
+    background: #ff6b35;
+    color: white;
+    padding: 4px 12px;
+    font-family: 'Bebas Neue', sans-serif;
+    font-size: 18px;
+    letter-spacing: 1px;
+}
+
+.areas-list {
+    list-style: none;
+    padding: 0;
+    margin: 0 0 24px 0;
+}
+
+.areas-list li {
+    padding: 8px 0;
+    color: #ccc;
+    border-bottom: 1px solid #333;
+}
+
+.areas-list li:last-child {
+    border-bottom: none;
+}
+
+.location-link {
+    display: inline-block;
+    color: #ff6b35;
+    text-decoration: none;
+    font-weight: 700;
+    font-size: 16px;
+    letter-spacing: 0.5px;
+    transition: all 0.3s ease;
+}
+
+.location-link:hover {
+    color: #ffd93d;
+}
+
+/* Nationwide CTA */
+.nationwide-cta {
+    text-align: center;
+    padding: 60px;
+    background: rgba(255, 107, 53, 0.1);
+    border: 3px solid #ff6b35;
+}
+
+.nationwide-cta h2 {
+    font-family: 'Bebas Neue', sans-serif;
+    font-size: 48px;
+    color: white;
+    margin-bottom: 16px;
+}
+
+.nationwide-cta p {
+    font-size: 20px;
+    color: #ccc;
+    margin-bottom: 32px;
+}
+
+/* London Page Specific */
+.london-hero {
+    background: linear-gradient(135deg, #1a1a1a 0%, #ff6b35 100%);
+}
+
+.location-intro {
+    padding: 80px 0;
+    background: #1a1a1a;
+}
+
+.intro-grid {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 60px;
+    align-items: center;
+}
+
+.intro-content h2 {
+    font-family: 'Bebas Neue', sans-serif;
+    font-size: 48px;
+    color: white;
+    margin-bottom: 24px;
+}
+
+.intro-content p {
+    font-size: 18px;
+    line-height: 1.8;
+    color: #ccc;
+    margin-bottom: 20px;
+}
+
+.london-stats {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 24px;
+    margin-top: 40px;
+}
+
+.london-stats .stat {
+    text-align: center;
+    padding: 20px;
+    background: rgba(255, 107, 53, 0.1);
+    border: 2px solid #ff6b35;
+}
+
+.stat-number {
+    display: block;
+    font-family: 'Bebas Neue', sans-serif;
+    font-size: 36px;
+    color: #ffd93d;
+    margin-bottom: 8px;
+}
+
+.stat-label {
+    font-size: 14px;
+    color: #ccc;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+}
+
+/* London Map Graphic */
+.london-map-graphic {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 100%;
+    animation: pulse 4s ease-in-out infinite;
+}
+
+@keyframes pulse {
+    0%, 100% { transform: scale(1); }
+    50% { transform: scale(1.05); }
+}
+
+/* Areas Covered */
+.areas-covered {
+    padding: 80px 0;
+    background: #0d0d0d;
+}
+
+.areas-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    gap: 32px;
+}
+
+.area-card {
+    background: #1a1a1a;
+    padding: 32px;
+    border-left: 4px solid #ff6b35;
+}
+
+.area-card h3 {
+    font-family: 'Bebas Neue', sans-serif;
+    font-size: 28px;
+    color: #ff6b35;
+    margin-bottom: 16px;
+}
+
+.area-card ul {
+    list-style: none;
+    padding: 0;
+}
+
+.area-card li {
+    padding: 6px 0;
+    color: #ccc;
+}
+
+/* London Services */
+.london-services {
+    padding: 80px 0;
+    background: #1a1a1a;
+}
+
+.service-highlights {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    gap: 40px;
+    margin-top: 40px;
+}
+
+.highlight-card {
+    background: rgba(255, 107, 53, 0.1);
+    border: 3px solid #ff6b35;
+    padding: 40px;
+    text-align: center;
+    transition: all 0.3s ease;
+}
+
+.highlight-card:hover {
+    transform: translateY(-10px);
+    box-shadow: 0 20px 40px rgba(255, 107, 53, 0.4);
+}
+
+.highlight-icon {
+    font-size: 60px;
+    margin-bottom: 20px;
+}
+
+.highlight-card h3 {
+    font-family: 'Bebas Neue', sans-serif;
+    font-size: 32px;
+    color: white;
+    margin-bottom: 16px;
+}
+
+.highlight-card p {
+    color: #ccc;
+    margin-bottom: 20px;
+}
+
+.highlight-stat {
+    font-family: 'Bebas Neue', sans-serif;
+    font-size: 28px;
+    color: #ffd93d;
+}
+
+/* London Testimonials */
+.london-testimonials {
+    padding: 80px 0;
+    background: #0d0d0d;
+}
+
+.testimonial-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(350px, 1fr));
+    gap: 40px;
+    margin-top: 40px;
+}
+
+.testimonial-card {
+    background: #1a1a1a;
+    padding: 32px;
+    border: 2px solid #333;
+}
+
+.testimonial-card .stars {
+    color: #ffd93d;
+    font-size: 24px;
+    margin-bottom: 16px;
+}
+
+.testimonial-card blockquote {
+    font-size: 18px;
+    line-height: 1.6;
+    color: white;
+    margin-bottom: 24px;
+    font-style: italic;
+}
+
+.testimonial-author strong {
+    display: block;
+    color: #ff6b35;
+    font-size: 18px;
+    margin-bottom: 4px;
+}
+
+.testimonial-author span {
+    color: #ccc;
+    font-size: 14px;
+}
+
+/* London CTA */
+.london-cta {
+    background: linear-gradient(135deg, #ff6b35 0%, #ffd93d 100%);
+    padding: 100px 0;
+    text-align: center;
+}
+
+.london-cta .cta-headline {
+    font-family: 'Bebas Neue', sans-serif;
+    font-size: 72px;
+    color: white;
+    margin-bottom: 16px;
+    text-shadow: 4px 4px 0 rgba(0,0,0,0.3);
+}
+
+.london-cta .cta-subtitle {
+    font-size: 24px;
+    color: white;
+    margin-bottom: 48px;
+}
+
+.cta-buttons {
+    display: flex;
+    gap: 24px;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+
+.btn-phone {
+    display: inline-flex;
+    align-items: center;
+    gap: 12px;
+    background: white;
+    color: #1a1a1a;
+    padding: 24px 48px;
+    text-decoration: none;
+    font-family: 'Bebas Neue', sans-serif;
+    font-size: 28px;
+    letter-spacing: 1px;
+    box-shadow: 8px 8px 0 rgba(0,0,0,0.3);
+    transition: all 0.2s ease;
+}
+
+.btn-phone:hover {
+    transform: translate(-4px, -4px);
+    box-shadow: 12px 12px 0 rgba(0,0,0,0.3);
+}
+
+/* City-specific styling */
+.trades-services {
+    padding: 80px 0;
+    background: #1a1a1a;
+}
+
+.trades-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(350px, 1fr));
+    gap: 40px;
+    margin-top: 40px;
+}
+
+.trade-service-card {
+    background: rgba(255, 107, 53, 0.1);
+    border: 3px solid #ff6b35;
+    padding: 32px;
+    text-align: center;
+    transition: all 0.3s ease;
+}
+
+.trade-service-card:hover {
+    transform: translateY(-10px);
+    box-shadow: 0 20px 40px rgba(255, 107, 53, 0.4);
+}
+
+.trade-service-card .trade-icon {
+    font-size: 60px;
+    margin-bottom: 20px;
+}
+
+.trade-service-card h3 {
+    font-family: 'Bebas Neue', sans-serif;
+    font-size: 28px;
+    color: white;
+    margin-bottom: 20px;
+}
+
+.service-list {
+    list-style: none;
+    padding: 0;
+    margin-bottom: 24px;
+}
+
+.service-list li {
+    padding: 8px 0;
+    color: #ccc;
+    border-bottom: 1px solid rgba(255, 107, 53, 0.2);
+}
+
+.service-list li:last-child {
+    border-bottom: none;
+}
+
+.trade-cta {
+    display: inline-block;
+    color: #ffd93d;
+    text-decoration: none;
+    font-weight: 700;
+    font-size: 16px;
+    transition: all 0.3s ease;
+}
+
+.trade-cta:hover {
+    color: white;
+}
+
+/* Local Benefits */
+.local-benefits {
+    padding: 80px 0;
+    background: #0d0d0d;
+}
+
+.benefits-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    gap: 40px;
+    margin-top: 40px;
+}
+
+.benefit-card {
+    background: #1a1a1a;
+    padding: 32px;
+    text-align: center;
+    border: 2px solid #333;
+    transition: all 0.3s ease;
+}
+
+.benefit-card:hover {
+    border-color: #ff6b35;
+    transform: translateY(-5px);
+}
+
+.benefit-icon {
+    font-size: 48px;
+    margin-bottom: 20px;
+}
+
+.benefit-card h3 {
+    font-family: 'Bebas Neue', sans-serif;
+    font-size: 24px;
+    color: white;
+    margin-bottom: 16px;
+}
+
+.benefit-card p {
+    color: #ccc;
+    line-height: 1.6;
+}
+
+/* Location FAQ */
+.location-faq {
+    padding: 80px 0;
+    background: #1a1a1a;
+}
+
+.faq-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(400px, 1fr));
+    gap: 32px;
+    margin-top: 40px;
+}
+
+.faq-item {
+    background: rgba(255, 107, 53, 0.05);
+    padding: 32px;
+    border-left: 4px solid #ff6b35;
+}
+
+.faq-item h3 {
+    font-family: 'Work Sans', sans-serif;
+    font-size: 20px;
+    color: white;
+    margin-bottom: 16px;
+    font-weight: 700;
+}
+
+.faq-item p {
+    color: #ccc;
+    line-height: 1.6;
+}
+
+/* City-specific hero backgrounds */
+.manchester-hero { background: linear-gradient(135deg, #1a1a1a 0%, #ff6b35 100%); }
+.birmingham-hero { background: linear-gradient(135deg, #1a1a1a 0%, #0077be 100%); }
+.leeds-hero { background: linear-gradient(135deg, #1a1a1a 0%, #ffd93d 100%); }
+.glasgow-hero { background: linear-gradient(135deg, #1a1a1a 0%, #00a86b 100%); }
+.liverpool-hero { background: linear-gradient(135deg, #1a1a1a 0%, #c8102e 100%); }
+.newcastle-hero { background: linear-gradient(135deg, #1a1a1a 0%, #241f20 100%); }
+.sheffield-hero { background: linear-gradient(135deg, #1a1a1a 0%, #ee2737 100%); }
+.bristol-hero { background: linear-gradient(135deg, #1a1a1a 0%, #dc143c 100%); }
+.cardiff-hero { background: linear-gradient(135deg, #1a1a1a 0%, #00a74a 100%); }
+.edinburgh-hero { background: linear-gradient(135deg, #1a1a1a 0%, #003087 100%); }
+.belfast-hero { background: linear-gradient(135deg, #1a1a1a 0%, #228b22 100%); }
+.nottingham-hero { background: linear-gradient(135deg, #1a1a1a 0%, #ff6600 100%); }
+.leicester-hero { background: linear-gradient(135deg, #1a1a1a 0%, #003090 100%); }
+.coventry-hero { background: linear-gradient(135deg, #1a1a1a 0%, #7b68ee 100%); }
+.bradford-hero { background: linear-gradient(135deg, #1a1a1a 0%, #8b0000 100%); }
+
+/* CTA features */
+.cta-features {
+    display: flex;
+    justify-content: center;
+    gap: 40px;
+    margin: 32px 0;
+    flex-wrap: wrap;
+}
+
+.cta-feature {
+    font-size: 18px;
+    color: white;
+    font-weight: 600;
+}
+
+.cta-small {
+    font-size: 14px;
+    color: rgba(255,255,255,0.8);
+    margin-top: 24px;
+}
+
+/* Responsive */
+@media (max-width: 1024px) {
+    .intro-grid {
+        grid-template-columns: 1fr;
+        gap: 40px;
+    }
+    
+    .london-map-graphic {
+        max-width: 400px;
+        margin: 0 auto;
+    }
+}
+
+@media (max-width: 768px) {
+    .location-headline {
+        font-size: 60px;
+    }
+    
+    .locations-grid {
+        grid-template-columns: 1fr;
+    }
+    
+    .london-stats {
+        grid-template-columns: 1fr;
+        gap: 16px;
+    }
+    
+    .areas-grid {
+        grid-template-columns: 1fr;
+    }
+    
+    .service-highlights {
+        grid-template-columns: 1fr;
+    }
+    
+    .testimonial-grid {
+        grid-template-columns: 1fr;
+    }
+    
+    .cta-buttons {
+        flex-direction: column;
+        align-items: center;
+    }
+    
+    .london-cta .cta-headline {
+        font-size: 48px;
+    }
+}

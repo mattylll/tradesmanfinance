@@ -1,0 +1,1632 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Debug Dashboard | Tradesman Finance</title>
+    <meta name="robots" content="noindex, nofollow">
+    
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Work+Sans:wght@400;500;600;700;800;900&family=Roboto+Mono:wght@400;500;700&display=swap" rel="stylesheet">
+    
+    <style>
+        /* Base Reset and Variables */
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        :root {
+            --bg-primary: #1a1a1a;
+            --bg-secondary: #2d2d2d;
+            --bg-tertiary: #3a3a3a;
+            --text-primary: #ffffff;
+            --text-secondary: #b0b0b0;
+            --accent-orange: #ff6b35;
+            --accent-yellow: #ffd93d;
+            --success: #4caf50;
+            --warning: #ffa726;
+            --error: #f44336;
+            --info: #2196f3;
+            --debug: #9c27b0;
+            --border: #444;
+            --shadow: 0 4px 6px rgba(0, 0, 0, 0.3);
+            --font-heading: 'Bebas Neue', sans-serif;
+            --font-ui: 'Work Sans', sans-serif;
+            --font-mono: 'Roboto Mono', monospace;
+        }
+
+        /* Light Mode */
+        body.light-mode {
+            --bg-primary: #f5f5f5;
+            --bg-secondary: #ffffff;
+            --bg-tertiary: #e0e0e0;
+            --text-primary: #1a1a1a;
+            --text-secondary: #666;
+            --border: #ddd;
+            --shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+        }
+
+        /* Base Styles */
+        body {
+            font-family: var(--font-ui);
+            background: var(--bg-primary);
+            color: var(--text-primary);
+            line-height: 1.6;
+            transition: background-color 0.3s, color 0.3s;
+        }
+
+        /* Header */
+        .dashboard-header {
+            background: var(--bg-secondary);
+            padding: 1rem 2rem;
+            border-bottom: 2px solid var(--accent-orange);
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            position: sticky;
+            top: 0;
+            z-index: 1000;
+            box-shadow: var(--shadow);
+        }
+
+        .dashboard-title {
+            font-family: var(--font-heading);
+            font-size: 2rem;
+            color: var(--accent-orange);
+            display: flex;
+            align-items: center;
+            gap: 1rem;
+        }
+
+        .status-indicator {
+            width: 12px;
+            height: 12px;
+            border-radius: 50%;
+            background: var(--success);
+            animation: pulse 2s infinite;
+        }
+
+        @keyframes pulse {
+            0%, 100% { opacity: 1; }
+            50% { opacity: 0.5; }
+        }
+
+        .header-controls {
+            display: flex;
+            gap: 1rem;
+            align-items: center;
+        }
+
+        .control-btn {
+            padding: 0.5rem 1rem;
+            background: var(--bg-tertiary);
+            border: 1px solid var(--border);
+            color: var(--text-primary);
+            border-radius: 4px;
+            cursor: pointer;
+            font-family: var(--font-ui);
+            font-weight: 500;
+            transition: all 0.3s;
+        }
+
+        .control-btn:hover {
+            background: var(--accent-orange);
+            transform: translateY(-2px);
+            box-shadow: var(--shadow);
+        }
+
+        .control-btn.active {
+            background: var(--accent-orange);
+            color: white;
+        }
+
+        /* Main Layout */
+        .dashboard-container {
+            display: grid;
+            grid-template-columns: 250px 1fr;
+            min-height: calc(100vh - 70px);
+        }
+
+        /* Sidebar */
+        .sidebar {
+            background: var(--bg-secondary);
+            padding: 1rem;
+            border-right: 1px solid var(--border);
+            overflow-y: auto;
+        }
+
+        .sidebar-section {
+            margin-bottom: 2rem;
+        }
+
+        .sidebar-title {
+            font-family: var(--font-heading);
+            font-size: 1.2rem;
+            color: var(--text-secondary);
+            margin-bottom: 0.5rem;
+            text-transform: uppercase;
+            letter-spacing: 1px;
+        }
+
+        .filter-group {
+            display: flex;
+            flex-direction: column;
+            gap: 0.5rem;
+        }
+
+        .filter-checkbox {
+            display: flex;
+            align-items: center;
+            gap: 0.5rem;
+            cursor: pointer;
+            padding: 0.25rem;
+            border-radius: 4px;
+            transition: background 0.3s;
+        }
+
+        .filter-checkbox:hover {
+            background: var(--bg-tertiary);
+        }
+
+        .filter-checkbox input {
+            cursor: pointer;
+        }
+
+        .filter-label {
+            font-size: 0.9rem;
+            display: flex;
+            align-items: center;
+            gap: 0.5rem;
+        }
+
+        .log-badge {
+            padding: 2px 6px;
+            border-radius: 3px;
+            font-size: 0.75rem;
+            font-weight: bold;
+            color: white;
+        }
+
+        .badge-info { background: var(--info); }
+        .badge-debug { background: var(--debug); }
+        .badge-warn { background: var(--warning); }
+        .badge-error { background: var(--error); }
+        .badge-success { background: var(--success); }
+
+        /* Main Content */
+        .main-content {
+            padding: 1rem;
+            overflow-y: auto;
+        }
+
+        /* Stats Grid */
+        .stats-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+            gap: 1rem;
+            margin-bottom: 2rem;
+        }
+
+        .stat-card {
+            background: var(--bg-secondary);
+            padding: 1rem;
+            border-radius: 8px;
+            border: 1px solid var(--border);
+            box-shadow: var(--shadow);
+            transition: transform 0.3s;
+        }
+
+        .stat-card:hover {
+            transform: translateY(-2px);
+        }
+
+        .stat-label {
+            font-size: 0.8rem;
+            color: var(--text-secondary);
+            text-transform: uppercase;
+            letter-spacing: 1px;
+        }
+
+        .stat-value {
+            font-size: 2rem;
+            font-weight: bold;
+            color: var(--accent-orange);
+            font-family: var(--font-heading);
+        }
+
+        .stat-change {
+            font-size: 0.9rem;
+            color: var(--success);
+        }
+
+        .stat-change.negative {
+            color: var(--error);
+        }
+
+        /* Debug Sections */
+        .debug-section {
+            background: var(--bg-secondary);
+            border: 1px solid var(--border);
+            border-radius: 8px;
+            margin-bottom: 1rem;
+            overflow: hidden;
+            box-shadow: var(--shadow);
+        }
+
+        .section-header {
+            padding: 1rem;
+            background: var(--bg-tertiary);
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            cursor: pointer;
+            user-select: none;
+        }
+
+        .section-header:hover {
+            background: var(--bg-primary);
+        }
+
+        .section-title {
+            font-family: var(--font-heading);
+            font-size: 1.2rem;
+            display: flex;
+            align-items: center;
+            gap: 0.5rem;
+        }
+
+        .section-controls {
+            display: flex;
+            gap: 0.5rem;
+        }
+
+        .section-content {
+            padding: 1rem;
+            max-height: 400px;
+            overflow-y: auto;
+        }
+
+        .section-content.collapsed {
+            display: none;
+        }
+
+        /* Log Entries */
+        .log-entries {
+            font-family: var(--font-mono);
+            font-size: 0.85rem;
+        }
+
+        .log-entry {
+            padding: 0.5rem;
+            margin-bottom: 0.25rem;
+            background: var(--bg-primary);
+            border-left: 3px solid var(--border);
+            border-radius: 4px;
+            display: flex;
+            align-items: flex-start;
+            gap: 1rem;
+            transition: background 0.3s;
+        }
+
+        .log-entry:hover {
+            background: var(--bg-tertiary);
+        }
+
+        .log-entry.info { border-left-color: var(--info); }
+        .log-entry.debug { border-left-color: var(--debug); }
+        .log-entry.warn { border-left-color: var(--warning); }
+        .log-entry.error { border-left-color: var(--error); }
+        .log-entry.success { border-left-color: var(--success); }
+
+        .log-time {
+            color: var(--text-secondary);
+            white-space: nowrap;
+        }
+
+        .log-type {
+            padding: 2px 6px;
+            border-radius: 3px;
+            font-size: 0.75rem;
+            font-weight: bold;
+            color: white;
+            white-space: nowrap;
+        }
+
+        .log-message {
+            flex: 1;
+            word-break: break-word;
+        }
+
+        .log-stack {
+            margin-top: 0.5rem;
+            padding: 0.5rem;
+            background: var(--bg-tertiary);
+            border-radius: 4px;
+            font-size: 0.8rem;
+            color: var(--text-secondary);
+        }
+
+        /* Performance Metrics */
+        .metric-bar {
+            display: flex;
+            align-items: center;
+            margin-bottom: 0.5rem;
+        }
+
+        .metric-label {
+            width: 150px;
+            font-size: 0.9rem;
+            color: var(--text-secondary);
+        }
+
+        .metric-progress {
+            flex: 1;
+            height: 20px;
+            background: var(--bg-primary);
+            border-radius: 10px;
+            overflow: hidden;
+            position: relative;
+        }
+
+        .metric-fill {
+            height: 100%;
+            background: linear-gradient(90deg, var(--accent-orange), var(--accent-yellow));
+            transition: width 0.5s;
+            display: flex;
+            align-items: center;
+            justify-content: flex-end;
+            padding-right: 0.5rem;
+        }
+
+        .metric-value {
+            font-size: 0.75rem;
+            color: white;
+            font-weight: bold;
+        }
+
+        /* Resource Timeline */
+        .timeline-container {
+            overflow-x: auto;
+        }
+
+        .timeline-entry {
+            display: flex;
+            align-items: center;
+            margin-bottom: 0.5rem;
+            font-size: 0.85rem;
+        }
+
+        .timeline-name {
+            width: 200px;
+            color: var(--text-secondary);
+            white-space: nowrap;
+            overflow: hidden;
+            text-overflow: ellipsis;
+        }
+
+        .timeline-bar {
+            flex: 1;
+            height: 20px;
+            background: var(--bg-primary);
+            position: relative;
+            border-radius: 4px;
+            overflow: hidden;
+        }
+
+        .timeline-segment {
+            position: absolute;
+            height: 100%;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            font-size: 0.7rem;
+            color: white;
+            font-weight: bold;
+        }
+
+        .segment-dns { background: var(--info); }
+        .segment-connect { background: var(--success); }
+        .segment-request { background: var(--warning); }
+        .segment-response { background: var(--accent-orange); }
+
+        /* Search Bar */
+        .search-container {
+            margin-bottom: 1rem;
+        }
+
+        .search-input {
+            width: 100%;
+            padding: 0.75rem;
+            background: var(--bg-primary);
+            border: 1px solid var(--border);
+            border-radius: 4px;
+            color: var(--text-primary);
+            font-family: var(--font-mono);
+        }
+
+        .search-input:focus {
+            outline: none;
+            border-color: var(--accent-orange);
+            box-shadow: 0 0 0 2px rgba(255, 107, 53, 0.2);
+        }
+
+        /* Export Button */
+        .export-btn {
+            position: fixed;
+            bottom: 2rem;
+            right: 2rem;
+            padding: 1rem 2rem;
+            background: var(--accent-orange);
+            color: white;
+            border: none;
+            border-radius: 50px;
+            cursor: pointer;
+            font-weight: bold;
+            box-shadow: var(--shadow);
+            transition: all 0.3s;
+            z-index: 100;
+        }
+
+        .export-btn:hover {
+            transform: scale(1.05);
+            box-shadow: 0 6px 12px rgba(255, 107, 53, 0.3);
+        }
+
+        /* Responsive */
+        @media (max-width: 768px) {
+            .dashboard-container {
+                grid-template-columns: 1fr;
+            }
+
+            .sidebar {
+                display: none;
+                position: fixed;
+                left: 0;
+                top: 70px;
+                bottom: 0;
+                width: 250px;
+                z-index: 999;
+            }
+
+            .sidebar.mobile-open {
+                display: block;
+            }
+
+            .stats-grid {
+                grid-template-columns: 1fr;
+            }
+        }
+
+        /* Loading Spinner */
+        .spinner {
+            border: 3px solid var(--bg-tertiary);
+            border-top: 3px solid var(--accent-orange);
+            border-radius: 50%;
+            width: 20px;
+            height: 20px;
+            animation: spin 1s linear infinite;
+            display: inline-block;
+        }
+
+        @keyframes spin {
+            0% { transform: rotate(0deg); }
+            100% { transform: rotate(360deg); }
+        }
+
+        /* Toast Notifications */
+        .toast-container {
+            position: fixed;
+            top: 80px;
+            right: 20px;
+            z-index: 2000;
+        }
+
+        .toast {
+            background: var(--bg-secondary);
+            border: 1px solid var(--border);
+            border-left: 4px solid var(--accent-orange);
+            padding: 1rem;
+            margin-bottom: 0.5rem;
+            border-radius: 4px;
+            box-shadow: var(--shadow);
+            animation: slideIn 0.3s ease-out;
+            min-width: 300px;
+        }
+
+        @keyframes slideIn {
+            from {
+                transform: translateX(100%);
+                opacity: 0;
+            }
+            to {
+                transform: translateX(0);
+                opacity: 1;
+            }
+        }
+
+        .toast.success { border-left-color: var(--success); }
+        .toast.error { border-left-color: var(--error); }
+        .toast.warning { border-left-color: var(--warning); }
+        .toast.info { border-left-color: var(--info); }
+    </style>
+</head>
+<body>
+    <!-- Header -->
+    <header class="dashboard-header">
+        <div class="dashboard-title">
+            <span class="status-indicator" id="statusIndicator"></span>
+            DEBUG DASHBOARD
+        </div>
+        <div class="header-controls">
+            <button class="control-btn" id="refreshBtn">Refresh</button>
+            <button class="control-btn" id="clearBtn">Clear Logs</button>
+            <button class="control-btn" id="pauseBtn">Pause</button>
+            <button class="control-btn" id="darkModeBtn">Light Mode</button>
+            <button class="control-btn" id="mobileMenuBtn">Filters</button>
+        </div>
+    </header>
+
+    <!-- Main Container -->
+    <div class="dashboard-container">
+        <!-- Sidebar -->
+        <aside class="sidebar" id="sidebar">
+            <div class="sidebar-section">
+                <h3 class="sidebar-title">Log Filters</h3>
+                <div class="filter-group">
+                    <label class="filter-checkbox">
+                        <input type="checkbox" checked data-filter="info">
+                        <span class="filter-label">
+                            <span class="log-badge badge-info">INFO</span>
+                            Information
+                        </span>
+                    </label>
+                    <label class="filter-checkbox">
+                        <input type="checkbox" checked data-filter="debug">
+                        <span class="filter-label">
+                            <span class="log-badge badge-debug">DEBUG</span>
+                            Debug
+                        </span>
+                    </label>
+                    <label class="filter-checkbox">
+                        <input type="checkbox" checked data-filter="warn">
+                        <span class="filter-label">
+                            <span class="log-badge badge-warn">WARN</span>
+                            Warnings
+                        </span>
+                    </label>
+                    <label class="filter-checkbox">
+                        <input type="checkbox" checked data-filter="error">
+                        <span class="filter-label">
+                            <span class="log-badge badge-error">ERROR</span>
+                            Errors
+                        </span>
+                    </label>
+                    <label class="filter-checkbox">
+                        <input type="checkbox" checked data-filter="success">
+                        <span class="filter-label">
+                            <span class="log-badge badge-success">SUCCESS</span>
+                            Success
+                        </span>
+                    </label>
+                </div>
+            </div>
+
+            <div class="sidebar-section">
+                <h3 class="sidebar-title">Sources</h3>
+                <div class="filter-group" id="sourceFilters">
+                    <!-- Dynamically populated -->
+                </div>
+            </div>
+
+            <div class="sidebar-section">
+                <h3 class="sidebar-title">Time Range</h3>
+                <div class="filter-group">
+                    <select class="control-btn" id="timeRange" style="width: 100%;">
+                        <option value="all">All Time</option>
+                        <option value="1h">Last Hour</option>
+                        <option value="30m">Last 30 Minutes</option>
+                        <option value="15m">Last 15 Minutes</option>
+                        <option value="5m">Last 5 Minutes</option>
+                    </select>
+                </div>
+            </div>
+        </aside>
+
+        <!-- Main Content -->
+        <main class="main-content">
+            <!-- Stats Overview -->
+            <div class="stats-grid">
+                <div class="stat-card">
+                    <div class="stat-label">Total Logs</div>
+                    <div class="stat-value" id="totalLogs">0</div>
+                    <div class="stat-change">+0 last minute</div>
+                </div>
+                <div class="stat-card">
+                    <div class="stat-label">Errors</div>
+                    <div class="stat-value" id="errorCount">0</div>
+                    <div class="stat-change negative">0 critical</div>
+                </div>
+                <div class="stat-card">
+                    <div class="stat-label">Page Load</div>
+                    <div class="stat-value" id="pageLoadTime">0ms</div>
+                    <div class="stat-change">Avg: 0ms</div>
+                </div>
+                <div class="stat-card">
+                    <div class="stat-label">Memory Usage</div>
+                    <div class="stat-value" id="memoryUsage">0MB</div>
+                    <div class="stat-change">Limit: 0MB</div>
+                </div>
+                <div class="stat-card">
+                    <div class="stat-label">Network Requests</div>
+                    <div class="stat-value" id="networkRequests">0</div>
+                    <div class="stat-change">0 failed</div>
+                </div>
+                <div class="stat-card">
+                    <div class="stat-label">Form Submissions</div>
+                    <div class="stat-value" id="formSubmissions">0</div>
+                    <div class="stat-change">0 errors</div>
+                </div>
+            </div>
+
+            <!-- Search -->
+            <div class="search-container">
+                <input type="text" class="search-input" id="searchInput" placeholder="Search logs... (regex supported)">
+            </div>
+
+            <!-- Console Logs -->
+            <div class="debug-section">
+                <div class="section-header" onclick="toggleSection(this)">
+                    <h2 class="section-title">
+                        <span>▼</span>
+                        Console Logs
+                        <span class="spinner" style="display: none;"></span>
+                    </h2>
+                    <div class="section-controls">
+                        <button class="control-btn" onclick="clearSection('console')">Clear</button>
+                    </div>
+                </div>
+                <div class="section-content">
+                    <div class="log-entries" id="consoleLogs">
+                        <!-- Logs populated here -->
+                    </div>
+                </div>
+            </div>
+
+            <!-- Performance Metrics -->
+            <div class="debug-section">
+                <div class="section-header" onclick="toggleSection(this)">
+                    <h2 class="section-title">
+                        <span>▼</span>
+                        Performance Metrics
+                    </h2>
+                </div>
+                <div class="section-content">
+                    <div id="performanceMetrics">
+                        <div class="metric-bar">
+                            <span class="metric-label">DOM Content Loaded</span>
+                            <div class="metric-progress">
+                                <div class="metric-fill" id="domMetric" style="width: 0%">
+                                    <span class="metric-value">0ms</span>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="metric-bar">
+                            <span class="metric-label">First Paint</span>
+                            <div class="metric-progress">
+                                <div class="metric-fill" id="fpMetric" style="width: 0%">
+                                    <span class="metric-value">0ms</span>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="metric-bar">
+                            <span class="metric-label">First Contentful Paint</span>
+                            <div class="metric-progress">
+                                <div class="metric-fill" id="fcpMetric" style="width: 0%">
+                                    <span class="metric-value">0ms</span>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="metric-bar">
+                            <span class="metric-label">Time to Interactive</span>
+                            <div class="metric-progress">
+                                <div class="metric-fill" id="ttiMetric" style="width: 0%">
+                                    <span class="metric-value">0ms</span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Network Monitor -->
+            <div class="debug-section">
+                <div class="section-header" onclick="toggleSection(this)">
+                    <h2 class="section-title">
+                        <span>▼</span>
+                        Network Monitor
+                    </h2>
+                </div>
+                <div class="section-content">
+                    <div class="log-entries" id="networkLogs">
+                        <!-- Network logs populated here -->
+                    </div>
+                </div>
+            </div>
+
+            <!-- Resource Timing -->
+            <div class="debug-section">
+                <div class="section-header" onclick="toggleSection(this)">
+                    <h2 class="section-title">
+                        <span>▼</span>
+                        Resource Timing Waterfall
+                    </h2>
+                </div>
+                <div class="section-content">
+                    <div class="timeline-container" id="resourceTimeline">
+                        <!-- Timeline populated here -->
+                    </div>
+                </div>
+            </div>
+
+            <!-- Error Stack Traces -->
+            <div class="debug-section">
+                <div class="section-header" onclick="toggleSection(this)">
+                    <h2 class="section-title">
+                        <span>▼</span>
+                        Error Stack Traces
+                    </h2>
+                </div>
+                <div class="section-content">
+                    <div class="log-entries" id="errorLogs">
+                        <!-- Error logs populated here -->
+                    </div>
+                </div>
+            </div>
+
+            <!-- Form Submission History -->
+            <div class="debug-section">
+                <div class="section-header" onclick="toggleSection(this)">
+                    <h2 class="section-title">
+                        <span>▼</span>
+                        Form Submission History
+                    </h2>
+                </div>
+                <div class="section-content">
+                    <div class="log-entries" id="formLogs">
+                        <!-- Form logs populated here -->
+                    </div>
+                </div>
+            </div>
+
+            <!-- Browser Compatibility -->
+            <div class="debug-section">
+                <div class="section-header" onclick="toggleSection(this)">
+                    <h2 class="section-title">
+                        <span>▼</span>
+                        Browser Compatibility Report
+                    </h2>
+                </div>
+                <div class="section-content">
+                    <div id="compatibilityReport">
+                        <!-- Compatibility info populated here -->
+                    </div>
+                </div>
+            </div>
+
+            <!-- CSS/JS Loading Status -->
+            <div class="debug-section">
+                <div class="section-header" onclick="toggleSection(this)">
+                    <h2 class="section-title">
+                        <span>▼</span>
+                        Resource Loading Status
+                    </h2>
+                </div>
+                <div class="section-content">
+                    <div id="resourceStatus">
+                        <!-- Resource status populated here -->
+                    </div>
+                </div>
+            </div>
+        </main>
+    </div>
+
+    <!-- Export Button -->
+    <button class="export-btn" id="exportBtn">Export Debug Data</button>
+
+    <!-- Toast Container -->
+    <div class="toast-container" id="toastContainer"></div>
+
+    <script>
+        // Debug Dashboard Core
+        class DebugDashboard {
+            constructor() {
+                this.logs = [];
+                this.networkLogs = [];
+                this.formLogs = [];
+                this.errorLogs = [];
+                this.isPaused = false;
+                this.filters = {
+                    types: ['info', 'debug', 'warn', 'error', 'success'],
+                    sources: [],
+                    timeRange: 'all',
+                    searchTerm: ''
+                };
+                this.stats = {
+                    totalLogs: 0,
+                    errors: 0,
+                    warnings: 0,
+                    networkRequests: 0,
+                    failedRequests: 0,
+                    formSubmissions: 0,
+                    formErrors: 0
+                };
+                this.performanceData = {};
+                this.init();
+            }
+
+            init() {
+                this.interceptConsole();
+                this.interceptNetwork();
+                this.interceptForms();
+                this.captureErrors();
+                this.capturePerformance();
+                this.setupEventListeners();
+                this.checkBrowserCompatibility();
+                this.loadResourceStatus();
+                this.startUpdateLoop();
+                
+                // Try to connect to debug.js if it exists
+                this.connectToDebugJS();
+                
+                this.showToast('Debug Dashboard Initialized', 'success');
+            }
+
+            // Intercept console methods
+            interceptConsole() {
+                const methods = ['log', 'info', 'warn', 'error', 'debug'];
+                const originalMethods = {};
+
+                methods.forEach(method => {
+                    originalMethods[method] = console[method];
+                    console[method] = (...args) => {
+                        if (!this.isPaused) {
+                            this.addLog({
+                                type: method === 'log' ? 'info' : method,
+                                message: args.map(arg => {
+                                    if (typeof arg === 'object') {
+                                        try {
+                                            return JSON.stringify(arg, null, 2);
+                                        } catch (e) {
+                                            return String(arg);
+                                        }
+                                    }
+                                    return String(arg);
+                                }).join(' '),
+                                timestamp: new Date(),
+                                source: 'console',
+                                stack: method === 'error' ? new Error().stack : null
+                            });
+                        }
+                        originalMethods[method].apply(console, args);
+                    };
+                });
+            }
+
+            // Intercept network requests
+            interceptNetwork() {
+                const originalFetch = window.fetch;
+                window.fetch = async (...args) => {
+                    const startTime = performance.now();
+                    const [resource, config] = args;
+                    const method = config?.method || 'GET';
+                    
+                    try {
+                        const response = await originalFetch(...args);
+                        const endTime = performance.now();
+                        const duration = endTime - startTime;
+                        
+                        if (!this.isPaused) {
+                            this.addNetworkLog({
+                                url: resource.toString(),
+                                method,
+                                status: response.status,
+                                statusText: response.statusText,
+                                duration,
+                                timestamp: new Date(),
+                                type: response.ok ? 'success' : 'error'
+                            });
+                        }
+                        
+                        this.stats.networkRequests++;
+                        if (!response.ok) this.stats.failedRequests++;
+                        this.updateStats();
+                        
+                        return response;
+                    } catch (error) {
+                        const endTime = performance.now();
+                        const duration = endTime - startTime;
+                        
+                        if (!this.isPaused) {
+                            this.addNetworkLog({
+                                url: resource.toString(),
+                                method,
+                                error: error.message,
+                                duration,
+                                timestamp: new Date(),
+                                type: 'error'
+                            });
+                        }
+                        
+                        this.stats.networkRequests++;
+                        this.stats.failedRequests++;
+                        this.updateStats();
+                        
+                        throw error;
+                    }
+                };
+
+                // Intercept XMLHttpRequest
+                const originalXHR = window.XMLHttpRequest.prototype.open;
+                XMLHttpRequest.prototype.open = function(method, url, ...rest) {
+                    this._debugStartTime = performance.now();
+                    this._debugMethod = method;
+                    this._debugUrl = url;
+                    
+                    this.addEventListener('load', function() {
+                        const duration = performance.now() - this._debugStartTime;
+                        if (!window.debugDashboard.isPaused) {
+                            window.debugDashboard.addNetworkLog({
+                                url: this._debugUrl,
+                                method: this._debugMethod,
+                                status: this.status,
+                                statusText: this.statusText,
+                                duration,
+                                timestamp: new Date(),
+                                type: this.status >= 200 && this.status < 300 ? 'success' : 'error'
+                            });
+                        }
+                    });
+                    
+                    return originalXHR.apply(this, [method, url, ...rest]);
+                };
+            }
+
+            // Intercept form submissions
+            interceptForms() {
+                document.addEventListener('submit', (e) => {
+                    const form = e.target;
+                    const formData = new FormData(form);
+                    const data = {};
+                    
+                    for (let [key, value] of formData.entries()) {
+                        data[key] = value;
+                    }
+                    
+                    if (!this.isPaused) {
+                        this.addFormLog({
+                            formId: form.id || 'unnamed',
+                            action: form.action,
+                            method: form.method,
+                            data,
+                            timestamp: new Date()
+                        });
+                    }
+                    
+                    this.stats.formSubmissions++;
+                    this.updateStats();
+                }, true);
+            }
+
+            // Capture global errors
+            captureErrors() {
+                window.addEventListener('error', (e) => {
+                    if (!this.isPaused) {
+                        this.addErrorLog({
+                            message: e.message,
+                            filename: e.filename,
+                            lineno: e.lineno,
+                            colno: e.colno,
+                            error: e.error,
+                            stack: e.error?.stack,
+                            timestamp: new Date()
+                        });
+                    }
+                    this.stats.errors++;
+                    this.updateStats();
+                });
+
+                window.addEventListener('unhandledrejection', (e) => {
+                    if (!this.isPaused) {
+                        this.addErrorLog({
+                            message: `Unhandled Promise Rejection: ${e.reason}`,
+                            stack: e.reason?.stack,
+                            timestamp: new Date()
+                        });
+                    }
+                    this.stats.errors++;
+                    this.updateStats();
+                });
+            }
+
+            // Capture performance metrics
+            capturePerformance() {
+                if (window.performance && window.performance.timing) {
+                    const timing = window.performance.timing;
+                    const navigationStart = timing.navigationStart;
+                    
+                    this.performanceData = {
+                        domContentLoaded: timing.domContentLoadedEventEnd - navigationStart,
+                        loadComplete: timing.loadEventEnd - navigationStart,
+                        domInteractive: timing.domInteractive - navigationStart,
+                        firstPaint: 0,
+                        firstContentfulPaint: 0,
+                        timeToInteractive: 0
+                    };
+                    
+                    // Get paint timing
+                    if (window.performance.getEntriesByType) {
+                        const paintMetrics = performance.getEntriesByType('paint');
+                        paintMetrics.forEach(metric => {
+                            if (metric.name === 'first-paint') {
+                                this.performanceData.firstPaint = metric.startTime;
+                            } else if (metric.name === 'first-contentful-paint') {
+                                this.performanceData.firstContentfulPaint = metric.startTime;
+                            }
+                        });
+                    }
+                    
+                    this.updatePerformanceMetrics();
+                }
+
+                // Monitor memory usage if available
+                if (performance.memory) {
+                    setInterval(() => {
+                        const memoryMB = (performance.memory.usedJSHeapSize / 1048576).toFixed(2);
+                        const limitMB = (performance.memory.jsHeapSizeLimit / 1048576).toFixed(2);
+                        document.getElementById('memoryUsage').textContent = `${memoryMB}MB`;
+                        document.getElementById('memoryUsage').nextElementSibling.innerHTML = `Limit: ${limitMB}MB`;
+                    }, 1000);
+                }
+            }
+
+            // Add log entry
+            addLog(log) {
+                this.logs.push(log);
+                this.stats.totalLogs++;
+                if (log.type === 'error') this.stats.errors++;
+                if (log.type === 'warn') this.stats.warnings++;
+                
+                this.updateStats();
+                this.renderLog(log, 'consoleLogs');
+                
+                // Add source to filter list if new
+                if (!this.filters.sources.includes(log.source)) {
+                    this.filters.sources.push(log.source);
+                    this.updateSourceFilters();
+                }
+            }
+
+            // Add network log
+            addNetworkLog(log) {
+                this.networkLogs.push(log);
+                this.renderLog(log, 'networkLogs', 'network');
+            }
+
+            // Add form log
+            addFormLog(log) {
+                this.formLogs.push(log);
+                this.renderLog(log, 'formLogs', 'form');
+            }
+
+            // Add error log
+            addErrorLog(log) {
+                this.errorLogs.push(log);
+                this.renderLog(log, 'errorLogs', 'error');
+            }
+
+            // Render log entry
+            renderLog(log, containerId, logType = 'console') {
+                const container = document.getElementById(containerId);
+                if (!container) return;
+                
+                const entry = document.createElement('div');
+                entry.className = `log-entry ${log.type || 'info'}`;
+                
+                const time = new Date(log.timestamp).toLocaleTimeString();
+                
+                if (logType === 'console') {
+                    entry.innerHTML = `
+                        <span class="log-time">${time}</span>
+                        <span class="log-type log-badge badge-${log.type}">${log.type.toUpperCase()}</span>
+                        <span class="log-message">${this.escapeHtml(log.message)}
+                            ${log.stack ? `<div class="log-stack">${this.escapeHtml(log.stack)}</div>` : ''}
+                        </span>
+                    `;
+                } else if (logType === 'network') {
+                    entry.innerHTML = `
+                        <span class="log-time">${time}</span>
+                        <span class="log-type log-badge badge-${log.type}">${log.method}</span>
+                        <span class="log-message">
+                            ${log.url} - ${log.status || 'Failed'} ${log.statusText || log.error || ''} (${log.duration.toFixed(2)}ms)
+                        </span>
+                    `;
+                } else if (logType === 'form') {
+                    entry.innerHTML = `
+                        <span class="log-time">${time}</span>
+                        <span class="log-type log-badge badge-info">FORM</span>
+                        <span class="log-message">
+                            Form: ${log.formId} | Action: ${log.action} | Method: ${log.method}
+                            <div class="log-stack">${JSON.stringify(log.data, null, 2)}</div>
+                        </span>
+                    `;
+                } else if (logType === 'error') {
+                    entry.innerHTML = `
+                        <span class="log-time">${time}</span>
+                        <span class="log-type log-badge badge-error">ERROR</span>
+                        <span class="log-message">
+                            ${this.escapeHtml(log.message)}
+                            ${log.filename ? `<br>File: ${log.filename}:${log.lineno}:${log.colno}` : ''}
+                            ${log.stack ? `<div class="log-stack">${this.escapeHtml(log.stack)}</div>` : ''}
+                        </span>
+                    `;
+                }
+                
+                // Apply filters
+                if (!this.shouldShowLog(log)) {
+                    entry.style.display = 'none';
+                }
+                
+                container.insertBefore(entry, container.firstChild);
+                
+                // Limit displayed logs
+                while (container.children.length > 1000) {
+                    container.removeChild(container.lastChild);
+                }
+            }
+
+            // Check if log should be shown based on filters
+            shouldShowLog(log) {
+                // Type filter
+                if (!this.filters.types.includes(log.type || 'info')) {
+                    return false;
+                }
+                
+                // Search filter
+                if (this.filters.searchTerm) {
+                    const regex = new RegExp(this.filters.searchTerm, 'i');
+                    const searchText = JSON.stringify(log);
+                    if (!regex.test(searchText)) {
+                        return false;
+                    }
+                }
+                
+                // Time filter
+                if (this.filters.timeRange !== 'all') {
+                    const now = new Date();
+                    const logTime = new Date(log.timestamp);
+                    const timeDiff = now - logTime;
+                    const ranges = {
+                        '5m': 5 * 60 * 1000,
+                        '15m': 15 * 60 * 1000,
+                        '30m': 30 * 60 * 1000,
+                        '1h': 60 * 60 * 1000
+                    };
+                    
+                    if (timeDiff > ranges[this.filters.timeRange]) {
+                        return false;
+                    }
+                }
+                
+                return true;
+            }
+
+            // Update stats display
+            updateStats() {
+                document.getElementById('totalLogs').textContent = this.stats.totalLogs;
+                document.getElementById('errorCount').textContent = this.stats.errors;
+                document.getElementById('networkRequests').textContent = this.stats.networkRequests;
+                document.getElementById('formSubmissions').textContent = this.stats.formSubmissions;
+                
+                // Update status indicator
+                const indicator = document.getElementById('statusIndicator');
+                if (this.stats.errors > 0) {
+                    indicator.style.background = 'var(--error)';
+                } else if (this.stats.warnings > 0) {
+                    indicator.style.background = 'var(--warning)';
+                } else {
+                    indicator.style.background = 'var(--success)';
+                }
+            }
+
+            // Update performance metrics display
+            updatePerformanceMetrics() {
+                const metrics = {
+                    domMetric: this.performanceData.domContentLoaded,
+                    fpMetric: this.performanceData.firstPaint,
+                    fcpMetric: this.performanceData.firstContentfulPaint,
+                    ttiMetric: this.performanceData.domInteractive
+                };
+                
+                const maxTime = Math.max(...Object.values(metrics), 1);
+                
+                Object.entries(metrics).forEach(([id, value]) => {
+                    const element = document.getElementById(id);
+                    if (element) {
+                        const percentage = (value / maxTime) * 100;
+                        element.style.width = `${percentage}%`;
+                        element.querySelector('.metric-value').textContent = `${value.toFixed(0)}ms`;
+                    }
+                });
+                
+                // Update page load time stat
+                document.getElementById('pageLoadTime').textContent = 
+                    `${this.performanceData.loadComplete?.toFixed(0) || 0}ms`;
+            }
+
+            // Check browser compatibility
+            checkBrowserCompatibility() {
+                const report = document.getElementById('compatibilityReport');
+                const features = {
+                    'Fetch API': typeof fetch !== 'undefined',
+                    'Promises': typeof Promise !== 'undefined',
+                    'Arrow Functions': (() => { try { eval('() => {}'); return true; } catch(e) { return false; } })(),
+                    'Template Literals': (() => { try { eval('`test`'); return true; } catch(e) { return false; } })(),
+                    'LocalStorage': typeof localStorage !== 'undefined',
+                    'SessionStorage': typeof sessionStorage !== 'undefined',
+                    'WebSockets': typeof WebSocket !== 'undefined',
+                    'Service Workers': 'serviceWorker' in navigator,
+                    'IndexedDB': typeof indexedDB !== 'undefined',
+                    'CSS Grid': CSS.supports('display', 'grid'),
+                    'CSS Flexbox': CSS.supports('display', 'flex'),
+                    'Custom Properties': CSS.supports('--test', 'test'),
+                    'WebGL': (() => {
+                        const canvas = document.createElement('canvas');
+                        return !!(canvas.getContext('webgl') || canvas.getContext('experimental-webgl'));
+                    })(),
+                    'Web Audio API': typeof AudioContext !== 'undefined' || typeof webkitAudioContext !== 'undefined',
+                    'Geolocation': 'geolocation' in navigator,
+                    'Device Orientation': typeof DeviceOrientationEvent !== 'undefined',
+                    'Touch Events': 'ontouchstart' in window,
+                    'Intersection Observer': typeof IntersectionObserver !== 'undefined',
+                    'Resize Observer': typeof ResizeObserver !== 'undefined'
+                };
+                
+                const browserInfo = {
+                    'User Agent': navigator.userAgent,
+                    'Platform': navigator.platform,
+                    'Language': navigator.language,
+                    'Cookies Enabled': navigator.cookieEnabled,
+                    'Online Status': navigator.onLine,
+                    'Screen Resolution': `${screen.width}x${screen.height}`,
+                    'Window Size': `${window.innerWidth}x${window.innerHeight}`,
+                    'Pixel Ratio': window.devicePixelRatio || 1
+                };
+                
+                let html = '<h3>Browser Information</h3><div style="margin-bottom: 1rem;">';
+                Object.entries(browserInfo).forEach(([feature, value]) => {
+                    html += `<div style="margin-bottom: 0.5rem;">
+                        <strong>${feature}:</strong> ${value}
+                    </div>`;
+                });
+                html += '</div><h3>Feature Support</h3><div>';
+                
+                Object.entries(features).forEach(([feature, supported]) => {
+                    const color = supported ? 'var(--success)' : 'var(--error)';
+                    const icon = supported ? '✓' : '✗';
+                    html += `<div style="margin-bottom: 0.5rem;">
+                        <span style="color: ${color}; font-weight: bold;">${icon}</span>
+                        ${feature}
+                    </div>`;
+                });
+                html += '</div>';
+                
+                report.innerHTML = html;
+            }
+
+            // Load resource status
+            loadResourceStatus() {
+                const container = document.getElementById('resourceStatus');
+                const resources = performance.getEntriesByType('resource');
+                
+                let html = '<div class="timeline-container">';
+                resources.forEach(resource => {
+                    const type = this.getResourceType(resource.name);
+                    const status = resource.transferSize === 0 ? 'cached' : 'loaded';
+                    const duration = resource.duration.toFixed(2);
+                    const size = resource.transferSize ? `${(resource.transferSize / 1024).toFixed(2)}KB` : 'cached';
+                    
+                    html += `<div class="timeline-entry">
+                        <span class="timeline-name" title="${resource.name}">${resource.name.split('/').pop()}</span>
+                        <span style="margin: 0 1rem;">${type}</span>
+                        <span style="margin: 0 1rem;">${status}</span>
+                        <span style="margin: 0 1rem;">${duration}ms</span>
+                        <span>${size}</span>
+                    </div>`;
+                });
+                html += '</div>';
+                
+                container.innerHTML = html;
+                
+                // Also create waterfall
+                this.createResourceWaterfall(resources);
+            }
+
+            // Create resource timing waterfall
+            createResourceWaterfall(resources) {
+                const container = document.getElementById('resourceTimeline');
+                const maxDuration = Math.max(...resources.map(r => r.responseEnd));
+                
+                let html = '';
+                resources.slice(0, 50).forEach(resource => {
+                    const name = resource.name.split('/').pop() || resource.name;
+                    const startPercent = (resource.startTime / maxDuration) * 100;
+                    const durationPercent = (resource.duration / maxDuration) * 100;
+                    
+                    html += `<div class="timeline-entry">
+                        <span class="timeline-name" title="${resource.name}">${name}</span>
+                        <div class="timeline-bar">
+                            <div class="timeline-segment segment-connect" 
+                                 style="left: ${startPercent}%; width: ${durationPercent}%;">
+                                ${resource.duration.toFixed(0)}ms
+                            </div>
+                        </div>
+                    </div>`;
+                });
+                
+                container.innerHTML = html;
+            }
+
+            // Get resource type from URL
+            getResourceType(url) {
+                if (url.endsWith('.js')) return 'JS';
+                if (url.endsWith('.css')) return 'CSS';
+                if (url.match(/\.(jpg|jpeg|png|gif|svg|webp)$/i)) return 'Image';
+                if (url.match(/\.(woff|woff2|ttf|eot)$/i)) return 'Font';
+                if (url.includes('api') || url.includes('json')) return 'API';
+                return 'Other';
+            }
+
+            // Setup event listeners
+            setupEventListeners() {
+                // Dark mode toggle
+                document.getElementById('darkModeBtn').addEventListener('click', () => {
+                    document.body.classList.toggle('light-mode');
+                    const btn = document.getElementById('darkModeBtn');
+                    btn.textContent = document.body.classList.contains('light-mode') ? 'Dark Mode' : 'Light Mode';
+                });
+
+                // Pause/Resume
+                document.getElementById('pauseBtn').addEventListener('click', () => {
+                    this.isPaused = !this.isPaused;
+                    const btn = document.getElementById('pauseBtn');
+                    btn.textContent = this.isPaused ? 'Resume' : 'Pause';
+                    btn.classList.toggle('active', this.isPaused);
+                    this.showToast(this.isPaused ? 'Logging Paused' : 'Logging Resumed', 'info');
+                });
+
+                // Clear logs
+                document.getElementById('clearBtn').addEventListener('click', () => {
+                    this.clearAllLogs();
+                });
+
+                // Refresh
+                document.getElementById('refreshBtn').addEventListener('click', () => {
+                    location.reload();
+                });
+
+                // Export
+                document.getElementById('exportBtn').addEventListener('click', () => {
+                    this.exportDebugData();
+                });
+
+                // Search
+                document.getElementById('searchInput').addEventListener('input', (e) => {
+                    this.filters.searchTerm = e.target.value;
+                    this.applyFilters();
+                });
+
+                // Type filters
+                document.querySelectorAll('[data-filter]').forEach(checkbox => {
+                    checkbox.addEventListener('change', () => {
+                        const filterType = checkbox.dataset.filter;
+                        if (checkbox.checked) {
+                            if (!this.filters.types.includes(filterType)) {
+                                this.filters.types.push(filterType);
+                            }
+                        } else {
+                            this.filters.types = this.filters.types.filter(t => t !== filterType);
+                        }
+                        this.applyFilters();
+                    });
+                });
+
+                // Time range filter
+                document.getElementById('timeRange').addEventListener('change', (e) => {
+                    this.filters.timeRange = e.target.value;
+                    this.applyFilters();
+                });
+
+                // Mobile menu toggle
+                document.getElementById('mobileMenuBtn').addEventListener('click', () => {
+                    document.getElementById('sidebar').classList.toggle('mobile-open');
+                });
+            }
+
+            // Apply filters to all logs
+            applyFilters() {
+                const containers = ['consoleLogs', 'networkLogs', 'errorLogs', 'formLogs'];
+                containers.forEach(containerId => {
+                    const container = document.getElementById(containerId);
+                    if (!container) return;
+                    
+                    Array.from(container.children).forEach(entry => {
+                        // Simple visibility toggle based on current filters
+                        // In production, you'd parse the log data from the entry
+                        entry.style.display = '';
+                    });
+                });
+            }
+
+            // Clear all logs
+            clearAllLogs() {
+                this.logs = [];
+                this.networkLogs = [];
+                this.formLogs = [];
+                this.errorLogs = [];
+                this.stats = {
+                    totalLogs: 0,
+                    errors: 0,
+                    warnings: 0,
+                    networkRequests: 0,
+                    failedRequests: 0,
+                    formSubmissions: 0,
+                    formErrors: 0
+                };
+                
+                ['consoleLogs', 'networkLogs', 'errorLogs', 'formLogs'].forEach(id => {
+                    const container = document.getElementById(id);
+                    if (container) container.innerHTML = '';
+                });
+                
+                this.updateStats();
+                this.showToast('All logs cleared', 'success');
+            }
+
+            // Export debug data
+            exportDebugData() {
+                const debugData = {
+                    timestamp: new Date().toISOString(),
+                    userAgent: navigator.userAgent,
+                    url: window.location.href,
+                    stats: this.stats,
+                    performance: this.performanceData,
+                    logs: this.logs,
+                    networkLogs: this.networkLogs,
+                    errorLogs: this.errorLogs,
+                    formLogs: this.formLogs
+                };
+                
+                const blob = new Blob([JSON.stringify(debugData, null, 2)], { type: 'application/json' });
+                const url = URL.createObjectURL(blob);
+                const a = document.createElement('a');
+                a.href = url;
+                a.download = `debug-export-${Date.now()}.json`;
+                document.body.appendChild(a);
+                a.click();
+                document.body.removeChild(a);
+                URL.revokeObjectURL(url);
+                
+                this.showToast('Debug data exported', 'success');
+            }
+
+            // Show toast notification
+            showToast(message, type = 'info') {
+                const container = document.getElementById('toastContainer');
+                const toast = document.createElement('div');
+                toast.className = `toast ${type}`;
+                toast.textContent = message;
+                container.appendChild(toast);
+                
+                setTimeout(() => {
+                    toast.style.opacity = '0';
+                    setTimeout(() => container.removeChild(toast), 300);
+                }, 3000);
+            }
+
+            // Update source filters
+            updateSourceFilters() {
+                const container = document.getElementById('sourceFilters');
+                container.innerHTML = this.filters.sources.map(source => `
+                    <label class="filter-checkbox">
+                        <input type="checkbox" checked data-source="${source}">
+                        <span class="filter-label">${source}</span>
+                    </label>
+                `).join('');
+            }
+
+            // Connect to debug.js if available
+            connectToDebugJS() {
+                // Create global debug interface
+                window.debugInterface = {
+                    log: (message, type = 'info') => this.addLog({
+                        type,
+                        message,
+                        timestamp: new Date(),
+                        source: 'debug.js'
+                    }),
+                    error: (message, stack) => this.addErrorLog({
+                        message,
+                        stack,
+                        timestamp: new Date()
+                    }),
+                    network: (data) => this.addNetworkLog(data),
+                    form: (data) => this.addFormLog(data)
+                };
+                
+                // Check if debug.js exists and connect
+                if (window.DEBUG || window.debugManager) {
+                    console.log('Connected to existing debug.js');
+                    this.showToast('Connected to debug.js', 'success');
+                }
+            }
+
+            // Start update loop
+            startUpdateLoop() {
+                setInterval(() => {
+                    if (!this.isPaused) {
+                        // Update any real-time metrics here
+                        this.capturePerformance();
+                    }
+                }, 1000);
+            }
+
+            // Escape HTML for safe display
+            escapeHtml(text) {
+                const div = document.createElement('div');
+                div.textContent = text;
+                return div.innerHTML;
+            }
+        }
+
+        // Initialize dashboard
+        window.debugDashboard = new DebugDashboard();
+
+        // Section toggle function
+        function toggleSection(header) {
+            const content = header.nextElementSibling;
+            const arrow = header.querySelector('span:first-child');
+            
+            content.classList.toggle('collapsed');
+            arrow.textContent = content.classList.contains('collapsed') ? '▶' : '▼';
+        }
+
+        // Clear section function
+        function clearSection(section) {
+            const containers = {
+                'console': 'consoleLogs',
+                'network': 'networkLogs',
+                'error': 'errorLogs',
+                'form': 'formLogs'
+            };
+            
+            const container = document.getElementById(containers[section]);
+            if (container) {
+                container.innerHTML = '';
+                window.debugDashboard.showToast(`${section} logs cleared`, 'success');
+            }
+        }
+
+        // Test the dashboard with some sample data
+        setTimeout(() => {
+            console.log('Debug Dashboard loaded successfully');
+            console.info('This is an info message');
+            console.warn('This is a warning message');
+            console.debug('This is a debug message');
+        }, 1000);
+    </script>
+</body>
+</html>

@@ -1,0 +1,90 @@
+/* Hero Height Fix - Reduces excessive gap on homepage */
+/* This file should be loaded AFTER industrial.css and industrial-complete.css */
+
+.construction-hero {
+    /* Override the excessive min-height - make it content-based */
+    min-height: unset !important;
+    height: auto !important;
+    
+    /* Very compact padding */
+    padding: 20px 0 20px !important;
+    
+    /* Don't center vertically - align to top */
+    display: block !important;
+    align-items: flex-start !important;
+}
+
+/* Adjust for smaller screens */
+@media (max-width: 768px) {
+    .construction-hero {
+        padding: 15px 0 15px !important;
+        min-height: unset !important;
+        height: auto !important;
+    }
+}
+
+/* Make the hero grid more compact */
+.construction-hero .hero-grid,
+.hero-grid {
+    min-height: unset !important;
+    height: auto !important;
+    display: grid !important; /* Keep grid but remove height */
+    grid-template-columns: 1fr 1fr;
+    gap: 40px !important; /* Reduce gap from 80px */
+    align-items: center !important;
+    padding: 0;
+}
+
+/* On mobile, stack the grid items */
+@media (max-width: 768px) {
+    .construction-hero .hero-grid,
+    .hero-grid {
+        grid-template-columns: 1fr !important;
+        gap: 20px !important;
+    }
+}
+
+/* Remove the background element that might be adding height */
+.construction-bg,
+#constructionScene {
+    display: none !important;
+}
+
+/* Fix any overlap issues with the notice bar */
+.industrial-notice + main .construction-hero {
+    /* Ensure proper spacing after notice bar */
+    margin-top: 0;
+}
+
+/* Force auto height on all screen sizes */
+@media (min-width: 1024px) {
+    .construction-hero {
+        min-height: unset !important;
+        height: auto !important;
+    }
+}
+
+@media (min-width: 768px) and (max-width: 1023px) {
+    .construction-hero {
+        min-height: unset !important;
+        height: auto !important;
+    }
+}
+
+/* Reduce spacing between elements in hero */
+.construction-hero .hero-headline {
+    margin-bottom: 20px !important;
+}
+
+.construction-hero .hero-subtitle {
+    margin-bottom: 25px !important;
+}
+
+.construction-hero .button-group {
+    margin-bottom: 30px !important;
+}
+
+/* Make the calculator section follow immediately */
+.construction-hero + section {
+    margin-top: 0 !important;
+}

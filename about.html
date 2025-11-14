@@ -28,6 +28,8 @@
     <link rel="stylesheet" href="/public/css/header-consolidated.css?v=2.0">
     <!-- Button hover fix -->
     <link rel="stylesheet" href="/public/css/button-hover-fix.css?v=1.0">
+    <!-- Mobile menu fix - MUST be loaded last -->
+    <link rel="stylesheet" href="/public/css/mobile-menu-fix.css?v=1.0">
 </head>
 <body>
     <!-- Loading Screen -->
@@ -127,7 +129,37 @@
                             <a href="/trades/locations/">View All Locations →</a>
                         </div>
                     </li>
-                    
+
+                    <!-- Guides Dropdown -->
+                    <li class="has-dropdown">
+                        <a href="/blog/">Guides</a>
+                        <div class="dropdown-menu">
+                            <div class="dropdown-section">
+                                <h3>Equipment Guides</h3>
+                                <div class="dropdown-links">
+                                    <a href="/blog/scaffolding-materials-finance-guide.html">Scaffolding Materials Finance</a>
+                                    <a href="/blog/woodworking-equipment-finance-options.html">Woodworking Equipment Finance</a>
+                                    <a href="/blog/metalwork-equipment-financing.html">Metalwork Equipment Financing</a>
+                                </div>
+                            </div>
+                            <div class="dropdown-section">
+                                <h3>Trade Finance Guides</h3>
+                                <div class="dropdown-links">
+                                    <a href="/blog/bathroom-fitting-finance-explained.html">Bathroom Fitting Finance</a>
+                                    <a href="/blog/home-tradesman-equipment-loans.html">Home Tradesman Startup Finance</a>
+                                    <a href="/blog/">View All Guides →</a>
+                                </div>
+                            </div>
+                        </div>
+
+                        <!-- Mobile submenu -->
+                        <div class="mobile-submenu">
+                            <a href="/blog/scaffolding-materials-finance-guide.html">Scaffolding Finance</a>
+                            <a href="/blog/woodworking-equipment-finance-options.html">Woodworking Equipment</a>
+                            <a href="/blog/bathroom-fitting-finance-explained.html">Bathroom Fitting</a>
+                            <a href="/blog/">View All Guides →</a>
+                        </div>
+                    </li>
                     <li><a href="/about.html">About</a></li>
                     <li><a href="/contact.html">Contact</a></li>
                 </ul>
@@ -155,8 +187,10 @@
                         <span class="text-fill">FOR TRADES</span>
                     </h1>
                     <p class="about-subtitle">
-                        We're not bankers in suits. We're finance brokers who understand what it's like to run a trade business. 
-                        Real people finding real solutions for real businesses.
+                        At TradesmanFinance.co.uk, we know what it's like to run a business on the tools. Customers don't always pay when they should, staff let you down, and cash flow gets squeezed just when you need it most.
+                    </p>
+                    <p class="about-subtitle" style="margin-top: 15px;">
+                        That's why we built a service that makes getting finance simple, quick, and stress-free for tradesmen. We're here to take away the hassle, cut through the jargon, and help you keep your business moving.
                     </p>
                     <div class="hero-stats-grid">
                         <div class="hero-stat-card">
@@ -198,37 +232,29 @@
     <section class="our-industrial-story">
         <div class="container">
             <div class="story-header">
-                <h2 class="section-title">THE REAL STORY</h2>
-                <p class="section-subtitle">No corporate fairy tales here</p>
+                <h2 class="section-title">WHY WE'RE DIFFERENT</h2>
+                <p class="section-subtitle">Finance that works as hard as you do</p>
             </div>
-            <div class="story-timeline">
-                <div class="timeline-item">
-                    <div class="timeline-year">2020</div>
-                    <div class="timeline-content">
-                        <h3>FED UP WITH BANKS</h3>
-                        <p>Started by trades who were sick of banks treating them like second-class citizens. 30-day waits, endless paperwork, and suits who didn't know a spanner from a spirit level.</p>
-                    </div>
+            <div class="values-industrial-grid" style="max-width: 1000px; margin: 0 auto;">
+                <div class="value-industrial-card">
+                    <div class="value-number">01</div>
+                    <h3>WE GET IT</h3>
+                    <p>We've run trades businesses ourselves, so we know the cash flow headaches. When suppliers are slow to pay, when a job runs over budget, when the van breaks down at the worst possible time – we've been there.</p>
                 </div>
-                <div class="timeline-item">
-                    <div class="timeline-year">2021</div>
-                    <div class="timeline-content">
-                        <h3>WORD SPREAD FAST</h3>
-                        <p>Turns out we weren't the only ones frustrated. Within a year, thousands of trades were using us because we actually understood their business.</p>
-                    </div>
+                <div class="value-industrial-card">
+                    <div class="value-number">02</div>
+                    <h3>WE CUT THE HASSLE</h3>
+                    <p>No jargon, no endless forms, just straight answers. Apply online in minutes, get a decision in 24 hours. No more wasting days filling out paperwork or sitting in bank meetings.</p>
                 </div>
-                <div class="timeline-item">
-                    <div class="timeline-year">2023</div>
-                    <div class="timeline-content">
-                        <h3>PROPER GROWTH</h3>
-                        <p>Hit £25M funded. Not because of fancy marketing, but because trades told their mates. Simple as that.</p>
-                    </div>
+                <div class="value-industrial-card">
+                    <div class="value-number">03</div>
+                    <h3>WE USE SMART TECH</h3>
+                    <p>Our AI and automation tools speed things up and make it easier to get approved. While banks are still using fax machines, we're using cutting-edge tech to get you sorted faster.</p>
                 </div>
-                <div class="timeline-item">
-                    <div class="timeline-year">TODAY</div>
-                    <div class="timeline-content">
-                        <h3>STILL KEEPING IT REAL</h3>
-                        <p>Over £50M funded to 50,000+ trades. Still no fancy offices. Still answering the phone. Still getting you sorted in 24 hours.</p>
-                    </div>
+                <div class="value-industrial-card">
+                    <div class="value-number">04</div>
+                    <h3>WE BACK TRADESMEN</h3>
+                    <p>Our whole platform is designed with builders, plumbers, electricians, and other skilled trades in mind. We speak your language, understand your business, and fight for your corner.</p>
                 </div>
             </div>
         </div>
@@ -292,37 +318,39 @@
     <!-- Team Section -->
     <section class="industrial-team">
         <div class="container">
-            <h2 class="section-title">THE CREW</h2>
-            <p class="section-subtitle">Real people who get it</p>
+            <h2 class="section-title">WHO WE ARE</h2>
+            <p class="section-subtitle">The team behind TradesmanFinance.co.uk</p>
             <div class="team-industrial-grid">
                 <div class="team-industrial-card">
                     <div class="team-badge">
-                        <span class="badge-text">BOSS</span>
+                        <span class="badge-text">FOUNDER</span>
                     </div>
                     <div class="team-avatar">
-                        <div class="avatar-industrial">JD</div>
+                        <div class="avatar-industrial">ML</div>
                     </div>
-                    <h3>JAMES "THE BUILDER" DAVIDSON</h3>
-                    <p class="team-role">FOUNDER & HEAD HONCHO</p>
-                    <p class="team-bio">Ex-brickie who got fed up with banks. Built houses for 15 years, now builds finance deals. Still wears steel-toes to the office.</p>
+                    <h3>MATT LENZIE</h3>
+                    <p class="team-role">FOUNDER</p>
+                    <p class="team-bio">Matt isn't just a finance guy—he's been in the trenches too. He's built and run several local businesses with tradespeople, growing some of them close to £1m turnover. He knows the real pressures trades face every day—suppliers dragging their feet on payments, jobs running over, staff not showing up, and the constant juggle of cash flow.</p>
+                    <p class="team-bio" style="margin-top: 10px;">With a background in banking and finance, plus a passion for AI and automation, Matt's mission is to make finance easier and faster for hardworking tradesmen.</p>
                     <div class="team-stats">
-                        <span>15 YRS ON SITE</span>
-                        <span>10K+ DEALS DONE</span>
+                        <span>BUILT TRADES BUSINESSES</span>
+                        <span>£1M+ TURNOVER</span>
                     </div>
                 </div>
                 <div class="team-industrial-card">
                     <div class="team-badge">
-                        <span class="badge-text">OPS</span>
+                        <span class="badge-text">TECH</span>
                     </div>
                     <div class="team-avatar">
-                        <div class="avatar-industrial">SW</div>
+                        <div class="avatar-industrial">EK</div>
                     </div>
-                    <h3>SARAH "THE FIXER" WILLIAMS</h3>
-                    <p class="team-role">CHIEF GETTING-IT-DONE OFFICER</p>
-                    <p class="team-bio">Makes sure your money lands on time, every time. 20 years sorting finance. Doesn't do excuses, just results.</p>
+                    <h3>EUGENE KOUUMDJIEFF</h3>
+                    <p class="team-role">HEAD OF PRODUCT STRATEGY & TECHNOLOGY</p>
+                    <p class="team-bio">Eugene has spent over 20 years building tech platforms for companies big and small—everyone from Disney and Mastercard to start-ups like JustPark and StudentBeans. He knows how to create simple tools that actually work.</p>
+                    <p class="team-bio" style="margin-top: 10px;">At TradesmanFinance.co.uk, Eugene makes sure the technology behind the scenes is solid, so you can apply for finance in minutes instead of wasting hours on paperwork.</p>
                     <div class="team-stats">
-                        <span>99.9% ON TIME</span>
-                        <span>ZERO NONSENSE</span>
+                        <span>20+ YRS TECH</span>
+                        <span>DISNEY, MASTERCARD</span>
                     </div>
                 </div>
                 <div class="team-industrial-card">
@@ -487,7 +515,17 @@
                         </div>
                         <p style="margin-top: 20px; font-size: 12px; color: #808080;">We're a finance broker, not a lender. We find you the best deals.</p>
                     </div>
-                </div>
+                                    <div class="footer-links-section">
+                        <h3>GUIDES & RESOURCES</h3>
+                        <ul role="list">
+                            <li><a href="/blog/">Equipment Finance Guides</a></li>
+                            <li><a href="/blog/scaffolding-materials-finance-guide.html">Scaffolding Finance</a></li>
+                            <li><a href="/blog/woodworking-equipment-finance-options.html">Woodworking Equipment</a></li>
+                            <li><a href="/blog/bathroom-fitting-finance-explained.html">Bathroom Fitting</a></li>
+                        </ul>
+                    </div>
+
+                    </div></div>
             </div>
         </div>
         <div class="footer-bottom">
@@ -510,6 +548,8 @@
     <script src="/public/js/industrial-animations.js" type="module"></script>
     <script src="/public/js/industrial-init.js"></script>
     <script src="/public/js/main.js"></script>
+    <!-- Mobile menu handler - fixes duplicate hamburger issue -->
+    <script src="/public/js/mobile-menu-handler.js"></script>
     <script>
         // About page specific animations
         window.addEventListener('load', () => {

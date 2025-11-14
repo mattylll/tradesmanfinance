@@ -1,0 +1,533 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tradesman Finance London - Business Loans for London Trades</title>
+    <meta name="description" content="Fast business finance for London tradesmen. Equipment loans, van finance & working capital. Cover all London areas - Central, East, South, West & North.">
+    
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Work+Sans:wght@400;500;600;700;800;900&family=Roboto:wght@400;500;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="../../../public/css/industrial.css?v=1.0">
+    <link rel="stylesheet" href="../../../public/css/industrial-complete.css?v=1.1">
+    <link rel="stylesheet" href="../../../public/css/industrial-components.css?v=1.0">
+    <link rel="stylesheet" href="../../../public/css/accessibility.css?v=1.0">
+    <link rel="stylesheet" href="../../../public/css/header-fix.css?v=1.0">
+    <link rel="stylesheet" href="../../../public/css/locations.css?v=1.0">
+    <link rel="stylesheet" href="../../../public/css/dropdown-menu.css?v=1.0">
+    <link rel="stylesheet" href="../../../public/css/dropdown-fix.css?v=1.0">    <link rel="stylesheet" href="../../../public/css/location-overview.css?v=1.0">
+    <link rel="stylesheet" href="../../../public/css/location-trade-cards.css?v=1.0">
+</head>
+<body>
+    <!-- Loading Screen -->
+    <div class="loader-industrial" id="loader">
+        <div class="loader-content">
+            <svg class="wrench-loader" viewBox="0 0 100 100">
+                <path d="M70 20 L80 10 Q90 0 100 10 L90 20 Q80 30 70 20 L50 40 L30 60 Q20 70 10 60 L0 50 Q10 40 20 50 L40 30 Z" 
+                      fill="#ff6b35" stroke="#333" stroke-width="2"/>
+            </svg>
+            <p class="loader-text">Loading London...</p>
+        </div>
+    </div>
+
+    <!-- Industrial Header -->
+    <header class="industrial-header" id="header" role="banner">
+        <div class="header-container">
+            <a href="../../../index.html" class="industrial-logo" aria-label="Tradesman Finance - Home">
+                <div class="logo-badge" aria-hidden="true">TF</div>
+                <div class="logo-text">
+                    <span class="h1-style" aria-hidden="true">Tradesman Finance</span>
+                    <span aria-hidden="true">Built Tough for Business</span>
+                </div>
+            </a>
+            <nav class="industrial-nav" role="navigation" aria-label="Main navigation">
+                <ul role="list">
+                    <li><a href="../../../index.html">Home</a></li>
+                    <li><a href="../../../services.html">Services</a></li>
+                    
+                    <!-- Trades Dropdown -->
+                    <li class="has-dropdown">
+                        <a href="../../../trades/">Trades</a>
+                        <div class="dropdown-menu">
+                            <div class="dropdown-section">
+                                <h3>Core Trades</h3>
+                                <div class="dropdown-grid">
+                                    <a href="../../../trades/electrician-finance.html">Electrician Finance</a>
+                                    <a href="../../../trades/plumber-finance.html">Plumber Finance</a>
+                                    <a href="../../../trades/builder-finance.html">Builder Finance</a>
+                                    <a href="../../../trades/carpenter-finance.html">Carpenter Finance</a>
+                                    <a href="../../../trades/heating-engineer-finance.html">Heating Engineer Finance</a>
+                                </div>
+                            </div>
+                            <div class="dropdown-section">
+                                <h3>More Trades</h3>
+                                <div class="dropdown-links">
+                                    <a href="../../../trades/roofer-finance.html">Roofer Finance</a>
+                                    <a href="../../../trades/painter-decorator-finance.html">Painter & Decorator Finance</a>
+                                    <a href="../../../trades/plasterer-finance.html">Plasterer Finance</a>
+                                    <a href="../../../trades/">View All 20 Trades →</a>
+                                </div>
+                            </div>
+                        </div>
+                        
+                        <!-- Mobile submenu -->
+                        <div class="mobile-submenu">
+                            <a href="../../../trades/electrician-finance.html">Electrician Finance</a>
+                            <a href="../../../trades/plumber-finance.html">Plumber Finance</a>
+                            <a href="../../../trades/builder-finance.html">Builder Finance</a>
+                            <a href="../../../trades/carpenter-finance.html">Carpenter Finance</a>
+                            <a href="../../../trades/heating-engineer-finance.html">Heating Engineer Finance</a>
+                            <a href="../../../trades/">View All Trades →</a>
+                        </div>
+                    </li>
+                    
+                    <!-- Locations Dropdown -->
+                    <li class="has-dropdown">
+                        <a href="../../../trades/locations/">Locations</a>
+                        <div class="dropdown-menu">
+                            <div class="dropdown-section">
+                                <h3>Major Cities</h3>
+                                <div class="dropdown-links">
+                                    <a href="../../../trades/locations/london/">London <span class="featured-badge">Featured</span></a>
+                                    <a href="../../../trades/locations/birmingham/">Birmingham <span class="featured-badge">Featured</span></a>
+                                    <a href="../../../trades/locations/manchester/">Manchester <span class="featured-badge">Featured</span></a>
+                                    <a href="../../../trades/locations/leeds/">Leeds</a>
+                                    <a href="../../../trades/locations/glasgow/">Glasgow</a>
+                                </div>
+                            </div>
+                            <div class="dropdown-section">
+                                <h3>More Locations</h3>
+                                <div class="dropdown-links">
+                                    <a href="../../../trades/locations/sheffield/">Sheffield</a>
+                                    <a href="../../../trades/locations/liverpool/">Liverpool</a>
+                                    <a href="../../../trades/locations/bristol/">Bristol</a>
+                                    <a href="../../../trades/locations/">View All Locations →</a>
+                                </div>
+                            </div>
+                        </div>
+                        
+                        <!-- Mobile submenu -->
+                        <div class="mobile-submenu">
+                            <a href="../../../trades/locations/london/">London</a>
+                            <a href="../../../trades/locations/birmingham/">Birmingham</a>
+                            <a href="../../../trades/locations/manchester/">Manchester</a>
+                            <a href="../../../trades/locations/leeds/">Leeds</a>
+                            <a href="../../../trades/locations/glasgow/">Glasgow</a>
+                            <a href="../../../trades/locations/">View All Locations →</a>
+                        </div>
+                    </li>
+                    
+                    <li><a href="../../../about.html">About</a></li>
+                    <li><a href="../../../contact.html">Contact</a></li>
+                </ul>
+            </nav>
+            <a href="../../../contact.html" class="industrial-cta" aria-label="Get funded now">
+                Get Funded Now
+            </a>
+            
+            <!-- Mobile menu toggle -->
+            <button class="mobile-menu-toggle" aria-label="Toggle menu">
+                <span></span>
+                <span></span>
+                <span></span>
+            </button>
+        </div>
+    </header>
+
+    <!-- Main Content -->
+    <main id="main-content">
+        <section class="location-hero london-hero">
+            <div class="container">
+                <h1 class="location-headline">
+                    <span class="text-outline">TRADESMAN FINANCE</span>
+                    <span class="text-fill">LONDON</span>
+                </h1>
+                <p class="location-subtitle">
+                    From Barking to Westminster, we fund London's hardest working trades.
+                </p>
+            </div>
+        </section>
+
+        <section class="location-intro">
+            <div class="container">
+                <div class="intro-grid">
+                    <div class="intro-content">
+                        <h2>FUNDING LONDON TRADES SINCE DAY ONE</h2>
+                        <p>London's where we started, and it's still our home. We know the Big Smoke inside out - the traffic, the parking nightmares, the congestion charge, and most importantly, the opportunities.</p>
+                        <p>Whether you're fitting bathrooms in Belgravia or rewiring in Romford, we understand London trades. Fast decisions, fair rates, and we speak your language.</p>
+                        <div class="london-stats">
+                            <div class="stat">
+                                <span class="stat-number">15,000+</span>
+                                <span class="stat-label">London Trades Funded</span>
+                            </div>
+                            <div class="stat">
+                                <span class="stat-number">£20M+</span>
+                                <span class="stat-label">Into London Businesses</span>
+                            </div>
+                            <div class="stat">
+                                <span class="stat-number">24HR</span>
+                                <span class="stat-label">Decision Time</span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="intro-visual">
+                        <div class="london-map-graphic">
+                            <svg viewBox="0 0 400 400" style="width: 100%; height: auto;">
+                                <circle cx="200" cy="200" r="180" fill="none" stroke="#ff6b35" stroke-width="3"/>
+                                <circle cx="200" cy="200" r="140" fill="none" stroke="#ffd93d" stroke-width="2"/>
+                                <circle cx="200" cy="200" r="100" fill="none" stroke="#ff6b35" stroke-width="2"/>
+                                <circle cx="200" cy="200" r="60" fill="none" stroke="#ffd93d" stroke-width="2"/>
+                                <circle cx="200" cy="200" r="20" fill="#ff6b35"/>
+                                <text x="200" y="210" text-anchor="middle" font-family="Bebas Neue" font-size="24" fill="white">HQ</text>
+                            </svg>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section class="areas-covered">
+            <div class="container">
+                <h2 class="section-title">AREAS WE COVER</h2>
+                <p class="section-subtitle">Every postcode, every borough, every day.</p>
+                
+                <div class="areas-grid">
+                    <div class="area-card">
+                        <h3>CENTRAL LONDON</h3>
+                        <ul>
+                            <li>City of London (EC)</li>
+                            <li>Westminster (W1, SW1)</li>
+                            <li>Camden (WC, NW1)</li>
+                            <li>Islington (N1, EC1)</li>
+                            <li>Southwark (SE1)</li>
+                            <li>Lambeth (SE11)</li>
+                        </ul>
+                    </div>
+                    
+                    <div class="area-card">
+                        <h3>EAST LONDON</h3>
+                        <ul>
+                            <li>Tower Hamlets (E1-E3)</li>
+                            <li>Hackney (E5, E8, E9)</li>
+                            <li>Newham (E6, E7, E13)</li>
+                            <li>Barking & Dagenham</li>
+                            <li>Redbridge</li>
+                            <li>Waltham Forest</li>
+                        </ul>
+                    </div>
+                    
+                    <div class="area-card">
+                        <h3>SOUTH LONDON</h3>
+                        <ul>
+                            <li>Greenwich (SE)</li>
+                            <li>Lewisham (SE)</li>
+                            <li>Bromley (BR)</li>
+                            <li>Croydon (CR)</li>
+                            <li>Sutton (SM)</li>
+                            <li>Merton (SW19-20)</li>
+                        </ul>
+                    </div>
+                    
+                    <div class="area-card">
+                        <h3>WEST LONDON</h3>
+                        <ul>
+                            <li>Hammersmith (W6)</li>
+                            <li>Fulham (SW6)</li>
+                            <li>Kensington (W8)</li>
+                            <li>Chelsea (SW3)</li>
+                            <li>Ealing (W5, W13)</li>
+                            <li>Hounslow (TW)</li>
+                        </ul>
+                    </div>
+                    
+                    <div class="area-card">
+                        <h3>NORTH LONDON</h3>
+                        <ul>
+                            <li>Haringey (N4, N8)</li>
+                            <li>Enfield (EN)</li>
+                            <li>Barnet (N2, N3)</li>
+                            <li>Brent (NW2, NW10)</li>
+                            <li>Harrow (HA)</li>
+                            <li>Hillingdon (UB)</li>
+                        </ul>
+                    </div>
+                    
+                    <div class="area-card">
+                        <h3>GREATER LONDON</h3>
+                        <ul>
+                            <li>Kingston (KT)</li>
+                            <li>Richmond (TW)</li>
+                            <li>Wandsworth (SW)</li>
+                            <li>Bexley (DA)</li>
+                            <li>Havering (RM)</li>
+                            <li>All M25 Areas</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Trades Services Section -->
+        <section class="trades-services-overview">
+            <div class="container">
+                <h2 class="section-title">LONDON TRADES WE FINANCE</h2>
+                <p class="section-subtitle">Click on your trade for specialist London finance options</p>
+                
+                <div class="trades-grid">
+                    <!-- Electricians -->
+                    <a href="electrician-finance.html" class="trade-service-card clickable">
+                        <div class="trade-icon">⚡</div>
+                        <h3>LONDON ELECTRICIANS</h3>
+                        <ul class="service-list">
+                            <li>Crossrail electrical systems</li>
+                            <li>Data centre installations</li>
+                            <li>Luxury residential rewiring</li>
+                            <li>Commercial office fit-outs</li>
+                        </ul>
+                        <span class="trade-cta">London Electrician Finance →</span>
+                    </a>
+
+                    <!-- Plumbers -->
+                    <a href="plumber-finance.html" class="trade-service-card clickable">
+                        <div class="trade-icon">🔧</div>
+                        <h3>LONDON PLUMBERS</h3>
+                        <ul class="service-list">
+                            <li>High-rise heating systems</li>
+                            <li>Thames Water compliance</li>
+                            <li>Luxury bathroom installations</li>
+                            <li>Emergency call-out services</li>
+                        </ul>
+                        <span class="trade-cta">London Plumber Finance →</span>
+                    </a>
+
+                    <!-- Builders -->
+                    <a href="builder-finance.html" class="trade-service-card clickable">
+                        <div class="trade-icon">🏗️</div>
+                        <h3>LONDON BUILDERS</h3>
+                        <ul class="service-list">
+                            <li>Basement conversions</li>
+                            <li>Loft extensions & dormers</li>
+                            <li>Listed building restoration</li>
+                            <li>New build developments</li>
+                        </ul>
+                        <span class="trade-cta">London Builder Finance →</span>
+                    </a>
+
+                    <!-- Carpenters -->
+                    <a href="carpenter-finance.html" class="trade-service-card clickable">
+                        <div class="trade-icon">🔨</div>
+                        <h3>LONDON CARPENTERS</h3>
+                        <ul class="service-list">
+                            <li>Shoreditch office fit-outs</li>
+                            <li>West End retail spaces</li>
+                            <li>Period property restoration</li>
+                            <li>Bespoke kitchen installations</li>
+                        </ul>
+                        <span class="trade-cta">London Carpenter Finance →</span>
+                    </a>
+
+                    <!-- Heating Engineers -->
+                    <a href="heating-engineer-finance.html" class="trade-service-card clickable">
+                        <div class="trade-icon">🔥</div>
+                        <h3>LONDON HEATING ENGINEERS</h3>
+                        <ul class="service-list">
+                            <li>District heating networks</li>
+                            <li>Smart building systems</li>
+                            <li>ULEZ-compliant installations</li>
+                            <li>Heat pump specialists</li>
+                        </ul>
+                        <span class="trade-cta">London Heating Finance →</span>
+                    </a>
+
+                    <!-- Other Trades -->
+                    <div class="trade-service-card">
+                        <div class="trade-icon">🏠</div>
+                        <h3>ALL OTHER TRADES</h3>
+                        <ul class="service-list">
+                            <li>Roofers & scaffolders</li>
+                            <li>Painters & decorators</li>
+                            <li>Plasterers & tilers</li>
+                            <li>All construction trades</li>
+                        </ul>
+                        <a href="../../../trades/" class="trade-cta">View All Trades →</a>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section class="london-services">
+            <div class="container">
+                <h2 class="section-title">POPULAR WITH LONDON TRADES</h2>
+                <div class="service-highlights">
+                    <div class="highlight-card">
+                        <div class="highlight-icon">🚐</div>
+                        <h3>VAN FINANCE</h3>
+                        <p>Beat the ULEZ. Finance for compliant vans, electric options available.</p>
+                        <span class="highlight-stat">From £199/month</span>
+                    </div>
+                    <div class="highlight-card">
+                        <div class="highlight-icon">🏗️</div>
+                        <h3>PROJECT FINANCE</h3>
+                        <p>Big jobs in the city? We'll fund your materials and cash flow.</p>
+                        <span class="highlight-stat">Up to £1M</span>
+                    </div>
+                    <div class="highlight-card">
+                        <div class="highlight-icon">⚡</div>
+                        <h3>FAST CASH</h3>
+                        <p>London moves fast. So do we. Same day decisions, next day cash.</p>
+                        <span class="highlight-stat">24hr turnaround</span>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section class="london-testimonials">
+            <div class="container">
+                <h2 class="section-title">LONDON TRADES TRUST US</h2>
+                <div class="testimonial-grid">
+                    <div class="testimonial-card">
+                        <div class="stars">★★★★★</div>
+                        <blockquote>
+                            "Needed a new van for the ULEZ. Sorted in 2 days, great rate. Top service."
+                        </blockquote>
+                        <div class="testimonial-author">
+                            <strong>Dave Williams</strong>
+                            <span>Plumber, Hackney</span>
+                        </div>
+                    </div>
+                    <div class="testimonial-card">
+                        <div class="stars">★★★★★</div>
+                        <blockquote>
+                            "Big commercial job in Canary Wharf. They funded everything. Lifesavers."
+                        </blockquote>
+                        <div class="testimonial-author">
+                            <strong>Tony Singh</strong>
+                            <span>Electrician, Southall</span>
+                        </div>
+                    </div>
+                    <div class="testimonial-card">
+                        <div class="stars">★★★★★</div>
+                        <blockquote>
+                            "Invoice finance keeps me going. No more waiting 90 days for payment."
+                        </blockquote>
+                        <div class="testimonial-author">
+                            <strong>Mark O'Brien</strong>
+                            <span>Builder, Croydon</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section class="london-cta">
+            <div class="container">
+                <div class="cta-content">
+                    <h2 class="cta-headline">READY TO BUILD YOUR LONDON EMPIRE?</h2>
+                    <p class="cta-subtitle">Join 15,000+ London trades who chose us for their finance.</p>
+                    <div class="cta-buttons">
+                        <a href="../../../contact.html" class="btn-massive-industrial">
+                            GET FUNDED NOW
+                            <svg width="32" height="32" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="3">
+                                <path d="M5 12h14M12 5l7 7-7 7"/>
+                            </svg>
+                        </a>
+                        <a href="tel:02037780274" class="btn-phone">
+                            <svg width="24" height="24" viewBox="0 0 24 24" fill="currentColor">
+                                <path d="M20 12h2c0-4.97-4.03-9-9-9v2c3.87 0 7 3.13 7 7zm-4 0h2c0-2.76-2.24-5-5-5v2c1.66 0 3 1.34 3 3z"/>
+                            </svg>
+                            020 3778 0274
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <!-- Industrial Footer -->
+    <footer class="industrial-footer">
+        <div class="footer-top">
+            <div class="container">
+                <div class="footer-grid">
+                    <div class="footer-brand">
+                        <div class="footer-logo">
+                            <div class="logo-badge">TF</div>
+                            <h3>TRADESMAN FINANCE</h3>
+                        </div>
+                        <p>Built tough for UK trades. No fancy talk, just proper business finance when you need it.</p>
+                        <div class="contact-quick">
+                            <a href="tel:02037780274" class="phone-big">
+                                <svg width="24" height="24" viewBox="0 0 24 24" fill="currentColor">
+                                    <path d="M20 12h2c0-4.97-4.03-9-9-9v2c3.87 0 7 3.13 7 7zm-4 0h2c0-2.76-2.24-5-5-5v2c1.66 0 3 1.34 3 3zm-1.5 1.5L13 12v-7c0-.55-.45-1-1-1s-1 .45-1 1v7c0 .38.21.71.53.88l5.5 3.18c.48.28 1.09.11 1.37-.37.28-.48.11-1.09-.37-1.37l-3.53-2.04z"/>
+                                </svg>
+                                020 3778 0274
+                            </a>
+                            <span class="open-hours">MON-FRI 9-6, SAT 9-1</span>
+                        </div>
+                    </div>
+                    
+                    <div class="footer-links-section">
+                        <h3>WHAT WE DO</h3>
+                        <ul>
+                            <li><a href="../../../services.html#equipment">Equipment Finance</a></li>
+                            <li><a href="../../../services.html#business">Business Loans</a></li>
+                            <li><a href="../../../services.html#invoice">Invoice Finance</a></li>
+                            <li><a href="../../../services.html#vehicle">Vehicle Finance</a></li>
+                        </ul>
+                    </div>
+                    
+                    <div class="footer-links-section">
+                        <h3>THE COMPANY</h3>
+                        <ul>
+                            <li><a href="../../../about.html">About Us</a></li>
+                            <li><a href="#">How It Works</a></li>
+                            <li><a href="#">FAQs</a></li>
+                            <li><a href="../../../contact.html">Get in Touch</a></li>
+                        </ul>
+                    </div>
+                    
+                    <div class="footer-trust">
+                        <h3>WHY TRUST US</h3>
+                        <div class="trust-badges">
+                            <div class="trust-badge-item">
+                                <span class="badge-icon">50K+</span>
+                                <span class="badge-text">Happy Trades</span>
+                            </div>
+                            <div class="trust-badge-item">
+                                <span class="badge-icon">£50M</span>
+                                <span class="badge-text">Funded</span>
+                            </div>
+                            <div class="trust-badge-item">
+                                <span class="badge-icon">24hr</span>
+                                <span class="badge-text">Decisions</span>
+                            </div>
+                        </div>
+                        <p style="margin-top: 20px; font-size: 12px; color: #808080;">We're a finance broker, not a lender. We find you the best deals.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="footer-bottom">
+            <div class="container">
+                <div class="footer-bottom-content">
+                    <p>&copy; 2025 Tradesman Finance Ltd. Company Reg: 123456. Built in Britain.</p>
+                    <div class="footer-legal">
+                        <a href="../../../privacy-policy.html">Privacy</a>
+                        <span>|</span>
+                        <a href="#">Terms</a>
+                        <span>|</span>
+                        <a href="#">Cookies</a>
+                        <span>|</span>
+                        <a href="../../../accessibility-statement.html">Accessibility</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Scripts -->
+    <script src="../../../public/js/main.js"></script>
+    <script src="../../../public/js/loader-fix.js"></script>
+    <script src="../../../public/js/dropdown-menu.js"></script>
+</body>
+</html>

@@ -1,0 +1,475 @@
+/* Trade Pages Layout Fix - Resolves formatting issues */
+
+/* Override excessive hero heights */
+.trade-hero,
+.hero-section-industrial,
+[class*="hero"] {
+    min-height: auto !important;
+    height: auto !important;
+    padding: 60px 0 40px !important;
+}
+
+/* Fix hero content spacing */
+.hero-content {
+    padding: 20px !important;
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+/* Proper grid layout without overlapping */
+.hero-inner {
+    display: grid;
+    grid-template-columns: 1fr;
+    gap: 30px;
+    align-items: start !important;
+}
+
+/* Hero title sizing */
+.hero-title {
+    font-size: clamp(2.5rem, 5vw, 4rem) !important;
+    line-height: 1.1 !important;
+    margin-bottom: 20px !important;
+    text-shadow: 2px 2px 0 rgba(0,0,0,0.3);
+}
+
+/* Hero subtitle */
+.hero-subtitle {
+    font-size: clamp(1.1rem, 2vw, 1.5rem) !important;
+    margin-bottom: 15px !important;
+    opacity: 1 !important;
+}
+
+/* Hero description */
+.hero-description {
+    font-size: 1.1rem !important;
+    line-height: 1.6 !important;
+    margin-bottom: 30px !important;
+    opacity: 1 !important;
+}
+
+/* Fix stats grid */
+.hero-stats {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));
+    gap: 20px;
+    margin: 30px 0;
+}
+
+/* Stat cards */
+.stat {
+    background: rgba(255, 107, 53, 0.1);
+    border: 2px solid rgba(255, 107, 53, 0.3);
+    border-radius: 8px;
+    padding: 20px 15px;
+    text-align: center;
+    opacity: 1 !important;
+    animation: none !important;
+}
+
+.stat-number {
+    font-size: 2rem !important;
+    display: block;
+    margin-bottom: 5px;
+}
+
+.stat-label {
+    font-size: 0.9rem !important;
+    display: block;
+}
+
+/* Remove excessive animations */
+.hero-text,
+.hero-visual,
+.stat {
+    animation: none !important;
+    opacity: 1 !important;
+    transform: none !important;
+}
+
+/* Fix CTA button */
+.btn-massive-industrial,
+.btn-industrial-cta {
+    display: inline-block;
+    padding: 15px 30px !important;
+    font-size: 1.1rem !important;
+    margin: 20px 0;
+    opacity: 1 !important;
+    animation: none !important;
+}
+
+/* Remove visual graphics that cause layout issues */
+.hero-visual,
+.hero-visual-content,
+.hero-graphic {
+    display: none !important;
+}
+
+/* Pain points section */
+.pain-points {
+    padding: 60px 0 !important;
+    background: #f5f5f5;
+}
+
+.pain-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    gap: 25px;
+    margin-top: 30px;
+}
+
+.pain-card {
+    background: white;
+    padding: 25px;
+    border-radius: 8px;
+    box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+}
+
+.pain-icon {
+    font-size: 2.5rem !important;
+    margin-bottom: 15px;
+    display: block;
+}
+
+.pain-card h3 {
+    font-size: 1.3rem !important;
+    margin-bottom: 10px;
+    color: #1a1a1a;
+}
+
+.pain-card p {
+    color: #666;
+    line-height: 1.6;
+    font-size: 1rem;
+}
+
+/* Benefits section */
+.benefits-section {
+    padding: 60px 0 !important;
+    background: #2d2d2d;
+}
+
+.benefits-content {
+    display: grid;
+    grid-template-columns: 1fr;
+    gap: 30px;
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 20px;
+}
+
+.benefits-text h2 {
+    font-size: 2.5rem !important;
+    margin-bottom: 20px;
+}
+
+.benefits-list {
+    list-style: none;
+    padding: 0;
+    margin: 20px 0;
+}
+
+.benefits-list li {
+    padding: 15px 0;
+    border-bottom: 1px solid rgba(255,255,255,0.1);
+    line-height: 1.6;
+}
+
+/* Finance options */
+.finance-options {
+    padding: 60px 0 !important;
+    background: #f5f5f5;
+}
+
+.options-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+    gap: 25px;
+    margin-top: 30px;
+}
+
+.option-card {
+    background: white;
+    padding: 25px;
+    border-radius: 8px;
+    box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+    border-top: 4px solid #ff6b35;
+}
+
+.option-card h3 {
+    font-size: 1.4rem !important;
+    margin-bottom: 10px;
+    color: #1a1a1a;
+}
+
+.option-card p {
+    color: #666;
+    margin-bottom: 15px;
+    font-style: italic;
+}
+
+.option-card ul {
+    list-style: none;
+    padding: 0;
+}
+
+.option-card li {
+    padding: 8px 0;
+    padding-left: 25px;
+    position: relative;
+    color: #555;
+}
+
+.option-card li::before {
+    content: '✓';
+    position: absolute;
+    left: 0;
+    color: #ff6b35;
+    font-weight: bold;
+}
+
+/* Equipment section */
+.equipment-section {
+    padding: 60px 0 !important;
+    background: #3a3a3a;
+    color: white;
+}
+
+.equipment-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
+    gap: 20px;
+    margin-top: 30px;
+}
+
+.equipment-item {
+    background: #2d2d2d;
+    padding: 20px;
+    border-radius: 8px;
+    border-left: 3px solid #ff6b35;
+}
+
+.equipment-item h4 {
+    font-size: 1.2rem !important;
+    color: #ff6b35;
+    margin-bottom: 10px;
+}
+
+.equipment-item p {
+    color: #ccc;
+    font-size: 0.95rem;
+    line-height: 1.5;
+}
+
+/* Process section */
+.how-it-works {
+    padding: 60px 0 !important;
+    background: #f5f5f5;
+}
+
+.process-steps {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+    gap: 30px;
+    margin-top: 30px;
+}
+
+.process-step {
+    text-align: center;
+}
+
+.step-number {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    width: 50px;
+    height: 50px;
+    background: #ff6b35;
+    color: white;
+    font-size: 1.5rem;
+    border-radius: 50%;
+    margin-bottom: 15px;
+}
+
+.process-step h3 {
+    font-size: 1.3rem !important;
+    color: #1a1a1a;
+    margin-bottom: 10px;
+}
+
+.process-step p {
+    color: #666;
+    line-height: 1.6;
+}
+
+/* FAQ section */
+.faq-section {
+    padding: 60px 0 !important;
+    background: white;
+}
+
+.faq-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(350px, 1fr));
+    gap: 25px;
+    margin-top: 30px;
+}
+
+.faq-item {
+    padding: 20px;
+    background: #f5f5f5;
+    border-radius: 8px;
+    border-left: 3px solid #ff6b35;
+}
+
+.faq-item h3 {
+    font-size: 1.2rem !important;
+    color: #1a1a1a;
+    margin-bottom: 10px;
+}
+
+.faq-item p {
+    color: #666;
+    line-height: 1.6;
+}
+
+/* Trust section */
+.trust-section {
+    padding: 50px 0 !important;
+    background: #2d2d2d;
+    color: white;
+}
+
+.trust-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(180px, 1fr));
+    gap: 25px;
+    margin-top: 20px;
+}
+
+.trust-stat {
+    text-align: center;
+}
+
+.trust-number {
+    display: block;
+    font-size: 2.5rem !important;
+    color: #ff6b35;
+    margin-bottom: 5px;
+}
+
+.trust-label {
+    display: block;
+    color: #ccc;
+    text-transform: uppercase;
+    font-size: 0.85rem;
+    letter-spacing: 1px;
+}
+
+/* Section titles */
+.section-title {
+    font-size: clamp(2rem, 4vw, 2.5rem) !important;
+    text-align: center;
+    margin-bottom: 20px;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+}
+
+/* Container adjustments */
+.container {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 20px;
+}
+
+/* Mobile responsive */
+@media (max-width: 768px) {
+    .trade-hero {
+        padding: 40px 0 30px !important;
+    }
+    
+    .hero-title {
+        font-size: 2rem !important;
+    }
+    
+    .hero-subtitle {
+        font-size: 1.1rem !important;
+    }
+    
+    .hero-stats {
+        grid-template-columns: 1fr;
+        gap: 15px;
+    }
+    
+    .pain-grid,
+    .options-grid,
+    .process-steps,
+    .equipment-grid,
+    .faq-grid,
+    .trust-grid {
+        grid-template-columns: 1fr;
+    }
+    
+    .section-title {
+        font-size: 1.8rem !important;
+    }
+    
+    .benefits-content,
+    .hero-inner {
+        grid-template-columns: 1fr;
+    }
+}
+
+/* Ensure text is readable */
+.pain-points,
+.finance-options,
+.how-it-works,
+.faq-section {
+    color: #1a1a1a;
+}
+
+.benefits-section,
+.equipment-section,
+.trust-section {
+    color: white;
+}
+
+/* Fix any z-index issues */
+.hero-content,
+.hero-text {
+    position: relative;
+    z-index: 10;
+}
+
+/* Remove problematic animations and transforms */
+* {
+    animation-delay: 0s !important;
+    animation-duration: 0s !important;
+}
+
+.trade-hero *:not(.btn-massive-industrial) {
+    animation: none !important;
+    transform: none !important;
+}
+
+/* Ensure proper spacing between sections */
+section + section {
+    margin-top: 0;
+}
+
+/* Fix any overflow issues */
+.trade-hero {
+    overflow: visible !important;
+}
+
+/* Ensure forms display properly */
+.form-section,
+.trade-form-section {
+    padding: 60px 0 !important;
+    background: #f5f5f5;
+}
+
+.form-container {
+    max-width: 800px;
+    margin: 0 auto;
+    padding: 0 20px;
+}
