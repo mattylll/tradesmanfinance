@@ -1,0 +1,62 @@
+{
+  "regions": {
+    "west-midlands": {
+      "name": "West Midlands",
+      "slug": "west-midlands",
+      "description": "Home to the UK's automotive and manufacturing heartland",
+      "towns": [
+        {"name": "Birmingham", "slug": "birmingham", "hasTrades": true, "priority": 1},
+        {"name": "Coventry", "slug": "coventry", "hasTrades": false, "priority": 2},
+        {"name": "Dudley", "slug": "dudley", "hasTrades": false, "priority": 3},
+        {"name": "Solihull", "slug": "solihull", "hasTrades": false, "priority": 3},
+        {"name": "Walsall", "slug": "walsall", "hasTrades": false, "priority": 3},
+        {"name": "Wolverhampton", "slug": "wolverhampton", "hasTrades": false, "priority": 3},
+        {"name": "Halesowen", "slug": "halesowen", "hasTrades": false, "priority": 4},
+        {"name": "Stourbridge", "slug": "stourbridge", "hasTrades": false, "priority": 4},
+        {"name": "West Bromwich", "slug": "west-bromwich", "hasTrades": false, "priority": 4}
+      ]
+    },
+    "greater-manchester": {
+      "name": "Greater Manchester",
+      "slug": "greater-manchester",
+      "description": "Northern England's economic powerhouse and industrial heritage",
+      "towns": [
+        {"name": "Manchester", "slug": "manchester", "hasTrades": true, "priority": 1},
+        {"name": "Bolton", "slug": "bolton", "hasTrades": false, "priority": 2},
+        {"name": "Bury", "slug": "bury", "hasTrades": false, "priority": 2},
+        {"name": "Oldham", "slug": "oldham", "hasTrades": false, "priority": 2},
+        {"name": "Rochdale", "slug": "rochdale", "hasTrades": false, "priority": 2},
+        {"name": "Salford", "slug": "salford", "hasTrades": false, "priority": 2},
+        {"name": "Stockport", "slug": "stockport", "hasTrades": false, "priority": 2},
+        {"name": "Wigan", "slug": "wigan", "hasTrades": false, "priority": 2},
+        {"name": "Altrincham", "slug": "altrincham", "hasTrades": false, "priority": 3}
+      ]
+    },
+    "london": {
+      "name": "London",
+      "slug": "london",
+      "description": "The capital and largest city in the UK",
+      "towns": [
+        {"name": "London", "slug": "london", "hasTrades": true, "priority": 1}
+      ]
+    },
+    "west-yorkshire": {
+      "name": "West Yorkshire",
+      "slug": "west-yorkshire",
+      "description": "Industrial heartland with major cities Leeds and Bradford",
+      "towns": [
+        {"name": "Leeds", "slug": "leeds", "hasTrades": true, "priority": 1},
+        {"name": "Bradford", "slug": "bradford", "hasTrades": false, "priority": 2},
+        {"name": "Wakefield", "slug": "wakefield", "hasTrades": false, "priority": 2},
+        {"name": "Huddersfield", "slug": "huddersfield", "hasTrades": false, "priority": 2},
+        {"name": "Halifax", "slug": "halifax", "hasTrades": false, "priority": 3}
+      ]
+    }
+  },
+  "meta": {
+    "version": "1.0",
+    "lastUpdated": "2025-11-14",
+    "totalCounties": 4,
+    "totalTowns": 30
+  }
+}

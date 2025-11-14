@@ -15,6 +15,8 @@
     <link rel="stylesheet" href="../../public/css/accessibility.css?v=1.0">
     <link rel="stylesheet" href="../../public/css/header-fix.css?v=1.0">
     <link rel="stylesheet" href="../../public/css/locations.css?v=1.0">
+    <!-- Mobile menu fix - MUST be loaded last -->
+    <link rel="stylesheet" href="../../public/css/mobile-menu-fix.css?v=1.0">
 </head>
 <body>
     <!-- Loading Screen -->
@@ -44,6 +46,7 @@
                     <li><a href="../../services.html">Services</a></li>
                     <li><a href="../../trades/">Trades</a></li>
                     <li><a href="../locations/" aria-current="page">Locations</a></li>
+                    <li><a href="../../blog/">Guides</a></li>
                     <li><a href="../../about.html">About</a></li>
                     <li><a href="../../contact.html">Contact</a></li>
                 </ul>
@@ -66,162 +69,279 @@
         <section class="locations-main">
             <div class="container">
                 <div class="locations-intro">
-                    <h2>NATIONWIDE COVERAGE</h2>
-                    <p>Doesn't matter if you're in the big smoke or the back of beyond. We work with tradesmen across every corner of the UK. Same fast service, same straight talk, same great rates.</p>
+                    <h2>COMPLETE UK COVERAGE - 45 COUNTIES, 550+ TOWNS</h2>
+                    <p>We cover every corner of the UK. Select your county below to see all towns and cities we serve. Same fast service, same straight talk, same great rates.</p>
                 </div>
 
-                <div class="locations-grid">
-                    <!-- Major Cities -->
-                    <div class="location-card featured">
-                        <div class="location-header">
-                            <h3>LONDON & SOUTH EAST</h3>
-                            <span class="location-badge">HQ</span>
-                        </div>
-                        <ul class="areas-list">
-                            <li>Central London</li>
-                            <li>East London</li>
-                            <li>South London</li>
-                            <li>West London</li>
-                            <li>North London</li>
-                            <li>Kent</li>
-                            <li>Surrey</li>
-                            <li>Essex</li>
-                        </ul>
-                        <a href="london/" class="location-link">VIEW LONDON COVERAGE →</a>
-                    </div>
-
-                    <div class="location-card">
-                        <div class="location-header">
-                            <h3>NORTH WEST</h3>
-                        </div>
-                        <ul class="areas-list">
-                            <li>Manchester</li>
-                            <li>Liverpool</li>
-                            <li>Preston</li>
-                            <li>Blackpool</li>
-                            <li>Bolton</li>
-                            <li>Warrington</li>
-                            <li>Chester</li>
-                            <li>Lancaster</li>
-                        </ul>
-                    </div>
-
-                    <div class="location-card">
-                        <div class="location-header">
-                            <h3>WEST MIDLANDS</h3>
-                        </div>
-                        <ul class="areas-list">
-                            <li>Birmingham</li>
-                            <li>Coventry</li>
-                            <li>Wolverhampton</li>
-                            <li>Stoke-on-Trent</li>
-                            <li>Telford</li>
-                            <li>Worcester</li>
-                            <li>Solihull</li>
-                            <li>Dudley</li>
-                        </ul>
-                    </div>
-
-                    <div class="location-card">
-                        <div class="location-header">
-                            <h3>YORKSHIRE</h3>
-                        </div>
-                        <ul class="areas-list">
-                            <li>Leeds</li>
-                            <li>Sheffield</li>
-                            <li>Bradford</li>
-                            <li>Hull</li>
-                            <li>York</li>
-                            <li>Wakefield</li>
-                            <li>Doncaster</li>
-                            <li>Huddersfield</li>
-                        </ul>
-                    </div>
-
-                    <div class="location-card">
-                        <div class="location-header">
-                            <h3>SCOTLAND</h3>
-                        </div>
-                        <ul class="areas-list">
-                            <li>Glasgow</li>
-                            <li>Edinburgh</li>
-                            <li>Aberdeen</li>
-                            <li>Dundee</li>
-                            <li>Paisley</li>
-                            <li>East Kilbride</li>
-                            <li>Livingston</li>
-                            <li>Hamilton</li>
-                        </ul>
-                    </div>
-
-                    <div class="location-card">
-                        <div class="location-header">
-                            <h3>NORTH EAST</h3>
-                        </div>
-                        <ul class="areas-list">
-                            <li>Newcastle</li>
-                            <li>Sunderland</li>
-                            <li>Middlesbrough</li>
-                            <li>Durham</li>
-                            <li>Gateshead</li>
-                            <li>Darlington</li>
-                            <li>Hartlepool</li>
-                            <li>Stockton</li>
-                        </ul>
-                    </div>
-
-                    <div class="location-card">
-                        <div class="location-header">
-                            <h3>SOUTH WEST</h3>
-                        </div>
-                        <ul class="areas-list">
-                            <li>Bristol</li>
-                            <li>Plymouth</li>
-                            <li>Bournemouth</li>
-                            <li>Swindon</li>
-                            <li>Gloucester</li>
-                            <li>Exeter</li>
-                            <li>Bath</li>
-                            <li>Taunton</li>
-                        </ul>
-                    </div>
-
-                    <div class="location-card">
-                        <div class="location-header">
-                            <h3>WALES</h3>
-                        </div>
-                        <ul class="areas-list">
-                            <li>Cardiff</li>
-                            <li>Swansea</li>
-                            <li>Newport</li>
-                            <li>Wrexham</li>
-                            <li>Barry</li>
-                            <li>Neath</li>
-                            <li>Cwmbran</li>
-                            <li>Bridgend</li>
-                        </ul>
-                    </div>
-
-                    <div class="location-card">
-                        <div class="location-header">
-                            <h3>NORTHERN IRELAND</h3>
-                        </div>
-                        <ul class="areas-list">
-                            <li>Belfast</li>
-                            <li>Derry</li>
-                            <li>Lisburn</li>
-                            <li>Newtownabbey</li>
-                            <li>Bangor</li>
-                            <li>Craigavon</li>
-                            <li>Newry</li>
-                            <li>Ballymena</li>
-                        </ul>
+                <!-- Scotland -->
+                <div class="region-section">
+                    <h2 class="region-title">SCOTLAND</h2>
+                    <div class="counties-grid">
+                        <a href="aberdeenshire/" class="county-card">
+                            <h3>Aberdeenshire</h3>
+                            <p>9 towns including Aberdeen, Peterhead, Fraserburgh</p>
+                        </a>
+                        <a href="angus/" class="county-card">
+                            <h3>Angus</h3>
+                            <p>4 towns including Arbroath, Forfar</p>
+                        </a>
+                        <a href="argyll/" class="county-card">
+                            <h3>Argyll</h3>
+                            <p>7 towns including Oban, Campbeltown</p>
+                        </a>
+                        <a href="ayrshire/" class="county-card">
+                            <h3>Ayrshire</h3>
+                            <p>13 towns including Ayr, Kilmarnock, Irvine</p>
+                        </a>
                     </div>
                 </div>
 
-                <div class="nationwide-cta">
-                    <h2>YOUR AREA NOT LISTED?</h2>
-                    <p>Don't worry - we cover every postcode in the UK. Same day decisions, wherever you are.</p>
+                <!-- London & South East -->
+                <div class="region-section">
+                    <h2 class="region-title">LONDON & SOUTH EAST</h2>
+                    <div class="counties-grid">
+                        <a href="greater-london/" class="county-card featured">
+                            <h3>Greater London</h3>
+                            <p>Capital city - All London boroughs covered</p>
+                            <span class="featured-badge">Featured</span>
+                        </a>
+                        <a href="kent/" class="county-card">
+                            <h3>Kent</h3>
+                            <p>24 towns including Canterbury, Maidstone, Dover</p>
+                        </a>
+                        <a href="surrey/" class="county-card">
+                            <h3>Surrey</h3>
+                            <p>19 towns including Guildford, Woking, Epsom</p>
+                        </a>
+                        <a href="east-sussex/" class="county-card">
+                            <h3>East Sussex</h3>
+                            <p>13 towns including Brighton, Eastbourne, Hastings</p>
+                        </a>
+                        <a href="west-sussex/" class="county-card">
+                            <h3>West Sussex</h3>
+                            <p>14 towns including Crawley, Horsham, Worthing</p>
+                        </a>
+                        <a href="essex/" class="county-card">
+                            <h3>Essex</h3>
+                            <p>22 towns including Chelmsford, Colchester, Southend</p>
+                        </a>
+                        <a href="hertfordshire/" class="county-card">
+                            <h3>Hertfordshire</h3>
+                            <p>19 towns including Watford, St Albans, Stevenage</p>
+                        </a>
+                        <a href="berkshire/" class="county-card">
+                            <h3>Berkshire</h3>
+                            <p>11 towns including Reading, Slough, Windsor</p>
+                        </a>
+                        <a href="buckinghamshire/" class="county-card">
+                            <h3>Buckinghamshire</h3>
+                            <p>11 towns including Milton Keynes, High Wycombe</p>
+                        </a>
+                        <a href="oxfordshire/" class="county-card">
+                            <h3>Oxfordshire</h3>
+                            <p>10 towns including Oxford, Banbury, Bicester</p>
+                        </a>
+                    </div>
+                </div>
+
+                <!-- South West -->
+                <div class="region-section">
+                    <h2 class="region-title">SOUTH WEST ENGLAND</h2>
+                    <div class="counties-grid">
+                        <a href="cornwall/" class="county-card">
+                            <h3>Cornwall</h3>
+                            <p>19 towns including Truro, Newquay, Falmouth</p>
+                        </a>
+                        <a href="devon/" class="county-card">
+                            <h3>Devon</h3>
+                            <p>33 towns including Exeter, Plymouth, Torquay</p>
+                        </a>
+                        <a href="dorset/" class="county-card">
+                            <h3>Dorset</h3>
+                            <p>13 towns including Bournemouth, Poole, Weymouth</p>
+                        </a>
+                        <a href="somerset/" class="county-card">
+                            <h3>Somerset</h3>
+                            <p>13 towns including Bath, Taunton, Yeovil</p>
+                        </a>
+                        <a href="wiltshire/" class="county-card">
+                            <h3>Wiltshire</h3>
+                            <p>12 towns including Swindon, Salisbury, Chippenham</p>
+                        </a>
+                        <a href="gloucestershire/" class="county-card">
+                            <h3>Gloucestershire</h3>
+                            <p>7 towns including Gloucester, Cheltenham, Stroud</p>
+                        </a>
+                    </div>
+                </div>
+
+                <!-- Midlands -->
+                <div class="region-section">
+                    <h2 class="region-title">MIDLANDS</h2>
+                    <div class="counties-grid">
+                        <a href="west-midlands/" class="county-card">
+                            <h3>West Midlands</h3>
+                            <p>9 towns including Birmingham, Coventry, Wolverhampton</p>
+                        </a>
+                        <a href="warwickshire/" class="county-card">
+                            <h3>Warwickshire</h3>
+                            <p>9 towns including Warwick, Stratford-upon-Avon</p>
+                        </a>
+                        <a href="staffordshire/" class="county-card">
+                            <h3>Staffordshire</h3>
+                            <p>11 towns including Stoke-on-Trent, Stafford</p>
+                        </a>
+                        <a href="worcestershire/" class="county-card">
+                            <h3>Worcestershire</h3>
+                            <p>10 towns including Worcester, Redditch, Kidderminster</p>
+                        </a>
+                        <a href="derbyshire/" class="county-card">
+                            <h3>Derbyshire</h3>
+                            <p>13 towns including Derby, Chesterfield, Buxton</p>
+                        </a>
+                        <a href="nottinghamshire/" class="county-card">
+                            <h3>Nottinghamshire</h3>
+                            <p>6 towns including Nottingham, Mansfield, Newark</p>
+                        </a>
+                        <a href="leicestershire/" class="county-card">
+                            <h3>Leicestershire</h3>
+                            <p>9 towns including Leicester, Loughborough</p>
+                        </a>
+                        <a href="northamptonshire/" class="county-card">
+                            <h3>Northamptonshire</h3>
+                            <p>7 towns including Northampton, Kettering, Corby</p>
+                        </a>
+                        <a href="lincolnshire/" class="county-card">
+                            <h3>Lincolnshire</h3>
+                            <p>13 towns including Lincoln, Grimsby, Scunthorpe</p>
+                        </a>
+                    </div>
+                </div>
+
+                <!-- East of England -->
+                <div class="region-section">
+                    <h2 class="region-title">EAST OF ENGLAND</h2>
+                    <div class="counties-grid">
+                        <a href="bedfordshire/" class="county-card">
+                            <h3>Bedfordshire</h3>
+                            <p>6 towns including Bedford, Luton, Dunstable</p>
+                        </a>
+                        <a href="cambridgeshire/" class="county-card">
+                            <h3>Cambridgeshire</h3>
+                            <p>8 towns including Cambridge, Peterborough, Ely</p>
+                        </a>
+                        <a href="norfolk/" class="county-card">
+                            <h3>Norfolk</h3>
+                            <p>14 towns including Norwich, Great Yarmouth</p>
+                        </a>
+                        <a href="suffolk/" class="county-card">
+                            <h3>Suffolk</h3>
+                            <p>11 towns including Ipswich, Bury St Edmunds</p>
+                        </a>
+                    </div>
+                </div>
+
+                <!-- North West -->
+                <div class="region-section">
+                    <h2 class="region-title">NORTH WEST ENGLAND</h2>
+                    <div class="counties-grid">
+                        <a href="greater-manchester/" class="county-card">
+                            <h3>Greater Manchester</h3>
+                            <p>9 towns including Manchester, Bolton, Wigan</p>
+                        </a>
+                        <a href="merseyside/" class="county-card">
+                            <h3>Merseyside</h3>
+                            <p>8 towns including Liverpool, Birkenhead, Southport</p>
+                        </a>
+                        <a href="lancashire/" class="county-card">
+                            <h3>Lancashire</h3>
+                            <p>16 towns including Preston, Blackburn, Lancaster</p>
+                        </a>
+                        <a href="cheshire/" class="county-card">
+                            <h3>Cheshire</h3>
+                            <p>14 towns including Chester, Warrington, Crewe</p>
+                        </a>
+                        <a href="cumbria/" class="county-card">
+                            <h3>Cumbria</h3>
+                            <p>21 towns including Carlisle, Barrow, Kendal</p>
+                        </a>
+                    </div>
+                </div>
+
+                <!-- Yorkshire -->
+                <div class="region-section">
+                    <h2 class="region-title">YORKSHIRE</h2>
+                    <div class="counties-grid">
+                        <a href="west-yorkshire/" class="county-card">
+                            <h3>West Yorkshire</h3>
+                            <p>18 towns including Leeds, Bradford, Wakefield</p>
+                        </a>
+                        <a href="south-yorkshire/" class="county-card">
+                            <h3>South Yorkshire</h3>
+                            <p>4 towns including Sheffield, Doncaster, Barnsley</p>
+                        </a>
+                        <a href="north-yorkshire/" class="county-card">
+                            <h3>North Yorkshire</h3>
+                            <p>14 towns including York, Harrogate, Scarborough</p>
+                        </a>
+                    </div>
+                </div>
+
+                <!-- North East -->
+                <div class="region-section">
+                    <h2 class="region-title">NORTH EAST ENGLAND</h2>
+                    <div class="counties-grid">
+                        <a href="tyne-and-wear/" class="county-card">
+                            <h3>Tyne & Wear</h3>
+                            <p>7 towns including Newcastle, Sunderland, Gateshead</p>
+                        </a>
+                        <a href="county-durham/" class="county-card">
+                            <h3>County Durham</h3>
+                            <p>11 towns including Durham, Darlington, Hartlepool</p>
+                        </a>
+                        <a href="northumberland/" class="county-card">
+                            <h3>Northumberland</h3>
+                            <p>8 towns including Alnwick, Hexham, Morpeth</p>
+                        </a>
+                    </div>
+                </div>
+
+                <!-- Hampshire & Isle of Wight -->
+                <div class="region-section">
+                    <h2 class="region-title">HAMPSHIRE & SOUTH COAST</h2>
+                    <div class="counties-grid">
+                        <a href="hampshire/" class="county-card">
+                            <h3>Hampshire</h3>
+                            <p>19 towns including Southampton, Portsmouth, Winchester</p>
+                        </a>
+                    </div>
+                </div>
+
+                <div class="coverage-stats" style="margin-top: 60px; padding: 40px; background: #f5f5f5; text-align: center; border-radius: 8px;">
+                    <h2 style="margin-bottom: 30px;">COMPLETE UK COVERAGE</h2>
+                    <div style="display: grid; grid-template-columns: repeat(auto-fit, minmax(200px, 1fr)); gap: 30px;">
+                        <div>
+                            <div style="font-size: 48px; font-weight: bold; color: #ff6b35;">45</div>
+                            <div style="font-size: 18px; color: #666;">Counties Covered</div>
+                        </div>
+                        <div>
+                            <div style="font-size: 48px; font-weight: bold; color: #ff6b35;">550+</div>
+                            <div style="font-size: 18px; color: #666;">Towns & Cities</div>
+                        </div>
+                        <div>
+                            <div style="font-size: 48px; font-weight: bold; color: #ff6b35;">24HR</div>
+                            <div style="font-size: 18px; color: #666;">Decision Time</div>
+                        </div>
+                        <div>
+                            <div style="font-size: 48px; font-weight: bold; color: #ff6b35;">£500K</div>
+                            <div style="font-size: 18px; color: #666;">Max Finance Available</div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="nationwide-cta" style="margin-top: 60px;">
+                    <h2>CAN'T FIND YOUR TOWN?</h2>
+                    <p>Don't worry - we cover every postcode in the UK. Same fast service, wherever you are.</p>
                     <a href="../../contact.html" class="btn-industrial btn-primary-industrial">
                         GET FUNDED NOW →
                     </a>
@@ -270,7 +390,17 @@
                             <li><a href="#">FAQs</a></li>
                             <li><a href="../../contact.html">Get in Touch</a></li>
                         </ul>
+                    </div>                    <div class="footer-links-section">
+                        <h3>GUIDES & RESOURCES</h3>
+                        <ul role="list">
+                            <li><a href="../../blog/">Equipment Finance Guides</a></li>
+                            <li><a href="../../blog/scaffolding-materials-finance-guide.html">Scaffolding Finance</a></li>
+                            <li><a href="../../blog/woodworking-equipment-finance-options.html">Woodworking Equipment</a></li>
+                            <li><a href="../../blog/bathroom-fitting-finance-explained.html">Bathroom Fitting</a></li>
+                        </ul>
                     </div>
+
+                    
                     
                     <div class="footer-trust">
                         <h3>WHY TRUST US</h3>
@@ -313,6 +443,8 @@
 
     <!-- Scripts -->
     <script src="../../public/js/main.js"></script>
+    <!-- Mobile menu handler - fixes duplicate hamburger issue -->
+    <script src="../../public/js/mobile-menu-handler.js"></script>
     <script src="../../public/js/loader-fix.js"></script>
 </body>
 </html>

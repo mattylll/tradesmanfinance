@@ -21,10 +21,11 @@
     <link rel="stylesheet" href="../../../public/css/accessibility.css?v=1.0">
     <link rel="stylesheet" href="../../../public/css/header-fix.css?v=1.0">
     <link rel="stylesheet" href="../../../public/css/dropdown-menu.css?v=1.0">
-    <link rel="stylesheet" href="../../../public/css/dropdown-fix.css?v=1.0">    <link rel="stylesheet" href="../../../public/css/trade-pages-fix.css?v=1.0">
+    <link rel="stylesheet" href="../../../public/css/dropdown-fix.css?v=1.0">
     <link rel="stylesheet" href="../../../public/css/trade-forms.css?v=1.0">
     <link rel="stylesheet" href="../../../public/css/trade-form-section.css?v=1.0">
-    
+    <!-- Trade Pages Production Styling -->
+    <link rel="stylesheet" href="../../../public/css/trade-pages-production.css?v=1.0">    
     <!-- Schema.org markup for Local Business -->
     <script type="application/ld+json">
     {
@@ -79,7 +80,8 @@
     </script>
 </head>
 <body>
-    <!-- Loading Screen -->
+    <!-- Warning Banner -->
+        <!-- Loading Screen -->
     <div class="loader-industrial" id="loader">
         <div class="loader-content">
             <svg class="wrench-loader" viewBox="0 0 100 100">
@@ -194,6 +196,19 @@
         </div>
     </header>
 
+    <!-- Business Notice Bar -->
+    <div class="industrial-notice" role="complementary" aria-label="Important notice">
+        <div class="container">
+            <div class="notice-content">
+                <svg width="24" height="24" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true" focusable="false">
+                    <title>Warning icon</title>
+                    <path d="M1 21h22L12 2 1 21zm12-3h-2v-2h2v2zm0-4h-2v-4h2v4z"/>
+                </svg>
+                <p><strong>BUSINESS & PERSONAL LOANS:</strong> Rates from 6.5%. Business loans £25K-£1M. Personal loans available.</p>
+            </div>
+        </div>
+    </div>
+
     <!-- Main Content -->
     <main id="main-content">
         <!-- Breadcrumb Navigation -->
@@ -231,7 +246,7 @@
                                 <span class="stat-label">To London Woodworkers</span>
                             </div>
                         </div>
-                        <a href="#london-carpenter-form-container" class="btn-massive-industrial" onclick="scrollToForm()">
+                        <a href="../../../contact.html" class="btn-massive-industrial" >
                             GET LONDON FINANCE NOW
                             <svg width="32" height="32" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="3">
                                 <path d="M5 12h14M12 5l7 7-7 7"/>
@@ -301,7 +316,7 @@
                                 <strong>Film & TV Sets:</strong> Studios in West London need skilled carpenters for set construction and props
                             </li>
                         </ul>
-                        <a href="#london-carpenter-form-container" class="btn-industrial" onclick="scrollToForm()">Get London Finance</a>
+                        <a href="../../../contact.html" class="btn-industrial" >Get London Finance</a>
                     </div>
                     <div class="benefits-image">
                         <div class="testimonial-card">
@@ -321,7 +336,7 @@
                     <div class="option-card">
                         <h3>Workshop Equipment Finance</h3>
                         <p>Professional workshop setup</p>
-                        <ul>
+                        <ul role="list">
                             <li>CNC routers from £15,000</li>
                             <li>Panel saws & planers</li>
                             <li>Dust extraction systems</li>
@@ -331,7 +346,7 @@
                     <div class="option-card">
                         <h3>Heritage Tool Finance</h3>
                         <p>For restoration work</p>
-                        <ul>
+                        <ul role="list">
                             <li>Sash window equipment</li>
                             <li>Moulding planes & routers</li>
                             <li>Traditional hand tools</li>
@@ -341,7 +356,7 @@
                     <div class="option-card">
                         <h3>Project Material Finance</h3>
                         <p>Cover luxury materials</p>
-                        <ul>
+                        <ul role="list">
                             <li>Working capital to £150,000</li>
                             <li>Premium timber float</li>
                             <li>Designer hardware costs</li>
@@ -351,7 +366,7 @@
                     <div class="option-card">
                         <h3>Mobile Workshop Finance</h3>
                         <p>On-site efficiency</p>
-                        <ul>
+                        <ul role="list">
                             <li>ULEZ compliant vans</li>
                             <li>Professional van racking</li>
                             <li>Portable power tools</li>
@@ -497,7 +512,7 @@
                     <h2 class="cta-headline">READY TO CRAFT YOUR LONDON SUCCESS?</h2>
                     <p class="cta-subtitle">Get carpenter finance as precise as your work</p>
                     <div class="cta-buttons">
-                        <a href="#london-carpenter-form-container" class="btn-massive-industrial" onclick="scrollToForm()">
+                        <a href="../../../contact.html" class="btn-massive-industrial" >
                             APPLY NOW
                             <svg width="32" height="32" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="3">
                                 <path d="M5 12h14M12 5l7 7-7 7"/>
@@ -574,7 +589,7 @@
                     
                     <div class="footer-links-section">
                         <h3>LONDON TRADES</h3>
-                        <ul>
+                        <ul role="list">
                             <li><a href="electrician-finance.html">London Electrician Finance</a></li>
                             <li><a href="plumber-finance.html">London Plumber Finance</a></li>
                             <li><a href="builder-finance.html">London Builder Finance</a></li>
@@ -584,7 +599,7 @@
                     
                     <div class="footer-links-section">
                         <h3>OTHER LOCATIONS</h3>
-                        <ul>
+                        <ul role="list">
                             <li><a href="../manchester/carpenter-finance.html">Manchester</a></li>
                             <li><a href="../birmingham/carpenter-finance.html">Birmingham</a></li>
                             <li><a href="../leeds/carpenter-finance.html">Leeds</a></li>
@@ -625,6 +640,8 @@
 
     <!-- Scripts -->
     <script src="../../../public/js/main.js"></script>
+    <!-- Mobile menu handler - fixes duplicate hamburger issue -->
+    <script src="../../../public/js/mobile-menu-handler.js"></script>
     <script src="../../../public/js/loader-fix.js"></script>
     <script src="../../../public/js/trade-forms.js"></script>
     <script src="../../../public/js/trade-form-configs.js"></script>

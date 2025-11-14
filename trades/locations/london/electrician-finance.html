@@ -21,10 +21,11 @@
     <link rel="stylesheet" href="../../../public/css/accessibility.css?v=1.0">
     <link rel="stylesheet" href="../../../public/css/header-fix.css?v=1.0">
     <link rel="stylesheet" href="../../../public/css/dropdown-menu.css?v=1.0">
-    <link rel="stylesheet" href="../../../public/css/dropdown-fix.css?v=1.0">    <link rel="stylesheet" href="../../../public/css/trade-pages-fix.css?v=1.0">
+    <link rel="stylesheet" href="../../../public/css/dropdown-fix.css?v=1.0">
     <link rel="stylesheet" href="../../../public/css/trade-forms.css?v=1.0">
     <link rel="stylesheet" href="../../../public/css/trade-form-section.css?v=1.0">
-    
+    <!-- Trade Pages Production Styling -->
+    <link rel="stylesheet" href="../../../public/css/trade-pages-production.css?v=1.0">    
     <!-- Schema.org markup for Local Business -->
     <script type="application/ld+json">
     {
@@ -79,7 +80,8 @@
     </script>
 </head>
 <body>
-    <!-- Loading Screen -->
+    <!-- Warning Banner -->
+        <!-- Loading Screen -->
     <div class="loader-industrial" id="loader">
         <div class="loader-content">
             <svg class="wrench-loader" viewBox="0 0 100 100">
@@ -194,6 +196,19 @@
         </div>
     </header>
 
+    <!-- Business Notice Bar -->
+    <div class="industrial-notice" role="complementary" aria-label="Important notice">
+        <div class="container">
+            <div class="notice-content">
+                <svg width="24" height="24" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true" focusable="false">
+                    <title>Warning icon</title>
+                    <path d="M1 21h22L12 2 1 21zm12-3h-2v-2h2v2zm0-4h-2v-4h2v4z"/>
+                </svg>
+                <p><strong>BUSINESS & PERSONAL LOANS:</strong> Rates from 6.5%. Business loans £25K-£1M. Personal loans available.</p>
+            </div>
+        </div>
+    </div>
+
     <!-- Main Content -->
     <main id="main-content">
         <!-- Breadcrumb Navigation -->
@@ -231,7 +246,7 @@
                                 <span class="stat-label">Compliant Vans</span>
                             </div>
                         </div>
-                        <a href="#london-electrician-form-container" class="btn-massive-industrial" onclick="scrollToForm()">
+                        <a href="../../../contact.html" class="btn-massive-industrial" >
                             GET LONDON FINANCE NOW
                             <svg width="32" height="32" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="3">
                                 <path d="M5 12h14M12 5l7 7-7 7"/>
@@ -301,7 +316,7 @@
                                 <strong>Heritage Work:</strong> Specialist rewiring of listed buildings in Westminster, Kensington & Chelsea, Camden
                             </li>
                         </ul>
-                        <a href="#london-electrician-form-container" class="btn-industrial" onclick="scrollToForm()">Get London Finance</a>
+                        <a href="../../../contact.html" class="btn-industrial" >Get London Finance</a>
                     </div>
                     <div class="benefits-image">
                         <div class="testimonial-card">
@@ -321,7 +336,7 @@
                     <div class="option-card">
                         <h3>ULEZ Compliant Van Finance</h3>
                         <p>Beat London's emission charges</p>
-                        <ul>
+                        <ul role="list">
                             <li>Euro 6 diesel vans from £15,000</li>
                             <li>Electric van finance with grants advice</li>
                             <li>Include London-specific kit: trackers, security</li>
@@ -331,7 +346,7 @@
                     <div class="option-card">
                         <h3>London Commercial Finance</h3>
                         <p>Fund major London projects</p>
-                        <ul>
+                        <ul role="list">
                             <li>Working capital up to £150,000</li>
                             <li>Bridge corporate payment terms</li>
                             <li>Cover London labour costs</li>
@@ -341,7 +356,7 @@
                     <div class="option-card">
                         <h3>Security System Finance</h3>
                         <p>London's security market needs</p>
-                        <ul>
+                        <ul role="list">
                             <li>Access control system finance</li>
                             <li>CCTV installation equipment</li>
                             <li>Fire alarm & emergency lighting</li>
@@ -351,7 +366,7 @@
                     <div class="option-card">
                         <h3>EV Charging Finance</h3>
                         <p>London's green revolution</p>
-                        <ul>
+                        <ul role="list">
                             <li>EV test equipment from £2,000</li>
                             <li>Installation tools & training</li>
                             <li>OZEV approved equipment</li>
@@ -497,7 +512,7 @@
                     <h2 class="cta-headline">READY TO POWER UP YOUR LONDON BUSINESS?</h2>
                     <p class="cta-subtitle">Get electrician finance that works at London speed</p>
                     <div class="cta-buttons">
-                        <a href="#london-electrician-form-container" class="btn-massive-industrial" onclick="scrollToForm()">
+                        <a href="../../../contact.html" class="btn-massive-industrial" >
                             APPLY NOW
                             <svg width="32" height="32" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="3">
                                 <path d="M5 12h14M12 5l7 7-7 7"/>
@@ -574,7 +589,7 @@
                     
                     <div class="footer-links-section">
                         <h3>LONDON TRADES</h3>
-                        <ul>
+                        <ul role="list">
                             <li><a href="plumber-finance.html">London Plumber Finance</a></li>
                             <li><a href="builder-finance.html">London Builder Finance</a></li>
                             <li><a href="carpenter-finance.html">London Carpenter Finance</a></li>
@@ -584,7 +599,7 @@
                     
                     <div class="footer-links-section">
                         <h3>OTHER LOCATIONS</h3>
-                        <ul>
+                        <ul role="list">
                             <li><a href="../manchester/electrician-finance.html">Manchester</a></li>
                             <li><a href="../birmingham/electrician-finance.html">Birmingham</a></li>
                             <li><a href="../leeds/electrician-finance.html">Leeds</a></li>
@@ -625,6 +640,8 @@
 
     <!-- Scripts -->
     <script src="../../../public/js/main.js"></script>
+    <!-- Mobile menu handler - fixes duplicate hamburger issue -->
+    <script src="../../../public/js/mobile-menu-handler.js"></script>
     <script src="../../../public/js/loader-fix.js"></script>
     <script src="../../../public/js/trade-forms.js"></script>
     <script src="../../../public/js/trade-form-configs.js"></script>

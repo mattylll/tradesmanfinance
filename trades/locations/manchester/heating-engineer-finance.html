@@ -21,10 +21,11 @@
     <link rel="stylesheet" href="../../../public/css/accessibility.css?v=1.0">
     <link rel="stylesheet" href="../../../public/css/header-fix.css?v=1.0">
     <link rel="stylesheet" href="../../../public/css/dropdown-menu.css?v=1.0">
-    <link rel="stylesheet" href="../../../public/css/dropdown-fix.css?v=1.0">    <link rel="stylesheet" href="../../../public/css/trade-pages-fix.css?v=1.0">
+    <link rel="stylesheet" href="../../../public/css/dropdown-fix.css?v=1.0">
     <link rel="stylesheet" href="../../../public/css/trade-forms.css?v=1.0">
     <link rel="stylesheet" href="../../../public/css/trade-form-section.css?v=1.0">
-    
+    <!-- Trade Pages Production Styling -->
+    <link rel="stylesheet" href="../../../public/css/trade-pages-production.css?v=1.0">    
     <!-- Schema.org markup for Local Business -->
     <script type="application/ld+json">
     {
@@ -84,7 +85,8 @@
     </script>
 </head>
 <body>
-    <!-- Loading Screen -->
+    <!-- Warning Banner -->
+        <!-- Loading Screen -->
     <div class="loader-industrial" id="loader">
         <div class="loader-content">
             <svg class="wrench-loader" viewBox="0 0 100 100">
@@ -199,6 +201,19 @@
         </div>
     </header>
 
+    <!-- Business Notice Bar -->
+    <div class="industrial-notice" role="complementary" aria-label="Important notice">
+        <div class="container">
+            <div class="notice-content">
+                <svg width="24" height="24" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true" focusable="false">
+                    <title>Warning icon</title>
+                    <path d="M1 21h22L12 2 1 21zm12-3h-2v-2h2v2zm0-4h-2v-4h2v4z"/>
+                </svg>
+                <p><strong>BUSINESS & PERSONAL LOANS:</strong> Rates from 6.5%. Business loans £25K-£1M. Personal loans available.</p>
+            </div>
+        </div>
+    </div>
+
     <!-- Main Content -->
     <main id="main-content">
         <!-- Breadcrumb Navigation -->
@@ -236,7 +251,7 @@
                                 <span class="stat-label">Tech Ready</span>
                             </div>
                         </div>
-                        <a href="#manchester-heating-form-container" class="btn-massive-industrial" onclick="scrollToForm()">
+                        <a href="../../../contact.html" class="btn-massive-industrial" >
                             GET MANCHESTER FINANCE NOW
                             <svg width="32" height="32" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="3">
                                 <path d="M5 12h14M12 5l7 7-7 7"/>
@@ -309,7 +324,7 @@
                                 <strong>Green Technology Revolution:</strong> 2038 carbon neutral target driving heat pump installations, hydrogen-ready boilers, solar thermal systems across 500,000 homes
                             </li>
                         </ul>
-                        <a href="#manchester-heating-form-container" class="btn-industrial" onclick="scrollToForm()">Get Manchester Finance</a>
+                        <a href="../../../contact.html" class="btn-industrial" >Get Manchester Finance</a>
                     </div>
                     <div class="benefits-image">
                         <div class="testimonial-card">
@@ -329,7 +344,7 @@
                     <div class="option-card">
                         <h3>Media City Climate Control</h3>
                         <p>Broadcast precision systems</p>
-                        <ul>
+                        <ul role="list">
                             <li>Zone control systems</li>
                             <li>Climate monitoring tools</li>
                             <li>Server room cooling</li>
@@ -339,7 +354,7 @@
                     <div class="option-card">
                         <h3>Victorian Conversion Tools</h3>
                         <p>Heritage building specialists</p>
-                        <ul>
+                        <ul role="list">
                             <li>Solid wall heating systems</li>
                             <li>Retrofit installation kit</li>
                             <li>Heritage-compliant equipment</li>
@@ -349,7 +364,7 @@
                     <div class="option-card">
                         <h3>University Campus Systems</h3>
                         <p>Educational institution scale</p>
-                        <ul>
+                        <ul role="list">
                             <li>Multi-building networks</li>
                             <li>Energy centre equipment</li>
                             <li>Student accommodation tools</li>
@@ -359,7 +374,7 @@
                     <div class="option-card">
                         <h3>Heat Pump & Green Tech</h3>
                         <p>2038 carbon neutral ready</p>
-                        <ul>
+                        <ul role="list">
                             <li>Air source heat pumps</li>
                             <li>F-Gas training funding</li>
                             <li>Hydrogen-ready boilers</li>
@@ -505,7 +520,7 @@
                     <h2 class="cta-headline">READY TO HEAT MANCHESTER'S FUTURE?</h2>
                     <p class="cta-subtitle">Get heating engineer finance that keeps you ahead of the curve</p>
                     <div class="cta-buttons">
-                        <a href="#manchester-heating-form-container" class="btn-massive-industrial" onclick="scrollToForm()">
+                        <a href="../../../contact.html" class="btn-massive-industrial" >
                             APPLY NOW
                             <svg width="32" height="32" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="3">
                                 <path d="M5 12h14M12 5l7 7-7 7"/>
@@ -582,7 +597,7 @@
                     
                     <div class="footer-links-section">
                         <h3>MANCHESTER TRADES</h3>
-                        <ul>
+                        <ul role="list">
                             <li><a href="electrician-finance.html">Manchester Electrician Finance</a></li>
                             <li><a href="plumber-finance.html">Manchester Plumber Finance</a></li>
                             <li><a href="builder-finance.html">Manchester Builder Finance</a></li>
@@ -592,7 +607,7 @@
                     
                     <div class="footer-links-section">
                         <h3>HEATING ENGINEERS</h3>
-                        <ul>
+                        <ul role="list">
                             <li><a href="../london/heating-engineer-finance.html">London Heating Finance</a></li>
                             <li><a href="../birmingham/heating-engineer-finance.html">Birmingham Heating Finance</a></li>
                             <li><a href="../leeds/heating-engineer-finance.html">Leeds Heating Finance</a></li>

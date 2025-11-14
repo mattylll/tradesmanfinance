@@ -21,10 +21,11 @@
     <link rel="stylesheet" href="../../../public/css/accessibility.css?v=1.0">
     <link rel="stylesheet" href="../../../public/css/header-fix.css?v=1.0">
     <link rel="stylesheet" href="../../../public/css/dropdown-menu.css?v=1.0">
-    <link rel="stylesheet" href="../../../public/css/dropdown-fix.css?v=1.0">    <link rel="stylesheet" href="../../../public/css/trade-pages-fix.css?v=1.0">
+    <link rel="stylesheet" href="../../../public/css/dropdown-fix.css?v=1.0">
     <link rel="stylesheet" href="../../../public/css/trade-forms.css?v=1.0">
     <link rel="stylesheet" href="../../../public/css/trade-form-section.css?v=1.0">
-    
+    <!-- Trade Pages Production Styling -->
+    <link rel="stylesheet" href="../../../public/css/trade-pages-production.css?v=1.0">    
     <!-- Schema.org markup for Local Business -->
     <script type="application/ld+json">
     {
@@ -77,9 +78,12 @@
         }
     }
     </script>
+    <!-- Mobile menu fix - MUST be loaded last -->
+    <link rel="stylesheet" href="../../../public/css/mobile-menu-fix.css?v=1.0">
 </head>
 <body>
-    <!-- Loading Screen -->
+    <!-- Warning Banner -->
+        <!-- Loading Screen -->
     <div class="loader-industrial" id="loader">
         <div class="loader-content">
             <svg class="wrench-loader" viewBox="0 0 100 100">
@@ -176,7 +180,37 @@
                             <a href="../../../trades/locations/">View All Locations →</a>
                         </div>
                     </li>
-                    
+
+                    <!-- Guides Dropdown -->
+                    <li class="has-dropdown">
+                        <a href="../../../blog/">Guides</a>
+                        <div class="dropdown-menu">
+                            <div class="dropdown-section">
+                                <h3>Equipment Guides</h3>
+                                <div class="dropdown-links">
+                                    <a href="../../../blog/scaffolding-materials-finance-guide.html">Scaffolding Materials Finance</a>
+                                    <a href="../../../blog/woodworking-equipment-finance-options.html">Woodworking Equipment Finance</a>
+                                    <a href="../../../blog/metalwork-equipment-financing.html">Metalwork Equipment Financing</a>
+                                </div>
+                            </div>
+                            <div class="dropdown-section">
+                                <h3>Trade Finance Guides</h3>
+                                <div class="dropdown-links">
+                                    <a href="../../../blog/bathroom-fitting-finance-explained.html">Bathroom Fitting Finance</a>
+                                    <a href="../../../blog/home-tradesman-equipment-loans.html">Home Tradesman Startup Finance</a>
+                                    <a href="../../../blog/">View All Guides →</a>
+                                </div>
+                            </div>
+                        </div>
+
+                        <!-- Mobile submenu -->
+                        <div class="mobile-submenu">
+                            <a href="../../../blog/scaffolding-materials-finance-guide.html">Scaffolding Finance</a>
+                            <a href="../../../blog/woodworking-equipment-finance-options.html">Woodworking Equipment</a>
+                            <a href="../../../blog/bathroom-fitting-finance-explained.html">Bathroom Fitting</a>
+                            <a href="../../../blog/">View All Guides →</a>
+                        </div>
+                    </li>
                     <li><a href="../../../about.html">About</a></li>
                     <li><a href="../../../contact.html">Contact</a></li>
                 </ul>
@@ -193,6 +227,19 @@
             </button>
         </div>
     </header>
+
+    <!-- Business Notice Bar -->
+    <div class="industrial-notice" role="complementary" aria-label="Important notice">
+        <div class="container">
+            <div class="notice-content">
+                <svg width="24" height="24" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true" focusable="false">
+                    <title>Warning icon</title>
+                    <path d="M1 21h22L12 2 1 21zm12-3h-2v-2h2v2zm0-4h-2v-4h2v4z"/>
+                </svg>
+                <p><strong>BUSINESS & PERSONAL LOANS:</strong> Rates from 6.5%. Business loans £25K-£1M. Personal loans available.</p>
+            </div>
+        </div>
+    </div>
 
     <!-- Main Content -->
     <main id="main-content">
@@ -231,7 +278,7 @@
                                 <span class="stat-label">Project Ready</span>
                             </div>
                         </div>
-                        <a href="#birmingham-electrician-form-container" class="btn-massive-industrial" onclick="scrollToForm()">
+                        <a href="../../../contact.html" class="btn-massive-industrial" >
                             GET BIRMINGHAM FINANCE NOW
                             <svg width="32" height="32" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="3">
                                 <path d="M5 12h14M12 5l7 7-7 7"/>
@@ -301,7 +348,7 @@
                                 <strong>Residential Boom:</strong> 51,000 new homes planned, from Edgbaston apartments to Perry Barr regeneration
                             </li>
                         </ul>
-                        <a href="#birmingham-electrician-form-container" class="btn-industrial" onclick="scrollToForm()">Get Birmingham Finance</a>
+                        <a href="../../../contact.html" class="btn-industrial" >Get Birmingham Finance</a>
                     </div>
                     <div class="benefits-image">
                         <div class="testimonial-card">
@@ -321,7 +368,7 @@
                     <div class="option-card">
                         <h3>Industrial Equipment Finance</h3>
                         <p>For Birmingham's manufacturing base</p>
-                        <ul>
+                        <ul role="list">
                             <li>Three-phase analysers from £5,000</li>
                             <li>Motor control test equipment</li>
                             <li>Industrial automation tools</li>
@@ -331,7 +378,7 @@
                     <div class="option-card">
                         <h3>HS2 Project Finance</h3>
                         <p>Infrastructure opportunity funding</p>
-                        <ul>
+                        <ul role="list">
                             <li>Working capital up to £150,000</li>
                             <li>Railway-approved test equipment</li>
                             <li>Safety gear & training costs</li>
@@ -341,7 +388,7 @@
                     <div class="option-card">
                         <h3>Commercial Development</h3>
                         <p>City centre project funding</p>
-                        <ul>
+                        <ul role="list">
                             <li>Paradise Birmingham contracts</li>
                             <li>Student accommodation fit-outs</li>
                             <li>Retail & hospitality installations</li>
@@ -351,7 +398,7 @@
                     <div class="option-card">
                         <h3>EV Infrastructure Finance</h3>
                         <p>Birmingham's green revolution</p>
-                        <ul>
+                        <ul role="list">
                             <li>EV charging point installation kit</li>
                             <li>OZEV approved equipment</li>
                             <li>Clean Air Zone compliant vans</li>
@@ -497,7 +544,7 @@
                     <h2 class="cta-headline">READY TO POWER BIRMINGHAM'S FUTURE?</h2>
                     <p class="cta-subtitle">Get electrician finance built for the Second City</p>
                     <div class="cta-buttons">
-                        <a href="#birmingham-electrician-form-container" class="btn-massive-industrial" onclick="scrollToForm()">
+                        <a href="../../../contact.html" class="btn-massive-industrial" >
                             APPLY NOW
                             <svg width="32" height="32" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="3">
                                 <path d="M5 12h14M12 5l7 7-7 7"/>
@@ -551,7 +598,7 @@
     </main>
 
     <!-- Industrial Footer -->
-    <footer class="industrial-footer">
+    <footer class="industrial-footer" role="contentinfo">
         <div class="footer-top">
             <div class="container">
                 <div class="footer-grid">
@@ -562,8 +609,8 @@
                         </div>
                         <p>Built tough for UK trades. No fancy talk, just proper business finance when you need it.</p>
                         <div class="contact-quick">
-                            <a href="tel:02037780274" class="phone-big">
-                                <svg width="24" height="24" viewBox="0 0 24 24" fill="currentColor">
+                            <a href="tel:02037780274" class="phone-big" aria-label="Call us on 020 3778 0274">
+                                <svg width="24" height="24" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true" focusable="false">
                                     <path d="M20 12h2c0-4.97-4.03-9-9-9v2c3.87 0 7 3.13 7 7zm-4 0h2c0-2.76-2.24-5-5-5v2c1.66 0 3 1.34 3 3zm-1.5 1.5L13 12v-7c0-.55-.45-1-1-1s-1 .45-1 1v7c0 .38.21.71.53.88l5.5 3.18c.48.28 1.09.11 1.37-.37.28-.48.11-1.09-.37-1.37l-3.53-2.04z"/>
                                 </svg>
                                 020 3778 0274
@@ -573,34 +620,52 @@
                     </div>
                     
                     <div class="footer-links-section">
-                        <h3>BIRMINGHAM TRADES</h3>
-                        <ul>
-                            <li><a href="plumber-finance.html">Birmingham Plumber Finance</a></li>
-                            <li><a href="builder-finance.html">Birmingham Builder Finance</a></li>
-                            <li><a href="carpenter-finance.html">Birmingham Carpenter Finance</a></li>
-                            <li><a href="heating-engineer-finance.html">Birmingham Heating Engineer</a></li>
+                        <h3>WHAT WE DO</h3>
+                        <ul role="list">
+                            <li><a href="../../../services.html#equipment">Equipment Finance</a></li>
+                            <li><a href="../../../services.html#business">Business Loans</a></li>
+                            <li><a href="../../../services.html#invoice">Invoice Finance</a></li>
+                            <li><a href="../../../services.html#vehicle">Vehicle Finance</a></li>
                         </ul>
                     </div>
                     
                     <div class="footer-links-section">
-                        <h3>OTHER LOCATIONS</h3>
-                        <ul>
-                            <li><a href="../london/electrician-finance.html">London</a></li>
-                            <li><a href="../manchester/electrician-finance.html">Manchester</a></li>
-                            <li><a href="../leeds/electrician-finance.html">Leeds</a></li>
-                            <li><a href="../glasgow/electrician-finance.html">Glasgow</a></li>
+                        <h3>THE COMPANY</h3>
+                        <ul role="list">
+                            <li><a href="../../../about.html">About Us</a></li>
+                            <li><a href="#">How It Works</a></li>
+                            <li><a href="#">FAQs</a></li>
+                            <li><a href="../../../contact.html">Get in Touch</a></li>
+                        </ul>
+                    </div>                    <div class="footer-links-section">
+                        <h3>GUIDES & RESOURCES</h3>
+                        <ul role="list">
+                            <li><a href="../../../blog/">Equipment Finance Guides</a></li>
+                            <li><a href="../../../blog/scaffolding-materials-finance-guide.html">Scaffolding Finance</a></li>
+                            <li><a href="../../../blog/woodworking-equipment-finance-options.html">Woodworking Equipment</a></li>
+                            <li><a href="../../../blog/bathroom-fitting-finance-explained.html">Bathroom Fitting</a></li>
                         </ul>
                     </div>
+
+                    
                     
                     <div class="footer-trust">
-                        <h3>THE LEGAL BITS</h3>
-                        <p style="font-size: 12px; color: #808080; line-height: 1.6;">
-                            Tradesman Finance Ltd is a credit broker, not a lender. We will introduce you to a selection of lenders and finance products based on your needs. We may receive a commission for this introduction.
-                        </p>
-                        <p style="margin-top: 15px; font-size: 12px; color: #808080;">
-                            Registered in England & Wales. Company No: 12345678<br>
-                            ICO Registration: ZA123456
-                        </p>
+                        <h3>WHY TRUST US</h3>
+                        <div class="trust-badges">
+                            <div class="trust-badge-item">
+                                <span class="badge-icon">50K+</span>
+                                <span class="badge-text">Happy Trades</span>
+                            </div>
+                            <div class="trust-badge-item">
+                                <span class="badge-icon">£50M</span>
+                                <span class="badge-text">Funded</span>
+                            </div>
+                            <div class="trust-badge-item">
+                                <span class="badge-icon">24hr</span>
+                                <span class="badge-text">Decisions</span>
+                            </div>
+                        </div>
+                        <p style="margin-top: 20px; font-size: 12px; color: #808080;">We're a finance broker, not a lender. We find you the best deals.</p>
                     </div>
                 </div>
             </div>
@@ -608,7 +673,7 @@
         <div class="footer-bottom">
             <div class="container">
                 <div class="footer-bottom-content">
-                    <p>&copy; 2025 Tradesman Finance Ltd. Built for trades, by trades.</p>
+                    <p>&copy; 2025 Tradesman Finance Ltd. Company Reg: 123456. Built in Britain.</p>
                     <div class="footer-legal">
                         <a href="../../../privacy-policy.html">Privacy</a>
                         <span>|</span>
@@ -625,49 +690,9 @@
 
     <!-- Scripts -->
     <script src="../../../public/js/main.js"></script>
+    <!-- Mobile menu handler - fixes duplicate hamburger issue -->
+    <script src="../../../public/js/mobile-menu-handler.js"></script>
     <script src="../../../public/js/loader-fix.js"></script>
-    <script src="../../../public/js/trade-forms.js"></script>
-    <script src="../../../public/js/trade-form-configs.js"></script>
-    <script>
-        // Initialize Birmingham electrician form
-        document.addEventListener('DOMContentLoaded', function() {
-            // Wait a bit for scripts to load
-            setTimeout(() => {
-                if (window.TradeForm && window.tradeFormConfigs && window.tradeFormConfigs.electrician) {
-                    const config = {...window.tradeFormConfigs.electrician};
-                    config.containerId = 'birmingham-electrician-form-container';
-                    // Add Birmingham-specific form customization
-                    config.defaultValues = {
-                        ...config.defaultValues,
-                        location: 'Birmingham'
-                    };
-                    const form = new TradeForm(config);
-                }
-            }, 100);
-        });
-        
-        // Scroll to form function
-        function scrollToForm() {
-            event.preventDefault();
-            const formSection = document.getElementById('birmingham-electrician-form-container');
-            if (formSection) {
-                const offset = 100; // Account for fixed header
-                const elementPosition = formSection.getBoundingClientRect().top;
-                const offsetPosition = elementPosition + window.pageYOffset - offset;
-                
-                window.scrollTo({
-                    top: offsetPosition,
-                    behavior: 'smooth'
-                });
-                
-                // Focus on first input after scroll
-                setTimeout(() => {
-                    const firstInput = formSection.querySelector('input, button');
-                    if (firstInput) firstInput.focus();
-                }, 1000);
-            }
-        }
-    </script>
     <script src="../../../public/js/dropdown-menu.js"></script>
 </body>
 </html>

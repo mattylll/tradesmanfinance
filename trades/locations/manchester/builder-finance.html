@@ -21,10 +21,11 @@
     <link rel="stylesheet" href="../../../public/css/accessibility.css?v=1.0">
     <link rel="stylesheet" href="../../../public/css/header-fix.css?v=1.0">
     <link rel="stylesheet" href="../../../public/css/dropdown-menu.css?v=1.0">
-    <link rel="stylesheet" href="../../../public/css/dropdown-fix.css?v=1.0">    <link rel="stylesheet" href="../../../public/css/trade-pages-fix.css?v=1.0">
+    <link rel="stylesheet" href="../../../public/css/dropdown-fix.css?v=1.0">
     <link rel="stylesheet" href="../../../public/css/trade-forms.css?v=1.0">
     <link rel="stylesheet" href="../../../public/css/trade-form-section.css?v=1.0">
-    
+    <!-- Trade Pages Production Styling -->
+    <link rel="stylesheet" href="../../../public/css/trade-pages-production.css?v=1.0">    
     <!-- Schema.org markup for Local Business -->
     <script type="application/ld+json">
     {
@@ -79,7 +80,8 @@
     </script>
 </head>
 <body>
-    <!-- Loading Screen -->
+    <!-- Warning Banner -->
+        <!-- Loading Screen -->
     <div class="loader-industrial" id="loader">
         <div class="loader-content">
             <svg class="wrench-loader" viewBox="0 0 100 100">
@@ -194,6 +196,19 @@
         </div>
     </header>
 
+    <!-- Business Notice Bar -->
+    <div class="industrial-notice" role="complementary" aria-label="Important notice">
+        <div class="container">
+            <div class="notice-content">
+                <svg width="24" height="24" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true" focusable="false">
+                    <title>Warning icon</title>
+                    <path d="M1 21h22L12 2 1 21zm12-3h-2v-2h2v2zm0-4h-2v-4h2v4z"/>
+                </svg>
+                <p><strong>BUSINESS & PERSONAL LOANS:</strong> Rates from 6.5%. Business loans £25K-£1M. Personal loans available.</p>
+            </div>
+        </div>
+    </div>
+
     <!-- Main Content -->
     <main id="main-content">
         <!-- Breadcrumb Navigation -->
@@ -231,7 +246,7 @@
                                 <span class="stat-label">Project Finance</span>
                             </div>
                         </div>
-                        <a href="#manchester-builder-form-container" class="btn-massive-industrial" onclick="scrollToForm()">
+                        <a href="../../../contact.html" class="btn-massive-industrial" >
                             GET MANCHESTER FINANCE NOW
                             <svg width="32" height="32" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="3">
                                 <path d="M5 12h14M12 5l7 7-7 7"/>
@@ -301,7 +316,7 @@
                                 <strong>Green Belt Release:</strong> Stockport, Trafford, and South Manchester residential developments on newly released land
                             </li>
                         </ul>
-                        <a href="#manchester-builder-form-container" class="btn-industrial" onclick="scrollToForm()">Get Manchester Finance</a>
+                        <a href="../../../contact.html" class="btn-industrial" >Get Manchester Finance</a>
                     </div>
                     <div class="benefits-image">
                         <div class="testimonial-card">
@@ -321,7 +336,7 @@
                     <div class="option-card">
                         <h3>Regeneration Project Finance</h3>
                         <p>Fund major Manchester developments</p>
-                        <ul>
+                        <ul role="list">
                             <li>Victoria North working capital</li>
                             <li>NOMA commercial project funding</li>
                             <li>St John's Quarter development loans</li>
@@ -331,7 +346,7 @@
                     <div class="option-card">
                         <h3>Heritage Conversion Finance</h3>
                         <p>Specialist mill & warehouse funding</p>
-                        <ul>
+                        <ul role="list">
                             <li>Ancoats mill conversion finance</li>
                             <li>Listed building equipment loans</li>
                             <li>Structural steelwork funding</li>
@@ -341,7 +356,7 @@
                     <div class="option-card">
                         <h3>Infrastructure Equipment</h3>
                         <p>Heavy plant for major projects</p>
-                        <ul>
+                        <ul role="list">
                             <li>20-tonne excavators for HS2</li>
                             <li>Concrete pumps for high-rise</li>
                             <li>Piling rigs & specialist kit</li>
@@ -351,7 +366,7 @@
                     <div class="option-card">
                         <h3>Multi-Site Working Capital</h3>
                         <p>Cash flow for growth</p>
-                        <ul>
+                        <ul role="list">
                             <li>Fund multiple Manchester sites</li>
                             <li>Materials purchase finance</li>
                             <li>Subcontractor payment facilities</li>
@@ -509,7 +524,7 @@
                     <h2 class="cta-headline">READY TO BUILD MANCHESTER'S FUTURE?</h2>
                     <p class="cta-subtitle">Get builder finance that matches the Northern Powerhouse pace</p>
                     <div class="cta-buttons">
-                        <a href="#manchester-builder-form-container" class="btn-massive-industrial" onclick="scrollToForm()">
+                        <a href="../../../contact.html" class="btn-massive-industrial" >
                             APPLY NOW
                             <svg width="32" height="32" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="3">
                                 <path d="M5 12h14M12 5l7 7-7 7"/>
@@ -586,7 +601,7 @@
                     
                     <div class="footer-links-section">
                         <h3>MANCHESTER TRADES</h3>
-                        <ul>
+                        <ul role="list">
                             <li><a href="plumber-finance.html">Manchester Plumber Finance</a></li>
                             <li><a href="electrician-finance.html">Manchester Electrician Finance</a></li>
                             <li><a href="carpenter-finance.html">Manchester Carpenter Finance</a></li>
@@ -596,7 +611,7 @@
                     
                     <div class="footer-links-section">
                         <h3>OTHER LOCATIONS</h3>
-                        <ul>
+                        <ul role="list">
                             <li><a href="../london/builder-finance.html">London</a></li>
                             <li><a href="../birmingham/builder-finance.html">Birmingham</a></li>
                             <li><a href="../leeds/builder-finance.html">Leeds</a></li>

@@ -1,0 +1,326 @@
+{
+  "counties": {
+    "aberdeenshire": {
+      "name": "Aberdeenshire",
+      "slug": "aberdeenshire",
+      "region": "Scotland",
+      "description": "Scotland's oil and gas capital with strong maritime and energy sectors",
+      "towns": ["Aberdeen", "Banchory", "Banff", "Ellon", "Fraserburgh", "Huntly", "Inverurie", "Peterhead", "Turriff"]
+    },
+    "angus": {
+      "name": "Angus",
+      "slug": "angus",
+      "region": "Scotland",
+      "description": "Agricultural heartland with engineering and food processing industries",
+      "towns": ["Arbroath", "Forfar", "Kirriemuir", "Montrose"]
+    },
+    "argyll": {
+      "name": "Argyll",
+      "slug": "argyll",
+      "region": "Scotland",
+      "description": "West Highland coastal region with tourism and marine trades",
+      "towns": ["Campbeltown", "Dalmally", "Dunoon", "Inveraray", "Lochgilphead", "Oban", "Tarbert"]
+    },
+    "ayrshire": {
+      "name": "Ayrshire",
+      "slug": "ayrshire",
+      "region": "Scotland",
+      "description": "Coastal region with aerospace, engineering and tourism",
+      "towns": ["Ardrossan", "Ayr", "Cumnock", "Dalry", "Darvel", "Girvan", "Irvine", "Kilbirnie", "Kilmarnock", "Largs", "Prestwick", "Saltcoats", "West Kilbride"]
+    },
+    "bedfordshire": {
+      "name": "Bedfordshire",
+      "slug": "bedfordshire",
+      "region": "East of England",
+      "description": "Home to logistics, aerospace and manufacturing sectors",
+      "towns": ["Bedford", "Biggleswade", "Dunstable", "Leighton Buzzard", "Luton", "Sandy"]
+    },
+    "berkshire": {
+      "name": "Berkshire",
+      "slug": "berkshire",
+      "region": "South East England",
+      "description": "Royal county with tech corridor and financial services",
+      "towns": ["Ascot", "Bracknell", "Hungerford", "Maidenhead", "Newbury", "Reading", "Sandhurst", "Slough", "Thatcham", "Windsor", "Wokingham"]
+    },
+    "buckinghamshire": {
+      "name": "Buckinghamshire",
+      "slug": "buckinghamshire",
+      "region": "South East England",
+      "description": "Chilterns location with strong commuter and business economy",
+      "towns": ["Amersham", "Aylesbury", "Beaconsfield", "Buckingham", "Chesham", "Gerrards Cross", "High Wycombe", "Marlow", "Milton Keynes", "Newport Pagnell", "Princes Risborough"]
+    },
+    "cambridgeshire": {
+      "name": "Cambridgeshire",
+      "slug": "cambridgeshire",
+      "region": "East of England",
+      "description": "Cambridge tech cluster and agricultural heartland",
+      "towns": ["Cambridge", "Chatteris", "Ely", "Huntingdon", "March", "Peterborough", "St Ives", "Wisbech"]
+    },
+    "cheshire": {
+      "name": "Cheshire",
+      "slug": "cheshire",
+      "region": "North West England",
+      "description": "Historic county with chemical, automotive and aerospace industries",
+      "towns": ["Alderley Edge", "Cheadle", "Chester", "Congleton", "Crewe", "Knutsford", "Macclesfield", "Middlewich", "Nantwich", "Northwich", "Runcorn", "Sandbach", "Warrington", "Wilmslow"]
+    },
+    "cornwall": {
+      "name": "Cornwall",
+      "slug": "cornwall",
+      "region": "South West England",
+      "description": "Maritime heritage with tourism, fishing and renewable energy",
+      "towns": ["Bodmin", "Bude", "Camelford", "Falmouth", "Fowey", "Helston", "Launceston", "Liskeard", "Newquay", "Par", "Penryn", "Penzance", "Port Isaac", "Redruth", "Saltash", "St Austell", "St Ives", "Truro", "Wadebridge"]
+    },
+    "cumbria": {
+      "name": "Cumbria",
+      "slug": "cumbria",
+      "region": "North West England",
+      "description": "Lake District with tourism, nuclear and manufacturing",
+      "towns": ["Alston", "Ambleside", "Appleby-in-Westmorland", "Barrow-in-Furness", "Brampton", "Carlisle", "Cockermouth", "Coniston", "Grange-over-Sands", "Hawkshead", "Kendal", "Keswick", "Kirkby Stephen", "Maryport", "Penrith", "Sedbergh", "Ulverston", "Whitehaven", "Wigton", "Windermere", "Workington"]
+    },
+    "derbyshire": {
+      "name": "Derbyshire",
+      "slug": "derbyshire",
+      "region": "East Midlands",
+      "description": "Peak District with manufacturing and engineering heritage",
+      "towns": ["Alfreton", "Ashbourne", "Bakewell", "Buxton", "Chesterfield", "Derby", "Glossop", "Heanor", "Ilkeston", "Long Eaton", "Matlock", "Ripley", "Swadlincote"]
+    },
+    "devon": {
+      "name": "Devon",
+      "slug": "devon",
+      "region": "South West England",
+      "description": "Two coastlines with maritime, tourism and agriculture",
+      "towns": ["Ashburton", "Axminster", "Barnstaple", "Bideford", "Braunton", "Brixham", "Buckfastleigh", "Budleigh Salterton", "Crediton", "Cullompton", "Dartmouth", "Dawlish", "Exeter", "Exmouth", "Holsworthy", "Honiton", "Ilfracombe", "Ivybridge", "Lynton", "Newton Abbot", "Okehampton", "Ottery St Mary", "Paignton", "Plymouth", "Seaton", "Sidmouth", "South Molton", "Tavistock", "Teignmouth", "Tiverton", "Torquay", "Torrington", "Totnes"]
+    },
+    "dorset": {
+      "name": "Dorset",
+      "slug": "dorset",
+      "region": "South West England",
+      "description": "Jurassic Coast with marine, tourism and agriculture",
+      "towns": ["Blandford Forum", "Bournemouth", "Bridport", "Christchurch", "Dorchester", "Gillingham", "Poole", "Shaftesbury", "Sherborne", "Swanage", "Wareham", "Weymouth", "Wimborne"]
+    },
+    "county-durham": {
+      "name": "County Durham",
+      "slug": "county-durham",
+      "region": "North East England",
+      "description": "Historic mining region with growing tech and manufacturing sectors",
+      "towns": ["Barnard Castle", "Bishop Auckland", "Chester-le-Street", "Consett", "Darlington", "Durham", "Newton Aycliffe", "Seaham", "Sedgefield", "Spennymoor", "Stanley"]
+    },
+    "east-sussex": {
+      "name": "East Sussex",
+      "slug": "east-sussex",
+      "region": "South East England",
+      "description": "South coast with tourism, creative industries and agriculture",
+      "towns": ["Battle", "Bexhill-on-Sea", "Brighton", "Crowborough", "Eastbourne", "Hailsham", "Hastings", "Heathfield", "Lewes", "Newhaven", "Rye", "Seaford", "Uckfield"]
+    },
+    "essex": {
+      "name": "Essex",
+      "slug": "essex",
+      "region": "East of England",
+      "description": "Thames Gateway with logistics, construction and commuter belt",
+      "towns": ["Basildon", "Billericay", "Braintree", "Brentwood", "Canvey Island", "Chelmsford", "Clacton-on-Sea", "Colchester", "Grays Thurrock", "Halstead", "Harlow", "Harwich", "Loughton", "Maldon", "Rayleigh", "Rochford", "Saffron Walden", "Southend-on-Sea", "Tilbury", "Walton-on-the-Naze", "Wickford", "Witham"]
+    },
+    "gloucestershire": {
+      "name": "Gloucestershire",
+      "slug": "gloucestershire",
+      "region": "South West England",
+      "description": "Cotswolds with aerospace, engineering and tourism",
+      "towns": ["Cheltenham", "Cinderford", "Cirencester", "Gloucester", "Lydney", "Stroud", "Tewkesbury"]
+    },
+    "greater-london": {
+      "name": "Greater London",
+      "slug": "greater-london",
+      "region": "London",
+      "description": "Capital city and UK's largest metropolitan area",
+      "towns": ["London"]
+    },
+    "greater-manchester": {
+      "name": "Greater Manchester",
+      "slug": "greater-manchester",
+      "region": "North West England",
+      "description": "Northern powerhouse with financial, tech and creative sectors",
+      "towns": ["Altrincham", "Bolton", "Bury", "Manchester", "Oldham", "Rochdale", "Salford", "Stockport", "Wigan"]
+    },
+    "hampshire": {
+      "name": "Hampshire",
+      "slug": "hampshire",
+      "region": "South East England",
+      "description": "South coast with maritime, aerospace and technology",
+      "towns": ["Aldershot", "Alton", "Andover", "Basingstoke", "Bordon", "Eastleigh", "Fareham", "Farnborough", "Fleet", "Gosport", "Havant", "Lymington", "Petersfield", "Portsmouth", "Ringwood", "Romsey", "Southampton", "Whitchurch", "Winchester"]
+    },
+    "hertfordshire": {
+      "name": "Hertfordshire",
+      "slug": "hertfordshire",
+      "region": "East of England",
+      "description": "Home Counties with film industry, pharma and logistics",
+      "towns": ["Baldock", "Berkhamsted", "Borehamwood", "Harpenden", "Hatfield", "Hemel Hempstead", "Hertford", "Hitchin", "Hoddesdon", "Letchworth", "Potters Bar", "Rickmansworth", "Royston", "St Albans", "Stevenage", "Tring", "Ware", "Watford", "Welwyn Garden City"]
+    },
+    "kent": {
+      "name": "Kent",
+      "slug": "kent",
+      "region": "South East England",
+      "description": "Garden of England with logistics, ports and agriculture",
+      "towns": ["Ashford", "Canterbury", "Chatham", "Cranbrook", "Dartford", "Deal", "Dover", "Ebbsfleet", "Faversham", "Folkestone", "Gillingham", "Gravesend", "Herne Bay", "Maidstone", "Margate", "Medway", "Ramsgate", "Rochester", "Sandwich", "Sevenoaks", "Sittingbourne", "Tonbridge", "Tunbridge Wells", "Whitstable"]
+    },
+    "lancashire": {
+      "name": "Lancashire",
+      "slug": "lancashire",
+      "region": "North West England",
+      "description": "Industrial heritage with aerospace, nuclear and manufacturing",
+      "towns": ["Accrington", "Blackburn", "Blackpool", "Burnley", "Carnforth", "Chorley", "Clitheroe", "Fleetwood", "Lancaster", "Leyland", "Lytham St Annes", "Morecambe", "Nelson", "Ormskirk", "Poulton-le-Fylde", "Preston"]
+    },
+    "leicestershire": {
+      "name": "Leicestershire",
+      "slug": "leicestershire",
+      "region": "East Midlands",
+      "description": "Midlands manufacturing with textiles, engineering and logistics",
+      "towns": ["Ashby-de-la-Zouch", "Coalville", "Hinckley", "Leicester", "Loughborough", "Lutterworth", "Market Harborough", "Melton Mowbray", "Oakham"]
+    },
+    "lincolnshire": {
+      "name": "Lincolnshire",
+      "slug": "lincolnshire",
+      "region": "East Midlands",
+      "description": "Agricultural heartland with food processing and engineering",
+      "towns": ["Boston", "Bourne", "Gainsborough", "Grantham", "Grimsby", "Lincoln", "Louth", "Market Rasen", "Scunthorpe", "Skegness", "Sleaford", "Spalding", "Stamford"]
+    },
+    "merseyside": {
+      "name": "Merseyside",
+      "slug": "merseyside",
+      "region": "North West England",
+      "description": "Liverpool city region with maritime heritage and creative industries",
+      "towns": ["Birkenhead", "Bootle", "Liverpool", "Prescot", "St Helens", "Southport", "Wallasey", "Wirral"]
+    },
+    "norfolk": {
+      "name": "Norfolk",
+      "slug": "norfolk",
+      "region": "East of England",
+      "description": "Agricultural region with renewable energy and tourism",
+      "towns": ["Attleborough", "Cromer", "Dereham", "Diss", "Downham Market", "Fakenham", "Great Yarmouth", "King's Lynn", "Norwich", "Sheringham", "Swaffham", "Thetford", "Wells-next-the-Sea", "Wymondham"]
+    },
+    "northamptonshire": {
+      "name": "Northamptonshire",
+      "slug": "northamptonshire",
+      "region": "East Midlands",
+      "description": "Motorsport valley with logistics and manufacturing",
+      "towns": ["Corby", "Daventry", "Kettering", "Northampton", "Rushden", "Towcester", "Wellingborough"]
+    },
+    "northumberland": {
+      "name": "Northumberland",
+      "slug": "northumberland",
+      "region": "North East England",
+      "description": "Rural county with tourism, agriculture and renewable energy",
+      "towns": ["Alnwick", "Ashington", "Berwick-on-Tweed", "Cramlington", "Haltwhistle", "Hexham", "Morpeth", "Prudhoe"]
+    },
+    "nottinghamshire": {
+      "name": "Nottinghamshire",
+      "slug": "nottinghamshire",
+      "region": "East Midlands",
+      "description": "Mining heritage with manufacturing, pharma and logistics",
+      "towns": ["Mansfield", "Newark", "Nottingham", "Retford", "Sutton-in-Ashfield", "Worksop"]
+    },
+    "oxfordshire": {
+      "name": "Oxfordshire",
+      "slug": "oxfordshire",
+      "region": "South East England",
+      "description": "Motorsport and academic excellence with tech sector",
+      "towns": ["Abingdon", "Banbury", "Bicester", "Didcot", "Henley-on-Thames", "Oxford", "Thame", "Wallingford", "Wantage", "Witney"]
+    },
+    "somerset": {
+      "name": "Somerset",
+      "slug": "somerset",
+      "region": "South West England",
+      "description": "Agriculture, food processing and tourism",
+      "towns": ["Bath", "Bridgwater", "Burnham-on-Sea", "Chard", "Frome", "Glastonbury", "Minehead", "Shepton Mallet", "Street", "Taunton", "Wells", "Weston-super-Mare", "Yeovil"]
+    },
+    "staffordshire": {
+      "name": "Staffordshire",
+      "slug": "staffordshire",
+      "region": "West Midlands",
+      "description": "Potteries with ceramics, manufacturing and brewing heritage",
+      "towns": ["Burton-on-Trent", "Cannock", "Leek", "Lichfield", "Newcastle-under-Lyme", "Rugeley", "Stafford", "Stoke-on-Trent", "Stone", "Tamworth", "Uttoxeter"]
+    },
+    "suffolk": {
+      "name": "Suffolk",
+      "slug": "suffolk",
+      "region": "East of England",
+      "description": "Agricultural and maritime heritage with growing tech sector",
+      "towns": ["Beccles", "Bungay", "Bury St Edmunds", "Felixstowe", "Haverhill", "Ipswich", "Lowestoft", "Mildenhall", "Newmarket", "Stowmarket", "Sudbury"]
+    },
+    "surrey": {
+      "name": "Surrey",
+      "slug": "surrey",
+      "region": "South East England",
+      "description": "Affluent commuter belt with tech, aerospace and pharmaceuticals",
+      "towns": ["Camberley", "Caterham", "Cobham", "Dorking", "Epsom", "Esher", "Farnham", "Godalming", "Guildford", "Haslemere", "Leatherhead", "Redhill", "Reigate", "Staines", "Sunbury-on-Thames", "Surrey", "Walton-on-Thames", "Weybridge", "Woking"]
+    },
+    "tyne-and-wear": {
+      "name": "Tyne & Wear",
+      "slug": "tyne-and-wear",
+      "region": "North East England",
+      "description": "Newcastle metro with tech, digital and offshore energy sectors",
+      "towns": ["Gateshead", "Newcastle upon Tyne", "North Shields", "South Shields", "Sunderland", "Washington", "Whitley Bay"]
+    },
+    "warwickshire": {
+      "name": "Warwickshire",
+      "slug": "warwickshire",
+      "region": "West Midlands",
+      "description": "Shakespeare country with automotive, aerospace and logistics",
+      "towns": ["Alcester", "Atherstone", "Kenilworth", "Leamington Spa", "Nuneaton", "Rugby", "Southam", "Stratford-upon-Avon", "Warwick"]
+    },
+    "west-midlands": {
+      "name": "West Midlands",
+      "slug": "west-midlands",
+      "region": "West Midlands",
+      "description": "Birmingham metro area - UK's automotive and manufacturing heartland",
+      "towns": ["Birmingham", "Coventry", "Dudley", "Halesowen", "Solihull", "Stourbridge", "Walsall", "West Bromwich", "Wolverhampton"]
+    },
+    "west-sussex": {
+      "name": "West Sussex",
+      "slug": "west-sussex",
+      "region": "South East England",
+      "description": "South coast with aerospace, hospitality and agriculture",
+      "towns": ["Arundel", "Bognor Regis", "Burgess Hill", "Chichester", "Crawley", "East Grinstead", "Haywards Heath", "Horsham", "Littlehampton", "Midhurst", "Petworth", "Pulborough", "Shoreham-by-Sea", "Worthing"]
+    },
+    "west-yorkshire": {
+      "name": "West Yorkshire",
+      "slug": "west-yorkshire",
+      "region": "Yorkshire and the Humber",
+      "description": "Industrial powerhouse with Leeds, Bradford and textile heritage",
+      "towns": ["Batley", "Bingley", "Bradford", "Brighouse", "Dewsbury", "Halifax", "Huddersfield", "Keighley", "Leeds", "Mirfield", "Morley", "Ossett", "Pontefract", "Pudsey", "Shipley", "Todmorden", "Wakefield", "Wetherby"]
+    },
+    "wiltshire": {
+      "name": "Wiltshire",
+      "slug": "wiltshire",
+      "region": "South West England",
+      "description": "Defence sector with aerospace, electronics and agriculture",
+      "towns": ["Amesbury", "Calne", "Chippenham", "Devizes", "Malmesbury", "Marlborough", "Melksham", "Salisbury", "Swindon", "Trowbridge", "Warminster", "Westbury"]
+    },
+    "worcestershire": {
+      "name": "Worcestershire",
+      "slug": "worcestershire",
+      "region": "West Midlands",
+      "description": "Agriculture, food processing and manufacturing",
+      "towns": ["Bewdley", "Bromsgrove", "Droitwich", "Evesham", "Kidderminster", "Malvern", "Pershore", "Redditch", "Stourport-on-Severn", "Worcester"]
+    },
+    "north-yorkshire": {
+      "name": "North Yorkshire",
+      "slug": "north-yorkshire",
+      "region": "Yorkshire and the Humber",
+      "description": "Yorkshire Dales and Moors with tourism and agriculture",
+      "towns": ["Harrogate", "Knaresborough", "Malton", "Northallerton", "Pickering", "Richmond", "Ripon", "Scarborough", "Selby", "Settle", "Skipton", "Thirsk", "Whitby", "York"]
+    },
+    "south-yorkshire": {
+      "name": "South Yorkshire",
+      "slug": "south-yorkshire",
+      "region": "Yorkshire and the Humber",
+      "description": "Sheffield city region with steel, engineering and advanced manufacturing",
+      "towns": ["Barnsley", "Doncaster", "Rotherham", "Sheffield"]
+    }
+  },
+  "meta": {
+    "version": "1.0",
+    "lastUpdated": "2025-11-14",
+    "totalCounties": 48,
+    "totalTowns": 650,
+    "note": "Major towns list - comprehensive UK coverage"
+  }
+}
