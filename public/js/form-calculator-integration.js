@@ -4,14 +4,18 @@
  */
 
 document.addEventListener('DOMContentLoaded', function() {
-    // Check if we're on the contact page
-    const contactForm = document.getElementById('contact-form');
+    // Prevent double execution
+    if (window._calculatorIntegrationLoaded) return;
+    window._calculatorIntegrationLoaded = true;
+
+    // Check if we're on the contact page - support both form IDs
+    const contactForm = document.getElementById('contact-form') || document.getElementById('contactForm');
     if (!contactForm) return;
-    
+
     // Try to get calculator data from sessionStorage
     const calculatorDataStr = sessionStorage.getItem('calculatorData');
     if (!calculatorDataStr) return;
-    
+
     try {
         const calculatorData = JSON.parse(calculatorDataStr);
         

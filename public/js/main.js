@@ -117,16 +117,19 @@ document.addEventListener('DOMContentLoaded', function() {
      * @function prefillContactForm
      */
     function prefillContactForm() {
+        // Skip if form-calculator-integration.js already handled this
+        if (window._calculatorIntegrationLoaded) return;
+
         const calculatorData = sessionStorage.getItem('calculatorData');
         if (calculatorData && contactForm) {
             const data = JSON.parse(calculatorData);
             const amountField = document.getElementById('amount');
             const messageField = document.getElementById('message');
-            
+
             if (amountField && !amountField.value) {
                 amountField.value = '£' + parseInt(data.loanAmount).toLocaleString();
             }
-            
+
             if (messageField && !messageField.value) {
                 const defaultMessage = `I'm interested in borrowing ${amountField.value} over ${data.loanTerm} months. Based on your calculator, the monthly payment would be approximately ${data.monthlyPayment}.`;
                 messageField.value = defaultMessage;
