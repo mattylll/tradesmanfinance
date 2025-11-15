@@ -1,5 +1,293 @@
 /* Location Pages Styles */
 
+/* County Page Styles */
+.county-hero {
+    background: var(--gradient-steel);
+    padding: 120px 0 60px;
+    text-align: center;
+}
+
+.page-title {
+    font-family: 'Bebas Neue', sans-serif;
+    font-size: clamp(48px, 8vw, 80px);
+    color: white;
+    margin-bottom: 16px;
+    letter-spacing: 2px;
+}
+
+.page-subtitle {
+    font-size: 20px;
+    color: #ccc;
+    max-width: 600px;
+    margin: 0 auto;
+}
+
+.county-overview {
+    padding: 60px 0;
+    background: #1a1a1a;
+}
+
+.county-overview h2 {
+    font-family: 'Bebas Neue', sans-serif;
+    font-size: 42px;
+    color: white;
+    margin-bottom: 16px;
+    text-align: center;
+}
+
+.county-overview > .container > p {
+    font-size: 18px;
+    color: #ccc;
+    text-align: center;
+    max-width: 700px;
+    margin: 0 auto 40px;
+}
+
+.stats-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+    gap: 24px;
+    max-width: 900px;
+    margin: 0 auto;
+}
+
+.stat-card {
+    background: rgba(255, 107, 53, 0.1);
+    border: 2px solid #ff6b35;
+    padding: 32px 24px;
+    text-align: center;
+}
+
+.stat-card .stat-number {
+    font-family: 'Bebas Neue', sans-serif;
+    font-size: 36px;
+    color: #ffd93d;
+    display: block;
+    margin-bottom: 8px;
+}
+
+.stat-card .stat-label {
+    font-size: 14px;
+    color: #ccc;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+}
+
+.towns-section {
+    padding: 60px 0;
+    background: #0d0d0d;
+}
+
+.section-title {
+    font-family: 'Bebas Neue', sans-serif;
+    font-size: 42px;
+    color: white;
+    text-align: center;
+    margin-bottom: 16px;
+}
+
+.section-subtitle {
+    font-size: 18px;
+    color: #ccc;
+    text-align: center;
+    margin-bottom: 40px;
+}
+
+.towns-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+    gap: 24px;
+}
+
+.town-card {
+    background: #1a1a1a;
+    border: 2px solid #333;
+    padding: 24px;
+    transition: all 0.3s ease;
+}
+
+.town-card:hover {
+    border-color: #ff6b35;
+    transform: translateY(-5px);
+    box-shadow: 0 10px 30px rgba(255, 107, 53, 0.3);
+}
+
+.town-card h3 {
+    font-family: 'Bebas Neue', sans-serif;
+    font-size: 24px;
+    color: white;
+    margin-bottom: 12px;
+}
+
+.town-card p {
+    color: #ccc;
+    margin-bottom: 16px;
+    font-size: 15px;
+}
+
+.town-link {
+    color: #ff6b35;
+    text-decoration: none;
+    font-weight: 700;
+    font-size: 14px;
+    transition: color 0.3s ease;
+}
+
+.town-link:hover {
+    color: #ffd93d;
+}
+
+.county-cta {
+    background: linear-gradient(135deg, #ff6b35 0%, #ffd93d 100%);
+    padding: 80px 0;
+    text-align: center;
+}
+
+.county-cta h2 {
+    font-family: 'Bebas Neue', sans-serif;
+    font-size: 48px;
+    color: white;
+    margin-bottom: 16px;
+    text-shadow: 2px 2px 0 rgba(0,0,0,0.3);
+}
+
+.county-cta p {
+    font-size: 20px;
+    color: white;
+    margin-bottom: 32px;
+}
+
+/* Counties Grid for Location Hub */
+.region-section {
+    margin-bottom: 60px;
+}
+
+.region-title {
+    font-family: 'Bebas Neue', sans-serif;
+    font-size: 36px;
+    color: #ff6b35;
+    margin-bottom: 24px;
+    padding-bottom: 12px;
+    border-bottom: 3px solid #ff6b35;
+}
+
+.counties-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+    gap: 24px;
+}
+
+.county-card {
+    display: block;
+    background: #1a1a1a;
+    border: 2px solid #333;
+    padding: 24px;
+    text-decoration: none;
+    transition: all 0.3s ease;
+    position: relative;
+}
+
+.county-card:hover {
+    border-color: #ff6b35;
+    transform: translateY(-5px);
+    box-shadow: 0 10px 30px rgba(255, 107, 53, 0.3);
+}
+
+.county-card.featured {
+    border-color: #ff6b35;
+}
+
+.county-card h3 {
+    font-family: 'Bebas Neue', sans-serif;
+    font-size: 24px;
+    color: white;
+    margin-bottom: 12px;
+}
+
+.county-card p {
+    color: #ccc;
+    font-size: 14px;
+    line-height: 1.5;
+}
+
+.featured-badge {
+    position: absolute;
+    top: 12px;
+    right: 12px;
+    background: #ff6b35;
+    color: white;
+    padding: 4px 12px;
+    font-size: 12px;
+    font-weight: 700;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+}
+
+/* Related Locations (for town pages) */
+.related-locations {
+    padding: 60px 0;
+    background: #1a1a1a;
+}
+
+.locations-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    gap: 24px;
+}
+
+.btn-industrial {
+    display: inline-block;
+    background: #ff6b35;
+    color: white;
+    padding: 16px 32px;
+    text-decoration: none;
+    font-family: 'Bebas Neue', sans-serif;
+    font-size: 20px;
+    letter-spacing: 1px;
+    transition: all 0.3s ease;
+}
+
+.btn-industrial:hover {
+    background: #ff8555;
+    transform: translateY(-3px);
+}
+
+/* City stats for town pages */
+.city-stats {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 24px;
+    margin-top: 40px;
+}
+
+.city-stats .stat {
+    text-align: center;
+    padding: 20px;
+    background: rgba(255, 107, 53, 0.1);
+    border: 2px solid #ff6b35;
+}
+
+/* Location CTA */
+.location-cta {
+    background: linear-gradient(135deg, #ff6b35 0%, #ffd93d 100%);
+    padding: 80px 0;
+    text-align: center;
+}
+
+.cta-headline {
+    font-family: 'Bebas Neue', sans-serif;
+    font-size: 48px;
+    color: white;
+    margin-bottom: 16px;
+    text-shadow: 2px 2px 0 rgba(0,0,0,0.3);
+}
+
+.cta-subtitle {
+    font-size: 20px;
+    color: white;
+    margin-bottom: 32px;
+}
+
 /* Locations Hero */
 .locations-hero,
 .location-hero {

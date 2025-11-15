@@ -241,14 +241,14 @@ for (const [slug, county] of Object.entries(countiesData.counties)) {
     countyCount++;
 }
 
-// Add all town pages
+// Add all town pages (now nested inside county folders)
 sitemap += `  <!-- Town Pages - ${Object.values(countiesData.counties).reduce((sum, c) => sum + c.towns.length, 0)} towns -->\n`;
 let townCount = 0;
 for (const [countySlug, county] of Object.entries(countiesData.counties)) {
     for (const town of county.towns) {
         const townSlug = slugify(town);
         sitemap += `  <url>
-    <loc>https://tradesmanfinance.co.uk/trades/locations/${townSlug}/</loc>
+    <loc>https://tradesmanfinance.co.uk/trades/locations/${countySlug}/${townSlug}/</loc>
     <lastmod>${lastmod}</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.7</priority>
