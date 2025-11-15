@@ -241,7 +241,10 @@
                         <p class="form-subtitle-industrial">No fancy talk. Just tell us what you need.</p>
                     </div>
                     
-                    <form id="contactForm" class="industrial-form">
+                    <form id="contactForm" name="contact" method="POST" data-netlify="true" class="industrial-form">
+                        <!-- Hidden field for custom email subject -->
+                        <input type="hidden" name="subject" value="New Lead from %{formName} - Tradesman Finance">
+
                         <div class="form-row-industrial">
                             <div class="form-group-industrial">
                                 <label for="name">YOUR NAME *</label>
