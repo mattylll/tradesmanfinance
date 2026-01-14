@@ -5,74 +5,114 @@
 @custom-variant dark (&:is(.dark *));
 
 :root {
+  /* ========================================
+     TRADESMAN FINANCE - BRIGHT & ENGAGING
+     Modern fintech-inspired design system
+     ======================================== */
+
+  /* Brand Colors - Vibrant & Energetic */
+  --brand-orange: #ff6b35;
+  --brand-orange-light: #ff8f66;
+  --brand-orange-dark: #e55a2b;
+  --accent-yellow: #ffd93d;
+  --accent-teal: #0ea5a5;
+
+  /* Neutral Palette - Warm & Approachable */
+  --bg-white: #ffffff;
+  --bg-warm: #fafaf8;
+  --bg-light: #f5f5f3;
+  --text-dark: #1f2937;
+  --text-secondary: #6b7280;
+  --text-muted: #9ca3af;
+  --border-light: #e5e7eb;
+
+  /* Friendly Shadows */
+  --shadow-sm: 0 1px 2px rgba(0,0,0,0.05);
+  --shadow-md: 0 4px 6px rgba(0,0,0,0.07);
+  --shadow-lg: 0 10px 25px rgba(0,0,0,0.1);
+  --shadow-xl: 0 20px 40px rgba(0,0,0,0.12);
+  --shadow-orange: 0 4px 14px rgba(255,107,53,0.25);
+  --shadow-orange-lg: 0 8px 25px rgba(255,107,53,0.3);
+
+  /* Smooth Transitions */
+  --transition-fast: 0.15s ease;
+  --transition-normal: 0.25s ease;
+  --transition-smooth: 0.3s cubic-bezier(0.4, 0, 0.2, 1);
+
+  /* Gradients */
+  --gradient-hero: linear-gradient(135deg, #ff6b35 0%, #ff8f66 100%);
+  --gradient-warm: linear-gradient(180deg, #fafaf8 0%, #ffffff 100%);
+  --gradient-orange-subtle: linear-gradient(135deg, rgba(255,107,53,0.05) 0%, rgba(255,107,53,0.02) 100%);
+
+  /* Shadcn/UI Variables - Light Theme */
   --card: oklch(1 0 0);
-  --card-foreground: oklch(0.145 0 0);
+  --card-foreground: oklch(0.16 0.01 260);
   --popover: oklch(1 0 0);
-  --popover-foreground: oklch(0.145 0 0);
-  --primary: oklch(0.205 0 0);
-  --primary-foreground: oklch(0.985 0 0);
-  --secondary: oklch(0.97 0 0);
-  --secondary-foreground: oklch(0.205 0 0);
-  --muted: oklch(0.97 0 0);
-  --muted-foreground: oklch(0.556 0 0);
-  --accent: oklch(0.97 0 0);
-  --accent-foreground: oklch(0.205 0 0);
+  --popover-foreground: oklch(0.16 0.01 260);
+  --primary: oklch(0.68 0.21 35);            /* Brand orange */
+  --primary-foreground: oklch(1 0 0);
+  --secondary: oklch(0.97 0.005 80);         /* Warm off-white */
+  --secondary-foreground: oklch(0.16 0.01 260);
+  --muted: oklch(0.97 0.005 80);
+  --muted-foreground: oklch(0.48 0.01 260);
+  --accent: oklch(0.88 0.17 85);             /* Yellow accent */
+  --accent-foreground: oklch(0.16 0.01 260);
   --destructive: oklch(0.577 0.245 27.325);
-  --destructive-foreground: oklch(0.577 0.245 27.325);
-  --border: oklch(0.922 0 0);
-  --input: oklch(0.922 0 0);
-  --ring: oklch(0.87 0 0);
-  --chart-1: oklch(0.646 0.222 41.116);
-  --chart-2: oklch(0.6 0.118 184.704);
-  --chart-3: oklch(0.398 0.07 227.392);
-  --chart-4: oklch(0.828 0.189 84.429);
-  --chart-5: oklch(0.769 0.188 70.08);
-  --radius: 0.625rem;
-  --sidebar: oklch(0.985 0 0);
-  --sidebar-foreground: oklch(0.145 0 0);
-  --sidebar-primary: oklch(0.205 0 0);
-  --sidebar-primary-foreground: oklch(0.985 0 0);
-  --sidebar-accent: oklch(0.97 0 0);
-  --sidebar-accent-foreground: oklch(0.205 0 0);
-  --sidebar-border: oklch(0.922 0 0);
-  --sidebar-ring: oklch(0.87 0 0);
+  --destructive-foreground: oklch(1 0 0);
+  --border: oklch(0.92 0.005 260);
+  --input: oklch(0.97 0.005 80);
+  --ring: oklch(0.68 0.21 35);
+  --chart-1: oklch(0.68 0.21 35);
+  --chart-2: oklch(0.88 0.17 85);
+  --chart-3: oklch(0.55 0.15 240);
+  --chart-4: oklch(0.6 0.15 180);
+  --chart-5: oklch(0.5 0.2 320);
+  --radius: 0.75rem;
+  --sidebar: oklch(0.985 0.005 80);
+  --sidebar-foreground: oklch(0.16 0.01 260);
+  --sidebar-primary: oklch(0.68 0.21 35);
+  --sidebar-primary-foreground: oklch(1 0 0);
+  --sidebar-accent: oklch(0.97 0.005 80);
+  --sidebar-accent-foreground: oklch(0.16 0.01 260);
+  --sidebar-border: oklch(0.92 0.005 260);
+  --sidebar-ring: oklch(0.68 0.21 35);
   --background: oklch(1 0 0);
-  --foreground: oklch(0.145 0 0);
+  --foreground: oklch(0.16 0.01 260);
 }
 
 .dark {
-  --background: oklch(0.145 0 0);
-  --foreground: oklch(0.985 0 0);
-  --card: oklch(0.145 0 0);
-  --card-foreground: oklch(0.985 0 0);
-  --popover: oklch(0.145 0 0);
-  --popover-foreground: oklch(0.985 0 0);
-  --primary: oklch(0.985 0 0);
-  --primary-foreground: oklch(0.205 0 0);
-  --secondary: oklch(0.269 0 0);
-  --secondary-foreground: oklch(0.985 0 0);
-  --muted: oklch(0.269 0 0);
-  --muted-foreground: oklch(0.708 0 0);
-  --accent: oklch(0.269 0 0);
-  --accent-foreground: oklch(0.985 0 0);
-  --destructive: oklch(0.396 0.141 25.723);
-  --destructive-foreground: oklch(0.637 0.237 25.331);
-  --border: oklch(0.269 0 0);
-  --input: oklch(0.269 0 0);
-  --ring: oklch(0.439 0 0);
-  --chart-1: oklch(0.488 0.243 264.376);
-  --chart-2: oklch(0.696 0.17 162.48);
-  --chart-3: oklch(0.769 0.188 70.08);
-  --chart-4: oklch(0.627 0.265 303.9);
-  --chart-5: oklch(0.645 0.246 16.439);
-  --sidebar: oklch(0.205 0 0);
-  --sidebar-foreground: oklch(0.985 0 0);
-  --sidebar-primary: oklch(0.488 0.243 264.376);
-  --sidebar-primary-foreground: oklch(0.985 0 0);
-  --sidebar-accent: oklch(0.269 0 0);
-  --sidebar-accent-foreground: oklch(0.985 0 0);
-  --sidebar-border: oklch(0.269 0 0);
-  --sidebar-ring: oklch(0.439 0 0);
+  --background: oklch(0.15 0 0);             /* Steel dark */
+  --foreground: oklch(0.95 0 0);
+  --card: oklch(0.18 0 0);
+  --card-foreground: oklch(0.95 0 0);
+  --popover: oklch(0.18 0 0);
+  --popover-foreground: oklch(0.95 0 0);
+  --primary: oklch(0.72 0.21 35);            /* Brighter orange for dark mode */
+  --primary-foreground: oklch(0.15 0 0);
+  --secondary: oklch(0.25 0 0);
+  --secondary-foreground: oklch(0.95 0 0);
+  --muted: oklch(0.25 0 0);
+  --muted-foreground: oklch(0.65 0 0);
+  --accent: oklch(0.88 0.17 85);             /* Safety yellow */
+  --accent-foreground: oklch(0.15 0 0);
+  --destructive: oklch(0.5 0.2 25);
+  --destructive-foreground: oklch(0.95 0 0);
+  --border: oklch(0.28 0 0);
+  --input: oklch(0.22 0 0);
+  --ring: oklch(0.72 0.21 35);               /* Orange ring */
+  --chart-1: oklch(0.72 0.21 35);            /* Orange */
+  --chart-2: oklch(0.88 0.17 85);            /* Yellow */
+  --chart-3: oklch(0.6 0.15 240);            /* Blue */
+  --chart-4: oklch(0.65 0.15 150);           /* Teal */
+  --chart-5: oklch(0.55 0.2 320);            /* Purple */
+  --sidebar: oklch(0.18 0 0);
+  --sidebar-foreground: oklch(0.95 0 0);
+  --sidebar-primary: oklch(0.72 0.21 35);
+  --sidebar-primary-foreground: oklch(0.15 0 0);
+  --sidebar-accent: oklch(0.25 0 0);
+  --sidebar-accent-foreground: oklch(0.95 0 0);
+  --sidebar-border: oklch(0.28 0 0);
+  --sidebar-ring: oklch(0.72 0.21 35);
 }
 
 .theme-login-one {
@@ -129,8 +169,9 @@
 }
 
 @theme inline {
-  --font-sans: var(--font-geist-sans);
+  --font-sans: var(--font-body);
   --font-mono: var(--font-geist-mono);
+  --font-display: var(--font-display);
   --color-background: var(--background);
   --color-foreground: var(--foreground);
   --color-card: var(--card);
@@ -195,5 +236,80 @@
   }
   body {
     @apply bg-background text-foreground;
+    font-family: var(--font-body), system-ui, sans-serif;
+  }
+
+  /* Display typography - Plus Jakarta Sans */
+  h1, h2, h3, h4, h5, h6 {
+    font-family: var(--font-display), system-ui, sans-serif;
+  }
+
+  h1 {
+    @apply text-4xl md:text-5xl lg:text-6xl font-bold tracking-tight;
+  }
+
+  h2 {
+    @apply text-3xl md:text-4xl font-bold tracking-tight;
+  }
+
+  h3 {
+    @apply text-2xl md:text-3xl font-semibold;
+  }
+}
+
+/* Bright & Engaging Utility Classes */
+@layer utilities {
+  /* Card styles */
+  .card-engaging {
+    @apply bg-white rounded-2xl border border-border shadow-md transition-all duration-300;
+  }
+
+  .card-engaging:hover {
+    @apply shadow-lg -translate-y-0.5;
+  }
+
+  /* Button styles */
+  .btn-primary {
+    background: var(--brand-orange);
+    color: white;
+    @apply rounded-xl px-6 py-3 font-semibold transition-all duration-200;
+    box-shadow: var(--shadow-orange);
+  }
+
+  .btn-primary:hover {
+    background: var(--brand-orange-dark);
+    @apply -translate-y-0.5;
+    box-shadow: var(--shadow-orange-lg);
+  }
+
+  /* Badge styles */
+  .badge-highlight {
+    background: rgba(255,107,53,0.1);
+    color: var(--brand-orange);
+    @apply rounded-full px-4 py-1.5 font-semibold text-sm;
+  }
+
+  /* Text highlight */
+  .text-highlight {
+    color: var(--brand-orange);
+  }
+
+  /* Gradient backgrounds */
+  .bg-warm-gradient {
+    background: var(--gradient-warm);
+  }
+
+  .bg-hero-gradient {
+    background: var(--gradient-hero);
+  }
+
+  /* Section spacing */
+  .section-padding {
+    @apply py-16 md:py-24;
+  }
+
+  /* Container with consistent max-width */
+  .content-container {
+    @apply container mx-auto px-4 md:px-6;
   }
 }
