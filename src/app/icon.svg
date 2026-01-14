@@ -1,0 +1,10 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 32 32">
+  <defs>
+    <pattern id="hazard" patternUnits="userSpaceOnUse" width="8" height="8" patternTransform="rotate(-45)">
+      <rect width="4" height="8" fill="#ffd93d"/>
+      <rect x="4" width="4" height="8" fill="#1a1a1a"/>
+    </pattern>
+  </defs>
+  <rect width="32" height="32" rx="4" fill="url(#hazard)"/>
+  <text x="16" y="23" text-anchor="middle" font-family="Arial Black, sans-serif" font-size="16" font-weight="900" fill="white" stroke="#1a1a1a" stroke-width="1">TF</text>
+</svg>
