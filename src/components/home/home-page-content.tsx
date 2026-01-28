@@ -86,6 +86,14 @@ export function HomePageContent() {
       stat: "0% deposit",
     },
     {
+      name: "Van Finance",
+      description: "Ford, Mercedes, VW & more - new & used",
+      icon: Truck,
+      href: "/vehicles/finance",
+      gradient: "from-[#0ea5a5] to-[#14b8a6]",
+      stat: "8+ makes",
+    },
+    {
       name: "Business Loans",
       description: "Growth, expansion, or working capital",
       icon: Building2,
