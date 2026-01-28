@@ -1,0 +1,548 @@
+{
+  "finance_settings": {
+    "apr": "9.9",
+    "terms_available": [12, 24, 36, 48, 60],
+    "popular_term": 24,
+    "min_loan": 500,
+    "max_loan": 50000,
+    "approval_rate_base": 89,
+    "decision_time": "60 seconds"
+  },
+  "contact": {
+    "phone": "0800 123 4567",
+    "email": "hello@tradesmanfinance.co.uk",
+    "address": "Tradesman Finance, Finance House, London"
+  },
+  "testimonials": [
+    {
+      "id": 1,
+      "text": "Financed my Milwaukee M18 FUEL kit through Tradesman Finance. Got approved in minutes and the tools paid for themselves in 3 weeks. Best decision I made starting out.",
+      "author": "James Thompson",
+      "trade": "electrician",
+      "location": "Manchester",
+      "brand": "milwaukee",
+      "product": "M18 FUEL Combi Drill",
+      "amount": 1850,
+      "date": "2024-11-15",
+      "business_stage": "2nd year self-employed",
+      "rating": 5
+    },
+    {
+      "id": 2,
+      "text": "Needed a Festool track saw for a big joinery contract. Couldn't afford the £550 upfront but finance meant I could buy it immediately and pay as I earned from the job. Game changer.",
+      "author": "Sarah Mitchell",
+      "trade": "carpenter",
+      "location": "Edinburgh",
+      "brand": "festool",
+      "product": "TS 55 Track Saw",
+      "amount": 550,
+      "date": "2024-10-22",
+      "business_stage": "5 years trading",
+      "rating": 5
+    },
+    {
+      "id": 3,
+      "text": "Financed my Fluke 1663 multifunction tester. As an electrician, testing equipment is essential but expensive. Spreading the cost over 24 months made it affordable and I've already done 50+ EICRs with it.",
+      "author": "David Chen",
+      "trade": "electrician",
+      "location": "Birmingham",
+      "brand": "fluke",
+      "product": "1663 Multifunction Tester",
+      "amount": 1400,
+      "date": "2024-09-18",
+      "business_stage": "Newly qualified",
+      "rating": 5
+    },
+    {
+      "id": 4,
+      "text": "Got my Transit Custom on finance including the full Sortimo racking. Van + fit-out came to £32k but at £550/month it was manageable. Been using it for 18 months now, absolutely brilliant.",
+      "author": "Mark Williams",
+      "trade": "plumber",
+      "location": "Bristol",
+      "vehicle": "ford_transit_custom",
+      "body_type": "panel_van",
+      "fitout": "sortimo",
+      "amount": 32000,
+      "date": "2023-06-10",
+      "business_stage": "8 years trading",
+      "rating": 5
+    },
+    {
+      "id": 5,
+      "text": "Financed a complete Milwaukee cordless kit - impact driver, combi drill, SDS, grinder, the lot. £2400 total but only £100/month. Couldn't run my electrical business without these tools.",
+      "author": "Rachel Foster",
+      "trade": "electrician",
+      "location": "Leeds",
+      "brand": "milwaukee",
+      "product": "M18 Complete Kit",
+      "amount": 2400,
+      "date": "2024-08-05",
+      "business_stage": "3rd year apprentice",
+      "rating": 5
+    },
+    {
+      "id": 6,
+      "text": "Needed a Megger MFT1741 to do proper testing. At £1200 it was a big investment but finance made it easy. The approval was instant and I had the tester within 2 days.",
+      "author": "Tom Anderson",
+      "trade": "electrician",
+      "location": "Glasgow",
+      "brand": "megger",
+      "product": "MFT1741",
+      "amount": 1200,
+      "date": "2024-07-12",
+      "business_stage": "10 years qualified",
+      "rating": 5
+    },
+    {
+      "id": 7,
+      "text": "Financed my DeWalt table saw and mitre saw together. £1800 total at £75/month. These tools have transformed my carpentry business - I can take on much bigger jobs now.",
+      "author": "Chris Murphy",
+      "trade": "carpenter",
+      "location": "Liverpool",
+      "brand": "dewalt",
+      "product": "Table Saw + Mitre Saw",
+      "amount": 1800,
+      "date": "2024-06-20",
+      "business_stage": "4 years trading",
+      "rating": 5
+    },
+    {
+      "id": 8,
+      "text": "Got a VW Transporter T6.1 on finance. £38k seemed scary but at £650/month over 5 years it's actually affordable. Best van I've ever had for electrical work.",
+      "author": "Paul Jackson",
+      "trade": "electrician",
+      "location": "Norwich",
+      "vehicle": "volkswagen_transporter",
+      "body_type": "panel_van",
+      "amount": 38000,
+      "date": "2023-09-15",
+      "business_stage": "15 years trading",
+      "rating": 5
+    },
+    {
+      "id": 9,
+      "text": "Financed a Rothenberger Romax press tool. £2200 is a lot but as a plumber doing new builds, it's essential. Finance at £92/month made it viable when I was just starting out.",
+      "author": "Emma Roberts",
+      "trade": "plumber",
+      "location": "Southampton",
+      "brand": "rothenberger",
+      "product": "Romax 4000",
+      "amount": 2200,
+      "date": "2024-05-08",
+      "business_stage": "Newly qualified",
+      "rating": 5
+    },
+    {
+      "id": 10,
+      "text": "Bought a complete Festool dust extraction system on finance. £1400 for the CTM MIDI seemed expensive but it's paid for itself in cleaner sites and happier customers. Worth every penny.",
+      "author": "Simon Clarke",
+      "trade": "carpenter",
+      "location": "Cambridge",
+      "brand": "festool",
+      "product": "CTM MIDI Dust Extractor",
+      "amount": 1400,
+      "date": "2024-04-15",
+      "business_stage": "7 years trading",
+      "rating": 5
+    },
+    {
+      "id": 11,
+      "text": "Financed my Ford Transit for building work. Got the chassis cab with a Bott dropside body. £28k total at £480/month. Perfect for carrying materials and the payload is excellent.",
+      "author": "Michael Brown",
+      "trade": "builder",
+      "location": "Cardiff",
+      "vehicle": "ford_transit",
+      "body_type": "dropside",
+      "amount": 28000,
+      "date": "2023-11-20",
+      "business_stage": "12 years trading",
+      "rating": 5
+    },
+    {
+      "id": 12,
+      "text": "Got approved for Milwaukee finance even though I'd only been trading 6 months. £1600 for an M18 kit at £67/month. The tools have already earned me back double that amount.",
+      "author": "Jake Wilson",
+      "trade": "electrician",
+      "location": "Newcastle",
+      "brand": "milwaukee",
+      "product": "M18 Starter Kit",
+      "amount": 1600,
+      "date": "2024-10-01",
+      "business_stage": "6 months self-employed",
+      "rating": 5
+    },
+    {
+      "id": 13,
+      "text": "Financed a Hilti breaker for groundwork. £2800 seemed a lot but spreading it over 36 months at £87/month made it manageable. Solid bit of kit, built to last.",
+      "author": "Dan Phillips",
+      "trade": "groundworker",
+      "location": "Sheffield",
+      "brand": "hilti",
+      "product": "TE 3000-AVR",
+      "amount": 2800,
+      "date": "2024-03-12",
+      "business_stage": "5 years trading",
+      "rating": 5
+    },
+    {
+      "id": 14,
+      "text": "Got my Mercedes Vito on finance for plumbing work. £34k with full racking. At £585/month it's my biggest expense but the van is brilliant - comfortable, reliable, professional image.",
+      "author": "Richard Davies",
+      "trade": "plumber",
+      "location": "Oxford",
+      "vehicle": "mercedes_vito",
+      "body_type": "panel_van",
+      "fitout": "bott",
+      "amount": 34000,
+      "date": "2023-08-22",
+      "business_stage": "20 years trading",
+      "rating": 5
+    },
+    {
+      "id": 15,
+      "text": "Financed a Bosch laser level and distance meter together. Only £450 total but as a newly qualified electrician every penny counted. Finance at £38/month made it doable.",
+      "author": "Amy Turner",
+      "trade": "electrician",
+      "location": "Brighton",
+      "brand": "bosch",
+      "product": "GCL 25 Laser + GLM 50",
+      "amount": 450,
+      "date": "2024-09-05",
+      "business_stage": "Newly qualified",
+      "rating": 5
+    },
+    {
+      "id": 16,
+      "text": "Bought a Makita cordless kit on finance. Eight tools plus batteries for £1900. At £79/month over 24 months it was affordable and I use these tools every single day on site.",
+      "author": "Lee Harris",
+      "trade": "builder",
+      "location": "Plymouth",
+      "brand": "makita",
+      "product": "DLX8 Kit",
+      "amount": 1900,
+      "date": "2024-07-28",
+      "business_stage": "6 years trading",
+      "rating": 5
+    },
+    {
+      "id": 17,
+      "text": "Financed a FLIR thermal camera for electrical fault finding. £1800 was more than I could afford upfront but at £75/month it was manageable. Found three faults in the first week that paid for the whole thing.",
+      "author": "Stuart Green",
+      "trade": "electrician",
+      "location": "Nottingham",
+      "brand": "flir",
+      "product": "E6 Thermal Camera",
+      "amount": 1800,
+      "date": "2024-06-14",
+      "business_stage": "8 years trading",
+      "rating": 5
+    },
+    {
+      "id": 18,
+      "text": "Got a Vivaro for my electrical business. £26k with basic racking at £450/month over 5 years. Good value van, does everything I need, economical to run.",
+      "author": "Craig Watson",
+      "trade": "electrician",
+      "location": "Leicester",
+      "vehicle": "vauxhall_vivaro",
+      "body_type": "panel_van",
+      "amount": 26000,
+      "date": "2023-10-08",
+      "business_stage": "4 years trading",
+      "rating": 5
+    },
+    {
+      "id": 19,
+      "text": "Financed my Testo flue gas analyser. Essential for gas work and at £900 on finance it was £38/month. Approval was instant and I had it within days. Really smooth process.",
+      "author": "Martin Hughes",
+      "trade": "gas_engineer",
+      "location": "Reading",
+      "brand": "testo",
+      "product": "Testo 310",
+      "amount": 900,
+      "date": "2024-08-19",
+      "business_stage": "12 years qualified",
+      "rating": 5
+    },
+    {
+      "id": 20,
+      "text": "Got a Festool sander and track saw package on finance. £1600 total at £67/month. As a joiner doing high-end work, these tools give me the finish quality customers expect.",
+      "author": "Peter Scott",
+      "trade": "carpenter",
+      "location": "York",
+      "brand": "festool",
+      "product": "Sander + Track Saw",
+      "amount": 1600,
+      "date": "2024-05-22",
+      "business_stage": "10 years trading",
+      "rating": 5
+    }
+  ],
+  "application_stats": {
+    "milwaukee": {
+      "num_applications": 1247,
+      "avg_purchase": 1850,
+      "avg_monthly": 77,
+      "avg_term": 24,
+      "payback_jobs": 8,
+      "payback_weeks": 4,
+      "approval_rate": 91,
+      "top_products": ["M18 FUEL Combi Drill", "M18 Impact Driver", "M12 Press Tool"],
+      "top_trades": {
+        "electrician": 45,
+        "plumber": 25,
+        "builder": 20,
+        "hvac": 10
+      }
+    },
+    "festool": {
+      "num_applications": 892,
+      "avg_purchase": 2400,
+      "avg_monthly": 100,
+      "avg_term": 24,
+      "payback_jobs": 6,
+      "payback_weeks": 3,
+      "approval_rate": 88,
+      "top_products": ["TS 55 Track Saw", "Rotex RO 150", "CTM MIDI"],
+      "top_trades": {
+        "carpenter": 60,
+        "joiner": 25,
+        "builder": 10,
+        "decorator": 5
+      }
+    },
+    "dewalt": {
+      "num_applications": 1156,
+      "avg_purchase": 1200,
+      "avg_monthly": 50,
+      "avg_term": 24,
+      "payback_jobs": 10,
+      "payback_weeks": 5,
+      "approval_rate": 90,
+      "top_products": ["DCS575 Circular Saw", "DW735 Planer", "Cordless Kit"],
+      "top_trades": {
+        "builder": 35,
+        "carpenter": 30,
+        "electrician": 20,
+        "decorator": 15
+      }
+    },
+    "makita": {
+      "num_applications": 1089,
+      "avg_purchase": 1350,
+      "avg_monthly": 56,
+      "avg_term": 24,
+      "payback_jobs": 9,
+      "payback_weeks": 5,
+      "approval_rate": 89,
+      "top_products": ["DLX2145TJ Twin Pack", "DHR263 SDS", "Cordless Kit"],
+      "top_trades": {
+        "builder": 40,
+        "carpenter": 25,
+        "electrician": 20,
+        "groundworker": 15
+      }
+    },
+    "bosch": {
+      "num_applications": 934,
+      "avg_purchase": 950,
+      "avg_monthly": 40,
+      "avg_term": 24,
+      "payback_jobs": 12,
+      "payback_weeks": 6,
+      "approval_rate": 90,
+      "top_products": ["GSR 18V Combi", "GCL 25 Laser", "Multi Tools"],
+      "top_trades": {
+        "electrician": 30,
+        "builder": 30,
+        "carpenter": 25,
+        "tiler": 15
+      }
+    },
+    "fluke": {
+      "num_applications": 567,
+      "avg_purchase": 1650,
+      "avg_monthly": 69,
+      "avg_term": 24,
+      "payback_jobs": 5,
+      "payback_weeks": 3,
+      "approval_rate": 92,
+      "top_products": ["1663 Tester", "TiS75 Thermal", "179 Multimeter"],
+      "top_trades": {
+        "electrician": 85,
+        "hvac": 10,
+        "engineer": 5
+      }
+    },
+    "megger": {
+      "num_applications": 612,
+      "avg_purchase": 1300,
+      "avg_monthly": 54,
+      "avg_term": 24,
+      "payback_jobs": 6,
+      "payback_weeks": 3,
+      "approval_rate": 91,
+      "top_products": ["MFT1741", "MIT515", "DCM340"],
+      "top_trades": {
+        "electrician": 95,
+        "engineer": 5
+      }
+    },
+    "hilti": {
+      "num_applications": 423,
+      "avg_purchase": 3200,
+      "avg_monthly": 133,
+      "avg_term": 24,
+      "payback_jobs": 4,
+      "payback_weeks": 2,
+      "approval_rate": 87,
+      "top_products": ["TE 3000-AVR", "PD-E Laser", "Cordless Tools"],
+      "top_trades": {
+        "builder": 50,
+        "groundworker": 30,
+        "electrician": 20
+      }
+    },
+    "rothenberger": {
+      "num_applications": 289,
+      "avg_purchase": 2100,
+      "avg_monthly": 88,
+      "avg_term": 24,
+      "payback_jobs": 7,
+      "payback_weeks": 4,
+      "approval_rate": 88,
+      "top_products": ["Romax 4000", "Rofrost Turbo", "Leak Detector"],
+      "top_trades": {
+        "plumber": 80,
+        "hvac": 15,
+        "gas_engineer": 5
+      }
+    },
+    "ridgid": {
+      "num_applications": 234,
+      "avg_purchase": 1900,
+      "avg_monthly": 79,
+      "avg_term": 24,
+      "payback_jobs": 8,
+      "payback_weeks": 4,
+      "approval_rate": 89,
+      "top_products": ["RP 340 Press", "SeekTech SR-20", "Pipe Tools"],
+      "top_trades": {
+        "plumber": 75,
+        "drainage": 20,
+        "hvac": 5
+      }
+    },
+    "ford_transit_custom": {
+      "num_applications": 2156,
+      "avg_purchase": 29500,
+      "avg_monthly": 510,
+      "avg_term": 48,
+      "approval_rate": 85,
+      "typical_fitout": 3500,
+      "top_trades": {
+        "electrician": 30,
+        "plumber": 25,
+        "builder": 20,
+        "hvac": 15,
+        "carpenter": 10
+      }
+    },
+    "ford_transit": {
+      "num_applications": 1845,
+      "avg_purchase": 32000,
+      "avg_monthly": 555,
+      "avg_term": 48,
+      "approval_rate": 84,
+      "typical_fitout": 4000,
+      "top_trades": {
+        "builder": 40,
+        "groundworker": 20,
+        "roofer": 15,
+        "landscaper": 15,
+        "courier": 10
+      }
+    },
+    "mercedes_sprinter": {
+      "num_applications": 892,
+      "avg_purchase": 42000,
+      "avg_monthly": 725,
+      "avg_term": 48,
+      "approval_rate": 82,
+      "typical_fitout": 5000,
+      "top_trades": {
+        "courier": 30,
+        "removals": 25,
+        "builder": 20,
+        "electrician": 15,
+        "shopfitter": 10
+      }
+    },
+    "volkswagen_transporter": {
+      "num_applications": 1234,
+      "avg_purchase": 35000,
+      "avg_monthly": 605,
+      "avg_term": 48,
+      "approval_rate": 86,
+      "typical_fitout": 4000,
+      "top_trades": {
+        "electrician": 30,
+        "plumber": 25,
+        "carpenter": 20,
+        "builder": 15,
+        "landscaper": 10
+      }
+    }
+  },
+  "trade_data": {
+    "electrician": {
+      "name": "Electrician",
+      "plural": "Electricians",
+      "typical_tool_investment": "£3,000-£8,000",
+      "essential_categories": ["multifunction_testers", "insulation_testers", "cordless_drills", "sds_drills"],
+      "qualification": "City & Guilds 2365",
+      "insurance_cost_annual": "£400-£800",
+      "typical_van": "ford_transit_custom",
+      "typical_mileage": 12000
+    },
+    "plumber": {
+      "name": "Plumber",
+      "plural": "Plumbers",
+      "typical_tool_investment": "£2,500-£6,000",
+      "essential_categories": ["press_tools", "pipe_cutters", "cordless_drills", "inspection_cameras"],
+      "qualification": "NVQ Level 3",
+      "insurance_cost_annual": "£350-£700",
+      "typical_van": "ford_transit_custom",
+      "typical_mileage": 11000
+    },
+    "builder": {
+      "name": "Builder",
+      "plural": "Builders",
+      "typical_tool_investment": "£2,000-£5,000",
+      "essential_categories": ["cordless_drills", "circular_saws", "sds_drills", "laser_levels"],
+      "qualification": "NVQ or City & Guilds",
+      "insurance_cost_annual": "£500-£1,000",
+      "typical_van": "ford_transit",
+      "typical_mileage": 13000
+    },
+    "carpenter": {
+      "name": "Carpenter",
+      "plural": "Carpenters",
+      "typical_tool_investment": "£3,000-£7,000",
+      "essential_categories": ["track_saws", "routers", "planers", "sanders"],
+      "qualification": "City & Guilds or NVQ",
+      "insurance_cost_annual": "£350-£700",
+      "typical_van": "ford_transit_custom",
+      "typical_mileage": 10000
+    },
+    "hvac": {
+      "name": "HVAC Engineer",
+      "plural": "HVAC Engineers",
+      "typical_tool_investment": "£2,500-£6,000",
+      "essential_categories": ["flue_gas_analysers", "manifolds", "vacuum_pumps", "leak_detectors"],
+      "qualification": "F-Gas certification",
+      "insurance_cost_annual": "£450-£850",
+      "typical_van": "ford_transit_custom",
+      "typical_mileage": 14000
+    }
+  }
+}

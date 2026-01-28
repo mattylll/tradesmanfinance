@@ -1,0 +1,624 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <!-- DYNAMIC META DATA -->
+    <title>{{MAKE}} {{MODEL}} Finance | Trade Van Finance | Tradesman Finance</title>
+    <meta name="description" content="{{MAKE}} {{MODEL}} finance for tradespeople. £{{PAYLOAD}} payload capacity. From £{{MONTHLY}}/month. {{BODY_TYPES}} available. Finance van + fit-out. Apply today.">
+
+    <!-- Schema Markup -->
+    <script type="application/ld+json">
+    {
+      "@context": "https://schema.org",
+      "@type": "Vehicle",
+      "brand": {
+        "@type": "Brand",
+        "name": "{{MAKE}}"
+      },
+      "model": "{{MODEL}}",
+      "vehicleConfiguration": "{{BODY_TYPE}}",
+      "offers": {
+        "@type": "Offer",
+        "price": "{{TYPICAL_PRICE}}",
+        "priceCurrency": "GBP",
+        "seller": {
+          "@type": "Organization",
+          "name": "Tradesman Finance"
+        }
+      }
+    }
+    </script>
+
+    <!-- Breadcrumbs Schema -->
+    <script type="application/ld+json">
+    {
+      "@context": "https://schema.org",
+      "@type": "BreadcrumbList",
+      "itemListElement": [{
+        "@type": "ListItem",
+        "position": 1,
+        "name": "Home",
+        "item": "https://tradesmanfinance.co.uk/"
+      },{
+        "@type": "ListItem",
+        "position": 2,
+        "name": "Vehicle Finance",
+        "item": "https://tradesmanfinance.co.uk/vehicles/finance/"
+      },{
+        "@type": "ListItem",
+        "position": 3,
+        "name": "{{MAKE}}",
+        "item": "https://tradesmanfinance.co.uk/vehicles/finance/{{MAKE_SLUG}}/"
+      },{
+        "@type": "ListItem",
+        "position": 4,
+        "name": "{{MODEL}}",
+        "item": "https://tradesmanfinance.co.uk/vehicles/finance/{{MAKE_SLUG}}/{{MODEL_SLUG}}/"
+      }]
+    }
+    </script>
+
+    <link rel="stylesheet" href="/public/css/industrial.css">
+    <link rel="canonical" href="https://tradesmanfinance.co.uk/vehicles/finance/{{MAKE_SLUG}}/{{MODEL_SLUG}}/">
+</head>
+<body>
+
+    <!-- BREADCRUMBS -->
+    <nav class="breadcrumbs" aria-label="Breadcrumb">
+        <ol>
+            <li><a href="/">Home</a></li>
+            <li><a href="/vehicles/finance/">Vehicle Finance</a></li>
+            <li><a href="/vehicles/finance/{{MAKE_SLUG}}/">{{MAKE}}</a></li>
+            <li aria-current="page">{{MODEL}}</li>
+        </ol>
+    </nav>
+
+    <!-- HERO SECTION -->
+    <section class="hero hero--vehicle">
+        <div class="container">
+            <div class="vehicle-hero-badge">{{MAKE}} {{REPUTATION}}</div>
+            <h1>{{MAKE}} {{MODEL}} Finance</h1>
+            <p class="lead">
+                Finance the {{MODEL}} from £{{MONTHLY}}/month.
+                £{{PAYLOAD}} payload • {{LOAD_SPACE}} load space • {{FUEL_ECONOMY}} MPG.
+                Perfect for {{PRIMARY_TRADES}}.
+            </p>
+
+            <!-- VEHICLE STATS BAR -->
+            <div class="stats-bar stats-bar--vehicle">
+                <div class="stat">
+                    <span class="stat__label">Price Range</span>
+                    <span class="stat__value">£{{PRICE_MIN}}-£{{PRICE_MAX}}</span>
+                </div>
+                <div class="stat">
+                    <span class="stat__label">Finance From</span>
+                    <span class="stat__value">£{{MONTHLY}}/mo</span>
+                </div>
+                <div class="stat">
+                    <span class="stat__label">Payload</span>
+                    <span class="stat__value">{{PAYLOAD}}</span>
+                </div>
+                <div class="stat">
+                    <span class="stat__label">MPG</span>
+                    <span class="stat__value">{{FUEL_ECONOMY}}</span>
+                </div>
+            </div>
+
+            <div class="hero-cta-group">
+                <a href="#calculator" class="btn btn--primary btn--large">Calculate Finance</a>
+                <a href="/apply/?vehicle={{MODEL_SLUG}}&amount={{TYPICAL_PRICE}}" class="btn btn--secondary btn--large">Apply Now</a>
+            </div>
+        </div>
+    </section>
+
+    <!-- UNIQUE VALUE: VEHICLE SPECIFICATIONS -->
+    <section class="section section--vehicle-specs">
+        <div class="container">
+            <div class="vehicle-layout">
+                <div class="vehicle-layout__image">
+                    <img src="/images/vehicles/{{VEHICLE_IMAGE}}" alt="{{MAKE}} {{MODEL}}" />
+                    <div class="vehicle-layout__badge">{{SEARCH_VOLUME}} demand</div>
+                </div>
+
+                <div class="vehicle-layout__details">
+                    <h2>{{MAKE}} {{MODEL}} Specifications</h2>
+                    <p class="vehicle-intro">{{VEHICLE_DESCRIPTION}}</p>
+
+                    <div class="vehicle-specs-grid">
+                        <div class="vehicle-spec-card">
+                            <h3>Payload & Dimensions</h3>
+                            <dl class="specs-list">
+                                <dt>Payload Capacity</dt>
+                                <dd>{{PAYLOAD}}</dd>
+                                <dt>Load Length</dt>
+                                <dd>{{LOAD_LENGTH}}</dd>
+                                <dt>Load Width</dt>
+                                <dd>{{LOAD_WIDTH}}</dd>
+                                <dt>Load Height</dt>
+                                <dd>{{LOAD_HEIGHT}}</dd>
+                            </dl>
+                        </div>
+
+                        <div class="vehicle-spec-card">
+                            <h3>Performance & Economy</h3>
+                            <dl class="specs-list">
+                                <dt>Fuel Economy</dt>
+                                <dd>{{FUEL_ECONOMY}} MPG</dd>
+                                {{#IF TOWING_CAPACITY}}
+                                <dt>Towing Capacity</dt>
+                                <dd>{{TOWING_CAPACITY}}</dd>
+                                {{/IF}}
+                                <dt>Insurance Group</dt>
+                                <dd>{{INSURANCE_GROUP}}</dd>
+                                <dt>Resale Value</dt>
+                                <dd>{{RESALE_VALUE}}</dd>
+                            </dl>
+                        </div>
+                    </div>
+
+                    <div class="vehicle-body-types">
+                        <h3>Available Body Types</h3>
+                        <div class="body-types-grid">
+                            {{#EACH BODY_TYPES}}
+                            <div class="body-type-card">
+                                <h4>{{BODY_TYPE_NAME}}</h4>
+                                <p>{{BODY_TYPE_DESCRIPTION}}</p>
+                                <a href="/vehicles/finance/body-types/{{BODY_TYPE_SLUG}}/" class="link-small">Learn more →</a>
+                            </div>
+                            {{/EACH}}
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- UNIQUE VALUE: TRADE SUITABILITY -->
+    <section class="section section--trade-suitability">
+        <div class="container">
+            <h2>Which Trades Use the {{MODEL}}?</h2>
+            <p>The {{MAKE}} {{MODEL}} is particularly suited to these trades:</p>
+
+            <div class="trade-suitability-grid">
+                {{#EACH BEST_FOR_TRADES}}
+                <div class="trade-suit-card">
+                    <div class="trade-suit-card__header">
+                        <h3>For {{TRADE_NAME}}s</h3>
+                        <span class="trade-suit-card__rating">{{SUITABILITY_RATING}}/5</span>
+                    </div>
+                    <div class="trade-suit-card__why">
+                        <strong>Why it works:</strong>
+                        <p>{{WHY_SUITABLE}}</p>
+                    </div>
+                    <div class="trade-suit-card__specs">
+                        <ul>
+                            {{#EACH TRADE_SPECIFIC_BENEFITS}}
+                            <li>{{BENEFIT}}</li>
+                            {{/EACH}}
+                        </ul>
+                    </div>
+                    <div class="trade-suit-card__fitout">
+                        <strong>Typical fit-out cost:</strong> £{{FITOUT_COST_MIN}}-£{{FITOUT_COST_MAX}}
+                    </div>
+                    <a href="/vehicles/finance/{{MAKE_SLUG}}/{{MODEL_SLUG}}/for-{{TRADE_SLUG}}/" class="btn btn--outline">
+                        {{MODEL}} for {{TRADE_NAME}}s
+                    </a>
+                </div>
+                {{/EACH}}
+            </div>
+        </div>
+    </section>
+
+    <!-- UNIQUE VALUE: RUNNING COSTS -->
+    <section class="section section--running-costs">
+        <div class="container">
+            <h2>{{MODEL}} Running Costs</h2>
+            <p>Real-world costs for running a {{MAKE}} {{MODEL}}:</p>
+
+            <div class="running-costs-breakdown">
+                <div class="cost-category">
+                    <h3>Monthly Costs</h3>
+                    <dl class="costs-list">
+                        <dt>Finance Payment</dt>
+                        <dd>£{{MONTHLY}}/month</dd>
+                        <dt>Fuel (12,000 miles/year)</dt>
+                        <dd>£{{FUEL_COST_MONTHLY}}/month</dd>
+                        <dt>Insurance (trade policy)</dt>
+                        <dd>£{{INSURANCE_MONTHLY}}/month</dd>
+                        <dt>Service & Maintenance</dt>
+                        <dd>£{{MAINTENANCE_MONTHLY}}/month</dd>
+                        <dt>Road Tax</dt>
+                        <dd>£{{TAX_MONTHLY}}/month</dd>
+                        <dt class="costs-list__total"><strong>Total Monthly</strong></dt>
+                        <dd class="costs-list__total"><strong>£{{TOTAL_MONTHLY}}/month</strong></dd>
+                    </dl>
+                </div>
+
+                <div class="cost-category">
+                    <h3>Annual Costs</h3>
+                    <dl class="costs-list">
+                        <dt>Finance ({{TERM}} month term)</dt>
+                        <dd>£{{FINANCE_ANNUAL}}/year</dd>
+                        <dt>Fuel</dt>
+                        <dd>£{{FUEL_COST_ANNUAL}}/year</dd>
+                        <dt>Insurance</dt>
+                        <dd>£{{INSURANCE_ANNUAL}}/year</dd>
+                        <dt>Service & Maintenance</dt>
+                        <dd>£{{MAINTENANCE_ANNUAL}}/year</dd>
+                        <dt>Road Tax</dt>
+                        <dd>£{{TAX_ANNUAL}}/year</dd>
+                        <dt class="costs-list__total"><strong>Total Annual</strong></dt>
+                        <dd class="costs-list__total"><strong>£{{TOTAL_ANNUAL}}/year</strong></dd>
+                    </dl>
+                </div>
+
+                <div class="cost-category cost-category--3yr">
+                    <h3>3-Year Total Cost of Ownership</h3>
+                    <dl class="costs-list">
+                        <dt>Purchase Price (financed)</dt>
+                        <dd>£{{PURCHASE_PRICE}}</dd>
+                        <dt>Interest on Finance</dt>
+                        <dd>£{{TOTAL_INTEREST}}</dd>
+                        <dt>Running Costs (3 years)</dt>
+                        <dd>£{{THREE_YEAR_RUNNING}}</dd>
+                        <dt>Resale Value (after 3 years)</dt>
+                        <dd>-£{{RESALE_3YR}}</dd>
+                        <dt class="costs-list__total"><strong>Net 3-Year Cost</strong></dt>
+                        <dd class="costs-list__total"><strong>£{{NET_3YR_COST}}</strong></dd>
+                    </dl>
+                </div>
+            </div>
+
+            <p class="cost-disclaimer">Based on {{ANNUAL_MILEAGE}} miles/year, current fuel prices, and average insurance rates for trade use. Your costs may vary.</p>
+        </div>
+    </section>
+
+    <!-- CALCULATOR SECTION -->
+    <section id="calculator" class="section section--calculator">
+        <div class="container">
+            <h2>{{MODEL}} Finance Calculator</h2>
+            <p>Calculate your monthly payments for the {{MAKE}} {{MODEL}}:</p>
+
+            <div class="calculator calculator--vehicle">
+                <div class="calculator__options">
+                    <label>
+                        <input type="radio" name="finance-type" value="van-only" checked>
+                        Van only (£{{TYPICAL_PRICE}})
+                    </label>
+                    <label>
+                        <input type="radio" name="finance-type" value="van-fitout">
+                        Van + Fit-out (£{{TYPICAL_PRICE_FITOUT}})
+                    </label>
+                </div>
+
+                <input type="range" min="{{PRICE_MIN}}" max="{{PRICE_MAX_FITOUT}}" value="{{TYPICAL_PRICE}}" id="amount">
+                <div class="calculator__display">
+                    <div class="calculator__amount">£<span id="display-amount">{{TYPICAL_PRICE}}</span></div>
+                    <div class="calculator__monthly">£<span id="display-monthly">{{MONTHLY}}</span>/month</div>
+                </div>
+                <div class="calculator__terms">
+                    <button data-term="24">24 months</button>
+                    <button data-term="36">36 months</button>
+                    <button data-term="48" class="active">48 months</button>
+                    <button data-term="60">60 months</button>
+                </div>
+                <a href="/apply/?vehicle={{MODEL_SLUG}}&amount={{TYPICAL_PRICE}}" class="btn btn--primary btn--large">
+                    Apply for {{MODEL}} Finance
+                </a>
+            </div>
+
+            <p class="calculator__disclaimer">
+                Representative example: £{{TYPICAL_PRICE}} over {{POPULAR_TERM}} months at {{APR}}% APR.
+                Total amount payable: £{{TOTAL_REPAYABLE}}. Subject to status.
+            </p>
+        </div>
+    </section>
+
+    <!-- UNIQUE VALUE: FIT-OUT CONSIDERATIONS -->
+    <section class="section section--fitout">
+        <div class="container">
+            <h2>{{MODEL}} Fit-Out Costs</h2>
+            <p>Most tradespeople add racking and equipment to their {{MODEL}}:</p>
+
+            <div class="fitout-grid">
+                {{#EACH FITOUT_OPTIONS}}
+                <div class="fitout-card">
+                    <h3>{{FITOUT_NAME}}</h3>
+                    <p class="fitout-card__for">Popular with {{TRADE_LIST}}</p>
+                    <div class="fitout-card__includes">
+                        <h4>Includes:</h4>
+                        <ul>
+                            {{#EACH ITEMS}}
+                            <li>{{ITEM_NAME}}</li>
+                            {{/EACH}}
+                        </ul>
+                    </div>
+                    <div class="fitout-card__pricing">
+                        <div class="fitout-card__cost">Fit-out cost: £{{FITOUT_COST}}</div>
+                        <div class="fitout-card__total">Van + fit-out: £{{TOTAL_WITH_VAN}}</div>
+                        <div class="fitout-card__monthly">Finance: £{{MONTHLY_WITH_FITOUT}}/month</div>
+                    </div>
+                    <p class="fitout-card__benefit"><strong>Benefit:</strong> {{BENEFIT_TEXT}}</p>
+                </div>
+                {{/EACH}}
+            </div>
+
+            <div class="fitout-note">
+                <h3>Finance Van + Fit-Out Together</h3>
+                <p>We can finance your {{MODEL}} and fit-out as a single package, spreading the total cost over {{POPULAR_TERM}} months. This is often more affordable than financing separately.</p>
+                <a href="/apply/?vehicle={{MODEL_SLUG}}&include-fitout=true" class="btn btn--primary">Apply for Complete Package</a>
+            </div>
+        </div>
+    </section>
+
+    <!-- COMPARISON WITH ALTERNATIVES -->
+    <section class="section section--alternatives">
+        <div class="container">
+            <h2>{{MODEL}} vs. Alternatives</h2>
+            <p>Compare the {{MODEL}} with similar vans:</p>
+
+            <div class="comparison-table">
+                <table>
+                    <thead>
+                        <tr>
+                            <th>Model</th>
+                            <th>Price</th>
+                            <th>Payload</th>
+                            <th>MPG</th>
+                            <th>Finance/Month</th>
+                            <th></th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr class="comparison-table__current">
+                            <td><strong>{{MAKE}} {{MODEL}}</strong></td>
+                            <td>£{{TYPICAL_PRICE}}</td>
+                            <td>{{PAYLOAD}}</td>
+                            <td>{{FUEL_ECONOMY}}</td>
+                            <td>£{{MONTHLY}}/mo</td>
+                            <td><span class="badge badge--current">Current</span></td>
+                        </tr>
+                        {{#EACH ALTERNATIVES}}
+                        <tr>
+                            <td>{{MAKE}} {{MODEL}}</td>
+                            <td>£{{PRICE}}</td>
+                            <td>{{PAYLOAD}}</td>
+                            <td>{{MPG}}</td>
+                            <td>£{{MONTHLY}}/mo</td>
+                            <td><a href="/vehicles/finance/{{MAKE_SLUG}}/{{MODEL_SLUG}}/" class="btn btn--small">View</a></td>
+                        </tr>
+                        {{/EACH}}
+                    </tbody>
+                </table>
+            </div>
+
+            <div class="alternatives-help">
+                <h3>Not sure which van is right for your trade?</h3>
+                <p>Our specialists can recommend the best vehicle for your needs and help you get the best finance deal.</p>
+                <a href="tel:{{PHONE}}" class="btn btn--secondary">Call {{PHONE}}</a>
+            </div>
+        </div>
+    </section>
+
+    <!-- TESTIMONIALS -->
+    <section class="section section--testimonials">
+        <div class="container">
+            <h2>Tradespeople Financing the {{MODEL}}</h2>
+
+            <div class="testimonial-grid">
+                {{#EACH TESTIMONIALS_VEHICLE}}
+                <div class="testimonial-card">
+                    <div class="testimonial-card__rating">★★★★★</div>
+                    <blockquote>
+                        "{{TESTIMONIAL_TEXT}}"
+                    </blockquote>
+                    <div class="testimonial-card__author">
+                        <strong>{{AUTHOR_NAME}}</strong>
+                        <span>{{TRADE_NAME}} • {{LOCATION}}</span>
+                        <span class="testimonial-card__vehicle">Financed {{MAKE}} {{MODEL}} {{BODY_TYPE}}</span>
+                        <span class="testimonial-card__fitout">+ {{FITOUT_TYPE}} fit-out</span>
+                    </div>
+                </div>
+                {{/EACH}}
+            </div>
+        </div>
+    </section>
+
+    <!-- FAQ SECTION -->
+    <section class="section section--faq">
+        <div class="container">
+            <h2>{{MODEL}} Finance FAQs</h2>
+
+            <div class="faq-list">
+                <div class="faq-item">
+                    <h3>How much does it cost to finance a {{MODEL}}?</h3>
+                    <p>The {{MAKE}} {{MODEL}} typically costs £{{PRICE_MIN}}-£{{PRICE_MAX}} depending on specification and body type. Financed over {{POPULAR_TERM}} months at {{APR}}% APR, this works out at approximately £{{MONTHLY}}/month for a standard panel van.</p>
+                </div>
+
+                <div class="faq-item">
+                    <h3>Can I finance the {{MODEL}} with racking and fit-out?</h3>
+                    <p>Yes. We can finance the complete package including the van and your racking/fit-out. For example, a {{TYPICAL_PRICE}} {{MODEL}} with £{{TYPICAL_FITOUT}} fit-out totals £{{TOTAL_WITH_TYPICAL_FITOUT}}, financed at £{{MONTHLY_WITH_TYPICAL_FITOUT}}/month.</p>
+                </div>
+
+                <div class="faq-item">
+                    <h3>What payload do I need as a {{PRIMARY_TRADE}}?</h3>
+                    <p>{{PAYLOAD_GUIDANCE}}</p>
+                </div>
+
+                <div class="faq-item">
+                    <h3>Is the {{MODEL}} reliable for trade use?</h3>
+                    <p>{{RELIABILITY_TEXT}}</p>
+                </div>
+
+                <div class="faq-item">
+                    <h3>Can I part-exchange my current van?</h3>
+                    <p>Yes. Part-exchange value can be used as a deposit, reducing your finance amount and monthly payments. A typical {{PX_AGE}}-year-old van in trade condition is worth £{{PX_VALUE_LOW}}-£{{PX_VALUE_HIGH}}.</p>
+                </div>
+
+                <div class="faq-item">
+                    <h3>How much deposit do I need for a {{MODEL}}?</h3>
+                    <p>Deposits typically range from 10-20% (£{{DEPOSIT_10}}-£{{DEPOSIT_20}}). A larger deposit reduces monthly payments - for example, a £{{DEPOSIT_EXAMPLE}} deposit reduces payments by approximately £{{MONTHLY_SAVING}}/month.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- RELATED PAGES -->
+    <section class="section section--related">
+        <div class="container">
+            <h2>Related Vehicle Finance</h2>
+
+            <div class="related-grid">
+                <div class="related-category">
+                    <h3>{{MODEL}} by Trade</h3>
+                    <ul>
+                        {{#EACH BEST_FOR_TRADES}}
+                        <li><a href="/vehicles/finance/{{MAKE_SLUG}}/{{MODEL_SLUG}}/for-{{TRADE_SLUG}}/">{{MODEL}} for {{TRADE_NAME}}s</a></li>
+                        {{/EACH}}
+                    </ul>
+                </div>
+
+                <div class="related-category">
+                    <h3>Other {{MAKE}} Models</h3>
+                    <ul>
+                        {{#EACH OTHER_MAKE_MODELS}}
+                        <li><a href="/vehicles/finance/{{MAKE_SLUG}}/{{MODEL_SLUG}}/">{{MODEL_NAME}}</a> - from £{{MONTHLY}}/mo</li>
+                        {{/EACH}}
+                    </ul>
+                    <a href="/vehicles/finance/{{MAKE_SLUG}}/">All {{MAKE}} finance →</a>
+                </div>
+
+                <div class="related-category">
+                    <h3>Compare Similar Vans</h3>
+                    <ul>
+                        {{#EACH COMPETITOR_MODELS}}
+                        <li><a href="/vehicles/finance/{{MAKE_SLUG}}/{{MODEL_SLUG}}/">{{MAKE}} {{MODEL}}</a> - from £{{MONTHLY}}/mo</li>
+                        {{/EACH}}
+                    </ul>
+                </div>
+            </div>
+
+            <p><a href="/vehicles/finance/">← Back to All Vehicle Finance</a></p>
+        </div>
+    </section>
+
+    <!-- FINAL CTA -->
+    <section class="section section--cta">
+        <div class="container">
+            <div class="cta-final">
+                <h2>Ready to Finance Your {{MAKE}} {{MODEL}}?</h2>
+                <p>Finance from £{{MONTHLY}}/month. Van + fit-out packages available. Apply in 60 seconds.</p>
+                <div class="cta-final__buttons">
+                    <a href="/apply/?vehicle={{MODEL_SLUG}}&amount={{TYPICAL_PRICE}}" class="btn btn--primary btn--large">Apply Now</a>
+                    <a href="tel:{{PHONE}}" class="btn btn--secondary btn--large">Call {{PHONE}}</a>
+                </div>
+                <p class="cta-final__disclaimer">
+                    Representative {{APR}}% APR. Subject to status.
+                </p>
+            </div>
+        </div>
+    </section>
+
+    <script src="/public/js/calculator.js"></script>
+    <script src="/public/js/vehicle-calculator.js"></script>
+</body>
+</html>
+
+<!--
+    VEHICLE MODEL PAGE TEMPLATE VARIABLES:
+    ======================================
+
+    VEHICLE BASICS:
+    - {{MAKE}} - e.g., "Ford"
+    - {{MAKE_SLUG}} - e.g., "ford"
+    - {{MODEL}} - e.g., "Transit Custom"
+    - {{MODEL_SLUG}} - e.g., "transit-custom"
+    - {{REPUTATION}} - e.g., "Most popular trade van"
+    - {{VEHICLE_DESCRIPTION}} - Detailed description
+    - {{VEHICLE_IMAGE}} - Image filename
+
+    PRICING:
+    - {{PRICE_MIN}}, {{PRICE_MAX}} - Price range
+    - {{TYPICAL_PRICE}} - Most common price
+    - {{TYPICAL_PRICE_FITOUT}} - Price with average fit-out
+    - {{MONTHLY}} - Monthly payment
+    - {{TOTAL_REPAYABLE}} - Total over term
+    - {{APR}}, {{POPULAR_TERM}} - Finance terms
+
+    SPECIFICATIONS:
+    - {{PAYLOAD}} - e.g., "1000-1355kg"
+    - {{LOAD_LENGTH}}, {{LOAD_WIDTH}}, {{LOAD_HEIGHT}} - Dimensions
+    - {{LOAD_SPACE}} - Summary (e.g., "2.5m x 1.6m")
+    - {{FUEL_ECONOMY}} - MPG
+    - {{TOWING_CAPACITY}} - If applicable
+    - {{INSURANCE_GROUP}} - Insurance group
+    - {{RESALE_VALUE}} - e.g., "Excellent"
+
+    BODY TYPES (array):
+    - {{BODY_TYPES}}
+      - {{BODY_TYPE_NAME}}
+      - {{BODY_TYPE_DESCRIPTION}}
+      - {{BODY_TYPE_SLUG}}
+
+    TRADE SUITABILITY (array):
+    - {{BEST_FOR_TRADES}}
+      - {{TRADE_NAME}}, {{TRADE_SLUG}}
+      - {{SUITABILITY_RATING}} - Out of 5
+      - {{WHY_SUITABLE}} - Why it works for this trade
+      - {{TRADE_SPECIFIC_BENEFITS}} - Array of benefits
+      - {{FITOUT_COST_MIN}}, {{FITOUT_COST_MAX}}
+    - {{PRIMARY_TRADE}}, {{PRIMARY_TRADES}} - Top trades
+
+    RUNNING COSTS:
+    - {{MONTHLY}} - Finance payment
+    - {{FUEL_COST_MONTHLY}}, {{FUEL_COST_ANNUAL}} - Fuel costs
+    - {{INSURANCE_MONTHLY}}, {{INSURANCE_ANNUAL}} - Insurance
+    - {{MAINTENANCE_MONTHLY}}, {{MAINTENANCE_ANNUAL}} - Maintenance
+    - {{TAX_MONTHLY}}, {{TAX_ANNUAL}} - Road tax
+    - {{TOTAL_MONTHLY}}, {{TOTAL_ANNUAL}} - Totals
+    - {{THREE_YEAR_RUNNING}} - 3-year running costs
+    - {{RESALE_3YR}} - Resale value after 3 years
+    - {{NET_3YR_COST}} - Net cost over 3 years
+    - {{ANNUAL_MILEAGE}} - Mileage assumption
+
+    FIT-OUT OPTIONS (array):
+    - {{FITOUT_OPTIONS}}
+      - {{FITOUT_NAME}}
+      - {{TRADE_LIST}} - Which trades use this
+      - {{ITEMS}} - What's included (array)
+      - {{FITOUT_COST}} - Cost of fit-out
+      - {{TOTAL_WITH_VAN}} - Van + fit-out total
+      - {{MONTHLY_WITH_FITOUT}} - Monthly payment
+      - {{BENEFIT_TEXT}} - Why this fit-out
+    - {{TYPICAL_FITOUT}} - Average fit-out cost
+    - {{TOTAL_WITH_TYPICAL_FITOUT}}, {{MONTHLY_WITH_TYPICAL_FITOUT}}
+
+    ALTERNATIVES (array):
+    - {{ALTERNATIVES}}
+      - {{MAKE}}, {{MODEL}}
+      - {{MAKE_SLUG}}, {{MODEL_SLUG}}
+      - {{PRICE}}, {{PAYLOAD}}, {{MPG}}, {{MONTHLY}}
+
+    FAQ DATA:
+    - {{PAYLOAD_GUIDANCE}} - Payload advice for primary trade
+    - {{RELIABILITY_TEXT}} - Reliability information
+    - {{PX_AGE}} - Typical part-ex age
+    - {{PX_VALUE_LOW}}, {{PX_VALUE_HIGH}} - Part-ex value range
+    - {{DEPOSIT_10}}, {{DEPOSIT_20}} - 10% and 20% deposits
+    - {{DEPOSIT_EXAMPLE}}, {{MONTHLY_SAVING}} - Deposit example
+
+    TESTIMONIALS (array):
+    - {{TESTIMONIALS_VEHICLE}}
+      - {{TESTIMONIAL_TEXT}}
+      - {{AUTHOR_NAME}}, {{TRADE_NAME}}, {{LOCATION}}
+      - {{BODY_TYPE}}, {{FITOUT_TYPE}}
+
+    RELATED:
+    - {{OTHER_MAKE_MODELS}} - Other models from same make
+    - {{COMPETITOR_MODELS}} - Similar vans from other makes
+
+    STANDARD:
+    - {{PHONE}}, {{SEARCH_VOLUME}}, etc.
+-->

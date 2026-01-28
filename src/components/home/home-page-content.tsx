@@ -70,6 +70,14 @@ export function HomePageContent() {
       stat: "£2k-£500k",
     },
     {
+      name: "Tool Finance",
+      description: "Finance specific brands - Milwaukee, Festool, DeWalt & more",
+      icon: Wrench,
+      href: "/tools/finance",
+      gradient: "from-[#ff6b35] to-[#ff8f5a]",
+      stat: "20+ brands",
+    },
+    {
       name: "Vehicle Finance",
       description: "Vans, trucks, and work vehicles",
       icon: Truck,
@@ -270,7 +278,7 @@ export function HomePageContent() {
             whileInView="visible"
             viewport={{ once: true, margin: "-50px" }}
             variants={staggerContainer}
-            className="grid gap-5 sm:grid-cols-2 lg:grid-cols-5"
+            className="grid gap-5 sm:grid-cols-2 lg:grid-cols-3"
           >
             {financeTypes.map((finance, index) => (
               <motion.div

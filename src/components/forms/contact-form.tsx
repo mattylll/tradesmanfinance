@@ -3,6 +3,8 @@
 import { useState } from "react";
 import { useForm } from "react-hook-form";
 import { z } from "zod";
+import { api } from "../../../convex/_generated/api";
+import { useSafeMutation } from "@/hooks/use-optional-convex";
 import { Card, CardContent, CardHeader, CardTitle, CardDescription } from "@/registry/new-york-v4/ui/card";
 import { Button } from "@/registry/new-york-v4/ui/button";
 import { Input } from "@/registry/new-york-v4/ui/input";
@@ -50,6 +52,9 @@ export function ContactForm({ className, compact = false }: ContactFormProps) {
   const [isSuccess, setIsSuccess] = useState(false);
   const [error, setError] = useState<string | null>(null);
 
+  // Convex mutation - stores contact in database (returns null if Convex not configured)
+  const createContactSubmission = useSafeMutation(api.quotes.createContactSubmission);
+
   const {
     register,
     handleSubmit,
@@ -73,21 +78,38 @@ export function ContactForm({ className, compact = false }: ContactFormProps) {
     setIsSubmitting(true);
     setError(null);
 
+    const subjectLabel = SUBJECT_OPTIONS.find((s) => s.value === data.subject)?.label || data.subject;
+
     try {
-      const result = await submitToWebhook({
+      // 1. Store in Convex database (if configured)
+      const convexResult = await createContactSubmission({
+        name: data.name,
+        email: data.email,
+        phone: data.phone || undefined,
+        subject: subjectLabel,
+        message: data.message,
+      });
+
+      if (convexResult) {
+        console.log("[Convex] Contact saved:", convexResult);
+      }
+
+      // 2. Also send to webhook (for Zapier/CRM integration)
+      const webhookResult = await submitToWebhook({
         name: data.name,
         email: data.email,
         phone: data.phone || undefined,
         formType: 'contact',
-        subject: SUBJECT_OPTIONS.find((s) => s.value === data.subject)?.label || data.subject,
+        subject: subjectLabel,
         message: data.message,
         pageUrl: getPageUrl(),
         ...getUTMParams(),
         submittedAt: new Date().toISOString(),
       });
 
-      if (!result.success) {
-        throw new Error(result.error || 'Submission failed');
+      // Success if either Convex OR webhook worked
+      if (!convexResult && !webhookResult.success) {
+        throw new Error(webhookResult.error || 'Submission failed');
       }
 
       setIsSuccess(true);

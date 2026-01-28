@@ -1,0 +1,589 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <!-- DYNAMIC META DATA -->
+    <title>{{BRAND}} Finance for {{TRADE_NAME}}s | Trade Tool Finance | Tradesman Finance</title>
+    <meta name="description" content="{{BRAND}} finance for professional {{TRADE_NAME_LOWER}}s. Finance {{POPULAR_PRODUCTS}} from £{{MONTHLY_FROM}}/month. {{APPROVAL_RATE}}% approval rate for {{TRADE_NAME_LOWER}}s. Apply in 60 seconds.">
+
+    <!-- Schema Markup -->
+    <script type="application/ld+json">
+    {
+      "@context": "https://schema.org",
+      "@type": "FinancialProduct",
+      "name": "{{BRAND}} Finance for {{TRADE_NAME}}s",
+      "description": "Finance {{BRAND}} tools specifically for {{TRADE_NAME_LOWER}} professionals",
+      "provider": {
+        "@type": "FinancialService",
+        "name": "Tradesman Finance"
+      },
+      "audience": {
+        "@type": "ProfessionalAudience",
+        "name": "{{TRADE_NAME}}",
+        "audienceType": "Trade Professional"
+      },
+      "offers": {
+        "@type": "Offer",
+        "priceRange": "£{{MIN_FINANCE}}-£{{MAX_FINANCE}}",
+        "priceCurrency": "GBP"
+      }
+    }
+    </script>
+
+    <!-- Breadcrumbs Schema -->
+    <script type="application/ld+json">
+    {
+      "@context": "https://schema.org",
+      "@type": "BreadcrumbList",
+      "itemListElement": [{
+        "@type": "ListItem",
+        "position": 1,
+        "name": "Home",
+        "item": "https://tradesmanfinance.co.uk/"
+      },{
+        "@type": "ListItem",
+        "position": 2,
+        "name": "Tool Finance",
+        "item": "https://tradesmanfinance.co.uk/tools/finance/"
+      },{
+        "@type": "ListItem",
+        "position": 3,
+        "name": "{{BRAND}}",
+        "item": "https://tradesmanfinance.co.uk/tools/finance/{{BRAND_SLUG}}/"
+      },{
+        "@type": "ListItem",
+        "position": 4,
+        "name": "For {{TRADE_NAME}}s",
+        "item": "https://tradesmanfinance.co.uk/tools/finance/{{BRAND_SLUG}}/for-{{TRADE_SLUG}}/"
+      }]
+    }
+    </script>
+
+    <link rel="stylesheet" href="/public/css/industrial.css">
+    <link rel="canonical" href="https://tradesmanfinance.co.uk/tools/finance/{{BRAND_SLUG}}/for-{{TRADE_SLUG}}/">
+</head>
+<body>
+
+    <!-- BREADCRUMBS -->
+    <nav class="breadcrumbs" aria-label="Breadcrumb">
+        <ol>
+            <li><a href="/">Home</a></li>
+            <li><a href="/tools/finance/">Tool Finance</a></li>
+            <li><a href="/tools/finance/{{BRAND_SLUG}}/">{{BRAND}}</a></li>
+            <li aria-current="page">For {{TRADE_NAME}}s</li>
+        </ol>
+    </nav>
+
+    <!-- HERO SECTION -->
+    <section class="hero hero--trade-brand">
+        <div class="container">
+            <div class="hero-badge">{{BRAND}} • {{TRADE_NAME}}s</div>
+            <h1>{{BRAND}} Finance for {{TRADE_NAME}}s</h1>
+            <p class="lead">
+                Finance {{BRAND}} {{TIER}} tools designed for {{TRADE_NAME_LOWER}} professionals.
+                From £{{MONTHLY_FROM}}/month. {{APPROVAL_RATE}}% approval rate.
+                Spread the cost of {{ESSENTIAL_TOOL_1}}, {{ESSENTIAL_TOOL_2}}, and more.
+            </p>
+
+            <!-- STATS BAR -->
+            <div class="stats-bar">
+                <div class="stat">
+                    <span class="stat__label">{{TRADE_NAME}}s Choose {{BRAND}}</span>
+                    <span class="stat__value">{{PERCENTAGE_USING}}%</span>
+                </div>
+                <div class="stat">
+                    <span class="stat__label">Average Investment</span>
+                    <span class="stat__value">£{{AVG_PURCHASE}}</span>
+                </div>
+                <div class="stat">
+                    <span class="stat__label">Typical Payment</span>
+                    <span class="stat__value">£{{AVG_MONTHLY}}/mo</span>
+                </div>
+                <div class="stat">
+                    <span class="stat__label">Approval Rate</span>
+                    <span class="stat__value">{{APPROVAL_RATE}}%</span>
+                </div>
+            </div>
+
+            <a href="#packages" class="btn btn--primary btn--large">View {{TRADE_NAME}} Packages</a>
+        </div>
+    </section>
+
+    <!-- UNIQUE VALUE: WHY {{TRADE_NAME}}S CHOOSE {{BRAND}} -->
+    <section class="section section--why-trade">
+        <div class="container">
+            <h2>Why {{TRADE_NAME}}s Choose {{BRAND}}</h2>
+
+            <div class="grid grid--3">
+                {{#EACH WHY_TRADE_CHOOSES_BRAND}}
+                <div class="card">
+                    <h3>{{REASON_TITLE}}</h3>
+                    <p>{{REASON_DESCRIPTION}}</p>
+                </div>
+                {{/EACH}}
+            </div>
+
+            <!-- UNIQUE DATA: TRADE-SPECIFIC STATS -->
+            <div class="trade-stats-box">
+                <h3>{{BRAND}} Usage Among {{TRADE_NAME}}s</h3>
+                <p>Based on {{NUM_APPLICATIONS}} applications from {{TRADE_NAME_LOWER}}s:</p>
+                <div class="trade-stats-grid">
+                    <div class="trade-stat">
+                        <div class="trade-stat__value">{{NUM_APPLICATIONS}}</div>
+                        <div class="trade-stat__label">{{TRADE_NAME}}s financed {{BRAND}}</div>
+                    </div>
+                    <div class="trade-stat">
+                        <div class="trade-stat__value">£{{AVG_PURCHASE}}</div>
+                        <div class="trade-stat__label">Average {{BRAND}} purchase</div>
+                    </div>
+                    <div class="trade-stat">
+                        <div class="trade-stat__value">{{AVG_TERM}} months</div>
+                        <div class="trade-stat__label">Most popular term</div>
+                    </div>
+                    <div class="trade-stat">
+                        <div class="trade-stat__value">{{PAYBACK_WEEKS}} weeks</div>
+                        <div class="trade-stat__label">Typical payback time</div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- UNIQUE VALUE: ESSENTIAL {{BRAND}} TOOLS FOR {{TRADE_NAME}}S -->
+    <section class="section section--essential-tools">
+        <div class="container">
+            <h2>Essential {{BRAND}} Tools for {{TRADE_NAME}}s</h2>
+            <p>The {{BRAND}} products {{TRADE_NAME_LOWER}}s actually use:</p>
+
+            <div class="tools-grid">
+                {{#EACH ESSENTIAL_TOOLS}}
+                <div class="tool-card">
+                    <div class="tool-card__category">{{CATEGORY}}</div>
+                    <h3>{{PRODUCT_NAME}}</h3>
+                    <p class="tool-card__why">{{WHY_ESSENTIAL_FOR_TRADE}}</p>
+                    <div class="tool-card__pricing">
+                        <span class="tool-card__price">£{{PRICE_MIN}}-£{{PRICE_MAX}}</span>
+                        <span class="tool-card__monthly">From £{{MONTHLY}}/month</span>
+                    </div>
+                    <div class="tool-card__usage">
+                        <strong>Used for:</strong> {{USE_CASES_TRADE}}
+                    </div>
+                    <a href="/tools/finance/{{BRAND_SLUG}}/{{PRODUCT_SLUG}}/" class="btn btn--outline">Finance This Tool</a>
+                </div>
+                {{/EACH}}
+            </div>
+        </div>
+    </section>
+
+    <!-- UNIQUE VALUE: {{TRADE_NAME}} STARTER PACKAGES -->
+    <section id="packages" class="section section--packages">
+        <div class="container">
+            <h2>{{BRAND}} Finance Packages for {{TRADE_NAME}}s</h2>
+            <p>Pre-configured kits for {{TRADE_NAME_LOWER}}s at every stage:</p>
+
+            <div class="package-comparison">
+                <!-- STARTER PACKAGE -->
+                <div class="package-tier">
+                    <div class="package-tier__header">
+                        <h3>Starter {{TRADE_NAME}} Kit</h3>
+                        <p>Perfect for newly qualified {{TRADE_NAME_LOWER}}s</p>
+                    </div>
+                    <div class="package-tier__price">
+                        <div class="package-tier__total">£{{STARTER_TOTAL}}</div>
+                        <div class="package-tier__monthly">£{{STARTER_MONTHLY}}/month</div>
+                        <div class="package-tier__term">over {{POPULAR_TERM}} months</div>
+                    </div>
+                    <div class="package-tier__contents">
+                        <h4>Includes:</h4>
+                        <ul>
+                            {{#EACH STARTER_ITEMS}}
+                            <li>{{ITEM_NAME}}</li>
+                            {{/EACH}}
+                        </ul>
+                    </div>
+                    <div class="package-tier__benefit">
+                        <strong>Why this kit:</strong> {{STARTER_WHY}}
+                    </div>
+                    <a href="/apply/?package=starter-{{TRADE_SLUG}}-{{BRAND_SLUG}}" class="btn btn--primary">Finance Starter Kit</a>
+                </div>
+
+                <!-- PROFESSIONAL PACKAGE -->
+                <div class="package-tier package-tier--featured">
+                    <div class="package-tier__badge">Most Popular</div>
+                    <div class="package-tier__header">
+                        <h3>Professional {{TRADE_NAME}} Kit</h3>
+                        <p>For established {{TRADE_NAME_LOWER}}s growing their business</p>
+                    </div>
+                    <div class="package-tier__price">
+                        <div class="package-tier__total">£{{PROFESSIONAL_TOTAL}}</div>
+                        <div class="package-tier__monthly">£{{PROFESSIONAL_MONTHLY}}/month</div>
+                        <div class="package-tier__term">over {{POPULAR_TERM}} months</div>
+                    </div>
+                    <div class="package-tier__contents">
+                        <h4>Includes:</h4>
+                        <ul>
+                            {{#EACH PROFESSIONAL_ITEMS}}
+                            <li>{{ITEM_NAME}}</li>
+                            {{/EACH}}
+                        </ul>
+                    </div>
+                    <div class="package-tier__benefit">
+                        <strong>Why this kit:</strong> {{PROFESSIONAL_WHY}}
+                    </div>
+                    <a href="/apply/?package=professional-{{TRADE_SLUG}}-{{BRAND_SLUG}}" class="btn btn--primary">Finance Professional Kit</a>
+                </div>
+
+                <!-- MASTER PACKAGE -->
+                <div class="package-tier">
+                    <div class="package-tier__header">
+                        <h3>Master {{TRADE_NAME}} Kit</h3>
+                        <p>Complete {{BRAND}} setup for established contractors</p>
+                    </div>
+                    <div class="package-tier__price">
+                        <div class="package-tier__total">£{{MASTER_TOTAL}}</div>
+                        <div class="package-tier__monthly">£{{MASTER_MONTHLY}}/month</div>
+                        <div class="package-tier__term">over {{POPULAR_TERM}} months</div>
+                    </div>
+                    <div class="package-tier__contents">
+                        <h4>Includes:</h4>
+                        <ul>
+                            {{#EACH MASTER_ITEMS}}
+                            <li>{{ITEM_NAME}}</li>
+                            {{/EACH}}
+                        </ul>
+                    </div>
+                    <div class="package-tier__benefit">
+                        <strong>Why this kit:</strong> {{MASTER_WHY}}
+                    </div>
+                    <a href="/apply/?package=master-{{TRADE_SLUG}}-{{BRAND_SLUG}}" class="btn btn--primary">Finance Master Kit</a>
+                </div>
+            </div>
+
+            <div class="package-custom">
+                <h3>Need a Custom Package?</h3>
+                <p>We can tailor a {{BRAND}} finance package to your exact needs as a {{TRADE_NAME_LOWER}}.</p>
+                <a href="tel:{{PHONE}}" class="btn btn--secondary">Call {{PHONE}}</a>
+            </div>
+        </div>
+    </section>
+
+    <!-- TRADE-SPECIFIC CONSIDERATIONS -->
+    <section class="section section--trade-considerations">
+        <div class="container">
+            <h2>Finance Considerations for {{TRADE_NAME}}s</h2>
+
+            <div class="grid grid--2">
+                <div class="consideration-card">
+                    <h3>{{QUALIFICATION_TITLE}}</h3>
+                    <p>{{QUALIFICATION_TEXT}}</p>
+                    {{#IF QUALIFICATION_TOOLS}}
+                    <div class="consideration-card__list">
+                        <strong>Required {{BRAND}} tools:</strong>
+                        <ul>
+                            {{#EACH QUALIFICATION_TOOLS}}
+                            <li>{{TOOL_NAME}} (£{{PRICE}})</li>
+                            {{/EACH}}
+                        </ul>
+                        <p><strong>Total: £{{QUALIFICATION_TOTAL}}</strong> • Finance from £{{QUALIFICATION_MONTHLY}}/mo</p>
+                    </div>
+                    {{/IF}}
+                </div>
+
+                <div class="consideration-card">
+                    <h3>Tax & VAT for {{TRADE_NAME}}s</h3>
+                    <p>{{BRAND}} tool finance is typically 100% tax deductible for {{TRADE_NAME_LOWER}}s registered as self-employed or limited companies.</p>
+                    <div class="consideration-card__example">
+                        <strong>Example:</strong><br>
+                        £{{EXAMPLE_MONTHLY}}/month finance payment<br>
+                        Tax relief at 20%: £{{EXAMPLE_RELIEF}}/month<br>
+                        <strong>Effective cost: £{{EXAMPLE_NET}}/month</strong>
+                    </div>
+                    <p class="disclaimer">Consult your accountant for advice specific to your situation.</p>
+                </div>
+
+                <div class="consideration-card">
+                    <h3>Insurance for {{TRADE_NAME}}s</h3>
+                    <p>{{INSURANCE_TEXT}}</p>
+                    <ul>
+                        <li>All-risks tool insurance: £{{INSURANCE_COST_LOW}}-£{{INSURANCE_COST_HIGH}}/year</li>
+                        <li>Public liability: Usually required</li>
+                        <li>Employers liability: If you have staff</li>
+                    </ul>
+                </div>
+
+                <div class="consideration-card">
+                    <h3>{{BRAND}} vs. Budget Brands</h3>
+                    <p>{{WHY_NOT_CHEAPER}}</p>
+                    <div class="consideration-card__comparison">
+                        <div><strong>{{BRAND}}:</strong> {{BRAND_LONGEVITY}}</div>
+                        <div><strong>Budget brands:</strong> {{BUDGET_LONGEVITY}}</div>
+                        <div class="highlight"><strong>Long-term cost:</strong> {{BRAND}} often cheaper over 5 years</div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- CALCULATOR SECTION -->
+    <section id="calculator" class="section section--calculator">
+        <div class="container">
+            <h2>{{BRAND}} Finance Calculator for {{TRADE_NAME}}s</h2>
+            <p>Calculate your monthly payments for {{BRAND}} equipment:</p>
+
+            <div class="calculator">
+                <!-- Pre-filled with typical {{TRADE_NAME}} {{BRAND}} purchase -->
+                <input type="range" min="{{MIN_FINANCE}}" max="{{MAX_FINANCE}}" value="{{AVG_PURCHASE}}" id="amount">
+                <div class="calculator__display">
+                    <div class="calculator__amount">£<span id="display-amount">{{AVG_PURCHASE}}</span></div>
+                    <div class="calculator__monthly">£<span id="display-monthly">{{AVG_MONTHLY}}</span>/month</div>
+                </div>
+                <div class="calculator__terms">
+                    <button data-term="12">12 months</button>
+                    <button data-term="24" class="active">24 months</button>
+                    <button data-term="36">36 months</button>
+                    <button data-term="60">60 months</button>
+                </div>
+                <a href="/apply/?trade={{TRADE_SLUG}}&brand={{BRAND_SLUG}}&amount={{AVG_PURCHASE}}" class="btn btn--primary btn--large">
+                    Apply for {{BRAND}} Finance
+                </a>
+            </div>
+
+            <p class="calculator__disclaimer">
+                Representative example: £{{AVG_PURCHASE}} over {{AVG_TERM}} months at {{APR}}% APR.
+                Total amount payable: £{{EXAMPLE_TOTAL}}. Subject to status.
+            </p>
+        </div>
+    </section>
+
+    <!-- TESTIMONIALS ({{TRADE_NAME}}S ONLY) -->
+    <section class="section section--testimonials">
+        <div class="container">
+            <h2>{{TRADE_NAME}}s Financing {{BRAND}}</h2>
+
+            <div class="testimonial-grid">
+                {{#EACH TESTIMONIALS_TRADE_BRAND}}
+                <div class="testimonial-card">
+                    <div class="testimonial-card__rating">★★★★★</div>
+                    <blockquote>
+                        "{{TESTIMONIAL_TEXT}}"
+                    </blockquote>
+                    <div class="testimonial-card__author">
+                        <strong>{{AUTHOR_NAME}}</strong>
+                        <span>{{TRADE_NAME}} • {{LOCATION}}</span>
+                        <span class="testimonial-card__product">Financed: {{BRAND}} {{PRODUCT}}</span>
+                        <span class="testimonial-card__business">{{BUSINESS_STAGE}}</span>
+                    </div>
+                </div>
+                {{/EACH}}
+            </div>
+
+            <div class="testimonial-cta">
+                <p><strong>Join {{NUM_TRADE_CUSTOMERS}}+ {{TRADE_NAME_LOWER}}s who've financed {{BRAND}} through us</strong></p>
+            </div>
+        </div>
+    </section>
+
+    <!-- FAQ SECTION (Trade + Brand Specific) -->
+    <section class="section section--faq">
+        <div class="container">
+            <h2>{{BRAND}} Finance FAQs for {{TRADE_NAME}}s</h2>
+
+            <div class="faq-list">
+                <div class="faq-item">
+                    <h3>What {{BRAND}} tools do {{TRADE_NAME_LOWER}}s typically finance?</h3>
+                    <p>Most {{TRADE_NAME_LOWER}}s finance {{TOP_PRODUCTS_LIST}}. The average {{BRAND}} purchase for {{TRADE_NAME_LOWER}}s is £{{AVG_PURCHASE}}, which typically includes {{TYPICAL_PACKAGE}}.</p>
+                </div>
+
+                <div class="faq-item">
+                    <h3>Can I finance {{BRAND}} tools as a newly qualified {{TRADE_NAME_LOWER}}?</h3>
+                    <p>{{NEW_TRADE_ANSWER}}</p>
+                </div>
+
+                <div class="faq-item">
+                    <h3>Do I need {{BRAND}} tools to pass my {{QUALIFICATION}}?</h3>
+                    <p>{{QUALIFICATION_ANSWER}}</p>
+                </div>
+
+                <div class="faq-item">
+                    <h3>Can I claim {{BRAND}} finance as a business expense?</h3>
+                    <p>Yes. As a self-employed {{TRADE_NAME_LOWER}} or limited company, finance payments for {{BRAND}} tools are typically 100% tax deductible. At the 20% tax rate, a £{{EXAMPLE_MONTHLY}}/month payment effectively costs £{{EXAMPLE_NET}}/month after tax relief. Consult your accountant for specific advice.</p>
+                </div>
+
+                <div class="faq-item">
+                    <h3>How do {{BRAND}} finance payments compare to renting?</h3>
+                    <p>{{RENT_VS_FINANCE}}</p>
+                </div>
+
+                <div class="faq-item">
+                    <h3>What if I'm already financing other equipment?</h3>
+                    <p>Existing finance agreements don't automatically disqualify you. We assess affordability based on your total income and outgoings. Many {{TRADE_NAME_LOWER}}s have multiple finance agreements (tools, vehicle, etc.) running simultaneously.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- RELATED PAGES -->
+    <section class="section section--related">
+        <div class="container">
+            <h2>More for {{TRADE_NAME}}s</h2>
+
+            <div class="related-grid">
+                <div class="related-category">
+                    <h3>Other Brands for {{TRADE_NAME}}s</h3>
+                    <ul>
+                        {{#EACH COMPETITOR_BRANDS_FOR_TRADE}}
+                        <li><a href="/tools/finance/{{BRAND_SLUG}}/for-{{TRADE_SLUG}}/">{{BRAND_NAME}} Finance for {{TRADE_NAME}}s</a></li>
+                        {{/EACH}}
+                    </ul>
+                    <a href="/tools/finance/for-{{TRADE_SLUG}}/">All tool finance for {{TRADE_NAME}}s →</a>
+                </div>
+
+                <div class="related-category">
+                    <h3>More {{BRAND}} Products</h3>
+                    <ul>
+                        {{#EACH TOP_BRAND_PRODUCTS}}
+                        <li><a href="/tools/finance/{{BRAND_SLUG}}/{{PRODUCT_SLUG}}/">{{PRODUCT_NAME}} Finance</a></li>
+                        {{/EACH}}
+                    </ul>
+                    <a href="/tools/finance/{{BRAND_SLUG}}/">All {{BRAND}} finance →</a>
+                </div>
+
+                <div class="related-category">
+                    <h3>Complete Your Setup</h3>
+                    <p>{{TRADE_NAME}}s also need:</p>
+                    <ul>
+                        <li><a href="/vehicles/finance/for-{{TRADE_SLUG}}/">Van Finance for {{TRADE_NAME}}s</a></li>
+                        <li><a href="/vehicles/finance/{{POPULAR_VAN}}/for-{{TRADE_SLUG}}/">{{POPULAR_VAN_NAME}} for {{TRADE_NAME}}s</a></li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- FINAL CTA -->
+    <section class="section section--cta">
+        <div class="container">
+            <div class="cta-final">
+                <h2>Ready to Finance Your {{BRAND}} Equipment?</h2>
+                <p>{{NUM_TRADE_CUSTOMERS}}+ {{TRADE_NAME_LOWER}}s approved. Finance from £{{MONTHLY_FROM}}/month. Apply in 60 seconds.</p>
+                <div class="cta-final__buttons">
+                    <a href="/apply/?trade={{TRADE_SLUG}}&brand={{BRAND_SLUG}}" class="btn btn--primary btn--large">Apply Now</a>
+                    <a href="tel:{{PHONE}}" class="btn btn--secondary btn--large">Call {{PHONE}}</a>
+                </div>
+                <p class="cta-final__disclaimer">
+                    Representative {{APR}}% APR. Subject to status.
+                </p>
+            </div>
+        </div>
+    </section>
+
+    <script src="/public/js/calculator.js"></script>
+</body>
+</html>
+
+<!--
+    TRADE-BRAND PAGE TEMPLATE VARIABLES:
+    ====================================
+
+    BRAND & TRADE BASICS:
+    - {{BRAND}} - Brand name (e.g., "Milwaukee")
+    - {{BRAND_SLUG}} - URL slug (e.g., "milwaukee")
+    - {{TIER}} - Brand tier (e.g., "Professional")
+    - {{TRADE_NAME}} - Trade name (e.g., "Electrician")
+    - {{TRADE_NAME_LOWER}} - Lowercase (e.g., "electrician")
+    - {{TRADE_SLUG}} - URL slug (e.g., "electrician")
+
+    STATS & PRICING:
+    - {{PERCENTAGE_USING}} - % of this trade using this brand
+    - {{AVG_PURCHASE}} - Average purchase for this trade
+    - {{AVG_MONTHLY}} - Average monthly payment
+    - {{AVG_TERM}} - Average term length
+    - {{MONTHLY_FROM}} - Minimum monthly payment
+    - {{APPROVAL_RATE}} - Approval rate for this trade
+    - {{MIN_FINANCE}} - Minimum finance amount
+    - {{MAX_FINANCE}} - Maximum finance amount
+    - {{PAYBACK_WEEKS}} - Typical weeks to payback
+
+    UNIQUE DATA:
+    - {{NUM_APPLICATIONS}} - Applications from this trade for this brand
+    - {{NUM_TRADE_CUSTOMERS}} - Total customers in this trade
+
+    WHY TRADE CHOOSES BRAND (array):
+    - {{WHY_TRADE_CHOOSES_BRAND}}
+      - {{REASON_TITLE}}
+      - {{REASON_DESCRIPTION}}
+
+    ESSENTIAL TOOLS (array):
+    - {{ESSENTIAL_TOOLS}} - Top tools this trade needs from this brand
+      - {{CATEGORY}}
+      - {{PRODUCT_NAME}}
+      - {{WHY_ESSENTIAL_FOR_TRADE}}
+      - {{PRICE_MIN}}, {{PRICE_MAX}}
+      - {{MONTHLY}}
+      - {{USE_CASES_TRADE}}
+      - {{PRODUCT_SLUG}}
+    - {{ESSENTIAL_TOOL_1}}, {{ESSENTIAL_TOOL_2}} - Quick reference names
+
+    PACKAGES (three tiers):
+    Starter:
+    - {{STARTER_TOTAL}} - Total package value
+    - {{STARTER_MONTHLY}} - Monthly payment
+    - {{STARTER_ITEMS}} - Array of items
+    - {{STARTER_WHY}} - Why this package
+
+    Professional:
+    - {{PROFESSIONAL_TOTAL}}
+    - {{PROFESSIONAL_MONTHLY}}
+    - {{PROFESSIONAL_ITEMS}}
+    - {{PROFESSIONAL_WHY}}
+
+    Master:
+    - {{MASTER_TOTAL}}
+    - {{MASTER_MONTHLY}}
+    - {{MASTER_ITEMS}}
+    - {{MASTER_WHY}}
+
+    TRADE CONSIDERATIONS:
+    - {{QUALIFICATION_TITLE}} - e.g., "18th Edition Compliance"
+    - {{QUALIFICATION_TEXT}} - Explanation
+    - {{QUALIFICATION_TOOLS}} - Required tools (array)
+    - {{QUALIFICATION_TOTAL}} - Total cost
+    - {{QUALIFICATION_MONTHLY}} - Monthly payment
+    - {{INSURANCE_TEXT}} - Insurance requirements
+    - {{INSURANCE_COST_LOW}}, {{INSURANCE_COST_HIGH}}
+    - {{WHY_NOT_CHEAPER}} - Why not budget brands
+    - {{BRAND_LONGEVITY}}, {{BUDGET_LONGEVITY}}
+
+    TAX EXAMPLE:
+    - {{EXAMPLE_MONTHLY}} - Example monthly payment
+    - {{EXAMPLE_RELIEF}} - Tax relief amount
+    - {{EXAMPLE_NET}} - Net cost after tax
+
+    FAQ DATA:
+    - {{TOP_PRODUCTS_LIST}} - List of top products
+    - {{TYPICAL_PACKAGE}} - What typical package includes
+    - {{NEW_TRADE_ANSWER}} - Can new trades get finance
+    - {{QUALIFICATION}} - Qualification name (e.g., "City & Guilds")
+    - {{QUALIFICATION_ANSWER}} - About qualification tools
+    - {{RENT_VS_FINANCE}} - Comparison
+
+    TESTIMONIALS (array):
+    - {{TESTIMONIALS_TRADE_BRAND}} - From this trade for this brand
+      - {{TESTIMONIAL_TEXT}}
+      - {{AUTHOR_NAME}}
+      - {{TRADE_NAME}}
+      - {{LOCATION}}
+      - {{PRODUCT}}
+      - {{BUSINESS_STAGE}} - e.g., "2nd year apprentice", "10 years trading"
+
+    RELATED:
+    - {{COMPETITOR_BRANDS_FOR_TRADE}} - Other brands this trade uses
+    - {{TOP_BRAND_PRODUCTS}} - Popular products from this brand
+    - {{POPULAR_VAN}} - Popular van slug for this trade
+    - {{POPULAR_VAN_NAME}} - Popular van name
+
+    STANDARD:
+    - {{PHONE}}, {{APR}}, {{POPULAR_TERM}}, etc.
+-->

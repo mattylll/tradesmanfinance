@@ -1,0 +1,754 @@
+{
+  "vehicles": {
+    "ford": {
+      "name": "Ford",
+      "reputation": "Most popular trade van in UK",
+      "market_share": "32%",
+      "models": {
+        "transit_custom": {
+          "name": "Transit Custom",
+          "body_types": ["panel_van", "kombi", "double_cab"],
+          "typical_price": "£25000-£38000",
+          "search_volume": "very_high",
+          "payload": "1000-1355kg",
+          "load_length": "2556-2754mm",
+          "load_width": "1570mm",
+          "load_height": "1378-1590mm",
+          "fuel_economy": "38-42 mpg",
+          "best_for_trades": ["electrician", "plumber", "builder", "hvac", "carpenter"],
+          "why_suitable": {
+            "electrician": "Perfect size for cable drums and testing equipment. Popular choice means lots of racking options.",
+            "plumber": "Excellent payload for copper pipes and fittings. Height allows for standing kit access.",
+            "builder": "Good all-rounder with enough payload for tools and materials without being too large.",
+            "hvac": "Height perfect for boilers and cylinders. Good fuel economy for distance travel.",
+            "carpenter": "Length accommodates timber up to 2.4m internally. Popular racking systems available."
+          },
+          "typical_monthly_finance": "£350-£550",
+          "insurance_group": "6E-10E",
+          "resale_value": "excellent"
+        },
+        "transit": {
+          "name": "Transit",
+          "body_types": ["panel_van", "chassis_cab", "tipper", "dropside", "luton"],
+          "typical_price": "£28000-£45000",
+          "search_volume": "very_high",
+          "payload": "1100-2180kg",
+          "load_length": "3070-4300mm",
+          "load_width": "1780mm",
+          "load_height": "1662-2032mm",
+          "fuel_economy": "34-40 mpg",
+          "best_for_trades": ["builder", "groundworker", "roofer", "landscaper", "waste_removal"],
+          "why_suitable": {
+            "builder": "High payload for materials. Multiple body types for different needs. Chassis cab perfect for bulk materials.",
+            "groundworker": "Tipper body ideal for soil and rubble. High payload capacity essential for heavy loads.",
+            "roofer": "Length accommodates long ladders and scaffolding. High roof for sheet materials.",
+            "landscaper": "Dropside/tipper variants perfect for green waste and materials. Excellent payload.",
+            "waste_removal": "Maximum payload crucial. Multiple body options. Very durable for heavy use."
+          },
+          "typical_monthly_finance": "£400-£650",
+          "insurance_group": "7E-12E",
+          "resale_value": "excellent"
+        },
+        "transit_courier": {
+          "name": "Transit Courier",
+          "body_types": ["panel_van", "kombi"],
+          "typical_price": "£16000-£22000",
+          "search_volume": "medium",
+          "payload": "590-660kg",
+          "load_length": "1620-1753mm",
+          "load_width": "1220mm",
+          "load_height": "1252mm",
+          "fuel_economy": "50-55 mpg",
+          "best_for_trades": ["mobile_mechanic", "locksmith", "handyman", "tv_aerial_installer"],
+          "why_suitable": {
+            "mobile_mechanic": "Compact for city work. Enough space for diagnostic equipment and common parts. Great fuel economy.",
+            "locksmith": "Perfect size for tools and lock stock. Easy to park in residential areas. Low running costs.",
+            "handyman": "Right size for general tools. Economical for driving between multiple small jobs.",
+            "tv_aerial_installer": "Enough space for ladders and equipment. Compact for residential access."
+          },
+          "typical_monthly_finance": "£220-£320",
+          "insurance_group": "3E-5E",
+          "resale_value": "good"
+        },
+        "transit_connect": {
+          "name": "Transit Connect",
+          "body_types": ["panel_van", "kombi"],
+          "typical_price": "£18000-£26000",
+          "search_volume": "high",
+          "payload": "620-900kg",
+          "load_length": "1753-2150mm",
+          "load_width": "1220-1510mm",
+          "load_height": "1252-1270mm",
+          "fuel_economy": "45-50 mpg",
+          "best_for_trades": ["electrician", "plumber", "window_cleaner", "pest_control"],
+          "why_suitable": {
+            "electrician": "Ideal for domestic electrician. Enough space for cable and testing kit without being oversized.",
+            "plumber": "Good payload for pipes and fittings. Compact for residential work. Affordable running costs.",
+            "window_cleaner": "Space for ladder and water fed pole system. Economical for all-day driving.",
+            "pest_control": "Secure storage for chemicals and equipment. Compact for residential access."
+          },
+          "typical_monthly_finance": "£250-£370",
+          "insurance_group": "4E-7E",
+          "resale_value": "good"
+        },
+        "ranger": {
+          "name": "Ranger",
+          "body_types": ["double_cab", "single_cab"],
+          "typical_price": "£28000-£42000",
+          "search_volume": "medium",
+          "payload": "1012-1252kg",
+          "load_length": "1560mm (dcab)",
+          "load_width": "1560mm",
+          "towing_capacity": "3500kg",
+          "fuel_economy": "30-35 mpg",
+          "best_for_trades": ["landscaper", "groundworker", "tree_surgeon", "fencer"],
+          "why_suitable": {
+            "landscaper": "4x4 capability for muddy sites. Tows large trailers. Load bed perfect for dirty equipment.",
+            "groundworker": "Off-road capability essential. Towing capacity for mini-diggers. Rugged build for site work.",
+            "tree_surgeon": "4x4 for accessing rural sites. Tows chipper. Load bed for chainsaws and equipment.",
+            "fencer": "Load bed perfect for posts and wire. 4x4 for field access. Tows materials trailer."
+          },
+          "typical_monthly_finance": "£400-£600",
+          "insurance_group": "12E-16E",
+          "resale_value": "excellent"
+        }
+      }
+    },
+    "mercedes": {
+      "name": "Mercedes-Benz",
+      "reputation": "Premium quality, excellent reliability",
+      "market_share": "14%",
+      "models": {
+        "sprinter": {
+          "name": "Sprinter",
+          "body_types": ["panel_van", "chassis_cab", "luton", "curtain_side"],
+          "typical_price": "£32000-£55000",
+          "search_volume": "high",
+          "payload": "1200-2200kg",
+          "load_length": "2427-4700mm",
+          "load_width": "1780mm",
+          "load_height": "1665-2170mm",
+          "fuel_economy": "35-40 mpg",
+          "best_for_trades": ["courier", "removals", "builder", "shopfitter", "large_electrical_contractor"],
+          "why_suitable": {
+            "courier": "Huge load volume for parcels. Excellent reliability for high mileage. Multiple length options.",
+            "removals": "Maximum internal height. Long wheelbase perfect for furniture. Premium image reassures customers.",
+            "builder": "High payload for materials. Multiple body options. Excellent build quality for heavy use.",
+            "shopfitter": "Length accommodates sheet materials. Height for secure storage. Professional image.",
+            "large_electrical_contractor": "Massive storage for cable drums and large equipment. Multiple shelving options."
+          },
+          "typical_monthly_finance": "£450-£800",
+          "insurance_group": "9E-15E",
+          "resale_value": "excellent"
+        },
+        "vito": {
+          "name": "Vito",
+          "body_types": ["panel_van", "crew_van", "kombi"],
+          "typical_price": "£26000-£38000",
+          "search_volume": "medium",
+          "payload": "900-1369kg",
+          "load_length": "2150-2600mm",
+          "load_width": "1630mm",
+          "load_height": "1391mm",
+          "fuel_economy": "40-45 mpg",
+          "best_for_trades": ["electrician", "plumber", "hvac", "security_installer"],
+          "why_suitable": {
+            "electrician": "Premium feel for high-end residential work. Excellent racking options. Reliable for daily use.",
+            "plumber": "Good payload for materials. Professional image. Comfortable for long journeys.",
+            "hvac": "Height perfect for cylinders and heat pumps. Premium reliability. Good fuel economy.",
+            "security_installer": "Secure storage for expensive equipment. Professional appearance. Good load space."
+          },
+          "typical_monthly_finance": "£370-£550",
+          "insurance_group": "7E-11E",
+          "resale_value": "excellent"
+        },
+        "citan": {
+          "name": "Citan",
+          "body_types": ["panel_van"],
+          "typical_price": "£18000-£24000",
+          "search_volume": "low",
+          "payload": "500-700kg",
+          "load_length": "1682mm",
+          "load_width": "1215mm",
+          "load_height": "1234mm",
+          "fuel_economy": "50-55 mpg",
+          "best_for_trades": ["locksmith", "mobile_mechanic", "handyman"],
+          "why_suitable": {
+            "locksmith": "Compact for city work. Premium badge. Economical running costs. Car-like to drive.",
+            "mobile_mechanic": "Space for diagnostic equipment. Easy parking. Good fuel economy for call-outs.",
+            "handyman": "Right size for tools. Premium image. Affordable to run."
+          },
+          "typical_monthly_finance": "£250-£350",
+          "insurance_group": "4E-6E",
+          "resale_value": "good"
+        }
+      }
+    },
+    "volkswagen": {
+      "name": "Volkswagen",
+      "reputation": "Premium quality, car-like driving",
+      "market_share": "10%",
+      "models": {
+        "transporter": {
+          "name": "Transporter",
+          "body_types": ["panel_van", "kombi", "caravelle"],
+          "typical_price": "£28000-£45000",
+          "search_volume": "very_high",
+          "payload": "850-1301kg",
+          "load_length": "2297-2572mm",
+          "load_width": "1700mm",
+          "load_height": "1410-1940mm",
+          "fuel_economy": "35-42 mpg",
+          "best_for_trades": ["electrician", "plumber", "carpenter", "landscaper", "high_end_builder"],
+          "why_suitable": {
+            "electrician": "Premium image for high-end domestic work. Excellent build quality. Best-in-class driving experience.",
+            "plumber": "Professional appearance. Reliable. Good resale value. Comfortable for long journeys.",
+            "carpenter": "Premium feel matches high-end joinery work. Good load space. Excellent racking options.",
+            "landscaper": "4Motion option for muddy sites. Premium image for high-end gardens. Durable build.",
+            "high_end_builder": "Premium badge reassures high-end clients. Excellent quality. Strong resale value."
+          },
+          "typical_monthly_finance": "£400-£650",
+          "insurance_group": "8E-13E",
+          "resale_value": "excellent"
+        },
+        "crafter": {
+          "name": "Crafter",
+          "body_types": ["panel_van", "chassis_cab", "luton"],
+          "typical_price": "£30000-£48000",
+          "search_volume": "medium",
+          "payload": "1100-2100kg",
+          "load_length": "2600-4300mm",
+          "load_width": "1780mm",
+          "load_height": "1636-2145mm",
+          "fuel_economy": "35-38 mpg",
+          "best_for_trades": ["builder", "removals", "courier", "large_plumbing_contractor"],
+          "why_suitable": {
+            "builder": "High payload for materials. Multiple sizes available. VW quality for reliability.",
+            "removals": "Maximum load volume. Professional image. Comfortable for long drives.",
+            "courier": "Huge capacity for parcels. Reliable for high mileage. Good fuel economy for size.",
+            "large_plumbing_contractor": "Space for bulk materials and equipment. Professional appearance. Reliable."
+          },
+          "typical_monthly_finance": "£430-£700",
+          "insurance_group": "9E-14E",
+          "resale_value": "excellent"
+        },
+        "caddy": {
+          "name": "Caddy",
+          "body_types": ["panel_van", "kombi", "maxi"],
+          "typical_price": "£20000-£28000",
+          "search_volume": "high",
+          "payload": "600-850kg",
+          "load_length": "1797-2150mm",
+          "load_width": "1172-1632mm",
+          "load_height": "1272mm",
+          "fuel_economy": "45-50 mpg",
+          "best_for_trades": ["electrician", "plumber", "locksmith", "window_fitter"],
+          "why_suitable": {
+            "electrician": "Perfect for domestic work. Car-like driving. Premium badge. Economical.",
+            "plumber": "Compact for residential streets. Professional image. Good payload for size.",
+            "locksmith": "Easy parking. Premium feel. Affordable running costs. Secure storage.",
+            "window_fitter": "Maxi version perfect for larger panes. Professional appearance. Reliable."
+          },
+          "typical_monthly_finance": "£280-£400",
+          "insurance_group": "5E-8E",
+          "resale_value": "excellent"
+        }
+      }
+    },
+    "renault": {
+      "name": "Renault",
+      "reputation": "Affordable, practical, good value",
+      "market_share": "9%",
+      "models": {
+        "trafic": {
+          "name": "Trafic",
+          "body_types": ["panel_van", "crew_van", "platform_cab"],
+          "typical_price": "£22000-£32000",
+          "search_volume": "high",
+          "payload": "900-1285kg",
+          "load_length": "2140-2940mm",
+          "load_width": "1662mm",
+          "load_height": "1387-1753mm",
+          "fuel_economy": "40-45 mpg",
+          "best_for_trades": ["builder", "electrician", "plumber", "hvac"],
+          "why_suitable": {
+            "builder": "Good value for money. Decent payload. Practical load space. Low running costs.",
+            "electrician": "Affordable option without sacrificing space. Good fuel economy. Reliable.",
+            "plumber": "Value-focused choice. Enough space for equipment. Easy to maintain.",
+            "hvac": "Affordable with good load height. Practical design. Cost-effective running."
+          },
+          "typical_monthly_finance": "£310-£460",
+          "insurance_group": "6E-10E",
+          "resale_value": "good"
+        },
+        "master": {
+          "name": "Master",
+          "body_types": ["panel_van", "chassis_cab", "luton", "dropside"],
+          "typical_price": "£24000-£38000",
+          "search_volume": "medium",
+          "payload": "1100-2100kg",
+          "load_length": "2537-4332mm",
+          "load_width": "1743-1870mm",
+          "load_height": "1668-2173mm",
+          "fuel_economy": "35-40 mpg",
+          "best_for_trades": ["builder", "courier", "removals", "groundworker"],
+          "why_suitable": {
+            "builder": "Affordable large van. Good payload options. Multiple body types available.",
+            "courier": "Cost-effective for high mileage. Large load volume. Economical running.",
+            "removals": "Budget-friendly option with good capacity. Reliable for business use.",
+            "groundworker": "Affordable chassis cab and tipper options. Good payload for materials."
+          },
+          "typical_monthly_finance": "£340-£550",
+          "insurance_group": "8E-13E",
+          "resale_value": "good"
+        },
+        "kangoo": {
+          "name": "Kangoo",
+          "body_types": ["panel_van", "maxi"],
+          "typical_price": "£16000-£22000",
+          "search_volume": "medium",
+          "payload": "500-800kg",
+          "load_length": "1200-2000mm",
+          "load_width": "1230mm",
+          "load_height": "1220mm",
+          "fuel_economy": "50-55 mpg",
+          "best_for_trades": ["mobile_mechanic", "locksmith", "handyman", "gardener"],
+          "why_suitable": {
+            "mobile_mechanic": "Budget-friendly. Decent fuel economy. Enough space for tools and parts.",
+            "locksmith": "Affordable running costs. Compact for city work. Secure storage.",
+            "handyman": "Cost-effective choice. Right size for general tools. Easy to park.",
+            "gardener": "Affordable for small business. Space for mower and tools. Good fuel economy."
+          },
+          "typical_monthly_finance": "£220-£310",
+          "insurance_group": "3E-6E",
+          "resale_value": "fair"
+        }
+      }
+    },
+    "citroen": {
+      "name": "Citroën",
+      "reputation": "Practical, comfortable, good value",
+      "market_share": "8%",
+      "models": {
+        "dispatch": {
+          "name": "Dispatch",
+          "body_types": ["panel_van", "crew_van", "platform_cab"],
+          "typical_price": "£22000-£32000",
+          "search_volume": "medium",
+          "payload": "900-1400kg",
+          "load_length": "2160-2970mm",
+          "load_width": "1630mm",
+          "load_height": "1380-1900mm",
+          "fuel_economy": "42-48 mpg",
+          "best_for_trades": ["electrician", "plumber", "builder", "decorator"],
+          "why_suitable": {
+            "electrician": "Good value. Comfortable cab. Practical load space. Good fuel economy.",
+            "plumber": "Affordable with decent payload. Comfortable for daily use. Reliable.",
+            "builder": "Value-focused. Multiple sizes available. Good load capacity.",
+            "decorator": "Comfortable for long drives to sites. Good load volume. Affordable."
+          },
+          "typical_monthly_finance": "£310-£460",
+          "insurance_group": "6E-10E",
+          "resale_value": "good"
+        },
+        "relay": {
+          "name": "Relay",
+          "body_types": ["panel_van", "chassis_cab", "luton"],
+          "typical_price": "£24000-£38000",
+          "search_volume": "low",
+          "payload": "1100-2150kg",
+          "load_length": "2670-4070mm",
+          "load_width": "1870mm",
+          "load_height": "1662-2170mm",
+          "fuel_economy": "35-40 mpg",
+          "best_for_trades": ["builder", "courier", "removals"],
+          "why_suitable": {
+            "builder": "Affordable large van option. Good payload. Practical design.",
+            "courier": "Cost-effective for parcels. Large capacity. Reliable.",
+            "removals": "Budget-friendly choice. Good load volume. Comfortable cab."
+          },
+          "typical_monthly_finance": "£340-£550",
+          "insurance_group": "8E-13E",
+          "resale_value": "fair"
+        },
+        "berlingo": {
+          "name": "Berlingo",
+          "body_types": ["panel_van", "crew_van"],
+          "typical_price": "£16000-£24000",
+          "search_volume": "medium",
+          "payload": "650-1000kg",
+          "load_length": "1817-2167mm",
+          "load_width": "1250mm",
+          "load_height": "1240mm",
+          "fuel_economy": "48-55 mpg",
+          "best_for_trades": ["electrician", "plumber", "handyman", "window_cleaner"],
+          "why_suitable": {
+            "electrician": "Affordable for starting out. Car-like driving. Decent payload. Good fuel economy.",
+            "plumber": "Budget-friendly. Compact for residential work. Economical running costs.",
+            "handyman": "Cost-effective choice. Right size for general work. Easy to park.",
+            "window_cleaner": "Affordable. Space for ladder and water system. Excellent fuel economy."
+          },
+          "typical_monthly_finance": "£220-£340",
+          "insurance_group": "4E-7E",
+          "resale_value": "good"
+        }
+      }
+    },
+    "vauxhall": {
+      "name": "Vauxhall",
+      "reputation": "British brand, affordable, practical",
+      "market_share": "12%",
+      "models": {
+        "vivaro": {
+          "name": "Vivaro",
+          "body_types": ["panel_van", "double_cab", "platform_cab"],
+          "typical_price": "£22000-£32000",
+          "search_volume": "high",
+          "payload": "900-1405kg",
+          "load_length": "2150-2950mm",
+          "load_width": "1662mm",
+          "load_height": "1387-1753mm",
+          "fuel_economy": "42-47 mpg",
+          "best_for_trades": ["electrician", "plumber", "builder", "hvac"],
+          "why_suitable": {
+            "electrician": "Popular UK choice. Good dealer network. Affordable servicing. Decent payload.",
+            "plumber": "Well-priced. Practical design. Easy to maintain. Good load space.",
+            "builder": "Value for money. Multiple sizes available. Reliable daily workhorse.",
+            "hvac": "Affordable option. Good load height. Practical interior layout."
+          },
+          "typical_monthly_finance": "£310-£460",
+          "insurance_group": "6E-10E",
+          "resale_value": "good"
+        },
+        "movano": {
+          "name": "Movano",
+          "body_types": ["panel_van", "chassis_cab", "luton", "tipper"],
+          "typical_price": "£24000-£38000",
+          "search_volume": "low",
+          "payload": "1100-2100kg",
+          "load_length": "2537-4332mm",
+          "load_width": "1870mm",
+          "load_height": "1668-2173mm",
+          "fuel_economy": "35-40 mpg",
+          "best_for_trades": ["builder", "courier", "groundworker"],
+          "why_suitable": {
+            "builder": "Affordable large van. Good payload options. Wide dealer network for servicing.",
+            "courier": "Cost-effective for parcels. Large capacity available. Economical.",
+            "groundworker": "Affordable tipper options. Good payload. Practical for site work."
+          },
+          "typical_monthly_finance": "£340-£550",
+          "insurance_group": "8E-13E",
+          "resale_value": "fair"
+        },
+        "combo": {
+          "name": "Combo",
+          "body_types": ["panel_van", "crew"],
+          "typical_price": "£16000-£24000",
+          "search_volume": "low",
+          "payload": "650-1000kg",
+          "load_length": "1817-2167mm",
+          "load_width": "1250mm",
+          "load_height": "1240mm",
+          "fuel_economy": "48-55 mpg",
+          "best_for_trades": ["electrician", "plumber", "handyman"],
+          "why_suitable": {
+            "electrician": "Affordable starting van. Compact for domestic work. Good fuel economy.",
+            "plumber": "Budget-friendly option. Decent payload for size. Easy to drive.",
+            "handyman": "Cost-effective. Right size for tools. Low running costs."
+          },
+          "typical_monthly_finance": "£220-£340",
+          "insurance_group": "4E-7E",
+          "resale_value": "fair"
+        }
+      }
+    },
+    "nissan": {
+      "name": "Nissan",
+      "reputation": "Reliable, practical, value-focused",
+      "market_share": "6%",
+      "models": {
+        "nv300": {
+          "name": "NV300",
+          "body_types": ["panel_van", "crew_van"],
+          "typical_price": "£20000-£28000",
+          "search_volume": "low",
+          "payload": "900-1200kg",
+          "load_length": "2150-2940mm",
+          "load_width": "1558mm",
+          "load_height": "1387-1753mm",
+          "fuel_economy": "40-45 mpg",
+          "best_for_trades": ["electrician", "plumber", "builder"],
+          "why_suitable": {
+            "electrician": "Good value. Reliable Nissan engineering. Practical load space.",
+            "plumber": "Affordable. Decent payload. Good fuel economy.",
+            "builder": "Value-focused choice. Reliable for daily use. Practical design."
+          },
+          "typical_monthly_finance": "£280-£400",
+          "insurance_group": "6E-9E",
+          "resale_value": "fair"
+        },
+        "nv400": {
+          "name": "NV400",
+          "body_types": ["panel_van", "chassis_cab", "dropside"],
+          "typical_price": "£23000-£36000",
+          "search_volume": "low",
+          "payload": "1100-2080kg",
+          "load_length": "2537-4332mm",
+          "load_width": "1870mm",
+          "load_height": "1668-2173mm",
+          "fuel_economy": "35-39 mpg",
+          "best_for_trades": ["builder", "courier"],
+          "why_suitable": {
+            "builder": "Affordable large van. Good payload. Reliable.",
+            "courier": "Cost-effective. Large load volume. Economical running."
+          },
+          "typical_monthly_finance": "£320-£520",
+          "insurance_group": "8E-12E",
+          "resale_value": "fair"
+        },
+        "navara": {
+          "name": "Navara",
+          "body_types": ["double_cab", "king_cab"],
+          "typical_price": "£25000-£38000",
+          "search_volume": "medium",
+          "payload": "1015-1130kg",
+          "load_length": "1578mm (dcab)",
+          "load_width": "1560mm",
+          "towing_capacity": "3500kg",
+          "fuel_economy": "32-38 mpg",
+          "best_for_trades": ["landscaper", "groundworker", "tree_surgeon"],
+          "why_suitable": {
+            "landscaper": "4x4 capability. Good towing. Load bed perfect for dirty equipment.",
+            "groundworker": "Off-road capability. Tows trailers and machinery. Rugged build.",
+            "tree_surgeon": "4x4 for access. Tows chipper. Practical load bed."
+          },
+          "typical_monthly_finance": "£350-£550",
+          "insurance_group": "11E-15E",
+          "resale_value": "good"
+        }
+      }
+    },
+    "peugeot": {
+      "name": "Peugeot",
+      "reputation": "Stylish, comfortable, good value",
+      "market_share": "7%",
+      "models": {
+        "expert": {
+          "name": "Expert",
+          "body_types": ["panel_van", "crew_van", "platform"],
+          "typical_price": "£22000-£32000",
+          "search_volume": "medium",
+          "payload": "900-1400kg",
+          "load_length": "2160-2970mm",
+          "load_width": "1630mm",
+          "load_height": "1380-1900mm",
+          "fuel_economy": "42-48 mpg",
+          "best_for_trades": ["electrician", "plumber", "builder"],
+          "why_suitable": {
+            "electrician": "Comfortable cab. Practical load space. Good value. Decent fuel economy.",
+            "plumber": "Well-equipped interior. Good payload. Affordable servicing.",
+            "builder": "Value-focused. Multiple sizes available. Reliable."
+          },
+          "typical_monthly_finance": "£310-£460",
+          "insurance_group": "6E-10E",
+          "resale_value": "good"
+        },
+        "boxer": {
+          "name": "Boxer",
+          "body_types": ["panel_van", "chassis_cab", "luton"],
+          "typical_price": "£24000-£38000",
+          "search_volume": "medium",
+          "payload": "1100-2150kg",
+          "load_length": "2670-4070mm",
+          "load_width": "1870mm",
+          "load_height": "1662-2170mm",
+          "fuel_economy": "35-40 mpg",
+          "best_for_trades": ["builder", "courier", "removals"],
+          "why_suitable": {
+            "builder": "Affordable large van. Good payload options. Comfortable cab.",
+            "courier": "Cost-effective for high mileage. Large capacity. Reliable.",
+            "removals": "Good value. Decent load volume. Practical design."
+          },
+          "typical_monthly_finance": "£340-£550",
+          "insurance_group": "8E-13E",
+          "resale_value": "good"
+        },
+        "partner": {
+          "name": "Partner",
+          "body_types": ["panel_van", "crew_van"],
+          "typical_price": "£16000-£24000",
+          "search_volume": "low",
+          "payload": "650-1000kg",
+          "load_length": "1817-2167mm",
+          "load_width": "1250mm",
+          "load_height": "1240mm",
+          "fuel_economy": "48-55 mpg",
+          "best_for_trades": ["electrician", "plumber", "handyman"],
+          "why_suitable": {
+            "electrician": "Compact and affordable. Car-like driving. Good fuel economy.",
+            "plumber": "Budget-friendly. Practical size. Economical running costs.",
+            "handyman": "Cost-effective. Right size for tools. Easy to park."
+          },
+          "typical_monthly_finance": "£220-£340",
+          "insurance_group": "4E-7E",
+          "resale_value": "fair"
+        }
+      }
+    }
+  },
+  "body_types": {
+    "panel_van": {
+      "name": "Panel Van",
+      "description": "Fully enclosed cargo area with no windows",
+      "best_for": ["electrician", "plumber", "builder", "hvac", "carpenter"],
+      "advantages": ["Secure storage", "Weather protection", "Professional appearance", "Racking friendly"],
+      "search_patterns": ["panel van finance", "[trade] panel van finance"]
+    },
+    "kombi": {
+      "name": "Kombi / Crew Van",
+      "description": "Mixed use with rear seats and cargo area",
+      "best_for": ["builder", "landscaper", "groundworker"],
+      "advantages": ["Carries crew and tools", "Versatile", "Multi-purpose", "Flexible seating"],
+      "search_patterns": ["kombi van finance", "crew van finance", "[trade] kombi finance"]
+    },
+    "chassis_cab": {
+      "name": "Chassis Cab",
+      "description": "Bare chassis for custom body fitment",
+      "best_for": ["builder", "groundworker", "waste_removal"],
+      "advantages": ["Custom body options", "Maximum flexibility", "Tipper/dropside/flatbed options", "High payload"],
+      "search_patterns": ["chassis cab finance", "tipper finance", "dropside finance"]
+    },
+    "luton": {
+      "name": "Luton Van",
+      "description": "Box body extending over cab",
+      "best_for": ["removals", "courier", "furniture_delivery"],
+      "advantages": ["Maximum internal height", "Huge load volume", "Tail lift option", "Weather protection"],
+      "search_patterns": ["luton van finance", "box van finance", "removals van finance"]
+    },
+    "pickup": {
+      "name": "Pickup Truck",
+      "description": "Open load bed with crew cab",
+      "best_for": ["landscaper", "groundworker", "tree_surgeon", "fencer"],
+      "advantages": ["4x4 capability", "Towing capacity", "Off-road ability", "Easy loading/unloading"],
+      "search_patterns": ["pickup finance", "4x4 pickup finance", "[make] pickup finance"]
+    },
+    "refrigerated": {
+      "name": "Refrigerated Van",
+      "description": "Temperature-controlled cargo area",
+      "best_for": ["caterer", "florist", "pharmaceutical"],
+      "advantages": ["Temperature control", "Food safe", "Extended range", "Professional"],
+      "search_patterns": ["fridge van finance", "refrigerated van finance", "chiller van finance"]
+    }
+  },
+  "trade_vehicle_requirements": {
+    "electrician": {
+      "ideal_payload": "800-1200kg",
+      "ideal_load_height": "1400-1600mm",
+      "key_requirements": ["Cable drum storage", "Testing equipment security", "Racking for small parts", "Step access"],
+      "popular_models": ["transit_custom", "vito", "vivaro", "transporter", "dispatch"],
+      "typical_budget": "£22000-£35000",
+      "must_haves": ["Secure locking", "Internal racking", "Adequate height"]
+    },
+    "plumber": {
+      "ideal_payload": "900-1300kg",
+      "ideal_load_height": "1400-1800mm",
+      "key_requirements": ["Pipe storage", "Boiler transport", "Tool security", "Water/dirt resistance"],
+      "popular_models": ["transit_custom", "vito", "vivaro", "transporter", "expert"],
+      "typical_budget": "£22000-£35000",
+      "must_haves": ["Good payload", "Height for cylinders", "Easy clean interior"]
+    },
+    "builder": {
+      "ideal_payload": "1000-1800kg",
+      "ideal_load_height": "1500-2000mm",
+      "key_requirements": ["High payload", "Material transport", "Durability", "Multiple sizes available"],
+      "popular_models": ["transit", "sprinter", "crafter", "movano", "boxer"],
+      "typical_budget": "£24000-£45000",
+      "must_haves": ["Maximum payload", "Durable build", "Multiple body options"]
+    },
+    "carpenter": {
+      "ideal_payload": "800-1200kg",
+      "ideal_load_height": "1400-1600mm",
+      "key_requirements": ["Length for timber", "Dust extraction compatibility", "Tool security", "Premium feel"],
+      "popular_models": ["transit_custom", "transporter", "vito", "vivaro"],
+      "typical_budget": "£25000-£38000",
+      "must_haves": ["Internal length 2.4m+", "Racking system", "Professional appearance"]
+    },
+    "hvac": {
+      "ideal_payload": "1000-1400kg",
+      "ideal_load_height": "1500-1900mm",
+      "key_requirements": ["Height for boilers", "Gas cylinder security", "Equipment protection", "Professional appearance"],
+      "popular_models": ["transit_custom", "vito", "vivaro", "expert"],
+      "typical_budget": "£24000-£36000",
+      "must_haves": ["Good height", "Secure storage", "Adequate payload"]
+    },
+    "landscaper": {
+      "ideal_payload": "1200-2000kg",
+      "ideal_load_height": "Open or high",
+      "key_requirements": ["Dirty equipment capability", "Towing capacity", "4x4 option", "Easy clean"],
+      "popular_models": ["ranger", "navara", "transit_dropside", "vivaro_platform"],
+      "typical_budget": "£25000-£42000",
+      "must_haves": ["Towing 3000kg+", "Easy clean", "4x4 capability"]
+    },
+    "groundworker": {
+      "ideal_payload": "1500-2200kg",
+      "ideal_load_height": "Tipper ideal",
+      "key_requirements": ["Maximum payload", "Tipper body", "4x4 essential", "Towing capability"],
+      "popular_models": ["transit_tipper", "ranger", "hilux", "transit_chassis"],
+      "typical_budget": "£28000-£45000",
+      "must_haves": ["Tipper body", "High payload", "4x4"]
+    },
+    "courier": {
+      "ideal_payload": "1000-1800kg",
+      "ideal_load_height": "1600-2100mm",
+      "key_requirements": ["Maximum volume", "Fuel economy", "Reliability", "Multiple compartments"],
+      "popular_models": ["sprinter", "transit", "crafter", "master"],
+      "typical_budget": "£26000-£48000",
+      "must_haves": ["Large volume", "Good MPG", "High reliability"]
+    },
+    "removals": {
+      "ideal_payload": "1200-2000kg",
+      "ideal_load_height": "2000mm+",
+      "key_requirements": ["Maximum height", "Luton body", "Tail lift", "Professional appearance"],
+      "popular_models": ["sprinter_luton", "transit_luton", "boxer_luton"],
+      "typical_budget": "£35000-£55000",
+      "must_haves": ["Luton body", "Tail lift", "Maximum height"]
+    }
+  },
+  "longtail_opportunities": {
+    "best_van_for_trade": {
+      "pattern": "best van for [trade]s",
+      "examples": ["best van for electricians", "best van for plumbers", "best van for builders"],
+      "search_volume": "medium-high",
+      "content_type": "comparison_guide",
+      "unique_value": "Expert recommendations based on trade-specific needs with finance options"
+    },
+    "trade_van_comparison": {
+      "pattern": "[van1] vs [van2] for [trade]s",
+      "examples": ["transit custom vs vito for electricians", "transporter vs vivaro for plumbers"],
+      "search_volume": "low-medium",
+      "content_type": "head_to_head",
+      "unique_value": "Direct comparison with trade-specific analysis and finance calculations"
+    },
+    "starting_trade_vehicle": {
+      "pattern": "van for starting [trade] business",
+      "examples": ["van for starting plumbing business", "best first van for electrician"],
+      "search_volume": "low",
+      "content_type": "buying_guide",
+      "unique_value": "Budget-focused with startup finance advice and total cost of ownership"
+    },
+    "payload_requirements": {
+      "pattern": "how much payload do [trade]s need",
+      "examples": ["how much payload do plumbers need", "electrician van payload requirements"],
+      "search_volume": "very_low",
+      "content_type": "technical_guide",
+      "unique_value": "Trade-specific payload calculations with equipment weight breakdowns"
+    },
+    "van_conversion": {
+      "pattern": "[van] racking for [trade]",
+      "examples": ["transit custom racking for electricians", "vivaro racking for plumbers"],
+      "search_volume": "low",
+      "content_type": "conversion_guide",
+      "unique_value": "Trade-specific fit-out advice with total project finance including conversion"
+    }
+  }
+}

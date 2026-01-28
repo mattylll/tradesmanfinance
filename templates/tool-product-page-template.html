@@ -1,0 +1,579 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <!-- DYNAMIC META DATA -->
+    <title>{{PRODUCT_NAME}} Finance | {{BRAND}} Tool Finance | Tradesman Finance</title>
+    <meta name="description" content="Finance the {{BRAND}} {{PRODUCT_NAME}} from £{{MONTHLY}}/month. {{KEY_BENEFIT}}. Typical price £{{TYPICAL_PRICE}} spread over {{POPULAR_TERM}} months. Apply today.">
+
+    <!-- Schema Markup -->
+    <script type="application/ld+json">
+    {
+      "@context": "https://schema.org",
+      "@type": "Product",
+      "name": "{{BRAND}} {{PRODUCT_NAME}}",
+      "brand": {
+        "@type": "Brand",
+        "name": "{{BRAND}}"
+      },
+      "offers": {
+        "@type": "Offer",
+        "price": "{{TYPICAL_PRICE}}",
+        "priceCurrency": "GBP",
+        "availability": "https://schema.org/InStock",
+        "seller": {
+          "@type": "Organization",
+          "name": "Tradesman Finance"
+        }
+      },
+      "description": "{{PRODUCT_DESCRIPTION}}",
+      "category": "{{CATEGORY}}"
+    }
+    </script>
+
+    <!-- Breadcrumbs Schema -->
+    <script type="application/ld+json">
+    {
+      "@context": "https://schema.org",
+      "@type": "BreadcrumbList",
+      "itemListElement": [{
+        "@type": "ListItem",
+        "position": 1,
+        "name": "Home",
+        "item": "https://tradesmanfinance.co.uk/"
+      },{
+        "@type": "ListItem",
+        "position": 2,
+        "name": "Tool Finance",
+        "item": "https://tradesmanfinance.co.uk/tools/finance/"
+      },{
+        "@type": "ListItem",
+        "position": 3,
+        "name": "{{BRAND}}",
+        "item": "https://tradesmanfinance.co.uk/tools/finance/{{BRAND_SLUG}}/"
+      },{
+        "@type": "ListItem",
+        "position": 4,
+        "name": "{{PRODUCT_NAME}}",
+        "item": "https://tradesmanfinance.co.uk/tools/finance/{{BRAND_SLUG}}/{{PRODUCT_SLUG}}/"
+      }]
+    }
+    </script>
+
+    <link rel="stylesheet" href="/public/css/industrial.css">
+    <link rel="canonical" href="https://tradesmanfinance.co.uk/tools/finance/{{BRAND_SLUG}}/{{PRODUCT_SLUG}}/">
+</head>
+<body>
+
+    <!-- BREADCRUMBS -->
+    <nav class="breadcrumbs" aria-label="Breadcrumb">
+        <ol>
+            <li><a href="/">Home</a></li>
+            <li><a href="/tools/finance/">Tool Finance</a></li>
+            <li><a href="/tools/finance/{{BRAND_SLUG}}/">{{BRAND}}</a></li>
+            <li aria-current="page">{{PRODUCT_NAME}}</li>
+        </ol>
+    </nav>
+
+    <!-- HERO SECTION -->
+    <section class="hero hero--product">
+        <div class="container">
+            <div class="product-hero-badge">{{BRAND}} {{TIER}}</div>
+            <h1>{{BRAND}} {{PRODUCT_NAME}} Finance</h1>
+            <p class="lead">
+                Finance the {{PRODUCT_NAME}} from £{{MONTHLY}}/month.
+                Typical price: £{{PRICE_MIN}}-£{{PRICE_MAX}}.
+                Spread the cost over {{TERMS}} and start earning immediately.
+            </p>
+
+            <!-- PRODUCT STATS BAR -->
+            <div class="stats-bar stats-bar--product">
+                <div class="stat">
+                    <span class="stat__label">RRP</span>
+                    <span class="stat__value">£{{TYPICAL_PRICE}}</span>
+                </div>
+                <div class="stat">
+                    <span class="stat__label">From</span>
+                    <span class="stat__value">£{{MONTHLY}}/mo</span>
+                </div>
+                <div class="stat">
+                    <span class="stat__label">Over</span>
+                    <span class="stat__value">{{POPULAR_TERM}} months</span>
+                </div>
+                <div class="stat">
+                    <span class="stat__label">Decision</span>
+                    <span class="stat__value">60 seconds</span>
+                </div>
+            </div>
+
+            <div class="hero-cta-group">
+                <a href="#calculator" class="btn btn--primary btn--large">Calculate Finance</a>
+                <a href="/apply/?product={{PRODUCT_SLUG}}&amount={{TYPICAL_PRICE}}" class="btn btn--secondary btn--large">Apply Now</a>
+            </div>
+        </div>
+    </section>
+
+    <!-- UNIQUE VALUE: PRODUCT SPECIFICATIONS -->
+    <section class="section section--specs">
+        <div class="container">
+            <div class="product-layout">
+                <div class="product-layout__image">
+                    <img src="/images/products/{{PRODUCT_IMAGE}}" alt="{{BRAND}} {{PRODUCT_NAME}}" />
+                    <div class="product-layout__image-badge">{{SEARCH_VOLUME}} demand</div>
+                </div>
+
+                <div class="product-layout__details">
+                    <h2>About the {{PRODUCT_NAME}}</h2>
+                    <p class="product-intro">{{PRODUCT_DESCRIPTION_LONG}}</p>
+
+                    <div class="product-specs">
+                        <h3>Key Specifications</h3>
+                        <dl class="specs-list">
+                            {{#EACH SPECS}}
+                            <dt>{{SPEC_NAME}}</dt>
+                            <dd>{{SPEC_VALUE}}</dd>
+                            {{/EACH}}
+                        </dl>
+                    </div>
+
+                    <div class="product-suitable-for">
+                        <h3>Ideal For</h3>
+                        <ul class="trades-list">
+                            {{#EACH SUITABLE_TRADES}}
+                            <li>
+                                <strong>{{TRADE_NAME}}s</strong>
+                                <p>{{WHY_SUITABLE}}</p>
+                            </li>
+                            {{/EACH}}
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- UNIQUE VALUE: WHY FINANCE THIS SPECIFIC PRODUCT -->
+    <section class="section section--why-finance">
+        <div class="container">
+            <h2>Why Finance the {{PRODUCT_NAME}}?</h2>
+
+            <div class="grid grid--3">
+                <div class="card">
+                    <div class="card__icon">💰</div>
+                    <h3>High Initial Investment</h3>
+                    <p>At £{{TYPICAL_PRICE}}, the {{PRODUCT_NAME}} represents a significant upfront cost. Finance lets you spread this over {{POPULAR_TERM}} months at just £{{MONTHLY}}/month.</p>
+                </div>
+
+                <div class="card">
+                    <div class="card__icon">📈</div>
+                    <h3>Fast ROI</h3>
+                    <p>{{ROI_EXPLANATION}}</p>
+                    <div class="roi-highlight">
+                        <strong>Typical payback:</strong> {{PAYBACK_JOBS}} jobs
+                    </div>
+                </div>
+
+                <div class="card">
+                    <div class="card__icon">🔧</div>
+                    <h3>Business Essential</h3>
+                    <p>{{BUSINESS_ESSENTIAL_TEXT}}</p>
+                </div>
+            </div>
+
+            <!-- UNIQUE DATA: ROI CALCULATOR FOR THIS PRODUCT -->
+            <div class="roi-calculator roi-calculator--product">
+                <h3>ROI Calculation for {{PRODUCT_NAME}}</h3>
+
+                <div class="roi-breakdown">
+                    <div class="roi-item">
+                        <span class="roi-item__label">Monthly finance payment:</span>
+                        <span class="roi-item__value">£{{MONTHLY}}</span>
+                    </div>
+                    <div class="roi-item">
+                        <span class="roi-item__label">{{CALCULATION_METRIC}}:</span>
+                        <span class="roi-item__value">{{CALCULATION_VALUE}}</span>
+                    </div>
+                    <div class="roi-item roi-item--highlight">
+                        <span class="roi-item__label">Jobs needed to cover payment:</span>
+                        <span class="roi-item__value">{{JOBS_TO_COVER}}</span>
+                    </div>
+                    <div class="roi-item">
+                        <span class="roi-item__label">Time to payback:</span>
+                        <span class="roi-item__value">{{PAYBACK_TIME}}</span>
+                    </div>
+                </div>
+
+                <p class="roi-note">Based on {{SAMPLE_SIZE}} applications for the {{PRODUCT_NAME}}</p>
+            </div>
+        </div>
+    </section>
+
+    <!-- CALCULATOR SECTION (Pre-filled with this product's price) -->
+    <section id="calculator" class="section section--calculator">
+        <div class="container">
+            <h2>{{PRODUCT_NAME}} Finance Calculator</h2>
+            <p>Calculate your monthly payments for the {{BRAND}} {{PRODUCT_NAME}}:</p>
+
+            <div class="calculator">
+                <input type="range" min="{{PRICE_MIN}}" max="{{PRICE_MAX}}" value="{{TYPICAL_PRICE}}" id="amount">
+                <div class="calculator__display">
+                    <div class="calculator__amount">£<span id="display-amount">{{TYPICAL_PRICE}}</span></div>
+                    <div class="calculator__monthly">£<span id="display-monthly">{{MONTHLY}}</span>/month</div>
+                </div>
+                <div class="calculator__terms">
+                    <button data-term="12">12 months</button>
+                    <button data-term="24" class="active">24 months</button>
+                    <button data-term="36">36 months</button>
+                    <button data-term="60">60 months</button>
+                </div>
+                <a href="/apply/?product={{PRODUCT_SLUG}}&amount={{TYPICAL_PRICE}}" class="btn btn--primary btn--large">
+                    Apply for {{PRODUCT_NAME}} Finance
+                </a>
+            </div>
+
+            <p class="calculator__disclaimer">
+                Representative example: £{{TYPICAL_PRICE}} over {{POPULAR_TERM}} months at {{APR}}% APR.
+                Total amount payable: £{{TOTAL_REPAYABLE}}. Subject to status.
+            </p>
+        </div>
+    </section>
+
+    <!-- UNIQUE VALUE: OFTEN FINANCED WITH -->
+    <section class="section section--bundles">
+        <div class="container">
+            <h2>Complete Your Kit</h2>
+            <p>Tradespeople financing the {{PRODUCT_NAME}} often add these items:</p>
+
+            <div class="bundle-grid">
+                {{#EACH OFTEN_BOUGHT_WITH}}
+                <div class="bundle-card">
+                    <h3>{{PRODUCT_NAME}}</h3>
+                    <p>{{WHY_COMBO}}</p>
+                    <div class="bundle-card__price">
+                        <span>£{{PRICE}}</span>
+                        <span class="bundle-card__monthly">+£{{MONTHLY_ADD}}/mo</span>
+                    </div>
+                    <a href="/tools/finance/{{BRAND_SLUG}}/{{PRODUCT_SLUG}}/" class="btn btn--outline">View Product</a>
+                </div>
+                {{/EACH}}
+            </div>
+
+            <div class="bundle-package">
+                <h3>Finance the Complete Package</h3>
+                <div class="bundle-package__breakdown">
+                    <div class="bundle-package__item">{{PRODUCT_NAME}}: £{{TYPICAL_PRICE}}</div>
+                    {{#EACH OFTEN_BOUGHT_WITH}}
+                    <div class="bundle-package__item">{{PRODUCT_NAME}}: £{{PRICE}}</div>
+                    {{/EACH}}
+                    <div class="bundle-package__total">
+                        <strong>Total Package Value: £{{PACKAGE_TOTAL}}</strong>
+                        <strong>Monthly Payment: £{{PACKAGE_MONTHLY}}/month</strong>
+                    </div>
+                </div>
+                <a href="/apply/?package={{PACKAGE_ID}}" class="btn btn--primary">Finance Complete Package</a>
+            </div>
+        </div>
+    </section>
+
+    <!-- UNIQUE VALUE: ALTERNATIVES & COMPARISONS -->
+    <section class="section section--alternatives">
+        <div class="container">
+            <h2>Alternative Options</h2>
+            <p>Compare the {{PRODUCT_NAME}} with similar products:</p>
+
+            <div class="comparison-table">
+                <table>
+                    <thead>
+                        <tr>
+                            <th>Product</th>
+                            <th>Price</th>
+                            <th>Finance/Month</th>
+                            <th>Key Difference</th>
+                            <th></th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr class="comparison-table__current">
+                            <td><strong>{{BRAND}} {{PRODUCT_NAME}}</strong></td>
+                            <td>£{{TYPICAL_PRICE}}</td>
+                            <td>£{{MONTHLY}}/mo</td>
+                            <td>{{KEY_SELLING_POINT}}</td>
+                            <td><span class="badge badge--current">Current</span></td>
+                        </tr>
+                        {{#EACH ALTERNATIVES}}
+                        <tr>
+                            <td>{{BRAND}} {{PRODUCT_NAME}}</td>
+                            <td>£{{PRICE}}</td>
+                            <td>£{{MONTHLY}}/mo</td>
+                            <td>{{KEY_DIFFERENCE}}</td>
+                            <td><a href="/tools/finance/{{BRAND_SLUG}}/{{PRODUCT_SLUG}}/" class="btn btn--small">View</a></td>
+                        </tr>
+                        {{/EACH}}
+                    </tbody>
+                </table>
+            </div>
+
+            <div class="alternatives-help">
+                <h3>Not sure which model is right for you?</h3>
+                <p>Our finance specialists can help you choose the best {{CATEGORY}} for your needs and budget.</p>
+                <a href="tel:{{PHONE}}" class="btn btn--secondary">Call {{PHONE}}</a>
+            </div>
+        </div>
+    </section>
+
+    <!-- USE CASES -->
+    <section class="section section--use-cases">
+        <div class="container">
+            <h2>{{PRODUCT_NAME}} in Action</h2>
+            <p>Real-world applications for the {{PRODUCT_NAME}}:</p>
+
+            <div class="use-cases-grid">
+                {{#EACH USE_CASES}}
+                <div class="use-case-card">
+                    <div class="use-case-card__trade">For {{TRADE_NAME}}s</div>
+                    <h3>{{USE_CASE_TITLE}}</h3>
+                    <p>{{USE_CASE_DESCRIPTION}}</p>
+                    <div class="use-case-card__benefit">
+                        <strong>Key benefit:</strong> {{KEY_BENEFIT}}
+                    </div>
+                </div>
+                {{/EACH}}
+            </div>
+        </div>
+    </section>
+
+    <!-- TESTIMONIALS (Filtered by this product) -->
+    <section class="section section--testimonials">
+        <div class="container">
+            <h2>Tradespeople Financing the {{PRODUCT_NAME}}</h2>
+
+            <div class="testimonial-grid">
+                {{#EACH TESTIMONIALS_PRODUCT}}
+                <div class="testimonial-card">
+                    <div class="testimonial-card__rating">★★★★★</div>
+                    <blockquote>
+                        "{{TESTIMONIAL_TEXT}}"
+                    </blockquote>
+                    <div class="testimonial-card__author">
+                        <strong>{{AUTHOR_NAME}}</strong>
+                        <span>{{TRADE_NAME}} • {{LOCATION}}</span>
+                        <span class="testimonial-card__meta">Financed {{PRODUCT_NAME}} • {{MONTHS_AGO}} months ago</span>
+                    </div>
+                </div>
+                {{/EACH}}
+            </div>
+        </div>
+    </section>
+
+    <!-- FAQ SECTION (Product-specific) -->
+    <section class="section section--faq">
+        <div class="container">
+            <h2>{{PRODUCT_NAME}} Finance FAQs</h2>
+
+            <div class="faq-list">
+                <div class="faq-item">
+                    <h3>How much will it cost to finance the {{PRODUCT_NAME}}?</h3>
+                    <p>The {{PRODUCT_NAME}} typically retails for £{{PRICE_MIN}}-£{{PRICE_MAX}}. Financed over {{POPULAR_TERM}} months at {{APR}}% APR, this works out at approximately £{{MONTHLY}}/month. The exact amount depends on the retailer price and your chosen term.</p>
+                </div>
+
+                <div class="faq-item">
+                    <h3>Is the {{PRODUCT_NAME}} worth financing?</h3>
+                    <p>{{ROI_FAQ_ANSWER}}</p>
+                </div>
+
+                <div class="faq-item">
+                    <h3>Can I finance the {{PRODUCT_NAME}} with accessories?</h3>
+                    <p>Yes. You can finance the {{PRODUCT_NAME}} along with {{COMMON_ACCESSORIES}}. Many {{MAIN_TRADE}}s finance a complete package including {{PACKAGE_ITEMS}}. Total package value around £{{PACKAGE_VALUE}}.</p>
+                </div>
+
+                <div class="faq-item">
+                    <h3>What's the warranty on the {{PRODUCT_NAME}}?</h3>
+                    <p>{{BRAND}} provides a {{WARRANTY_PERIOD}} warranty on the {{PRODUCT_NAME}}. Your finance agreement is separate and continues regardless of warranty claims.</p>
+                </div>
+
+                <div class="faq-item">
+                    <h3>Where can I buy the {{PRODUCT_NAME}} with finance?</h3>
+                    <p>Once approved (usually within 60 seconds), you can purchase from any {{BRAND}} dealer or major tool retailer. We work with suppliers nationwide to arrange delivery or collection.</p>
+                </div>
+
+                <div class="faq-item">
+                    <h3>Can I finance a used {{PRODUCT_NAME}}?</h3>
+                    <p>{{USED_POLICY}}</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- RELATED PAGES / INTERNAL LINKING -->
+    <section class="section section--related">
+        <div class="container">
+            <h2>Related {{BRAND}} Products</h2>
+
+            <div class="related-grid">
+                <!-- Same category -->
+                <div class="related-category">
+                    <h3>More {{CATEGORY}}</h3>
+                    <ul>
+                        {{#EACH RELATED_CATEGORY_PRODUCTS}}
+                        <li><a href="/tools/finance/{{BRAND_SLUG}}/{{PRODUCT_SLUG}}/">{{PRODUCT_NAME}}</a> - from £{{MONTHLY}}/mo</li>
+                        {{/EACH}}
+                    </ul>
+                    <a href="/tools/finance/{{BRAND_SLUG}}/{{CATEGORY_SLUG}}/">View all {{BRAND}} {{CATEGORY}} →</a>
+                </div>
+
+                <!-- Same trade -->
+                <div class="related-category">
+                    <h3>For {{MAIN_TRADE}}s</h3>
+                    <ul>
+                        {{#EACH RELATED_TRADE_PRODUCTS}}
+                        <li><a href="/tools/finance/{{BRAND_SLUG}}/{{PRODUCT_SLUG}}/">{{PRODUCT_NAME}}</a> - from £{{MONTHLY}}/mo</li>
+                        {{/EACH}}
+                    </ul>
+                    <a href="/tools/finance/for-{{TRADE_SLUG}}/">All tools for {{MAIN_TRADE}}s →</a>
+                </div>
+
+                <!-- Similar price point -->
+                <div class="related-category">
+                    <h3>Similar Budget (£{{PRICE_RANGE}})</h3>
+                    <ul>
+                        {{#EACH RELATED_PRICE_PRODUCTS}}
+                        <li><a href="/tools/finance/{{BRAND_SLUG}}/{{PRODUCT_SLUG}}/">{{BRAND}} {{PRODUCT_NAME}}</a> - from £{{MONTHLY}}/mo</li>
+                        {{/EACH}}
+                    </ul>
+                </div>
+            </div>
+
+            <p><a href="/tools/finance/{{BRAND_SLUG}}/">← Back to {{BRAND}} Finance</a></p>
+        </div>
+    </section>
+
+    <!-- FINAL CTA -->
+    <section class="section section--cta">
+        <div class="container">
+            <div class="cta-final">
+                <h2>Ready to Finance Your {{PRODUCT_NAME}}?</h2>
+                <p>Apply in 60 seconds. Finance from £{{MONTHLY}}/month over {{POPULAR_TERM}} months.</p>
+                <div class="cta-final__buttons">
+                    <a href="/apply/?product={{PRODUCT_SLUG}}&amount={{TYPICAL_PRICE}}" class="btn btn--primary btn--large">Apply Now</a>
+                    <a href="tel:{{PHONE}}" class="btn btn--secondary btn--large">Call {{PHONE}}</a>
+                </div>
+                <p class="cta-final__disclaimer">
+                    Representative {{APR}}% APR. Subject to status.
+                </p>
+            </div>
+        </div>
+    </section>
+
+    <script src="/public/js/calculator.js"></script>
+</body>
+</html>
+
+<!--
+    PRODUCT PAGE TEMPLATE VARIABLES:
+    ================================
+
+    PRODUCT BASICS:
+    - {{PRODUCT_NAME}} - e.g., "TS 55 Track Saw"
+    - {{PRODUCT_SLUG}} - e.g., "ts-55-track-saw"
+    - {{BRAND}} - e.g., "Festool"
+    - {{BRAND_SLUG}} - e.g., "festool"
+    - {{TIER}} - e.g., "Premium"
+    - {{CATEGORY}} - e.g., "Track Saws"
+    - {{CATEGORY_SLUG}} - e.g., "track-saws"
+
+    PRICING:
+    - {{PRICE_MIN}} - Minimum price
+    - {{PRICE_MAX}} - Maximum price
+    - {{TYPICAL_PRICE}} - Most common retail price
+    - {{MONTHLY}} - Monthly payment (typical)
+    - {{POPULAR_TERM}} - Most popular term (e.g., "24")
+    - {{TOTAL_REPAYABLE}} - Total amount over term
+    - {{APR}} - APR rate
+
+    DESCRIPTIONS:
+    - {{PRODUCT_DESCRIPTION}} - Short description
+    - {{PRODUCT_DESCRIPTION_LONG}} - Detailed description
+    - {{KEY_BENEFIT}} - Main selling point
+    - {{KEY_SELLING_POINT}} - What makes this product special
+    - {{BUSINESS_ESSENTIAL_TEXT}} - Why businesses need this
+
+    SPECIFICATIONS (array):
+    - {{SPECS}} - Array of specifications
+      - {{SPEC_NAME}} - Spec name
+      - {{SPEC_VALUE}} - Spec value
+
+    TRADE SUITABILITY (array):
+    - {{SUITABLE_TRADES}} - Which trades use this
+      - {{TRADE_NAME}} - Trade name
+      - {{TRADE_SLUG}} - Trade slug
+      - {{WHY_SUITABLE}} - Why it suits this trade
+    - {{MAIN_TRADE}} - Primary trade for this product
+    - {{TRADE_SLUG}} - Main trade slug
+
+    ROI DATA:
+    - {{ROI_EXPLANATION}} - How this tool makes money
+    - {{PAYBACK_JOBS}} - Number of jobs to pay back
+    - {{PAYBACK_TIME}} - Time to payback (e.g., "3-4 weeks")
+    - {{CALCULATION_METRIC}} - e.g., "Average job value"
+    - {{CALCULATION_VALUE}} - e.g., "£350"
+    - {{JOBS_TO_COVER}} - Jobs to cover monthly payment
+    - {{SAMPLE_SIZE}} - Number of applications analyzed
+
+    BUNDLES & ALTERNATIVES:
+    - {{OFTEN_BOUGHT_WITH}} - Complementary products array
+      - {{PRODUCT_NAME}}
+      - {{PRICE}}
+      - {{MONTHLY_ADD}}
+      - {{WHY_COMBO}}
+      - {{BRAND_SLUG}}
+      - {{PRODUCT_SLUG}}
+    - {{PACKAGE_TOTAL}} - Total package value
+    - {{PACKAGE_MONTHLY}} - Package monthly payment
+    - {{PACKAGE_ID}} - Package identifier
+
+    - {{ALTERNATIVES}} - Alternative products array
+      - {{BRAND}}
+      - {{PRODUCT_NAME}}
+      - {{PRICE}}
+      - {{MONTHLY}}
+      - {{KEY_DIFFERENCE}}
+      - {{BRAND_SLUG}}
+      - {{PRODUCT_SLUG}}
+
+    USE CASES (array):
+    - {{USE_CASES}}
+      - {{TRADE_NAME}}
+      - {{USE_CASE_TITLE}}
+      - {{USE_CASE_DESCRIPTION}}
+      - {{KEY_BENEFIT}}
+
+    TESTIMONIALS (array):
+    - {{TESTIMONIALS_PRODUCT}} - Testimonials mentioning this product
+      - {{TESTIMONIAL_TEXT}}
+      - {{AUTHOR_NAME}}
+      - {{TRADE_NAME}}
+      - {{LOCATION}}
+      - {{MONTHS_AGO}}
+
+    FAQ DATA:
+    - {{ROI_FAQ_ANSWER}} - Answer about ROI
+    - {{COMMON_ACCESSORIES}} - Common accessories
+    - {{PACKAGE_ITEMS}} - Items in typical package
+    - {{PACKAGE_VALUE}} - Typical package value
+    - {{WARRANTY_PERIOD}} - Warranty length
+    - {{USED_POLICY}} - Policy on used equipment
+
+    RELATED PRODUCTS (arrays):
+    - {{RELATED_CATEGORY_PRODUCTS}} - Same category
+    - {{RELATED_TRADE_PRODUCTS}} - Same trade
+    - {{RELATED_PRICE_PRODUCTS}} - Similar price
+    - {{PRICE_RANGE}} - Price range descriptor
+
+    METADATA:
+    - {{PRODUCT_IMAGE}} - Image filename
+    - {{SEARCH_VOLUME}} - Search demand indicator
+    - {{PHONE}} - Contact phone
+    - {{TERMS}} - Available terms list
+-->

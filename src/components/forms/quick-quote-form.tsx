@@ -3,6 +3,8 @@
 import { useState } from "react";
 import { useForm } from "react-hook-form";
 import { z } from "zod";
+import { api } from "../../../convex/_generated/api";
+import { useSafeMutation } from "@/hooks/use-optional-convex";
 import { Card, CardContent, CardHeader, CardTitle, CardDescription } from "@/registry/new-york-v4/ui/card";
 import { Button } from "@/registry/new-york-v4/ui/button";
 import { Input } from "@/registry/new-york-v4/ui/input";
@@ -107,6 +109,9 @@ export function QuickQuoteForm({
   const [isSubmitting, setIsSubmitting] = useState(false);
   const [isSuccess, setIsSuccess] = useState(false);
 
+  // Convex mutation - stores lead in database (returns null if Convex not configured)
+  const createLead = useSafeMutation(api.leads.createLead);
+
   // Get product-specific configuration
   const productConfig = productType ? PRODUCT_CONFIG[productType] : null;
   const maxAmount = productConfig?.maxAmount || 250000;
@@ -134,23 +139,62 @@ export function QuickQuoteForm({
   const onSubmit = async (data: QuickQuoteData) => {
     setIsSubmitting(true);
 
+    const resolvedTradeType = data.tradeType || tradeType || getTradeFromPath() || "general";
+    const resolvedLocation = location || getLocationFromPath() || "UK";
+    const utmParams = getUTMParams();
+
+    // Split name into first/last for Convex
+    const nameParts = data.name.trim().split(/\s+/);
+    const firstName = nameParts[0] || data.name;
+    const lastName = nameParts.slice(1).join(" ") || "-";
+
     try {
-      const result = await submitToWebhook({
+      // 1. Store in Convex database (if configured)
+      const convexResult = await createLead({
+        firstName,
+        lastName,
+        email: data.email,
+        phone: data.phone,
+        tradeType: resolvedTradeType,
+        location: {
+          county: resolvedLocation.includes(",") ? resolvedLocation.split(",")[1]?.trim() || resolvedLocation : resolvedLocation,
+          town: resolvedLocation.includes(",") ? resolvedLocation.split(",")[0]?.trim() || resolvedLocation : resolvedLocation,
+        },
+        financeDetails: {
+          amount: data.amount,
+          purpose: productType || "general",
+          urgency: "this-week", // Default urgency for quick quotes
+        },
+        source: getPageUrl(),
+        utmParams: utmParams.utmSource ? {
+          source: utmParams.utmSource,
+          medium: utmParams.utmMedium,
+          campaign: utmParams.utmCampaign,
+        } : undefined,
+      });
+
+      if (convexResult) {
+        console.log("[Convex] Lead saved:", convexResult);
+      }
+
+      // 2. Also send to webhook (for Zapier/CRM integration)
+      const webhookResult = await submitToWebhook({
         name: data.name,
         email: data.email,
         phone: data.phone,
         formType: 'quick-quote',
         amount: data.amount,
-        tradeType: data.tradeType || tradeType || getTradeFromPath(),
+        tradeType: resolvedTradeType,
         financeType: productType || 'general',
-        location: location || getLocationFromPath(),
+        location: resolvedLocation,
         pageUrl: getPageUrl(),
-        ...getUTMParams(),
+        ...utmParams,
         submittedAt: new Date().toISOString(),
       });
 
-      if (!result.success) {
-        throw new Error(result.error || 'Submission failed');
+      // Success if either Convex OR webhook worked
+      if (!convexResult && !webhookResult.success) {
+        throw new Error(webhookResult.error || 'Submission failed');
       }
 
       setIsSuccess(true);

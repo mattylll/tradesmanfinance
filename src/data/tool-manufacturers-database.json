@@ -1,0 +1,596 @@
+{
+  "manufacturers": {
+    "power_tools": {
+      "festool": {
+        "name": "Festool",
+        "tier": "premium",
+        "typical_purchase": "£500-£5000",
+        "trades": ["carpenter", "builder", "joiner", "decorator"],
+        "product_categories": [
+          "track_saws",
+          "sanders",
+          "dust_extractors",
+          "routers",
+          "drills",
+          "jigsaws",
+          "planers",
+          "multi_tools"
+        ],
+        "flagship_products": {
+          "ts_55": {
+            "name": "TS 55 Track Saw",
+            "typical_price": "£400-£550",
+            "search_volume": "high",
+            "trades": ["carpenter", "builder", "joiner"]
+          },
+          "rotex_150": {
+            "name": "Rotex RO 150 Sander",
+            "typical_price": "£350-£450",
+            "search_volume": "medium",
+            "trades": ["decorator", "carpenter", "joiner"]
+          },
+          "ctm_midi": {
+            "name": "CTM MIDI Dust Extractor",
+            "typical_price": "£800-£1200",
+            "search_volume": "medium",
+            "trades": ["carpenter", "builder", "decorator"]
+          }
+        }
+      },
+      "milwaukee": {
+        "name": "Milwaukee",
+        "tier": "professional",
+        "typical_purchase": "£200-£3000",
+        "trades": ["electrician", "plumber", "builder", "hvac", "carpenter"],
+        "product_categories": [
+          "cordless_drills",
+          "impact_drivers",
+          "sds_drills",
+          "angle_grinders",
+          "pipe_threaders",
+          "press_tools",
+          "crimpers",
+          "battery_systems"
+        ],
+        "flagship_products": {
+          "m18_fuel": {
+            "name": "M18 FUEL Combi Drill",
+            "typical_price": "£200-£350",
+            "search_volume": "very_high",
+            "trades": ["electrician", "plumber", "builder", "carpenter"]
+          },
+          "m12_press": {
+            "name": "M12 Hydraulic Press Tool",
+            "typical_price": "£1500-£2000",
+            "search_volume": "medium",
+            "trades": ["plumber", "hvac"]
+          },
+          "super_hawg": {
+            "name": "Super Hawg Drill",
+            "typical_price": "£800-£1200",
+            "search_volume": "low",
+            "trades": ["electrician", "plumber"]
+          }
+        }
+      },
+      "dewalt": {
+        "name": "DeWalt",
+        "tier": "professional",
+        "typical_purchase": "£150-£2500",
+        "trades": ["builder", "carpenter", "electrician", "plumber", "decorator"],
+        "product_categories": [
+          "cordless_drills",
+          "impact_drivers",
+          "circular_saws",
+          "mitre_saws",
+          "table_saws",
+          "routers",
+          "planers",
+          "battery_systems"
+        ],
+        "flagship_products": {
+          "dcs575": {
+            "name": "DCS575 Circular Saw",
+            "typical_price": "£300-£400",
+            "search_volume": "high",
+            "trades": ["carpenter", "builder"]
+          },
+          "dw735": {
+            "name": "DW735 Planer",
+            "typical_price": "£600-£800",
+            "search_volume": "medium",
+            "trades": ["carpenter", "joiner"]
+          }
+        }
+      },
+      "makita": {
+        "name": "Makita",
+        "tier": "professional",
+        "typical_purchase": "£150-£2000",
+        "trades": ["builder", "carpenter", "electrician", "plumber", "groundworker"],
+        "product_categories": [
+          "cordless_drills",
+          "impact_drivers",
+          "circular_saws",
+          "angle_grinders",
+          "demolition_hammers",
+          "battery_systems",
+          "outdoor_equipment"
+        ],
+        "flagship_products": {
+          "dhr263": {
+            "name": "DHR263 SDS Plus Hammer",
+            "typical_price": "£400-£600",
+            "search_volume": "medium",
+            "trades": ["builder", "electrician", "plumber"]
+          },
+          "dlx2145tj": {
+            "name": "DLX2145TJ Twin Pack",
+            "typical_price": "£300-£450",
+            "search_volume": "high",
+            "trades": ["builder", "carpenter", "electrician"]
+          }
+        }
+      },
+      "bosch": {
+        "name": "Bosch",
+        "tier": "professional",
+        "typical_purchase": "£150-£2000",
+        "trades": ["builder", "carpenter", "electrician", "plumber", "tiler"],
+        "product_categories": [
+          "cordless_drills",
+          "impact_drivers",
+          "sds_drills",
+          "angle_grinders",
+          "multi_tools",
+          "laser_levels",
+          "measuring_tools"
+        ],
+        "flagship_products": {
+          "gcl_25": {
+            "name": "GCL 25 Laser Level",
+            "typical_price": "£150-£250",
+            "search_volume": "high",
+            "trades": ["builder", "electrician", "tiler"]
+          },
+          "gsr_18v": {
+            "name": "GSR 18V Combi Drill",
+            "typical_price": "£150-£300",
+            "search_volume": "very_high",
+            "trades": ["builder", "electrician", "carpenter"]
+          }
+        }
+      },
+      "hilti": {
+        "name": "Hilti",
+        "tier": "premium",
+        "typical_purchase": "£500-£5000",
+        "trades": ["builder", "electrician", "groundworker", "steel_erector"],
+        "product_categories": [
+          "sds_drills",
+          "demolition_hammers",
+          "cordless_tools",
+          "diamond_drilling",
+          "laser_levels",
+          "battery_systems",
+          "direct_fastening"
+        ],
+        "flagship_products": {
+          "te_3000_avr": {
+            "name": "TE 3000-AVR Breaker",
+            "typical_price": "£2000-£3000",
+            "search_volume": "low",
+            "trades": ["groundworker", "builder"]
+          },
+          "pd_e": {
+            "name": "PD-E Laser Level",
+            "typical_price": "£800-£1200",
+            "search_volume": "medium",
+            "trades": ["builder", "electrician"]
+          }
+        }
+      }
+    },
+    "testing_equipment": {
+      "fluke": {
+        "name": "Fluke",
+        "tier": "premium",
+        "typical_purchase": "£300-£3000",
+        "trades": ["electrician", "hvac", "engineer"],
+        "product_categories": [
+          "multimeters",
+          "clamp_meters",
+          "insulation_testers",
+          "thermal_cameras",
+          "loop_testers",
+          "pat_testers"
+        ],
+        "flagship_products": {
+          "1663": {
+            "name": "1663 Multifunction Tester",
+            "typical_price": "£1200-£1600",
+            "search_volume": "high",
+            "trades": ["electrician"]
+          },
+          "tis75": {
+            "name": "TiS75 Thermal Camera",
+            "typical_price": "£2500-£3500",
+            "search_volume": "medium",
+            "trades": ["electrician", "hvac"]
+          },
+          "179": {
+            "name": "179 True RMS Multimeter",
+            "typical_price": "£300-£400",
+            "search_volume": "high",
+            "trades": ["electrician"]
+          }
+        }
+      },
+      "megger": {
+        "name": "Megger",
+        "tier": "professional",
+        "typical_purchase": "£200-£2500",
+        "trades": ["electrician"],
+        "product_categories": [
+          "insulation_testers",
+          "multifunction_testers",
+          "continuity_testers",
+          "earth_testers",
+          "loop_testers"
+        ],
+        "flagship_products": {
+          "mft1741": {
+            "name": "MFT1741 Multifunction Tester",
+            "typical_price": "£1000-£1400",
+            "search_volume": "very_high",
+            "trades": ["electrician"]
+          },
+          "mit515": {
+            "name": "MIT515 Insulation Tester",
+            "typical_price": "£400-£600",
+            "search_volume": "high",
+            "trades": ["electrician"]
+          }
+        }
+      },
+      "flir": {
+        "name": "FLIR",
+        "tier": "premium",
+        "typical_purchase": "£500-£5000",
+        "trades": ["electrician", "hvac", "surveyor", "roofer"],
+        "product_categories": [
+          "thermal_cameras",
+          "moisture_meters",
+          "inspection_cameras"
+        ],
+        "flagship_products": {
+          "e6": {
+            "name": "E6 Thermal Camera",
+            "typical_price": "£1500-£2000",
+            "search_volume": "high",
+            "trades": ["electrician", "hvac", "surveyor"]
+          },
+          "mr160": {
+            "name": "MR160 Moisture Meter",
+            "typical_price": "£400-£600",
+            "search_volume": "medium",
+            "trades": ["surveyor", "roofer", "builder"]
+          }
+        }
+      }
+    },
+    "plumbing_heating": {
+      "rothenberger": {
+        "name": "Rothenberger",
+        "tier": "professional",
+        "typical_purchase": "£500-£3000",
+        "trades": ["plumber", "hvac", "gas_engineer"],
+        "product_categories": [
+          "pipe_freezers",
+          "pipe_cutters",
+          "threading_machines",
+          "press_tools",
+          "leak_detectors",
+          "brazing_equipment"
+        ],
+        "flagship_products": {
+          "romax_4000": {
+            "name": "ROMAX 4000 Press Tool",
+            "typical_price": "£2000-£2800",
+            "search_volume": "medium",
+            "trades": ["plumber", "hvac"]
+          },
+          "rofrost_turbo": {
+            "name": "ROFROST Turbo Pipe Freezer",
+            "typical_price": "£1500-£2000",
+            "search_volume": "low",
+            "trades": ["plumber"]
+          }
+        }
+      },
+      "ridgid": {
+        "name": "RIDGID",
+        "tier": "professional",
+        "typical_purchase": "£300-£4000",
+        "trades": ["plumber", "drainage"],
+        "product_categories": [
+          "pipe_wrenches",
+          "threading_machines",
+          "drain_cleaning",
+          "inspection_cameras",
+          "press_tools",
+          "crimpers"
+        ],
+        "flagship_products": {
+          "rp_340": {
+            "name": "RP 340 Press Tool",
+            "typical_price": "£1800-£2400",
+            "search_volume": "medium",
+            "trades": ["plumber", "hvac"]
+          },
+          "seektech_sr20": {
+            "name": "SeekTech SR-20 Locator",
+            "typical_price": "£1200-£1800",
+            "search_volume": "low",
+            "trades": ["plumber", "drainage"]
+          }
+        }
+      },
+      "rothenberger": {
+        "name": "Rothenberger",
+        "tier": "professional",
+        "typical_purchase": "£400-£3000",
+        "trades": ["plumber", "hvac", "gas_engineer"],
+        "product_categories": [
+          "pipe_freezers",
+          "press_tools",
+          "leak_detectors",
+          "brazing_equipment"
+        ]
+      },
+      "novopress": {
+        "name": "Novopress",
+        "tier": "professional",
+        "typical_purchase": "£1500-£3000",
+        "trades": ["plumber", "hvac"],
+        "product_categories": [
+          "press_tools",
+          "crimpers",
+          "cutting_tools"
+        ],
+        "flagship_products": {
+          "eco201": {
+            "name": "ECO201 Press Tool",
+            "typical_price": "£1800-£2500",
+            "search_volume": "medium",
+            "trades": ["plumber", "hvac"]
+          }
+        }
+      }
+    },
+    "specialist_trade": {
+      "testo": {
+        "name": "Testo",
+        "tier": "professional",
+        "typical_purchase": "£300-£3000",
+        "trades": ["hvac", "gas_engineer"],
+        "product_categories": [
+          "flue_gas_analysers",
+          "combustion_analysers",
+          "manifolds",
+          "thermal_cameras",
+          "leak_detectors"
+        ],
+        "flagship_products": {
+          "testo_310": {
+            "name": "Testo 310 Flue Gas Analyser",
+            "typical_price": "£800-£1200",
+            "search_volume": "high",
+            "trades": ["hvac", "gas_engineer"]
+          },
+          "testo_557": {
+            "name": "Testo 557 Digital Manifold",
+            "typical_price": "£600-£900",
+            "search_volume": "medium",
+            "trades": ["hvac"]
+          }
+        }
+      },
+      "kane": {
+        "name": "Kane",
+        "tier": "professional",
+        "typical_purchase": "£400-£1500",
+        "trades": ["gas_engineer", "hvac"],
+        "product_categories": [
+          "flue_gas_analysers",
+          "combustion_analysers",
+          "co_detectors"
+        ],
+        "flagship_products": {
+          "kane458s": {
+            "name": "Kane 458s Analyser",
+            "typical_price": "£800-£1100",
+            "search_volume": "high",
+            "trades": ["gas_engineer"]
+          }
+        }
+      },
+      "refco": {
+        "name": "Refco",
+        "tier": "professional",
+        "typical_purchase": "£300-£2000",
+        "trades": ["hvac", "refrigeration"],
+        "product_categories": [
+          "manifolds",
+          "vacuum_pumps",
+          "recovery_units",
+          "leak_detectors"
+        ],
+        "flagship_products": {
+          "bm6_3": {
+            "name": "BM6-3 Digital Manifold",
+            "typical_price": "£600-£900",
+            "search_volume": "medium",
+            "trades": ["hvac"]
+          }
+        }
+      },
+      "leica": {
+        "name": "Leica",
+        "tier": "premium",
+        "typical_purchase": "£500-£10000",
+        "trades": ["surveyor", "builder", "engineer"],
+        "product_categories": [
+          "laser_levels",
+          "total_stations",
+          "gps_systems",
+          "laser_distance_meters"
+        ],
+        "flagship_products": {
+          "disto_x4": {
+            "name": "DISTO X4 Laser Measure",
+            "typical_price": "£600-£800",
+            "search_volume": "high",
+            "trades": ["surveyor", "builder"]
+          },
+          "rugby_680": {
+            "name": "Rugby 680 Rotary Laser",
+            "typical_price": "£1500-£2200",
+            "search_volume": "medium",
+            "trades": ["builder", "surveyor"]
+          }
+        }
+      },
+      "rubi": {
+        "name": "Rubi",
+        "tier": "professional",
+        "typical_purchase": "£200-£2000",
+        "trades": ["tiler"],
+        "product_categories": [
+          "tile_cutters",
+          "mixers",
+          "levelling_systems",
+          "spacers",
+          "trowels"
+        ],
+        "flagship_products": {
+          "dt_250": {
+            "name": "DT-250 Evolution Cutter",
+            "typical_price": "£800-£1200",
+            "search_volume": "high",
+            "trades": ["tiler"]
+          },
+          "rubimix_9": {
+            "name": "Rubimix-9-BL Mixer",
+            "typical_price": "£300-£450",
+            "search_volume": "medium",
+            "trades": ["tiler"]
+          }
+        }
+      },
+      "numatic": {
+        "name": "Numatic",
+        "tier": "professional",
+        "typical_purchase": "£300-£1500",
+        "trades": ["cleaner", "builder", "decorator"],
+        "product_categories": [
+          "vacuum_cleaners",
+          "scrubber_dryers",
+          "pressure_washers"
+        ],
+        "flagship_products": {
+          "george": {
+            "name": "George GVE370 Wet & Dry",
+            "typical_price": "£400-£550",
+            "search_volume": "high",
+            "trades": ["builder", "cleaner"]
+          }
+        }
+      }
+    },
+    "vans_vehicles": {
+      "sortimo": {
+        "name": "Sortimo",
+        "tier": "premium",
+        "typical_purchase": "£2000-£8000",
+        "trades": ["electrician", "plumber", "builder", "hvac"],
+        "product_categories": [
+          "van_racking",
+          "drawer_systems",
+          "tool_boxes",
+          "workbenches"
+        ],
+        "flagship_products": {
+          "globelite": {
+            "name": "GlobalLite Van Racking System",
+            "typical_price": "£3000-£5000",
+            "search_volume": "medium",
+            "trades": ["electrician", "plumber"]
+          }
+        }
+      },
+      "bott": {
+        "name": "Bott",
+        "tier": "professional",
+        "typical_purchase": "£1500-£6000",
+        "trades": ["electrician", "plumber", "builder", "hvac"],
+        "product_categories": [
+          "van_racking",
+          "drawer_units",
+          "shelving",
+          "workbenches"
+        ],
+        "flagship_products": {
+          "smartvan": {
+            "name": "Smartvan Racking System",
+            "typical_price": "£2000-£4000",
+            "search_volume": "medium",
+            "trades": ["electrician", "plumber"]
+          }
+        }
+      }
+    }
+  },
+  "trade_categories": {
+    "electrician": {
+      "primary_manufacturers": ["milwaukee", "fluke", "megger", "flir", "bosch", "makita", "hilti"],
+      "essential_tools": ["multifunction_testers", "insulation_testers", "cordless_drills", "sds_drills", "cable_pullers", "crimpers"],
+      "high_ticket_items": ["fluke_1663", "megger_mft1741", "flir_e6", "milwaukee_super_hawg"]
+    },
+    "plumber": {
+      "primary_manufacturers": ["milwaukee", "rothenberger", "ridgid", "novopress", "makita", "dewalt"],
+      "essential_tools": ["press_tools", "pipe_freezers", "pipe_cutters", "inspection_cameras", "leak_detectors", "cordless_drills"],
+      "high_ticket_items": ["rothenberger_romax_4000", "milwaukee_m12_press", "ridgid_rp_340", "rofrost_turbo"]
+    },
+    "builder": {
+      "primary_manufacturers": ["dewalt", "makita", "milwaukee", "festool", "hilti", "bosch", "leica"],
+      "essential_tools": ["cordless_drills", "circular_saws", "sds_drills", "laser_levels", "mitre_saws", "demolition_hammers"],
+      "high_ticket_items": ["hilti_te_3000", "dewalt_dw735", "leica_rugby_680", "festool_ctm_midi"]
+    },
+    "carpenter": {
+      "primary_manufacturers": ["festool", "dewalt", "makita", "bosch"],
+      "essential_tools": ["track_saws", "routers", "planers", "cordless_drills", "sanders", "dust_extractors"],
+      "high_ticket_items": ["festool_ts_55", "dewalt_dw735", "festool_ctm_midi"]
+    },
+    "hvac": {
+      "primary_manufacturers": ["testo", "refco", "milwaukee", "fluke", "rothenberger"],
+      "essential_tools": ["flue_gas_analysers", "manifolds", "vacuum_pumps", "leak_detectors", "press_tools"],
+      "high_ticket_items": ["testo_310", "refco_bm6_3", "milwaukee_m12_press", "fluke_tis75"]
+    },
+    "gas_engineer": {
+      "primary_manufacturers": ["testo", "kane", "rothenberger", "fluke"],
+      "essential_tools": ["flue_gas_analysers", "leak_detectors", "co_detectors", "multimeters"],
+      "high_ticket_items": ["testo_310", "kane_458s", "rothenberger_romax_4000"]
+    },
+    "tiler": {
+      "primary_manufacturers": ["rubi", "bosch", "dewalt"],
+      "essential_tools": ["tile_cutters", "mixers", "laser_levels", "wet_saws"],
+      "high_ticket_items": ["rubi_dt_250", "rubi_rubimix_9"]
+    },
+    "decorator": {
+      "primary_manufacturers": ["festool", "numatic", "dewalt"],
+      "essential_tools": ["sanders", "dust_extractors", "vacuum_cleaners", "sprayers"],
+      "high_ticket_items": ["festool_rotex_150", "festool_ctm_midi"]
+    }
+  }
+}
