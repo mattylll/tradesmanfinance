@@ -447,9 +447,9 @@ export function TradeLocationContent({
               <div
                 className="rounded-2xl p-8 border border-gray-200 bg-white shadow-lg"
               >
-                <h3 className="text-2xl font-bold text-[#1a1a2e] mb-8">
+                <h2 className="text-2xl font-bold text-[#1a1a2e] mb-8">
                   Get {trade.name} Finance in 3 Steps
-                </h3>
+                </h2>
 
                 <div className="space-y-6">
                   <div className="flex items-start gap-4">

@@ -8,6 +8,7 @@ import { type County } from '@/data/locations';
 import { getContentHubForTrade } from '@/data/content-hub';
 import { Button } from '@/registry/new-york-v4/ui/button';
 import { RelatedContent } from '@/components/seo/related-content';
+import { FAQSchema } from '@/components/seo/faq-schema';
 import {
   ArrowRight,
   Phone,
@@ -74,6 +75,11 @@ export function TradePageContent({
 
   return (
     <main className="min-h-screen overflow-hidden">
+      {/* FAQ Schema Markup */}
+      {trade.faqs && trade.faqs.length > 0 && (
+        <FAQSchema faqs={trade.faqs} />
+      )}
+
       {/* === HERO SECTION - Dark Industrial === */}
       <section className="relative min-h-[90vh] flex items-center overflow-hidden">
         {/* Dark gradient background */}
@@ -290,7 +296,7 @@ export function TradePageContent({
         <div className="container mx-auto px-4 py-5">
           <div className="flex flex-wrap items-center justify-center gap-x-10 gap-y-3">
             {[
-              { icon: Shield, text: "FCA Regulated", highlight: true },
+              { icon: Shield, text: "25+ Years Experience", highlight: true },
               { icon: Star, text: "4.8★ Trustpilot", highlight: false },
               { icon: Clock, text: "24hr Decisions", highlight: false },
               { icon: Users, text: "50,000+ Funded", highlight: false },
@@ -386,7 +392,7 @@ export function TradePageContent({
             >
               <div className="absolute -inset-4 bg-gradient-to-br from-[#ff6b35]/10 to-[#ffd93d]/5 rounded-3xl blur-xl" />
               <div className="relative bg-gradient-to-br from-[#ff6b35] to-[#ff8f5a] rounded-2xl p-8 text-white">
-                <h3 className="text-2xl font-bold mb-6">Why Choose Us?</h3>
+                <h2 className="text-2xl font-bold mb-6">Why Choose Us?</h2>
                 <p className="text-white/80 mb-6">Specialist trade finance experts who understand your business.</p>
 
                 <div className="space-y-5">

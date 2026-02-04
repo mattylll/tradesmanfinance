@@ -148,12 +148,10 @@ export default function TermsPage() {
               Finance House, Business Park, London EC1A 1BB.
             </p>
             <p>
-              We are authorised and regulated by the Financial Conduct Authority (FCA) for
-              credit broking activities. Our FCA registration number is [XXXXXX]. You can verify
-              our registration at{" "}
-              <a href="https://register.fca.org.uk" target="_blank" rel="noopener noreferrer">
-                register.fca.org.uk
-              </a>.
+              We specialize in non-regulated business finance for trade companies across the UK.
+              Our team has over 25 years of combined experience in financial services, helping
+              thousands of tradesmen access the equipment finance, vehicle finance, and business
+              loans they need to grow their businesses.
             </p>
 
             <h2>2. Our Services</h2>

@@ -5,6 +5,8 @@ import { getAllTownParams, getLocationInfo, townToSlug } from '@/data/locations'
 import { trades } from '@/data/trades';
 import { TownPageContent } from './town-page-content';
 import { generateBreadcrumbSchema } from '@/lib/schema-generator';
+import { getTownLocalData } from '@/data/town-local-data';
+import { generateFAQSchemaData } from '@/components/seo/faq-schema';
 
 const SITE_URL = 'https://tradesmanfinance.co.uk';
 
@@ -113,13 +115,26 @@ export default async function TownPage({
     currenciesAccepted: 'GBP',
   };
 
+  // Get town local data for FAQs
+  const townLocalData = getTownLocalData(townSlug, townName, countySlug, county.name, county.region);
+
+  // Generate FAQ schema if FAQs are available
+  const faqSchema = townLocalData.faqs && townLocalData.faqs.length > 0
+    ? generateFAQSchemaData(townLocalData.faqs, `${pageUrl}#faq`)
+    : null;
+
+  // Combine all schemas
+  const allSchemas = faqSchema
+    ? [breadcrumbSchema, localBusinessSchema, faqSchema]
+    : [breadcrumbSchema, localBusinessSchema];
+
   return (
     <>
       {/* JSON-LD Structured Data */}
       <script
         type="application/ld+json"
         dangerouslySetInnerHTML={{
-          __html: JSON.stringify([breadcrumbSchema, localBusinessSchema]),
+          __html: JSON.stringify(allSchemas),
         }}
       />
       <TownPageContent

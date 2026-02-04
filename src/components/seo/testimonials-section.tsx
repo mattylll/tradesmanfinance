@@ -77,8 +77,8 @@ export function TestimonialsSection({
         <div className="mt-12 pt-8 border-t border-gray-200">
           <div className="flex flex-wrap items-center justify-center gap-8">
             <TrustBadge
-              text="FCA Regulated"
-              subtext="Authorised & regulated"
+              text="25+ Years"
+              subtext="Financial services experience"
             />
             <TrustBadge
               text="4 Hour Decisions"

@@ -39,7 +39,7 @@ const REGIONAL_FAQS: Record<string, Array<{ question: string; answer: string }>>
     },
     {
       question: 'How does business finance work in Scotland?',
-      answer: 'Business finance in Scotland works the same as the rest of the UK. We\'re FCA regulated and offer the same competitive rates across all Scottish regions.'
+      answer: 'Business finance in Scotland works the same as the rest of the UK. With 25+ years of financial services experience, we offer the same competitive rates across all Scottish regions.'
     }
   ],
   'North West England': [

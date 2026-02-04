@@ -101,7 +101,7 @@ const stats = [
 ];
 
 const trustPoints = [
-  { icon: Shield, text: "FCA Regulated" },
+  { icon: Shield, text: "25+ Years Experience" },
   { icon: Clock, text: "Same Day Decisions" },
   { icon: Users, text: "Trade Specialists" },
   { icon: Star, text: "5-Star Service" },

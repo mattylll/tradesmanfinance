@@ -11,6 +11,8 @@ import { ConvexClientProvider } from '@/components/providers/convex-provider';
 import { ClerkClientProvider } from '@/components/providers/clerk-provider';
 import { SiteHeader } from '@/components/site-header';
 import { SiteFooter } from '@/components/site-footer';
+import { ComprehensiveSiteNavigationSchema } from '@/components/seo/site-navigation-schema';
+import { BackToTopButton } from '@/components/ui/back-to-top-button';
 import '@/app/globals.css';
 import { Toaster } from '@/registry/new-york-v4/ui/sonner';
 
@@ -178,6 +180,8 @@ const Layout = ({ children }: Readonly<{ children: ReactNode }>) => {
                         }),
                     }}
                 />
+                {/* SiteNavigationElement JSON-LD for navigation structure */}
+                <ComprehensiveSiteNavigationSchema baseUrl={SITE_URL} />
                 <ClerkClientProvider>
                     <ConvexClientProvider>
                         <ThemeProvider attribute='class' defaultTheme='light'>
@@ -186,6 +190,7 @@ const Layout = ({ children }: Readonly<{ children: ReactNode }>) => {
                                 <main className="flex-1">{children}</main>
                                 <SiteFooter />
                             </div>
+                            <BackToTopButton />
                             <Toaster />
                         </ThemeProvider>
                     </ConvexClientProvider>

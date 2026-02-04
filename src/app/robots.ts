@@ -5,6 +5,7 @@ export default function robots(): MetadataRoute.Robots {
 
   return {
     rules: [
+      // Allow all crawlers by default
       {
         userAgent: "*",
         allow: "/",
@@ -18,15 +19,27 @@ export default function robots(): MetadataRoute.Robots {
           "/thank-you",
         ],
       },
+      // Explicitly allow search engine bots
       {
-        userAgent: "Googlebot",
+        userAgent: ["Googlebot", "Googlebot-Image", "Googlebot-Video", "AdsBot-Google"],
         allow: "/",
         disallow: ["/api/", "/admin/", "/private/"],
       },
       {
-        userAgent: "Bingbot",
+        userAgent: ["Bingbot", "Slurp", "DuckDuckBot", "Baiduspider", "YandexBot"],
         allow: "/",
         disallow: ["/api/", "/admin/", "/private/"],
+      },
+      // Explicitly allow SEO crawler tools (Ahrefs, Semrush, Moz, Majestic)
+      {
+        userAgent: ["AhrefsBot", "SemrushBot", "MJ12bot", "DotBot", "rogerbot"],
+        allow: "/",
+        disallow: ["/api/", "/admin/", "/private/"],
+      },
+      // Allow Archive.org WayBackMachine
+      {
+        userAgent: "ia_archiver",
+        allow: "/",
       },
     ],
     sitemap: `${siteUrl}/sitemap.xml`,

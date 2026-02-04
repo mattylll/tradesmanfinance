@@ -210,7 +210,7 @@ export default function TradesPage() {
         <div className="container mx-auto px-4 py-5">
           <div className="flex flex-wrap items-center justify-center gap-x-10 gap-y-3">
             {[
-              { icon: Shield, text: "FCA Regulated", highlight: true },
+              { icon: Shield, text: "25+ Years Experience", highlight: true },
               { icon: Star, text: "4.8★ Trustpilot", highlight: false },
               { icon: Clock, text: "Same Day Decisions", highlight: false },
               { icon: Users, text: "50,000+ Funded", highlight: false },

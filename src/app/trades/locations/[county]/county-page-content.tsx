@@ -307,8 +307,8 @@ export function CountyPageContent({
                 />
                 {/* Floating badge */}
                 <div className="absolute -bottom-6 -right-6 bg-[#ffd93d] text-black rounded-2xl p-5 shadow-xl transform rotate-3 hover:rotate-0 transition-transform">
-                  <div className="text-2xl font-black">FCA</div>
-                  <div className="text-xs font-bold uppercase">Regulated</div>
+                  <div className="text-2xl font-black">25+</div>
+                  <div className="text-xs font-bold uppercase">Years Experience</div>
                 </div>
               </div>
             </div>

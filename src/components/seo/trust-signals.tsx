@@ -145,7 +145,7 @@ export function FooterTrustBadges() {
     <div className="flex flex-wrap items-center justify-center gap-6 py-4">
       <div className="flex items-center gap-2 text-gray-400">
         <Shield className="h-4 w-4 text-[#ff6b35]" />
-        <span className="text-sm">FCA Authorised</span>
+        <span className="text-sm">25+ Years Experience</span>
       </div>
       <div className="flex items-center gap-2 text-gray-400">
         <Award className="h-4 w-4 text-[#ffd93d]" />

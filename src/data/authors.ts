@@ -27,6 +27,34 @@ export interface CompanyCredential {
 }
 
 export const authors: Record<string, Author> = {
+  'matt-lenzie': {
+    id: 'matt-lenzie',
+    name: 'Matt Lenzie',
+    role: 'Founder & CEO',
+    bio: 'Matt brings 25 years of financial services experience to Tradesman Finance, having built his career across some of the UK\'s leading financial institutions. Starting at Citicapital, he progressed through Blackhorse Motor Finance before joining Bank of Scotland (HBOS/Lloyds Banking Group) as Associate Director in their Corporate division. Since leaving banking, Matt has founded multiple successful finance businesses including Construction Capital, Aptus Financial (specializing in property finance since 2019), and Financial Flow. His deep understanding of both traditional banking and innovative finance structures, combined with expertise in development finance, bridging, venture capital, and private equity, enables him to help tradesmen access the funding they need to grow their businesses. Matt\'s experience spans motor finance, asset finance, corporate lending, property development finance, and business growth strategies.',
+    shortBio: 'Founder with 25 years in financial services. Former Bank of Scotland Associate Director with expertise across motor finance, corporate lending, property finance, and business growth.',
+    expertise: [
+      'Motor Finance',
+      'Asset Finance',
+      'Corporate Finance',
+      'Property Finance',
+      'Development Finance',
+      'Business Loans',
+      'Venture Capital',
+      'Private Equity',
+      'Commercial Lending',
+    ],
+    experience: '25 years',
+    credentials: [
+      'Former Bank of Scotland Associate Director',
+      'Lloyds Banking Group (HBOS) Corporate Division',
+      'Blackhorse Motor Finance',
+      'Citicapital',
+      'Property Finance Specialist (7+ years)',
+      'Venture Capital Partner',
+    ],
+    linkedIn: 'https://www.linkedin.com/in/mattlenzie/',
+  },
   'tradesman-finance-team': {
     id: 'tradesman-finance-team',
     name: 'Tradesman Finance Team',
@@ -43,7 +71,7 @@ export const authors: Record<string, Author> = {
     ],
     experience: '50+ years combined',
     credentials: [
-      'FCA Authorised',
+      '25+ Years Financial Services Experience',
       'NACFB Member',
       'ISO 27001 Certified',
     ],
@@ -80,19 +108,13 @@ export const authors: Record<string, Author> = {
     ],
     experience: '12+ years',
     credentials: [
-      'FCA Approved Person',
       'Motor Finance Specialist',
+      'Commercial Lending Expert',
     ],
   },
 };
 
 export const companyCredentials: CompanyCredential[] = [
-  {
-    name: 'FCA Authorised',
-    description: 'Authorised and regulated by the Financial Conduct Authority for consumer credit activities.',
-    icon: 'shield',
-    verificationUrl: 'https://register.fca.org.uk/',
-  },
   {
     name: 'NACFB Member',
     description: 'Member of the National Association of Commercial Finance Brokers, the UK\'s leading trade body for commercial finance.',

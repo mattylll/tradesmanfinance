@@ -10,6 +10,7 @@ import { Button } from "@/registry/new-york-v4/ui/button";
 import { IndustrialHero } from "@/components/hero/industrial-hero";
 import { LoanCalculator } from "@/components/calculator/loan-calculator";
 import { QuickQuoteForm } from "@/components/forms/quick-quote-form";
+import { FAQSchema, type FAQItem } from "@/components/seo/faq-schema";
 import {
   CheckCircle,
   ArrowRight,
@@ -187,6 +188,42 @@ export function HomePageContent() {
     },
   ];
 
+  // Home page FAQs for SEO
+  const homeFaqs: FAQItem[] = [
+    {
+      question: "What types of finance do you offer for tradesmen?",
+      answer: "We offer a complete range of business finance solutions including equipment finance, vehicle finance (vans and trucks), business loans, cashflow finance, invoice finance, and asset finance. Whether you need to buy tools, upgrade your van, or fund business growth, we have options from £2,000 to £1,000,000."
+    },
+    {
+      question: "How quickly can I get a decision on my finance application?",
+      answer: "Most applications receive a decision within 24 hours. Our streamlined process means you can apply in just 5 minutes, and once approved, funds are typically released within 48-72 hours. For urgent requirements, we can often fast-track the process."
+    },
+    {
+      question: "Do I need a perfect credit score to get trade finance?",
+      answer: "No, we consider all credit backgrounds. While better credit scores may access lower rates, we work with tradesmen across all credit profiles. We look at your trading history, current work, and ability to repay - not just your credit score. Our approval rate is 92%."
+    },
+    {
+      question: "What trades do you provide finance for?",
+      answer: "We provide finance for all trades including electricians, plumbers, builders, carpenters, heating engineers, roofers, landscapers, bricklayers, plasterers, tilers, painters and decorators, scaffolders, flooring contractors, window fitters, bathroom fitters, shop fitters, locksmiths, groundworkers, and more."
+    },
+    {
+      question: "Is there an upfront fee to apply for finance?",
+      answer: "No, there are absolutely no upfront fees to apply. Getting a quote is completely free and has no impact on your credit score. You only pay when you accept a finance offer and the agreement begins."
+    },
+    {
+      question: "What equipment and vehicles can I finance?",
+      answer: "You can finance almost any business equipment or vehicle including power tools, testing equipment, workshop machinery, CNC machines, vans, trucks, trailers, excavators, scaffolding, and more. We work with all major brands and can finance both new and quality used equipment."
+    },
+    {
+      question: "How long are the repayment terms?",
+      answer: "We offer flexible repayment terms from 12 to 60 months, allowing you to choose a payment schedule that suits your cash flow. Longer terms mean lower monthly payments, while shorter terms reduce the total cost of finance."
+    },
+    {
+      question: "Do you cover all areas of the UK?",
+      answer: "Yes, we provide trade finance across the entire UK, including England, Scotland, Wales, and Northern Ireland. We work with tradesmen in all counties and towns, with local market knowledge to understand your specific needs."
+    }
+  ];
+
   return (
     <div ref={containerRef}>
       {/* Hero Section */}
@@ -203,7 +240,7 @@ export function HomePageContent() {
         <div className="container mx-auto px-4 py-5">
           <div className="flex flex-wrap items-center justify-center gap-x-10 gap-y-3">
             {[
-              { icon: Shield, text: "FCA Regulated", highlight: true },
+              { icon: Shield, text: "25+ Years Experience", highlight: true },
               { icon: Star, text: "4.8★ Trustpilot", highlight: false },
               { icon: Clock, text: "Same Day Decisions", highlight: false },
               { icon: Users, text: "50,000+ Funded", highlight: false },
@@ -962,6 +999,68 @@ export function HomePageContent() {
                 <ArrowRight className="ml-2 h-5 w-5 group-hover:translate-x-1 transition-transform" />
               </Button>
             </Link>
+          </motion.div>
+        </div>
+      </section>
+
+      {/* === FAQ SECTION === */}
+      <section className="relative py-20 md:py-28 overflow-hidden bg-gray-50">
+        {/* FAQ Schema for SEO */}
+        <FAQSchema faqs={homeFaqs} />
+
+        <div className="container relative mx-auto px-4">
+          <motion.div
+            initial="hidden"
+            whileInView="visible"
+            viewport={{ once: true, margin: "-100px" }}
+            variants={fadeInUp}
+            transition={{ duration: 0.6 }}
+            className="text-center mb-16"
+          >
+            <div className="inline-flex items-center gap-2 px-4 py-2 rounded-full bg-[#6366f1]/10 border border-[#6366f1]/20 mb-6">
+              <Zap className="h-4 w-4 text-[#6366f1]" />
+              <span className="text-sm font-medium text-[#6366f1] tracking-wide uppercase">
+                Frequently Asked Questions
+              </span>
+            </div>
+            <h2
+              className="text-4xl md:text-5xl font-black text-gray-900 mb-6 tracking-tight"
+              style={{ fontFamily: "var(--font-industrial)" }}
+            >
+              Trade Finance <span className="text-[#6366f1]">FAQs</span>
+            </h2>
+            <p className="text-gray-600 text-lg max-w-2xl mx-auto">
+              Common questions about equipment finance, business loans, and funding for UK tradesmen.
+            </p>
+          </motion.div>
+
+          <motion.div
+            initial="hidden"
+            whileInView="visible"
+            viewport={{ once: true, margin: "-50px" }}
+            variants={staggerContainer}
+            className="max-w-3xl mx-auto space-y-4"
+          >
+            {homeFaqs.map((faq, index) => (
+              <motion.details
+                key={index}
+                variants={fadeInUp}
+                transition={{ duration: 0.4 }}
+                className="group bg-white border-2 border-gray-200 rounded-xl overflow-hidden hover:border-[#6366f1]/50 transition-colors shadow-sm"
+              >
+                <summary className="flex items-center justify-between p-6 cursor-pointer list-none">
+                  <h3 className="text-lg font-bold text-gray-900 pr-4 text-left">
+                    {faq.question}
+                  </h3>
+                  <ChevronRight className="h-5 w-5 text-gray-400 group-open:rotate-90 transition-transform flex-shrink-0" />
+                </summary>
+                <div className="px-6 pb-6">
+                  <p className="text-gray-600 leading-relaxed">
+                    {faq.answer}
+                  </p>
+                </div>
+              </motion.details>
+            ))}
           </motion.div>
         </div>
       </section>

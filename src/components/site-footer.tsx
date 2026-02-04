@@ -1,5 +1,33 @@
 import Link from 'next/link';
 import { FooterTrustBadges } from '@/components/seo/trust-signals';
+import { Linkedin, Facebook, Twitter, Instagram } from 'lucide-react';
+
+const socialLinks = [
+  {
+    name: 'LinkedIn',
+    href: 'https://www.linkedin.com/company/tradesman-finance/',
+    icon: Linkedin,
+    active: true,
+  },
+  {
+    name: 'Facebook',
+    href: '#', // Placeholder - update with actual URL
+    icon: Facebook,
+    active: false,
+  },
+  {
+    name: 'X (Twitter)',
+    href: '#', // Placeholder - update with actual URL
+    icon: Twitter,
+    active: false,
+  },
+  {
+    name: 'Instagram',
+    href: '#', // Placeholder - update with actual URL
+    icon: Instagram,
+    active: false,
+  },
+];
 
 const footerLinks = {
   trades: [
@@ -43,6 +71,37 @@ export function SiteFooter() {
               Specialist equipment finance and business loans for UK tradesmen.
               Get the equipment you need to grow your business.
             </p>
+
+            {/* Social Media Links */}
+            <div className="mt-6">
+              <h4 className="text-sm font-semibold mb-3 text-foreground">Follow Us</h4>
+              <div className="flex items-center gap-3">
+                {socialLinks.map((social) => {
+                  const Icon = social.icon;
+                  return social.active ? (
+                    <a
+                      key={social.name}
+                      href={social.href}
+                      target="_blank"
+                      rel="noopener noreferrer"
+                      aria-label={`Follow us on ${social.name}`}
+                      className="flex items-center justify-center w-10 h-10 rounded-lg bg-orange-600 text-white hover:bg-orange-700 hover:scale-105 transition-all duration-200 shadow-sm hover:shadow-md"
+                    >
+                      <Icon className="w-5 h-5" />
+                    </a>
+                  ) : (
+                    <span
+                      key={social.name}
+                      aria-label={`${social.name} - Coming soon`}
+                      title={`${social.name} - Coming soon`}
+                      className="flex items-center justify-center w-10 h-10 rounded-lg bg-muted text-muted-foreground cursor-not-allowed opacity-50"
+                    >
+                      <Icon className="w-5 h-5" />
+                    </span>
+                  );
+                })}
+              </div>
+            </div>
           </div>
 
           {/* Trades */}
@@ -108,7 +167,7 @@ export function SiteFooter() {
               &copy; {new Date().getFullYear()} Tradesman Finance UK. All rights reserved.
             </p>
             <p className="text-sm text-muted-foreground">
-              Tradesman Finance is a trading name. Authorised and regulated by the FCA.
+              Tradesman Finance is a trading name. Specialist non-regulated business finance for UK trade companies.
             </p>
           </div>
         </div>
