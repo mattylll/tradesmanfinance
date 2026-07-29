@@ -1,0 +1,613 @@
+{
+  "slug": "merchant-cash-advance",
+  "keyword": "merchant cash advance",
+  "locale": {
+    "location_code": 2826,
+    "language_code": "en",
+    "device": "desktop"
+  },
+  "fetched": 8,
+  "medianRankerWords": 1777.5,
+  "consensusThreshold": 4,
+  "targetTerms": [
+    {
+      "term": "merchant cash advance",
+      "df": 8,
+      "inHeadings": 7,
+      "recommendedUse": [
+        15,
+        17
+      ],
+      "watch": false
+    },
+    {
+      "term": "merchant cash",
+      "df": 8,
+      "inHeadings": 7,
+      "recommendedUse": [
+        19,
+        20
+      ],
+      "watch": false
+    },
+    {
+      "term": "cash advance",
+      "df": 8,
+      "inHeadings": 7,
+      "recommendedUse": [
+        15,
+        17
+      ],
+      "watch": false
+    },
+    {
+      "term": "merchant",
+      "df": 8,
+      "inHeadings": 7,
+      "recommendedUse": [
+        19,
+        20
+      ],
+      "watch": false
+    },
+    {
+      "term": "cash",
+      "df": 8,
+      "inHeadings": 7,
+      "recommendedUse": [
+        28,
+        29
+      ],
+      "watch": false
+    },
+    {
+      "term": "advance",
+      "df": 8,
+      "inHeadings": 7,
+      "recommendedUse": [
+        16,
+        17
+      ],
+      "watch": false
+    },
+    {
+      "term": "business",
+      "df": 8,
+      "inHeadings": 6,
+      "recommendedUse": [
+        42,
+        43
+      ],
+      "watch": false
+    },
+    {
+      "term": "work",
+      "df": 8,
+      "inHeadings": 6,
+      "recommendedUse": [
+        2,
+        3
+      ],
+      "watch": false
+    },
+    {
+      "term": "finance",
+      "df": 8,
+      "inHeadings": 5,
+      "recommendedUse": [
+        16,
+        17
+      ],
+      "watch": false
+    },
+    {
+      "term": "apply",
+      "df": 7,
+      "inHeadings": 5,
+      "recommendedUse": [
+        3,
+        4
+      ],
+      "watch": false
+    },
+    {
+      "term": "much",
+      "df": 6,
+      "inHeadings": 5,
+      "recommendedUse": [
+        2,
+        4
+      ],
+      "watch": false
+    },
+    {
+      "term": "loans",
+      "df": 5,
+      "inHeadings": 5,
+      "recommendedUse": [
+        16,
+        17
+      ],
+      "watch": false
+    },
+    {
+      "term": "merchant cash advances",
+      "df": 6,
+      "inHeadings": 4,
+      "recommendedUse": [
+        2,
+        4
+      ],
+      "watch": false
+    },
+    {
+      "term": "cash advance work",
+      "df": 4,
+      "inHeadings": 4,
+      "recommendedUse": [
+        1,
+        3
+      ],
+      "watch": false
+    },
+    {
+      "term": "business finance",
+      "df": 7,
+      "inHeadings": 4,
+      "recommendedUse": [
+        4,
+        5
+      ],
+      "watch": false
+    },
+    {
+      "term": "cash advances",
+      "df": 6,
+      "inHeadings": 4,
+      "recommendedUse": [
+        2,
+        4
+      ],
+      "watch": false
+    },
+    {
+      "term": "advance work",
+      "df": 4,
+      "inHeadings": 4,
+      "recommendedUse": [
+        1,
+        3
+      ],
+      "watch": false
+    },
+    {
+      "term": "credit",
+      "df": 8,
+      "inHeadings": 4,
+      "recommendedUse": [
+        12,
+        13
+      ],
+      "watch": false
+    },
+    {
+      "term": "funding",
+      "df": 7,
+      "inHeadings": 4,
+      "recommendedUse": [
+        10,
+        11
+      ],
+      "watch": false
+    },
+    {
+      "term": "advances",
+      "df": 6,
+      "inHeadings": 4,
+      "recommendedUse": [
+        3,
+        5
+      ],
+      "watch": false
+    },
+    {
+      "term": "business loan",
+      "df": 6,
+      "inHeadings": 3,
+      "recommendedUse": [
+        2,
+        4
+      ],
+      "watch": false
+    },
+    {
+      "term": "cash flow",
+      "df": 5,
+      "inHeadings": 3,
+      "recommendedUse": [
+        7,
+        8
+      ],
+      "watch": false
+    },
+    {
+      "term": "card",
+      "df": 8,
+      "inHeadings": 3,
+      "recommendedUse": [
+        8,
+        10
+      ],
+      "watch": false
+    },
+    {
+      "term": "businesses",
+      "df": 8,
+      "inHeadings": 3,
+      "recommendedUse": [
+        7,
+        8
+      ],
+      "watch": false
+    },
+    {
+      "term": "explore",
+      "df": 6,
+      "inHeadings": 3,
+      "recommendedUse": [
+        1,
+        2
+      ],
+      "watch": false
+    },
+    {
+      "term": "loan",
+      "df": 6,
+      "inHeadings": 3,
+      "recommendedUse": [
+        6,
+        8
+      ],
+      "watch": false
+    },
+    {
+      "term": "benefits",
+      "df": 6,
+      "inHeadings": 3,
+      "recommendedUse": [
+        2,
+        3
+      ],
+      "watch": false
+    },
+    {
+      "term": "check",
+      "df": 6,
+      "inHeadings": 3,
+      "recommendedUse": [
+        2,
+        4
+      ],
+      "watch": false
+    },
+    {
+      "term": "cost",
+      "df": 5,
+      "inHeadings": 3,
+      "recommendedUse": [
+        5,
+        6
+      ],
+      "watch": false
+    },
+    {
+      "term": "flow",
+      "df": 5,
+      "inHeadings": 3,
+      "recommendedUse": [
+        7,
+        8
+      ],
+      "watch": false
+    },
+    {
+      "term": "growth",
+      "df": 5,
+      "inHeadings": 3,
+      "recommendedUse": [
+        5,
+        6
+      ],
+      "watch": false
+    },
+    {
+      "term": "choose",
+      "df": 4,
+      "inHeadings": 3,
+      "recommendedUse": [
+        2,
+        3
+      ],
+      "watch": false
+    },
+    {
+      "term": "alternatives",
+      "df": 3,
+      "inHeadings": 3,
+      "recommendedUse": [
+        2,
+        3
+      ],
+      "watch": false
+    },
+    {
+      "term": "payments",
+      "df": 8,
+      "inHeadings": 2,
+      "recommendedUse": [
+        6,
+        7
+      ],
+      "watch": false
+    },
+    {
+      "term": "bank",
+      "df": 7,
+      "inHeadings": 2,
+      "recommendedUse": [
+        7,
+        8
+      ],
+      "watch": false
+    },
+    {
+      "term": "online",
+      "df": 7,
+      "inHeadings": 2,
+      "recommendedUse": [
+        4,
+        5
+      ],
+      "watch": false
+    },
+    {
+      "term": "payment",
+      "df": 7,
+      "inHeadings": 2,
+      "recommendedUse": [
+        7,
+        8
+      ],
+      "watch": false
+    },
+    {
+      "term": "retail",
+      "df": 7,
+      "inHeadings": 2,
+      "recommendedUse": [
+        2,
+        3
+      ],
+      "watch": false
+    },
+    {
+      "term": "small",
+      "df": 6,
+      "inHeadings": 2,
+      "recommendedUse": [
+        6,
+        8
+      ],
+      "watch": false
+    },
+    {
+      "term": "funds",
+      "df": 6,
+      "inHeadings": 2,
+      "recommendedUse": [
+        6,
+        8
+      ],
+      "watch": false
+    },
+    {
+      "term": "eligibility",
+      "df": 6,
+      "inHeadings": 2,
+      "recommendedUse": [
+        3,
+        4
+      ],
+      "watch": false
+    },
+    {
+      "term": "improve",
+      "df": 6,
+      "inHeadings": 2,
+      "recommendedUse": [
+        1,
+        2
+      ],
+      "watch": false
+    },
+    {
+      "term": "early",
+      "df": 5,
+      "inHeadings": 2,
+      "recommendedUse": [
+        6,
+        7
+      ],
+      "watch": false
+    },
+    {
+      "term": "take",
+      "df": 5,
+      "inHeadings": 2,
+      "recommendedUse": [
+        3,
+        4
+      ],
+      "watch": false
+    },
+    {
+      "term": "flexible",
+      "df": 5,
+      "inHeadings": 2,
+      "recommendedUse": [
+        3,
+        4
+      ],
+      "watch": false
+    },
+    {
+      "term": "providers",
+      "df": 5,
+      "inHeadings": 2,
+      "recommendedUse": [
+        5,
+        6
+      ],
+      "watch": false
+    },
+    {
+      "term": "criteria",
+      "df": 5,
+      "inHeadings": 2,
+      "recommendedUse": [
+        1,
+        2
+      ],
+      "watch": false
+    },
+    {
+      "term": "lenders",
+      "df": 5,
+      "inHeadings": 2,
+      "recommendedUse": [
+        4,
+        5
+      ],
+      "watch": false
+    },
+    {
+      "term": "repay",
+      "df": 5,
+      "inHeadings": 2,
+      "recommendedUse": [
+        3,
+        4
+      ],
+      "watch": false
+    },
+    {
+      "term": "borrow",
+      "df": 5,
+      "inHeadings": 2,
+      "recommendedUse": [
+        2,
+        3
+      ],
+      "watch": false
+    }
+  ],
+  "namedEntities": [
+    {
+      "entity": "Merchant Cash Advance",
+      "df": 5
+    },
+    {
+      "entity": "Financial Conduct Authority",
+      "df": 5
+    },
+    {
+      "entity": "Merchant Cash Advance UK",
+      "df": 3
+    },
+    {
+      "entity": "Firm Reference Number",
+      "df": 3
+    },
+    {
+      "entity": "Prudential Regulation Authority",
+      "df": 2
+    },
+    {
+      "entity": "DO NOT EDIT BELOW",
+      "df": 2
+    },
+    {
+      "entity": "THIS LINE",
+      "df": 2
+    },
+    {
+      "entity": "Trustpilot Apply",
+      "df": 2
+    },
+    {
+      "entity": "Payment Services Regulations",
+      "df": 2
+    },
+    {
+      "entity": "Internet Explorer",
+      "df": 2
+    },
+    {
+      "entity": "Open Sans",
+      "df": 2
+    },
+    {
+      "entity": "Mobile Portrait",
+      "df": 2
+    },
+    {
+      "entity": "Mobile Landscape",
+      "df": 2
+    },
+    {
+      "entity": "Tablet Portrait",
+      "df": 2
+    },
+    {
+      "entity": "Tablet Landscape",
+      "df": 2
+    },
+    {
+      "entity": "Play Video",
+      "df": 2
+    },
+    {
+      "entity": "Link Not Prefetchable",
+      "df": 2
+    },
+    {
+      "entity": "Skipping LCP",
+      "df": 2
+    },
+    {
+      "entity": "Merchant Cash Advances",
+      "df": 2
+    },
+    {
+      "entity": "British Business Bank",
+      "df": 2
+    }
+  ],
+  "paa": [
+    "What is a merchant cash advance?",
+    "Is merchant cash advance legitimate?",
+    "Is a merchant cash advance a line of credit?",
+    "What happens if I default on a merchant cash advance?"
+  ],
+  "related": [
+    "Merchant cash advance UK",
+    "Merchant cash advance direct lenders",
+    "Merchant cash advance no credit check",
+    "Capify merchant cash advance",
+    "Merchant cash advance sole trader",
+    "Liberis merchant cash advance",
+    "Merchant cash advance lenders UK",
+    "Merchant cash advance stripe"
+  ],
+  "score": null
+}

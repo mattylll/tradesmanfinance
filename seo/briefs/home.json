@@ -1,0 +1,220 @@
+{
+  "slug": "home",
+  "keyword": "finance for tradesmen",
+  "cluster": "brand",
+  "locale": {
+    "location_code": 2826,
+    "language_code": "en",
+    "device": "desktop"
+  },
+  "volume": 10,
+  "recommendedWordCount": 1000,
+  "entityTargets": {
+    "commercial mortgage": 0,
+    "warehouse": 0,
+    "industrial unit": 0,
+    "industrial property": 0,
+    "loan to value": 0,
+    "ltv": 0,
+    "deposit": 0.08,
+    "owner-occupier": 0,
+    "investment": 0,
+    "tenant": 0,
+    "lease": 0,
+    "bridging": 0,
+    "development finance": 0,
+    "term loan": 0,
+    "lender": 0,
+    "interest rate": 0,
+    "rate": 0.28,
+    "remortgage": 0,
+    "refinance": 0,
+    "rental income": 0,
+    "yield": 0,
+    "logistics": 0,
+    "distribution": 0,
+    "valuation": 0,
+    "repayment": 0.12
+  },
+  "paa": [
+    "What is the safest way to pay a tradesman?",
+    "What is the hourly rate for a tradesman?",
+    "What type of tradesman makes the most money?",
+    "How to spot a dodgy tradesman?"
+  ],
+  "related": [
+    "Free finance for tradesmen",
+    "Best finance for tradesmen",
+    "Finance for tradesmen calculator",
+    "Kanda finance",
+    "Kandoo finance",
+    "Kandoo finance calculator",
+    "Trade help finance",
+    "Kandoo credit"
+  ],
+  "top3": [
+    {
+      "url": "https://www.kandoo.co.uk/guides/best-finance-options-for-tradespeople",
+      "words": 804,
+      "h1": [
+        "Best Finance Options for Tradespeople"
+      ],
+      "h2": [
+        "Who'll Find This Guide Handy",
+        "What Are Finance Options, Then?",
+        "Why Bother Offering Finance?",
+        "How Finance for Tradespeople Works—No Nonsense",
+        "A Real-Life Example",
+        "Decoding the Lingo: Finance Jargon Buster",
+        "Frequently Asked Questions",
+        "Make Life Easier for You and Your Clients",
+        "Related guides"
+      ],
+      "h3": [
+        "' + escapeHtml(cfg.headline) + '"
+      ],
+      "density": {
+        "commercial mortgage": 0,
+        "warehouse": 0,
+        "industrial unit": 0,
+        "industrial property": 0,
+        "loan to value": 0,
+        "ltv": 0,
+        "deposit": 0.12,
+        "owner-occupier": 0,
+        "investment": 0,
+        "tenant": 0,
+        "lease": 0,
+        "bridging": 0,
+        "development finance": 0,
+        "term loan": 0,
+        "lender": 0.12,
+        "interest rate": 0,
+        "rate": 0,
+        "remortgage": 0,
+        "refinance": 0,
+        "rental income": 0,
+        "yield": 0,
+        "logistics": 0,
+        "distribution": 0,
+        "valuation": 0,
+        "repayment": 0.12
+      }
+    },
+    {
+      "url": "https://financefortradesmen.co.uk/",
+      "words": 723,
+      "h1": [
+        "Finance for Tradesmen"
+      ],
+      "h2": [
+        "A passion for helping tradesmen manage their finances",
+        "About",
+        "Privacy",
+        "Resorces"
+      ],
+      "h3": [
+        "Who This Site Is For",
+        "About This Site",
+        "What You’ll Learn",
+        "The Goal",
+        "Pricing and Profit",
+        "Cash Flow Financial Stability",
+        "Business Basics",
+        "Wealth Retirement",
+        "Tradesmen Income",
+        "Tax for Tradesmen"
+      ],
+      "density": {
+        "commercial mortgage": 0,
+        "warehouse": 0,
+        "industrial unit": 0,
+        "industrial property": 0,
+        "loan to value": 0,
+        "ltv": 0,
+        "deposit": 0,
+        "owner-occupier": 0,
+        "investment": 0,
+        "tenant": 0,
+        "lease": 0,
+        "bridging": 0,
+        "development finance": 0,
+        "term loan": 0,
+        "lender": 0,
+        "interest rate": 0,
+        "rate": 0.28,
+        "remortgage": 0,
+        "refinance": 0,
+        "rental income": 0,
+        "yield": 0,
+        "logistics": 0,
+        "distribution": 0,
+        "valuation": 0,
+        "repayment": 0
+      }
+    },
+    {
+      "url": "https://tradesmanfinance.co.uk/",
+      "words": 1317,
+      "h1": [
+        "Finance Solutions for UK Tradesmen"
+      ],
+      "h2": [
+        "Every Type of Finance You Need",
+        "See Your Monthly Payments",
+        "How It Works",
+        "Finance for Every Trade",
+        "Trusted by Tradesmen",
+        "Ready to Get Started?",
+        "UK-Wide Coverage",
+        "Trade Finance FAQs",
+        "Ready to Grow Your Business?"
+      ],
+      "h3": [
+        "Trades",
+        "Popular Locations",
+        "Company",
+        "Equipment Finance",
+        "Tool Finance",
+        "Vehicle Finance",
+        "Van Finance",
+        "Business Loans",
+        "Cashflow Finance",
+        "Invoice Finance",
+        "Apply in 5 Minutes",
+        "Instant Decision",
+        "Funds Released",
+        "Electrician",
+        "Plumber",
+        "Builder"
+      ],
+      "density": {
+        "commercial mortgage": 0,
+        "warehouse": 0,
+        "industrial unit": 0,
+        "industrial property": 0,
+        "loan to value": 0,
+        "ltv": 0,
+        "deposit": 0.08,
+        "owner-occupier": 0,
+        "investment": 0,
+        "tenant": 0,
+        "lease": 0,
+        "bridging": 0,
+        "development finance": 0,
+        "term loan": 0,
+        "lender": 0,
+        "interest rate": 0.08,
+        "rate": 0.38,
+        "remortgage": 0,
+        "refinance": 0,
+        "rental income": 0,
+        "yield": 0,
+        "logistics": 0,
+        "distribution": 0,
+        "valuation": 0,
+        "repayment": 0.3
+      }
+    }
+  ]
+}

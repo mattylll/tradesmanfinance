@@ -1,0 +1,10 @@
+[
+  {"slug": "home", "keyword": "finance for tradesmen", "cluster": "brand"},
+  {"slug": "vehicle-finance", "keyword": "van finance", "cluster": "products"},
+  {"slug": "equipment-finance", "keyword": "tool finance", "cluster": "products"},
+  {"slug": "business-loans", "keyword": "sole trader business loan", "cluster": "products"},
+  {"slug": "invoice-finance", "keyword": "invoice finance", "cluster": "products"},
+  {"slug": "asset-finance", "keyword": "asset finance", "cluster": "products"},
+  {"slug": "merchant-cash-advance", "keyword": "merchant cash advance", "cluster": "products"},
+  {"slug": "cashflow-finance", "keyword": "business cash advance", "cluster": "products"}
+]

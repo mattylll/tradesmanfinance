@@ -1,6 +1,7 @@
 import { MetadataRoute } from "next";
 import { trades, getAllTradeSlugs } from "@/data/trades";
 import { counties, getAllCountySlugs, townToSlug } from "@/data/locations";
+import { getAllProductSlugs } from "@/data/product-pages";
 
 const SITE_URL = "https://tradesmanfinance.co.uk";
 
@@ -51,6 +52,23 @@ export default function sitemap(): MetadataRoute.Sitemap {
       lastModified: currentDate,
       changeFrequency: page.changeFreq,
       priority: page.priority,
+    });
+  });
+
+  // 2a. Products hub and individual product pages
+  urls.push({
+    url: `${SITE_URL}/products`,
+    lastModified: currentDate,
+    changeFrequency: "weekly",
+    priority: 0.9,
+  });
+
+  getAllProductSlugs().forEach((slug) => {
+    urls.push({
+      url: `${SITE_URL}/products/${slug}`,
+      lastModified: currentDate,
+      changeFrequency: "monthly",
+      priority: 0.8,
     });
   });
 

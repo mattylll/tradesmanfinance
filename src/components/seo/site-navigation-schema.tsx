@@ -59,6 +59,11 @@ export const mainNavigationItems: NavigationItem[] = [
         href: '/products/invoice-finance',
         description: 'Unlock unpaid invoices',
       },
+      {
+        name: 'Merchant Cash Advance',
+        href: '/products/merchant-cash-advance',
+        description: 'Advance against card takings, repaid as you earn',
+      },
     ],
   },
   {

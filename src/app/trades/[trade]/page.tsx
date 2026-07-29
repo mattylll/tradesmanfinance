@@ -36,7 +36,7 @@ export async function generateMetadata({
   }
 
   const pageUrl = `${SITE_URL}/trades/${tradeSlug}`;
-  const title = `${trade.name} Finance & Business Loans`;
+  const title = `${trade.name} Business Loans & Equipment Finance UK`;
   const description = `Specialist equipment finance and business loans for ${trade.name.toLowerCase()}s. ${trade.description} Quick decisions, competitive rates from £25k-£1m.`;
 
   return {

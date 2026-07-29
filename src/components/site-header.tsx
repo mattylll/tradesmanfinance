@@ -21,6 +21,8 @@ const products = [
   { name: 'Asset Finance', href: '/products/asset-finance', description: 'Hire purchase & leasing' },
   { name: 'Cashflow Finance', href: '/products/cashflow-finance', description: 'Working capital solutions' },
   { name: 'Invoice Finance', href: '/products/invoice-finance', description: 'Unlock unpaid invoices' },
+  { name: 'Merchant Cash Advance', href: '/products/merchant-cash-advance', description: 'Advance on your card takings' },
+  { name: 'Scaffolding Finance', href: '/products/scaffolding-finance', description: 'Scaffold equipment, trucks & loans' },
 ];
 
 const trades = [

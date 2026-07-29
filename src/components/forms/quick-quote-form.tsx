@@ -78,6 +78,16 @@ const PRODUCT_CONFIG: Record<string, { title: string; description: string; maxAm
     description: "Hire purchase & leasing options",
     maxAmount: 500000,
   },
+  "merchant-cash-advance": {
+    title: "Merchant Cash Advance Quote",
+    description: "Advance against your card takings",
+    maxAmount: 200000,
+  },
+  "scaffolding-finance": {
+    title: "Scaffolding Finance Quote",
+    description: "Equipment, trucks & working capital",
+    maxAmount: 500000,
+  },
 };
 
 interface QuickQuoteFormProps {

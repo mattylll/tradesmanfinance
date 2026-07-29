@@ -212,6 +212,8 @@ export default function SitemapPage() {
               <SitemapLink href="/products/cashflow-finance" label="Cashflow Finance" description="Working capital and cash flow solutions" />
               <SitemapLink href="/products/invoice-finance" label="Invoice Finance" description="Unlock cash tied up in unpaid invoices" />
               <SitemapLink href="/products/asset-finance" label="Asset Finance" description="Hire purchase, leasing, and sale and leaseback" />
+              <SitemapLink href="/products/merchant-cash-advance" label="Merchant Cash Advance" description="Advance against card takings, repaid as a percentage of card sales" />
+              <SitemapLink href="/products/scaffolding-finance" label="Scaffolding Finance" description="Equipment, trucks and working capital for scaffolding contractors" />
             </div>
           </SitemapSection>
 

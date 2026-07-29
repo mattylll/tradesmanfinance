@@ -1,0 +1,4224 @@
+{
+  "seeds": [
+    "tradesman finance",
+    "equipment finance",
+    "van finance",
+    "tool finance",
+    "merchant cash advance",
+    "business loans for tradesmen"
+  ],
+  "locale": {
+    "location_code": 2826,
+    "language_code": "en",
+    "device": "desktop"
+  },
+  "all": [
+    {
+      "kw": "universal credit",
+      "vol": 9140000,
+      "cpc": 3.19
+    },
+    {
+      "kw": "mortgage calculator",
+      "vol": 450000,
+      "cpc": 1.64
+    },
+    {
+      "kw": "loans",
+      "vol": 246000,
+      "cpc": 8.25
+    },
+    {
+      "kw": "universal credit number",
+      "vol": 201000,
+      "cpc": 2.08
+    },
+    {
+      "kw": "loan for terrible credit",
+      "vol": 165000,
+      "cpc": 6.68
+    },
+    {
+      "kw": "terrible credit loans",
+      "vol": 165000,
+      "cpc": 6.68
+    },
+    {
+      "kw": "sign in universal credit",
+      "vol": 135000,
+      "cpc": 0
+    },
+    {
+      "kw": "credit karma",
+      "vol": 135000,
+      "cpc": 3.81
+    },
+    {
+      "kw": "mortgage calculator uk",
+      "vol": 110000,
+      "cpc": 1.58
+    },
+    {
+      "kw": "car finance",
+      "vol": 110000,
+      "cpc": 18.56
+    },
+    {
+      "kw": "best cash isa rates",
+      "vol": 110000,
+      "cpc": 2.25
+    },
+    {
+      "kw": "payday loans",
+      "vol": 110000,
+      "cpc": 8.95
+    },
+    {
+      "kw": "business",
+      "vol": 90500,
+      "cpc": 24.54
+    },
+    {
+      "kw": "mortgage repayment calculator",
+      "vol": 90500,
+      "cpc": 0.86
+    },
+    {
+      "kw": "tesco loans",
+      "vol": 90500,
+      "cpc": 3.48
+    },
+    {
+      "kw": "credit score",
+      "vol": 90500,
+      "cpc": 2.36
+    },
+    {
+      "kw": "loan calculator",
+      "vol": 74000,
+      "cpc": 2.73
+    },
+    {
+      "kw": "pension credit",
+      "vol": 74000,
+      "cpc": 3.89
+    },
+    {
+      "kw": "bad credit history credit cards",
+      "vol": 74000,
+      "cpc": 9.88
+    },
+    {
+      "kw": "companies house uk",
+      "vol": 74000,
+      "cpc": 8.56
+    },
+    {
+      "kw": "mortgage overpayment calculator",
+      "vol": 60500,
+      "cpc": 2.21
+    },
+    {
+      "kw": "google business profile",
+      "vol": 60500,
+      "cpc": 9.73
+    },
+    {
+      "kw": "mortgage rates uk",
+      "vol": 49500,
+      "cpc": 1.38
+    },
+    {
+      "kw": "student loans company",
+      "vol": 49500,
+      "cpc": 2.31
+    },
+    {
+      "kw": "personal loans",
+      "vol": 49500,
+      "cpc": 9.9
+    },
+    {
+      "kw": "universal credit sign up",
+      "vol": 49500,
+      "cpc": 0
+    },
+    {
+      "kw": "hsbc mortgage rates",
+      "vol": 40500,
+      "cpc": 3.3
+    },
+    {
+      "kw": "best mortgage rates uk",
+      "vol": 40500,
+      "cpc": 2.22
+    },
+    {
+      "kw": "universal credit journal",
+      "vol": 40500,
+      "cpc": 0
+    },
+    {
+      "kw": "car finance claims",
+      "vol": 40500,
+      "cpc": 48.27
+    },
+    {
+      "kw": "0 interest credit cards",
+      "vol": 40500,
+      "cpc": 10.61
+    },
+    {
+      "kw": "simply business",
+      "vol": 40500,
+      "cpc": 4.88
+    },
+    {
+      "kw": "credit score check",
+      "vol": 33100,
+      "cpc": 4.65
+    },
+    {
+      "kw": "call universal credit",
+      "vol": 33100,
+      "cpc": 0
+    },
+    {
+      "kw": "bad credit score loan uk",
+      "vol": 33100,
+      "cpc": 5.24
+    },
+    {
+      "kw": "short term loans",
+      "vol": 33100,
+      "cpc": 11.06
+    },
+    {
+      "kw": "bad credit loans in the uk",
+      "vol": 33100,
+      "cpc": 5.24
+    },
+    {
+      "kw": "high interest savings account uk",
+      "vol": 33100,
+      "cpc": 4.35
+    },
+    {
+      "kw": "loans for terrible credit uk",
+      "vol": 33100,
+      "cpc": 5.24
+    },
+    {
+      "kw": "apply for universal credit",
+      "vol": 33100,
+      "cpc": 4.1
+    },
+    {
+      "kw": "terrible credit loans uk",
+      "vol": 33100,
+      "cpc": 5.24
+    },
+    {
+      "kw": "poor credit history loans uk",
+      "vol": 33100,
+      "cpc": 5.24
+    },
+    {
+      "kw": "terrible credit car finance",
+      "vol": 27100,
+      "cpc": 31.84
+    },
+    {
+      "kw": "finance car on bad credit",
+      "vol": 27100,
+      "cpc": 31.84
+    },
+    {
+      "kw": "bad car credit finance",
+      "vol": 27100,
+      "cpc": 31.84
+    },
+    {
+      "kw": "car loan",
+      "vol": 27100,
+      "cpc": 10.59
+    },
+    {
+      "kw": "business loans",
+      "vol": 27100,
+      "cpc": 66.11
+    },
+    {
+      "kw": "uk mortgage rates",
+      "vol": 27100,
+      "cpc": 1.5
+    },
+    {
+      "kw": "student finance contact",
+      "vol": 27100,
+      "cpc": 15
+    },
+    {
+      "kw": "nationwide mortgage calculator",
+      "vol": 27100,
+      "cpc": 1.98
+    },
+    {
+      "kw": "bt business",
+      "vol": 27100,
+      "cpc": 1.61
+    },
+    {
+      "kw": "car finance on bad credit history",
+      "vol": 27100,
+      "cpc": 31.84
+    },
+    {
+      "kw": "direct lenders loans bad credit",
+      "vol": 27100,
+      "cpc": 3.12
+    },
+    {
+      "kw": "martin lewis car finance",
+      "vol": 27100,
+      "cpc": 15.02
+    },
+    {
+      "kw": "car finance 247",
+      "vol": 27100,
+      "cpc": 8.22
+    },
+    {
+      "kw": "car credit bad finance",
+      "vol": 27100,
+      "cpc": 31.84
+    },
+    {
+      "kw": "finance for cars for bad credit",
+      "vol": 27100,
+      "cpc": 31.84
+    },
+    {
+      "kw": "monzo business account",
+      "vol": 27100,
+      "cpc": 21.17
+    },
+    {
+      "kw": "universal credit uk",
+      "vol": 27100,
+      "cpc": 2.19
+    },
+    {
+      "kw": "finance for car bad credit",
+      "vol": 27100,
+      "cpc": 31.84
+    },
+    {
+      "kw": "business for sale",
+      "vol": 27100,
+      "cpc": 0.96
+    },
+    {
+      "kw": "direct lenders for loans bad credit",
+      "vol": 27100,
+      "cpc": 3.12
+    },
+    {
+      "kw": "finance on cars bad credit",
+      "vol": 27100,
+      "cpc": 31.84
+    },
+    {
+      "kw": "universal credit news",
+      "vol": 27100,
+      "cpc": 0
+    },
+    {
+      "kw": "bbc business",
+      "vol": 22200,
+      "cpc": 1.89
+    },
+    {
+      "kw": "finio loans",
+      "vol": 22200,
+      "cpc": 2.94
+    },
+    {
+      "kw": "credit",
+      "vol": 22200,
+      "cpc": 7.7
+    },
+    {
+      "kw": "direct lender loans",
+      "vol": 22200,
+      "cpc": 2.99
+    },
+    {
+      "kw": "payday loans terrible credit",
+      "vol": 22200,
+      "cpc": 4.47
+    },
+    {
+      "kw": "abound loans",
+      "vol": 22200,
+      "cpc": 1.04
+    },
+    {
+      "kw": "halifax mortgage calculator",
+      "vol": 22200,
+      "cpc": 0.45
+    },
+    {
+      "kw": "quick loans",
+      "vol": 22200,
+      "cpc": 10.75
+    },
+    {
+      "kw": "buy to let mortgage calculator",
+      "vol": 22200,
+      "cpc": 1.96
+    },
+    {
+      "kw": "lendable loans",
+      "vol": 18100,
+      "cpc": 5.7
+    },
+    {
+      "kw": "marks and spencer loans",
+      "vol": 18100,
+      "cpc": 7.01
+    },
+    {
+      "kw": "business insurance",
+      "vol": 18100,
+      "cpc": 58.3
+    },
+    {
+      "kw": "slc loans login",
+      "vol": 18100,
+      "cpc": 0
+    },
+    {
+      "kw": "mortgage repayment calculator uk",
+      "vol": 18100,
+      "cpc": 1.38
+    },
+    {
+      "kw": "admiral loans",
+      "vol": 18100,
+      "cpc": 13.06
+    },
+    {
+      "kw": "business rates",
+      "vol": 18100,
+      "cpc": 7.67
+    },
+    {
+      "kw": "government uk universal credit",
+      "vol": 18100,
+      "cpc": 0
+    },
+    {
+      "kw": "universal credit application",
+      "vol": 18100,
+      "cpc": 5.32
+    },
+    {
+      "kw": "loans uk",
+      "vol": 18100,
+      "cpc": 8.56
+    },
+    {
+      "kw": "payday loans direct lender",
+      "vol": 18100,
+      "cpc": 3.18
+    },
+    {
+      "kw": "credit check",
+      "vol": 18100,
+      "cpc": 4.28
+    },
+    {
+      "kw": "same day loans",
+      "vol": 18100,
+      "cpc": 8
+    },
+    {
+      "kw": "universal credit eligibility",
+      "vol": 18100,
+      "cpc": 1.48
+    },
+    {
+      "kw": "current mortgage rates uk",
+      "vol": 18100,
+      "cpc": 1.55
+    },
+    {
+      "kw": "natwest mortgage calculator",
+      "vol": 14800,
+      "cpc": 1.16
+    },
+    {
+      "kw": "ondal loans",
+      "vol": 14800,
+      "cpc": 3.38
+    },
+    {
+      "kw": "payday loans uk",
+      "vol": 14800,
+      "cpc": 7.3
+    },
+    {
+      "kw": "loan calculator uk",
+      "vol": 14800,
+      "cpc": 2.19
+    },
+    {
+      "kw": "no credit check loans",
+      "vol": 14800,
+      "cpc": 4.5
+    },
+    {
+      "kw": "register a company uk",
+      "vol": 14800,
+      "cpc": 40.57
+    },
+    {
+      "kw": "drafty loans",
+      "vol": 14800,
+      "cpc": 2.8
+    },
+    {
+      "kw": "compare loans",
+      "vol": 14800,
+      "cpc": 8.42
+    },
+    {
+      "kw": "santander loans",
+      "vol": 14800,
+      "cpc": 2.19
+    },
+    {
+      "kw": "nationwide loans",
+      "vol": 14800,
+      "cpc": 0.91
+    },
+    {
+      "kw": "business proposal",
+      "vol": 14800,
+      "cpc": 8.57
+    },
+    {
+      "kw": "small loans",
+      "vol": 14800,
+      "cpc": 10.1
+    },
+    {
+      "kw": "mis sold car finance",
+      "vol": 14800,
+      "cpc": 51.64
+    },
+    {
+      "kw": "hsbc mortgages",
+      "vol": 14800,
+      "cpc": 6.67
+    },
+    {
+      "kw": "premium credit limited",
+      "vol": 14800,
+      "cpc": 12.71
+    },
+    {
+      "kw": "no refusal payday loans uk direct lenders",
+      "vol": 14800,
+      "cpc": 2.17
+    },
+    {
+      "kw": "student loans balance",
+      "vol": 14800,
+      "cpc": 0
+    },
+    {
+      "kw": "low interest loans",
+      "vol": 12100,
+      "cpc": 8.72
+    },
+    {
+      "kw": "natwest loan calculator",
+      "vol": 12100,
+      "cpc": 1.46
+    },
+    {
+      "kw": "barclays mortgage calculator",
+      "vol": 12100,
+      "cpc": 0.59
+    },
+    {
+      "kw": "universal credit loan",
+      "vol": 12100,
+      "cpc": 2.67
+    },
+    {
+      "kw": "what is universal credit",
+      "vol": 12100,
+      "cpc": 3.21
+    },
+    {
+      "kw": "car loan calculator",
+      "vol": 12100,
+      "cpc": 3.72
+    },
+    {
+      "kw": "universal credit helpline",
+      "vol": 12100,
+      "cpc": 1.08
+    },
+    {
+      "kw": "best loan rates uk",
+      "vol": 12100,
+      "cpc": 5.05
+    },
+    {
+      "kw": "short term loan bad credit lenders",
+      "vol": 12100,
+      "cpc": 6.63
+    },
+    {
+      "kw": "ee business",
+      "vol": 12100,
+      "cpc": 4.91
+    },
+    {
+      "kw": "check credit score",
+      "vol": 12100,
+      "cpc": 4.52
+    },
+    {
+      "kw": "little loans",
+      "vol": 12100,
+      "cpc": 3.37
+    },
+    {
+      "kw": "business bank account",
+      "vol": 12100,
+      "cpc": 79.96
+    },
+    {
+      "kw": "guarantor loans",
+      "vol": 12100,
+      "cpc": 3.52
+    },
+    {
+      "kw": "plan 2 student loans",
+      "vol": 12100,
+      "cpc": 0
+    },
+    {
+      "kw": "natwest loans",
+      "vol": 12100,
+      "cpc": 2.46
+    },
+    {
+      "kw": "universal credit advance payment",
+      "vol": 12100,
+      "cpc": 5.5
+    },
+    {
+      "kw": "short term loan with bad credit history",
+      "vol": 12100,
+      "cpc": 6.63
+    },
+    {
+      "kw": "credit engine",
+      "vol": 12100,
+      "cpc": 3.88
+    },
+    {
+      "kw": "short term loans bad credit history",
+      "vol": 12100,
+      "cpc": 6.63
+    },
+    {
+      "kw": "lloyds business account",
+      "vol": 12100,
+      "cpc": 10.6
+    },
+    {
+      "kw": "hsbc mortgage calculator",
+      "vol": 12100,
+      "cpc": 2.92
+    },
+    {
+      "kw": "o2 business",
+      "vol": 12100,
+      "cpc": 6.79
+    },
+    {
+      "kw": "business news",
+      "vol": 12100,
+      "cpc": 3.16
+    },
+    {
+      "kw": "hsbc isa rates",
+      "vol": 12100,
+      "cpc": 4.4
+    },
+    {
+      "kw": "payday loans uk direct lender",
+      "vol": 12100,
+      "cpc": 3.74
+    },
+    {
+      "kw": "student loans plan 2",
+      "vol": 12100,
+      "cpc": 0
+    },
+    {
+      "kw": "zopa loans",
+      "vol": 12100,
+      "cpc": 4.28
+    },
+    {
+      "kw": "interest only mortgage calculator",
+      "vol": 12100,
+      "cpc": 2.1
+    },
+    {
+      "kw": "the business",
+      "vol": 12100,
+      "cpc": 1.52
+    },
+    {
+      "kw": "revolut business account",
+      "vol": 9900,
+      "cpc": 11.82
+    },
+    {
+      "kw": "student loan check balance",
+      "vol": 9900,
+      "cpc": 0
+    },
+    {
+      "kw": "mortgage affordability calculator",
+      "vol": 9900,
+      "cpc": 2.37
+    },
+    {
+      "kw": "car finance check",
+      "vol": 9900,
+      "cpc": 31.66
+    },
+    {
+      "kw": "money saving expert mortgage calculator",
+      "vol": 9900,
+      "cpc": 4.44
+    },
+    {
+      "kw": "universal credit budgeting advance",
+      "vol": 9900,
+      "cpc": 5.15
+    },
+    {
+      "kw": "best fixed rate cash isa",
+      "vol": 9900,
+      "cpc": 1.54
+    },
+    {
+      "kw": "check student loan balance",
+      "vol": 9900,
+      "cpc": 0
+    },
+    {
+      "kw": "universal credit apply",
+      "vol": 9900,
+      "cpc": 2.57
+    },
+    {
+      "kw": "voa business rates",
+      "vol": 9900,
+      "cpc": 6.01
+    },
+    {
+      "kw": "asda loans",
+      "vol": 9900,
+      "cpc": 7.32
+    },
+    {
+      "kw": "hsbc loans",
+      "vol": 9900,
+      "cpc": 1.23
+    },
+    {
+      "kw": "salad loans",
+      "vol": 9900,
+      "cpc": 1.41
+    },
+    {
+      "kw": "apply for student finance",
+      "vol": 9900,
+      "cpc": 7.48
+    },
+    {
+      "kw": "loans to go",
+      "vol": 9900,
+      "cpc": 4.62
+    },
+    {
+      "kw": "student loans check balance",
+      "vol": 9900,
+      "cpc": 0
+    },
+    {
+      "kw": "loan to consolidate debt with poor credit",
+      "vol": 9900,
+      "cpc": 15.2
+    },
+    {
+      "kw": "business park",
+      "vol": 9900,
+      "cpc": 6.01
+    },
+    {
+      "kw": "mortgage comparison uk",
+      "vol": 9900,
+      "cpc": 5.44
+    },
+    {
+      "kw": "personal loans uk",
+      "vol": 9900,
+      "cpc": 8.23
+    },
+    {
+      "kw": "student loans balance check",
+      "vol": 9900,
+      "cpc": 0
+    },
+    {
+      "kw": "credit report",
+      "vol": 9900,
+      "cpc": 4.43
+    },
+    {
+      "kw": "business ideas",
+      "vol": 9900,
+      "cpc": 2.94
+    },
+    {
+      "kw": "nationwide loan calculator",
+      "vol": 9900,
+      "cpc": 0.32
+    },
+    {
+      "kw": "tide business account",
+      "vol": 9900,
+      "cpc": 18.79
+    },
+    {
+      "kw": "barclays loans",
+      "vol": 9900,
+      "cpc": 6.64
+    },
+    {
+      "kw": "personal loan calculator",
+      "vol": 9900,
+      "cpc": 3.55
+    },
+    {
+      "kw": "everyday loans",
+      "vol": 9900,
+      "cpc": 5.39
+    },
+    {
+      "kw": "apple business manager",
+      "vol": 9900,
+      "cpc": 13.45
+    },
+    {
+      "kw": "credit union loans",
+      "vol": 9900,
+      "cpc": 4.15
+    },
+    {
+      "kw": "cheap loans",
+      "vol": 9900,
+      "cpc": 7.16
+    },
+    {
+      "kw": "student loan balance check",
+      "vol": 9900,
+      "cpc": 0
+    },
+    {
+      "kw": "compare the market loans",
+      "vol": 9900,
+      "cpc": 5.66
+    },
+    {
+      "kw": "business account",
+      "vol": 9900,
+      "cpc": 74.82
+    },
+    {
+      "kw": "loan for bill consolidation bad credit",
+      "vol": 9900,
+      "cpc": 15.2
+    },
+    {
+      "kw": "instant loans",
+      "vol": 9900,
+      "cpc": 8.85
+    },
+    {
+      "kw": "fernovo loans",
+      "vol": 9900,
+      "cpc": 1.35
+    },
+    {
+      "kw": "savvy loans",
+      "vol": 8100,
+      "cpc": 4.27
+    },
+    {
+      "kw": "loans for people on benefits",
+      "vol": 8100,
+      "cpc": 2.86
+    },
+    {
+      "kw": "direct lender loan uk",
+      "vol": 8100,
+      "cpc": 3.63
+    },
+    {
+      "kw": "universal credit opening times",
+      "vol": 8100,
+      "cpc": 0
+    },
+    {
+      "kw": "lloyds mortgage calculator",
+      "vol": 8100,
+      "cpc": 0.34
+    },
+    {
+      "kw": "sign universal credit",
+      "vol": 8100,
+      "cpc": 0
+    },
+    {
+      "kw": "the business 2005",
+      "vol": 8100,
+      "cpc": 0
+    },
+    {
+      "kw": "first direct mortgages",
+      "vol": 8100,
+      "cpc": 1.91
+    },
+    {
+      "kw": "bad credit payday loan direct lender",
+      "vol": 8100,
+      "cpc": 2.77
+    },
+    {
+      "kw": "catalog credit bad credit",
+      "vol": 8100,
+      "cpc": 2.6
+    },
+    {
+      "kw": "mortgage overpayment calculator uk",
+      "vol": 8100,
+      "cpc": 0.77
+    },
+    {
+      "kw": "pastdue credit solutions",
+      "vol": 8100,
+      "cpc": 6.18
+    },
+    {
+      "kw": "lloyds car finance",
+      "vol": 8100,
+      "cpc": 4.17
+    },
+    {
+      "kw": "catalogue credit with bad credit",
+      "vol": 8100,
+      "cpc": 2.6
+    },
+    {
+      "kw": "used car finance",
+      "vol": 8100,
+      "cpc": 5.99
+    },
+    {
+      "kw": "student loan uk",
+      "vol": 8100,
+      "cpc": 4.39
+    },
+    {
+      "kw": "oakbrook loans",
+      "vol": 8100,
+      "cpc": 3.27
+    },
+    {
+      "kw": "business analyst jobs",
+      "vol": 8100,
+      "cpc": 1.56
+    },
+    {
+      "kw": "remortgage deals",
+      "vol": 8100,
+      "cpc": 10.9
+    },
+    {
+      "kw": "dot dot loans",
+      "vol": 8100,
+      "cpc": 1.21
+    },
+    {
+      "kw": "santander mortgage calculator",
+      "vol": 8100,
+      "cpc": 0.91
+    },
+    {
+      "kw": "martin lewis car finance claim",
+      "vol": 8100,
+      "cpc": 13.93
+    },
+    {
+      "kw": "escp business school",
+      "vol": 8100,
+      "cpc": 2.24
+    },
+    {
+      "kw": "meta business",
+      "vol": 8100,
+      "cpc": 2.1
+    },
+    {
+      "kw": "mortgage deals",
+      "vol": 8100,
+      "cpc": 5.45
+    },
+    {
+      "kw": "home improvement loans",
+      "vol": 8100,
+      "cpc": 15.12
+    },
+    {
+      "kw": "secured loans",
+      "vol": 8100,
+      "cpc": 116.47
+    },
+    {
+      "kw": "universal credit log in sign in sign in",
+      "vol": 8100,
+      "cpc": 0
+    },
+    {
+      "kw": "tsb business",
+      "vol": 8100,
+      "cpc": 19.32
+    },
+    {
+      "kw": "signs universal credit",
+      "vol": 8100,
+      "cpc": 0
+    },
+    {
+      "kw": "universal credit closing time",
+      "vol": 8100,
+      "cpc": 0
+    },
+    {
+      "kw": "barclays loan calculator",
+      "vol": 6600,
+      "cpc": 4.68
+    },
+    {
+      "kw": "personal loan to bad credit",
+      "vol": 6600,
+      "cpc": 7.4
+    },
+    {
+      "kw": "personal loans for terrible credit",
+      "vol": 6600,
+      "cpc": 7.4
+    },
+    {
+      "kw": "hastings loans",
+      "vol": 6600,
+      "cpc": 11.45
+    },
+    {
+      "kw": "low credit score loans",
+      "vol": 6600,
+      "cpc": 7.13
+    },
+    {
+      "kw": "my business profile",
+      "vol": 6600,
+      "cpc": 13.7
+    },
+    {
+      "kw": "personal loans with low credit",
+      "vol": 6600,
+      "cpc": 7.4
+    },
+    {
+      "kw": "business plan",
+      "vol": 6600,
+      "cpc": 7.98
+    },
+    {
+      "kw": "creation loans",
+      "vol": 6600,
+      "cpc": 8.44
+    },
+    {
+      "kw": "personal loan horrible credit",
+      "vol": 6600,
+      "cpc": 7.4
+    },
+    {
+      "kw": "tick tock loans",
+      "vol": 6600,
+      "cpc": 4.75
+    },
+    {
+      "kw": "mortgage monthly payment calculator",
+      "vol": 6600,
+      "cpc": 1.55
+    },
+    {
+      "kw": "loan on poor credit",
+      "vol": 6600,
+      "cpc": 6.61
+    },
+    {
+      "kw": "unsecured loans",
+      "vol": 6600,
+      "cpc": 14.74
+    },
+    {
+      "kw": "business start up loans",
+      "vol": 6600,
+      "cpc": 12.59
+    },
+    {
+      "kw": "118 118 loans",
+      "vol": 6600,
+      "cpc": 6.04
+    },
+    {
+      "kw": "0 deposit mortgage",
+      "vol": 6600,
+      "cpc": 3.55
+    },
+    {
+      "kw": "business loans uk",
+      "vol": 6600,
+      "cpc": 51.44
+    },
+    {
+      "kw": "personal loans horrible credit",
+      "vol": 6600,
+      "cpc": 7.4
+    },
+    {
+      "kw": "personal loans low credit",
+      "vol": 6600,
+      "cpc": 7.4
+    },
+    {
+      "kw": "car loans uk",
+      "vol": 6600,
+      "cpc": 7.86
+    },
+    {
+      "kw": "post office loans",
+      "vol": 6600,
+      "cpc": 4.71
+    },
+    {
+      "kw": "interest free loans",
+      "vol": 6600,
+      "cpc": 6.14
+    },
+    {
+      "kw": "plan 1 student loans",
+      "vol": 6600,
+      "cpc": 0
+    },
+    {
+      "kw": "uk travel company liquidation",
+      "vol": 6600,
+      "cpc": 0
+    },
+    {
+      "kw": "118 loans",
+      "vol": 6600,
+      "cpc": 6.35
+    },
+    {
+      "kw": "student loans plan 1",
+      "vol": 6600,
+      "cpc": 0
+    },
+    {
+      "kw": "personal loans with bad credit and",
+      "vol": 6600,
+      "cpc": 7.4
+    },
+    {
+      "kw": "personal loans for with bad credit",
+      "vol": 6600,
+      "cpc": 7.4
+    },
+    {
+      "kw": "halifax loans",
+      "vol": 6600,
+      "cpc": 3.07
+    },
+    {
+      "kw": "finio loans login",
+      "vol": 6600,
+      "cpc": 4.18
+    },
+    {
+      "kw": "lenders for poor credit loans",
+      "vol": 6600,
+      "cpc": 6.61
+    },
+    {
+      "kw": "plata loans",
+      "vol": 6600,
+      "cpc": 6.46
+    },
+    {
+      "kw": "loans for low credit score",
+      "vol": 6600,
+      "cpc": 7.13
+    },
+    {
+      "kw": "personal loans terrible credit",
+      "vol": 6600,
+      "cpc": 7.4
+    },
+    {
+      "kw": "hsbc loan calculator",
+      "vol": 6600,
+      "cpc": 0.48
+    },
+    {
+      "kw": "low apr loans",
+      "vol": 6600,
+      "cpc": 8.44
+    },
+    {
+      "kw": "sky business",
+      "vol": 6600,
+      "cpc": 5.37
+    },
+    {
+      "kw": "direct lenders",
+      "vol": 6600,
+      "cpc": 2.83
+    },
+    {
+      "kw": "personal loan for terrible credit",
+      "vol": 6600,
+      "cpc": 7.4
+    },
+    {
+      "kw": "loan comparison uk",
+      "vol": 6600,
+      "cpc": 8.46
+    },
+    {
+      "kw": "car finance deals",
+      "vol": 6600,
+      "cpc": 8.94
+    },
+    {
+      "kw": "low interest personal loans",
+      "vol": 6600,
+      "cpc": 8.21
+    },
+    {
+      "kw": "tiktok loans",
+      "vol": 6600,
+      "cpc": 5.53
+    },
+    {
+      "kw": "mortgage rate calculator",
+      "vol": 6600,
+      "cpc": 1.78
+    },
+    {
+      "kw": "how to start a business",
+      "vol": 6600,
+      "cpc": 8.87
+    },
+    {
+      "kw": "quick mortgage calculator",
+      "vol": 6600,
+      "cpc": 2
+    },
+    {
+      "kw": "premier inn business",
+      "vol": 6600,
+      "cpc": 0.75
+    },
+    {
+      "kw": "what is a good credit score",
+      "vol": 6600,
+      "cpc": 2.87
+    },
+    {
+      "kw": "gov student finance",
+      "vol": 6600,
+      "cpc": 2.21
+    },
+    {
+      "kw": "monzo loans",
+      "vol": 6600,
+      "cpc": 4.93
+    },
+    {
+      "kw": "free credit report",
+      "vol": 6600,
+      "cpc": 6.63
+    },
+    {
+      "kw": "budgeting loan universal credit",
+      "vol": 6600,
+      "cpc": 2.82
+    },
+    {
+      "kw": "business class",
+      "vol": 6600,
+      "cpc": 3.53
+    },
+    {
+      "kw": "highest rate cash isa",
+      "vol": 6600,
+      "cpc": 2.58
+    },
+    {
+      "kw": "consolidation loans",
+      "vol": 6600,
+      "cpc": 28.01
+    },
+    {
+      "kw": "logbook loans",
+      "vol": 6600,
+      "cpc": 5.22
+    },
+    {
+      "kw": "fca car finance",
+      "vol": 6600,
+      "cpc": 12.92
+    },
+    {
+      "kw": "bank loan calculator",
+      "vol": 5400,
+      "cpc": 2.44
+    },
+    {
+      "kw": "car loans 365",
+      "vol": 5400,
+      "cpc": 3.87
+    },
+    {
+      "kw": "mortgage rates uk today",
+      "vol": 5400,
+      "cpc": 1.77
+    },
+    {
+      "kw": "best mortgage deals",
+      "vol": 5400,
+      "cpc": 5.4
+    },
+    {
+      "kw": "universal credit sign in ni",
+      "vol": 5400,
+      "cpc": 0
+    },
+    {
+      "kw": "credit catalogue",
+      "vol": 5400,
+      "cpc": 5.6
+    },
+    {
+      "kw": "mortgage calculator how much can i borrow",
+      "vol": 5400,
+      "cpc": 2.2
+    },
+    {
+      "kw": "provident loans",
+      "vol": 5400,
+      "cpc": 3.07
+    },
+    {
+      "kw": "universal credit amounts",
+      "vol": 5400,
+      "cpc": 1.92
+    },
+    {
+      "kw": "business insider",
+      "vol": 5400,
+      "cpc": 8.47
+    },
+    {
+      "kw": "zable loans",
+      "vol": 5400,
+      "cpc": 5.79
+    },
+    {
+      "kw": "online loans for terrible credit",
+      "vol": 5400,
+      "cpc": 5.58
+    },
+    {
+      "kw": "aqa a level business past papers",
+      "vol": 5400,
+      "cpc": 1.18
+    },
+    {
+      "kw": "lloyds bank loans",
+      "vol": 5400,
+      "cpc": 2.77
+    },
+    {
+      "kw": "bbc mortgage calculator",
+      "vol": 5400,
+      "cpc": 2.88
+    },
+    {
+      "kw": "mbna loans",
+      "vol": 5400,
+      "cpc": 3.49
+    },
+    {
+      "kw": "mortgage calculator repayment",
+      "vol": 5400,
+      "cpc": 1.23
+    },
+    {
+      "kw": "pcp car finance",
+      "vol": 5400,
+      "cpc": 10.76
+    },
+    {
+      "kw": "business centre",
+      "vol": 5400,
+      "cpc": 10.34
+    },
+    {
+      "kw": "business model canvas",
+      "vol": 5400,
+      "cpc": 5.06
+    },
+    {
+      "kw": "first direct mortgage rates",
+      "vol": 5400,
+      "cpc": 1.23
+    },
+    {
+      "kw": "reevo loans",
+      "vol": 5400,
+      "cpc": 6.6
+    },
+    {
+      "kw": "terrible credit mortgage",
+      "vol": 5400,
+      "cpc": 23.33
+    },
+    {
+      "kw": "universal credit advance payment number",
+      "vol": 5400,
+      "cpc": 0
+    },
+    {
+      "kw": "how to improve credit score",
+      "vol": 5400,
+      "cpc": 5.76
+    },
+    {
+      "kw": "halifax loan calculator",
+      "vol": 5400,
+      "cpc": 2.38
+    },
+    {
+      "kw": "natwest business",
+      "vol": 5400,
+      "cpc": 1.85
+    },
+    {
+      "kw": "advance payment number universal credit",
+      "vol": 5400,
+      "cpc": 0
+    },
+    {
+      "kw": "lloyds loan calculator",
+      "vol": 5400,
+      "cpc": 2.58
+    },
+    {
+      "kw": "equifax credit score",
+      "vol": 5400,
+      "cpc": 2.82
+    },
+    {
+      "kw": "car lease bad credit",
+      "vol": 5400,
+      "cpc": 17.19
+    },
+    {
+      "kw": "business suite",
+      "vol": 5400,
+      "cpc": 0.94
+    },
+    {
+      "kw": "mortgages for adverse credit history",
+      "vol": 5400,
+      "cpc": 23.33
+    },
+    {
+      "kw": "car finance comparison",
+      "vol": 5400,
+      "cpc": 8.59
+    },
+    {
+      "kw": "universal credit gov uk",
+      "vol": 5400,
+      "cpc": 0
+    },
+    {
+      "kw": "cheap car finance",
+      "vol": 5400,
+      "cpc": 8.62
+    },
+    {
+      "kw": "small business loans",
+      "vol": 5400,
+      "cpc": 39.82
+    },
+    {
+      "kw": "credit expert",
+      "vol": 5400,
+      "cpc": 0.77
+    },
+    {
+      "kw": "car finance claims update",
+      "vol": 5400,
+      "cpc": 14.48
+    },
+    {
+      "kw": "free credit check",
+      "vol": 5400,
+      "cpc": 7.42
+    },
+    {
+      "kw": "start up loans",
+      "vol": 5400,
+      "cpc": 6.98
+    },
+    {
+      "kw": "what student loans plan am i on",
+      "vol": 5400,
+      "cpc": 0
+    },
+    {
+      "kw": "universal credit payment cuts",
+      "vol": 5400,
+      "cpc": 0
+    },
+    {
+      "kw": "lenders online bad credit",
+      "vol": 5400,
+      "cpc": 5.58
+    },
+    {
+      "kw": "tsb loans",
+      "vol": 5400,
+      "cpc": 4.88
+    },
+    {
+      "kw": "company search uk",
+      "vol": 5400,
+      "cpc": 9.22
+    },
+    {
+      "kw": "student finance application",
+      "vol": 5400,
+      "cpc": 4.99
+    },
+    {
+      "kw": "mortgages uk",
+      "vol": 4400,
+      "cpc": 6.47
+    },
+    {
+      "kw": "car loan on bad credit",
+      "vol": 4400,
+      "cpc": 31.91
+    },
+    {
+      "kw": "car credit loan bad credit",
+      "vol": 4400,
+      "cpc": 31.91
+    },
+    {
+      "kw": "car loans for terrible credit",
+      "vol": 4400,
+      "cpc": 31.91
+    },
+    {
+      "kw": "set up a limited company uk",
+      "vol": 4400,
+      "cpc": 50.09
+    },
+    {
+      "kw": "benefit loans",
+      "vol": 4400,
+      "cpc": 2.55
+    },
+    {
+      "kw": "department for business and trade",
+      "vol": 4400,
+      "cpc": 0.26
+    },
+    {
+      "kw": "owners direct",
+      "vol": 4400,
+      "cpc": 0.79
+    },
+    {
+      "kw": "moneyboat loans",
+      "vol": 4400,
+      "cpc": 3.08
+    },
+    {
+      "kw": "loans bad credit car",
+      "vol": 4400,
+      "cpc": 31.91
+    },
+    {
+      "kw": "business development manager",
+      "vol": 4400,
+      "cpc": 4.11
+    },
+    {
+      "kw": "best interest rates uk",
+      "vol": 4400,
+      "cpc": 3.56
+    },
+    {
+      "kw": "universal credit self employed",
+      "vol": 4400,
+      "cpc": 3.7
+    },
+    {
+      "kw": "premium bond check uk",
+      "vol": 4400,
+      "cpc": 0
+    },
+    {
+      "kw": "credit score check uk",
+      "vol": 4400,
+      "cpc": 5.53
+    },
+    {
+      "kw": "loans by mal",
+      "vol": 4400,
+      "cpc": 4.68
+    },
+    {
+      "kw": "doorstep loans",
+      "vol": 4400,
+      "cpc": 1.42
+    },
+    {
+      "kw": "meridian business support",
+      "vol": 4400,
+      "cpc": 6.16
+    },
+    {
+      "kw": "how much can i borrow mortgage uk",
+      "vol": 4400,
+      "cpc": 2.39
+    },
+    {
+      "kw": "moneysupermarket loans",
+      "vol": 4400,
+      "cpc": 5.08
+    },
+    {
+      "kw": "fast loans",
+      "vol": 4400,
+      "cpc": 7.32
+    },
+    {
+      "kw": "bad car credit loans",
+      "vol": 4400,
+      "cpc": 31.91
+    },
+    {
+      "kw": "my credit score",
+      "vol": 4400,
+      "cpc": 3.75
+    },
+    {
+      "kw": "best car finance deals",
+      "vol": 4400,
+      "cpc": 9.49
+    },
+    {
+      "kw": "uk mortgage rates chart",
+      "vol": 4400,
+      "cpc": 1.75
+    },
+    {
+      "kw": "santander loan calculator",
+      "vol": 4400,
+      "cpc": 0.87
+    },
+    {
+      "kw": "bridging loan calculator",
+      "vol": 4400,
+      "cpc": 10.44
+    },
+    {
+      "kw": "business debtline",
+      "vol": 4400,
+      "cpc": 9.18
+    },
+    {
+      "kw": "tesco car loan",
+      "vol": 4400,
+      "cpc": 4.04
+    },
+    {
+      "kw": "business center",
+      "vol": 4400,
+      "cpc": 20.26
+    },
+    {
+      "kw": "three business",
+      "vol": 4400,
+      "cpc": 7.48
+    },
+    {
+      "kw": "free credit score",
+      "vol": 4400,
+      "cpc": 5.58
+    },
+    {
+      "kw": "credit score uk",
+      "vol": 4400,
+      "cpc": 4.1
+    },
+    {
+      "kw": "universal credit rates",
+      "vol": 4400,
+      "cpc": 2.86
+    },
+    {
+      "kw": "register a business",
+      "vol": 4400,
+      "cpc": 38.9
+    },
+    {
+      "kw": "a level business edexcel",
+      "vol": 4400,
+      "cpc": 0.43
+    },
+    {
+      "kw": "what is a good credit score uk",
+      "vol": 4400,
+      "cpc": 3.12
+    },
+    {
+      "kw": "mortgage rate predictions uk",
+      "vol": 4400,
+      "cpc": 3.18
+    },
+    {
+      "kw": "lowest interest rate loans",
+      "vol": 4400,
+      "cpc": 8.92
+    },
+    {
+      "kw": "bad credit for car loan",
+      "vol": 4400,
+      "cpc": 31.91
+    },
+    {
+      "kw": "halifax car finance",
+      "vol": 4400,
+      "cpc": 3.04
+    },
+    {
+      "kw": "prince andrew business dealings",
+      "vol": 4400,
+      "cpc": 0
+    },
+    {
+      "kw": "small business ideas",
+      "vol": 4400,
+      "cpc": 2.25
+    },
+    {
+      "kw": "best loans",
+      "vol": 4400,
+      "cpc": 8.93
+    },
+    {
+      "kw": "credit spring loans",
+      "vol": 4400,
+      "cpc": 1.94
+    },
+    {
+      "kw": "go car credit",
+      "vol": 4400,
+      "cpc": 4.65
+    },
+    {
+      "kw": "nationwide business account",
+      "vol": 4400,
+      "cpc": 15.26
+    },
+    {
+      "kw": "mortgage interest calculator",
+      "vol": 4400,
+      "cpc": 1.73
+    },
+    {
+      "kw": "business management",
+      "vol": 3600,
+      "cpc": 8.98
+    },
+    {
+      "kw": "interest free car finance",
+      "vol": 3600,
+      "cpc": 2.53
+    },
+    {
+      "kw": "480 universal credit eligibility",
+      "vol": 3600,
+      "cpc": 0
+    },
+    {
+      "kw": "credit fix",
+      "vol": 3600,
+      "cpc": 13.89
+    },
+    {
+      "kw": "free credit report uk",
+      "vol": 3600,
+      "cpc": 5.91
+    },
+    {
+      "kw": "small business",
+      "vol": 3600,
+      "cpc": 13.55
+    },
+    {
+      "kw": "gcse business edexcel",
+      "vol": 3600,
+      "cpc": 0.44
+    },
+    {
+      "kw": "hsbc personal loan",
+      "vol": 3600,
+      "cpc": 1.2
+    },
+    {
+      "kw": "unvented credit",
+      "vol": 3600,
+      "cpc": 0
+    },
+    {
+      "kw": "hp car finance",
+      "vol": 3600,
+      "cpc": 7.34
+    },
+    {
+      "kw": "business credit loans bad credit",
+      "vol": 3600,
+      "cpc": 29.55
+    },
+    {
+      "kw": "martin lewis mortgage calculator",
+      "vol": 3600,
+      "cpc": 3.38
+    },
+    {
+      "kw": "lenders handbook",
+      "vol": 3600,
+      "cpc": 0
+    },
+    {
+      "kw": "100 mortgage uk",
+      "vol": 3600,
+      "cpc": 3.09
+    },
+    {
+      "kw": "universal credit scotland",
+      "vol": 3600,
+      "cpc": 0.7
+    },
+    {
+      "kw": "universal credit reviews",
+      "vol": 3600,
+      "cpc": 0
+    },
+    {
+      "kw": "rbs loan calculator",
+      "vol": 3600,
+      "cpc": 0.75
+    },
+    {
+      "kw": "credit file",
+      "vol": 3600,
+      "cpc": 2.78
+    },
+    {
+      "kw": "hardship payment universal credit",
+      "vol": 3600,
+      "cpc": 13.7
+    },
+    {
+      "kw": "first direct loans",
+      "vol": 3600,
+      "cpc": 6.39
+    },
+    {
+      "kw": "business management courses",
+      "vol": 3600,
+      "cpc": 7.77
+    },
+    {
+      "kw": "average mortgage rate uk",
+      "vol": 3600,
+      "cpc": 1.71
+    },
+    {
+      "kw": "wise business account",
+      "vol": 3600,
+      "cpc": 17.35
+    },
+    {
+      "kw": "cheap loans uk",
+      "vol": 3600,
+      "cpc": 7.52
+    },
+    {
+      "kw": "5 deposit mortgage",
+      "vol": 3600,
+      "cpc": 3.69
+    },
+    {
+      "kw": "gov.uk student finance",
+      "vol": 3600,
+      "cpc": 2.85
+    },
+    {
+      "kw": "commercial mortgage calculator",
+      "vol": 3600,
+      "cpc": 4.26
+    },
+    {
+      "kw": "best cash isa interest rates",
+      "vol": 3600,
+      "cpc": 2.46
+    },
+    {
+      "kw": "harvard business review",
+      "vol": 3600,
+      "cpc": 1.73
+    },
+    {
+      "kw": "bank loan for car",
+      "vol": 3600,
+      "cpc": 6.49
+    },
+    {
+      "kw": "motor finance claims",
+      "vol": 3600,
+      "cpc": 38.64
+    },
+    {
+      "kw": "business start up grants",
+      "vol": 3600,
+      "cpc": 6.43
+    },
+    {
+      "kw": "business gateway",
+      "vol": 3600,
+      "cpc": 2.19
+    },
+    {
+      "kw": "credit rating",
+      "vol": 3600,
+      "cpc": 3.02
+    },
+    {
+      "kw": "bad credit loan business",
+      "vol": 3600,
+      "cpc": 29.55
+    },
+    {
+      "kw": "direct line for business",
+      "vol": 3600,
+      "cpc": 1.15
+    },
+    {
+      "kw": "business profile",
+      "vol": 3600,
+      "cpc": 6.57
+    },
+    {
+      "kw": "deadline for student finance",
+      "vol": 3600,
+      "cpc": 0
+    },
+    {
+      "kw": "mortgage early repayment calculator",
+      "vol": 3600,
+      "cpc": 2.2
+    },
+    {
+      "kw": "bad credit debt consolidation loan uk",
+      "vol": 3600,
+      "cpc": 14.1
+    },
+    {
+      "kw": "homeowner loans",
+      "vol": 3600,
+      "cpc": 103.05
+    },
+    {
+      "kw": "loans business bad credit",
+      "vol": 3600,
+      "cpc": 29.55
+    },
+    {
+      "kw": "corby business academy",
+      "vol": 3600,
+      "cpc": 0.26
+    },
+    {
+      "kw": "low credit business loan",
+      "vol": 3600,
+      "cpc": 29.55
+    },
+    {
+      "kw": "business administration",
+      "vol": 3600,
+      "cpc": 9.07
+    },
+    {
+      "kw": "business manager education jobs",
+      "vol": 3600,
+      "cpc": 0.22
+    },
+    {
+      "kw": "low credit score credit cards",
+      "vol": 3600,
+      "cpc": 12.06
+    },
+    {
+      "kw": "go compare loans",
+      "vol": 3600,
+      "cpc": 10.9
+    },
+    {
+      "kw": "business loans on bad credit",
+      "vol": 3600,
+      "cpc": 29.55
+    },
+    {
+      "kw": "guardian business",
+      "vol": 3600,
+      "cpc": 5.04
+    },
+    {
+      "kw": "student finance deadlines",
+      "vol": 3600,
+      "cpc": 0
+    },
+    {
+      "kw": "sunny loans",
+      "vol": 3600,
+      "cpc": 4.01
+    },
+    {
+      "kw": "rightmove mortgage calculator",
+      "vol": 3600,
+      "cpc": 2.51
+    },
+    {
+      "kw": "lowest mortgage rates uk",
+      "vol": 3600,
+      "cpc": 2.5
+    },
+    {
+      "kw": "corby business academy corby",
+      "vol": 3600,
+      "cpc": 0.26
+    },
+    {
+      "kw": "low credit business loans",
+      "vol": 3600,
+      "cpc": 29.55
+    },
+    {
+      "kw": "uk debt consolidation loan bad credit",
+      "vol": 3600,
+      "cpc": 14.1
+    },
+    {
+      "kw": "broadland business park",
+      "vol": 3600,
+      "cpc": 0.55
+    },
+    {
+      "kw": "payday loan low credit",
+      "vol": 3600,
+      "cpc": 3.67
+    },
+    {
+      "kw": "uk debt consolidation loans for bad credit",
+      "vol": 3600,
+      "cpc": 14.1
+    },
+    {
+      "kw": "premier inn business account",
+      "vol": 3600,
+      "cpc": 8.61
+    },
+    {
+      "kw": "best loans uk",
+      "vol": 3600,
+      "cpc": 7.26
+    },
+    {
+      "kw": "short term loans uk",
+      "vol": 3600,
+      "cpc": 9.27
+    },
+    {
+      "kw": "pension credit guarantee credit",
+      "vol": 2900,
+      "cpc": 7.35
+    },
+    {
+      "kw": "daltons business",
+      "vol": 2900,
+      "cpc": 2.39
+    },
+    {
+      "kw": "check credit report",
+      "vol": 2900,
+      "cpc": 5
+    },
+    {
+      "kw": "money loans",
+      "vol": 2900,
+      "cpc": 9.76
+    },
+    {
+      "kw": "uk mortgage calculator",
+      "vol": 2900,
+      "cpc": 1.48
+    },
+    {
+      "kw": "easy loans",
+      "vol": 2900,
+      "cpc": 7.19
+    },
+    {
+      "kw": "personal loan calculator uk",
+      "vol": 2900,
+      "cpc": 2.65
+    },
+    {
+      "kw": "online loans uk",
+      "vol": 2900,
+      "cpc": 8.2
+    },
+    {
+      "kw": "virgin business class",
+      "vol": 2900,
+      "cpc": 3.16
+    },
+    {
+      "kw": "short term loans direct lender",
+      "vol": 2900,
+      "cpc": 4.03
+    },
+    {
+      "kw": "free car finance check",
+      "vol": 2900,
+      "cpc": 22.91
+    },
+    {
+      "kw": "buying a car on finance",
+      "vol": 2900,
+      "cpc": 10.87
+    },
+    {
+      "kw": "cheapest mortgage rates uk",
+      "vol": 2900,
+      "cpc": 2.34
+    },
+    {
+      "kw": "mortgage calculator scotland",
+      "vol": 2900,
+      "cpc": 1.8
+    },
+    {
+      "kw": "whats a good credit score",
+      "vol": 2900,
+      "cpc": 3.08
+    },
+    {
+      "kw": "mortgage lenders",
+      "vol": 2900,
+      "cpc": 12.7
+    },
+    {
+      "kw": "buy car on finance",
+      "vol": 2900,
+      "cpc": 10.87
+    },
+    {
+      "kw": "halal car finance",
+      "vol": 2900,
+      "cpc": 3.28
+    },
+    {
+      "kw": "loans for very bad credit direct lenders uk",
+      "vol": 2900,
+      "cpc": 3.04
+    },
+    {
+      "kw": "section 75 of the consumer credit act",
+      "vol": 2900,
+      "cpc": 6.12
+    },
+    {
+      "kw": "what is adverse credit",
+      "vol": 2900,
+      "cpc": 4.65
+    },
+    {
+      "kw": "tsb loan calculator",
+      "vol": 2900,
+      "cpc": 3.88
+    },
+    {
+      "kw": "compare mortgage rates uk",
+      "vol": 2900,
+      "cpc": 3.01
+    },
+    {
+      "kw": "business account uk",
+      "vol": 2900,
+      "cpc": 78.63
+    },
+    {
+      "kw": "universal credit savings limit",
+      "vol": 2900,
+      "cpc": 0
+    },
+    {
+      "kw": "uk credit rating",
+      "vol": 2900,
+      "cpc": 2.8
+    },
+    {
+      "kw": "universal credit complaints",
+      "vol": 2900,
+      "cpc": 0
+    },
+    {
+      "kw": "0 interest car finance",
+      "vol": 2900,
+      "cpc": 2.98
+    },
+    {
+      "kw": "martin lewis on student loans",
+      "vol": 2900,
+      "cpc": 0
+    },
+    {
+      "kw": "student loan check",
+      "vol": 2900,
+      "cpc": 0
+    },
+    {
+      "kw": "small business accountant",
+      "vol": 2900,
+      "cpc": 30.82
+    },
+    {
+      "kw": "halifax business account",
+      "vol": 2900,
+      "cpc": 27.29
+    },
+    {
+      "kw": "check student loan",
+      "vol": 2900,
+      "cpc": 0
+    },
+    {
+      "kw": "credit spring reviews",
+      "vol": 2900,
+      "cpc": 2.52
+    },
+    {
+      "kw": "mortgage calculator google",
+      "vol": 2900,
+      "cpc": 1.61
+    },
+    {
+      "kw": "student loans martin lewis",
+      "vol": 2900,
+      "cpc": 0
+    },
+    {
+      "kw": "car finance companies",
+      "vol": 2900,
+      "cpc": 17.89
+    },
+    {
+      "kw": "debt consolidation loans uk",
+      "vol": 2900,
+      "cpc": 29.09
+    },
+    {
+      "kw": "small business grants",
+      "vol": 2900,
+      "cpc": 6.4
+    },
+    {
+      "kw": "enterprise uk",
+      "vol": 2900,
+      "cpc": 1.11
+    },
+    {
+      "kw": "company formation uk",
+      "vol": 2900,
+      "cpc": 34.64
+    },
+    {
+      "kw": "cash advance",
+      "vol": 2900,
+      "cpc": 4.13
+    },
+    {
+      "kw": "equifax credit report",
+      "vol": 2900,
+      "cpc": 2.2
+    },
+    {
+      "kw": "direct debit guarantee",
+      "vol": 2900,
+      "cpc": 13.67
+    },
+    {
+      "kw": "universal credit standard allowance increase",
+      "vol": 2900,
+      "cpc": 0
+    },
+    {
+      "kw": "loans online",
+      "vol": 2900,
+      "cpc": 9.13
+    },
+    {
+      "kw": "martin lewis: student loans",
+      "vol": 2900,
+      "cpc": 0
+    },
+    {
+      "kw": "business loan calculator",
+      "vol": 2900,
+      "cpc": 15.52
+    },
+    {
+      "kw": "low interest credit cards",
+      "vol": 2900,
+      "cpc": 11.64
+    },
+    {
+      "kw": "hsbc remortgage rates",
+      "vol": 2900,
+      "cpc": 3.86
+    },
+    {
+      "kw": "a level business",
+      "vol": 2900,
+      "cpc": 5.71
+    },
+    {
+      "kw": "start a business",
+      "vol": 2900,
+      "cpc": 11.58
+    },
+    {
+      "kw": "a level business past papers",
+      "vol": 2900,
+      "cpc": 1.74
+    },
+    {
+      "kw": "evlo loans reviews",
+      "vol": 2900,
+      "cpc": 5.93
+    },
+    {
+      "kw": "hsbc interest rates",
+      "vol": 2900,
+      "cpc": 1.64
+    },
+    {
+      "kw": "martin lewis student loans",
+      "vol": 2900,
+      "cpc": 0
+    },
+    {
+      "kw": "business rates uk",
+      "vol": 2900,
+      "cpc": 4.95
+    },
+    {
+      "kw": "debt relief order uk",
+      "vol": 2900,
+      "cpc": 22.08
+    },
+    {
+      "kw": "mortgage borrowing calculator",
+      "vol": 2900,
+      "cpc": 2.35
+    },
+    {
+      "kw": "martin lewis car finance update",
+      "vol": 2900,
+      "cpc": 7.45
+    },
+    {
+      "kw": "the heath business and technical park",
+      "vol": 2900,
+      "cpc": 0.29
+    },
+    {
+      "kw": "universal credit housing benefit",
+      "vol": 2900,
+      "cpc": 3
+    },
+    {
+      "kw": "cash withdrawal limit lloyds",
+      "vol": 2900,
+      "cpc": 0
+    },
+    {
+      "kw": "mortgage deals uk",
+      "vol": 2900,
+      "cpc": 4.99
+    },
+    {
+      "kw": "business grants",
+      "vol": 2900,
+      "cpc": 7.78
+    },
+    {
+      "kw": "biggest uk companies",
+      "vol": 2900,
+      "cpc": 0
+    },
+    {
+      "kw": "debt help uk",
+      "vol": 2900,
+      "cpc": 46.63
+    },
+    {
+      "kw": "loans for extremely bad credit uk direct lenders",
+      "vol": 2900,
+      "cpc": 3.04
+    },
+    {
+      "kw": "check company details",
+      "vol": 2900,
+      "cpc": 6.66
+    },
+    {
+      "kw": "register a limited company uk",
+      "vol": 2900,
+      "cpc": 45.17
+    },
+    {
+      "kw": "high acceptance payday loans direct lenders",
+      "vol": 2900,
+      "cpc": 2.04
+    },
+    {
+      "kw": "business manager",
+      "vol": 2900,
+      "cpc": 24.28
+    },
+    {
+      "kw": "business apprenticeships",
+      "vol": 2900,
+      "cpc": 3.61
+    },
+    {
+      "kw": "register a business uk",
+      "vol": 2900,
+      "cpc": 33.89
+    },
+    {
+      "kw": "loans today",
+      "vol": 2900,
+      "cpc": 5.55
+    },
+    {
+      "kw": "revolut loans",
+      "vol": 2900,
+      "cpc": 5.16
+    },
+    {
+      "kw": "business traveller",
+      "vol": 2900,
+      "cpc": 50.18
+    },
+    {
+      "kw": "business past papers",
+      "vol": 2900,
+      "cpc": 0.97
+    },
+    {
+      "kw": "martin lewis car finance claim update",
+      "vol": 2900,
+      "cpc": 8.92
+    },
+    {
+      "kw": "business consulting",
+      "vol": 2900,
+      "cpc": 9.99
+    },
+    {
+      "kw": "car refinance",
+      "vol": 2900,
+      "cpc": 13.61
+    },
+    {
+      "kw": "business edexcel past papers",
+      "vol": 2900,
+      "cpc": 0
+    },
+    {
+      "kw": "business administration apprenticeship",
+      "vol": 2900,
+      "cpc": 3.38
+    },
+    {
+      "kw": "aqa a level business",
+      "vol": 2900,
+      "cpc": 1.85
+    },
+    {
+      "kw": "money saving expert loans",
+      "vol": 2900,
+      "cpc": 2.09
+    },
+    {
+      "kw": "what is a credit note",
+      "vol": 2400,
+      "cpc": 1.64
+    },
+    {
+      "kw": "remortgage rates uk",
+      "vol": 2400,
+      "cpc": 4.02
+    },
+    {
+      "kw": "caravan finance",
+      "vol": 2400,
+      "cpc": 11.19
+    },
+    {
+      "kw": "plan 5 student loans",
+      "vol": 2400,
+      "cpc": 0
+    },
+    {
+      "kw": "cheapest personal loans",
+      "vol": 2400,
+      "cpc": 6.97
+    },
+    {
+      "kw": "interest free car",
+      "vol": 2400,
+      "cpc": 1.35
+    },
+    {
+      "kw": "experian business",
+      "vol": 2400,
+      "cpc": 10.36
+    },
+    {
+      "kw": "money saving expert car finance",
+      "vol": 2400,
+      "cpc": 12.55
+    },
+    {
+      "kw": "apply for a loan with bad credit history",
+      "vol": 2400,
+      "cpc": 7.46
+    },
+    {
+      "kw": "check old premium bonds",
+      "vol": 2400,
+      "cpc": 0
+    },
+    {
+      "kw": "mortgage affordability calculator uk",
+      "vol": 2400,
+      "cpc": 2.45
+    },
+    {
+      "kw": "lcwra universal credit",
+      "vol": 2400,
+      "cpc": 0
+    },
+    {
+      "kw": "halal mortgage uk",
+      "vol": 2400,
+      "cpc": 4.08
+    },
+    {
+      "kw": "business energy comparison",
+      "vol": 2400,
+      "cpc": 88.43
+    },
+    {
+      "kw": "bad credit no guarantor loans",
+      "vol": 2400,
+      "cpc": 3.78
+    },
+    {
+      "kw": "credit note",
+      "vol": 2400,
+      "cpc": 12.92
+    },
+    {
+      "kw": "btec business level 3",
+      "vol": 2400,
+      "cpc": 3.62
+    },
+    {
+      "kw": "next credit account",
+      "vol": 2400,
+      "cpc": 7.57
+    },
+    {
+      "kw": "business signage",
+      "vol": 2400,
+      "cpc": 2.57
+    },
+    {
+      "kw": "company credit check",
+      "vol": 2400,
+      "cpc": 15.28
+    },
+    {
+      "kw": "mis sold car finance update",
+      "vol": 2400,
+      "cpc": 18.42
+    },
+    {
+      "kw": "credit meaning",
+      "vol": 2400,
+      "cpc": 0
+    },
+    {
+      "kw": "0 apr credit cards",
+      "vol": 2400,
+      "cpc": 11.03
+    },
+    {
+      "kw": "hsbc mortgage contact",
+      "vol": 2400,
+      "cpc": 8.47
+    },
+    {
+      "kw": "ba on business",
+      "vol": 2400,
+      "cpc": 12.45
+    },
+    {
+      "kw": "open banking loans",
+      "vol": 2400,
+      "cpc": 2.96
+    },
+    {
+      "kw": "meaning of credit",
+      "vol": 2400,
+      "cpc": 0
+    },
+    {
+      "kw": "bad credit no guarantor loan",
+      "vol": 2400,
+      "cpc": 3.78
+    },
+    {
+      "kw": "universal credit joint claim",
+      "vol": 2400,
+      "cpc": 0
+    },
+    {
+      "kw": "mortgage calculator ni",
+      "vol": 2400,
+      "cpc": 1.33
+    },
+    {
+      "kw": "business name",
+      "vol": 2400,
+      "cpc": 3.63
+    },
+    {
+      "kw": "best fixed rate cash isa uk",
+      "vol": 2400,
+      "cpc": 1.49
+    },
+    {
+      "kw": "monthly mortgage calculator",
+      "vol": 2400,
+      "cpc": 1.19
+    },
+    {
+      "kw": "west one loans",
+      "vol": 2400,
+      "cpc": 22.16
+    },
+    {
+      "kw": "car finance claims gov uk",
+      "vol": 2400,
+      "cpc": 26.72
+    },
+    {
+      "kw": "car finance 24/7",
+      "vol": 2400,
+      "cpc": 6.36
+    },
+    {
+      "kw": "startup business loans",
+      "vol": 2400,
+      "cpc": 12.06
+    },
+    {
+      "kw": "car finance uk",
+      "vol": 2400,
+      "cpc": 10.36
+    },
+    {
+      "kw": "business transformation agency",
+      "vol": 2400,
+      "cpc": 1.63
+    },
+    {
+      "kw": "secured loan calculator",
+      "vol": 2400,
+      "cpc": 45.48
+    },
+    {
+      "kw": "credit style",
+      "vol": 2400,
+      "cpc": 9.39
+    },
+    {
+      "kw": "buy to let mortgage rates uk",
+      "vol": 2400,
+      "cpc": 1.96
+    },
+    {
+      "kw": "ee business contact",
+      "vol": 2400,
+      "cpc": 3.85
+    },
+    {
+      "kw": "hastings direct loans",
+      "vol": 2400,
+      "cpc": 6.28
+    },
+    {
+      "kw": "business aqa gcse past papers",
+      "vol": 2400,
+      "cpc": 1.89
+    },
+    {
+      "kw": "food business registration",
+      "vol": 2400,
+      "cpc": 15.01
+    },
+    {
+      "kw": "tsb mortgage calculator",
+      "vol": 2400,
+      "cpc": 3.81
+    },
+    {
+      "kw": "bad credit checking account",
+      "vol": 2400,
+      "cpc": 9.15
+    },
+    {
+      "kw": "government loans",
+      "vol": 2400,
+      "cpc": 12.1
+    },
+    {
+      "kw": "payday loans no credit check",
+      "vol": 2400,
+      "cpc": 3.85
+    },
+    {
+      "kw": "business development",
+      "vol": 2400,
+      "cpc": 17.75
+    },
+    {
+      "kw": "online loans",
+      "vol": 2400,
+      "cpc": 9.26
+    },
+    {
+      "kw": "salary finance loan",
+      "vol": 2400,
+      "cpc": 5
+    },
+    {
+      "kw": "government business loans",
+      "vol": 2400,
+      "cpc": 27.63
+    },
+    {
+      "kw": "dvsa business booking service",
+      "vol": 2400,
+      "cpc": 7.96
+    },
+    {
+      "kw": "business car lease deals",
+      "vol": 2400,
+      "cpc": 6.24
+    },
+    {
+      "kw": "student loan interest rates uk",
+      "vol": 2400,
+      "cpc": 3.86
+    },
+    {
+      "kw": "uk government 40 loan scheme",
+      "vol": 2400,
+      "cpc": 0
+    },
+    {
+      "kw": "cash loans",
+      "vol": 2400,
+      "cpc": 5.67
+    },
+    {
+      "kw": "fast loan uk",
+      "vol": 2400,
+      "cpc": 5.06
+    },
+    {
+      "kw": "guaranteed loan approval no credit check",
+      "vol": 2400,
+      "cpc": 3.37
+    },
+    {
+      "kw": "credit reference agency",
+      "vol": 2400,
+      "cpc": 5.19
+    },
+    {
+      "kw": "refinance car loan",
+      "vol": 2400,
+      "cpc": 13.4
+    },
+    {
+      "kw": "universal credit housing element",
+      "vol": 2400,
+      "cpc": 3.45
+    },
+    {
+      "kw": "accounting software for small business",
+      "vol": 2400,
+      "cpc": 44.94
+    },
+    {
+      "kw": "novuna loans",
+      "vol": 2400,
+      "cpc": 3.26
+    },
+    {
+      "kw": "setting up a business",
+      "vol": 2400,
+      "cpc": 28.02
+    },
+    {
+      "kw": "bad credit loans direct lender guaranteed approval",
+      "vol": 2400,
+      "cpc": 2.1
+    },
+    {
+      "kw": "credit controller",
+      "vol": 2400,
+      "cpc": 5.62
+    },
+    {
+      "kw": "campervan finance",
+      "vol": 2400,
+      "cpc": 4.74
+    },
+    {
+      "kw": "new business loans",
+      "vol": 2400,
+      "cpc": 18.93
+    },
+    {
+      "kw": "low credit bank account",
+      "vol": 2400,
+      "cpc": 9.15
+    },
+    {
+      "kw": "bridging loans uk",
+      "vol": 2400,
+      "cpc": 20.79
+    },
+    {
+      "kw": "guaranteed loans",
+      "vol": 2400,
+      "cpc": 4.62
+    },
+    {
+      "kw": "rbs loans",
+      "vol": 2400,
+      "cpc": 3.16
+    },
+    {
+      "kw": "uk mortgage rate news",
+      "vol": 2400,
+      "cpc": 3.62
+    },
+    {
+      "kw": "mortgage cost calculator",
+      "vol": 2400,
+      "cpc": 1.53
+    },
+    {
+      "kw": "make a universal credit claim",
+      "vol": 2400,
+      "cpc": 2.98
+    },
+    {
+      "kw": "loan apply bad credit",
+      "vol": 2400,
+      "cpc": 7.46
+    },
+    {
+      "kw": "loans for people on universal credit",
+      "vol": 2400,
+      "cpc": 2.31
+    },
+    {
+      "kw": "small loans uk",
+      "vol": 2400,
+      "cpc": 8.93
+    },
+    {
+      "kw": "business wales",
+      "vol": 2400,
+      "cpc": 2.04
+    },
+    {
+      "kw": "westminster business",
+      "vol": 2400,
+      "cpc": 1.51
+    },
+    {
+      "kw": "car finance update",
+      "vol": 2400,
+      "cpc": 13.57
+    },
+    {
+      "kw": "car finance refund",
+      "vol": 2400,
+      "cpc": 49.71
+    },
+    {
+      "kw": "business name ideas",
+      "vol": 2400,
+      "cpc": 1.62
+    },
+    {
+      "kw": "guaranteed approval loans for bad credit direct lenders",
+      "vol": 2400,
+      "cpc": 2.1
+    },
+    {
+      "kw": "loan overpayment calculator",
+      "vol": 2400,
+      "cpc": 2.99
+    },
+    {
+      "kw": "franchise opportunities uk",
+      "vol": 2400,
+      "cpc": 4.24
+    },
+    {
+      "kw": "universal credit crisis loan",
+      "vol": 2400,
+      "cpc": 3.33
+    },
+    {
+      "kw": "check credit score uk",
+      "vol": 2400,
+      "cpc": 5.11
+    },
+    {
+      "kw": "car finance loans",
+      "vol": 2400,
+      "cpc": 15.88
+    },
+    {
+      "kw": "loans with bad credit history and no guarantor",
+      "vol": 2400,
+      "cpc": 3.78
+    },
+    {
+      "kw": "02 business",
+      "vol": 2400,
+      "cpc": 9.74
+    },
+    {
+      "kw": "loans without a guarantor bad credit",
+      "vol": 2400,
+      "cpc": 3.78
+    },
+    {
+      "kw": "edf business",
+      "vol": 2400,
+      "cpc": 6.73
+    },
+    {
+      "kw": "trade credit",
+      "vol": 2400,
+      "cpc": 17.51
+    },
+    {
+      "kw": "lloyds cash isa rates",
+      "vol": 2400,
+      "cpc": 0.85
+    },
+    {
+      "kw": "amigo loans",
+      "vol": 2400,
+      "cpc": 3.78
+    },
+    {
+      "kw": "business lease",
+      "vol": 2400,
+      "cpc": 5.81
+    },
+    {
+      "kw": "islamic mortgage uk",
+      "vol": 2400,
+      "cpc": 3.6
+    },
+    {
+      "kw": "best business accounts",
+      "vol": 2400,
+      "cpc": 38.71
+    },
+    {
+      "kw": "barclays cash isa rates",
+      "vol": 2400,
+      "cpc": 3.63
+    },
+    {
+      "kw": "business crossword clue",
+      "vol": 2400,
+      "cpc": 0
+    },
+    {
+      "kw": "check my student loan balance",
+      "vol": 2400,
+      "cpc": 0
+    },
+    {
+      "kw": "loans near me",
+      "vol": 2400,
+      "cpc": 7.13
+    },
+    {
+      "kw": "universal credit 312 increase",
+      "vol": 1900,
+      "cpc": 0
+    },
+    {
+      "kw": "payday loans for terrible credit uk",
+      "vol": 1900,
+      "cpc": 3.47
+    },
+    {
+      "kw": "business finance",
+      "vol": 1900,
+      "cpc": 81.74
+    },
+    {
+      "kw": "atlas business centre",
+      "vol": 1900,
+      "cpc": 1.41
+    },
+    {
+      "kw": "ucan car credit",
+      "vol": 1900,
+      "cpc": 2.35
+    },
+    {
+      "kw": "quick car finance",
+      "vol": 1900,
+      "cpc": 3.52
+    },
+    {
+      "kw": "secured credit loans bad credit",
+      "vol": 1900,
+      "cpc": 82.83
+    },
+    {
+      "kw": "no credit check car lease",
+      "vol": 1900,
+      "cpc": 6.59
+    },
+    {
+      "kw": "mortgage calculator online",
+      "vol": 1900,
+      "cpc": 2.67
+    },
+    {
+      "kw": "100 loan no credit check direct lenders",
+      "vol": 1900,
+      "cpc": 2.23
+    },
+    {
+      "kw": "payday lenders uk bad credit",
+      "vol": 1900,
+      "cpc": 3.47
+    },
+    {
+      "kw": "instant payday loans",
+      "vol": 1900,
+      "cpc": 8.42
+    },
+    {
+      "kw": "no credit loans",
+      "vol": 1900,
+      "cpc": 4.88
+    },
+    {
+      "kw": "natwest business loan",
+      "vol": 1900,
+      "cpc": 8.57
+    },
+    {
+      "kw": "business ed",
+      "vol": 1900,
+      "cpc": 1.86
+    },
+    {
+      "kw": "what is giro credit",
+      "vol": 1900,
+      "cpc": 0
+    },
+    {
+      "kw": "manage student loans",
+      "vol": 1900,
+      "cpc": 0
+    },
+    {
+      "kw": "natwest cash isa rates",
+      "vol": 1900,
+      "cpc": 0.89
+    },
+    {
+      "kw": "universal credit sanctions",
+      "vol": 1900,
+      "cpc": 0
+    },
+    {
+      "kw": "open a company in uk",
+      "vol": 1900,
+      "cpc": 53.16
+    },
+    {
+      "kw": "low apr credit cards",
+      "vol": 1900,
+      "cpc": 11.08
+    },
+    {
+      "kw": "in credit meaning",
+      "vol": 1900,
+      "cpc": 6.23
+    },
+    {
+      "kw": "quick loans no credit check",
+      "vol": 1900,
+      "cpc": 6.35
+    },
+    {
+      "kw": "short term loan direct lender bad credit",
+      "vol": 1900,
+      "cpc": 3.83
+    },
+    {
+      "kw": "business standard",
+      "vol": 1900,
+      "cpc": 0.18
+    },
+    {
+      "kw": "best remortgage deals",
+      "vol": 1900,
+      "cpc": 7.29
+    },
+    {
+      "kw": "pension credit scotland",
+      "vol": 1900,
+      "cpc": 3.1
+    },
+    {
+      "kw": "what is a credit score",
+      "vol": 1900,
+      "cpc": 3.13
+    },
+    {
+      "kw": "average credit score uk",
+      "vol": 1900,
+      "cpc": 9.52
+    },
+    {
+      "kw": "partnership business",
+      "vol": 1900,
+      "cpc": 6.9
+    },
+    {
+      "kw": "new direct lenders uk",
+      "vol": 1900,
+      "cpc": 3.58
+    },
+    {
+      "kw": "business model",
+      "vol": 1900,
+      "cpc": 12.68
+    },
+    {
+      "kw": "uk payday lenders for bad credit",
+      "vol": 1900,
+      "cpc": 3.47
+    },
+    {
+      "kw": "how to apply for student finance",
+      "vol": 1900,
+      "cpc": 5.24
+    },
+    {
+      "kw": "loans like credit spring",
+      "vol": 1900,
+      "cpc": 2.77
+    },
+    {
+      "kw": "business administration jobs",
+      "vol": 1900,
+      "cpc": 1.15
+    },
+    {
+      "kw": "guaranteed loans for horrible credit",
+      "vol": 1900,
+      "cpc": 3.73
+    },
+    {
+      "kw": "tesco bank loan calculator",
+      "vol": 1900,
+      "cpc": 2.21
+    },
+    {
+      "kw": "payday loans online",
+      "vol": 1900,
+      "cpc": 6.79
+    },
+    {
+      "kw": "uk debt expert",
+      "vol": 1900,
+      "cpc": 9.8
+    },
+    {
+      "kw": "business news uk",
+      "vol": 1900,
+      "cpc": 4.09
+    },
+    {
+      "kw": "debt clock uk",
+      "vol": 1900,
+      "cpc": 0
+    },
+    {
+      "kw": "business mortgage",
+      "vol": 1900,
+      "cpc": 15.68
+    },
+    {
+      "kw": "fca car finance claim",
+      "vol": 1900,
+      "cpc": 15.45
+    },
+    {
+      "kw": "credit default swap",
+      "vol": 1900,
+      "cpc": 4.07
+    },
+    {
+      "kw": "business coach",
+      "vol": 1900,
+      "cpc": 10.43
+    },
+    {
+      "kw": "loan secured bad credit",
+      "vol": 1900,
+      "cpc": 82.83
+    },
+    {
+      "kw": "pension credit uk",
+      "vol": 1900,
+      "cpc": 3.86
+    },
+    {
+      "kw": "business world login",
+      "vol": 1900,
+      "cpc": 0
+    },
+    {
+      "kw": "business management degree",
+      "vol": 1900,
+      "cpc": 8.05
+    },
+    {
+      "kw": "quick loan uk",
+      "vol": 1900,
+      "cpc": 9.03
+    },
+    {
+      "kw": "home loans",
+      "vol": 1900,
+      "cpc": 30.52
+    },
+    {
+      "kw": "business analysis",
+      "vol": 1900,
+      "cpc": 4.84
+    },
+    {
+      "kw": "what is a bank giro credit",
+      "vol": 1900,
+      "cpc": 0
+    },
+    {
+      "kw": "car loan interest rates",
+      "vol": 1900,
+      "cpc": 5.11
+    },
+    {
+      "kw": "best personal loans",
+      "vol": 1900,
+      "cpc": 7.41
+    },
+    {
+      "kw": "car finance news",
+      "vol": 1900,
+      "cpc": 3.68
+    },
+    {
+      "kw": "loan lenders",
+      "vol": 1900,
+      "cpc": 4.96
+    },
+    {
+      "kw": "bad car credit",
+      "vol": 1900,
+      "cpc": 24.46
+    },
+    {
+      "kw": "poor credit loans guaranteed",
+      "vol": 1900,
+      "cpc": 3.73
+    },
+    {
+      "kw": "natwest car loan",
+      "vol": 1900,
+      "cpc": 2.36
+    },
+    {
+      "kw": "money lenders",
+      "vol": 1900,
+      "cpc": 8.81
+    },
+    {
+      "kw": "buy a business",
+      "vol": 1900,
+      "cpc": 1.74
+    },
+    {
+      "kw": "mortgage rate calculator uk",
+      "vol": 1900,
+      "cpc": 1.5
+    },
+    {
+      "kw": "nationwide car loan",
+      "vol": 1900,
+      "cpc": 0.56
+    },
+    {
+      "kw": "car finance for low credit",
+      "vol": 1900,
+      "cpc": 28.21
+    },
+    {
+      "kw": "student loans plan 1 write off",
+      "vol": 1900,
+      "cpc": 0
+    },
+    {
+      "kw": "business school",
+      "vol": 1900,
+      "cpc": 4.94
+    },
+    {
+      "kw": "zero deposit car finance",
+      "vol": 1900,
+      "cpc": 8.86
+    },
+    {
+      "kw": "secured loan bad credit history",
+      "vol": 1900,
+      "cpc": 82.83
+    },
+    {
+      "kw": "cars on finance uk bad credit",
+      "vol": 1900,
+      "cpc": 26.33
+    },
+    {
+      "kw": "uk business news",
+      "vol": 1900,
+      "cpc": 3.45
+    },
+    {
+      "kw": "telegraph business",
+      "vol": 1900,
+      "cpc": 2.01
+    },
+    {
+      "kw": "quick loans uk",
+      "vol": 1900,
+      "cpc": 9.03
+    },
+    {
+      "kw": "master of business administration",
+      "vol": 1900,
+      "cpc": 9.65
+    },
+    {
+      "kw": "m and s loan calculator",
+      "vol": 1900,
+      "cpc": 4.53
+    },
+    {
+      "kw": "universal credit and pip",
+      "vol": 1900,
+      "cpc": 0
+    },
+    {
+      "kw": "tertiary business",
+      "vol": 1900,
+      "cpc": 0
+    },
+    {
+      "kw": "business meaning",
+      "vol": 1900,
+      "cpc": 0
+    },
+    {
+      "kw": "car money finance",
+      "vol": 1900,
+      "cpc": 10.54
+    },
+    {
+      "kw": "little loans reviews",
+      "vol": 1900,
+      "cpc": 4.25
+    },
+    {
+      "kw": "bad credit car finance in uk",
+      "vol": 1900,
+      "cpc": 26.33
+    },
+    {
+      "kw": "credit rating check",
+      "vol": 1900,
+      "cpc": 4.63
+    },
+    {
+      "kw": "single person universal credit",
+      "vol": 1900,
+      "cpc": 1.36
+    },
+    {
+      "kw": "0 interest loans",
+      "vol": 1900,
+      "cpc": 6.42
+    },
+    {
+      "kw": "spectrum business park",
+      "vol": 1900,
+      "cpc": 8.94
+    },
+    {
+      "kw": "natwest personal loans",
+      "vol": 1900,
+      "cpc": 2.23
+    },
+    {
+      "kw": "guarantor loans uk",
+      "vol": 1900,
+      "cpc": 3.5
+    },
+    {
+      "kw": "how to increase credit score",
+      "vol": 1900,
+      "cpc": 5.24
+    },
+    {
+      "kw": "uk mortgage news",
+      "vol": 1900,
+      "cpc": 3.4
+    }
+  ],
+  "cats": {
+    "calculators": [
+      {
+        "kw": "mortgage calculator",
+        "vol": 450000,
+        "cpc": 1.64
+      },
+      {
+        "kw": "mortgage calculator uk",
+        "vol": 110000,
+        "cpc": 1.58
+      },
+      {
+        "kw": "mortgage repayment calculator",
+        "vol": 90500,
+        "cpc": 0.86
+      },
+      {
+        "kw": "loan calculator",
+        "vol": 74000,
+        "cpc": 2.73
+      },
+      {
+        "kw": "mortgage overpayment calculator",
+        "vol": 60500,
+        "cpc": 2.21
+      },
+      {
+        "kw": "nationwide mortgage calculator",
+        "vol": 27100,
+        "cpc": 1.98
+      },
+      {
+        "kw": "halifax mortgage calculator",
+        "vol": 22200,
+        "cpc": 0.45
+      },
+      {
+        "kw": "buy to let mortgage calculator",
+        "vol": 22200,
+        "cpc": 1.96
+      },
+      {
+        "kw": "mortgage repayment calculator uk",
+        "vol": 18100,
+        "cpc": 1.38
+      },
+      {
+        "kw": "natwest mortgage calculator",
+        "vol": 14800,
+        "cpc": 1.16
+      },
+      {
+        "kw": "loan calculator uk",
+        "vol": 14800,
+        "cpc": 2.19
+      },
+      {
+        "kw": "natwest loan calculator",
+        "vol": 12100,
+        "cpc": 1.46
+      },
+      {
+        "kw": "barclays mortgage calculator",
+        "vol": 12100,
+        "cpc": 0.59
+      },
+      {
+        "kw": "car loan calculator",
+        "vol": 12100,
+        "cpc": 3.72
+      },
+      {
+        "kw": "hsbc mortgage calculator",
+        "vol": 12100,
+        "cpc": 2.92
+      },
+      {
+        "kw": "interest only mortgage calculator",
+        "vol": 12100,
+        "cpc": 2.1
+      },
+      {
+        "kw": "mortgage affordability calculator",
+        "vol": 9900,
+        "cpc": 2.37
+      },
+      {
+        "kw": "money saving expert mortgage calculator",
+        "vol": 9900,
+        "cpc": 4.44
+      },
+      {
+        "kw": "nationwide loan calculator",
+        "vol": 9900,
+        "cpc": 0.32
+      },
+      {
+        "kw": "personal loan calculator",
+        "vol": 9900,
+        "cpc": 3.55
+      },
+      {
+        "kw": "lloyds mortgage calculator",
+        "vol": 8100,
+        "cpc": 0.34
+      },
+      {
+        "kw": "mortgage overpayment calculator uk",
+        "vol": 8100,
+        "cpc": 0.77
+      },
+      {
+        "kw": "santander mortgage calculator",
+        "vol": 8100,
+        "cpc": 0.91
+      },
+      {
+        "kw": "barclays loan calculator",
+        "vol": 6600,
+        "cpc": 4.68
+      },
+      {
+        "kw": "mortgage monthly payment calculator",
+        "vol": 6600,
+        "cpc": 1.55
+      },
+      {
+        "kw": "hsbc loan calculator",
+        "vol": 6600,
+        "cpc": 0.48
+      },
+      {
+        "kw": "mortgage rate calculator",
+        "vol": 6600,
+        "cpc": 1.78
+      },
+      {
+        "kw": "quick mortgage calculator",
+        "vol": 6600,
+        "cpc": 2
+      },
+      {
+        "kw": "bank loan calculator",
+        "vol": 5400,
+        "cpc": 2.44
+      },
+      {
+        "kw": "mortgage calculator how much can i borrow",
+        "vol": 5400,
+        "cpc": 2.2
+      },
+      {
+        "kw": "bbc mortgage calculator",
+        "vol": 5400,
+        "cpc": 2.88
+      },
+      {
+        "kw": "mortgage calculator repayment",
+        "vol": 5400,
+        "cpc": 1.23
+      },
+      {
+        "kw": "halifax loan calculator",
+        "vol": 5400,
+        "cpc": 2.38
+      },
+      {
+        "kw": "lloyds loan calculator",
+        "vol": 5400,
+        "cpc": 2.58
+      },
+      {
+        "kw": "santander loan calculator",
+        "vol": 4400,
+        "cpc": 0.87
+      },
+      {
+        "kw": "bridging loan calculator",
+        "vol": 4400,
+        "cpc": 10.44
+      },
+      {
+        "kw": "mortgage interest calculator",
+        "vol": 4400,
+        "cpc": 1.73
+      },
+      {
+        "kw": "martin lewis mortgage calculator",
+        "vol": 3600,
+        "cpc": 3.38
+      },
+      {
+        "kw": "rbs loan calculator",
+        "vol": 3600,
+        "cpc": 0.75
+      },
+      {
+        "kw": "commercial mortgage calculator",
+        "vol": 3600,
+        "cpc": 4.26
+      },
+      {
+        "kw": "mortgage early repayment calculator",
+        "vol": 3600,
+        "cpc": 2.2
+      },
+      {
+        "kw": "rightmove mortgage calculator",
+        "vol": 3600,
+        "cpc": 2.51
+      },
+      {
+        "kw": "uk mortgage calculator",
+        "vol": 2900,
+        "cpc": 1.48
+      },
+      {
+        "kw": "personal loan calculator uk",
+        "vol": 2900,
+        "cpc": 2.65
+      },
+      {
+        "kw": "mortgage calculator scotland",
+        "vol": 2900,
+        "cpc": 1.8
+      },
+      {
+        "kw": "tsb loan calculator",
+        "vol": 2900,
+        "cpc": 3.88
+      },
+      {
+        "kw": "mortgage calculator google",
+        "vol": 2900,
+        "cpc": 1.61
+      },
+      {
+        "kw": "business loan calculator",
+        "vol": 2900,
+        "cpc": 15.52
+      },
+      {
+        "kw": "mortgage borrowing calculator",
+        "vol": 2900,
+        "cpc": 2.35
+      },
+      {
+        "kw": "mortgage affordability calculator uk",
+        "vol": 2400,
+        "cpc": 2.45
+      },
+      {
+        "kw": "mortgage calculator ni",
+        "vol": 2400,
+        "cpc": 1.33
+      },
+      {
+        "kw": "monthly mortgage calculator",
+        "vol": 2400,
+        "cpc": 1.19
+      },
+      {
+        "kw": "secured loan calculator",
+        "vol": 2400,
+        "cpc": 45.48
+      },
+      {
+        "kw": "tsb mortgage calculator",
+        "vol": 2400,
+        "cpc": 3.81
+      },
+      {
+        "kw": "mortgage cost calculator",
+        "vol": 2400,
+        "cpc": 1.53
+      },
+      {
+        "kw": "loan overpayment calculator",
+        "vol": 2400,
+        "cpc": 2.99
+      },
+      {
+        "kw": "mortgage calculator online",
+        "vol": 1900,
+        "cpc": 2.67
+      },
+      {
+        "kw": "tesco bank loan calculator",
+        "vol": 1900,
+        "cpc": 2.21
+      },
+      {
+        "kw": "mortgage rate calculator uk",
+        "vol": 1900,
+        "cpc": 1.5
+      },
+      {
+        "kw": "m and s loan calculator",
+        "vol": 1900,
+        "cpc": 4.53
+      }
+    ],
+    "questions": [
+      {
+        "kw": "what is universal credit",
+        "vol": 12100,
+        "cpc": 3.21
+      },
+      {
+        "kw": "how to start a business",
+        "vol": 6600,
+        "cpc": 8.87
+      },
+      {
+        "kw": "what is a good credit score",
+        "vol": 6600,
+        "cpc": 2.87
+      },
+      {
+        "kw": "how to improve credit score",
+        "vol": 5400,
+        "cpc": 5.76
+      },
+      {
+        "kw": "what student loans plan am i on",
+        "vol": 5400,
+        "cpc": 0
+      },
+      {
+        "kw": "how much can i borrow mortgage uk",
+        "vol": 4400,
+        "cpc": 2.39
+      },
+      {
+        "kw": "what is a good credit score uk",
+        "vol": 4400,
+        "cpc": 3.12
+      },
+      {
+        "kw": "what is adverse credit",
+        "vol": 2900,
+        "cpc": 4.65
+      },
+      {
+        "kw": "what is a credit note",
+        "vol": 2400,
+        "cpc": 1.64
+      },
+      {
+        "kw": "what is giro credit",
+        "vol": 1900,
+        "cpc": 0
+      },
+      {
+        "kw": "what is a credit score",
+        "vol": 1900,
+        "cpc": 3.13
+      },
+      {
+        "kw": "how to apply for student finance",
+        "vol": 1900,
+        "cpc": 5.24
+      },
+      {
+        "kw": "what is a bank giro credit",
+        "vol": 1900,
+        "cpc": 0
+      },
+      {
+        "kw": "how to increase credit score",
+        "vol": 1900,
+        "cpc": 5.24
+      }
+    ],
+    "rates": [
+      {
+        "kw": "best cash isa rates",
+        "vol": 110000,
+        "cpc": 2.25
+      },
+      {
+        "kw": "mortgage rates uk",
+        "vol": 49500,
+        "cpc": 1.38
+      },
+      {
+        "kw": "hsbc mortgage rates",
+        "vol": 40500,
+        "cpc": 3.3
+      },
+      {
+        "kw": "best mortgage rates uk",
+        "vol": 40500,
+        "cpc": 2.22
+      },
+      {
+        "kw": "0 interest credit cards",
+        "vol": 40500,
+        "cpc": 10.61
+      },
+      {
+        "kw": "high interest savings account uk",
+        "vol": 33100,
+        "cpc": 4.35
+      },
+      {
+        "kw": "uk mortgage rates",
+        "vol": 27100,
+        "cpc": 1.5
+      },
+      {
+        "kw": "business rates",
+        "vol": 18100,
+        "cpc": 7.67
+      },
+      {
+        "kw": "current mortgage rates uk",
+        "vol": 18100,
+        "cpc": 1.55
+      },
+      {
+        "kw": "low interest loans",
+        "vol": 12100,
+        "cpc": 8.72
+      },
+      {
+        "kw": "best loan rates uk",
+        "vol": 12100,
+        "cpc": 5.05
+      },
+      {
+        "kw": "hsbc isa rates",
+        "vol": 12100,
+        "cpc": 4.4
+      },
+      {
+        "kw": "best fixed rate cash isa",
+        "vol": 9900,
+        "cpc": 1.54
+      },
+      {
+        "kw": "voa business rates",
+        "vol": 9900,
+        "cpc": 6.01
+      },
+      {
+        "kw": "interest free loans",
+        "vol": 6600,
+        "cpc": 6.14
+      },
+      {
+        "kw": "low interest personal loans",
+        "vol": 6600,
+        "cpc": 8.21
+      },
+      {
+        "kw": "highest rate cash isa",
+        "vol": 6600,
+        "cpc": 2.58
+      },
+      {
+        "kw": "mortgage rates uk today",
+        "vol": 5400,
+        "cpc": 1.77
+      },
+      {
+        "kw": "first direct mortgage rates",
+        "vol": 5400,
+        "cpc": 1.23
+      },
+      {
+        "kw": "best interest rates uk",
+        "vol": 4400,
+        "cpc": 3.56
+      },
+      {
+        "kw": "uk mortgage rates chart",
+        "vol": 4400,
+        "cpc": 1.75
+      },
+      {
+        "kw": "universal credit rates",
+        "vol": 4400,
+        "cpc": 2.86
+      },
+      {
+        "kw": "mortgage rate predictions uk",
+        "vol": 4400,
+        "cpc": 3.18
+      },
+      {
+        "kw": "lowest interest rate loans",
+        "vol": 4400,
+        "cpc": 8.92
+      },
+      {
+        "kw": "interest free car finance",
+        "vol": 3600,
+        "cpc": 2.53
+      },
+      {
+        "kw": "average mortgage rate uk",
+        "vol": 3600,
+        "cpc": 1.71
+      },
+      {
+        "kw": "best cash isa interest rates",
+        "vol": 3600,
+        "cpc": 2.46
+      },
+      {
+        "kw": "lowest mortgage rates uk",
+        "vol": 3600,
+        "cpc": 2.5
+      },
+      {
+        "kw": "cheapest mortgage rates uk",
+        "vol": 2900,
+        "cpc": 2.34
+      },
+      {
+        "kw": "compare mortgage rates uk",
+        "vol": 2900,
+        "cpc": 3.01
+      },
+      {
+        "kw": "0 interest car finance",
+        "vol": 2900,
+        "cpc": 2.98
+      },
+      {
+        "kw": "low interest credit cards",
+        "vol": 2900,
+        "cpc": 11.64
+      },
+      {
+        "kw": "hsbc remortgage rates",
+        "vol": 2900,
+        "cpc": 3.86
+      },
+      {
+        "kw": "hsbc interest rates",
+        "vol": 2900,
+        "cpc": 1.64
+      },
+      {
+        "kw": "business rates uk",
+        "vol": 2900,
+        "cpc": 4.95
+      },
+      {
+        "kw": "remortgage rates uk",
+        "vol": 2400,
+        "cpc": 4.02
+      },
+      {
+        "kw": "interest free car",
+        "vol": 2400,
+        "cpc": 1.35
+      },
+      {
+        "kw": "best fixed rate cash isa uk",
+        "vol": 2400,
+        "cpc": 1.49
+      },
+      {
+        "kw": "buy to let mortgage rates uk",
+        "vol": 2400,
+        "cpc": 1.96
+      },
+      {
+        "kw": "student loan interest rates uk",
+        "vol": 2400,
+        "cpc": 3.86
+      },
+      {
+        "kw": "uk mortgage rate news",
+        "vol": 2400,
+        "cpc": 3.62
+      },
+      {
+        "kw": "lloyds cash isa rates",
+        "vol": 2400,
+        "cpc": 0.85
+      },
+      {
+        "kw": "barclays cash isa rates",
+        "vol": 2400,
+        "cpc": 3.63
+      },
+      {
+        "kw": "natwest cash isa rates",
+        "vol": 1900,
+        "cpc": 0.89
+      },
+      {
+        "kw": "car loan interest rates",
+        "vol": 1900,
+        "cpc": 5.11
+      },
+      {
+        "kw": "0 interest loans",
+        "vol": 1900,
+        "cpc": 6.42
+      }
+    ],
+    "deposit_ltv": [
+      {
+        "kw": "0 deposit mortgage",
+        "vol": 6600,
+        "cpc": 3.55
+      },
+      {
+        "kw": "5 deposit mortgage",
+        "vol": 3600,
+        "cpc": 3.69
+      },
+      {
+        "kw": "zero deposit car finance",
+        "vol": 1900,
+        "cpc": 8.86
+      }
+    ],
+    "guides": [
+      {
+        "kw": "what is universal credit",
+        "vol": 12100,
+        "cpc": 3.21
+      },
+      {
+        "kw": "how to start a business",
+        "vol": 6600,
+        "cpc": 8.87
+      },
+      {
+        "kw": "what is a good credit score",
+        "vol": 6600,
+        "cpc": 2.87
+      },
+      {
+        "kw": "how to improve credit score",
+        "vol": 5400,
+        "cpc": 5.76
+      },
+      {
+        "kw": "what is a good credit score uk",
+        "vol": 4400,
+        "cpc": 3.12
+      },
+      {
+        "kw": "what is adverse credit",
+        "vol": 2900,
+        "cpc": 4.65
+      },
+      {
+        "kw": "what is a credit note",
+        "vol": 2400,
+        "cpc": 1.64
+      },
+      {
+        "kw": "credit meaning",
+        "vol": 2400,
+        "cpc": 0
+      },
+      {
+        "kw": "meaning of credit",
+        "vol": 2400,
+        "cpc": 0
+      },
+      {
+        "kw": "what is giro credit",
+        "vol": 1900,
+        "cpc": 0
+      },
+      {
+        "kw": "in credit meaning",
+        "vol": 1900,
+        "cpc": 6.23
+      },
+      {
+        "kw": "what is a credit score",
+        "vol": 1900,
+        "cpc": 3.13
+      },
+      {
+        "kw": "how to apply for student finance",
+        "vol": 1900,
+        "cpc": 5.24
+      },
+      {
+        "kw": "what is a bank giro credit",
+        "vol": 1900,
+        "cpc": 0
+      },
+      {
+        "kw": "business meaning",
+        "vol": 1900,
+        "cpc": 0
+      },
+      {
+        "kw": "how to increase credit score",
+        "vol": 1900,
+        "cpc": 5.24
+      }
+    ]
+  }
+}

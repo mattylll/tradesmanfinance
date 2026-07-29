@@ -1,0 +1,585 @@
+{
+  "slug": "asset-finance",
+  "keyword": "asset finance",
+  "locale": {
+    "location_code": 2826,
+    "language_code": "en",
+    "device": "desktop"
+  },
+  "fetched": 7,
+  "medianRankerWords": 2413,
+  "consensusThreshold": 3,
+  "targetTerms": [
+    {
+      "term": "asset finance",
+      "df": 7,
+      "inHeadings": 7,
+      "recommendedUse": [
+        26,
+        27
+      ],
+      "watch": false
+    },
+    {
+      "term": "asset",
+      "df": 7,
+      "inHeadings": 7,
+      "recommendedUse": [
+        36,
+        37
+      ],
+      "watch": false
+    },
+    {
+      "term": "finance",
+      "df": 7,
+      "inHeadings": 7,
+      "recommendedUse": [
+        52,
+        53
+      ],
+      "watch": false
+    },
+    {
+      "term": "hire purchase",
+      "df": 7,
+      "inHeadings": 4,
+      "recommendedUse": [
+        6,
+        7
+      ],
+      "watch": true
+    },
+    {
+      "term": "business",
+      "df": 7,
+      "inHeadings": 4,
+      "recommendedUse": [
+        34,
+        35
+      ],
+      "watch": false
+    },
+    {
+      "term": "hire",
+      "df": 7,
+      "inHeadings": 4,
+      "recommendedUse": [
+        6,
+        7
+      ],
+      "watch": false
+    },
+    {
+      "term": "purchase",
+      "df": 7,
+      "inHeadings": 4,
+      "recommendedUse": [
+        9,
+        10
+      ],
+      "watch": false
+    },
+    {
+      "term": "equipment",
+      "df": 7,
+      "inHeadings": 4,
+      "recommendedUse": [
+        12,
+        13
+      ],
+      "watch": false
+    },
+    {
+      "term": "assets",
+      "df": 6,
+      "inHeadings": 4,
+      "recommendedUse": [
+        9,
+        10
+      ],
+      "watch": false
+    },
+    {
+      "term": "finance lease",
+      "df": 5,
+      "inHeadings": 3,
+      "recommendedUse": [
+        2,
+        3
+      ],
+      "watch": true
+    },
+    {
+      "term": "contract hire",
+      "df": 3,
+      "inHeadings": 3,
+      "recommendedUse": [
+        4,
+        5
+      ],
+      "watch": false
+    },
+    {
+      "term": "latest",
+      "df": 6,
+      "inHeadings": 3,
+      "recommendedUse": [
+        3,
+        4
+      ],
+      "watch": false
+    },
+    {
+      "term": "types",
+      "df": 6,
+      "inHeadings": 3,
+      "recommendedUse": [
+        3,
+        5
+      ],
+      "watch": false
+    },
+    {
+      "term": "lease",
+      "df": 6,
+      "inHeadings": 3,
+      "recommendedUse": [
+        5,
+        6
+      ],
+      "watch": false
+    },
+    {
+      "term": "contract",
+      "df": 4,
+      "inHeadings": 3,
+      "recommendedUse": [
+        6,
+        7
+      ],
+      "watch": false
+    },
+    {
+      "term": "benefits",
+      "df": 3,
+      "inHeadings": 3,
+      "recommendedUse": [
+        5,
+        6
+      ],
+      "watch": false
+    },
+    {
+      "term": "management",
+      "df": 3,
+      "inHeadings": 3,
+      "recommendedUse": [
+        2,
+        3
+      ],
+      "watch": false
+    },
+    {
+      "term": "business finance",
+      "df": 5,
+      "inHeadings": 2,
+      "recommendedUse": [
+        2,
+        3
+      ],
+      "watch": false
+    },
+    {
+      "term": "finance asset",
+      "df": 5,
+      "inHeadings": 2,
+      "recommendedUse": [
+        3,
+        4
+      ],
+      "watch": false
+    },
+    {
+      "term": "asset refinance",
+      "df": 4,
+      "inHeadings": 2,
+      "recommendedUse": [
+        1,
+        2
+      ],
+      "watch": false
+    },
+    {
+      "term": "business loans",
+      "df": 4,
+      "inHeadings": 2,
+      "recommendedUse": [
+        2,
+        3
+      ],
+      "watch": false
+    },
+    {
+      "term": "finance work",
+      "df": 3,
+      "inHeadings": 2,
+      "recommendedUse": [
+        1,
+        2
+      ],
+      "watch": false
+    },
+    {
+      "term": "businesses",
+      "df": 7,
+      "inHeadings": 2,
+      "recommendedUse": [
+        5,
+        6
+      ],
+      "watch": false
+    },
+    {
+      "term": "growth",
+      "df": 7,
+      "inHeadings": 2,
+      "recommendedUse": [
+        5,
+        6
+      ],
+      "watch": false
+    },
+    {
+      "term": "resources",
+      "df": 7,
+      "inHeadings": 2,
+      "recommendedUse": [
+        2,
+        3
+      ],
+      "watch": false
+    },
+    {
+      "term": "loans",
+      "df": 6,
+      "inHeadings": 2,
+      "recommendedUse": [
+        5,
+        6
+      ],
+      "watch": false
+    },
+    {
+      "term": "investment",
+      "df": 6,
+      "inHeadings": 2,
+      "recommendedUse": [
+        2,
+        4
+      ],
+      "watch": false
+    },
+    {
+      "term": "work",
+      "df": 6,
+      "inHeadings": 2,
+      "recommendedUse": [
+        3,
+        5
+      ],
+      "watch": false
+    },
+    {
+      "term": "payments",
+      "df": 6,
+      "inHeadings": 2,
+      "recommendedUse": [
+        5,
+        6
+      ],
+      "watch": false
+    },
+    {
+      "term": "between",
+      "df": 6,
+      "inHeadings": 2,
+      "recommendedUse": [
+        2,
+        3
+      ],
+      "watch": false
+    },
+    {
+      "term": "financing",
+      "df": 6,
+      "inHeadings": 2,
+      "recommendedUse": [
+        3,
+        5
+      ],
+      "watch": false
+    },
+    {
+      "term": "explore",
+      "df": 6,
+      "inHeadings": 2,
+      "recommendedUse": [
+        1,
+        3
+      ],
+      "watch": false
+    },
+    {
+      "term": "bank",
+      "df": 5,
+      "inHeadings": 2,
+      "recommendedUse": [
+        16,
+        17
+      ],
+      "watch": false
+    },
+    {
+      "term": "funding",
+      "df": 5,
+      "inHeadings": 2,
+      "recommendedUse": [
+        3,
+        4
+      ],
+      "watch": false
+    },
+    {
+      "term": "accounts",
+      "df": 5,
+      "inHeadings": 2,
+      "recommendedUse": [
+        1,
+        2
+      ],
+      "watch": false
+    },
+    {
+      "term": "payment",
+      "df": 5,
+      "inHeadings": 2,
+      "recommendedUse": [
+        4,
+        5
+      ],
+      "watch": false
+    },
+    {
+      "term": "loan",
+      "df": 5,
+      "inHeadings": 2,
+      "recommendedUse": [
+        6,
+        7
+      ],
+      "watch": false
+    },
+    {
+      "term": "vehicle",
+      "df": 5,
+      "inHeadings": 2,
+      "recommendedUse": [
+        3,
+        4
+      ],
+      "watch": false
+    },
+    {
+      "term": "refinance",
+      "df": 5,
+      "inHeadings": 2,
+      "recommendedUse": [
+        2,
+        3
+      ],
+      "watch": false
+    },
+    {
+      "term": "choose",
+      "df": 4,
+      "inHeadings": 2,
+      "recommendedUse": [
+        1,
+        3
+      ],
+      "watch": false
+    },
+    {
+      "term": "public",
+      "df": 4,
+      "inHeadings": 2,
+      "recommendedUse": [
+        1,
+        3
+      ],
+      "watch": false
+    },
+    {
+      "term": "green",
+      "df": 4,
+      "inHeadings": 2,
+      "recommendedUse": [
+        3,
+        5
+      ],
+      "watch": false
+    },
+    {
+      "term": "sectors",
+      "df": 3,
+      "inHeadings": 2,
+      "recommendedUse": [
+        3,
+        4
+      ],
+      "watch": false
+    },
+    {
+      "term": "operating",
+      "df": 2,
+      "inHeadings": 2,
+      "recommendedUse": [
+        5,
+        7
+      ],
+      "watch": false
+    },
+    {
+      "term": "difference",
+      "df": 2,
+      "inHeadings": 2,
+      "recommendedUse": [
+        2,
+        4
+      ],
+      "watch": false
+    },
+    {
+      "term": "hard",
+      "df": 2,
+      "inHeadings": 2,
+      "recommendedUse": [
+        5,
+        7
+      ],
+      "watch": false
+    },
+    {
+      "term": "soft",
+      "df": 2,
+      "inHeadings": 2,
+      "recommendedUse": [
+        4,
+        6
+      ],
+      "watch": false
+    },
+    {
+      "term": "interested",
+      "df": 2,
+      "inHeadings": 2,
+      "recommendedUse": [
+        2,
+        4
+      ],
+      "watch": false
+    },
+    {
+      "term": "growth guarantee scheme",
+      "df": 5,
+      "inHeadings": 1,
+      "recommendedUse": [
+        1,
+        2
+      ],
+      "watch": false
+    },
+    {
+      "term": "asset finance asset",
+      "df": 5,
+      "inHeadings": 1,
+      "recommendedUse": [
+        2,
+        3
+      ],
+      "watch": false
+    }
+  ],
+  "namedEntities": [
+    {
+      "entity": "Asset Finance",
+      "df": 7
+    },
+    {
+      "entity": "Financial Conduct Authority",
+      "df": 6
+    },
+    {
+      "entity": "Prudential Regulation Authority",
+      "df": 4
+    },
+    {
+      "entity": "Growth Guarantee Scheme",
+      "df": 2
+    },
+    {
+      "entity": "Finance Leasing Association",
+      "df": 2
+    },
+    {
+      "entity": "Hire Purchase Hire Purchase",
+      "df": 2
+    },
+    {
+      "entity": "Hire Purchase",
+      "df": 2
+    },
+    {
+      "entity": "Contract Hire",
+      "df": 2
+    },
+    {
+      "entity": "Asset Finance Asset Finance",
+      "df": 2
+    },
+    {
+      "entity": "Invoice Finance",
+      "df": 2
+    },
+    {
+      "entity": "Finance Lease",
+      "df": 2
+    },
+    {
+      "entity": "Finance Lease With",
+      "df": 2
+    },
+    {
+      "entity": "Financial Services Compensation Scheme",
+      "df": 2
+    }
+  ],
+  "paa": [
+    "What is the meaning of asset finance?",
+    "Do you pay VAT on asset finance?",
+    "Is it easy to get asset finance?",
+    "Is asset finance better than a loan?"
+  ],
+  "related": [
+    "Asset finance calculator",
+    "Asset finance login",
+    "Asset finance contact number",
+    "Asset finance UK",
+    "Asset Finance Lloyds",
+    "Asset finance hsbc",
+    "Asset Finance Close Brothers",
+    "Asset finance loan"
+  ],
+  "score": null
+}

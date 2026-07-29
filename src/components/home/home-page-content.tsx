@@ -27,6 +27,7 @@ import {
   Wallet,
   Wrench,
   Building2,
+  CreditCard,
   Phone,
   Zap,
   Quote,
@@ -117,6 +118,14 @@ export function HomePageContent() {
       href: "/products/invoice-finance",
       gradient: "from-[#f59e0b] to-[#fbbf24]",
       stat: "Same day",
+    },
+    {
+      name: "Merchant Cash Advance",
+      description: "Advance on card takings, repay as you earn",
+      icon: CreditCard,
+      href: "/products/merchant-cash-advance",
+      gradient: "from-[#8b5cf6] to-[#a78bfa]",
+      stat: "No fixed payments",
     },
   ];
 

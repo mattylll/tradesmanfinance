@@ -1,0 +1,513 @@
+{
+  "slug": "home",
+  "keyword": "finance for tradesmen",
+  "locale": {
+    "location_code": 2826,
+    "language_code": "en",
+    "device": "desktop"
+  },
+  "fetched": 8,
+  "medianRankerWords": 1182,
+  "consensusThreshold": 4,
+  "targetTerms": [
+    {
+      "term": "finance",
+      "df": 8,
+      "inHeadings": 6,
+      "recommendedUse": [
+        31,
+        33
+      ],
+      "watch": false
+    },
+    {
+      "term": "business",
+      "df": 8,
+      "inHeadings": 5,
+      "recommendedUse": [
+        14,
+        16
+      ],
+      "watch": false
+    },
+    {
+      "term": "trades",
+      "df": 6,
+      "inHeadings": 4,
+      "recommendedUse": [
+        2,
+        3
+      ],
+      "watch": false
+    },
+    {
+      "term": "trade",
+      "df": 6,
+      "inHeadings": 3,
+      "recommendedUse": [
+        4,
+        6
+      ],
+      "watch": false
+    },
+    {
+      "term": "tradespeople",
+      "df": 5,
+      "inHeadings": 3,
+      "recommendedUse": [
+        5,
+        6
+      ],
+      "watch": false
+    },
+    {
+      "term": "tradesmen",
+      "df": 5,
+      "inHeadings": 3,
+      "recommendedUse": [
+        12,
+        13
+      ],
+      "watch": false
+    },
+    {
+      "term": "invoice",
+      "df": 3,
+      "inHeadings": 3,
+      "recommendedUse": [
+        12,
+        13
+      ],
+      "watch": false
+    },
+    {
+      "term": "cash flow",
+      "df": 5,
+      "inHeadings": 2,
+      "recommendedUse": [
+        4,
+        5
+      ],
+      "watch": false
+    },
+    {
+      "term": "credit",
+      "df": 6,
+      "inHeadings": 2,
+      "recommendedUse": [
+        3,
+        4
+      ],
+      "watch": false
+    },
+    {
+      "term": "cash",
+      "df": 6,
+      "inHeadings": 2,
+      "recommendedUse": [
+        5,
+        6
+      ],
+      "watch": false
+    },
+    {
+      "term": "flow",
+      "df": 5,
+      "inHeadings": 2,
+      "recommendedUse": [
+        4,
+        5
+      ],
+      "watch": false
+    },
+    {
+      "term": "loans",
+      "df": 5,
+      "inHeadings": 2,
+      "recommendedUse": [
+        6,
+        7
+      ],
+      "watch": false
+    },
+    {
+      "term": "heating",
+      "df": 3,
+      "inHeadings": 2,
+      "recommendedUse": [
+        4,
+        5
+      ],
+      "watch": false
+    },
+    {
+      "term": "offering",
+      "df": 3,
+      "inHeadings": 2,
+      "recommendedUse": [
+        2,
+        3
+      ],
+      "watch": false
+    },
+    {
+      "term": "type",
+      "df": 3,
+      "inHeadings": 2,
+      "recommendedUse": [
+        1,
+        2
+      ],
+      "watch": false
+    },
+    {
+      "term": "resorces",
+      "df": 2,
+      "inHeadings": 2,
+      "recommendedUse": [
+        1,
+        2
+      ],
+      "watch": false
+    },
+    {
+      "term": "finance for tradesmen",
+      "df": 4,
+      "inHeadings": 1,
+      "recommendedUse": [
+        3,
+        5
+      ],
+      "watch": false
+    },
+    {
+      "term": "credit broker",
+      "df": 4,
+      "inHeadings": 1,
+      "recommendedUse": [
+        2,
+        3
+      ],
+      "watch": false
+    },
+    {
+      "term": "trade business",
+      "df": 4,
+      "inHeadings": 1,
+      "recommendedUse": [
+        3,
+        5
+      ],
+      "watch": false
+    },
+    {
+      "term": "financial",
+      "df": 7,
+      "inHeadings": 1,
+      "recommendedUse": [
+        4,
+        5
+      ],
+      "watch": false
+    },
+    {
+      "term": "businesses",
+      "df": 6,
+      "inHeadings": 1,
+      "recommendedUse": [
+        1,
+        3
+      ],
+      "watch": false
+    },
+    {
+      "term": "authorised and regulated",
+      "df": 4,
+      "inHeadings": 0,
+      "recommendedUse": [
+        1,
+        2
+      ],
+      "watch": false
+    },
+    {
+      "term": "financial conduct authority",
+      "df": 4,
+      "inHeadings": 0,
+      "recommendedUse": [
+        1,
+        2
+      ],
+      "watch": false
+    },
+    {
+      "term": "financial conduct",
+      "df": 4,
+      "inHeadings": 0,
+      "recommendedUse": [
+        1,
+        2
+      ],
+      "watch": false
+    },
+    {
+      "term": "conduct authority",
+      "df": 4,
+      "inHeadings": 0,
+      "recommendedUse": [
+        1,
+        2
+      ],
+      "watch": false
+    },
+    {
+      "term": "business finance",
+      "df": 4,
+      "inHeadings": 0,
+      "recommendedUse": [
+        1,
+        2
+      ],
+      "watch": false
+    },
+    {
+      "term": "business growth",
+      "df": 4,
+      "inHeadings": 0,
+      "recommendedUse": [
+        1,
+        3
+      ],
+      "watch": false
+    },
+    {
+      "term": "jobs",
+      "df": 8,
+      "inHeadings": 0,
+      "recommendedUse": [
+        2,
+        3
+      ],
+      "watch": false
+    },
+    {
+      "term": "keep",
+      "df": 8,
+      "inHeadings": 0,
+      "recommendedUse": [
+        2,
+        3
+      ],
+      "watch": false
+    },
+    {
+      "term": "years",
+      "df": 8,
+      "inHeadings": 0,
+      "recommendedUse": [
+        1,
+        2
+      ],
+      "watch": false
+    },
+    {
+      "term": "work",
+      "df": 7,
+      "inHeadings": 0,
+      "recommendedUse": [
+        4,
+        5
+      ],
+      "watch": false
+    },
+    {
+      "term": "simple",
+      "df": 7,
+      "inHeadings": 0,
+      "recommendedUse": [
+        1,
+        2
+      ],
+      "watch": false
+    },
+    {
+      "term": "money",
+      "df": 7,
+      "inHeadings": 0,
+      "recommendedUse": [
+        4,
+        5
+      ],
+      "watch": false
+    },
+    {
+      "term": "complete",
+      "df": 7,
+      "inHeadings": 0,
+      "recommendedUse": [
+        1,
+        2
+      ],
+      "watch": false
+    },
+    {
+      "term": "advice",
+      "df": 6,
+      "inHeadings": 0,
+      "recommendedUse": [
+        2,
+        3
+      ],
+      "watch": false
+    },
+    {
+      "term": "running",
+      "df": 6,
+      "inHeadings": 0,
+      "recommendedUse": [
+        1,
+        2
+      ],
+      "watch": false
+    }
+  ],
+  "namedEntities": [
+    {
+      "entity": "Financial Conduct Authority",
+      "df": 4
+    },
+    {
+      "entity": "Segoe UI",
+      "df": 3
+    },
+    {
+      "entity": "Open Sans",
+      "df": 3
+    },
+    {
+      "entity": "Helvetica Neue",
+      "df": 3
+    },
+    {
+      "entity": "Invoice Finance",
+      "df": 3
+    },
+    {
+      "entity": "Free Credit",
+      "df": 2
+    },
+    {
+      "entity": "Albert Sans",
+      "df": 2
+    },
+    {
+      "entity": "Bodoni Moda",
+      "df": 2
+    },
+    {
+      "entity": "Bricolage Grotesque",
+      "df": 2
+    },
+    {
+      "entity": "Courier Prime",
+      "df": 2
+    },
+    {
+      "entity": "Crimson Pro",
+      "df": 2
+    },
+    {
+      "entity": "DM Mono",
+      "df": 2
+    },
+    {
+      "entity": "DM Sans",
+      "df": 2
+    },
+    {
+      "entity": "DM Serif Display",
+      "df": 2
+    },
+    {
+      "entity": "EB Garamond",
+      "df": 2
+    },
+    {
+      "entity": "Fira Sans",
+      "df": 2
+    },
+    {
+      "entity": "Fjalla One",
+      "df": 2
+    },
+    {
+      "entity": "IBM Plex Mono",
+      "df": 2
+    },
+    {
+      "entity": "IBM Plex Sans",
+      "df": 2
+    },
+    {
+      "entity": "Ibarra Real Nova",
+      "df": 2
+    },
+    {
+      "entity": "Instrument Serif",
+      "df": 2
+    },
+    {
+      "entity": "Josefin Sans",
+      "df": 2
+    },
+    {
+      "entity": "Libre Baskerville",
+      "df": 2
+    },
+    {
+      "entity": "Libre Franklin",
+      "df": 2
+    },
+    {
+      "entity": "Noto Sans Mono",
+      "df": 2
+    },
+    {
+      "entity": "PT Serif",
+      "df": 2
+    },
+    {
+      "entity": "Playfair Display",
+      "df": 2
+    },
+    {
+      "entity": "Plus Jakarta Sans",
+      "df": 2
+    },
+    {
+      "entity": "Roboto Slab",
+      "df": 2
+    },
+    {
+      "entity": "Source Sans",
+      "df": 2
+    }
+  ],
+  "paa": [
+    "What is the safest way to pay a tradesman?",
+    "What is the hourly rate for a tradesman?",
+    "What type of tradesman makes the most money?",
+    "How to spot a dodgy tradesman?"
+  ],
+  "related": [
+    "Free finance for tradesmen",
+    "Best finance for tradesmen",
+    "Finance for tradesmen calculator",
+    "Kanda finance",
+    "Kandoo finance",
+    "Kandoo finance calculator",
+    "Trade help finance",
+    "Kandoo credit"
+  ],
+  "score": null
+}

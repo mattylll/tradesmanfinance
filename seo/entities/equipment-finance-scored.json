@@ -1,0 +1,1331 @@
+{
+  "slug": "equipment-finance-scored",
+  "keyword": "tool finance",
+  "locale": {
+    "location_code": 2826,
+    "language_code": "en",
+    "device": "desktop"
+  },
+  "fetched": 7,
+  "medianRankerWords": 1389,
+  "consensusThreshold": 3,
+  "targetTerms": [
+    {
+      "term": "finance",
+      "df": 6,
+      "inHeadings": 5,
+      "recommendedUse": [
+        15,
+        17
+      ],
+      "watch": false
+    },
+    {
+      "term": "tools",
+      "df": 7,
+      "inHeadings": 4,
+      "recommendedUse": [
+        27,
+        28
+      ],
+      "watch": false
+    },
+    {
+      "term": "finance options",
+      "df": 4,
+      "inHeadings": 3,
+      "recommendedUse": [
+        5,
+        6
+      ],
+      "watch": false
+    },
+    {
+      "term": "purchase",
+      "df": 5,
+      "inHeadings": 3,
+      "recommendedUse": [
+        3,
+        4
+      ],
+      "watch": false
+    },
+    {
+      "term": "tool",
+      "df": 7,
+      "inHeadings": 2,
+      "recommendedUse": [
+        14,
+        15
+      ],
+      "watch": false
+    },
+    {
+      "term": "credit",
+      "df": 7,
+      "inHeadings": 2,
+      "recommendedUse": [
+        6,
+        7
+      ],
+      "watch": false
+    },
+    {
+      "term": "payment",
+      "df": 6,
+      "inHeadings": 2,
+      "recommendedUse": [
+        6,
+        7
+      ],
+      "watch": false
+    },
+    {
+      "term": "deals",
+      "df": 6,
+      "inHeadings": 2,
+      "recommendedUse": [
+        2,
+        3
+      ],
+      "watch": false
+    },
+    {
+      "term": "payments",
+      "df": 5,
+      "inHeadings": 2,
+      "recommendedUse": [
+        4,
+        5
+      ],
+      "watch": false
+    },
+    {
+      "term": "cost",
+      "df": 4,
+      "inHeadings": 2,
+      "recommendedUse": [
+        4,
+        5
+      ],
+      "watch": false
+    },
+    {
+      "term": "representative",
+      "df": 3,
+      "inHeadings": 2,
+      "recommendedUse": [
+        2,
+        3
+      ],
+      "watch": false
+    },
+    {
+      "term": "check",
+      "df": 3,
+      "inHeadings": 2,
+      "recommendedUse": [
+        2,
+        3
+      ],
+      "watch": false
+    },
+    {
+      "term": "popular",
+      "df": 2,
+      "inHeadings": 2,
+      "recommendedUse": [
+        3,
+        4
+      ],
+      "watch": false
+    },
+    {
+      "term": "spread the cost",
+      "df": 4,
+      "inHeadings": 1,
+      "recommendedUse": [
+        2,
+        4
+      ],
+      "watch": false
+    },
+    {
+      "term": "power tools",
+      "df": 7,
+      "inHeadings": 1,
+      "recommendedUse": [
+        5,
+        6
+      ],
+      "watch": false
+    },
+    {
+      "term": "pressure washers",
+      "df": 3,
+      "inHeadings": 1,
+      "recommendedUse": [
+        6,
+        7
+      ],
+      "watch": false
+    },
+    {
+      "term": "rotary hammer",
+      "df": 3,
+      "inHeadings": 1,
+      "recommendedUse": [
+        1,
+        2
+      ],
+      "watch": false
+    },
+    {
+      "term": "now pay",
+      "df": 3,
+      "inHeadings": 1,
+      "recommendedUse": [
+        1,
+        2
+      ],
+      "watch": false
+    },
+    {
+      "term": "payment plan",
+      "df": 3,
+      "inHeadings": 1,
+      "recommendedUse": [
+        1,
+        2
+      ],
+      "watch": false
+    },
+    {
+      "term": "finance offer",
+      "df": 3,
+      "inHeadings": 1,
+      "recommendedUse": [
+        1,
+        2
+      ],
+      "watch": false
+    },
+    {
+      "term": "power",
+      "df": 7,
+      "inHeadings": 1,
+      "recommendedUse": [
+        6,
+        7
+      ],
+      "watch": false
+    },
+    {
+      "term": "products",
+      "df": 7,
+      "inHeadings": 1,
+      "recommendedUse": [
+        3,
+        4
+      ],
+      "watch": false
+    },
+    {
+      "term": "makita",
+      "df": 6,
+      "inHeadings": 1,
+      "recommendedUse": [
+        2,
+        3
+      ],
+      "watch": false
+    },
+    {
+      "term": "shop",
+      "df": 6,
+      "inHeadings": 1,
+      "recommendedUse": [
+        4,
+        5
+      ],
+      "watch": false
+    },
+    {
+      "term": "choose",
+      "df": 6,
+      "inHeadings": 1,
+      "recommendedUse": [
+        1,
+        3
+      ],
+      "watch": false
+    },
+    {
+      "term": "apply",
+      "df": 6,
+      "inHeadings": 1,
+      "recommendedUse": [
+        5,
+        6
+      ],
+      "watch": false
+    },
+    {
+      "term": "financial conduct authority",
+      "df": 5,
+      "inHeadings": 0,
+      "recommendedUse": [
+        2,
+        3
+      ],
+      "watch": false
+    },
+    {
+      "term": "power tools cordless",
+      "df": 4,
+      "inHeadings": 0,
+      "recommendedUse": [
+        1,
+        2
+      ],
+      "watch": false
+    },
+    {
+      "term": "tools cordless drills",
+      "df": 4,
+      "inHeadings": 0,
+      "recommendedUse": [
+        1,
+        2
+      ],
+      "watch": false
+    },
+    {
+      "term": "authorised and regulated",
+      "df": 4,
+      "inHeadings": 0,
+      "recommendedUse": [
+        2,
+        3
+      ],
+      "watch": false
+    },
+    {
+      "term": "power tools hand",
+      "df": 3,
+      "inHeadings": 0,
+      "recommendedUse": [
+        2,
+        3
+      ],
+      "watch": false
+    },
+    {
+      "term": "tools hand tools",
+      "df": 3,
+      "inHeadings": 0,
+      "recommendedUse": [
+        2,
+        3
+      ],
+      "watch": false
+    },
+    {
+      "term": "power tools air",
+      "df": 3,
+      "inHeadings": 0,
+      "recommendedUse": [
+        2,
+        3
+      ],
+      "watch": false
+    },
+    {
+      "term": "power tool accessories",
+      "df": 3,
+      "inHeadings": 0,
+      "recommendedUse": [
+        6,
+        7
+      ],
+      "watch": false
+    },
+    {
+      "term": "hand tools tool",
+      "df": 3,
+      "inHeadings": 0,
+      "recommendedUse": [
+        1,
+        2
+      ],
+      "watch": false
+    },
+    {
+      "term": "accessories hand tools",
+      "df": 3,
+      "inHeadings": 0,
+      "recommendedUse": [
+        2,
+        3
+      ],
+      "watch": false
+    },
+    {
+      "term": "tools you need",
+      "df": 3,
+      "inHeadings": 0,
+      "recommendedUse": [
+        2,
+        3
+      ],
+      "watch": false
+    },
+    {
+      "term": "next day delivery",
+      "df": 3,
+      "inHeadings": 0,
+      "recommendedUse": [
+        1,
+        2
+      ],
+      "watch": false
+    },
+    {
+      "term": "apply for finance",
+      "df": 3,
+      "inHeadings": 0,
+      "recommendedUse": [
+        2,
+        3
+      ],
+      "watch": false
+    },
+    {
+      "term": "hand tools",
+      "df": 7,
+      "inHeadings": 0,
+      "recommendedUse": [
+        3,
+        4
+      ],
+      "watch": false
+    },
+    {
+      "term": "power tool",
+      "df": 5,
+      "inHeadings": 0,
+      "recommendedUse": [
+        5,
+        6
+      ],
+      "watch": false
+    },
+    {
+      "term": "tool storage",
+      "df": 5,
+      "inHeadings": 0,
+      "recommendedUse": [
+        1,
+        2
+      ],
+      "watch": false
+    },
+    {
+      "term": "air tools",
+      "df": 5,
+      "inHeadings": 0,
+      "recommendedUse": [
+        2,
+        3
+      ],
+      "watch": false
+    },
+    {
+      "term": "finance option",
+      "df": 5,
+      "inHeadings": 0,
+      "recommendedUse": [
+        1,
+        2
+      ],
+      "watch": false
+    },
+    {
+      "term": "financial conduct",
+      "df": 5,
+      "inHeadings": 0,
+      "recommendedUse": [
+        2,
+        3
+      ],
+      "watch": false
+    },
+    {
+      "term": "conduct authority",
+      "df": 5,
+      "inHeadings": 0,
+      "recommendedUse": [
+        2,
+        3
+      ],
+      "watch": false
+    },
+    {
+      "term": "tools cordless",
+      "df": 4,
+      "inHeadings": 0,
+      "recommendedUse": [
+        1,
+        2
+      ],
+      "watch": false
+    },
+    {
+      "term": "cordless drills",
+      "df": 4,
+      "inHeadings": 0,
+      "recommendedUse": [
+        1,
+        2
+      ],
+      "watch": false
+    },
+    {
+      "term": "tools accessories",
+      "df": 4,
+      "inHeadings": 0,
+      "recommendedUse": [
+        2,
+        3
+      ],
+      "watch": false
+    },
+    {
+      "term": "screwdriver bits",
+      "df": 4,
+      "inHeadings": 0,
+      "recommendedUse": [
+        2,
+        3
+      ],
+      "watch": false
+    }
+  ],
+  "namedEntities": [
+    {
+      "entity": "Financial Conduct Authority",
+      "df": 4
+    },
+    {
+      "entity": "Power Tools",
+      "df": 3
+    },
+    {
+      "entity": "Socket Sets",
+      "df": 3
+    },
+    {
+      "entity": "Plumbing Tools",
+      "df": 3
+    },
+    {
+      "entity": "Customer Services",
+      "df": 3
+    },
+    {
+      "entity": "Hand Tools",
+      "df": 2
+    },
+    {
+      "entity": "Accept All Cookies",
+      "df": 2
+    },
+    {
+      "entity": "Website Data Collection Preferences",
+      "df": 2
+    },
+    {
+      "entity": "United Kingdom",
+      "df": 2
+    },
+    {
+      "entity": "Advanced Matching",
+      "df": 2
+    },
+    {
+      "entity": "In Stock",
+      "df": 2
+    },
+    {
+      "entity": "Tool Bags",
+      "df": 2
+    },
+    {
+      "entity": "Staple Guns",
+      "df": 2
+    },
+    {
+      "entity": "Dust Extractors",
+      "df": 2
+    },
+    {
+      "entity": "Planer Thicknessers",
+      "df": 2
+    },
+    {
+      "entity": "Paddle Mixers",
+      "df": 2
+    },
+    {
+      "entity": "Disc Cutters",
+      "df": 2
+    },
+    {
+      "entity": "Welding Accessories",
+      "df": 2
+    },
+    {
+      "entity": "Combi Drills",
+      "df": 2
+    },
+    {
+      "entity": "Angle Grinders",
+      "df": 2
+    },
+    {
+      "entity": "Impact Drivers",
+      "df": 2
+    },
+    {
+      "entity": "Circular Saws",
+      "df": 2
+    },
+    {
+      "entity": "Mitre Saws",
+      "df": 2
+    },
+    {
+      "entity": "Plunge Saws",
+      "df": 2
+    },
+    {
+      "entity": "Impact Wrenches",
+      "df": 2
+    },
+    {
+      "entity": "Laser Levels",
+      "df": 2
+    },
+    {
+      "entity": "Multi Tools",
+      "df": 2
+    },
+    {
+      "entity": "Nail Guns",
+      "df": 2
+    },
+    {
+      "entity": "Drill Drivers",
+      "df": 2
+    },
+    {
+      "entity": "Diamond Core Drills",
+      "df": 2
+    }
+  ],
+  "paa": [],
+  "related": [
+    "Tool finance no credit check",
+    "Tool finance bad credit",
+    "Power tool finance",
+    "Tool finance UK",
+    "Best tool finance",
+    "Tools UK",
+    "V12 finance tools",
+    "Mechanic tools on finance"
+  ],
+  "score": {
+    "score": 71,
+    "ourWords": 2723,
+    "covered": [
+      {
+        "term": "finance",
+        "df": 6,
+        "inHeadings": 5,
+        "recommendedUse": [
+          15,
+          17
+        ],
+        "watch": false,
+        "ours": 68
+      },
+      {
+        "term": "tools",
+        "df": 7,
+        "inHeadings": 4,
+        "recommendedUse": [
+          27,
+          28
+        ],
+        "watch": false,
+        "ours": 28
+      },
+      {
+        "term": "purchase",
+        "df": 5,
+        "inHeadings": 3,
+        "recommendedUse": [
+          3,
+          4
+        ],
+        "watch": false,
+        "ours": 12
+      },
+      {
+        "term": "tool",
+        "df": 7,
+        "inHeadings": 2,
+        "recommendedUse": [
+          14,
+          15
+        ],
+        "watch": false,
+        "ours": 15
+      },
+      {
+        "term": "credit",
+        "df": 7,
+        "inHeadings": 2,
+        "recommendedUse": [
+          6,
+          7
+        ],
+        "watch": false,
+        "ours": 16
+      },
+      {
+        "term": "payment",
+        "df": 6,
+        "inHeadings": 2,
+        "recommendedUse": [
+          6,
+          7
+        ],
+        "watch": false,
+        "ours": 9
+      },
+      {
+        "term": "deals",
+        "df": 6,
+        "inHeadings": 2,
+        "recommendedUse": [
+          2,
+          3
+        ],
+        "watch": false,
+        "ours": 2
+      },
+      {
+        "term": "payments",
+        "df": 5,
+        "inHeadings": 2,
+        "recommendedUse": [
+          4,
+          5
+        ],
+        "watch": false,
+        "ours": 16
+      },
+      {
+        "term": "cost",
+        "df": 4,
+        "inHeadings": 2,
+        "recommendedUse": [
+          4,
+          5
+        ],
+        "watch": false,
+        "ours": 10
+      },
+      {
+        "term": "representative",
+        "df": 3,
+        "inHeadings": 2,
+        "recommendedUse": [
+          2,
+          3
+        ],
+        "watch": false,
+        "ours": 7
+      },
+      {
+        "term": "check",
+        "df": 3,
+        "inHeadings": 2,
+        "recommendedUse": [
+          2,
+          3
+        ],
+        "watch": false,
+        "ours": 8
+      },
+      {
+        "term": "spread the cost",
+        "df": 4,
+        "inHeadings": 1,
+        "recommendedUse": [
+          2,
+          4
+        ],
+        "watch": false,
+        "ours": 2
+      },
+      {
+        "term": "power tools",
+        "df": 7,
+        "inHeadings": 1,
+        "recommendedUse": [
+          5,
+          6
+        ],
+        "watch": false,
+        "ours": 8
+      },
+      {
+        "term": "rotary hammer",
+        "df": 3,
+        "inHeadings": 1,
+        "recommendedUse": [
+          1,
+          2
+        ],
+        "watch": false,
+        "ours": 1
+      },
+      {
+        "term": "payment plan",
+        "df": 3,
+        "inHeadings": 1,
+        "recommendedUse": [
+          1,
+          2
+        ],
+        "watch": false,
+        "ours": 4
+      },
+      {
+        "term": "finance offer",
+        "df": 3,
+        "inHeadings": 1,
+        "recommendedUse": [
+          1,
+          2
+        ],
+        "watch": false,
+        "ours": 2
+      },
+      {
+        "term": "power",
+        "df": 7,
+        "inHeadings": 1,
+        "recommendedUse": [
+          6,
+          7
+        ],
+        "watch": false,
+        "ours": 10
+      },
+      {
+        "term": "makita",
+        "df": 6,
+        "inHeadings": 1,
+        "recommendedUse": [
+          2,
+          3
+        ],
+        "watch": false,
+        "ours": 3
+      },
+      {
+        "term": "choose",
+        "df": 6,
+        "inHeadings": 1,
+        "recommendedUse": [
+          1,
+          3
+        ],
+        "watch": false,
+        "ours": 1
+      },
+      {
+        "term": "apply",
+        "df": 6,
+        "inHeadings": 1,
+        "recommendedUse": [
+          5,
+          6
+        ],
+        "watch": false,
+        "ours": 5
+      },
+      {
+        "term": "next day delivery",
+        "df": 3,
+        "inHeadings": 0,
+        "recommendedUse": [
+          1,
+          2
+        ],
+        "watch": false,
+        "ours": 1
+      },
+      {
+        "term": "hand tools",
+        "df": 7,
+        "inHeadings": 0,
+        "recommendedUse": [
+          3,
+          4
+        ],
+        "watch": false,
+        "ours": 3
+      },
+      {
+        "term": "tool storage",
+        "df": 5,
+        "inHeadings": 0,
+        "recommendedUse": [
+          1,
+          2
+        ],
+        "watch": false,
+        "ours": 2
+      },
+      {
+        "term": "finance option",
+        "df": 5,
+        "inHeadings": 0,
+        "recommendedUse": [
+          1,
+          2
+        ],
+        "watch": false,
+        "ours": 1
+      },
+      {
+        "term": "cordless drills",
+        "df": 4,
+        "inHeadings": 0,
+        "recommendedUse": [
+          1,
+          2
+        ],
+        "watch": false,
+        "ours": 1
+      }
+    ],
+    "under": [
+      {
+        "term": "finance options",
+        "df": 4,
+        "inHeadings": 3,
+        "recommendedUse": [
+          5,
+          6
+        ],
+        "watch": false,
+        "ours": 3
+      },
+      {
+        "term": "popular",
+        "df": 2,
+        "inHeadings": 2,
+        "recommendedUse": [
+          3,
+          4
+        ],
+        "watch": false,
+        "ours": 1
+      },
+      {
+        "term": "pressure washers",
+        "df": 3,
+        "inHeadings": 1,
+        "recommendedUse": [
+          6,
+          7
+        ],
+        "watch": false,
+        "ours": 1
+      },
+      {
+        "term": "products",
+        "df": 7,
+        "inHeadings": 1,
+        "recommendedUse": [
+          3,
+          4
+        ],
+        "watch": false,
+        "ours": 2
+      },
+      {
+        "term": "shop",
+        "df": 6,
+        "inHeadings": 1,
+        "recommendedUse": [
+          4,
+          5
+        ],
+        "watch": false,
+        "ours": 2
+      },
+      {
+        "term": "financial conduct authority",
+        "df": 5,
+        "inHeadings": 0,
+        "recommendedUse": [
+          2,
+          3
+        ],
+        "watch": false,
+        "ours": 1
+      },
+      {
+        "term": "authorised and regulated",
+        "df": 4,
+        "inHeadings": 0,
+        "recommendedUse": [
+          2,
+          3
+        ],
+        "watch": false,
+        "ours": 1
+      },
+      {
+        "term": "power tool accessories",
+        "df": 3,
+        "inHeadings": 0,
+        "recommendedUse": [
+          6,
+          7
+        ],
+        "watch": false,
+        "ours": 1
+      },
+      {
+        "term": "tools you need",
+        "df": 3,
+        "inHeadings": 0,
+        "recommendedUse": [
+          2,
+          3
+        ],
+        "watch": false,
+        "ours": 1
+      },
+      {
+        "term": "apply for finance",
+        "df": 3,
+        "inHeadings": 0,
+        "recommendedUse": [
+          2,
+          3
+        ],
+        "watch": false,
+        "ours": 1
+      },
+      {
+        "term": "power tool",
+        "df": 5,
+        "inHeadings": 0,
+        "recommendedUse": [
+          5,
+          6
+        ],
+        "watch": false,
+        "ours": 2
+      },
+      {
+        "term": "air tools",
+        "df": 5,
+        "inHeadings": 0,
+        "recommendedUse": [
+          2,
+          3
+        ],
+        "watch": false,
+        "ours": 1
+      },
+      {
+        "term": "financial conduct",
+        "df": 5,
+        "inHeadings": 0,
+        "recommendedUse": [
+          2,
+          3
+        ],
+        "watch": false,
+        "ours": 1
+      },
+      {
+        "term": "conduct authority",
+        "df": 5,
+        "inHeadings": 0,
+        "recommendedUse": [
+          2,
+          3
+        ],
+        "watch": false,
+        "ours": 1
+      },
+      {
+        "term": "screwdriver bits",
+        "df": 4,
+        "inHeadings": 0,
+        "recommendedUse": [
+          2,
+          3
+        ],
+        "watch": false,
+        "ours": 1
+      }
+    ],
+    "missing": [
+      {
+        "term": "now pay",
+        "df": 3,
+        "inHeadings": 1,
+        "recommendedUse": [
+          1,
+          2
+        ],
+        "watch": false,
+        "ours": 0
+      },
+      {
+        "term": "power tools cordless",
+        "df": 4,
+        "inHeadings": 0,
+        "recommendedUse": [
+          1,
+          2
+        ],
+        "watch": false,
+        "ours": 0
+      },
+      {
+        "term": "tools cordless drills",
+        "df": 4,
+        "inHeadings": 0,
+        "recommendedUse": [
+          1,
+          2
+        ],
+        "watch": false,
+        "ours": 0
+      },
+      {
+        "term": "power tools hand",
+        "df": 3,
+        "inHeadings": 0,
+        "recommendedUse": [
+          2,
+          3
+        ],
+        "watch": false,
+        "ours": 0
+      },
+      {
+        "term": "tools hand tools",
+        "df": 3,
+        "inHeadings": 0,
+        "recommendedUse": [
+          2,
+          3
+        ],
+        "watch": false,
+        "ours": 0
+      },
+      {
+        "term": "power tools air",
+        "df": 3,
+        "inHeadings": 0,
+        "recommendedUse": [
+          2,
+          3
+        ],
+        "watch": false,
+        "ours": 0
+      },
+      {
+        "term": "hand tools tool",
+        "df": 3,
+        "inHeadings": 0,
+        "recommendedUse": [
+          1,
+          2
+        ],
+        "watch": false,
+        "ours": 0
+      },
+      {
+        "term": "accessories hand tools",
+        "df": 3,
+        "inHeadings": 0,
+        "recommendedUse": [
+          2,
+          3
+        ],
+        "watch": false,
+        "ours": 0
+      },
+      {
+        "term": "tools cordless",
+        "df": 4,
+        "inHeadings": 0,
+        "recommendedUse": [
+          1,
+          2
+        ],
+        "watch": false,
+        "ours": 0
+      },
+      {
+        "term": "tools accessories",
+        "df": 4,
+        "inHeadings": 0,
+        "recommendedUse": [
+          2,
+          3
+        ],
+        "watch": false,
+        "ours": 0
+      }
+    ],
+    "namedCovered": [
+      {
+        "entity": "Financial Conduct Authority",
+        "df": 4
+      },
+      {
+        "entity": "Power Tools",
+        "df": 3
+      },
+      {
+        "entity": "Hand Tools",
+        "df": 2
+      },
+      {
+        "entity": "Dust Extractors",
+        "df": 2
+      },
+      {
+        "entity": "Planer Thicknessers",
+        "df": 2
+      },
+      {
+        "entity": "Combi Drills",
+        "df": 2
+      },
+      {
+        "entity": "Angle Grinders",
+        "df": 2
+      },
+      {
+        "entity": "Impact Drivers",
+        "df": 2
+      },
+      {
+        "entity": "Circular Saws",
+        "df": 2
+      },
+      {
+        "entity": "Mitre Saws",
+        "df": 2
+      },
+      {
+        "entity": "Impact Wrenches",
+        "df": 2
+      },
+      {
+        "entity": "Laser Levels",
+        "df": 2
+      },
+      {
+        "entity": "Nail Guns",
+        "df": 2
+      },
+      {
+        "entity": "Diamond Core Drills",
+        "df": 2
+      }
+    ],
+    "namedMissing": [
+      {
+        "entity": "Socket Sets",
+        "df": 3
+      },
+      {
+        "entity": "Plumbing Tools",
+        "df": 3
+      },
+      {
+        "entity": "Customer Services",
+        "df": 3
+      },
+      {
+        "entity": "Accept All Cookies",
+        "df": 2
+      },
+      {
+        "entity": "Website Data Collection Preferences",
+        "df": 2
+      },
+      {
+        "entity": "United Kingdom",
+        "df": 2
+      },
+      {
+        "entity": "Advanced Matching",
+        "df": 2
+      },
+      {
+        "entity": "In Stock",
+        "df": 2
+      },
+      {
+        "entity": "Tool Bags",
+        "df": 2
+      },
+      {
+        "entity": "Staple Guns",
+        "df": 2
+      },
+      {
+        "entity": "Paddle Mixers",
+        "df": 2
+      },
+      {
+        "entity": "Disc Cutters",
+        "df": 2
+      },
+      {
+        "entity": "Welding Accessories",
+        "df": 2
+      },
+      {
+        "entity": "Plunge Saws",
+        "df": 2
+      },
+      {
+        "entity": "Multi Tools",
+        "df": 2
+      },
+      {
+        "entity": "Drill Drivers",
+        "df": 2
+      }
+    ]
+  }
+}

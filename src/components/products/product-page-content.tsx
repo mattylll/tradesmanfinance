@@ -27,6 +27,7 @@ import {
 } from "lucide-react";
 import { useState } from "react";
 import { getProductPage, type ProductPageData } from "@/data/product-pages";
+import { getProductLongForm } from "@/data/product-content";
 import { QuickQuoteForm } from "@/components/forms/quick-quote-form";
 
 // Animation variants
@@ -79,6 +80,8 @@ const heroImages: Record<string, string> = {
   'invoice-finance': '/images/carpenter-hero.png',
   'asset-finance': '/images/hvac-hero.png',
   'cashflow-finance': '/images/roofer-hero.png',
+  'merchant-cash-advance': '/images/hvac-hero.png',
+  'scaffolding-finance': '/images/builder-hero.png',
 };
 
 interface ProductPageContentProps {
@@ -94,6 +97,11 @@ export function ProductPageContent({ productSlug }: ProductPageContentProps) {
   }
 
   const heroImage = heroImages[productSlug] || '/images/builder-hero.png';
+
+  const longForm = getProductLongForm(productSlug);
+  const faqList = longForm?.faqs
+    ? longForm.faqs.map((f) => ({ question: f.q, answer: f.a }))
+    : product.faqs;
 
   // Generate schema markup
   const schemaMarkup = {
@@ -128,7 +136,7 @@ export function ProductPageContent({ productSlug }: ProductPageContentProps) {
       // FAQPage
       {
         "@type": "FAQPage",
-        "mainEntity": product.faqs.map((faq) => ({
+        "mainEntity": faqList.map((faq) => ({
           "@type": "Question",
           "name": faq.question,
           "acceptedAnswer": {
@@ -662,6 +670,50 @@ export function ProductPageContent({ productSlug }: ProductPageContentProps) {
         </div>
       </section>
 
+      {/* Long-form guide section - SERP-calibrated content */}
+      {longForm && (
+        <section className="relative py-20 overflow-hidden">
+          <div className="absolute inset-0 bg-gradient-to-b from-gray-950 via-gray-900 to-gray-950" />
+          <div
+            className="absolute inset-0 opacity-[0.04]"
+            style={{
+              background: `radial-gradient(ellipse at 50% 0%, ${product.accentColor} 0%, transparent 55%)`,
+            }}
+          />
+
+          <div className="container mx-auto px-4 relative z-10">
+            <div className="max-w-3xl mx-auto">
+              <div className="mb-12">
+                <h2
+                  className="text-3xl md:text-4xl font-bold text-white mb-6"
+                  style={{ fontFamily: 'var(--font-industrial)' }}
+                >
+                  {product.name} <span style={{ color: product.accentColor }}>Explained</span>
+                </h2>
+                {longForm.intro.map((para, i) => (
+                  <p key={i} className="text-gray-300 text-lg leading-relaxed mb-4">
+                    {para}
+                  </p>
+                ))}
+              </div>
+
+              {longForm.sections.map((section, i) => (
+                <div key={i} className="mb-10">
+                  <h2 className="text-2xl md:text-3xl font-bold text-white mb-4">
+                    {section.h}
+                  </h2>
+                  {section.body.map((para, j) => (
+                    <p key={j} className="text-gray-400 leading-relaxed mb-4">
+                      {para}
+                    </p>
+                  ))}
+                </div>
+              ))}
+            </div>
+          </div>
+        </section>
+      )}
+
       {/* Quote Form Section - Light contrast */}
       <section id="quote-form" className="relative py-20 overflow-hidden">
         <div className="absolute inset-0 bg-gradient-to-b from-gray-100 to-white" />
@@ -769,7 +821,7 @@ export function ProductPageContent({ productSlug }: ProductPageContentProps) {
             variants={staggerContainer}
             className="max-w-3xl mx-auto space-y-4"
           >
-            {product.faqs.map((faq, index) => (
+            {faqList.map((faq, index) => (
               <motion.div key={index} variants={fadeInUp}>
                 <div className="bg-gray-900/50 backdrop-blur-sm border border-gray-800/50 rounded-xl overflow-hidden">
                   <button

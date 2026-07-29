@@ -91,6 +91,22 @@ const products = [
     features: ["Hire purchase", "Finance lease", "Operating lease", "Sale & leaseback"],
     color: "#ec4899",
   },
+  {
+    icon: Zap,
+    title: "Merchant Cash Advance",
+    slug: "merchant-cash-advance",
+    description: "Get an advance against your card takings and repay as a percentage of daily card sales.",
+    features: ["Repay as you earn", "No fixed payments", "24hr decisions", "Bad credit considered"],
+    color: "#8b5cf6",
+  },
+  {
+    icon: Shield,
+    title: "Scaffolding Finance",
+    slug: "scaffolding-finance",
+    description: "Fund tube, fittings, system scaffold and trucks for your scaffolding business.",
+    features: ["Scaffold equipment", "Crane lorries & flatbeds", "New & used kit", "Contract-aware lenders"],
+    color: "#eab308",
+  },
 ];
 
 const stats = [

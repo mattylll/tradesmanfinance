@@ -103,8 +103,8 @@ export const productPages: Record<string, ProductPageData> = {
   'vehicle-finance': {
     slug: 'vehicle-finance',
     name: 'Vehicle Finance',
-    heroTitle: 'Get Your Work Van on the Road',
-    heroHighlight: 'Van',
+    heroTitle: 'Specialist Van Finance for Working Tradesmen',
+    heroHighlight: 'Van Finance',
     heroDescription: 'Finance your work vehicle with flexible terms and competitive rates. From vans to trucks, we specialise in getting tradesmen mobile.',
     accentColor: '#0ea5a5',
 
@@ -276,7 +276,7 @@ export const productPages: Record<string, ProductPageData> = {
       },
     ],
 
-    metaTitle: 'Van Finance for Tradesmen | 0% Deposit, 4hr Decisions | Tradesman Finance',
+    metaTitle: 'Van Finance for Tradesmen | New & Used Vans | 4hr Decisions',
     metaDescription: 'Finance your work van with 0% deposit options and 4-hour decisions. Flexible terms from 1-5 years for all trades. Rates from 6.9% APR. Get your free quote today.',
     keywords: ['van finance', 'vehicle finance tradesmen', 'work van finance', 'commercial vehicle finance', 'van HP', 'van leasing tradesmen'],
   },
@@ -284,8 +284,8 @@ export const productPages: Record<string, ProductPageData> = {
   'equipment-finance': {
     slug: 'equipment-finance',
     name: 'Equipment Finance',
-    heroTitle: 'Finance the Tools You Need to Grow',
-    heroHighlight: 'Tools',
+    heroTitle: 'Get the Best Tools on Finance for Your Trade',
+    heroHighlight: 'Tools on Finance',
     heroDescription: 'Get the specialist equipment your trade business needs without the upfront cost. From power tools to heavy machinery, we make equipment finance simple.',
     accentColor: '#ff6b35',
 
@@ -455,7 +455,7 @@ export const productPages: Record<string, ProductPageData> = {
       },
     ],
 
-    metaTitle: 'Equipment Finance for Tradesmen | Rates from 5.9% APR | Tradesman Finance',
+    metaTitle: 'Tool Finance UK | Spread the Cost of Tools & Equipment',
     metaDescription: 'Finance trade equipment from £1,000 to £500,000. 4-hour decisions, 0% deposit options, rates from 5.9% APR. Power tools to heavy machinery. Get your free quote.',
     keywords: ['equipment finance', 'tool finance', 'trade equipment finance', 'power tool finance', 'machinery finance'],
   },
@@ -463,8 +463,8 @@ export const productPages: Record<string, ProductPageData> = {
   'business-loans': {
     slug: 'business-loans',
     name: 'Business Loans',
-    heroTitle: 'Flexible Funding for Your Trade Business',
-    heroHighlight: 'Funding',
+    heroTitle: 'Specialist Business Loans for Sole Traders and Trade Companies',
+    heroHighlight: 'Business Loans',
     heroDescription: 'Unsecured business loans designed for tradesmen. Use the funds for anything your business needs - expansion, stock, marketing, or bridging cashflow gaps.',
     accentColor: '#6366f1',
 
@@ -627,7 +627,7 @@ export const productPages: Record<string, ProductPageData> = {
       },
     ],
 
-    metaTitle: 'Business Loans for Tradesmen | Same-Day Decisions | Tradesman Finance',
+    metaTitle: 'Sole Trader Business Loans UK | £5k to £500k | Fast Decisions',
     metaDescription: 'Flexible business loans from £5,000 to £500,000 for UK tradesmen. Same-day decisions, unsecured options, rates from 7.9% APR. Apply for your free quote today.',
     keywords: ['business loans tradesmen', 'trade business loan', 'unsecured business loan', 'working capital loan', 'small business loan'],
   },
@@ -635,8 +635,8 @@ export const productPages: Record<string, ProductPageData> = {
   'invoice-finance': {
     slug: 'invoice-finance',
     name: 'Invoice Finance',
-    heroTitle: 'Unlock Cash Tied Up in Invoices',
-    heroHighlight: 'Cash',
+    heroTitle: 'Specialist Invoice Finance for the Building Trades',
+    heroHighlight: 'Invoice Finance',
     heroDescription: 'Stop waiting 30, 60, or 90 days to get paid. Release up to 90% of your invoice value within 24 hours and improve your cashflow overnight.',
     accentColor: '#f59e0b',
 
@@ -782,7 +782,7 @@ export const productPages: Record<string, ProductPageData> = {
       },
     ],
 
-    metaTitle: 'Invoice Finance for Tradesmen | Get Paid in 24 Hours | Tradesman Finance',
+    metaTitle: 'Invoice Finance & Factoring for Trade Businesses | UK',
     metaDescription: 'Release up to 90% of your invoice value within 24 hours. Stop waiting to get paid. Invoice factoring and discounting from 0.5%. Free quote for tradesmen.',
     keywords: ['invoice finance', 'invoice factoring tradesmen', 'invoice discounting', 'construction invoice finance', 'trade invoice finance'],
   },
@@ -790,8 +790,8 @@ export const productPages: Record<string, ProductPageData> = {
   'asset-finance': {
     slug: 'asset-finance',
     name: 'Asset Finance',
-    heroTitle: 'Spread the Cost of Any Business Asset',
-    heroHighlight: 'Cost',
+    heroTitle: 'Specialist Asset Finance for Plant, Tools and Machinery',
+    heroHighlight: 'Asset Finance',
     heroDescription: 'Finance any business asset - from vehicles and equipment to property and stock. Preserve your working capital while getting what your business needs.',
     accentColor: '#ec4899',
 
@@ -936,7 +936,7 @@ export const productPages: Record<string, ProductPageData> = {
       },
     ],
 
-    metaTitle: 'Asset Finance for Tradesmen | Rates from 5.9% APR | Tradesman Finance',
+    metaTitle: 'Asset Finance UK | Hire Purchase, Leasing & Refinancing',
     metaDescription: 'Finance any business asset from £1,000 to £1M. Vehicles, equipment, technology. 4-hour decisions, 0% deposit options, rates from 5.9% APR. Get your free quote.',
     keywords: ['asset finance', 'asset finance tradesmen', 'equipment HP', 'asset refinance', 'business asset finance'],
   },
@@ -944,8 +944,8 @@ export const productPages: Record<string, ProductPageData> = {
   'cashflow-finance': {
     slug: 'cashflow-finance',
     name: 'Cashflow Finance',
-    heroTitle: 'Keep Your Business Running Smoothly',
-    heroHighlight: 'Running',
+    heroTitle: 'Fast Cashflow Finance for Busy Trade Businesses',
+    heroHighlight: 'Cashflow Finance',
     heroDescription: 'Short-term funding solutions to bridge gaps, manage seasonal fluctuations, and keep your trade business operating without interruption.',
     accentColor: '#10b981',
 
@@ -1083,9 +1083,303 @@ export const productPages: Record<string, ProductPageData> = {
       },
     ],
 
-    metaTitle: 'Cashflow Finance for Tradesmen | Same-Day Funding | Tradesman Finance',
+    metaTitle: 'Business Cash Advance & Cashflow Finance for Tradesmen',
     metaDescription: 'Short-term cashflow funding for UK tradesmen. Same-day decisions and funding. Bridge payment gaps, manage seasonal fluctuations. From £2,500 to £250,000.',
     keywords: ['cashflow finance', 'short-term business loan', 'merchant cash advance', 'working capital', 'bridge finance'],
+  },
+
+  'merchant-cash-advance': {
+    slug: 'merchant-cash-advance',
+    name: 'Merchant Cash Advance',
+    heroTitle: 'Specialist Merchant Cash Advance Broker for the Trades',
+    heroHighlight: 'Merchant Cash Advance',
+    heroDescription: 'Get an upfront cash advance based on your card takings, then repay automatically as a small percentage of each card sale. No fixed monthly payments - repayments flex with how busy you are.',
+    accentColor: '#8b5cf6',
+
+    decisionTime: '24 hours',
+    decisionTimeDisplay: '24hr Decisions',
+
+    phoneNumber: PHONE_NUMBER,
+    phoneDisplay: PHONE_DISPLAY,
+
+    ratesFrom: '1.1 factor rate',
+
+    minFinance: '£5,000',
+    maxFinance: '£200,000',
+    minTerm: '3 months',
+    maxTerm: '18 months',
+    minDeposit: 'N/A',
+
+    heroStats: [
+      { value: '£200K', label: 'Max Advance' },
+      { value: '24hrs', label: 'To Funding' },
+      { value: '10-15%', label: 'Of Card Sales' },
+    ],
+
+    benefits: [
+      {
+        title: 'Repay As You Earn',
+        description: 'Repayments are a fixed percentage of daily card sales - busy weeks repay more, quiet weeks repay less',
+        icon: 'TrendingUp',
+      },
+      {
+        title: 'No Fixed Monthly Payments',
+        description: 'Nothing to find at the end of the month - collection happens automatically through your card terminal',
+        icon: 'Shield',
+      },
+      {
+        title: 'Fast, Simple Approval',
+        description: 'Approval is based on your card takings, not just your credit score - often just 3-6 months of statements needed',
+        icon: 'Zap',
+      },
+      {
+        title: 'One Clear Cost',
+        description: 'A single fixed fee agreed upfront - no interest rate, no hidden charges, no early repayment penalties',
+        icon: 'Percent',
+      },
+    ],
+
+    categories: [
+      {
+        title: 'What It Funds',
+        items: ['Materials & stock purchases', 'New tools & equipment', 'Staff wages & subcontractors', 'Marketing & growth'],
+      },
+      {
+        title: 'Who It Suits',
+        items: ['Trades taking card payments', 'Showrooms & trade counters', 'Domestic work paid by card', 'Seasonal businesses'],
+      },
+      {
+        title: 'How You Qualify',
+        items: ['3+ months trading history', 'Regular card takings', '£2,500+ monthly card sales', 'UK-registered business'],
+      },
+      {
+        title: 'How It Repays',
+        items: ['Fixed % of card sales', 'Collected automatically', 'No standing orders', 'Clears faster when busy'],
+      },
+    ],
+
+    financeTypes: [
+      {
+        name: 'Merchant Cash Advance',
+        description: 'A lump sum advance based on your average monthly card takings, typically 1-1.5x your monthly card revenue. Repaid as a fixed percentage of daily card sales.',
+        ownAsset: true,
+        taxBenefits: 'The fee is tax-deductible as a business expense.',
+        bestFor: 'Businesses with steady card takings who want repayments that flex with income.',
+      },
+      {
+        name: 'Revenue-Based Finance',
+        description: 'Similar to a merchant cash advance but based on total turnover rather than just card sales. Repayments track your overall revenue.',
+        ownAsset: true,
+        taxBenefits: 'Fees are tax-deductible.',
+        bestFor: 'Businesses paid by a mix of card, bank transfer, and invoice.',
+      },
+      {
+        name: 'Short-Term Business Loan',
+        description: 'A fixed-term alternative with regular repayments if you prefer certainty over flexibility. Often cheaper if your income is predictable.',
+        ownAsset: true,
+        taxBenefits: 'Interest is tax-deductible as a business expense.',
+        bestFor: 'Businesses with predictable income who want the lowest total cost.',
+      },
+    ],
+
+    faqs: [
+      {
+        question: 'What is a merchant cash advance?',
+        answer: 'A merchant cash advance is an unsecured cash advance based on your card transaction history. You receive a lump sum upfront - typically 1-1.5x your average monthly card takings - and repay it automatically as a fixed percentage (usually 10-15%) of your daily card sales. Good months repay faster; quiet months repay slower.',
+      },
+      {
+        question: 'How much can I get with a merchant cash advance?',
+        answer: 'Most lenders advance between 1x and 1.5x your average monthly card takings. If you take £10,000 a month through your card terminal, you could typically access £10,000-£15,000. We arrange advances from £5,000 up to £200,000.',
+      },
+      {
+        question: 'How does repayment work?',
+        answer: 'Repayment happens automatically through your card terminal provider. An agreed percentage of each card sale - typically 10-15% - goes towards the advance until it\'s fully repaid. There are no direct debits, standing orders, or fixed monthly payments to manage.',
+      },
+      {
+        question: 'How much does a merchant cash advance cost?',
+        answer: 'Merchant cash advances use a factor rate rather than an interest rate. Factor rates typically range from 1.1 to 1.5 - so on a £10,000 advance at a 1.2 factor rate, you repay £12,000 in total. The cost is fixed upfront and never increases, however long repayment takes.',
+      },
+      {
+        question: 'Do I qualify if I have bad credit?',
+        answer: 'Often, yes. Merchant cash advance approval is based primarily on your card takings, not your credit score. If your business takes consistent card payments, lenders can see you have the income to repay - which means CCJs or past credit issues are less of a barrier than with traditional loans.',
+      },
+      {
+        question: 'How quickly can I get the money?',
+        answer: 'Decisions typically come within 24 hours, and funds are usually in your account within 24-72 hours of approval. Because approval is based on card statements rather than accounts and forecasts, the process is much faster than a bank loan.',
+      },
+      {
+        question: 'What do I need to apply?',
+        answer: 'Usually just 3-6 months of card processing statements and business bank statements. You\'ll typically need at least 3 months of trading history and around £2,500+ in monthly card takings to qualify.',
+      },
+      {
+        question: 'Is a merchant cash advance right for a tradesman?',
+        answer: 'It works best if a good share of your income comes through a card terminal - common for trades doing domestic work, running a showroom or trade counter, or taking deposits by card. If most of your income arrives by bank transfer or invoice, revenue-based finance or a short-term business loan may fit better - we\'ll help you compare both.',
+      },
+      {
+        question: 'Can I repay a merchant cash advance early?',
+        answer: 'Yes. The total cost is fixed upfront, so there are no early repayment penalties. If business is booming and your card sales are high, the advance simply clears sooner.',
+      },
+      {
+        question: 'Is a merchant cash advance secured against my assets?',
+        answer: 'No. A merchant cash advance is unsecured - you don\'t put up your home, van, or tools as security. The advance is repaid purely from future card sales.',
+      },
+    ],
+
+    testimonials: [
+      {
+        quote: 'Most of my customers pay by card these days. Got £15,000 advanced against my takings in two days - repayments just come out of card sales so I never even notice them. Perfect for how my business runs.',
+        name: 'Steve M.',
+        trade: 'Plumber',
+        business: 'SM Plumbing & Heating',
+        location: 'Leeds',
+        amount: '£15,000',
+        rating: 5,
+      },
+      {
+        quote: 'Winter is always quiet for us. The cash advance repayments dropped right down when takings dipped, then picked back up in spring. A normal loan would have crippled us in January.',
+        name: 'Rachel D.',
+        trade: 'Landscaper',
+        business: 'Green Scene Landscapes',
+        location: 'Bristol',
+        amount: '£20,000',
+        rating: 5,
+      },
+      {
+        quote: 'Bank turned me down because of an old CCJ. Merchant cash advance looked at my card takings instead and approved me in a day. Used it to stock the trade counter for the busy season.',
+        name: 'Tony B.',
+        trade: 'Builder',
+        business: 'TB Building Supplies',
+        location: 'Birmingham',
+        amount: '£30,000',
+        rating: 5,
+      },
+    ],
+
+    metaTitle: 'Merchant Cash Advance UK | Repay From Your Card Takings',
+    metaDescription: 'Merchant cash advances for UK tradesmen. Get £5,000-£200,000 advanced against your card takings. Repay as a % of card sales - no fixed monthly payments. 24hr decisions.',
+    keywords: ['merchant cash advance', 'business cash advance', 'card payment advance', 'merchant cash advance uk', 'tradesman cash advance', 'revenue based finance'],
+  },
+
+  'scaffolding-finance': {
+    slug: 'scaffolding-finance',
+    name: 'Scaffolding Finance',
+    heroTitle: 'Specialist Scaffolding Finance for Contractors',
+    heroHighlight: 'Scaffolding Finance',
+    heroDescription: 'Finance for scaffolding businesses: spread the cost of tube, fittings, boards and system scaffold, fund new trucks, and keep cash flowing between contracts.',
+    accentColor: '#eab308',
+
+    decisionTime: '24 hours',
+    decisionTimeDisplay: '24hr Decisions',
+
+    phoneNumber: PHONE_NUMBER,
+    phoneDisplay: PHONE_DISPLAY,
+
+    ratesFrom: '6.9% APR',
+
+    minFinance: '£5,000',
+    maxFinance: '£500,000',
+    minTerm: '1 year',
+    maxTerm: '5 years',
+    minDeposit: '0%',
+
+    heroStats: [
+      { value: '£500K', label: 'Max Funding' },
+      { value: '24hrs', label: 'Decision Time' },
+      { value: '1-5yrs', label: 'Terms' },
+    ],
+
+    benefits: [
+      {
+        title: 'Fund the Full Kit',
+        description: 'Tube and fitting, system scaffold, boards, hoists, alloy towers and edge protection on one agreement',
+        icon: 'Shield',
+      },
+      {
+        title: 'Trucks and Transport Too',
+        description: 'Flatbeds, crane lorries and vans financed alongside the scaffold they carry',
+        icon: 'Zap',
+      },
+      {
+        title: 'New and Used Equipment',
+        description: 'Finance new stock from manufacturers or used scaffold from dealers and auctions',
+        icon: 'Calculator',
+      },
+      {
+        title: 'Contract-Aware Lending',
+        description: 'Lenders on our panel who understand payment applications, retentions and project cashflow',
+        icon: 'TrendingUp',
+      },
+    ],
+
+    categories: [
+      {
+        title: 'Scaffold Equipment',
+        items: ['Tube, fittings & boards', 'System scaffold (Layher, HAKI, Cuplok)', 'Alloy towers & staircases', 'Hoists & edge protection'],
+      },
+      {
+        title: 'Vehicles',
+        items: ['Flatbed scaffolding trucks', 'Crane-mounted lorries', 'Transit & Luton vans', 'Trailers'],
+      },
+      {
+        title: 'Working Capital',
+        items: ['Business loans', 'Invoice finance on applications', 'VAT & tax funding', 'Wage cover between contracts'],
+      },
+      {
+        title: 'Growth Funding',
+        items: ['Yard & depot fit-out', 'Extra stock for bigger contracts', 'Taking on labour', 'Buying a competitor'],
+      },
+    ],
+
+    financeTypes: [
+      {
+        name: 'Hire Purchase',
+        description: 'Spread the cost of scaffold equipment or trucks over 1 to 5 years and own the kit outright at the end.',
+        ownAsset: true,
+        taxBenefits: 'Qualifies for capital allowances; interest is tax-deductible.',
+        bestFor: 'Scaffolding contractors buying tube, fittings and vehicles they will use for years.',
+      },
+      {
+        name: 'Finance Lease',
+        description: 'Use the equipment for a fixed rental without owning it. Lower monthly cost, with options to continue, sell or return at the end.',
+        ownAsset: false,
+        taxBenefits: 'Rentals are deductible as a trading expense.',
+        bestFor: 'Businesses that want lower payments or expect to upgrade equipment.',
+      },
+      {
+        name: 'Business Loan',
+        description: 'An unsecured lump sum for anything the business needs, from stock to wages to a new yard.',
+        ownAsset: true,
+        taxBenefits: 'Interest is tax-deductible as a business expense.',
+        bestFor: 'Funding needs that are not tied to a specific asset.',
+      },
+    ],
+
+    faqs: [],
+
+    testimonials: [
+      {
+        quote: 'Won a two-year commercial contract and needed about thirty grand of extra tube and boards to service it. Finance was agreed in two days and the equipment paid for itself inside six months.',
+        name: 'Danny R.',
+        trade: 'Scaffolder',
+        business: 'DR Scaffolding Ltd',
+        location: 'Sheffield',
+        amount: '£30,000',
+        rating: 5,
+      },
+      {
+        quote: 'Financed a used crane lorry and a full set of system scaffold together. One agreement, one monthly payment, and we kept our cash for wages.',
+        name: 'Mark H.',
+        trade: 'Scaffolder',
+        business: 'Highline Access Ltd',
+        location: 'Cardiff',
+        amount: '£85,000',
+        rating: 5,
+      },
+    ],
+
+    metaTitle: 'Scaffolding Finance UK | Equipment, Trucks & Business Loans',
+    metaDescription: 'Finance for scaffolding businesses. Spread the cost of tube, fittings, system scaffold and trucks from £5,000 to £500,000. New and used equipment. 24hr decisions.',
+    keywords: ['scaffolding finance', 'scaffold finance', 'scaffolding business loan', 'scaffolding equipment finance', 'scaffolding truck finance', 'finance for scaffolding companies'],
   },
 };
 

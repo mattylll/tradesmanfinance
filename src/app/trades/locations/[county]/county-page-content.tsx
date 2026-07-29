@@ -25,6 +25,7 @@ import {
   Users,
   Award,
   Zap,
+  CreditCard,
 } from 'lucide-react';
 
 // Import SEO components
@@ -101,6 +102,13 @@ const financeProducts = [
     icon: Calculator,
     href: '/products/asset-finance',
     color: 'bg-[#ec4899]',
+  },
+  {
+    name: 'Merchant Cash Advance',
+    description: 'Advance against your card takings, repaid as you earn',
+    icon: CreditCard,
+    href: '/products/merchant-cash-advance',
+    color: 'bg-[#8b5cf6]',
   },
 ];
 

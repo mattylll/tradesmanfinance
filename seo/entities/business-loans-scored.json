@@ -1,0 +1,1208 @@
+{
+  "slug": "business-loans-scored",
+  "keyword": "sole trader business loan",
+  "locale": {
+    "location_code": 2826,
+    "language_code": "en",
+    "device": "desktop"
+  },
+  "fetched": 6,
+  "medianRankerWords": 1248.5,
+  "consensusThreshold": 3,
+  "targetTerms": [
+    {
+      "term": "business",
+      "df": 6,
+      "inHeadings": 5,
+      "recommendedUse": [
+        34,
+        36
+      ],
+      "watch": false
+    },
+    {
+      "term": "loans",
+      "df": 6,
+      "inHeadings": 5,
+      "recommendedUse": [
+        22,
+        23
+      ],
+      "watch": false
+    },
+    {
+      "term": "business loan",
+      "df": 6,
+      "inHeadings": 4,
+      "recommendedUse": [
+        5,
+        6
+      ],
+      "watch": false
+    },
+    {
+      "term": "sole trader",
+      "df": 5,
+      "inHeadings": 4,
+      "recommendedUse": [
+        10,
+        11
+      ],
+      "watch": true
+    },
+    {
+      "term": "loan",
+      "df": 6,
+      "inHeadings": 4,
+      "recommendedUse": [
+        18,
+        19
+      ],
+      "watch": false
+    },
+    {
+      "term": "sole",
+      "df": 5,
+      "inHeadings": 4,
+      "recommendedUse": [
+        24,
+        25
+      ],
+      "watch": false
+    },
+    {
+      "term": "trader",
+      "df": 5,
+      "inHeadings": 4,
+      "recommendedUse": [
+        10,
+        11
+      ],
+      "watch": false
+    },
+    {
+      "term": "sole trader loans",
+      "df": 4,
+      "inHeadings": 3,
+      "recommendedUse": [
+        7,
+        8
+      ],
+      "watch": false
+    },
+    {
+      "term": "business loans",
+      "df": 5,
+      "inHeadings": 3,
+      "recommendedUse": [
+        12,
+        13
+      ],
+      "watch": false
+    },
+    {
+      "term": "sole traders",
+      "df": 5,
+      "inHeadings": 3,
+      "recommendedUse": [
+        14,
+        15
+      ],
+      "watch": false
+    },
+    {
+      "term": "trader loans",
+      "df": 4,
+      "inHeadings": 3,
+      "recommendedUse": [
+        7,
+        8
+      ],
+      "watch": false
+    },
+    {
+      "term": "finance",
+      "df": 6,
+      "inHeadings": 3,
+      "recommendedUse": [
+        11,
+        12
+      ],
+      "watch": false
+    },
+    {
+      "term": "traders",
+      "df": 5,
+      "inHeadings": 3,
+      "recommendedUse": [
+        14,
+        15
+      ],
+      "watch": false
+    },
+    {
+      "term": "limited",
+      "df": 5,
+      "inHeadings": 3,
+      "recommendedUse": [
+        8,
+        9
+      ],
+      "watch": false
+    },
+    {
+      "term": "borrow",
+      "df": 4,
+      "inHeadings": 3,
+      "recommendedUse": [
+        4,
+        6
+      ],
+      "watch": false
+    },
+    {
+      "term": "sole trader business",
+      "df": 3,
+      "inHeadings": 2,
+      "recommendedUse": [
+        5,
+        6
+      ],
+      "watch": false
+    },
+    {
+      "term": "trader business loan",
+      "df": 3,
+      "inHeadings": 2,
+      "recommendedUse": [
+        2,
+        3
+      ],
+      "watch": false
+    },
+    {
+      "term": "limited company",
+      "df": 5,
+      "inHeadings": 2,
+      "recommendedUse": [
+        3,
+        4
+      ],
+      "watch": true
+    },
+    {
+      "term": "trader business",
+      "df": 3,
+      "inHeadings": 2,
+      "recommendedUse": [
+        5,
+        6
+      ],
+      "watch": false
+    },
+    {
+      "term": "small business",
+      "df": 3,
+      "inHeadings": 2,
+      "recommendedUse": [
+        5,
+        6
+      ],
+      "watch": false
+    },
+    {
+      "term": "apply",
+      "df": 5,
+      "inHeadings": 2,
+      "recommendedUse": [
+        7,
+        8
+      ],
+      "watch": false
+    },
+    {
+      "term": "start",
+      "df": 5,
+      "inHeadings": 2,
+      "recommendedUse": [
+        3,
+        4
+      ],
+      "watch": false
+    },
+    {
+      "term": "personal",
+      "df": 5,
+      "inHeadings": 2,
+      "recommendedUse": [
+        10,
+        11
+      ],
+      "watch": false
+    },
+    {
+      "term": "today",
+      "df": 5,
+      "inHeadings": 2,
+      "recommendedUse": [
+        1,
+        2
+      ],
+      "watch": false
+    },
+    {
+      "term": "eligible",
+      "df": 5,
+      "inHeadings": 2,
+      "recommendedUse": [
+        2,
+        3
+      ],
+      "watch": false
+    },
+    {
+      "term": "types",
+      "df": 5,
+      "inHeadings": 2,
+      "recommendedUse": [
+        2,
+        3
+      ],
+      "watch": false
+    },
+    {
+      "term": "companies",
+      "df": 5,
+      "inHeadings": 2,
+      "recommendedUse": [
+        2,
+        3
+      ],
+      "watch": false
+    },
+    {
+      "term": "funding",
+      "df": 5,
+      "inHeadings": 2,
+      "recommendedUse": [
+        6,
+        7
+      ],
+      "watch": false
+    },
+    {
+      "term": "products",
+      "df": 5,
+      "inHeadings": 2,
+      "recommendedUse": [
+        3,
+        4
+      ],
+      "watch": false
+    },
+    {
+      "term": "improve",
+      "df": 4,
+      "inHeadings": 2,
+      "recommendedUse": [
+        4,
+        5
+      ],
+      "watch": false
+    },
+    {
+      "term": "small",
+      "df": 4,
+      "inHeadings": 2,
+      "recommendedUse": [
+        6,
+        8
+      ],
+      "watch": false
+    },
+    {
+      "term": "fees",
+      "df": 3,
+      "inHeadings": 2,
+      "recommendedUse": [
+        8,
+        9
+      ],
+      "watch": false
+    },
+    {
+      "term": "much",
+      "df": 3,
+      "inHeadings": 2,
+      "recommendedUse": [
+        3,
+        4
+      ],
+      "watch": false
+    },
+    {
+      "term": "guide",
+      "df": 3,
+      "inHeadings": 2,
+      "recommendedUse": [
+        7,
+        8
+      ],
+      "watch": false
+    },
+    {
+      "term": "switch",
+      "df": 2,
+      "inHeadings": 2,
+      "recommendedUse": [
+        3,
+        4
+      ],
+      "watch": false
+    },
+    {
+      "term": "sole trader loan",
+      "df": 4,
+      "inHeadings": 1,
+      "recommendedUse": [
+        1,
+        3
+      ],
+      "watch": false
+    },
+    {
+      "term": "less than years",
+      "df": 3,
+      "inHeadings": 1,
+      "recommendedUse": [
+        1,
+        2
+      ],
+      "watch": false
+    },
+    {
+      "term": "sole trader finance",
+      "df": 3,
+      "inHeadings": 1,
+      "recommendedUse": [
+        1,
+        2
+      ],
+      "watch": false
+    },
+    {
+      "term": "limited companies",
+      "df": 5,
+      "inHeadings": 1,
+      "recommendedUse": [
+        2,
+        3
+      ],
+      "watch": false
+    },
+    {
+      "term": "credit card",
+      "df": 4,
+      "inHeadings": 1,
+      "recommendedUse": [
+        1,
+        2
+      ],
+      "watch": false
+    },
+    {
+      "term": "trader loan",
+      "df": 4,
+      "inHeadings": 1,
+      "recommendedUse": [
+        1,
+        3
+      ],
+      "watch": false
+    },
+    {
+      "term": "personal guarantee",
+      "df": 3,
+      "inHeadings": 1,
+      "recommendedUse": [
+        2,
+        3
+      ],
+      "watch": true
+    },
+    {
+      "term": "trader finance",
+      "df": 3,
+      "inHeadings": 1,
+      "recommendedUse": [
+        1,
+        2
+      ],
+      "watch": false
+    },
+    {
+      "term": "self-assessment tax",
+      "df": 3,
+      "inHeadings": 1,
+      "recommendedUse": [
+        1,
+        2
+      ],
+      "watch": false
+    },
+    {
+      "term": "credit",
+      "df": 6,
+      "inHeadings": 1,
+      "recommendedUse": [
+        6,
+        8
+      ],
+      "watch": false
+    },
+    {
+      "term": "application",
+      "df": 6,
+      "inHeadings": 1,
+      "recommendedUse": [
+        2,
+        3
+      ],
+      "watch": false
+    },
+    {
+      "term": "financial",
+      "df": 6,
+      "inHeadings": 1,
+      "recommendedUse": [
+        4,
+        6
+      ],
+      "watch": false
+    },
+    {
+      "term": "work",
+      "df": 5,
+      "inHeadings": 1,
+      "recommendedUse": [
+        2,
+        3
+      ],
+      "watch": false
+    },
+    {
+      "term": "self-employed",
+      "df": 5,
+      "inHeadings": 1,
+      "recommendedUse": [
+        3,
+        4
+      ],
+      "watch": false
+    },
+    {
+      "term": "money",
+      "df": 5,
+      "inHeadings": 1,
+      "recommendedUse": [
+        3,
+        4
+      ],
+      "watch": false
+    }
+  ],
+  "namedEntities": [
+    {
+      "entity": "Financial Conduct Authority",
+      "df": 4
+    },
+    {
+      "entity": "Business Loans",
+      "df": 3
+    },
+    {
+      "entity": "Start Up Loan",
+      "df": 2
+    },
+    {
+      "entity": "Start Up Loans",
+      "df": 2
+    },
+    {
+      "entity": "National Insurance",
+      "df": 2
+    },
+    {
+      "entity": "Sole Trader Loans",
+      "df": 2
+    },
+    {
+      "entity": "United Kingdom",
+      "df": 2
+    },
+    {
+      "entity": "Financial Services Register",
+      "df": 2
+    },
+    {
+      "entity": "Open Sans",
+      "df": 2
+    },
+    {
+      "entity": "Companies House",
+      "df": 2
+    },
+    {
+      "entity": "Apply Now",
+      "df": 2
+    },
+    {
+      "entity": "Business Loans Business Loans",
+      "df": 2
+    },
+    {
+      "entity": "Invoice Finance",
+      "df": 2
+    },
+    {
+      "entity": "Firm Reference Number",
+      "df": 2
+    }
+  ],
+  "paa": [
+    "Can a sole trader get a loan?",
+    "How much tax do I pay if I am a sole trader?",
+    "Can I get a 0% interest loan?",
+    "Is it worth having a business bank account as a sole trader?"
+  ],
+  "related": [
+    "Sole trader business loans UK",
+    "Sole trader business loan calculator",
+    "Sole trader business loan reviews",
+    "Sole trader loans HMRC",
+    "Sole trader loans no credit check",
+    "Sole trader business loan bad credit",
+    "Monzo business loan",
+    "Small business loans UK government"
+  ],
+  "score": {
+    "score": 79,
+    "ourWords": 2931,
+    "covered": [
+      {
+        "term": "business",
+        "df": 6,
+        "inHeadings": 5,
+        "recommendedUse": [
+          34,
+          36
+        ],
+        "watch": false,
+        "ours": 77
+      },
+      {
+        "term": "loans",
+        "df": 6,
+        "inHeadings": 5,
+        "recommendedUse": [
+          22,
+          23
+        ],
+        "watch": false,
+        "ours": 29
+      },
+      {
+        "term": "business loan",
+        "df": 6,
+        "inHeadings": 4,
+        "recommendedUse": [
+          5,
+          6
+        ],
+        "watch": false,
+        "ours": 15
+      },
+      {
+        "term": "sole trader",
+        "df": 5,
+        "inHeadings": 4,
+        "recommendedUse": [
+          10,
+          11
+        ],
+        "watch": true,
+        "ours": 23
+      },
+      {
+        "term": "loan",
+        "df": 6,
+        "inHeadings": 4,
+        "recommendedUse": [
+          18,
+          19
+        ],
+        "watch": false,
+        "ours": 26
+      },
+      {
+        "term": "sole",
+        "df": 5,
+        "inHeadings": 4,
+        "recommendedUse": [
+          24,
+          25
+        ],
+        "watch": false,
+        "ours": 29
+      },
+      {
+        "term": "trader",
+        "df": 5,
+        "inHeadings": 4,
+        "recommendedUse": [
+          10,
+          11
+        ],
+        "watch": false,
+        "ours": 23
+      },
+      {
+        "term": "business loans",
+        "df": 5,
+        "inHeadings": 3,
+        "recommendedUse": [
+          12,
+          13
+        ],
+        "watch": false,
+        "ours": 19
+      },
+      {
+        "term": "finance",
+        "df": 6,
+        "inHeadings": 3,
+        "recommendedUse": [
+          11,
+          12
+        ],
+        "watch": false,
+        "ours": 24
+      },
+      {
+        "term": "limited",
+        "df": 5,
+        "inHeadings": 3,
+        "recommendedUse": [
+          8,
+          9
+        ],
+        "watch": false,
+        "ours": 9
+      },
+      {
+        "term": "borrow",
+        "df": 4,
+        "inHeadings": 3,
+        "recommendedUse": [
+          4,
+          6
+        ],
+        "watch": false,
+        "ours": 9
+      },
+      {
+        "term": "trader business loan",
+        "df": 3,
+        "inHeadings": 2,
+        "recommendedUse": [
+          2,
+          3
+        ],
+        "watch": false,
+        "ours": 3
+      },
+      {
+        "term": "limited company",
+        "df": 5,
+        "inHeadings": 2,
+        "recommendedUse": [
+          3,
+          4
+        ],
+        "watch": true,
+        "ours": 4
+      },
+      {
+        "term": "apply",
+        "df": 5,
+        "inHeadings": 2,
+        "recommendedUse": [
+          7,
+          8
+        ],
+        "watch": false,
+        "ours": 9
+      },
+      {
+        "term": "start",
+        "df": 5,
+        "inHeadings": 2,
+        "recommendedUse": [
+          3,
+          4
+        ],
+        "watch": false,
+        "ours": 4
+      },
+      {
+        "term": "personal",
+        "df": 5,
+        "inHeadings": 2,
+        "recommendedUse": [
+          10,
+          11
+        ],
+        "watch": false,
+        "ours": 17
+      },
+      {
+        "term": "today",
+        "df": 5,
+        "inHeadings": 2,
+        "recommendedUse": [
+          1,
+          2
+        ],
+        "watch": false,
+        "ours": 1
+      },
+      {
+        "term": "companies",
+        "df": 5,
+        "inHeadings": 2,
+        "recommendedUse": [
+          2,
+          3
+        ],
+        "watch": false,
+        "ours": 6
+      },
+      {
+        "term": "funding",
+        "df": 5,
+        "inHeadings": 2,
+        "recommendedUse": [
+          6,
+          7
+        ],
+        "watch": false,
+        "ours": 7
+      },
+      {
+        "term": "products",
+        "df": 5,
+        "inHeadings": 2,
+        "recommendedUse": [
+          3,
+          4
+        ],
+        "watch": false,
+        "ours": 3
+      },
+      {
+        "term": "much",
+        "df": 3,
+        "inHeadings": 2,
+        "recommendedUse": [
+          3,
+          4
+        ],
+        "watch": false,
+        "ours": 5
+      },
+      {
+        "term": "sole trader loan",
+        "df": 4,
+        "inHeadings": 1,
+        "recommendedUse": [
+          1,
+          3
+        ],
+        "watch": false,
+        "ours": 1
+      },
+      {
+        "term": "limited companies",
+        "df": 5,
+        "inHeadings": 1,
+        "recommendedUse": [
+          2,
+          3
+        ],
+        "watch": false,
+        "ours": 4
+      },
+      {
+        "term": "trader loan",
+        "df": 4,
+        "inHeadings": 1,
+        "recommendedUse": [
+          1,
+          3
+        ],
+        "watch": false,
+        "ours": 1
+      },
+      {
+        "term": "personal guarantee",
+        "df": 3,
+        "inHeadings": 1,
+        "recommendedUse": [
+          2,
+          3
+        ],
+        "watch": true,
+        "ours": 4
+      },
+      {
+        "term": "self-assessment tax",
+        "df": 3,
+        "inHeadings": 1,
+        "recommendedUse": [
+          1,
+          2
+        ],
+        "watch": false,
+        "ours": 1
+      },
+      {
+        "term": "credit",
+        "df": 6,
+        "inHeadings": 1,
+        "recommendedUse": [
+          6,
+          8
+        ],
+        "watch": false,
+        "ours": 20
+      },
+      {
+        "term": "application",
+        "df": 6,
+        "inHeadings": 1,
+        "recommendedUse": [
+          2,
+          3
+        ],
+        "watch": false,
+        "ours": 3
+      },
+      {
+        "term": "work",
+        "df": 5,
+        "inHeadings": 1,
+        "recommendedUse": [
+          2,
+          3
+        ],
+        "watch": false,
+        "ours": 7
+      },
+      {
+        "term": "self-employed",
+        "df": 5,
+        "inHeadings": 1,
+        "recommendedUse": [
+          3,
+          4
+        ],
+        "watch": false,
+        "ours": 3
+      },
+      {
+        "term": "money",
+        "df": 5,
+        "inHeadings": 1,
+        "recommendedUse": [
+          3,
+          4
+        ],
+        "watch": false,
+        "ours": 4
+      }
+    ],
+    "under": [
+      {
+        "term": "sole trader loans",
+        "df": 4,
+        "inHeadings": 3,
+        "recommendedUse": [
+          7,
+          8
+        ],
+        "watch": false,
+        "ours": 4
+      },
+      {
+        "term": "sole traders",
+        "df": 5,
+        "inHeadings": 3,
+        "recommendedUse": [
+          14,
+          15
+        ],
+        "watch": false,
+        "ours": 6
+      },
+      {
+        "term": "trader loans",
+        "df": 4,
+        "inHeadings": 3,
+        "recommendedUse": [
+          7,
+          8
+        ],
+        "watch": false,
+        "ours": 4
+      },
+      {
+        "term": "traders",
+        "df": 5,
+        "inHeadings": 3,
+        "recommendedUse": [
+          14,
+          15
+        ],
+        "watch": false,
+        "ours": 6
+      },
+      {
+        "term": "sole trader business",
+        "df": 3,
+        "inHeadings": 2,
+        "recommendedUse": [
+          5,
+          6
+        ],
+        "watch": false,
+        "ours": 3
+      },
+      {
+        "term": "trader business",
+        "df": 3,
+        "inHeadings": 2,
+        "recommendedUse": [
+          5,
+          6
+        ],
+        "watch": false,
+        "ours": 3
+      },
+      {
+        "term": "small business",
+        "df": 3,
+        "inHeadings": 2,
+        "recommendedUse": [
+          5,
+          6
+        ],
+        "watch": false,
+        "ours": 4
+      },
+      {
+        "term": "eligible",
+        "df": 5,
+        "inHeadings": 2,
+        "recommendedUse": [
+          2,
+          3
+        ],
+        "watch": false,
+        "ours": 1
+      },
+      {
+        "term": "types",
+        "df": 5,
+        "inHeadings": 2,
+        "recommendedUse": [
+          2,
+          3
+        ],
+        "watch": false,
+        "ours": 1
+      },
+      {
+        "term": "small",
+        "df": 4,
+        "inHeadings": 2,
+        "recommendedUse": [
+          6,
+          8
+        ],
+        "watch": false,
+        "ours": 5
+      },
+      {
+        "term": "fees",
+        "df": 3,
+        "inHeadings": 2,
+        "recommendedUse": [
+          8,
+          9
+        ],
+        "watch": false,
+        "ours": 1
+      },
+      {
+        "term": "financial",
+        "df": 6,
+        "inHeadings": 1,
+        "recommendedUse": [
+          4,
+          6
+        ],
+        "watch": false,
+        "ours": 3
+      }
+    ],
+    "missing": [
+      {
+        "term": "improve",
+        "df": 4,
+        "inHeadings": 2,
+        "recommendedUse": [
+          4,
+          5
+        ],
+        "watch": false,
+        "ours": 0
+      },
+      {
+        "term": "guide",
+        "df": 3,
+        "inHeadings": 2,
+        "recommendedUse": [
+          7,
+          8
+        ],
+        "watch": false,
+        "ours": 0
+      },
+      {
+        "term": "switch",
+        "df": 2,
+        "inHeadings": 2,
+        "recommendedUse": [
+          3,
+          4
+        ],
+        "watch": false,
+        "ours": 0
+      },
+      {
+        "term": "less than years",
+        "df": 3,
+        "inHeadings": 1,
+        "recommendedUse": [
+          1,
+          2
+        ],
+        "watch": false,
+        "ours": 0
+      },
+      {
+        "term": "sole trader finance",
+        "df": 3,
+        "inHeadings": 1,
+        "recommendedUse": [
+          1,
+          2
+        ],
+        "watch": false,
+        "ours": 0
+      },
+      {
+        "term": "credit card",
+        "df": 4,
+        "inHeadings": 1,
+        "recommendedUse": [
+          1,
+          2
+        ],
+        "watch": false,
+        "ours": 0
+      },
+      {
+        "term": "trader finance",
+        "df": 3,
+        "inHeadings": 1,
+        "recommendedUse": [
+          1,
+          2
+        ],
+        "watch": false,
+        "ours": 0
+      }
+    ],
+    "namedCovered": [
+      {
+        "entity": "Financial Conduct Authority",
+        "df": 4
+      },
+      {
+        "entity": "Business Loans",
+        "df": 3
+      },
+      {
+        "entity": "Start Up Loan",
+        "df": 2
+      },
+      {
+        "entity": "Start Up Loans",
+        "df": 2
+      },
+      {
+        "entity": "National Insurance",
+        "df": 2
+      },
+      {
+        "entity": "Sole Trader Loans",
+        "df": 2
+      },
+      {
+        "entity": "Companies House",
+        "df": 2
+      },
+      {
+        "entity": "Apply Now",
+        "df": 2
+      },
+      {
+        "entity": "Business Loans Business Loans",
+        "df": 2
+      },
+      {
+        "entity": "Invoice Finance",
+        "df": 2
+      }
+    ],
+    "namedMissing": [
+      {
+        "entity": "United Kingdom",
+        "df": 2
+      },
+      {
+        "entity": "Financial Services Register",
+        "df": 2
+      },
+      {
+        "entity": "Open Sans",
+        "df": 2
+      },
+      {
+        "entity": "Firm Reference Number",
+        "df": 2
+      }
+    ]
+  }
+}

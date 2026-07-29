@@ -1,0 +1,629 @@
+{
+  "slug": "vehicle-finance",
+  "keyword": "van finance",
+  "locale": {
+    "location_code": 2826,
+    "language_code": "en",
+    "device": "desktop"
+  },
+  "fetched": 8,
+  "medianRankerWords": 1882,
+  "consensusThreshold": 4,
+  "targetTerms": [
+    {
+      "term": "finance",
+      "df": 8,
+      "inHeadings": 8,
+      "recommendedUse": [
+        55,
+        57
+      ],
+      "watch": false
+    },
+    {
+      "term": "van finance",
+      "df": 8,
+      "inHeadings": 5,
+      "recommendedUse": [
+        16,
+        18
+      ],
+      "watch": false
+    },
+    {
+      "term": "business",
+      "df": 7,
+      "inHeadings": 4,
+      "recommendedUse": [
+        5,
+        6
+      ],
+      "watch": false
+    },
+    {
+      "term": "personal contract",
+      "df": 6,
+      "inHeadings": 3,
+      "recommendedUse": [
+        4,
+        5
+      ],
+      "watch": false
+    },
+    {
+      "term": "hire purchase",
+      "df": 5,
+      "inHeadings": 3,
+      "recommendedUse": [
+        3,
+        4
+      ],
+      "watch": true
+    },
+    {
+      "term": "finance options",
+      "df": 4,
+      "inHeadings": 3,
+      "recommendedUse": [
+        3,
+        4
+      ],
+      "watch": false
+    },
+    {
+      "term": "car finance",
+      "df": 4,
+      "inHeadings": 3,
+      "recommendedUse": [
+        17,
+        19
+      ],
+      "watch": false
+    },
+    {
+      "term": "vehicle",
+      "df": 8,
+      "inHeadings": 3,
+      "recommendedUse": [
+        8,
+        10
+      ],
+      "watch": false
+    },
+    {
+      "term": "purchase",
+      "df": 8,
+      "inHeadings": 3,
+      "recommendedUse": [
+        7,
+        8
+      ],
+      "watch": false
+    },
+    {
+      "term": "contract",
+      "df": 8,
+      "inHeadings": 3,
+      "recommendedUse": [
+        4,
+        5
+      ],
+      "watch": false
+    },
+    {
+      "term": "vans",
+      "df": 7,
+      "inHeadings": 3,
+      "recommendedUse": [
+        6,
+        7
+      ],
+      "watch": false
+    },
+    {
+      "term": "customer",
+      "df": 7,
+      "inHeadings": 3,
+      "recommendedUse": [
+        4,
+        5
+      ],
+      "watch": false
+    },
+    {
+      "term": "hire",
+      "df": 6,
+      "inHeadings": 3,
+      "recommendedUse": [
+        3,
+        5
+      ],
+      "watch": false
+    },
+    {
+      "term": "deposit",
+      "df": 6,
+      "inHeadings": 3,
+      "recommendedUse": [
+        6,
+        7
+      ],
+      "watch": false
+    },
+    {
+      "term": "personal",
+      "df": 6,
+      "inHeadings": 3,
+      "recommendedUse": [
+        6,
+        8
+      ],
+      "watch": false
+    },
+    {
+      "term": "work",
+      "df": 6,
+      "inHeadings": 3,
+      "recommendedUse": [
+        2,
+        4
+      ],
+      "watch": false
+    },
+    {
+      "term": "financing",
+      "df": 6,
+      "inHeadings": 3,
+      "recommendedUse": [
+        2,
+        3
+      ],
+      "watch": false
+    },
+    {
+      "term": "types",
+      "df": 5,
+      "inHeadings": 3,
+      "recommendedUse": [
+        2,
+        3
+      ],
+      "watch": false
+    },
+    {
+      "term": "guides",
+      "df": 5,
+      "inHeadings": 3,
+      "recommendedUse": [
+        4,
+        5
+      ],
+      "watch": false
+    },
+    {
+      "term": "customers",
+      "df": 5,
+      "inHeadings": 3,
+      "recommendedUse": [
+        1,
+        2
+      ],
+      "watch": false
+    },
+    {
+      "term": "personal contract purchase",
+      "df": 5,
+      "inHeadings": 2,
+      "recommendedUse": [
+        2,
+        3
+      ],
+      "watch": false
+    },
+    {
+      "term": "contract purchase",
+      "df": 6,
+      "inHeadings": 2,
+      "recommendedUse": [
+        2,
+        3
+      ],
+      "watch": false
+    },
+    {
+      "term": "credit",
+      "df": 8,
+      "inHeadings": 2,
+      "recommendedUse": [
+        10,
+        11
+      ],
+      "watch": false
+    },
+    {
+      "term": "electric",
+      "df": 7,
+      "inHeadings": 2,
+      "recommendedUse": [
+        4,
+        5
+      ],
+      "watch": false
+    },
+    {
+      "term": "service",
+      "df": 7,
+      "inHeadings": 2,
+      "recommendedUse": [
+        5,
+        6
+      ],
+      "watch": false
+    },
+    {
+      "term": "monthly",
+      "df": 7,
+      "inHeadings": 2,
+      "recommendedUse": [
+        9,
+        10
+      ],
+      "watch": false
+    },
+    {
+      "term": "agreement",
+      "df": 7,
+      "inHeadings": 2,
+      "recommendedUse": [
+        4,
+        5
+      ],
+      "watch": false
+    },
+    {
+      "term": "approved",
+      "df": 6,
+      "inHeadings": 2,
+      "recommendedUse": [
+        3,
+        5
+      ],
+      "watch": false
+    },
+    {
+      "term": "loan",
+      "df": 6,
+      "inHeadings": 2,
+      "recommendedUse": [
+        2,
+        4
+      ],
+      "watch": false
+    },
+    {
+      "term": "mileage",
+      "df": 6,
+      "inHeadings": 2,
+      "recommendedUse": [
+        2,
+        3
+      ],
+      "watch": false
+    },
+    {
+      "term": "hybrid",
+      "df": 5,
+      "inHeadings": 2,
+      "recommendedUse": [
+        4,
+        5
+      ],
+      "watch": false
+    },
+    {
+      "term": "explained",
+      "df": 5,
+      "inHeadings": 2,
+      "recommendedUse": [
+        1,
+        2
+      ],
+      "watch": false
+    },
+    {
+      "term": "lease",
+      "df": 5,
+      "inHeadings": 2,
+      "recommendedUse": [
+        4,
+        5
+      ],
+      "watch": false
+    },
+    {
+      "term": "apply",
+      "df": 5,
+      "inHeadings": 2,
+      "recommendedUse": [
+        5,
+        6
+      ],
+      "watch": false
+    },
+    {
+      "term": "simple",
+      "df": 5,
+      "inHeadings": 2,
+      "recommendedUse": [
+        2,
+        3
+      ],
+      "watch": false
+    },
+    {
+      "term": "take",
+      "df": 5,
+      "inHeadings": 2,
+      "recommendedUse": [
+        1,
+        2
+      ],
+      "watch": false
+    },
+    {
+      "term": "vehicles",
+      "df": 4,
+      "inHeadings": 2,
+      "recommendedUse": [
+        3,
+        5
+      ],
+      "watch": false
+    },
+    {
+      "term": "warranty",
+      "df": 4,
+      "inHeadings": 2,
+      "recommendedUse": [
+        3,
+        4
+      ],
+      "watch": false
+    },
+    {
+      "term": "place",
+      "df": 4,
+      "inHeadings": 2,
+      "recommendedUse": [
+        1,
+        2
+      ],
+      "watch": false
+    },
+    {
+      "term": "dealer",
+      "df": 4,
+      "inHeadings": 2,
+      "recommendedUse": [
+        4,
+        6
+      ],
+      "watch": false
+    },
+    {
+      "term": "faqs",
+      "df": 3,
+      "inHeadings": 2,
+      "recommendedUse": [
+        2,
+        3
+      ],
+      "watch": false
+    },
+    {
+      "term": "much",
+      "df": 3,
+      "inHeadings": 2,
+      "recommendedUse": [
+        5,
+        6
+      ],
+      "watch": false
+    },
+    {
+      "term": "restrictions",
+      "df": 3,
+      "inHeadings": 2,
+      "recommendedUse": [
+        1,
+        2
+      ],
+      "watch": false
+    },
+    {
+      "term": "self-employed",
+      "df": 3,
+      "inHeadings": 2,
+      "recommendedUse": [
+        4,
+        5
+      ],
+      "watch": false
+    },
+    {
+      "term": "process",
+      "df": 3,
+      "inHeadings": 2,
+      "recommendedUse": [
+        4,
+        5
+      ],
+      "watch": false
+    },
+    {
+      "term": "long",
+      "df": 3,
+      "inHeadings": 2,
+      "recommendedUse": [
+        4,
+        5
+      ],
+      "watch": false
+    },
+    {
+      "term": "cover",
+      "df": 3,
+      "inHeadings": 2,
+      "recommendedUse": [
+        2,
+        3
+      ],
+      "watch": false
+    },
+    {
+      "term": "type",
+      "df": 3,
+      "inHeadings": 2,
+      "recommendedUse": [
+        2,
+        3
+      ],
+      "watch": false
+    },
+    {
+      "term": "autotrader",
+      "df": 2,
+      "inHeadings": 2,
+      "recommendedUse": [
+        11,
+        13
+      ],
+      "watch": false
+    },
+    {
+      "term": "come",
+      "df": 2,
+      "inHeadings": 2,
+      "recommendedUse": [
+        1,
+        3
+      ],
+      "watch": false
+    }
+  ],
+  "namedEntities": [
+    {
+      "entity": "Van Finance",
+      "df": 5
+    },
+    {
+      "entity": "Hire Purchase",
+      "df": 4
+    },
+    {
+      "entity": "Financial Conduct Authority",
+      "df": 4
+    },
+    {
+      "entity": "Ford Transit",
+      "df": 3
+    },
+    {
+      "entity": "Helvetica Neue",
+      "df": 3
+    },
+    {
+      "entity": "Personal Contract Purchase",
+      "df": 3
+    },
+    {
+      "entity": "Service Plans",
+      "df": 2
+    },
+    {
+      "entity": "VW Transporter",
+      "df": 2
+    },
+    {
+      "entity": "Lease Purchase",
+      "df": 2
+    },
+    {
+      "entity": "Financial Services",
+      "df": 2
+    },
+    {
+      "entity": "Registration Number",
+      "df": 2
+    },
+    {
+      "entity": "Finance Finance",
+      "df": 2
+    },
+    {
+      "entity": "Vauxhall Vivaro",
+      "df": 2
+    },
+    {
+      "entity": "With PCP",
+      "df": 2
+    },
+    {
+      "entity": "With HP",
+      "df": 2
+    },
+    {
+      "entity": "Financial Conduct Authority. Our",
+      "df": 2
+    },
+    {
+      "entity": "APR. Representative Example",
+      "df": 2
+    },
+    {
+      "entity": "Used Van Finance",
+      "df": 2
+    },
+    {
+      "entity": "Car Finance",
+      "df": 2
+    },
+    {
+      "entity": "Bad Credit Car Finance",
+      "df": 2
+    },
+    {
+      "entity": "Ford Ranger",
+      "df": 2
+    },
+    {
+      "entity": "Customer Service",
+      "df": 2
+    },
+    {
+      "entity": "Consumer Credit",
+      "df": 2
+    },
+    {
+      "entity": "Van Finance Deals",
+      "df": 2
+    }
+  ],
+  "paa": [
+    "Is it hard to get van finance?",
+    "Is it worth getting a van on finance?",
+    "What's the best van finance?",
+    "What is the 50% rule for car finance?"
+  ],
+  "related": [
+    "Van finance bad credit",
+    "Van finance calculator",
+    "Van finance for business",
+    "Used van finance",
+    "Van finance deals",
+    "Autotrader van finance",
+    "Van finance 0 deposit",
+    "Van finance deals UK"
+  ],
+  "score": null
+}

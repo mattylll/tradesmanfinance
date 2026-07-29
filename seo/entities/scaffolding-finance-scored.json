@@ -1,0 +1,1170 @@
+{
+  "slug": "scaffolding-finance-scored",
+  "keyword": "scaffolding finance",
+  "locale": {
+    "location_code": 2826,
+    "language_code": "en",
+    "device": "desktop"
+  },
+  "fetched": 7,
+  "medianRankerWords": 1256,
+  "consensusThreshold": 3,
+  "targetTerms": [
+    {
+      "term": "finance",
+      "df": 7,
+      "inHeadings": 7,
+      "recommendedUse": [
+        59,
+        60
+      ],
+      "watch": false
+    },
+    {
+      "term": "scaffolding",
+      "df": 7,
+      "inHeadings": 6,
+      "recommendedUse": [
+        22,
+        23
+      ],
+      "watch": false
+    },
+    {
+      "term": "business",
+      "df": 7,
+      "inHeadings": 5,
+      "recommendedUse": [
+        18,
+        19
+      ],
+      "watch": false
+    },
+    {
+      "term": "scaffolding finance",
+      "df": 5,
+      "inHeadings": 4,
+      "recommendedUse": [
+        9,
+        10
+      ],
+      "watch": false
+    },
+    {
+      "term": "business finance",
+      "df": 4,
+      "inHeadings": 3,
+      "recommendedUse": [
+        7,
+        8
+      ],
+      "watch": false
+    },
+    {
+      "term": "scaffold",
+      "df": 6,
+      "inHeadings": 3,
+      "recommendedUse": [
+        12,
+        13
+      ],
+      "watch": false
+    },
+    {
+      "term": "equipment",
+      "df": 5,
+      "inHeadings": 3,
+      "recommendedUse": [
+        8,
+        9
+      ],
+      "watch": false
+    },
+    {
+      "term": "finance your scaffolding",
+      "df": 3,
+      "inHeadings": 2,
+      "recommendedUse": [
+        1,
+        2
+      ],
+      "watch": false
+    },
+    {
+      "term": "scaffold finance",
+      "df": 3,
+      "inHeadings": 2,
+      "recommendedUse": [
+        15,
+        16
+      ],
+      "watch": false
+    },
+    {
+      "term": "equipment finance",
+      "df": 3,
+      "inHeadings": 2,
+      "recommendedUse": [
+        7,
+        8
+      ],
+      "watch": false
+    },
+    {
+      "term": "financial",
+      "df": 6,
+      "inHeadings": 2,
+      "recommendedUse": [
+        2,
+        4
+      ],
+      "watch": false
+    },
+    {
+      "term": "companies",
+      "df": 5,
+      "inHeadings": 2,
+      "recommendedUse": [
+        3,
+        4
+      ],
+      "watch": false
+    },
+    {
+      "term": "leasing",
+      "df": 4,
+      "inHeadings": 2,
+      "recommendedUse": [
+        3,
+        4
+      ],
+      "watch": false
+    },
+    {
+      "term": "products",
+      "df": 4,
+      "inHeadings": 2,
+      "recommendedUse": [
+        2,
+        3
+      ],
+      "watch": false
+    },
+    {
+      "term": "benefits",
+      "df": 3,
+      "inHeadings": 2,
+      "recommendedUse": [
+        2,
+        3
+      ],
+      "watch": false
+    },
+    {
+      "term": "finance scaffolding finance",
+      "df": 5,
+      "inHeadings": 1,
+      "recommendedUse": [
+        3,
+        4
+      ],
+      "watch": false
+    },
+    {
+      "term": "finance for scaffolding",
+      "df": 3,
+      "inHeadings": 1,
+      "recommendedUse": [
+        2,
+        3
+      ],
+      "watch": false
+    },
+    {
+      "term": "finance scaffolding",
+      "df": 6,
+      "inHeadings": 1,
+      "recommendedUse": [
+        3,
+        4
+      ],
+      "watch": false
+    },
+    {
+      "term": "business loans",
+      "df": 6,
+      "inHeadings": 1,
+      "recommendedUse": [
+        3,
+        5
+      ],
+      "watch": false
+    },
+    {
+      "term": "finance business",
+      "df": 5,
+      "inHeadings": 1,
+      "recommendedUse": [
+        1,
+        2
+      ],
+      "watch": false
+    },
+    {
+      "term": "invoice finance",
+      "df": 5,
+      "inHeadings": 1,
+      "recommendedUse": [
+        3,
+        4
+      ],
+      "watch": false
+    },
+    {
+      "term": "vehicle finance",
+      "df": 4,
+      "inHeadings": 1,
+      "recommendedUse": [
+        4,
+        5
+      ],
+      "watch": false
+    },
+    {
+      "term": "scaffolding contractors",
+      "df": 3,
+      "inHeadings": 1,
+      "recommendedUse": [
+        7,
+        8
+      ],
+      "watch": false
+    },
+    {
+      "term": "finance vehicle",
+      "df": 3,
+      "inHeadings": 1,
+      "recommendedUse": [
+        2,
+        3
+      ],
+      "watch": false
+    },
+    {
+      "term": "business loan",
+      "df": 3,
+      "inHeadings": 1,
+      "recommendedUse": [
+        2,
+        3
+      ],
+      "watch": false
+    },
+    {
+      "term": "scaffolding businesses",
+      "df": 3,
+      "inHeadings": 1,
+      "recommendedUse": [
+        2,
+        3
+      ],
+      "watch": false
+    },
+    {
+      "term": "scaffolding companies",
+      "df": 3,
+      "inHeadings": 1,
+      "recommendedUse": [
+        2,
+        3
+      ],
+      "watch": false
+    },
+    {
+      "term": "vehicle",
+      "df": 6,
+      "inHeadings": 1,
+      "recommendedUse": [
+        2,
+        4
+      ],
+      "watch": false
+    },
+    {
+      "term": "businesses",
+      "df": 6,
+      "inHeadings": 1,
+      "recommendedUse": [
+        5,
+        6
+      ],
+      "watch": false
+    },
+    {
+      "term": "loans",
+      "df": 6,
+      "inHeadings": 1,
+      "recommendedUse": [
+        5,
+        7
+      ],
+      "watch": false
+    },
+    {
+      "term": "loans invoice finance",
+      "df": 4,
+      "inHeadings": 0,
+      "recommendedUse": [
+        1,
+        2
+      ],
+      "watch": false
+    },
+    {
+      "term": "business loans invoice",
+      "df": 3,
+      "inHeadings": 0,
+      "recommendedUse": [
+        1,
+        2
+      ],
+      "watch": false
+    },
+    {
+      "term": "authorised and regulated",
+      "df": 3,
+      "inHeadings": 0,
+      "recommendedUse": [
+        1,
+        2
+      ],
+      "watch": false
+    },
+    {
+      "term": "financial conduct authority",
+      "df": 3,
+      "inHeadings": 0,
+      "recommendedUse": [
+        1,
+        2
+      ],
+      "watch": false
+    },
+    {
+      "term": "asset finance business",
+      "df": 3,
+      "inHeadings": 0,
+      "recommendedUse": [
+        1,
+        2
+      ],
+      "watch": false
+    },
+    {
+      "term": "finance business loans",
+      "df": 3,
+      "inHeadings": 0,
+      "recommendedUse": [
+        1,
+        2
+      ],
+      "watch": false
+    },
+    {
+      "term": "scaffolding finance scaffolding",
+      "df": 3,
+      "inHeadings": 0,
+      "recommendedUse": [
+        2,
+        3
+      ],
+      "watch": false
+    },
+    {
+      "term": "unsecured business loans",
+      "df": 3,
+      "inHeadings": 0,
+      "recommendedUse": [
+        2,
+        3
+      ],
+      "watch": false
+    },
+    {
+      "term": "asset finance",
+      "df": 6,
+      "inHeadings": 0,
+      "recommendedUse": [
+        3,
+        5
+      ],
+      "watch": false
+    },
+    {
+      "term": "cash flow",
+      "df": 5,
+      "inHeadings": 0,
+      "recommendedUse": [
+        2,
+        3
+      ],
+      "watch": false
+    },
+    {
+      "term": "working capital",
+      "df": 4,
+      "inHeadings": 0,
+      "recommendedUse": [
+        2,
+        4
+      ],
+      "watch": true
+    },
+    {
+      "term": "arrange finance",
+      "df": 4,
+      "inHeadings": 0,
+      "recommendedUse": [
+        1,
+        2
+      ],
+      "watch": false
+    },
+    {
+      "term": "extensive panel",
+      "df": 4,
+      "inHeadings": 0,
+      "recommendedUse": [
+        1,
+        2
+      ],
+      "watch": false
+    },
+    {
+      "term": "loans invoice",
+      "df": 4,
+      "inHeadings": 0,
+      "recommendedUse": [
+        1,
+        2
+      ],
+      "watch": false
+    },
+    {
+      "term": "finance solutions",
+      "df": 4,
+      "inHeadings": 0,
+      "recommendedUse": [
+        1,
+        2
+      ],
+      "watch": false
+    },
+    {
+      "term": "businesses across",
+      "df": 3,
+      "inHeadings": 0,
+      "recommendedUse": [
+        1,
+        2
+      ],
+      "watch": false
+    },
+    {
+      "term": "monthly repayments",
+      "df": 3,
+      "inHeadings": 0,
+      "recommendedUse": [
+        3,
+        4
+      ],
+      "watch": false
+    },
+    {
+      "term": "arranging finance",
+      "df": 3,
+      "inHeadings": 0,
+      "recommendedUse": [
+        1,
+        2
+      ],
+      "watch": false
+    },
+    {
+      "term": "finance allows",
+      "df": 3,
+      "inHeadings": 0,
+      "recommendedUse": [
+        1,
+        2
+      ],
+      "watch": false
+    },
+    {
+      "term": "financial conduct",
+      "df": 3,
+      "inHeadings": 0,
+      "recommendedUse": [
+        1,
+        2
+      ],
+      "watch": false
+    }
+  ],
+  "namedEntities": [
+    {
+      "entity": "Scaffolding Finance",
+      "df": 4
+    },
+    {
+      "entity": "Financial Conduct Authority",
+      "df": 3
+    },
+    {
+      "entity": "Scaffold Finance",
+      "df": 2
+    },
+    {
+      "entity": "UK. Whether",
+      "df": 2
+    },
+    {
+      "entity": "Scaffolding Association",
+      "df": 2
+    },
+    {
+      "entity": "Business Loans",
+      "df": 2
+    },
+    {
+      "entity": "Deansgate Manchester",
+      "df": 2
+    },
+    {
+      "entity": "BTG Funding Limited",
+      "df": 2
+    },
+    {
+      "entity": "Construction Finance",
+      "df": 2
+    },
+    {
+      "entity": "Asset Finance",
+      "df": 2
+    }
+  ],
+  "paa": [
+    "What is the 3 to 1 rule for scaffolding?",
+    "Do scaffolders earn good money?",
+    "What is financial scaffolding?",
+    "What do scaffolders charge per metre?"
+  ],
+  "related": [
+    "Scaffolding finance calculator",
+    "Used scaffolding finance"
+  ],
+  "score": {
+    "score": 79,
+    "ourWords": 2494,
+    "covered": [
+      {
+        "term": "finance",
+        "df": 7,
+        "inHeadings": 7,
+        "recommendedUse": [
+          59,
+          60
+        ],
+        "watch": false,
+        "ours": 82
+      },
+      {
+        "term": "scaffolding",
+        "df": 7,
+        "inHeadings": 6,
+        "recommendedUse": [
+          22,
+          23
+        ],
+        "watch": false,
+        "ours": 53
+      },
+      {
+        "term": "business",
+        "df": 7,
+        "inHeadings": 5,
+        "recommendedUse": [
+          18,
+          19
+        ],
+        "watch": false,
+        "ours": 27
+      },
+      {
+        "term": "scaffolding finance",
+        "df": 5,
+        "inHeadings": 4,
+        "recommendedUse": [
+          9,
+          10
+        ],
+        "watch": false,
+        "ours": 18
+      },
+      {
+        "term": "scaffold",
+        "df": 6,
+        "inHeadings": 3,
+        "recommendedUse": [
+          12,
+          13
+        ],
+        "watch": false,
+        "ours": 24
+      },
+      {
+        "term": "equipment",
+        "df": 5,
+        "inHeadings": 3,
+        "recommendedUse": [
+          8,
+          9
+        ],
+        "watch": false,
+        "ours": 35
+      },
+      {
+        "term": "finance your scaffolding",
+        "df": 3,
+        "inHeadings": 2,
+        "recommendedUse": [
+          1,
+          2
+        ],
+        "watch": false,
+        "ours": 1
+      },
+      {
+        "term": "companies",
+        "df": 5,
+        "inHeadings": 2,
+        "recommendedUse": [
+          3,
+          4
+        ],
+        "watch": false,
+        "ours": 6
+      },
+      {
+        "term": "products",
+        "df": 4,
+        "inHeadings": 2,
+        "recommendedUse": [
+          2,
+          3
+        ],
+        "watch": false,
+        "ours": 3
+      },
+      {
+        "term": "benefits",
+        "df": 3,
+        "inHeadings": 2,
+        "recommendedUse": [
+          2,
+          3
+        ],
+        "watch": false,
+        "ours": 3
+      },
+      {
+        "term": "finance for scaffolding",
+        "df": 3,
+        "inHeadings": 1,
+        "recommendedUse": [
+          2,
+          3
+        ],
+        "watch": false,
+        "ours": 5
+      },
+      {
+        "term": "business loans",
+        "df": 6,
+        "inHeadings": 1,
+        "recommendedUse": [
+          3,
+          5
+        ],
+        "watch": false,
+        "ours": 8
+      },
+      {
+        "term": "invoice finance",
+        "df": 5,
+        "inHeadings": 1,
+        "recommendedUse": [
+          3,
+          4
+        ],
+        "watch": false,
+        "ours": 7
+      },
+      {
+        "term": "business loan",
+        "df": 3,
+        "inHeadings": 1,
+        "recommendedUse": [
+          2,
+          3
+        ],
+        "watch": false,
+        "ours": 4
+      },
+      {
+        "term": "scaffolding businesses",
+        "df": 3,
+        "inHeadings": 1,
+        "recommendedUse": [
+          2,
+          3
+        ],
+        "watch": false,
+        "ours": 5
+      },
+      {
+        "term": "scaffolding companies",
+        "df": 3,
+        "inHeadings": 1,
+        "recommendedUse": [
+          2,
+          3
+        ],
+        "watch": false,
+        "ours": 3
+      },
+      {
+        "term": "vehicle",
+        "df": 6,
+        "inHeadings": 1,
+        "recommendedUse": [
+          2,
+          4
+        ],
+        "watch": false,
+        "ours": 3
+      },
+      {
+        "term": "businesses",
+        "df": 6,
+        "inHeadings": 1,
+        "recommendedUse": [
+          5,
+          6
+        ],
+        "watch": false,
+        "ours": 9
+      },
+      {
+        "term": "loans",
+        "df": 6,
+        "inHeadings": 1,
+        "recommendedUse": [
+          5,
+          7
+        ],
+        "watch": false,
+        "ours": 9
+      },
+      {
+        "term": "loans invoice finance",
+        "df": 4,
+        "inHeadings": 0,
+        "recommendedUse": [
+          1,
+          2
+        ],
+        "watch": false,
+        "ours": 1
+      },
+      {
+        "term": "business loans invoice",
+        "df": 3,
+        "inHeadings": 0,
+        "recommendedUse": [
+          1,
+          2
+        ],
+        "watch": false,
+        "ours": 1
+      },
+      {
+        "term": "authorised and regulated",
+        "df": 3,
+        "inHeadings": 0,
+        "recommendedUse": [
+          1,
+          2
+        ],
+        "watch": false,
+        "ours": 1
+      },
+      {
+        "term": "financial conduct authority",
+        "df": 3,
+        "inHeadings": 0,
+        "recommendedUse": [
+          1,
+          2
+        ],
+        "watch": false,
+        "ours": 1
+      },
+      {
+        "term": "unsecured business loans",
+        "df": 3,
+        "inHeadings": 0,
+        "recommendedUse": [
+          2,
+          3
+        ],
+        "watch": false,
+        "ours": 2
+      },
+      {
+        "term": "asset finance",
+        "df": 6,
+        "inHeadings": 0,
+        "recommendedUse": [
+          3,
+          5
+        ],
+        "watch": false,
+        "ours": 8
+      },
+      {
+        "term": "cash flow",
+        "df": 5,
+        "inHeadings": 0,
+        "recommendedUse": [
+          2,
+          3
+        ],
+        "watch": false,
+        "ours": 3
+      },
+      {
+        "term": "working capital",
+        "df": 4,
+        "inHeadings": 0,
+        "recommendedUse": [
+          2,
+          4
+        ],
+        "watch": true,
+        "ours": 4
+      },
+      {
+        "term": "arrange finance",
+        "df": 4,
+        "inHeadings": 0,
+        "recommendedUse": [
+          1,
+          2
+        ],
+        "watch": false,
+        "ours": 2
+      },
+      {
+        "term": "extensive panel",
+        "df": 4,
+        "inHeadings": 0,
+        "recommendedUse": [
+          1,
+          2
+        ],
+        "watch": false,
+        "ours": 1
+      },
+      {
+        "term": "loans invoice",
+        "df": 4,
+        "inHeadings": 0,
+        "recommendedUse": [
+          1,
+          2
+        ],
+        "watch": false,
+        "ours": 1
+      },
+      {
+        "term": "finance solutions",
+        "df": 4,
+        "inHeadings": 0,
+        "recommendedUse": [
+          1,
+          2
+        ],
+        "watch": false,
+        "ours": 1
+      },
+      {
+        "term": "businesses across",
+        "df": 3,
+        "inHeadings": 0,
+        "recommendedUse": [
+          1,
+          2
+        ],
+        "watch": false,
+        "ours": 1
+      },
+      {
+        "term": "financial conduct",
+        "df": 3,
+        "inHeadings": 0,
+        "recommendedUse": [
+          1,
+          2
+        ],
+        "watch": false,
+        "ours": 1
+      }
+    ],
+    "under": [
+      {
+        "term": "business finance",
+        "df": 4,
+        "inHeadings": 3,
+        "recommendedUse": [
+          7,
+          8
+        ],
+        "watch": false,
+        "ours": 3
+      },
+      {
+        "term": "scaffold finance",
+        "df": 3,
+        "inHeadings": 2,
+        "recommendedUse": [
+          15,
+          16
+        ],
+        "watch": false,
+        "ours": 6
+      },
+      {
+        "term": "equipment finance",
+        "df": 3,
+        "inHeadings": 2,
+        "recommendedUse": [
+          7,
+          8
+        ],
+        "watch": false,
+        "ours": 6
+      },
+      {
+        "term": "financial",
+        "df": 6,
+        "inHeadings": 2,
+        "recommendedUse": [
+          2,
+          4
+        ],
+        "watch": false,
+        "ours": 1
+      },
+      {
+        "term": "leasing",
+        "df": 4,
+        "inHeadings": 2,
+        "recommendedUse": [
+          3,
+          4
+        ],
+        "watch": false,
+        "ours": 2
+      },
+      {
+        "term": "finance scaffolding finance",
+        "df": 5,
+        "inHeadings": 1,
+        "recommendedUse": [
+          3,
+          4
+        ],
+        "watch": false,
+        "ours": 1
+      },
+      {
+        "term": "finance scaffolding",
+        "df": 6,
+        "inHeadings": 1,
+        "recommendedUse": [
+          3,
+          4
+        ],
+        "watch": false,
+        "ours": 2
+      },
+      {
+        "term": "vehicle finance",
+        "df": 4,
+        "inHeadings": 1,
+        "recommendedUse": [
+          4,
+          5
+        ],
+        "watch": false,
+        "ours": 2
+      },
+      {
+        "term": "scaffolding contractors",
+        "df": 3,
+        "inHeadings": 1,
+        "recommendedUse": [
+          7,
+          8
+        ],
+        "watch": false,
+        "ours": 6
+      },
+      {
+        "term": "scaffolding finance scaffolding",
+        "df": 3,
+        "inHeadings": 0,
+        "recommendedUse": [
+          2,
+          3
+        ],
+        "watch": false,
+        "ours": 1
+      }
+    ],
+    "missing": [
+      {
+        "term": "finance business",
+        "df": 5,
+        "inHeadings": 1,
+        "recommendedUse": [
+          1,
+          2
+        ],
+        "watch": false,
+        "ours": 0
+      },
+      {
+        "term": "finance vehicle",
+        "df": 3,
+        "inHeadings": 1,
+        "recommendedUse": [
+          2,
+          3
+        ],
+        "watch": false,
+        "ours": 0
+      },
+      {
+        "term": "asset finance business",
+        "df": 3,
+        "inHeadings": 0,
+        "recommendedUse": [
+          1,
+          2
+        ],
+        "watch": false,
+        "ours": 0
+      },
+      {
+        "term": "finance business loans",
+        "df": 3,
+        "inHeadings": 0,
+        "recommendedUse": [
+          1,
+          2
+        ],
+        "watch": false,
+        "ours": 0
+      },
+      {
+        "term": "monthly repayments",
+        "df": 3,
+        "inHeadings": 0,
+        "recommendedUse": [
+          3,
+          4
+        ],
+        "watch": false,
+        "ours": 0
+      },
+      {
+        "term": "arranging finance",
+        "df": 3,
+        "inHeadings": 0,
+        "recommendedUse": [
+          1,
+          2
+        ],
+        "watch": false,
+        "ours": 0
+      },
+      {
+        "term": "finance allows",
+        "df": 3,
+        "inHeadings": 0,
+        "recommendedUse": [
+          1,
+          2
+        ],
+        "watch": false,
+        "ours": 0
+      }
+    ],
+    "namedCovered": [
+      {
+        "entity": "Scaffolding Finance",
+        "df": 4
+      },
+      {
+        "entity": "Financial Conduct Authority",
+        "df": 3
+      },
+      {
+        "entity": "Scaffold Finance",
+        "df": 2
+      },
+      {
+        "entity": "Scaffolding Association",
+        "df": 2
+      },
+      {
+        "entity": "Business Loans",
+        "df": 2
+      },
+      {
+        "entity": "Asset Finance",
+        "df": 2
+      }
+    ],
+    "namedMissing": [
+      {
+        "entity": "UK. Whether",
+        "df": 2
+      },
+      {
+        "entity": "Deansgate Manchester",
+        "df": 2
+      },
+      {
+        "entity": "BTG Funding Limited",
+        "df": 2
+      },
+      {
+        "entity": "Construction Finance",
+        "df": 2
+      }
+    ]
+  }
+}

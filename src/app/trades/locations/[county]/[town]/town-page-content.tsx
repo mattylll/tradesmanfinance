@@ -32,6 +32,7 @@ import {
   Users,
   Quote,
   ChevronDown,
+  CreditCard,
 } from 'lucide-react';
 
 // Finance products - matching homepage design
@@ -77,6 +78,13 @@ const financeProducts = [
     icon: Calculator,
     href: '/products/asset-finance',
     color: 'bg-[#ec4899]',
+  },
+  {
+    name: 'Merchant Cash Advance',
+    description: 'Advance on card takings, repay as you earn',
+    icon: CreditCard,
+    href: '/products/merchant-cash-advance',
+    color: 'bg-[#8b5cf6]',
   },
 ];
 
