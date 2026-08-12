@@ -11,11 +11,9 @@ import {
   Wrench,
   Zap,
   ChevronRight,
-  Phone,
   Shield,
   Clock,
   Users,
-  Star,
   CheckCircle,
 } from 'lucide-react';
 
@@ -143,7 +141,7 @@ export default function TradesPage() {
             >
               {[
                 { icon: <CheckCircle className="h-4 w-4" />, text: "£25k - £1m Available" },
-                { icon: <CheckCircle className="h-4 w-4" />, text: "92% Approval Rate" },
+                { icon: <CheckCircle className="h-4 w-4" />, text: "All Credit Considered" },
                 { icon: <CheckCircle className="h-4 w-4" />, text: "Same Day Decisions" },
               ].map((item, index) => (
                 <div key={index} className="flex items-center gap-2 text-gray-400 text-sm">
@@ -175,23 +173,6 @@ export default function TradesPage() {
                   </Button>
                 </motion.div>
               </Link>
-
-              <a href="tel:08001234567">
-                <motion.div
-                  whileHover={{ scale: 1.03 }}
-                  whileTap={{ scale: 0.98 }}
-                  transition={{ type: "spring", stiffness: 400, damping: 17 }}
-                >
-                  <Button
-                    size="lg"
-                    variant="outline"
-                    className="border-2 border-white/20 bg-white/5 text-white hover:bg-white/10 hover:border-white/30 font-semibold text-lg px-10 py-7 rounded-xl backdrop-blur-sm transition-all"
-                  >
-                    <Phone className="mr-2 h-5 w-5" />
-                    0800 123 4567
-                  </Button>
-                </motion.div>
-              </a>
             </motion.div>
           </motion.div>
         </div>
@@ -211,9 +192,8 @@ export default function TradesPage() {
           <div className="flex flex-wrap items-center justify-center gap-x-10 gap-y-3">
             {[
               { icon: Shield, text: "25+ Years Experience", highlight: true },
-              { icon: Star, text: "4.8★ Trustpilot", highlight: false },
+              { icon: Users, text: "No Obligation", highlight: false },
               { icon: Clock, text: "Same Day Decisions", highlight: false },
-              { icon: Users, text: "50,000+ Funded", highlight: false },
             ].map((item, index) => (
               <motion.div
                 key={index}
@@ -393,25 +373,6 @@ export default function TradesPage() {
                   </Button>
                 </motion.div>
               </Link>
-            </motion.div>
-
-            <motion.div variants={fadeInUp} transition={{ duration: 0.4 }}>
-              <a href="tel:08001234567">
-                <motion.div
-                  whileHover={{ scale: 1.05 }}
-                  whileTap={{ scale: 0.98 }}
-                  transition={{ type: "spring", stiffness: 400, damping: 17 }}
-                >
-                  <Button
-                    size="lg"
-                    variant="outline"
-                    className="border-2 border-white/80 bg-white/10 text-white hover:bg-white/20 font-bold text-lg px-10 py-7 rounded-xl backdrop-blur-sm"
-                  >
-                    <Phone className="mr-2 h-5 w-5" />
-                    Call 0800 123 4567
-                  </Button>
-                </motion.div>
-              </a>
             </motion.div>
           </motion.div>
         </div>

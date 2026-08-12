@@ -59,8 +59,8 @@ export const authors: Record<string, Author> = {
     id: 'tradesman-finance-team',
     name: 'Tradesman Finance Team',
     role: 'Finance Specialists',
-    bio: 'Our team of finance specialists has over 50 years of combined experience helping UK tradesmen access the funding they need. We work exclusively with trade businesses, giving us deep insight into the unique challenges and opportunities in the sector. From electricians to builders, plumbers to roofers, we understand your industry and speak your language.',
-    shortBio: 'Specialist trade finance experts with 50+ years combined experience helping UK tradesmen.',
+    bio: 'We work exclusively with trade businesses, which gives us deep insight into the unique challenges and opportunities in the sector. From electricians to builders, plumbers to roofers, we understand your industry and speak your language, and we know which lenders are comfortable with the way trade businesses actually earn.',
+    shortBio: 'Specialist trade finance experts helping UK tradesmen find the right funding.',
     expertise: [
       'Equipment Finance',
       'Vehicle Finance',
@@ -69,78 +69,35 @@ export const authors: Record<string, Author> = {
       'Invoice Finance',
       'Bad Credit Solutions',
     ],
-    experience: '50+ years combined',
+    experience: 'Trade finance specialists',
     credentials: [
-      '25+ Years Financial Services Experience',
-      'NACFB Member',
-      'ISO 27001 Certified',
-    ],
-  },
-  'james-harper': {
-    id: 'james-harper',
-    name: 'James Harper',
-    role: 'Senior Finance Advisor',
-    bio: 'James has over 15 years of experience in commercial finance, specialising in asset and equipment finance for trade businesses. Before joining Tradesman Finance, he worked at a major UK bank where he developed deep expertise in lending to SMEs. James holds a Diploma in Regulated Financial Planning and is passionate about helping tradesmen grow their businesses.',
-    shortBio: '15+ years in commercial finance, specialising in trade business funding.',
-    expertise: [
-      'Equipment Finance',
-      'Asset Finance',
-      'Business Loans',
-      'Financial Planning',
-    ],
-    experience: '15+ years',
-    credentials: [
-      'DipFA (Diploma in Financial Advice)',
-      'CeMAP Qualified',
-    ],
-  },
-  'sarah-mitchell': {
-    id: 'sarah-mitchell',
-    name: 'Sarah Mitchell',
-    role: 'Vehicle Finance Specialist',
-    bio: 'Sarah brings 12 years of experience in motor finance to the team, with a particular focus on commercial vehicles and fleet finance. She has helped hundreds of tradesmen finance their work vans and vehicles, and understands the importance of reliable transport to a trade business. Sarah is known for finding creative solutions for customers with complex situations.',
-    shortBio: '12 years in motor finance, specialist in commercial vehicle funding.',
-    expertise: [
-      'Van Finance',
-      'Commercial Vehicle Finance',
-      'Fleet Finance',
-      'HP & PCP Solutions',
-    ],
-    experience: '12+ years',
-    credentials: [
-      'Motor Finance Specialist',
-      'Commercial Lending Expert',
+      'Founded by a broker with 25 years in financial services',
+      'Specialists in trade and construction finance',
+      'UK-wide coverage',
     ],
   },
 };
 
 export const companyCredentials: CompanyCredential[] = [
   {
-    name: 'NACFB Member',
-    description: 'Member of the National Association of Commercial Finance Brokers, the UK\'s leading trade body for commercial finance.',
+    name: 'Trade Finance Specialists',
+    description: 'We work exclusively with UK trade and construction businesses, so we know which lenders understand how you earn.',
     icon: 'award',
   },
   {
-    name: 'Data Protection Registered',
-    description: 'Registered with the Information Commissioner\'s Office (ICO) for data protection compliance.',
+    name: 'Secure & Encrypted',
+    description: 'Your application data is transmitted over an encrypted connection and only shared with lenders you ask us to approach.',
     icon: 'lock',
   },
   {
-    name: 'Cyber Essentials Certified',
-    description: 'Government-backed certification demonstrating our commitment to cyber security.',
+    name: 'No Obligation Quotes',
+    description: 'Every quote is free and comes with no obligation to proceed. You decide whether an offer is right for you.',
     icon: 'check-shield',
   },
 ];
 
 export const trustSignals = {
-  yearsInBusiness: 15,
-  customersHelped: '50,000+',
-  fundingArranged: '£500M+',
-  averageRating: 4.8,
-  reviewCount: 127,
-  lenderPanel: '50+',
   decisionTime: '24 hours',
-  approvalRate: '92%',
 };
 
 // Helper functions

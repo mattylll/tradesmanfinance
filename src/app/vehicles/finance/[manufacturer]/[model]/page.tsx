@@ -1,7 +1,6 @@
 import { Metadata } from 'next'
 import { notFound } from 'next/navigation'
 import vehicleData from '@/data/vehicle-finance-database.json'
-import supplementaryData from '@/data/supplementary-data.json'
 import { VehicleModelPageContent } from '@/components/vehicles/vehicle-model-page-content'
 
 type VehicleModelPageProps = {
@@ -53,7 +52,7 @@ export async function generateMetadata({ params }: VehicleModelPageProps): Promi
 
   return {
     title: `${manufacturer.name} ${model.name} Finance | New & Used | Tradesman Finance`,
-    description: `Finance ${manufacturer.name} ${model.name} from ${model.typical_monthly_finance}/month. ${model.typical_price}. Payload: ${model.payload}. Perfect for ${model.best_for_trades.join(', ')}. 89% approval rate.`,
+    description: `Finance ${manufacturer.name} ${model.name} from ${model.typical_monthly_finance}/month. ${model.typical_price}. Payload: ${model.payload}. Perfect for ${model.best_for_trades.join(', ')}.`,
     keywords: `${manufacturer.name} ${model.name} finance, ${model.name} van finance, ${manufacturer.name} finance`,
   }
 }
@@ -88,7 +87,6 @@ export default function VehicleModelPage({ params }: VehicleModelPageProps) {
       model={model}
       modelSlug={params.model}
       relatedModels={relatedModels}
-      contactPhone={supplementaryData.contact.phone}
     />
   )
 }

@@ -14,18 +14,15 @@ import {
   CheckCircle,
   ArrowRight,
   MapPin,
-  Phone,
   TrendingUp,
   Zap,
   Clock,
   Shield,
-  Star,
   Wrench,
   Building2,
   Briefcase,
   HardHat,
   Train,
-  Quote,
   ChevronDown,
 } from 'lucide-react';
 
@@ -33,7 +30,6 @@ import {
 // import { LocalMarketSection } from '@/components/seo/local-market-section'; // Replaced with trade-specific local section
 import { EquipmentFinanceSection } from '@/components/seo/equipment-finance-section';
 import { FAQSection } from '@/components/seo/faq-section';
-import { TestimonialsSection } from '@/components/seo/testimonials-section';
 import { CredentialsSection } from '@/components/seo/credentials-section';
 import { RelatedTradesLinks } from '@/components/seo/related-trades-links';
 import { EquipmentLinks } from '@/components/seo/equipment-links';
@@ -337,8 +333,8 @@ export function TradeLocationContent({
                   <span className="text-sm text-white/80">No Upfront Fees</span>
                 </div>
                 <div className="flex items-center gap-2 bg-white/5 border border-white/10 rounded-full px-5 py-2">
-                  <Star className="h-5 w-5 text-[#ffd93d]" />
-                  <span className="text-sm text-white/80">4.9/5 on Google</span>
+                  <CheckCircle className="h-5 w-5 text-green-400" />
+                  <span className="text-sm text-white/80">No Obligation</span>
                 </div>
               </div>
 
@@ -354,16 +350,6 @@ export function TradeLocationContent({
                     <ArrowRight className="ml-2 h-5 w-5" />
                   </Button>
                 </Link>
-                <Button
-                  size="lg"
-                  className="bg-white text-[#1a1a2e] hover:bg-white/90 font-bold text-lg px-10 py-7 rounded-full"
-                  asChild
-                >
-                  <a href="tel:08001234567">
-                    <Phone className="mr-2 h-5 w-5" />
-                    0800 123 4567
-                  </a>
-                </Button>
               </div>
             </div>
 
@@ -561,8 +547,8 @@ export function TradeLocationContent({
               <div className="text-gray-600 text-sm">Fast Decisions</div>
             </div>
             <div className="bg-white rounded-2xl p-6 text-center shadow-lg">
-              <div className="text-3xl font-black text-[#8b5cf6] mb-1">98%</div>
-              <div className="text-gray-600 text-sm">Approval Rate</div>
+              <div className="text-3xl font-black text-[#8b5cf6] mb-1">12-60</div>
+              <div className="text-gray-600 text-sm">Month Terms</div>
             </div>
           </div>
         </div>
@@ -758,15 +744,6 @@ export function TradeLocationContent({
         />
       )}
 
-      {/* TESTIMONIALS SECTION - Customer reviews */}
-      {trade.testimonials && trade.testimonials.length > 0 && (
-        <TestimonialsSection
-          tradeName={trade.name}
-          countyName={county.name}
-          testimonials={trade.testimonials}
-        />
-      )}
-
       {/* RELATED TRADES */}
       <section className="py-24 bg-white">
         <div className="container mx-auto px-4">
@@ -914,16 +891,6 @@ export function TradeLocationContent({
                   <ArrowRight className="ml-2 h-5 w-5" />
                 </Button>
               </Link>
-              <Button
-                size="lg"
-                className="border-2 border-white bg-transparent text-white hover:bg-white hover:text-[#ff6b35] font-bold text-lg px-10 py-7 rounded-full transition-all"
-                asChild
-              >
-                <a href="tel:08001234567">
-                  <Phone className="mr-2 h-5 w-5" />
-                  Call Now
-                </a>
-              </Button>
             </div>
           </div>
         </div>

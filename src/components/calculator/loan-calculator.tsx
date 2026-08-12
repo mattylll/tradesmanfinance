@@ -325,7 +325,7 @@ export function LoanCalculator({
               </div>
               <div className="flex flex-col items-center gap-1 p-2">
                 <CheckCircle className="h-4 w-4 text-green-600" />
-                <span className="text-xs text-muted-foreground">92% Approved</span>
+                <span className="text-xs text-muted-foreground">No Obligation</span>
               </div>
             </div>
 

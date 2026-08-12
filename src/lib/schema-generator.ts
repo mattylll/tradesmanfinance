@@ -8,7 +8,6 @@
  * - BreadcrumbList
  * - FAQPage
  * - Service
- * - AggregateRating
  * - Organization
  */
 
@@ -24,14 +23,11 @@ const ORGANIZATION = {
   logo: 'https://tradesmanfinance.co.uk/images/logo.png',
   contactPoint: {
     '@type': 'ContactPoint',
-    telephone: '+44-800-XXX-XXXX',
     contactType: 'customer service',
     areaServed: 'GB',
     availableLanguage: 'English'
   },
   sameAs: [
-    'https://www.facebook.com/tradesmanfinance',
-    'https://twitter.com/tradesmanfin',
     'https://www.linkedin.com/company/tradesman-finance'
   ]
 };
@@ -64,7 +60,6 @@ export function generateFinancialServiceSchema(params: {
     name: `${tradeName} Business Loans ${townName} - Tradesman Finance`,
     description: `Specialist business finance for ${tradeName.toLowerCase()}s in ${townName}, ${countyName}. Equipment loans, van finance, and working capital with fast decisions.`,
     url: canonicalUrl,
-    telephone: '+44-800-XXX-XXXX',
     email: 'info@tradesmanfinance.co.uk',
     priceRange: '£1,000 - £500,000',
     currenciesAccepted: 'GBP',
@@ -85,13 +80,6 @@ export function generateFinancialServiceSchema(params: {
       addressLocality: townName,
       addressRegion: countyName,
       addressCountry: 'GB'
-    },
-    aggregateRating: {
-      '@type': 'AggregateRating',
-      ratingValue: '4.8',
-      ratingCount: '1250',
-      bestRating: '5',
-      worstRating: '1'
     },
     openingHoursSpecification: [
       {
@@ -301,44 +289,6 @@ export function generateServiceSchema(params: {
 }
 
 /**
- * Generate aggregate rating schema
- */
-export function generateRatingSchema(params: {
-  tradeName: string;
-  canonicalUrl: string;
-}): object {
-  const { tradeName, canonicalUrl } = params;
-
-  return {
-    '@context': 'https://schema.org',
-    '@type': 'Product',
-    '@id': `${canonicalUrl}#rating`,
-    name: `${tradeName} Business Finance`,
-    aggregateRating: {
-      '@type': 'AggregateRating',
-      ratingValue: '4.8',
-      reviewCount: '1250',
-      bestRating: '5',
-      worstRating: '1'
-    },
-    review: [
-      {
-        '@type': 'Review',
-        reviewRating: {
-          '@type': 'Rating',
-          ratingValue: '5'
-        },
-        author: {
-          '@type': 'Person',
-          name: 'Verified Customer'
-        },
-        reviewBody: `Excellent service for ${tradeName.toLowerCase()} finance. Fast decision and funds released within 48 hours.`
-      }
-    ]
-  };
-}
-
-/**
  * Generate Organization schema for homepage
  */
 export function generateOrganizationSchema(): object {
@@ -356,7 +306,6 @@ export function generateOrganizationSchema(): object {
       height: '60'
     },
     description: 'Specialist business finance for UK tradesmen. Equipment loans, van finance, and working capital with fast decisions.',
-    foundingDate: '2010',
     foundingLocation: {
       '@type': 'Place',
       name: 'United Kingdom'
@@ -368,7 +317,6 @@ export function generateOrganizationSchema(): object {
     contactPoint: [
       {
         '@type': 'ContactPoint',
-        telephone: '+44-800-XXX-XXXX',
         contactType: 'customer service',
         areaServed: 'GB',
         availableLanguage: 'English',
@@ -378,18 +326,9 @@ export function generateOrganizationSchema(): object {
           opens: '08:00',
           closes: '18:00'
         }
-      },
-      {
-        '@type': 'ContactPoint',
-        telephone: '+44-800-XXX-XXXX',
-        contactType: 'sales',
-        areaServed: 'GB',
-        availableLanguage: 'English'
       }
     ],
     sameAs: [
-      'https://www.facebook.com/tradesmanfinance',
-      'https://twitter.com/tradesmanfin',
       'https://www.linkedin.com/company/tradesman-finance'
     ],
     slogan: 'Finance built for trade',

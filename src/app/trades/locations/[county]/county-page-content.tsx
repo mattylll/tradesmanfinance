@@ -11,7 +11,6 @@ import { Button } from '@/registry/new-york-v4/ui/button';
 import {
   ArrowRight,
   MapPin,
-  Phone,
   Building,
   Briefcase,
   TrendingUp,
@@ -31,7 +30,6 @@ import {
 // Import SEO components
 import { LocalMarketSection } from '@/components/seo/local-market-section';
 import { FAQSection } from '@/components/seo/faq-section';
-import { TestimonialsSection } from '@/components/seo/testimonials-section';
 
 // Import schema generator
 import { generateCountyPageSchema } from '@/lib/schema-generator';
@@ -152,12 +150,6 @@ export function CountyPageContent({
   // Get enhanced SEO data for county
   const countySEOData = getCountySEOData(county.slug);
 
-  // Combine testimonials from all trades
-  const allTestimonials = trades
-    .flatMap(trade => trade.testimonials || [])
-    .filter(t => t && t.quote)
-    .slice(0, 4);
-
   // Generate schema markup
   const schemaMarkup = countySEOData ? generateCountyPageSchema({
     countyName: county.name,
@@ -271,10 +263,6 @@ export function CountyPageContent({
                   <div className="text-3xl font-black text-[#0ea5a5]">24hrs</div>
                   <div className="text-sm text-white/60">Fast Decisions</div>
                 </div>
-                <div className="bg-white/5 backdrop-blur border border-white/10 rounded-xl px-6 py-4 transform hover:scale-105 transition-transform -ml-2 mt-4">
-                  <div className="text-3xl font-black text-[#ffd93d]">98%</div>
-                  <div className="text-sm text-white/60">Approval Rate</div>
-                </div>
               </div>
 
               {/* CTA Buttons - Bold styling */}
@@ -288,16 +276,6 @@ export function CountyPageContent({
                     <ArrowRight className="ml-2 h-5 w-5" />
                   </Button>
                 </Link>
-                <Button
-                  size="lg"
-                  className="bg-white text-[#1a1a2e] hover:bg-white/90 font-bold text-lg px-10 py-7 rounded-full"
-                  asChild
-                >
-                  <a href="tel:08001234567">
-                    <Phone className="mr-2 h-5 w-5" />
-                    0800 123 4567
-                  </a>
-                </Button>
               </div>
             </div>
 
@@ -373,11 +351,11 @@ export function CountyPageContent({
                 Why Choose Us
               </Badge>
               <h2 className="text-4xl md:text-5xl font-black mb-6 leading-tight">
-                {county.name} Tradesmen <br/>Trust Us
+                Built for {county.name} <br/>Tradesmen
               </h2>
               <p className="text-xl text-white/90 mb-8">
-                Hundreds of tradesmen across {county.name} have funded their businesses with us.
-                Here's why they keep coming back.
+                Finance arranged around how trade businesses actually work across {county.name}.
+                Here's what that means in practice.
               </p>
               <Link href="/contact">
                 <Button
@@ -520,8 +498,8 @@ export function CountyPageContent({
                   finance and can approve applications within 24 hours.
                 </p>
                 <p>
-                  Our team has helped hundreds of tradesmen across {county.towns.slice(0, 5).join(', ')} and
-                  other {county.name} towns access funding from <strong className="text-[#1a1a2e]">£25,000 to £1,000,000</strong>,
+                  We work with tradesmen across {county.towns.slice(0, 5).join(', ')} and
+                  other {county.name} towns, arranging funding from <strong className="text-[#1a1a2e]">£25,000 to £1,000,000</strong>,
                   with repayment terms from 12 to 60 months.
                 </p>
               </div>
@@ -544,14 +522,6 @@ export function CountyPageContent({
         <FAQSection
           countyName={county.name}
           faqs={countySEOData.faqs}
-        />
-      )}
-
-      {/* TESTIMONIALS SECTION - Customer reviews */}
-      {allTestimonials.length > 0 && (
-        <TestimonialsSection
-          countyName={county.name}
-          testimonials={allTestimonials}
         />
       )}
 
@@ -625,7 +595,7 @@ export function CountyPageContent({
               <span className="text-black/80">{county.name} Business?</span>
             </h2>
             <p className="text-xl text-white/90 mb-10 max-w-2xl mx-auto">
-              Join hundreds of {county.name} tradesmen who've grown their business with us.
+              Specialist finance for {county.name} tradesmen.
               Free quote, no credit impact, decision in 24 hours.
             </p>
             <div className="flex flex-wrap justify-center gap-4">
@@ -638,16 +608,6 @@ export function CountyPageContent({
                   <ArrowRight className="ml-2 h-5 w-5" />
                 </Button>
               </Link>
-              <Button
-                size="lg"
-                className="bg-white text-[#ff6b35] hover:bg-white/90 font-bold text-lg px-10 py-7 rounded-full"
-                asChild
-              >
-                <a href="tel:08001234567">
-                  <Phone className="mr-2 h-5 w-5" />
-                  Call Now
-                </a>
-              </Button>
             </div>
           </div>
         </div>

@@ -44,13 +44,11 @@ const scaleIn = {
 type VehicleManufacturerPageContentProps = {
   manufacturer: any
   manufacturerSlug: string
-  contactPhone: string
 }
 
 export function VehicleManufacturerPageContent({
   manufacturer,
   manufacturerSlug,
-  contactPhone,
 }: VehicleManufacturerPageContentProps) {
   const models = Object.entries(manufacturer.models || {})
 
@@ -158,12 +156,11 @@ export function VehicleManufacturerPageContent({
             {/* Stats Grid */}
             <motion.div
               variants={fadeInUp}
-              className="grid grid-cols-2 md:grid-cols-4 gap-4 max-w-3xl mx-auto"
+              className="grid grid-cols-1 md:grid-cols-3 gap-4 max-w-3xl mx-auto"
             >
               {[
                 { label: 'Market Share', value: manufacturer.marketShare, icon: Star },
                 { label: 'Models Available', value: `${models.length}+`, icon: Truck },
-                { label: 'Approval Rate', value: '89%', icon: CheckCircle },
                 { label: 'Decision Time', value: '60 sec', icon: Clock },
               ].map((stat) => (
                 <div key={stat.label} className="bg-gray-900 border border-white/10 rounded-lg p-4">
@@ -365,9 +362,9 @@ export function VehicleManufacturerPageContent({
               Ready to Finance Your {manufacturer.name}?
             </h2>
             <p className="text-xl text-white/90 mb-10 max-w-2xl mx-auto">
-              Apply in 60 seconds. 89% approval rate. Finance from £250/month.
+              Apply in 60 seconds. Finance from £250/month.
             </p>
-            <div className="flex flex-col sm:flex-row gap-4 justify-center">
+            <div className="flex justify-center">
               <Button
                 asChild
                 size="lg"
@@ -377,17 +374,6 @@ export function VehicleManufacturerPageContent({
                   Apply Now
                   <ArrowRight className="ml-2 w-5 h-5" />
                 </Link>
-              </Button>
-              <Button
-                asChild
-                size="lg"
-                variant="outline"
-                className="border-2 border-white/80 bg-white/10 text-white hover:bg-white/20 h-14 px-10 text-lg font-bold backdrop-blur-sm"
-              >
-                <a href={`tel:${contactPhone}`}>
-                  <Phone className="mr-2 w-5 h-5" />
-                  Call {contactPhone}
-                </a>
               </Button>
             </div>
           </motion.div>

@@ -5,7 +5,7 @@ import Link from "next/link";
 import { motion } from "framer-motion";
 import { Button } from "@/registry/new-york-v4/ui/button";
 import { Badge } from "@/registry/new-york-v4/ui/badge";
-import { ArrowRight, Phone, CheckCircle, Sparkles } from "lucide-react";
+import { ArrowRight, CheckCircle, Sparkles } from "lucide-react";
 
 interface BrightHeroProps {
   title: string;
@@ -27,7 +27,6 @@ interface BrightHeroProps {
   secondaryCTA?: {
     text: string;
     href?: string;
-    phone?: string;
   };
   breadcrumbs?: {
     label: string;
@@ -37,9 +36,9 @@ interface BrightHeroProps {
 }
 
 const defaultStats = [
-  { label: "Funded to UK Trades", value: "£50M+", icon: "💷" },
-  { label: "Tradesmen Helped", value: "50,000+", icon: "👷" },
-  { label: "Decision Time", value: "24 Hrs", icon: "⚡" },
+  { label: "Who We Fund", value: "Trade only", icon: "👷" },
+  { label: "Coverage", value: "UK-wide", icon: "📍" },
+  { label: "Typical Decision", value: "24 Hrs", icon: "⚡" },
 ];
 
 // Animation variants
@@ -84,7 +83,7 @@ export function BrightHero({
   showStats = true,
   stats = defaultStats,
   primaryCTA = { text: "Get Your Free Quote", href: "/contact" },
-  secondaryCTA = { text: "0800 XXX XXXX", phone: "tel:0800000000" },
+  secondaryCTA = { text: "Talk to a Specialist", href: "/contact" },
   breadcrumbs,
   variant = "default",
 }: BrightHeroProps) {
@@ -161,17 +160,16 @@ export function BrightHero({
                   <ArrowRight className="ml-2 h-5 w-5" />
                 </Button>
               </Link>
-              {secondaryCTA.phone && (
-                <a href={secondaryCTA.phone}>
+              {secondaryCTA.href && (
+                <Link href={secondaryCTA.href}>
                   <Button
                     size="lg"
                     variant="outline"
                     className="border-2 border-[#e5e7eb] text-[#1f2937] hover:bg-[#fafaf8] font-semibold text-lg px-8 py-6 rounded-xl"
                   >
-                    <Phone className="mr-2 h-5 w-5" />
                     {secondaryCTA.text}
                   </Button>
-                </a>
+                </Link>
               )}
             </motion.div>
           </motion.div>
@@ -283,23 +281,7 @@ export function BrightHero({
                   </Button>
                 </motion.div>
               </Link>
-              {secondaryCTA.phone ? (
-                <a href={secondaryCTA.phone}>
-                  <motion.div
-                    whileHover={{ scale: 1.02 }}
-                    whileTap={{ scale: 0.98 }}
-                  >
-                    <Button
-                      size="lg"
-                      variant="outline"
-                      className="border-2 border-[#e5e7eb] text-[#1f2937] hover:bg-[#fafaf8] font-semibold text-lg px-8 py-6 rounded-xl"
-                    >
-                      <Phone className="mr-2 h-5 w-5" />
-                      {secondaryCTA.text}
-                    </Button>
-                  </motion.div>
-                </a>
-              ) : secondaryCTA.href ? (
+              {secondaryCTA.href ? (
                 <Link href={secondaryCTA.href}>
                   <motion.div
                     whileHover={{ scale: 1.02 }}
@@ -324,8 +306,8 @@ export function BrightHero({
             >
               {[
                 "No Hidden Fees",
-                "92% Approval Rate",
-                "Same Day Decisions",
+                "No Obligation",
+                "Fast Decisions",
               ].map((item, index) => (
                 <motion.div
                   key={item}

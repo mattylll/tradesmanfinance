@@ -12,7 +12,6 @@ import {
   Clock,
   ChevronRight,
   Phone,
-  Star,
   TrendingUp,
 } from 'lucide-react';
 
@@ -120,7 +119,7 @@ export default function VehicleFinanceHub() {
               variants={fadeInUp}
               className="text-xl md:text-2xl text-gray-400 mb-8 leading-relaxed"
             >
-              New and used vans up to 5 years old. From £250/month. 89% approval rate. Decision in 60 seconds.
+              New and used vans up to 5 years old. From £250/month. Decision in 60 seconds.
             </motion.p>
 
             <motion.div
@@ -156,10 +155,9 @@ export default function VehicleFinanceHub() {
       {/* === STATS BAR === */}
       <section className="relative bg-gray-900 border-y border-white/5">
         <div className="container mx-auto px-4 py-8">
-          <div className="grid grid-cols-2 md:grid-cols-4 gap-6">
+          <div className="grid grid-cols-1 md:grid-cols-3 gap-6">
             {[
               { label: 'Finance From', value: '£250/mo', icon: Shield },
-              { label: 'Approval Rate', value: '89%', icon: Star },
               { label: 'Decision Time', value: '60s', icon: Clock },
               { label: 'Terms Available', value: '12-60mo', icon: CheckCircle },
             ].map((stat, index) => (
@@ -367,7 +365,7 @@ export default function VehicleFinanceHub() {
               Ready to Finance Your Van?
             </h2>
             <p className="text-xl text-white/90 mb-10 max-w-2xl mx-auto">
-              Apply in 60 seconds. 89% approval rate. Finance from £250/month.
+              Apply in 60 seconds. Finance from £250/month.
             </p>
             <Button
               asChild

@@ -4,16 +4,6 @@
  * Addresses SEO, trust signals, and content depth requirements
  */
 
-export interface ProductTestimonial {
-  quote: string;
-  name: string;
-  trade: string;
-  business: string;
-  location: string;
-  amount: string;
-  rating: number;
-}
-
 export interface FinanceTypeInfo {
   name: string;
   description: string;
@@ -40,8 +30,6 @@ export interface ProductPageData {
   decisionTimeDisplay: string; // e.g., "4hr Decisions", "Same-Day Decisions"
 
   // Real phone number
-  phoneNumber: string;
-  phoneDisplay: string;
 
   // Rate indication for transparency
   ratesFrom: string; // e.g., "5.9% APR"
@@ -86,18 +74,11 @@ export interface ProductPageData {
   // Expanded FAQs (8-10 per product)
   faqs: ProductFAQ[];
 
-  // Testimonials (2-3 per product)
-  testimonials: ProductTestimonial[];
-
   // SEO
   metaTitle: string;
   metaDescription: string;
   keywords: string[];
 }
-
-// Real phone number for the business
-const PHONE_NUMBER = "0800 086 9015";
-const PHONE_DISPLAY = "0800 086 9015";
 
 export const productPages: Record<string, ProductPageData> = {
   'vehicle-finance': {
@@ -111,9 +92,6 @@ export const productPages: Record<string, ProductPageData> = {
     // Consistent messaging - lead with fastest realistic time
     decisionTime: '4 hours',
     decisionTimeDisplay: '4hr Decisions',
-
-    phoneNumber: PHONE_NUMBER,
-    phoneDisplay: PHONE_DISPLAY,
 
     // Rate transparency
     ratesFrom: '6.9% APR',
@@ -246,36 +224,6 @@ export const productPages: Record<string, ProductPageData> = {
       },
     ],
 
-    testimonials: [
-      {
-        quote: 'Needed to replace my Transit sharpish after it died. Got approved in 3 hours and had the new van by Friday. The monthly payments actually worked out less than I expected.',
-        name: 'Dave M.',
-        trade: 'Plumber',
-        business: 'DM Plumbing Services',
-        location: 'Birmingham',
-        amount: '£28,000',
-        rating: 5,
-      },
-      {
-        quote: 'First time getting finance as a new business. Other places turned me down but these guys looked at my order book and got me approved. Brilliant service.',
-        name: 'Chris T.',
-        trade: 'Electrician',
-        business: 'CT Electrical',
-        location: 'Manchester',
-        amount: '£22,000',
-        rating: 5,
-      },
-      {
-        quote: 'Upgraded from a small van to a proper Sprinter with racking. The HP option means I own it outright in 4 years and my accountant loves the tax benefits.',
-        name: 'Steve R.',
-        trade: 'Carpenter',
-        business: 'S.R. Joinery',
-        location: 'Leeds',
-        amount: '£35,000',
-        rating: 5,
-      },
-    ],
-
     metaTitle: 'Van Finance for Tradesmen | New & Used Vans | 4hr Decisions',
     metaDescription: 'Finance your work van with 0% deposit options and 4-hour decisions. Flexible terms from 1-5 years for all trades. Rates from 6.9% APR. Get your free quote today.',
     keywords: ['van finance', 'vehicle finance tradesmen', 'work van finance', 'commercial vehicle finance', 'van HP', 'van leasing tradesmen'],
@@ -291,9 +239,6 @@ export const productPages: Record<string, ProductPageData> = {
 
     decisionTime: '4 hours',
     decisionTimeDisplay: '4hr Decisions',
-
-    phoneNumber: PHONE_NUMBER,
-    phoneDisplay: PHONE_DISPLAY,
 
     ratesFrom: '5.9% APR',
     representativeExample: {
@@ -313,7 +258,6 @@ export const productPages: Record<string, ProductPageData> = {
     heroStats: [
       { value: '£500K', label: 'Max Finance' },
       { value: '4hrs', label: 'Decision Time' },
-      { value: '92%', label: 'Approval Rate' },
     ],
 
     benefits: [
@@ -425,36 +369,6 @@ export const productPages: Record<string, ProductPageData> = {
       },
     ],
 
-    testimonials: [
-      {
-        quote: 'Financed a complete Festool dust extraction system. The monthly payments are manageable and the gear pays for itself on every job. Should have done it years ago.',
-        name: 'Mark J.',
-        trade: 'Carpenter',
-        business: 'MJ Carpentry',
-        location: 'Bristol',
-        amount: '£8,500',
-        rating: 5,
-      },
-      {
-        quote: 'Got a thermal imaging camera and full Megger test kit on finance. Win work I couldn\'t before and the equipment\'s already paid for itself.',
-        name: 'Tony B.',
-        trade: 'Electrician',
-        business: 'T.B. Electrical Services',
-        location: 'Sheffield',
-        amount: '£12,000',
-        rating: 5,
-      },
-      {
-        quote: 'We financed a mini excavator and it\'s transformed what jobs we can take on. The process was straightforward and the payments fit our cashflow.',
-        name: 'Paul & Sons',
-        trade: 'Groundworkers',
-        business: 'Paul & Sons Groundworks',
-        location: 'Kent',
-        amount: '£45,000',
-        rating: 5,
-      },
-    ],
-
     metaTitle: 'Tool Finance UK | Spread the Cost of Tools & Equipment',
     metaDescription: 'Finance trade equipment from £1,000 to £500,000. 4-hour decisions, 0% deposit options, rates from 5.9% APR. Power tools to heavy machinery. Get your free quote.',
     keywords: ['equipment finance', 'tool finance', 'trade equipment finance', 'power tool finance', 'machinery finance'],
@@ -470,9 +384,6 @@ export const productPages: Record<string, ProductPageData> = {
 
     decisionTime: 'same day',
     decisionTimeDisplay: 'Same-Day Decisions',
-
-    phoneNumber: PHONE_NUMBER,
-    phoneDisplay: PHONE_DISPLAY,
 
     ratesFrom: '7.9% APR',
     representativeExample: {
@@ -597,36 +508,6 @@ export const productPages: Record<string, ProductPageData> = {
       },
     ],
 
-    testimonials: [
-      {
-        quote: 'Needed working capital to take on a big contract. Got approved for £40k in one day and had the money 48 hours later. That contract made us £25k profit.',
-        name: 'James K.',
-        trade: 'Builder',
-        business: 'JK Construction',
-        location: 'Liverpool',
-        amount: '£40,000',
-        rating: 5,
-      },
-      {
-        quote: 'Used the loan to bulk-buy materials when suppliers had a sale. Saved 20% on materials for 6 months\' worth of jobs. The loan interest was nothing compared to the savings.',
-        name: 'Alan P.',
-        trade: 'Plumber',
-        business: 'A.P. Heating & Plumbing',
-        location: 'Newcastle',
-        amount: '£15,000',
-        rating: 5,
-      },
-      {
-        quote: 'Took a loan to invest in marketing and a new website. Enquiries doubled within 3 months. Best business decision I\'ve made.',
-        name: 'Sarah L.',
-        trade: 'Decorator',
-        business: 'SL Decorating',
-        location: 'Oxford',
-        amount: '£8,000',
-        rating: 5,
-      },
-    ],
-
     metaTitle: 'Sole Trader Business Loans UK | £5k to £500k | Fast Decisions',
     metaDescription: 'Flexible business loans from £5,000 to £500,000 for UK tradesmen. Same-day decisions, unsecured options, rates from 7.9% APR. Apply for your free quote today.',
     keywords: ['business loans tradesmen', 'trade business loan', 'unsecured business loan', 'working capital loan', 'small business loan'],
@@ -642,9 +523,6 @@ export const productPages: Record<string, ProductPageData> = {
 
     decisionTime: '24 hours',
     decisionTimeDisplay: '24hr Setup',
-
-    phoneNumber: PHONE_NUMBER,
-    phoneDisplay: PHONE_DISPLAY,
 
     ratesFrom: '0.5% per invoice',
 
@@ -761,27 +639,6 @@ export const productPages: Record<string, ProductPageData> = {
       },
     ],
 
-    testimonials: [
-      {
-        quote: 'Commercial customers pay 60-90 days. Invoice finance means I get most of the money within a day. Game changer for cashflow.',
-        name: 'Mike S.',
-        trade: 'Electrician',
-        business: 'Spark Commercial',
-        location: 'London',
-        amount: '£150,000 facility',
-        rating: 5,
-      },
-      {
-        quote: 'Was turning down big jobs because I couldn\'t afford the materials upfront. Now I invoice, get paid instantly, and buy what I need. Turnover up 40%.',
-        name: 'David R.',
-        trade: 'Builder',
-        business: 'D.R. Construction',
-        location: 'Edinburgh',
-        amount: '£75,000 facility',
-        rating: 5,
-      },
-    ],
-
     metaTitle: 'Invoice Finance & Factoring for Trade Businesses | UK',
     metaDescription: 'Release up to 90% of your invoice value within 24 hours. Stop waiting to get paid. Invoice factoring and discounting from 0.5%. Free quote for tradesmen.',
     keywords: ['invoice finance', 'invoice factoring tradesmen', 'invoice discounting', 'construction invoice finance', 'trade invoice finance'],
@@ -797,9 +654,6 @@ export const productPages: Record<string, ProductPageData> = {
 
     decisionTime: '4 hours',
     decisionTimeDisplay: '4hr Decisions',
-
-    phoneNumber: PHONE_NUMBER,
-    phoneDisplay: PHONE_DISPLAY,
 
     ratesFrom: '5.9% APR',
     representativeExample: {
@@ -915,27 +769,6 @@ export const productPages: Record<string, ProductPageData> = {
       },
     ],
 
-    testimonials: [
-      {
-        quote: 'Refinanced our van to release £15k for a new opportunity. Still had 18 months on the original finance but they sorted it all out. Used the cash to buy equipment that\'s earning every day.',
-        name: 'Kevin M.',
-        trade: 'Heating Engineer',
-        business: 'K.M. Heating Services',
-        location: 'Nottingham',
-        amount: '£15,000',
-        rating: 5,
-      },
-      {
-        quote: 'Asset finance made sense for our workshop refit. Spread £80k over 5 years instead of wiping out our reserves. Payments come from the extra work the new setup lets us take on.',
-        name: 'Williams Bros',
-        trade: 'Metalworkers',
-        business: 'Williams Bros Engineering',
-        location: 'South Wales',
-        amount: '£80,000',
-        rating: 5,
-      },
-    ],
-
     metaTitle: 'Asset Finance UK | Hire Purchase, Leasing & Refinancing',
     metaDescription: 'Finance any business asset from £1,000 to £1M. Vehicles, equipment, technology. 4-hour decisions, 0% deposit options, rates from 5.9% APR. Get your free quote.',
     keywords: ['asset finance', 'asset finance tradesmen', 'equipment HP', 'asset refinance', 'business asset finance'],
@@ -951,9 +784,6 @@ export const productPages: Record<string, ProductPageData> = {
 
     decisionTime: 'same day',
     decisionTimeDisplay: 'Same-Day Funding',
-
-    phoneNumber: PHONE_NUMBER,
-    phoneDisplay: PHONE_DISPLAY,
 
     ratesFrom: '0.8% monthly',
 
@@ -1062,27 +892,6 @@ export const productPages: Record<string, ProductPageData> = {
       },
     ],
 
-    testimonials: [
-      {
-        quote: 'VAT bill landed and I was waiting on two big invoices. Got a cashflow loan for 3 months, paid HMRC on time, repaid when my invoices cleared. Saved me a penalty.',
-        name: 'Gary W.',
-        trade: 'Builder',
-        business: 'G.W. Building Services',
-        location: 'Manchester',
-        amount: '£12,000',
-        rating: 5,
-      },
-      {
-        quote: 'Take a lot of card payments so merchant cash advance works perfectly. Repayments flex with how busy I am. Never have to worry about fixed monthly payments.',
-        name: 'Emma T.',
-        trade: 'Decorator',
-        business: 'Perfect Finish Decorating',
-        location: 'Brighton',
-        amount: '£8,000',
-        rating: 5,
-      },
-    ],
-
     metaTitle: 'Business Cash Advance & Cashflow Finance for Tradesmen',
     metaDescription: 'Short-term cashflow funding for UK tradesmen. Same-day decisions and funding. Bridge payment gaps, manage seasonal fluctuations. From £2,500 to £250,000.',
     keywords: ['cashflow finance', 'short-term business loan', 'merchant cash advance', 'working capital', 'bridge finance'],
@@ -1098,9 +907,6 @@ export const productPages: Record<string, ProductPageData> = {
 
     decisionTime: '24 hours',
     decisionTimeDisplay: '24hr Decisions',
-
-    phoneNumber: PHONE_NUMBER,
-    phoneDisplay: PHONE_DISPLAY,
 
     ratesFrom: '1.1 factor rate',
 
@@ -1225,36 +1031,6 @@ export const productPages: Record<string, ProductPageData> = {
       },
     ],
 
-    testimonials: [
-      {
-        quote: 'Most of my customers pay by card these days. Got £15,000 advanced against my takings in two days - repayments just come out of card sales so I never even notice them. Perfect for how my business runs.',
-        name: 'Steve M.',
-        trade: 'Plumber',
-        business: 'SM Plumbing & Heating',
-        location: 'Leeds',
-        amount: '£15,000',
-        rating: 5,
-      },
-      {
-        quote: 'Winter is always quiet for us. The cash advance repayments dropped right down when takings dipped, then picked back up in spring. A normal loan would have crippled us in January.',
-        name: 'Rachel D.',
-        trade: 'Landscaper',
-        business: 'Green Scene Landscapes',
-        location: 'Bristol',
-        amount: '£20,000',
-        rating: 5,
-      },
-      {
-        quote: 'Bank turned me down because of an old CCJ. Merchant cash advance looked at my card takings instead and approved me in a day. Used it to stock the trade counter for the busy season.',
-        name: 'Tony B.',
-        trade: 'Builder',
-        business: 'TB Building Supplies',
-        location: 'Birmingham',
-        amount: '£30,000',
-        rating: 5,
-      },
-    ],
-
     metaTitle: 'Merchant Cash Advance UK | Repay From Your Card Takings',
     metaDescription: 'Merchant cash advances for UK tradesmen. Get £5,000-£200,000 advanced against your card takings. Repay as a % of card sales - no fixed monthly payments. 24hr decisions.',
     keywords: ['merchant cash advance', 'business cash advance', 'card payment advance', 'merchant cash advance uk', 'tradesman cash advance', 'revenue based finance'],
@@ -1270,9 +1046,6 @@ export const productPages: Record<string, ProductPageData> = {
 
     decisionTime: '24 hours',
     decisionTimeDisplay: '24hr Decisions',
-
-    phoneNumber: PHONE_NUMBER,
-    phoneDisplay: PHONE_DISPLAY,
 
     ratesFrom: '6.9% APR',
 
@@ -1356,27 +1129,6 @@ export const productPages: Record<string, ProductPageData> = {
 
     faqs: [],
 
-    testimonials: [
-      {
-        quote: 'Won a two-year commercial contract and needed about thirty grand of extra tube and boards to service it. Finance was agreed in two days and the equipment paid for itself inside six months.',
-        name: 'Danny R.',
-        trade: 'Scaffolder',
-        business: 'DR Scaffolding Ltd',
-        location: 'Sheffield',
-        amount: '£30,000',
-        rating: 5,
-      },
-      {
-        quote: 'Financed a used crane lorry and a full set of system scaffold together. One agreement, one monthly payment, and we kept our cash for wages.',
-        name: 'Mark H.',
-        trade: 'Scaffolder',
-        business: 'Highline Access Ltd',
-        location: 'Cardiff',
-        amount: '£85,000',
-        rating: 5,
-      },
-    ],
-
     metaTitle: 'Scaffolding Finance UK | Equipment, Trucks & Business Loans',
     metaDescription: 'Finance for scaffolding businesses. Spread the cost of tube, fittings, system scaffold and trucks from £5,000 to £500,000. New and used equipment. 24hr decisions.',
     keywords: ['scaffolding finance', 'scaffold finance', 'scaffolding business loan', 'scaffolding equipment finance', 'scaffolding truck finance', 'finance for scaffolding companies'],
@@ -1390,10 +1142,6 @@ export function getProductPage(slug: string): ProductPageData | undefined {
 
 export function getAllProductSlugs(): string[] {
   return Object.keys(productPages);
-}
-
-export function getProductTestimonials(slug: string): ProductTestimonial[] {
-  return productPages[slug]?.testimonials || [];
 }
 
 export function getProductFAQs(slug: string): ProductFAQ[] {

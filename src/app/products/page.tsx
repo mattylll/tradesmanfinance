@@ -16,8 +16,6 @@ import {
   Shield,
   Clock,
   Users,
-  Star,
-  Phone,
   Zap,
 } from "lucide-react";
 
@@ -110,17 +108,16 @@ const products = [
 ];
 
 const stats = [
-  { value: "£500M+", label: "Funded to Date" },
-  { value: "15,000+", label: "Tradesmen Helped" },
+  { value: "£25k-£1m", label: "Funding Range" },
   { value: "24hrs", label: "Decision Time" },
-  { value: "4.9/5", label: "Google Rating" },
+  { value: "12-60 mths", label: "Repayment Terms" },
 ];
 
 const trustPoints = [
   { icon: Shield, text: "25+ Years Experience" },
   { icon: Clock, text: "Same Day Decisions" },
   { icon: Users, text: "Trade Specialists" },
-  { icon: Star, text: "5-Star Service" },
+  { icon: CheckCircle, text: "No Obligation" },
 ];
 
 export default function ProductsPage() {
@@ -210,17 +207,6 @@ export default function ProductsPage() {
                   </Button>
                 </motion.div>
               </Link>
-              <Button
-                size="lg"
-                variant="outline"
-                className="border-2 border-gray-600 text-white hover:bg-white/5 hover:border-[#ff6b35] font-semibold text-lg px-8 py-7 rounded-xl transition-all"
-                asChild
-              >
-                <a href="tel:08001234567">
-                  <Phone className="mr-2 h-5 w-5" />
-                  Call 0800 123 4567
-                </a>
-              </Button>
             </motion.div>
 
             {/* Trust Points */}
@@ -261,7 +247,7 @@ export default function ProductsPage() {
             whileInView="visible"
             viewport={{ once: true }}
             variants={staggerContainer}
-            className="grid grid-cols-2 md:grid-cols-4 gap-6"
+            className="grid grid-cols-1 md:grid-cols-3 gap-6"
           >
             {stats.map((stat) => (
               <motion.div
@@ -514,16 +500,6 @@ export default function ProductsPage() {
                   </Button>
                 </motion.div>
               </Link>
-              <Button
-                size="lg"
-                className="border-2 border-white bg-transparent text-white hover:bg-white hover:text-[#ff6b35] font-bold text-lg px-10 py-7 rounded-xl transition-all"
-                asChild
-              >
-                <a href="tel:08001234567">
-                  <Phone className="mr-2 h-5 w-5" />
-                  Call 0800 123 4567
-                </a>
-              </Button>
             </div>
           </motion.div>
         </div>

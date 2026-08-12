@@ -9,7 +9,6 @@ import {
   Shield,
   TrendingUp,
   Clock,
-  Star,
   Phone,
   Wrench,
   ChevronRight,
@@ -39,21 +38,15 @@ const scaleIn = {
 
 type ManufacturerPageContentProps = {
   manufacturer: any
-  stats: any
-  testimonials: any[]
   manufacturerSlug: string
-  contactPhone: string
 }
 
 export function ManufacturerPageContent({
   manufacturer,
-  stats,
-  testimonials,
   manufacturerSlug,
-  contactPhone,
 }: ManufacturerPageContentProps) {
   const [minPrice, maxPrice] = manufacturer.typical_purchase.replace('£', '').split('-')
-  const monthlyFrom = stats ? stats.avg_monthly : Math.round(parseInt(minPrice) / 24)
+  const monthlyFrom = Math.round(parseInt(minPrice) / 24)
 
   return (
     <main className="min-h-screen">
@@ -127,7 +120,7 @@ export function ManufacturerPageContent({
               className="text-xl md:text-2xl text-gray-400 mb-8 leading-relaxed"
             >
               Finance {manufacturer.name} {manufacturer.tier.toLowerCase()} tools from £{monthlyFrom}/month.
-              {stats && ` ${stats.approval_rate}% approval rate.`} Spread the cost over 12-60 months.
+              Spread the cost over 12-60 months.
             </motion.p>
 
             <motion.div
@@ -160,12 +153,11 @@ export function ManufacturerPageContent({
             {/* Stats Grid */}
             <motion.div
               variants={fadeInUp}
-              className="grid grid-cols-2 md:grid-cols-4 gap-4 max-w-3xl mx-auto"
+              className="grid grid-cols-1 md:grid-cols-3 gap-4 max-w-3xl mx-auto"
             >
               {[
                 { label: 'Typical Purchase', value: manufacturer.typical_purchase, icon: Shield },
                 { label: 'Finance From', value: `£${monthlyFrom}/mo`, icon: CheckCircle },
-                { label: 'Approval Rate', value: `${stats?.approval_rate || 89}%`, icon: Star },
                 { label: 'Decision Time', value: '60 sec', icon: Clock },
               ].map((stat, index) => (
                 <div key={stat.label} className="bg-gray-900 border border-white/10 rounded-lg p-4">
@@ -233,34 +225,6 @@ export function ManufacturerPageContent({
             ))}
           </motion.div>
 
-          {/* ROI Stats */}
-          {stats && (
-            <motion.div
-              initial="hidden"
-              whileInView="visible"
-              viewport={{ once: true }}
-              variants={fadeInUp}
-              className="mt-16 max-w-3xl mx-auto bg-[#ff6b35]/10 border border-[#ff6b35]/20 p-8 rounded-lg"
-            >
-              <h3 className="text-2xl font-bold mb-6 text-center text-white">Typical Return on Investment</h3>
-              <p className="text-center text-gray-400 mb-8">
-                Based on {stats.num_applications.toLocaleString()} applications for {manufacturer.name} equipment:
-              </p>
-              <div className="grid grid-cols-2 md:grid-cols-4 gap-6">
-                {[
-                  { label: 'Average Purchase', value: `£${stats.avg_purchase.toLocaleString()}` },
-                  { label: 'Monthly Payment', value: `£${stats.avg_monthly}` },
-                  { label: 'Average Term', value: `${stats.avg_term} months` },
-                  { label: 'Payback Period', value: `${stats.payback_jobs} jobs` },
-                ].map((stat) => (
-                  <div key={stat.label} className="text-center">
-                    <div className="font-bold text-gray-400 text-sm mb-2 uppercase tracking-wider">{stat.label}</div>
-                    <div className="text-3xl font-bold text-[#ff6b35]">{stat.value}</div>
-                  </div>
-                ))}
-              </div>
-            </motion.div>
-          )}
         </div>
       </section>
 
@@ -297,21 +261,15 @@ export function ManufacturerPageContent({
           >
             {manufacturer.trades.map((trade: string) => {
               const tradeSlug = trade.toLowerCase().replace(/ /g, '-')
-              const tradePercentage = stats?.top_trades?.[trade] || 0
 
               return (
                 <motion.div key={trade} variants={scaleIn}>
                   <Link href={`/tools/finance/${manufacturerSlug}/for-${tradeSlug}`}>
                     <div className="group bg-gray-900 border-2 border-white/5 hover:border-[#ff6b35] rounded-lg p-6 transition-all hover:shadow-lg hover:shadow-[#ff6b35]/20 h-full">
-                      <div className="flex justify-between items-start mb-4">
+                      <div className="mb-4">
                         <h3 className="text-xl font-bold capitalize text-white group-hover:text-[#ff6b35] transition-colors">
                           For {trade}s
                         </h3>
-                        {tradePercentage > 0 && (
-                          <span className="bg-[#ff6b35]/10 text-[#ff6b35] px-3 py-1 rounded-full text-sm font-semibold border border-[#ff6b35]/20">
-                            {tradePercentage}%
-                          </span>
-                        )}
                       </div>
                       <p className="text-gray-400 mb-4">
                         Popular {manufacturer.name} products for {trade}s
@@ -400,56 +358,6 @@ export function ManufacturerPageContent({
         </div>
       </section>
 
-      {/* === TESTIMONIALS SECTION === */}
-      {testimonials.length > 0 && (
-        <section className="relative py-20 bg-gray-950">
-          <div className="container mx-auto px-4">
-            <motion.div
-              initial="hidden"
-              whileInView="visible"
-              viewport={{ once: true }}
-              variants={staggerContainer}
-              className="text-center mb-12"
-            >
-              <motion.h2
-                variants={fadeInUp}
-                className="text-3xl md:text-5xl font-bold text-white mb-4"
-              >
-                Tradespeople Financing <span className="text-[#ff6b35]">{manufacturer.name}</span>
-              </motion.h2>
-            </motion.div>
-
-            <motion.div
-              initial="hidden"
-              whileInView="visible"
-              viewport={{ once: true }}
-              variants={staggerContainer}
-              className="grid grid-cols-1 md:grid-cols-3 gap-8 max-w-5xl mx-auto"
-            >
-              {testimonials.map((testimonial: any) => (
-                <motion.div key={testimonial.id} variants={scaleIn}>
-                  <div className="bg-gray-900 border border-white/10 rounded-lg p-6 h-full">
-                    <div className="flex gap-1 mb-4">
-                      {[...Array(5)].map((_, i) => (
-                        <Star key={i} className="h-5 w-5 text-[#ffd93d] fill-[#ffd93d]" />
-                      ))}
-                    </div>
-                    <blockquote className="text-gray-300 mb-6 leading-relaxed italic">
-                      &ldquo;{testimonial.text}&rdquo;
-                    </blockquote>
-                    <div>
-                      <div className="font-bold text-white">{testimonial.author}</div>
-                      <div className="text-sm text-gray-400 capitalize">{testimonial.trade} • {testimonial.location}</div>
-                      <div className="text-sm text-[#ff6b35] mt-1">Financed: {manufacturer.name} {testimonial.product}</div>
-                    </div>
-                  </div>
-                </motion.div>
-              ))}
-            </motion.div>
-          </div>
-        </section>
-      )}
-
       {/* === FAQ SECTION === */}
       <section className="relative py-20 bg-gray-900">
         <div className="container mx-auto px-4 max-w-3xl">
@@ -478,8 +386,8 @@ export function ManufacturerPageContent({
                 answer: `We offer finance from £500 to £50,000 for ${manufacturer.name} equipment. Most ${manufacturer.name} purchases fall between ${manufacturer.typical_purchase}, which works out at £${monthlyFrom}-£${maxPrice && Math.round(parseInt(maxPrice) / 24)}/month over 24 months.`,
               },
               {
-                question: `What's the typical approval rate for ${manufacturer.name} finance?`,
-                answer: `Based on our data, ${stats?.approval_rate || 89}% of applications for ${manufacturer.name} tools are approved. We work with multiple lenders to find the best rate for your circumstances.`,
+                question: `Which lenders do you work with for ${manufacturer.name} finance?`,
+                answer: `We work with a panel of specialist asset and equipment finance lenders, and match your application to the ones whose criteria best fit your circumstances.`,
               },
               {
                 question: `Is ${manufacturer.name} finance tax deductible?`,
@@ -524,9 +432,9 @@ export function ManufacturerPageContent({
               Ready to Finance Your {manufacturer.name} Equipment?
             </h2>
             <p className="text-xl text-white/90 mb-10 max-w-2xl mx-auto">
-              Apply in 60 seconds. {stats?.approval_rate || 89}% approval rate. Finance from £{monthlyFrom}/month.
+              Apply in 60 seconds. Finance from £{monthlyFrom}/month.
             </p>
-            <div className="flex flex-col sm:flex-row gap-4 justify-center">
+            <div className="flex justify-center">
               <Button
                 asChild
                 size="lg"
@@ -536,17 +444,6 @@ export function ManufacturerPageContent({
                   Apply Now
                   <ArrowRight className="ml-2 w-5 h-5" />
                 </Link>
-              </Button>
-              <Button
-                asChild
-                size="lg"
-                variant="outline"
-                className="border-2 border-white/80 bg-white/10 text-white hover:bg-white/20 h-14 px-10 text-lg font-bold backdrop-blur-sm"
-              >
-                <a href={`tel:${contactPhone}`}>
-                  <Phone className="mr-2 w-5 h-5" />
-                  Call {contactPhone}
-                </a>
               </Button>
             </div>
           </motion.div>

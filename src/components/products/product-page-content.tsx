@@ -15,10 +15,7 @@ import {
   Percent,
   Zap,
   TrendingUp,
-  Star,
-  Quote,
   ChevronDown,
-  Phone,
   Check,
   X,
   Users,
@@ -284,18 +281,6 @@ export function ProductPageContent({ productSlug }: ProductPageContentProps) {
                     </Button>
                   </motion.div>
                 </Link>
-                <Button
-                  size="lg"
-                  variant="outline"
-                  className="border-2 border-gray-600 text-white hover:bg-white/5 font-semibold text-lg px-8 py-7 rounded-xl transition-all"
-                  style={{ '--hover-border-color': product.accentColor } as React.CSSProperties}
-                  asChild
-                >
-                  <a href={`tel:${product.phoneNumber.replace(/\s/g, '')}`}>
-                    <Phone className="mr-2 h-5 w-5" />
-                    {product.phoneDisplay}
-                  </a>
-                </Button>
               </motion.div>
 
               {/* Trust signals */}
@@ -306,7 +291,6 @@ export function ProductPageContent({ productSlug }: ProductPageContentProps) {
                 {[
                   { text: product.decisionTimeDisplay, icon: Clock },
                   { text: `${product.minDeposit} Min Deposit`, icon: Shield },
-                  { text: "4.9/5 on Google", icon: Star, special: true },
                 ].map((item, index) => (
                   <motion.div
                     key={item.text}
@@ -315,7 +299,7 @@ export function ProductPageContent({ productSlug }: ProductPageContentProps) {
                     transition={{ duration: 0.3, delay: 0.8 + index * 0.1 }}
                     className="flex items-center gap-2"
                   >
-                    <item.icon className={`h-5 w-5 ${item.special ? 'text-[#ffd93d] fill-[#ffd93d]' : ''}`} style={{ color: item.special ? undefined : product.accentColor }} />
+                    <item.icon className="h-5 w-5" style={{ color: product.accentColor }} />
                     <span>{item.text}</span>
                   </motion.div>
                 ))}
@@ -593,83 +577,6 @@ export function ProductPageContent({ productSlug }: ProductPageContentProps) {
         </div>
       </section>
 
-      {/* Testimonials Section - Dark with accent gradient */}
-      <section className="relative py-20 overflow-hidden">
-        <div className="absolute inset-0 bg-gradient-to-br from-gray-950 via-gray-900 to-gray-950" />
-
-        {/* Subtle accent gradient */}
-        <div
-          className="absolute inset-0 opacity-[0.05]"
-          style={{
-            background: `radial-gradient(ellipse at 50% 0%, ${product.accentColor} 0%, transparent 50%)`,
-          }}
-        />
-
-        <div className="container mx-auto px-4 relative z-10">
-          <motion.div
-            initial="hidden"
-            whileInView="visible"
-            viewport={{ once: true, margin: "-100px" }}
-            variants={staggerContainer}
-            className="text-center mb-12"
-          >
-            <motion.h2
-              variants={fadeInUp}
-              className="text-3xl md:text-4xl font-bold text-white mb-4"
-              style={{ fontFamily: 'var(--font-industrial)' }}
-            >
-              What Tradesmen <span style={{ color: product.accentColor }}>Say About Us</span>
-            </motion.h2>
-            <motion.div variants={fadeInUp} className="flex items-center justify-center gap-2 text-gray-400">
-              <Star className="h-5 w-5 text-[#ffd93d] fill-[#ffd93d]" />
-              <span>4.9/5 from 500+ reviews on Google</span>
-            </motion.div>
-          </motion.div>
-
-          <motion.div
-            initial="hidden"
-            whileInView="visible"
-            viewport={{ once: true, margin: "-100px" }}
-            variants={staggerContainer}
-            className="grid md:grid-cols-2 lg:grid-cols-3 gap-8"
-          >
-            {product.testimonials.map((testimonial, index) => (
-              <motion.div
-                key={index}
-                variants={fadeInUp}
-                whileHover={{ y: -5 }}
-              >
-                <div className="h-full bg-gray-900/50 backdrop-blur-sm rounded-2xl border border-gray-800/50 p-6 hover:border-gray-700 transition-all">
-                  <div className="flex gap-1 mb-4">
-                    {[...Array(testimonial.rating)].map((_, i) => (
-                      <Star key={i} className="h-4 w-4 text-[#ffd93d] fill-[#ffd93d]" />
-                    ))}
-                  </div>
-
-                  <Quote className="h-8 w-8 text-gray-700 mb-2" />
-
-                  <p className="text-gray-300 mb-6 leading-relaxed">
-                    "{testimonial.quote}"
-                  </p>
-
-                  <div className="pt-4 border-t border-gray-800/50">
-                    <p className="font-bold text-white">{testimonial.name}</p>
-                    <p className="text-gray-500 text-sm">{testimonial.trade} • {testimonial.location}</p>
-                    <p className="text-gray-500 text-sm">{testimonial.business}</p>
-                    <Badge
-                      className="mt-2 border-none text-white"
-                      style={{ backgroundColor: product.accentColor }}
-                    >
-                      Financed {testimonial.amount}
-                    </Badge>
-                  </div>
-                </div>
-              </motion.div>
-            ))}
-          </motion.div>
-        </div>
-      </section>
-
       {/* Long-form guide section - SERP-calibrated content */}
       {longForm && (
         <section className="relative py-20 overflow-hidden">
@@ -887,7 +794,7 @@ export function ProductPageContent({ productSlug }: ProductPageContentProps) {
             <p className="text-xl opacity-90 mb-8">
               Apply today for {product.name.toLowerCase()} with {product.decisionTimeDisplay.toLowerCase()}.
             </p>
-            <div className="flex flex-wrap justify-center gap-4">
+            <div className="flex justify-center">
               <Link href="/contact">
                 <motion.div whileHover={{ scale: 1.02, y: -2 }} whileTap={{ scale: 0.98 }}>
                   <Button
@@ -900,17 +807,6 @@ export function ProductPageContent({ productSlug }: ProductPageContentProps) {
                   </Button>
                 </motion.div>
               </Link>
-              <Button
-                size="lg"
-                className="border-2 border-white bg-transparent text-white hover:bg-white font-bold text-lg px-10 py-7 rounded-xl transition-all"
-                style={{ '--hover-color': product.accentColor } as React.CSSProperties}
-                asChild
-              >
-                <a href={`tel:${product.phoneNumber.replace(/\s/g, '')}`}>
-                  <Phone className="mr-2 h-5 w-5" />
-                  Call {product.phoneDisplay}
-                </a>
-              </Button>
             </div>
           </motion.div>
         </div>

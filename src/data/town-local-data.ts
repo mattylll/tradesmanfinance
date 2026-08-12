@@ -6,7 +6,6 @@
  * - Local economy and employers
  * - Notable areas and developments
  * - Town-specific context
- * - Local testimonials
  * - Unique FAQs
  */
 
@@ -57,15 +56,6 @@ export interface TownLocalData {
     question: string;
     answer: string;
   }>;
-
-  // Local testimonial
-  testimonial?: {
-    quote: string;
-    name: string;
-    trade: string;
-    business: string;
-    amount?: string;
-  };
 
   // Coordinates for maps
   coordinates: {
@@ -133,13 +123,6 @@ export const townLocalData: Record<string, TownLocalData> = {
         answer: 'Yes, we serve tradesmen throughout the St Albans area including Harpenden, Wheathampstead, London Colney, Park Street, and all surrounding villages.',
       },
     ],
-    testimonial: {
-      quote: 'The period properties in St Albans need specialist equipment. Financed a complete heritage restoration kit - lime mortar mixer, pointing tools, the lot. Paid for itself on the first big job.',
-      name: 'Mark H.',
-      trade: 'Builder',
-      business: 'Heritage Builders St Albans',
-      amount: '£18,500',
-    },
     coordinates: { lat: 51.7531, lng: -0.3390 },
   },
 
@@ -187,13 +170,6 @@ export const townLocalData: Record<string, TownLocalData> = {
         answer: 'Absolutely. With Warner Bros. Studios nearby, we\'ve financed specialist equipment for tradesmen working in the film industry, from portable power tools to specialist lighting rigs.',
       },
     ],
-    testimonial: {
-      quote: 'Work on the retail units keeps me busy year-round. Financed a proper commercial fit-out kit - it\'s made jobs so much faster.',
-      name: 'Steve R.',
-      trade: 'Electrician',
-      business: 'SR Electrical Services',
-      amount: '£22,000',
-    },
     coordinates: { lat: 51.6565, lng: -0.3903 },
   },
 
@@ -237,13 +213,6 @@ export const townLocalData: Record<string, TownLocalData> = {
         answer: 'Yes, we finance industrial and commercial equipment for tradesmen working in Hemel\'s many warehouses and distribution centres.',
       },
     ],
-    testimonial: {
-      quote: 'The warehouse work in Maylands keeps my team busy. Financed cherry pickers and industrial tools - essential for the big units.',
-      name: 'Paul K.',
-      trade: 'Electrician',
-      business: 'PK Industrial Electrics',
-      amount: '£35,000',
-    },
     coordinates: { lat: 51.7526, lng: -0.4692 },
   },
 
@@ -290,13 +259,6 @@ export const townLocalData: Record<string, TownLocalData> = {
         answer: 'Absolutely. The Chelmsford Garden Community alone will create 10,000 new homes over the coming years, creating sustained demand for all trades.',
       },
     ],
-    testimonial: {
-      quote: 'Chelmsford\'s booming. Between the new builds and the city centre work, I needed to expand. Van finance and new tools sorted in a week.',
-      name: 'Danny T.',
-      trade: 'Plumber',
-      business: 'DT Plumbing Solutions',
-      amount: '£28,000',
-    },
     coordinates: { lat: 51.7356, lng: 0.4685 },
   },
 
@@ -340,13 +302,6 @@ export const townLocalData: Record<string, TownLocalData> = {
         answer: 'Yes, Colchester\'s Roman and medieval buildings need specialist care. We finance heritage tools and equipment for sensitive restoration work.',
       },
     ],
-    testimonial: {
-      quote: 'Working on listed buildings needs the right kit. Financed proper heritage tools - clients really appreciate the quality.',
-      name: 'Mike S.',
-      trade: 'Builder',
-      business: 'Colchester Heritage Builders',
-      amount: '£24,000',
-    },
     coordinates: { lat: 51.8891, lng: 0.9039 },
   },
 
@@ -397,13 +352,6 @@ export const townLocalData: Record<string, TownLocalData> = {
         answer: 'London projects often require larger investments. We offer finance up to £1 million for equipment, vehicles, and working capital.',
       },
     ],
-    testimonial: {
-      quote: 'London clients expect the best kit. Financed a complete Hilti setup - it\'s made a real difference to the quality of work.',
-      name: 'James K.',
-      trade: 'Builder',
-      business: 'JK Construction London',
-      amount: '£45,000',
-    },
     coordinates: { lat: 51.5074, lng: -0.1278 },
   },
 
@@ -450,13 +398,6 @@ export const townLocalData: Record<string, TownLocalData> = {
         answer: 'Excellent. Manchester\'s construction boom means strong demand across all trades. The city centre alone has multiple major developments ongoing.',
       },
     ],
-    testimonial: {
-      quote: 'Manchester\'s on fire for construction work. Financed a new van and full tool upgrade - best decision I\'ve made.',
-      name: 'Ryan M.',
-      trade: 'Electrician',
-      business: 'RM Electrical Manchester',
-      amount: '£32,000',
-    },
     coordinates: { lat: 53.4808, lng: -2.2426 },
   },
 
@@ -503,13 +444,6 @@ export const townLocalData: Record<string, TownLocalData> = {
         answer: 'Leeds offers diverse work - commercial fit-outs in the city centre, Victorian renovations in suburbs like Chapel Allerton and Headingley, plus major regeneration projects.',
       },
     ],
-    testimonial: {
-      quote: 'The office fit-out work in Leeds is constant. Financed commercial-grade kit and it\'s transformed my business.',
-      name: 'Chris B.',
-      trade: 'Electrician',
-      business: 'CB Commercial Electrics',
-      amount: '£28,000',
-    },
     coordinates: { lat: 53.8008, lng: -1.5491 },
   },
 
@@ -600,13 +534,6 @@ export const townLocalData: Record<string, TownLocalData> = {
         answer: 'Yes, we regularly finance commercial-grade equipment for Birmingham tradesmen working on retail, office, and industrial projects.',
       },
     ],
-    testimonial: {
-      quote: 'Birmingham\'s got everything - commercial, residential, industrial. Financed a new van and full tool setup. Best investment I\'ve made.',
-      name: 'Dave W.',
-      trade: 'Electrician',
-      business: 'DW Electrical Birmingham',
-      amount: '£38,000',
-    },
     coordinates: { lat: 52.4862, lng: -1.8904 },
   },
 
@@ -652,13 +579,6 @@ export const townLocalData: Record<string, TownLocalData> = {
         answer: 'Sheffield offers diverse work - Victorian house renovations, student accommodation upgrades, healthcare facility maintenance, and advanced manufacturing installations.',
       },
     ],
-    testimonial: {
-      quote: 'Sheffield\'s got the best of both worlds - Victorian terraces and modern tech. Financed specialist tools and my van. Couldn\'t do what I do without them.',
-      name: 'Pete T.',
-      trade: 'Plumber',
-      business: 'PT Plumbing Sheffield',
-      amount: '£26,000',
-    },
     coordinates: { lat: 53.3811, lng: -1.4701 },
   },
 
@@ -704,13 +624,6 @@ export const townLocalData: Record<string, TownLocalData> = {
         answer: 'Yes, Newcastle offers strong demand. The city\'s historic properties need maintenance while regeneration projects create new work. The tech sector is also growing.',
       },
     ],
-    testimonial: {
-      quote: 'Newcastle\'s heritage properties are stunning to work on. Financed proper restoration tools - the clients notice the difference.',
-      name: 'Alan D.',
-      trade: 'Builder',
-      business: 'AD Heritage Construction',
-      amount: '£22,000',
-    },
     coordinates: { lat: 54.9783, lng: -1.6178 },
   },
 
@@ -756,13 +669,6 @@ export const townLocalData: Record<string, TownLocalData> = {
         answer: 'Liverpool offers heritage restoration work, major development projects like Liverpool Waters and the new Everton stadium, plus strong residential and hospitality demand.',
       },
     ],
-    testimonial: {
-      quote: 'Liverpool\'s World Heritage buildings need proper care. Invested in specialist tools - the heritage work just keeps coming.',
-      name: 'Tony M.',
-      trade: 'Builder',
-      business: 'TM Heritage Liverpool',
-      amount: '£31,000',
-    },
     coordinates: { lat: 53.4084, lng: -2.9916 },
   },
 
@@ -808,13 +714,6 @@ export const townLocalData: Record<string, TownLocalData> = {
         answer: 'Excellent. Bristol\'s affluent population and strong commercial sector mean premium rates for quality work. The city\'s growth shows no signs of slowing.',
       },
     ],
-    testimonial: {
-      quote: 'Bristol clients want the best. Invested in premium tools and a smart van setup - it\'s paid for itself many times over.',
-      name: 'Simon K.',
-      trade: 'Electrician',
-      business: 'SK Electrical Bristol',
-      amount: '£42,000',
-    },
     coordinates: { lat: 51.4545, lng: -2.5879 },
   },
 
@@ -860,13 +759,6 @@ export const townLocalData: Record<string, TownLocalData> = {
         answer: 'Cardiff offers diverse work - government and commercial buildings, media facilities, city centre apartments, and suburban residential. The capital status brings unique opportunities.',
       },
     ],
-    testimonial: {
-      quote: 'Cardiff\'s growing fast. Government work, commercial, residential - it\'s all here. Financed my tools and van to keep up with demand.',
-      name: 'Dai J.',
-      trade: 'Plumber',
-      business: 'DJ Plumbing Cardiff',
-      amount: '£24,000',
-    },
     coordinates: { lat: 51.4816, lng: -3.1791 },
   },
 
@@ -912,13 +804,6 @@ export const townLocalData: Record<string, TownLocalData> = {
         answer: 'Edinburgh has higher costs but also higher rates. Quality tradesmen can charge premium prices here, making it one of Scotland\'s most rewarding markets.',
       },
     ],
-    testimonial: {
-      quote: 'Edinburgh clients expect excellence. Invested in the best tools - the Georgian properties here deserve proper care.',
-      name: 'Angus M.',
-      trade: 'Builder',
-      business: 'AM Heritage Edinburgh',
-      amount: '£35,000',
-    },
     coordinates: { lat: 55.9533, lng: -3.1883 },
   },
 
@@ -964,13 +849,6 @@ export const townLocalData: Record<string, TownLocalData> = {
         answer: 'Glasgow offers everything - tenement flat renovations, commercial office fit-outs, healthcare facilities, and major regeneration projects. It\'s Scotland\'s most diverse market.',
       },
     ],
-    testimonial: {
-      quote: 'Glasgow\'s got more work than you can handle. Financed a full kit upgrade - the tenement work alone keeps me busy year-round.',
-      name: 'Rab S.',
-      trade: 'Plumber',
-      business: 'RS Plumbing Glasgow',
-      amount: '£28,000',
-    },
     coordinates: { lat: 55.8642, lng: -4.2518 },
   },
 
@@ -1016,13 +894,6 @@ export const townLocalData: Record<string, TownLocalData> = {
         answer: 'Yes, Canterbury\'s listed buildings and conservation area mean specialist tools are essential. We finance heritage-appropriate equipment for local tradesmen.',
       },
     ],
-    testimonial: {
-      quote: 'Canterbury\'s heritage properties need the right touch. Invested in proper lime mortar equipment - the cathedral\'s conservation team recommended me.',
-      name: 'Keith P.',
-      trade: 'Builder',
-      business: 'Canterbury Heritage Build',
-      amount: '£19,000',
-    },
     coordinates: { lat: 51.2802, lng: 1.0789 },
   },
 
@@ -1110,13 +981,6 @@ export const townLocalData: Record<string, TownLocalData> = {
         answer: 'Excellent for quality-focused tradesmen. Guildford\'s affluent population pays premium rates for reliable, professional service.',
       },
     ],
-    testimonial: {
-      quote: 'Guildford clients expect top quality. Invested in the best tools and a professional van setup - it\'s essential in this market.',
-      name: 'Martin R.',
-      trade: 'Electrician',
-      business: 'MR Electrical Surrey',
-      amount: '£36,000',
-    },
     coordinates: { lat: 51.2362, lng: -0.5704 },
   },
 };

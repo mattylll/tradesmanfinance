@@ -7,7 +7,6 @@ import {
   generateBreadcrumbSchema,
   generateLoanOfferSchema,
   generateFAQSchema,
-  generateRatingSchema,
 } from '@/lib/schema-generator';
 import { TradePageContent } from './trade-page-content';
 
@@ -105,11 +104,6 @@ export default async function TradePage({
     }),
     // Financial product/loan offer
     generateLoanOfferSchema({
-      tradeName: trade.name,
-      canonicalUrl: pageUrl,
-    }),
-    // Aggregate rating
-    generateRatingSchema({
       tradeName: trade.name,
       canonicalUrl: pageUrl,
     }),

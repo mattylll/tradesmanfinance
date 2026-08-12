@@ -118,6 +118,7 @@ export function QuickQuoteForm({
 }: QuickQuoteFormProps) {
   const [isSubmitting, setIsSubmitting] = useState(false);
   const [isSuccess, setIsSuccess] = useState(false);
+  const [submitError, setSubmitError] = useState<string | null>(null);
 
   // Convex mutation - stores lead in database (returns null if Convex not configured)
   const createLead = useSafeMutation(api.leads.createLead);
@@ -208,9 +209,13 @@ export function QuickQuoteForm({
       }
 
       setIsSuccess(true);
+      setSubmitError(null);
       reset();
     } catch (err) {
       console.error("Form submission error:", err);
+      setSubmitError(
+        "Sorry, something went wrong sending your request. Please try again, or email us instead."
+      );
     } finally {
       setIsSubmitting(false);
     }
@@ -298,6 +303,9 @@ export function QuickQuoteForm({
                 </>
               )}
             </Button>
+            {submitError && (
+              <p className="text-sm text-red-600">{submitError}</p>
+            )}
           </form>
         </CardContent>
       </Card>
@@ -413,6 +421,10 @@ export function QuickQuoteForm({
               </>
             )}
           </Button>
+
+          {submitError && (
+            <p className="text-sm text-center text-red-600">{submitError}</p>
+          )}
 
           <p className="text-xs text-center text-[#6b7280]">
             By submitting, you agree to our{" "}

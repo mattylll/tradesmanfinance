@@ -12,7 +12,6 @@ import {
   Clock,
   Shield,
   Zap,
-  Phone,
   Sparkles,
   ChevronDown,
   Banknote,
@@ -481,16 +480,6 @@ export default function EquipmentFinanceCalculatorPage() {
                   </Button>
                 </motion.div>
               </Link>
-              <Button
-                size="lg"
-                className="border-2 border-white bg-transparent text-white hover:bg-white hover:text-[#0ea5a5] font-bold text-lg px-8 py-6 rounded-xl transition-all"
-                asChild
-              >
-                <a href="tel:08000869015">
-                  <Phone className="mr-2 h-5 w-5" />
-                  0800 086 9015
-                </a>
-              </Button>
             </div>
           </motion.div>
         </div>

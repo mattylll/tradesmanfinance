@@ -5,7 +5,7 @@ import { notFound } from 'next/navigation';
 import { Badge } from '@/registry/new-york-v4/ui/badge';
 import { Card, CardContent, CardHeader, CardTitle } from '@/registry/new-york-v4/ui/card';
 import { Button } from '@/registry/new-york-v4/ui/button';
-import { ArrowRight, CheckCircle, Wrench, Phone, Clock, Calendar, CreditCard } from 'lucide-react';
+import { ArrowRight, CheckCircle, Wrench, Clock, Calendar, CreditCard } from 'lucide-react';
 import { equipmentBrands } from '@/data/equipment';
 import { trades } from '@/data/trades';
 import { motion } from 'framer-motion';
@@ -152,17 +152,6 @@ export default function EquipmentBrandPage({
                   <ArrowRight className="ml-2 h-5 w-5" />
                 </Button>
               </Link>
-              <Button
-                size="lg"
-                variant="outline"
-                className="border-gray-600 text-white hover:bg-gray-800"
-                asChild
-              >
-                <a href="tel:08001234567">
-                  <Phone className="mr-2 h-5 w-5" />
-                  0800 123 4567
-                </a>
-              </Button>
             </motion.div>
           </motion.div>
         </div>

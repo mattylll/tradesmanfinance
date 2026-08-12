@@ -1,6 +1,6 @@
 /**
  * Enhanced Trade Data for TradesmanFinance.co.uk
- * Includes FAQs, equipment categories, testimonials, and statistics for SEO
+ * Includes FAQs, equipment categories, and statistics for SEO
  */
 
 export interface EquipmentCategory {
@@ -15,18 +15,8 @@ export interface FAQ {
   answer: string;
 }
 
-export interface Testimonial {
-  quote: string;
-  name: string;
-  business: string;
-  location: string;
-  loanAmount: string;
-  rating: number;
-}
-
 export interface TradeStatistics {
   avgLoanAmount: number;
-  approvalRate: string;
   processingTime: string;
   activeTradesmen: string;
   avgTermMonths: number;
@@ -45,7 +35,6 @@ export interface Trade {
   equipmentCategories: EquipmentCategory[];
   certifications: string[];
   faqs: FAQ[];
-  testimonials: Testimonial[];
   statistics: TradeStatistics;
   relatedTrades: string[];
 }
@@ -110,27 +99,8 @@ export const trades: Trade[] = [
         answer: "We work with electricians across all credit profiles. While better credit scores may access lower rates, we have options for those with poor credit history, CCJs, or limited trading history."
       }
     ],
-    testimonials: [
-      {
-        quote: "Needed to upgrade all my test equipment for the 18th Edition requirements. Got approved in 4 hours and had the money in my account the next day. Brilliant service.",
-        name: "Dave M.",
-        business: "DM Electrical Services",
-        location: "Manchester",
-        loanAmount: "£8,500",
-        rating: 5
-      },
-      {
-        quote: "Financed my first van through Tradesman Finance when I went self-employed. They understood my situation as a new business and found me a great deal.",
-        name: "James K.",
-        business: "JK Electrical",
-        location: "Birmingham",
-        loanAmount: "£22,000",
-        rating: 5
-      }
-    ],
     statistics: {
       avgLoanAmount: 35000,
-      approvalRate: "92%",
       processingTime: "4 hours",
       activeTradesmen: "45,000+",
       avgTermMonths: 36
@@ -192,27 +162,8 @@ export const trades: Trade[] = [
         answer: "Absolutely. Rothenberger, REMS, and other professional press fitting systems are commonly financed. We can include batteries, jaws, and carrying cases in the same agreement."
       }
     ],
-    testimonials: [
-      {
-        quote: "The drain camera I financed has already paid for itself three times over. Should have done it years ago!",
-        name: "Paul T.",
-        business: "PT Plumbing Solutions",
-        location: "Leeds",
-        loanAmount: "£4,200",
-        rating: 5
-      },
-      {
-        quote: "Upgraded my whole van setup - Rothenberger press fittings, new racking, the lot. Monthly payments are less than I expected.",
-        name: "Mike S.",
-        business: "Swift Plumbing",
-        location: "Bristol",
-        loanAmount: "£12,000",
-        rating: 5
-      }
-    ],
     statistics: {
       avgLoanAmount: 32000,
-      approvalRate: "91%",
       processingTime: "4 hours",
       activeTradesmen: "38,000+",
       avgTermMonths: 36
@@ -274,27 +225,8 @@ export const trades: Trade[] = [
         answer: "We understand construction timelines. Most equipment finance applications get a decision same-day, and we can often release funds within 24-48 hours for urgent requirements."
       }
     ],
-    testimonials: [
-      {
-        quote: "Financed a 3-tonne Kubota excavator that's transformed my business. Taking on jobs I had to turn down before.",
-        name: "Steve R.",
-        business: "SR Building & Construction",
-        location: "London",
-        loanAmount: "£35,000",
-        rating: 5
-      },
-      {
-        quote: "Got £50k working capital to take on a commercial extension. The process was straightforward and the team really understood construction.",
-        name: "Tony B.",
-        business: "TB Construction Ltd",
-        location: "Manchester",
-        loanAmount: "£50,000",
-        rating: 5
-      }
-    ],
     statistics: {
       avgLoanAmount: 35000,
-      approvalRate: "89%",
       processingTime: "Same day",
       activeTradesmen: "65,000+",
       avgTermMonths: 48
@@ -356,27 +288,8 @@ export const trades: Trade[] = [
         answer: "We do finance quality used machinery, typically up to 7 years old. The equipment needs to be in good working condition and sourced from reputable dealers."
       }
     ],
-    testimonials: [
-      {
-        quote: "The Festool track saw system I financed has made site work so much cleaner and faster. Best investment I've made.",
-        name: "Chris W.",
-        business: "CW Carpentry",
-        location: "Oxford",
-        loanAmount: "£3,500",
-        rating: 5
-      },
-      {
-        quote: "Took the plunge on a CNC router. Scary amount of money but the finance made it manageable. Now producing work I never could before.",
-        name: "Alan D.",
-        business: "Precision Joinery Ltd",
-        location: "Sheffield",
-        loanAmount: "£45,000",
-        rating: 5
-      }
-    ],
     statistics: {
       avgLoanAmount: 38000,
-      approvalRate: "90%",
       processingTime: "4 hours",
       activeTradesmen: "28,000+",
       avgTermMonths: 36
@@ -438,27 +351,8 @@ export const trades: Trade[] = [
         answer: "Absolutely. With the growth in heat pumps and renewable heating, we're seeing more engineers finance specialist tools for installation and maintenance of these systems."
       }
     ],
-    testimonials: [
-      {
-        quote: "Financed a Kamco power flush machine and it's booked solid. Paid for itself in the first few months.",
-        name: "Gary H.",
-        business: "GH Heating Services",
-        location: "Newcastle",
-        loanAmount: "£3,800",
-        rating: 5
-      },
-      {
-        quote: "Upgraded to a new Testo flue gas analyzer and a fully kitted van. Monthly payment is very manageable.",
-        name: "Rob C.",
-        business: "RC Plumbing & Heating",
-        location: "Glasgow",
-        loanAmount: "£28,000",
-        rating: 5
-      }
-    ],
     statistics: {
       avgLoanAmount: 32000,
-      approvalRate: "93%",
       processingTime: "4 hours",
       activeTradesmen: "32,000+",
       avgTermMonths: 36
@@ -520,27 +414,8 @@ export const trades: Trade[] = [
         answer: "We work with roofers across all credit profiles. While better credit may access lower rates, we have options for those with adverse credit history."
       }
     ],
-    testimonials: [
-      {
-        quote: "Finally invested in proper scaffolding instead of renting. The finance payments are less than I was spending on hire!",
-        name: "Kevin M.",
-        business: "KM Roofing",
-        location: "Liverpool",
-        loanAmount: "£18,000",
-        rating: 5
-      },
-      {
-        quote: "The tile elevator has transformed big jobs. My lads aren't knackered by lunchtime anymore!",
-        name: "Pete S.",
-        business: "PS Roofing Contractors",
-        location: "Cardiff",
-        loanAmount: "£8,500",
-        rating: 5
-      }
-    ],
     statistics: {
       avgLoanAmount: 42000,
-      approvalRate: "90%",
       processingTime: "4 hours",
       activeTradesmen: "22,000+",
       avgTermMonths: 42
@@ -602,27 +477,8 @@ export const trades: Trade[] = [
         answer: "We understand landscaping can be seasonal. We can discuss payment structures that account for busier and quieter periods."
       }
     ],
-    testimonials: [
-      {
-        quote: "Went from hiring a mini digger every job to owning my own Kubota. Game changer for my business.",
-        name: "Dan L.",
-        business: "DL Landscapes",
-        location: "Surrey",
-        loanAmount: "£28,000",
-        rating: 5
-      },
-      {
-        quote: "Financed a Husqvarna rider and chipper together. The monthly payments are easily covered by one new maintenance contract.",
-        name: "Mark T.",
-        business: "Green Team Landscaping",
-        location: "Edinburgh",
-        loanAmount: "£15,000",
-        rating: 5
-      }
-    ],
     statistics: {
       avgLoanAmount: 25000,
-      approvalRate: "91%",
       processingTime: "4 hours",
       activeTradesmen: "35,000+",
       avgTermMonths: 42
@@ -684,27 +540,8 @@ export const trades: Trade[] = [
         answer: "Yes, we work with self-employed bricklayers regularly. We'll typically need 6+ months of trading history and bank statements to support your application."
       }
     ],
-    testimonials: [
-      {
-        quote: "The brick saw I financed is so much faster than the old one. Cleaner cuts mean happier customers.",
-        name: "Phil W.",
-        business: "PW Brickwork",
-        location: "Nottingham",
-        loanAmount: "£2,800",
-        rating: 5
-      },
-      {
-        quote: "Bought my own scaffold set instead of renting. Already saved money after just 6 months.",
-        name: "John C.",
-        business: "JC Masonry",
-        location: "York",
-        loanAmount: "£12,000",
-        rating: 5
-      }
-    ],
     statistics: {
       avgLoanAmount: 35000,
-      approvalRate: "90%",
       processingTime: "4 hours",
       activeTradesmen: "18,000+",
       avgTermMonths: 36
@@ -762,19 +599,8 @@ export const trades: Trade[] = [
         answer: "Depending on your circumstances, you may not need any deposit. For those with limited credit history, a 10-20% deposit may be requested."
       }
     ],
-    testimonials: [
-      {
-        quote: "The PFT machine was a big investment but it's halved my time on larger jobs. Finance made it possible.",
-        name: "Lee R.",
-        business: "LR Plastering",
-        location: "Derby",
-        loanAmount: "£18,000",
-        rating: 5
-      }
-    ],
     statistics: {
       avgLoanAmount: 30000,
-      approvalRate: "91%",
       processingTime: "4 hours",
       activeTradesmen: "15,000+",
       avgTermMonths: 30
@@ -832,19 +658,8 @@ export const trades: Trade[] = [
         answer: "Our minimum is £1,000, but for smaller amounts, we can combine multiple items into a single finance agreement."
       }
     ],
-    testimonials: [
-      {
-        quote: "Upgraded from a cheap saw to a proper Rubi. The difference in cut quality and speed is night and day.",
-        name: "Tom K.",
-        business: "TK Tiling",
-        location: "Brighton",
-        loanAmount: "£2,200",
-        rating: 5
-      }
-    ],
     statistics: {
       avgLoanAmount: 28000,
-      approvalRate: "92%",
       processingTime: "4 hours",
       activeTradesmen: "12,000+",
       avgTermMonths: 24
@@ -902,19 +717,8 @@ export const trades: Trade[] = [
         answer: "Spray equipment can significantly increase your speed on larger jobs. Even for newer decorators, the productivity gains often justify the investment."
       }
     ],
-    testimonials: [
-      {
-        quote: "The Graco sprayer opened up commercial work I couldn't touch before. Best money I've spent on my business.",
-        name: "Andy M.",
-        business: "AM Decorating",
-        location: "Chester",
-        loanAmount: "£4,500",
-        rating: 5
-      }
-    ],
     statistics: {
       avgLoanAmount: 28000,
-      approvalRate: "92%",
       processingTime: "4 hours",
       activeTradesmen: "25,000+",
       avgTermMonths: 30
@@ -976,27 +780,8 @@ export const trades: Trade[] = [
         answer: "Yes, we can create combined packages for scaffold and vehicles. This often provides better terms than separate agreements."
       }
     ],
-    testimonials: [
-      {
-        quote: "Financed 500m of Layher scaffold to grow my business. Now turning over three times what I was before.",
-        name: "Dave K.",
-        business: "DK Scaffolding",
-        location: "London",
-        loanAmount: "£65,000",
-        rating: 5
-      },
-      {
-        quote: "Started with 100m financed scaffold. Two years later I've bought more. Great relationship with Tradesman Finance.",
-        name: "Terry O.",
-        business: "T&O Scaffolding",
-        location: "Birmingham",
-        loanAmount: "£28,000",
-        rating: 5
-      }
-    ],
     statistics: {
       avgLoanAmount: 45000,
-      approvalRate: "88%",
       processingTime: "Same day",
       activeTradesmen: "8,000+",
       avgTermMonths: 48
@@ -1054,19 +839,8 @@ export const trades: Trade[] = [
         answer: "Most flooring equipment is financed over 24-36 months, though we can offer longer terms for larger equipment packages."
       }
     ],
-    testimonials: [
-      {
-        quote: "Invested in a full Bona sanding system. The quality difference compared to my old kit is incredible.",
-        name: "Ian S.",
-        business: "IS Flooring",
-        location: "Reading",
-        loanAmount: "£12,000",
-        rating: 5
-      }
-    ],
     statistics: {
       avgLoanAmount: 32000,
-      approvalRate: "91%",
       processingTime: "4 hours",
       activeTradesmen: "10,000+",
       avgTermMonths: 30
@@ -1124,19 +898,8 @@ export const trades: Trade[] = [
         answer: "While not required for finance, being FENSA or CERTASS registered demonstrates professionalism and can support your application."
       }
     ],
-    testimonials: [
-      {
-        quote: "The vacuum lifter has made such a difference for larger units. Couldn't manage the big jobs safely without it.",
-        name: "Steve B.",
-        business: "SB Windows & Doors",
-        location: "Southampton",
-        loanAmount: "£3,500",
-        rating: 5
-      }
-    ],
     statistics: {
       avgLoanAmount: 38000,
-      approvalRate: "90%",
       processingTime: "4 hours",
       activeTradesmen: "14,000+",
       avgTermMonths: 36
@@ -1194,19 +957,8 @@ export const trades: Trade[] = [
         answer: "No specific qualifications are required, but demonstrating relevant experience and skills will support your application."
       }
     ],
-    testimonials: [
-      {
-        quote: "Upgraded all my bathroom fitting tools in one go. The finance payments are very manageable monthly.",
-        name: "Neil P.",
-        business: "NP Bathrooms",
-        location: "Leicester",
-        loanAmount: "£5,500",
-        rating: 5
-      }
-    ],
     statistics: {
       avgLoanAmount: 30000,
-      approvalRate: "91%",
       processingTime: "4 hours",
       activeTradesmen: "16,000+",
       avgTermMonths: 30
@@ -1264,27 +1016,8 @@ export const trades: Trade[] = [
         answer: "Shop fitters typically finance larger amounts due to machinery and working capital needs. Average loans range from £25,000 to £100,000."
       }
     ],
-    testimonials: [
-      {
-        quote: "The CNC router we financed has transformed what we can produce in-house. Quality is better and lead times are shorter.",
-        name: "Richard H.",
-        business: "RH Shop Fitting Ltd",
-        location: "London",
-        loanAmount: "£55,000",
-        rating: 5
-      },
-      {
-        quote: "Working capital finance helped us take on a major retail contract. Couldn't have done it without Tradesman Finance.",
-        name: "Martin G.",
-        business: "Gemini Interiors",
-        location: "Manchester",
-        loanAmount: "£85,000",
-        rating: 5
-      }
-    ],
     statistics: {
       avgLoanAmount: 55000,
-      approvalRate: "87%",
       processingTime: "Same day",
       activeTradesmen: "6,000+",
       avgTermMonths: 48
@@ -1342,19 +1075,8 @@ export const trades: Trade[] = [
         answer: "Standard requirements apply - trading history, bank statements, and ID. MLA membership is beneficial but not required."
       }
     ],
-    testimonials: [
-      {
-        quote: "Invested in a proper auto key machine. The extra work it brings in easily covers the finance payments.",
-        name: "Carl T.",
-        business: "CT Locksmiths",
-        location: "Norwich",
-        loanAmount: "£8,500",
-        rating: 5
-      }
-    ],
     statistics: {
       avgLoanAmount: 32000,
-      approvalRate: "90%",
       processingTime: "4 hours",
       activeTradesmen: "4,000+",
       avgTermMonths: 30
@@ -1416,27 +1138,8 @@ export const trades: Trade[] = [
         answer: "Yes, we can combine plant and transport into a single finance package. This often provides better terms than separate agreements."
       }
     ],
-    testimonials: [
-      {
-        quote: "Financed a 3-tonne Kubota and a tipping trailer. The monthly payments are less than I was spending on hire.",
-        name: "Mike H.",
-        business: "MH Groundworks",
-        location: "Kent",
-        loanAmount: "£42,000",
-        rating: 5
-      },
-      {
-        quote: "Started with one digger financed. Now got three and a dumper. Tradesman Finance have been brilliant throughout.",
-        name: "Ben L.",
-        business: "BL Civil Engineering",
-        location: "Bristol",
-        loanAmount: "£95,000",
-        rating: 5
-      }
-    ],
     statistics: {
       avgLoanAmount: 40000,
-      approvalRate: "89%",
       processingTime: "Same day",
       activeTradesmen: "12,000+",
       avgTermMonths: 48
@@ -1494,19 +1197,8 @@ export const trades: Trade[] = [
         answer: "We typically need 2+ years trading history for demolition equipment finance due to the specialist nature and higher values involved."
       }
     ],
-    testimonials: [
-      {
-        quote: "Financed a 20-tonne excavator with breaker and crusher. Transformed what jobs we can take on.",
-        name: "Jim R.",
-        business: "JR Demolition Ltd",
-        location: "Midlands",
-        loanAmount: "£120,000",
-        rating: 5
-      }
-    ],
     statistics: {
       avgLoanAmount: 75000,
-      approvalRate: "85%",
       processingTime: "Same day",
       activeTradesmen: "3,000+",
       avgTermMonths: 60
@@ -1564,19 +1256,8 @@ export const trades: Trade[] = [
         answer: "Yes, we work with newly F-Gas certified engineers starting their AC businesses. A deposit may be required for newer businesses."
       }
     ],
-    testimonials: [
-      {
-        quote: "Got my F-Gas then financed a complete tool kit. Now doing AC installs I couldn't touch before.",
-        name: "Dean W.",
-        business: "DW Cooling Services",
-        location: "Cambridge",
-        loanAmount: "£8,000",
-        rating: 5
-      }
-    ],
     statistics: {
       avgLoanAmount: 35000,
-      approvalRate: "91%",
       processingTime: "4 hours",
       activeTradesmen: "8,000+",
       avgTermMonths: 36

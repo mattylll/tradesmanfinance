@@ -312,7 +312,6 @@ export default function PrivacyPolicyPage() {
             <ul>
               <li><strong>Email:</strong> <a href="mailto:privacy@tradesmanfinance.co.uk">privacy@tradesmanfinance.co.uk</a></li>
               <li><strong>Post:</strong> Data Protection Officer, Tradesman Finance, Finance House, Business Park, London EC1A 1BB</li>
-              <li><strong>Phone:</strong> 0800 XXX XXXX</li>
             </ul>
 
             <h2>15. Complaints</h2>

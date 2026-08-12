@@ -9,8 +9,6 @@ import {
   Shield,
   TrendingUp,
   Clock,
-  Star,
-  Phone,
   Wrench,
   ChevronRight,
   Package,
@@ -46,10 +44,7 @@ type ProductPageContentProps = {
   manufacturerSlug: string
   product: any
   productSlug: string
-  stats: any
   relatedProducts: any[]
-  testimonials: any[]
-  contactPhone: string
 }
 
 export function ProductPageContent({
@@ -57,10 +52,7 @@ export function ProductPageContent({
   manufacturerSlug,
   product,
   productSlug,
-  stats,
   relatedProducts,
-  testimonials,
-  contactPhone,
 }: ProductPageContentProps) {
   const [minPrice, maxPrice] = product.typical_price.replace('£', '').split('-')
   const monthlyFrom = Math.round(parseInt(minPrice) / 24)
@@ -160,7 +152,7 @@ export function ProductPageContent({
                   variants={fadeInUp}
                   className="text-xl text-gray-400 mb-8 leading-relaxed"
                 >
-                  Finance this {manufacturer.tier.toLowerCase()} tool from £{monthlyFrom}/month with {stats?.approval_rate || 89}% approval rate.
+                  Finance this {manufacturer.tier.toLowerCase()} tool from £{monthlyFrom}/month, spread over 12-60 months.
                 </motion.p>
 
                 <motion.div
@@ -210,7 +202,6 @@ export function ProductPageContent({
                     <div className="space-y-3 mb-6">
                       {[
                         { icon: CheckCircle, text: 'Terms: 12-60 months' },
-                        { icon: Shield, text: `${stats?.approval_rate || 89}% approval rate` },
                         { icon: Clock, text: '60 second decision' },
                         { icon: Award, text: '100% tax deductible' },
                       ].map((item, index) => (
@@ -418,56 +409,6 @@ export function ProductPageContent({
         </section>
       )}
 
-      {/* === TESTIMONIALS === */}
-      {testimonials.length > 0 && (
-        <section className="relative py-20 bg-gray-950">
-          <div className="container mx-auto px-4">
-            <motion.div
-              initial="hidden"
-              whileInView="visible"
-              viewport={{ once: true }}
-              variants={staggerContainer}
-              className="text-center mb-12"
-            >
-              <motion.h2
-                variants={fadeInUp}
-                className="text-3xl md:text-5xl font-bold text-white mb-4"
-              >
-                Real <span className="text-[#ff6b35]">Tradespeople</span>
-              </motion.h2>
-            </motion.div>
-
-            <motion.div
-              initial="hidden"
-              whileInView="visible"
-              viewport={{ once: true }}
-              variants={staggerContainer}
-              className="grid grid-cols-1 md:grid-cols-2 gap-8 max-w-4xl mx-auto"
-            >
-              {testimonials.map((testimonial: any) => (
-                <motion.div key={testimonial.id} variants={scaleIn}>
-                  <div className="bg-gray-900 border border-white/10 rounded-lg p-6 h-full">
-                    <div className="flex gap-1 mb-4">
-                      {[...Array(5)].map((_, i) => (
-                        <Star key={i} className="h-5 w-5 text-[#ffd93d] fill-[#ffd93d]" />
-                      ))}
-                    </div>
-                    <blockquote className="text-gray-300 mb-6 leading-relaxed italic">
-                      &ldquo;{testimonial.text}&rdquo;
-                    </blockquote>
-                    <div>
-                      <div className="font-bold text-white">{testimonial.author}</div>
-                      <div className="text-sm text-gray-400 capitalize">{testimonial.trade} • {testimonial.location}</div>
-                      <div className="text-sm text-[#ff6b35] mt-1">Financed: {manufacturer.name} {testimonial.product}</div>
-                    </div>
-                  </div>
-                </motion.div>
-              ))}
-            </motion.div>
-          </div>
-        </section>
-      )}
-
       {/* === FAQ === */}
       <section className="relative py-20 bg-gray-900">
         <div className="container mx-auto px-4 max-w-3xl">
@@ -546,7 +487,7 @@ export function ProductPageContent({
               Finance Your {product.name} Today
             </h2>
             <p className="text-xl text-white/90 mb-10 max-w-2xl mx-auto">
-              From £{monthlyFrom}/month. {stats?.approval_rate || 89}% approval rate. Decision in 60 seconds.
+              From £{monthlyFrom}/month. Decision in 60 seconds.
             </p>
             <div className="flex flex-col sm:flex-row gap-4 justify-center">
               <Button
@@ -565,10 +506,10 @@ export function ProductPageContent({
                 variant="outline"
                 className="border-2 border-white/80 bg-white/10 text-white hover:bg-white/20 h-14 px-10 text-lg font-bold backdrop-blur-sm"
               >
-                <a href={`tel:${contactPhone}`}>
-                  <Phone className="mr-2 w-5 h-5" />
-                  Call {contactPhone}
-                </a>
+                <Link href="/contact">
+                  Get a Quote
+                  <ArrowRight className="ml-2 w-5 h-5" />
+                </Link>
               </Button>
             </div>
           </motion.div>

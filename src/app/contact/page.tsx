@@ -5,7 +5,6 @@ import { motion } from "framer-motion";
 import { ContactForm } from "@/components/forms";
 import { Badge } from "@/registry/new-york-v4/ui/badge";
 import {
-  Phone,
   Mail,
   MapPin,
   Clock,
@@ -45,15 +44,6 @@ const staggerContainer = {
 };
 
 const contactMethods = [
-  {
-    icon: Phone,
-    title: "Call Us",
-    description: "Speak directly with our team",
-    detail: "0800 XXX XXXX",
-    subDetail: "Mon-Fri, 9am-6pm",
-    action: "tel:0800XXXXXXX",
-    color: "#ff6b35",
-  },
   {
     icon: Mail,
     title: "Email Us",
@@ -102,13 +92,11 @@ const offices = [
     name: "Head Office",
     address: "Finance House, Business Park",
     city: "London, EC1A 1BB",
-    phone: "0800 XXX XXXX",
   },
   {
     name: "Northern Office",
     address: "Trade Centre, Industrial Estate",
     city: "Manchester, M1 1AA",
-    phone: "0161 XXX XXXX",
   },
 ];
 
@@ -202,7 +190,7 @@ export default function ContactPage() {
             whileInView="visible"
             viewport={{ once: true }}
             variants={staggerContainer}
-            className="grid md:grid-cols-3 gap-6"
+            className="grid md:grid-cols-2 gap-6"
           >
             {contactMethods.map((method) => (
               <motion.a
@@ -347,7 +335,6 @@ export default function ContactPage() {
                         <h4 className="font-medium text-white mb-1">{office.name}</h4>
                         <p className="text-sm text-gray-400">{office.address}</p>
                         <p className="text-sm text-gray-400">{office.city}</p>
-                        <p className="text-sm text-[#ff6b35] mt-2">{office.phone}</p>
                       </div>
                     ))}
                   </div>

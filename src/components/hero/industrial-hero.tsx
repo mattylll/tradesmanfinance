@@ -3,7 +3,7 @@
 import Link from "next/link";
 import { motion } from "framer-motion";
 import { Button } from "@/registry/new-york-v4/ui/button";
-import { ArrowRight, Phone, Shield, Star, Clock, Zap, CheckCircle } from "lucide-react";
+import { ArrowRight, Shield, MapPin, Clock, Zap, CheckCircle } from "lucide-react";
 
 interface IndustrialHeroProps {
   title: string;
@@ -15,7 +15,6 @@ interface IndustrialHeroProps {
   };
   secondaryCTA?: {
     text: string;
-    phone?: string;
     href?: string;
   };
   stats?: {
@@ -52,12 +51,12 @@ export function IndustrialHero({
   highlightWords = ["Trade Finance"],
   description = "Equipment finance, vehicle loans, and business funding for UK tradesmen. Fast decisions, competitive rates, real support.",
   primaryCTA = { text: "Get Your Free Quote", href: "/contact" },
-  secondaryCTA = { text: "0800 123 4567", phone: "tel:08001234567" },
+  secondaryCTA = { text: "Talk to a Specialist", href: "/contact" },
   stats = [
-    { label: "Funded to UK Trades", value: "£50M+", icon: <Zap className="h-5 w-5" /> },
-    { label: "Tradesmen Helped", value: "50,000+", icon: <Shield className="h-5 w-5" /> },
-    { label: "Decision Time", value: "24hrs", icon: <Clock className="h-5 w-5" /> },
-    { label: "Trustpilot Rating", value: "4.8★", icon: <Star className="h-5 w-5" /> },
+    { label: "Who We Fund", value: "Trade only", icon: <Zap className="h-5 w-5" /> },
+    { label: "Coverage", value: "UK-wide", icon: <MapPin className="h-5 w-5" /> },
+    { label: "Typical Decision", value: "24hrs", icon: <Clock className="h-5 w-5" /> },
+    { label: "No-Obligation Quote", value: "Free", icon: <Shield className="h-5 w-5" /> },
   ],
 }: IndustrialHeroProps) {
   // Highlight specific words in the title
@@ -190,8 +189,8 @@ export function IndustrialHero({
             >
               {[
                 { icon: <CheckCircle className="h-4 w-4" />, text: "No Hidden Fees" },
-                { icon: <CheckCircle className="h-4 w-4" />, text: "92% Approval Rate" },
-                { icon: <CheckCircle className="h-4 w-4" />, text: "Same Day Decisions" },
+                { icon: <CheckCircle className="h-4 w-4" />, text: "No Obligation" },
+                { icon: <CheckCircle className="h-4 w-4" />, text: "Fast Decisions" },
               ].map((item, index) => (
                 <div key={index} className="flex items-center gap-2 text-gray-400 text-sm">
                   <span className="text-[#ff6b35]">{item.icon}</span>
@@ -225,8 +224,8 @@ export function IndustrialHero({
                 </motion.div>
               </Link>
 
-              {secondaryCTA.phone && (
-                <a href={secondaryCTA.phone}>
+              {secondaryCTA.href && (
+                <Link href={secondaryCTA.href}>
                   <motion.div
                     whileHover={{ scale: 1.03 }}
                     whileTap={{ scale: 0.98 }}
@@ -237,11 +236,11 @@ export function IndustrialHero({
                       variant="outline"
                       className="border-2 border-white/20 bg-white/5 text-white hover:bg-white/10 hover:border-white/30 font-semibold text-lg px-10 py-7 rounded-xl backdrop-blur-sm transition-all"
                     >
-                      <Phone className="mr-2 h-5 w-5" />
                       {secondaryCTA.text}
+                      <ArrowRight className="ml-2 h-5 w-5" />
                     </Button>
                   </motion.div>
-                </a>
+                </Link>
               )}
             </motion.div>
 

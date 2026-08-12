@@ -12,7 +12,6 @@ import {
   Clock,
   ChevronRight,
   Phone,
-  Star,
   TrendingUp,
 } from 'lucide-react';
 
@@ -121,7 +120,7 @@ export default function ToolFinanceHub() {
               variants={fadeInUp}
               className="text-xl md:text-2xl text-gray-400 mb-8 leading-relaxed"
             >
-              Spread the cost over 12-60 months. 89% approval rate. Decision in 60 seconds.
+              Spread the cost over 12-60 months. Decision in 60 seconds.
               Get the tools you need to grow your trade business.
             </motion.p>
 
@@ -158,10 +157,9 @@ export default function ToolFinanceHub() {
       {/* === STATS BAR === */}
       <section className="relative bg-gray-900 border-y border-white/5">
         <div className="container mx-auto px-4 py-8">
-          <div className="grid grid-cols-2 md:grid-cols-4 gap-6">
+          <div className="grid grid-cols-1 md:grid-cols-3 gap-6">
             {[
               { label: 'Minimum Finance', value: '£500', icon: Shield },
-              { label: 'Approval Rate', value: '89%', icon: Star },
               { label: 'Decision Time', value: '60s', icon: Clock },
               { label: 'Terms Available', value: '12-60mo', icon: CheckCircle },
             ].map((stat, index) => (
@@ -367,7 +365,7 @@ export default function ToolFinanceHub() {
               Ready to Finance Your Tools?
             </h2>
             <p className="text-xl text-gray-400 mb-8">
-              Apply in 60 seconds. 89% approval rate. Finance from £50/month.
+              Apply in 60 seconds. Finance from £50/month.
             </p>
             <Button
               asChild

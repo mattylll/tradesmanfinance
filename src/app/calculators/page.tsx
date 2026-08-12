@@ -16,8 +16,6 @@ import {
   Zap,
   Shield,
   Clock,
-  Star,
-  Phone,
   Sparkles,
 } from "lucide-react";
 
@@ -99,14 +97,13 @@ const trustPoints = [
   { icon: Zap, text: "Instant Results" },
   { icon: Shield, text: "No Credit Check" },
   { icon: CheckCircle, text: "100% Free" },
-  { icon: Star, text: "5-Star Service" },
+  { icon: CheckCircle, text: "No Obligation" },
 ];
 
 const stats = [
-  { value: "10,000+", label: "Calculations Made" },
-  { value: "£500M+", label: "Funded" },
+  { value: "£25k-£1m", label: "Funding Range" },
   { value: "24hrs", label: "Decision Time" },
-  { value: "4.9/5", label: "Rating" },
+  { value: "12-60 mths", label: "Repayment Terms" },
 ];
 
 export default function CalculatorsPage() {
@@ -222,7 +219,7 @@ export default function CalculatorsPage() {
             whileInView="visible"
             viewport={{ once: true }}
             variants={staggerContainer}
-            className="grid grid-cols-2 md:grid-cols-4 gap-6"
+            className="grid grid-cols-1 md:grid-cols-3 gap-6"
           >
             {stats.map((stat) => (
               <motion.div
@@ -461,16 +458,6 @@ export default function CalculatorsPage() {
                   </Button>
                 </motion.div>
               </Link>
-              <Button
-                size="lg"
-                className="border-2 border-white bg-transparent text-white hover:bg-white hover:text-[#ff6b35] font-bold text-lg px-10 py-7 rounded-xl transition-all"
-                asChild
-              >
-                <a href="tel:08000869015">
-                  <Phone className="mr-2 h-5 w-5" />
-                  Call 0800 086 9015
-                </a>
-              </Button>
             </div>
           </motion.div>
         </div>

@@ -8,7 +8,6 @@ import {
   CheckCircle,
   Shield,
   TrendingUp,
-  Star,
   Phone,
   Wrench,
   ChevronRight,
@@ -44,10 +43,7 @@ type TradeBrandPageContentProps = {
   manufacturerSlug: string
   tradeName: string
   tradeSlug: string
-  stats: any
   tradeProducts: any[]
-  testimonials: any[]
-  contactPhone: string
 }
 
 export function TradeBrandPageContent({
@@ -55,14 +51,10 @@ export function TradeBrandPageContent({
   manufacturerSlug,
   tradeName,
   tradeSlug,
-  stats,
   tradeProducts,
-  testimonials,
-  contactPhone,
 }: TradeBrandPageContentProps) {
-  const tradePercentage = stats?.top_trades?.[tradeName.toLowerCase()] || 0
   const [minPrice] = manufacturer.typical_purchase.replace('£', '').split('-')
-  const monthlyFrom = stats ? stats.avg_monthly : Math.round(parseInt(minPrice) / 24)
+  const monthlyFrom = Math.round(parseInt(minPrice) / 24)
 
   // Organize products into kits (starter, professional, master)
   const starterKit = tradeProducts.slice(0, 2)
@@ -146,8 +138,8 @@ export function TradeBrandPageContent({
               variants={fadeInUp}
               className="text-xl md:text-2xl text-gray-400 mb-8 leading-relaxed"
             >
-              Essential {manufacturer.name} tools for professional {tradeName.toLowerCase()}s. Finance from £{monthlyFrom}/month.
-              {tradePercentage > 0 && ` ${tradePercentage}% of our {manufacturer.name} applications come from {tradeName.toLowerCase()}s.`}
+              Essential {manufacturer.name} tools for professional {tradeName.toLowerCase()}s. Finance from £{monthlyFrom}/month,
+              spread over 12-60 months.
             </motion.p>
 
             <motion.div
@@ -180,12 +172,11 @@ export function TradeBrandPageContent({
             {/* Quick Stats */}
             <motion.div
               variants={fadeInUp}
-              className="grid grid-cols-2 md:grid-cols-4 gap-4 max-w-3xl mx-auto"
+              className="grid grid-cols-1 md:grid-cols-3 gap-4 max-w-3xl mx-auto"
             >
               {[
-                { label: `${tradeName}s Trust Us`, value: tradePercentage > 0 ? `${tradePercentage}%` : 'Top Choice', icon: Shield },
                 { label: 'Finance From', value: `£${monthlyFrom}/mo`, icon: CheckCircle },
-                { label: 'Approval Rate', value: `${stats?.approval_rate || 89}%`, icon: Star },
+                { label: 'Decision Time', value: '60 sec', icon: Shield },
                 { label: 'Products Available', value: `${tradeProducts.length}+`, icon: Package },
               ].map((stat) => (
                 <div key={stat.label} className="bg-gray-900 border border-white/10 rounded-lg p-4">
@@ -237,8 +228,8 @@ export function TradeBrandPageContent({
               },
               {
                 icon: TrendingUp,
-                title: 'ROI Within Weeks',
-                description: `Most ${tradeName.toLowerCase()}s see return on investment within ${stats?.payback_jobs || 8} jobs. Finance lets you start earning immediately.`,
+                title: 'Start Earning Sooner',
+                description: `Spreading the cost means you can put ${manufacturer.name} tools to work on paid jobs straight away instead of waiting to save up for them.`,
               },
             ].map((benefit) => (
               <motion.div
@@ -407,56 +398,6 @@ export function TradeBrandPageContent({
         </div>
       </section>
 
-      {/* === TESTIMONIALS === */}
-      {testimonials.length > 0 && (
-        <section className="relative py-20 bg-gray-950">
-          <div className="container mx-auto px-4">
-            <motion.div
-              initial="hidden"
-              whileInView="visible"
-              viewport={{ once: true }}
-              variants={staggerContainer}
-              className="text-center mb-12"
-            >
-              <motion.h2
-                variants={fadeInUp}
-                className="text-3xl md:text-5xl font-bold text-white mb-4"
-              >
-                {tradeName}s Using <span className="text-[#ff6b35]">{manufacturer.name}</span>
-              </motion.h2>
-            </motion.div>
-
-            <motion.div
-              initial="hidden"
-              whileInView="visible"
-              viewport={{ once: true }}
-              variants={staggerContainer}
-              className="grid grid-cols-1 md:grid-cols-3 gap-8 max-w-5xl mx-auto"
-            >
-              {testimonials.map((testimonial: any) => (
-                <motion.div key={testimonial.id} variants={scaleIn}>
-                  <div className="bg-gray-900 border border-white/10 rounded-lg p-6 h-full">
-                    <div className="flex gap-1 mb-4">
-                      {[...Array(5)].map((_, i) => (
-                        <Star key={i} className="h-5 w-5 text-[#ffd93d] fill-[#ffd93d]" />
-                      ))}
-                    </div>
-                    <blockquote className="text-gray-300 mb-6 leading-relaxed italic">
-                      &ldquo;{testimonial.text}&rdquo;
-                    </blockquote>
-                    <div>
-                      <div className="font-bold text-white">{testimonial.author}</div>
-                      <div className="text-sm text-gray-400 capitalize">{testimonial.trade} • {testimonial.location}</div>
-                      <div className="text-sm text-[#ff6b35] mt-1">Financed: {manufacturer.name} {testimonial.product}</div>
-                    </div>
-                  </div>
-                </motion.div>
-              ))}
-            </motion.div>
-          </div>
-        </section>
-      )}
-
       {/* === FAQ === */}
       <section className="relative py-20 bg-gray-900">
         <div className="container mx-auto px-4 max-w-3xl">
@@ -494,9 +435,7 @@ export function TradeBrandPageContent({
               },
               {
                 question: `Do other ${tradeName.toLowerCase()}s use ${manufacturer.name}?`,
-                answer: tradePercentage > 0
-                  ? `Yes! ${tradePercentage}% of our ${manufacturer.name} finance applications come from ${tradeName.toLowerCase()}s. It's a trusted brand in your trade.`
-                  : `Absolutely! ${manufacturer.name} is a popular choice among professional ${tradeName.toLowerCase()}s across the UK for its reliability and performance.`,
+                answer: `${manufacturer.name} is a well-established choice among professional ${tradeName.toLowerCase()}s across the UK for its reliability and performance.`,
               },
             ].map((faq, index) => (
               <motion.div
@@ -537,9 +476,9 @@ export function TradeBrandPageContent({
               Ready to Upgrade Your {manufacturer.name} Kit?
             </h2>
             <p className="text-xl text-white/90 mb-10 max-w-2xl mx-auto">
-              Join thousands of {tradeName.toLowerCase()}s financing {manufacturer.name} tools. From £{monthlyFrom}/month.
+              Finance {manufacturer.name} tools built for {tradeName.toLowerCase()}s. From £{monthlyFrom}/month.
             </p>
-            <div className="flex flex-col sm:flex-row gap-4 justify-center">
+            <div className="flex justify-center">
               <Button
                 asChild
                 size="lg"
@@ -549,17 +488,6 @@ export function TradeBrandPageContent({
                   Get Your Quote
                   <ArrowRight className="ml-2 w-5 h-5" />
                 </Link>
-              </Button>
-              <Button
-                asChild
-                size="lg"
-                variant="outline"
-                className="border-2 border-white/80 bg-white/10 text-white hover:bg-white/20 h-14 px-10 text-lg font-bold backdrop-blur-sm"
-              >
-                <a href={`tel:${contactPhone}`}>
-                  <Phone className="mr-2 w-5 h-5" />
-                  Call {contactPhone}
-                </a>
               </Button>
             </div>
           </motion.div>

@@ -97,7 +97,7 @@ const knownIssues = [
   },
   {
     issue: "Calculator may have limited screen reader support",
-    workaround: "Call us for assistance with calculations",
+    workaround: "Contact us for assistance with calculations",
     status: "Under review",
   },
 ];
@@ -538,9 +538,6 @@ export default function AccessibilityPage() {
                 <a href="mailto:accessibility@tradesmanfinance.co.uk" className="underline hover:text-white">
                   accessibility@tradesmanfinance.co.uk
                 </a>
-              </p>
-              <p className="text-sm text-white/90 mb-2">
-                <strong>Phone:</strong> 0800 XXX XXXX
               </p>
               <p className="text-sm text-white/90">
                 <strong>Response Time:</strong> Within 5 business days

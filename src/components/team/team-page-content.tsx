@@ -13,10 +13,9 @@ import {
   Linkedin,
   ArrowRight,
   ChevronUp,
-  Building2,
+  MapPin,
   Briefcase,
   GraduationCap,
-  Phone,
   Zap,
 } from "lucide-react";
 import { Button } from "@/registry/new-york-v4/ui/button";
@@ -263,34 +262,32 @@ function BackToTopButton() {
 
 export function TeamPageContent() {
   const mattLenzie = authors["matt-lenzie"];
-  const jamesHarper = authors["james-harper"];
-  const sarahMitchell = authors["sarah-mitchell"];
   const teamGeneral = authors["tradesman-finance-team"];
 
   const trustStats = [
     {
-      icon: Clock,
-      value: "25+",
-      label: "Years Experience",
+      icon: Briefcase,
+      value: "25 years",
+      label: "Founder Experience",
       description: "In financial services",
     },
     {
       icon: Users,
-      value: trustSignals.customersHelped,
-      label: "Customers Helped",
-      description: "Tradesmen funded",
+      value: "Trade only",
+      label: "Who We Fund",
+      description: "Trade and construction",
     },
     {
-      icon: Building2,
-      value: trustSignals.fundingArranged,
-      label: "Funding Arranged",
-      description: "For UK businesses",
+      icon: MapPin,
+      value: "UK-wide",
+      label: "Coverage",
+      description: "England, Scotland & Wales",
     },
     {
-      icon: Star,
-      value: `${trustSignals.averageRating}`,
-      label: "Trustpilot Rating",
-      description: `${trustSignals.reviewCount}+ reviews`,
+      icon: Clock,
+      value: trustSignals.decisionTime,
+      label: "Typical Decision",
+      description: "On most applications",
     },
   ];
 
@@ -448,60 +445,6 @@ export function TeamPageContent() {
         </div>
       </section>
 
-      {/* === TEAM MEMBERS === */}
-      <section className="relative py-20 md:py-28 overflow-hidden">
-        {/* Dark gradient background */}
-        <div className="absolute inset-0 bg-gradient-to-br from-gray-950 via-gray-900 to-gray-950" />
-
-        {/* Dot pattern */}
-        <div
-          className="absolute inset-0 opacity-[0.15]"
-          style={{
-            backgroundImage: `radial-gradient(circle at 1px 1px, rgba(255, 107, 53, 0.4) 1px, transparent 0)`,
-            backgroundSize: "32px 32px",
-          }}
-        />
-
-        <div className="container relative mx-auto px-4">
-          <motion.div
-            initial="hidden"
-            whileInView="visible"
-            viewport={{ once: true, margin: "-100px" }}
-            variants={fadeInUp}
-            transition={{ duration: 0.6 }}
-            className="text-center mb-12"
-          >
-            <div className="inline-flex items-center gap-2 px-4 py-2 rounded-full bg-white/5 border border-white/10 mb-6">
-              <Users className="h-4 w-4 text-[#ffd93d]" />
-              <span className="text-sm font-medium text-gray-300 tracking-wide uppercase">
-                Our Specialists
-              </span>
-            </div>
-            <h2
-              className="text-3xl md:text-4xl lg:text-5xl font-black text-white mb-4 tracking-tight"
-              style={{ fontFamily: "var(--font-industrial)" }}
-            >
-              Finance <span className="text-[#ffd93d]">Experts</span>
-            </h2>
-            <p className="text-gray-400 text-lg max-w-2xl mx-auto">
-              Our team of specialists brings decades of experience in equipment
-              finance, vehicle finance, and business lending.
-            </p>
-          </motion.div>
-
-          <motion.div
-            initial="hidden"
-            whileInView="visible"
-            viewport={{ once: true, margin: "-50px" }}
-            variants={staggerContainer}
-            className="grid gap-6 md:grid-cols-2 max-w-4xl mx-auto"
-          >
-            <TeamMemberCard author={jamesHarper} />
-            <TeamMemberCard author={sarahMitchell} />
-          </motion.div>
-        </div>
-      </section>
-
       {/* === COMPANY CREDENTIALS === */}
       <section className="relative py-20 md:py-28 overflow-hidden bg-white">
         {/* Subtle pattern */}
@@ -535,11 +478,11 @@ export function TeamPageContent() {
               className="text-3xl md:text-4xl lg:text-5xl font-black text-gray-900 mb-4 tracking-tight"
               style={{ fontFamily: "var(--font-industrial)" }}
             >
-              Our <span className="text-[#0ea5a5]">Credentials</span>
+              How We <span className="text-[#0ea5a5]">Work</span>
             </h2>
             <p className="text-gray-600 text-lg max-w-2xl mx-auto">
-              We are fully regulated and committed to maintaining the highest
-              standards of professional conduct.
+              We are committed to maintaining the highest standards of
+              professional conduct on every application we handle.
             </p>
           </motion.div>
 
@@ -629,8 +572,8 @@ export function TeamPageContent() {
               <ul className="space-y-4 mb-8">
                 {[
                   "Specialists in trade and construction finance",
-                  "Direct relationships with 50+ lenders",
-                  "Same-day decisions on most applications",
+                  "Direct relationships with specialist lenders",
+                  "Fast decisions on most applications",
                   "No hidden fees or surprises",
                   "Personal service from application to completion",
                 ].map((item, index) => (
@@ -670,28 +613,28 @@ export function TeamPageContent() {
 
                 <div className="grid grid-cols-2 gap-6">
                   <div className="text-center p-4 rounded-xl bg-white/5 border border-white/10">
-                    <div className="text-3xl font-black text-[#ff6b35] mb-2">
-                      {trustSignals.approvalRate}
+                    <div className="text-2xl font-black text-[#ff6b35] mb-2">
+                      Trade only
                     </div>
-                    <div className="text-sm text-gray-400">Approval Rate</div>
+                    <div className="text-sm text-gray-400">Our Focus</div>
                   </div>
                   <div className="text-center p-4 rounded-xl bg-white/5 border border-white/10">
-                    <div className="text-3xl font-black text-[#ffd93d] mb-2">
+                    <div className="text-2xl font-black text-[#ffd93d] mb-2">
                       {trustSignals.decisionTime}
                     </div>
-                    <div className="text-sm text-gray-400">Decision Time</div>
+                    <div className="text-sm text-gray-400">Typical Decision</div>
                   </div>
                   <div className="text-center p-4 rounded-xl bg-white/5 border border-white/10">
-                    <div className="text-3xl font-black text-[#0ea5a5] mb-2">
-                      {trustSignals.lenderPanel}
+                    <div className="text-2xl font-black text-[#0ea5a5] mb-2">
+                      UK-wide
                     </div>
-                    <div className="text-sm text-gray-400">Lender Panel</div>
+                    <div className="text-sm text-gray-400">Coverage</div>
                   </div>
                   <div className="text-center p-4 rounded-xl bg-white/5 border border-white/10">
-                    <div className="text-3xl font-black text-white mb-2">
-                      {trustSignals.yearsInBusiness}+
+                    <div className="text-2xl font-black text-white mb-2">
+                      No obligation
                     </div>
-                    <div className="text-sm text-gray-400">Years Trading</div>
+                    <div className="text-sm text-gray-400">Free Quotes</div>
                   </div>
                 </div>
               </div>
@@ -768,7 +711,7 @@ export function TeamPageContent() {
             </motion.div>
 
             <motion.div variants={fadeInUp} transition={{ duration: 0.4 }}>
-              <a href="tel:08001234567">
+              <Link href="/contact">
                 <motion.div
                   whileHover={{ scale: 1.05 }}
                   whileTap={{ scale: 0.98 }}
@@ -779,11 +722,11 @@ export function TeamPageContent() {
                     variant="outline"
                     className="border-2 border-white/80 bg-white/10 text-white hover:bg-white/20 font-bold text-lg px-10 py-7 rounded-xl backdrop-blur-sm"
                   >
-                    <Phone className="mr-2 h-5 w-5" />
-                    Call 0800 123 4567
+                    Contact the Team
+                    <ArrowRight className="ml-2 h-5 w-5" />
                   </Button>
                 </motion.div>
-              </a>
+              </Link>
             </motion.div>
           </motion.div>
         </div>

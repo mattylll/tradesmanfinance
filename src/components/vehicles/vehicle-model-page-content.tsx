@@ -6,10 +6,8 @@ import { Button } from '@/registry/new-york-v4/ui/button'
 import {
   ArrowRight,
   CheckCircle,
-  Shield,
   TrendingUp,
   Star,
-  Phone,
   Truck,
   ChevronRight,
   Gauge,
@@ -49,7 +47,6 @@ type VehicleModelPageContentProps = {
   model: any
   modelSlug: string
   relatedModels: any[]
-  contactPhone: string
 }
 
 export function VehicleModelPageContent({
@@ -58,7 +55,6 @@ export function VehicleModelPageContent({
   model,
   modelSlug,
   relatedModels,
-  contactPhone,
 }: VehicleModelPageContentProps) {
   const [minPrice, maxPrice] = model.typical_price.replace('£', '').split('-')
   const [minMonthly, maxMonthly] = model.typical_monthly_finance.replace('£', '').split('-')
@@ -142,7 +138,7 @@ export function VehicleModelPageContent({
                   variants={fadeInUp}
                   className="text-xl text-gray-400 mb-8 leading-relaxed"
                 >
-                  Finance this {manufacturer.name} from {model.typical_monthly_finance}/month. 89% approval rate. New & used up to 5 years old.
+                  Finance this {manufacturer.name} from {model.typical_monthly_finance}/month. New & used up to 5 years old.
                 </motion.p>
 
                 <motion.div
@@ -189,7 +185,6 @@ export function VehicleModelPageContent({
                     <div className="space-y-3 mb-6">
                       {[
                         { icon: CheckCircle, text: 'Terms: 12-60 months' },
-                        { icon: Shield, text: '89% approval rate' },
                         { icon: Star, text: `Resale value: ${model.resale_value}` },
                         { icon: Award, text: '100% tax deductible' },
                       ].map((item, index) => (
@@ -390,7 +385,7 @@ export function VehicleModelPageContent({
               Finance Your {manufacturer.name} {model.name} Today
             </h2>
             <p className="text-xl text-white/90 mb-10 max-w-2xl mx-auto">
-              From {model.typical_monthly_finance}/month. 89% approval rate. Decision in 60 seconds.
+              From {model.typical_monthly_finance}/month. Decision in 60 seconds.
             </p>
             <div className="flex flex-col sm:flex-row gap-4 justify-center">
               <Button
@@ -409,10 +404,10 @@ export function VehicleModelPageContent({
                 variant="outline"
                 className="border-2 border-white/80 bg-white/10 text-white hover:bg-white/20 h-14 px-10 text-lg font-bold backdrop-blur-sm"
               >
-                <a href={`tel:${contactPhone}`}>
-                  <Phone className="mr-2 w-5 h-5" />
-                  Call {contactPhone}
-                </a>
+                <Link href="/contact">
+                  Get a Quote
+                  <ArrowRight className="ml-2 w-5 h-5" />
+                </Link>
               </Button>
             </div>
           </motion.div>

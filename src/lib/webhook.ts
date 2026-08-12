@@ -47,35 +47,46 @@ export interface WebhookResponse {
 }
 
 /**
- * Submit form data to webhook
+ * Submit form data for lead delivery.
+ *
+ * Primary path: the site's own /api/lead endpoint, which emails the lead
+ * via Resend. If NEXT_PUBLIC_WEBHOOK_URL is also configured, the payload is
+ * additionally forwarded there (Zapier/CRM), but the email path decides
+ * success. No silent fake-success: if delivery fails, the caller hears it.
  */
 export async function submitToWebhook(data: WebhookPayload): Promise<WebhookResponse> {
-  // Check if webhook is configured
-  if (!WEBHOOK_URL) {
-    console.warn('[Webhook] No webhook URL configured. Set NEXT_PUBLIC_WEBHOOK_URL in .env.local');
-    // Return success anyway so form appears to work during development
-    return { success: true };
+  const payload = {
+    ...data,
+    source: 'tradesmanfinance.co.uk',
+  };
+
+  // Optional extra forward to an external webhook (fire-and-forget)
+  if (WEBHOOK_URL) {
+    fetch(WEBHOOK_URL, {
+      method: 'POST',
+      headers: { 'Content-Type': 'application/json' },
+      body: JSON.stringify(payload),
+    }).catch((error) => {
+      console.error('[Webhook] External forward failed:', error);
+    });
   }
 
   try {
-    const response = await fetch(WEBHOOK_URL, {
+    const response = await fetch('/api/lead', {
       method: 'POST',
-      headers: {
-        'Content-Type': 'application/json',
-      },
-      body: JSON.stringify({
-        ...data,
-        source: 'tradesmanfinance.co.uk',
-      }),
+      headers: { 'Content-Type': 'application/json' },
+      body: JSON.stringify(payload),
     });
 
-    if (!response.ok) {
-      throw new Error(`Webhook returned ${response.status}`);
+    const result = await response.json().catch(() => ({}));
+
+    if (!response.ok || !result.success) {
+      throw new Error(result.error || `Lead endpoint returned ${response.status}`);
     }
 
     return { success: true };
   } catch (error) {
-    console.error('[Webhook] Submission failed:', error);
+    console.error('[Lead] Submission failed:', error);
     return {
       success: false,
       error: error instanceof Error ? error.message : 'Unknown error',

@@ -24,8 +24,8 @@ interface OrganizationJsonLdProps {
   logo?: string;
   description?: string;
   contactPoint?: {
-    telephone: string;
     contactType: string;
+    email?: string;
   };
 }
 
@@ -46,8 +46,8 @@ export function OrganizationJsonLd({
     ...(contactPoint && {
       contactPoint: {
         "@type": "ContactPoint",
-        telephone: contactPoint.telephone,
         contactType: contactPoint.contactType,
+        ...(contactPoint.email && { email: contactPoint.email }),
       },
     }),
   };
@@ -107,7 +107,6 @@ interface LocalBusinessJsonLdProps {
   name: string;
   description: string;
   url: string;
-  telephone?: string;
   address?: {
     streetAddress?: string;
     addressLocality: string;
@@ -123,7 +122,6 @@ export function LocalBusinessJsonLd({
   name,
   description,
   url,
-  telephone,
   address,
   priceRange,
   areaServed,
@@ -134,7 +132,6 @@ export function LocalBusinessJsonLd({
     name,
     description,
     url,
-    ...(telephone && { telephone }),
     ...(address && {
       address: {
         "@type": "PostalAddress",
@@ -238,37 +235,6 @@ export function ArticleJsonLd({
           url: publisherLogo,
         },
       }),
-    },
-  };
-
-  return <JsonLd data={data} />;
-}
-
-interface AggregateRatingJsonLdProps {
-  itemName: string;
-  ratingValue: number;
-  reviewCount: number;
-  bestRating?: number;
-  worstRating?: number;
-}
-
-export function AggregateRatingJsonLd({
-  itemName,
-  ratingValue,
-  reviewCount,
-  bestRating = 5,
-  worstRating = 1,
-}: AggregateRatingJsonLdProps) {
-  const data = {
-    "@context": "https://schema.org",
-    "@type": "Product",
-    name: itemName,
-    aggregateRating: {
-      "@type": "AggregateRating",
-      ratingValue,
-      bestRating,
-      worstRating,
-      reviewCount,
     },
   };
 

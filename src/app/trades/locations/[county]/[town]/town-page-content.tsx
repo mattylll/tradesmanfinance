@@ -12,13 +12,11 @@ import { Button } from '@/registry/new-york-v4/ui/button';
 import {
   ArrowRight,
   MapPin,
-  Phone,
   Clock,
   TrendingUp,
   CheckCircle,
   Shield,
   Zap,
-  Star,
   Wrench,
   Truck,
   Banknote,
@@ -30,7 +28,6 @@ import {
   Train,
   Landmark,
   Users,
-  Quote,
   ChevronDown,
   CreditCard,
 } from 'lucide-react';
@@ -91,7 +88,6 @@ const financeProducts = [
 // SEO components available if needed
 // import { LocalMarketSection } from '@/components/seo/local-market-section';
 // import { FAQSection } from '@/components/seo/faq-section';
-// import { TestimonialsSection } from '@/components/seo/testimonials-section';
 
 // County hero image mapping
 function getCountyHeroImage(countySlug: string): string {
@@ -143,13 +139,6 @@ export function TownPageContent({
 
   // Get rich town-specific local data
   const townLocalInfo = getTownLocalData(townSlug, townName, county.slug, county.name, county.region);
-
-  // Use town's testimonial if available, otherwise fall back to trade testimonials
-  const localTestimonial = townLocalInfo.testimonial;
-  const allTestimonials = trades
-    .flatMap(trade => trade.testimonials || [])
-    .filter(t => t && t.quote)
-    .slice(0, 4);
 
   return (
     <main className="min-h-screen bg-white overflow-hidden">
@@ -245,16 +234,6 @@ export function TownPageContent({
                     <ArrowRight className="ml-2 h-5 w-5" />
                   </Button>
                 </Link>
-                <Button
-                  size="lg"
-                  className="bg-white text-[#1a1a2e] hover:bg-white/90 font-bold text-lg px-10 py-7 rounded-full"
-                  asChild
-                >
-                  <a href="tel:08001234567">
-                    <Phone className="mr-2 h-5 w-5" />
-                    0800 123 4567
-                  </a>
-                </Button>
               </div>
 
               {/* Trust badges */}
@@ -268,8 +247,8 @@ export function TownPageContent({
                   <span className="text-sm">All Credit Considered</span>
                 </div>
                 <div className="flex items-center gap-2 text-white/60">
-                  <Star className="h-5 w-5 text-[#ffd93d]" />
-                  <span className="text-sm">4.9/5 on Google</span>
+                  <CheckCircle className="h-5 w-5 text-green-400" />
+                  <span className="text-sm">No Obligation</span>
                 </div>
               </div>
             </div>
@@ -653,57 +632,6 @@ export function TownPageContent({
         </section>
       )}
 
-      {/* LOCAL TESTIMONIAL - Town-specific customer story */}
-      {localTestimonial && (
-        <section className="py-24 bg-white">
-          <div className="container mx-auto px-4">
-            <div className="max-w-4xl mx-auto">
-              <div className="text-center mb-12">
-                <Badge className="bg-[#ff6b35]/20 text-[#ff6b35] border-none px-4 py-2 mb-6 text-sm font-bold uppercase tracking-wider">
-                  {townName} Success Story
-                </Badge>
-                <h2 className="text-4xl font-black text-[#1a1a2e] mb-4">
-                  What {townName} <span className="text-[#ff6b35]">Tradesmen</span> Say
-                </h2>
-              </div>
-
-              <div className="bg-gradient-to-br from-[#ff6b35] to-[#ff8f66] rounded-2xl p-10 text-white relative overflow-hidden">
-                {/* Decorative quote mark */}
-                <div className="absolute top-4 left-4 opacity-20">
-                  <Quote className="h-20 w-20" />
-                </div>
-
-                <div className="relative z-10">
-                  <blockquote className="text-xl md:text-2xl font-medium leading-relaxed mb-8">
-                    "{localTestimonial.quote}"
-                  </blockquote>
-
-                  <div className="flex flex-col sm:flex-row sm:items-center sm:justify-between gap-4">
-                    <div>
-                      <div className="font-bold text-lg">{localTestimonial.name}</div>
-                      <div className="text-white/80">{localTestimonial.trade} - {localTestimonial.business}</div>
-                    </div>
-                    {localTestimonial.amount && (
-                      <div className="bg-white/20 backdrop-blur rounded-xl px-6 py-3 text-center">
-                        <div className="text-sm text-white/70">Financed</div>
-                        <div className="text-2xl font-black">{localTestimonial.amount}</div>
-                      </div>
-                    )}
-                  </div>
-
-                  {/* Star rating */}
-                  <div className="flex gap-1 mt-6">
-                    {[1, 2, 3, 4, 5].map((star) => (
-                      <Star key={star} className="h-5 w-5 fill-[#ffd93d] text-[#ffd93d]" />
-                    ))}
-                  </div>
-                </div>
-              </div>
-            </div>
-          </div>
-        </section>
-      )}
-
       {/* OTHER TOWNS */}
       {otherTowns.length > 0 && (
         <section className="py-24 bg-[#f8f9fa]">
@@ -786,7 +714,7 @@ export function TownPageContent({
               <span className="text-black/80">in {townName}?</span>
             </h2>
             <p className="text-xl text-white/90 mb-10 max-w-2xl mx-auto">
-              Join {townName} tradesmen who've grown their business with us.
+              Specialist finance for {townName} tradesmen.
               Free quote, no credit impact, decision in 24 hours.
             </p>
             <div className="flex flex-wrap justify-center gap-4">
@@ -799,16 +727,6 @@ export function TownPageContent({
                   <ArrowRight className="ml-2 h-5 w-5" />
                 </Button>
               </Link>
-              <Button
-                size="lg"
-                className="border-2 border-white bg-transparent text-white hover:bg-white hover:text-[#ff6b35] font-bold text-lg px-10 py-7 rounded-full transition-all"
-                asChild
-              >
-                <a href="tel:08001234567">
-                  <Phone className="mr-2 h-5 w-5" />
-                  Call Now
-                </a>
-              </Button>
             </div>
           </div>
         </div>

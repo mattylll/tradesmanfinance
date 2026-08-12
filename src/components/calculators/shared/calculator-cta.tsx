@@ -2,15 +2,13 @@
 
 import Link from "next/link";
 import { Button } from "@/registry/new-york-v4/ui/button";
-import { ArrowRight, Phone, CheckCircle } from "lucide-react";
+import { ArrowRight, CheckCircle } from "lucide-react";
 
 interface CalculatorCTAProps {
   title?: string;
   subtitle?: string;
   buttonText?: string;
   buttonHref?: string;
-  phoneNumber?: string;
-  phoneDisplay?: string;
   onButtonClick?: () => void;
   trustBadges?: boolean;
   variant?: "light" | "dark";
@@ -22,8 +20,6 @@ export function CalculatorCTA({
   subtitle = "Get your personalised quote in minutes",
   buttonText = "Get Your Quote",
   buttonHref = "/contact",
-  phoneNumber = "08000869015",
-  phoneDisplay = "0800 086 9015",
   onButtonClick,
   trustBadges = true,
   variant = "light",
@@ -58,20 +54,6 @@ export function CalculatorCTA({
         </Button>
       </div>
 
-      {/* Phone CTA */}
-      <div className="text-center">
-        <p className={`text-sm mb-2 ${isDark ? "text-gray-400" : "text-gray-500"}`}>
-          Or call us free on
-        </p>
-        <a
-          href={`tel:${phoneNumber}`}
-          className="inline-flex items-center gap-2 text-xl font-bold text-[#ff6b35] hover:text-[#ffd93d] transition-colors"
-        >
-          <Phone className="h-5 w-5" />
-          {phoneDisplay}
-        </a>
-      </div>
-
       {/* Trust Badges */}
       {trustBadges && (
         <div className={`flex justify-center gap-6 pt-4 ${isDark ? "border-t border-gray-700" : "border-t"}`}>
@@ -85,7 +67,7 @@ export function CalculatorCTA({
           </div>
           <div className={`flex items-center gap-1.5 text-sm ${isDark ? "text-gray-300" : "text-gray-600"}`}>
             <CheckCircle className="h-4 w-4 text-green-500" />
-            <span>92% Approved</span>
+            <span>No Obligation</span>
           </div>
         </div>
       )}

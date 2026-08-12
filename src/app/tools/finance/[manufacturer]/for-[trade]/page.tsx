@@ -1,7 +1,6 @@
 import { Metadata } from 'next'
 import { notFound } from 'next/navigation'
 import manufacturerData from '@/data/tool-manufacturers-database.json'
-import supplementaryData from '@/data/supplementary-data.json'
 import { TradeBrandPageContent } from '@/components/tools/trade-brand-page-content'
 
 type TradeBrandPageProps = {
@@ -45,11 +44,10 @@ export async function generateMetadata({ params }: TradeBrandPageProps): Promise
   const tradeName = params.trade.replace(/-/g, ' ')
   const tradeCapitalized = tradeName.charAt(0).toUpperCase() + tradeName.slice(1)
 
-  const stats = (supplementaryData.application_stats as any)[params.manufacturer]
 
   return {
     title: `${manufacturer.name} Finance for ${tradeCapitalized}s | Tools & Equipment | Tradesman Finance`,
-    description: `Finance ${manufacturer.name} tools for ${tradeName}s. Essential products, starter kits, and professional-grade equipment from £50/month. ${stats?.approval_rate || 89}% approval rate.`,
+    description: `Finance ${manufacturer.name} tools for ${tradeName}s. Essential products, starter kits, and professional-grade equipment from £50/month.`,
     keywords: `${manufacturer.name} ${tradeName} finance, ${tradeName} tools finance, ${manufacturer.name} for ${tradeName}s`,
   }
 }
@@ -73,7 +71,6 @@ export default function TradeBrandPage({ params }: TradeBrandPageProps) {
     notFound()
   }
 
-  const stats = (supplementaryData.application_stats as any)[params.manufacturer]
 
   // Get products suitable for this trade
   const tradeProducts = Object.entries(manufacturer.flagship_products || {})
@@ -85,21 +82,13 @@ export default function TradeBrandPage({ params }: TradeBrandPageProps) {
       ...product,
     }))
 
-  // Get testimonials for this manufacturer and trade
-  const testimonials = supplementaryData.testimonials.filter(
-    (t: any) => t.brand === params.manufacturer && t.trade.toLowerCase() === tradeName.toLowerCase()
-  ).slice(0, 3)
-
   return (
     <TradeBrandPageContent
       manufacturer={manufacturer}
       manufacturerSlug={params.manufacturer}
       tradeName={tradeCapitalized}
       tradeSlug={params.trade}
-      stats={stats}
       tradeProducts={tradeProducts}
-      testimonials={testimonials}
-      contactPhone={supplementaryData.contact.phone}
     />
   )
 }

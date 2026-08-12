@@ -9,7 +9,7 @@ import {
   MapPin,
   Calculator,
   Users,
-  Phone,
+  Mail,
   Shield,
   ChevronRight,
 } from 'lucide-react';
@@ -306,7 +306,7 @@ export default function SitemapPage() {
           </SitemapSection>
 
           {/* Contact */}
-          <SitemapSection title="Contact" icon={Phone} color="#14b8a6">
+          <SitemapSection title="Contact" icon={Mail} color="#14b8a6">
             <div className="space-y-1">
               <SitemapLink href="/contact" label="Contact Us" description="Get in touch with our team" />
             </div>
@@ -336,13 +336,6 @@ export default function SitemapPage() {
                 Contact Us
                 <ChevronRight className="h-4 w-4" />
               </Link>
-              <a
-                href="tel:08001234567"
-                className="inline-flex items-center gap-2 px-5 py-2.5 border-2 border-gray-300 text-gray-700 font-semibold rounded-lg hover:border-[#ff6b35] hover:text-[#ff6b35] transition-colors"
-              >
-                <Phone className="h-4 w-4" />
-                0800 123 4567
-              </a>
             </div>
           </div>
         </div>

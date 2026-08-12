@@ -8,11 +8,9 @@ import { Button } from '@/registry/new-york-v4/ui/button';
 import {
   ArrowRight,
   MapPin,
-  Phone,
   Shield,
   Clock,
   Users,
-  Star,
   CheckCircle,
   Zap,
   ChevronRight,
@@ -226,9 +224,8 @@ export default function LocationsPage() {
           <div className="flex flex-wrap items-center justify-center gap-x-10 gap-y-3">
             {[
               { icon: Shield, text: "25+ Years Experience", highlight: true },
-              { icon: Star, text: "4.8★ Trustpilot", highlight: false },
+              { icon: Users, text: "UK-Wide Coverage", highlight: false },
               { icon: Clock, text: "24hr Decisions", highlight: false },
-              { icon: Users, text: "50,000+ Funded", highlight: false },
             ].map((item, index) => (
               <motion.div
                 key={index}
@@ -407,25 +404,6 @@ export default function LocationsPage() {
                   </Button>
                 </motion.div>
               </Link>
-            </motion.div>
-
-            <motion.div variants={fadeInUp} transition={{ duration: 0.4 }}>
-              <a href="tel:08001234567">
-                <motion.div
-                  whileHover={{ scale: 1.05 }}
-                  whileTap={{ scale: 0.98 }}
-                  transition={{ type: "spring", stiffness: 400, damping: 17 }}
-                >
-                  <Button
-                    size="lg"
-                    variant="outline"
-                    className="border-2 border-white/80 bg-white/10 text-white hover:bg-white/20 font-bold text-lg px-10 py-7 rounded-xl backdrop-blur-sm"
-                  >
-                    <Phone className="mr-2 h-5 w-5" />
-                    0800 123 4567
-                  </Button>
-                </motion.div>
-              </a>
             </motion.div>
           </motion.div>
         </div>

@@ -1,16 +1,16 @@
 import type { Metadata } from 'next';
 import { TeamPageContent } from '@/components/team/team-page-content';
-import { authors, companyCredentials, trustSignals } from '@/data/authors';
+import { authors } from '@/data/authors';
 
 const SITE_URL = 'https://tradesmanfinance.co.uk';
 
 export const metadata: Metadata = {
   title: 'Meet Our Team | Trade Finance Experts',
-  description: 'Meet the experienced team at Tradesman Finance UK. With 50+ years combined experience in financial services, our specialists help tradesmen access the funding they need.',
+  description: 'Meet the team at Tradesman Finance UK. Founded by Matt Lenzie, a broker with 25 years in financial services, we help UK tradesmen access the funding they need.',
   keywords: 'tradesman finance team, trade finance experts, business finance specialists, Matt Lenzie, equipment finance advisors',
   openGraph: {
     title: 'Meet Our Team | Tradesman Finance UK',
-    description: 'Meet the experienced team at Tradesman Finance UK. With 50+ years combined experience helping tradesmen grow their businesses.',
+    description: 'Meet the team at Tradesman Finance UK, founded by a broker with 25 years in financial services, helping tradesmen grow their businesses.',
     url: `${SITE_URL}/team`,
     siteName: 'Tradesman Finance UK',
     type: 'website',
@@ -27,7 +27,7 @@ export const metadata: Metadata = {
   twitter: {
     card: 'summary_large_image',
     title: 'Meet Our Team | Tradesman Finance UK',
-    description: 'Meet the experienced team at Tradesman Finance UK. 50+ years combined experience in trade finance.',
+    description: 'Meet the team at Tradesman Finance UK, specialists in finance for UK trade businesses.',
     images: ['/images/og-team.jpg'],
   },
   alternates: {
@@ -62,12 +62,6 @@ function generateTeamSchema() {
     url: SITE_URL,
     logo: `${SITE_URL}/images/logo.png`,
     description: 'Specialist equipment finance and business loans for UK tradesmen.',
-    foundingDate: '2009',
-    numberOfEmployees: {
-      '@type': 'QuantitativeValue',
-      minValue: 10,
-      maxValue: 50,
-    },
     employee: personSchemas,
     areaServed: {
       '@type': 'Country',
@@ -75,17 +69,9 @@ function generateTeamSchema() {
     },
     contactPoint: {
       '@type': 'ContactPoint',
-      telephone: '+44-800-123-4567',
       contactType: 'customer service',
       areaServed: 'GB',
       availableLanguage: 'English',
-    },
-    aggregateRating: {
-      '@type': 'AggregateRating',
-      ratingValue: trustSignals.averageRating,
-      reviewCount: trustSignals.reviewCount,
-      bestRating: 5,
-      worstRating: 1,
     },
   };
 
@@ -96,7 +82,7 @@ function generateTeamSchema() {
     '@id': `${SITE_URL}/team#webpage`,
     url: `${SITE_URL}/team`,
     name: 'Meet Our Team | Tradesman Finance UK',
-    description: 'Meet the experienced team at Tradesman Finance UK. With 50+ years combined experience in financial services.',
+    description: 'Meet the team at Tradesman Finance UK, founded by a broker with 25 years in financial services.',
     isPartOf: {
       '@id': `${SITE_URL}/#website`,
     },

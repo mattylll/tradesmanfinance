@@ -18,17 +18,13 @@ export function generateOrganizationSchema() {
     logo: COMPANY_LOGO,
     description:
       "The UK's specialist finance provider for tradesmen and contractors. Equipment finance, van finance, and business loans for electricians, plumbers, builders, and more.",
-    address: {
-      "@type": "PostalAddress",
-      streetAddress: "Finance House, Business Park",
-      addressLocality: "London",
-      postalCode: "EC1A 1BB",
-      addressCountry: "GB",
+    areaServed: {
+      "@type": "Country",
+      name: "United Kingdom",
     },
     contactPoint: [
       {
         "@type": "ContactPoint",
-        telephone: "+44-800-XXX-XXXX",
         contactType: "customer service",
         areaServed: "GB",
         availableLanguage: "English",
@@ -40,11 +36,7 @@ export function generateOrganizationSchema() {
         },
       },
     ],
-    sameAs: [
-      "https://www.facebook.com/tradesmanfinance",
-      "https://www.linkedin.com/company/tradesman-finance",
-      "https://twitter.com/tradesmanfinance",
-    ],
+    sameAs: ["https://www.linkedin.com/company/tradesman-finance"],
   };
 }
 
@@ -191,26 +183,6 @@ export function generateBreadcrumbSchema(
       name: item.name,
       item: `${SITE_URL}${item.url}`,
     })),
-  };
-}
-
-// Aggregate rating schema (for testimonials)
-export function generateAggregateRatingSchema(
-  itemName: string,
-  ratingValue: number = 4.9,
-  reviewCount: number = 1250
-) {
-  return {
-    "@context": "https://schema.org",
-    "@type": "Product",
-    name: itemName,
-    aggregateRating: {
-      "@type": "AggregateRating",
-      ratingValue: ratingValue,
-      bestRating: 5,
-      worstRating: 1,
-      reviewCount: reviewCount,
-    },
   };
 }
 

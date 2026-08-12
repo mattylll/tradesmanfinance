@@ -11,11 +11,9 @@ import { RelatedContent } from '@/components/seo/related-content';
 import { FAQSchema } from '@/components/seo/faq-schema';
 import {
   ArrowRight,
-  Phone,
   Shield,
   Clock,
   Users,
-  Star,
   CheckCircle,
   Zap,
   MapPin,
@@ -23,7 +21,6 @@ import {
   Wrench,
   TrendingUp,
   ChevronDown,
-  Quote,
 } from 'lucide-react';
 
 // Animation variants
@@ -220,23 +217,6 @@ export function TradePageContent({
                     </Button>
                   </motion.div>
                 </Link>
-
-                <a href="tel:08001234567">
-                  <motion.div
-                    whileHover={{ scale: 1.03 }}
-                    whileTap={{ scale: 0.98 }}
-                    transition={{ type: "spring", stiffness: 400, damping: 17 }}
-                  >
-                    <Button
-                      size="lg"
-                      variant="outline"
-                      className="border-2 border-white/20 bg-white/5 text-white hover:bg-white/10 hover:border-white/30 font-semibold text-lg px-10 py-7 rounded-xl backdrop-blur-sm transition-all"
-                    >
-                      <Phone className="mr-2 h-5 w-5" />
-                      0800 123 4567
-                    </Button>
-                  </motion.div>
-                </a>
               </motion.div>
             </motion.div>
 
@@ -297,9 +277,8 @@ export function TradePageContent({
           <div className="flex flex-wrap items-center justify-center gap-x-10 gap-y-3">
             {[
               { icon: Shield, text: "25+ Years Experience", highlight: true },
-              { icon: Star, text: "4.8★ Trustpilot", highlight: false },
+              { icon: Users, text: "No Obligation", highlight: false },
               { icon: Clock, text: "24hr Decisions", highlight: false },
-              { icon: Users, text: "50,000+ Funded", highlight: false },
             ].map((item, index) => (
               <motion.div
                 key={index}
@@ -466,97 +445,6 @@ export function TradePageContent({
                     <p className="text-gray-600 leading-relaxed">{faq.answer}</p>
                   </div>
                 </motion.details>
-              ))}
-            </motion.div>
-          </div>
-        </section>
-      )}
-
-      {/* === TESTIMONIALS === */}
-      {trade.testimonials && trade.testimonials.length > 0 && (
-        <section className="relative py-20 md:py-28 overflow-hidden">
-          <div className="absolute inset-0 bg-gradient-to-br from-gray-950 via-gray-900 to-gray-950" />
-
-          {/* Quote pattern */}
-          <div className="absolute inset-0 opacity-[0.03]">
-            <Quote className="absolute top-20 left-10 w-32 h-32 text-white" />
-            <Quote className="absolute bottom-20 right-10 w-24 h-24 text-white rotate-180" />
-          </div>
-
-          <div className="container relative mx-auto px-4">
-            <motion.div
-              initial="hidden"
-              whileInView="visible"
-              viewport={{ once: true, margin: "-100px" }}
-              variants={fadeInUp}
-              transition={{ duration: 0.6 }}
-              className="text-center mb-16"
-            >
-              <div className="inline-flex items-center gap-2 px-4 py-2 rounded-full bg-[#ffd93d]/10 border border-[#ffd93d]/20 mb-6">
-                <Star className="h-4 w-4 text-[#ffd93d] fill-[#ffd93d]" />
-                <span className="text-sm font-medium text-[#ffd93d] tracking-wide uppercase">
-                  Customer Stories
-                </span>
-              </div>
-              <h2
-                className="text-4xl md:text-5xl font-black text-white mb-6 tracking-tight"
-                style={{ fontFamily: "var(--font-industrial)" }}
-              >
-                What {trade.name}s <span className="text-[#ffd93d]">Say</span>
-              </h2>
-            </motion.div>
-
-            <motion.div
-              initial="hidden"
-              whileInView="visible"
-              viewport={{ once: true }}
-              variants={staggerContainer}
-              className="grid md:grid-cols-2 gap-6 max-w-4xl mx-auto"
-            >
-              {trade.testimonials.slice(0, 2).map((testimonial, index) => (
-                <motion.div
-                  key={index}
-                  variants={fadeInUp}
-                  whileHover={{ y: -5 }}
-                  transition={{ type: "spring", stiffness: 300, damping: 20 }}
-                  className="relative bg-white/5 backdrop-blur-sm border border-white/10 rounded-2xl p-6 hover:border-[#ffd93d]/30 transition-colors"
-                >
-                  {/* Stars */}
-                  <div className="flex gap-1 mb-4">
-                    {[...Array(5)].map((_, i) => (
-                      <Star key={i} className="h-5 w-5 text-[#ffd93d] fill-[#ffd93d]" />
-                    ))}
-                  </div>
-
-                  {/* Quote */}
-                  <blockquote className="text-gray-300 mb-6 leading-relaxed">
-                    &ldquo;{testimonial.quote}&rdquo;
-                  </blockquote>
-
-                  {/* Finance details */}
-                  {testimonial.loanAmount && (
-                    <div className="flex gap-3 mb-6">
-                      <span className="text-xs font-semibold px-3 py-1.5 rounded-full bg-[#ff6b35]/10 text-[#ff6b35] border border-[#ff6b35]/20">
-                        {testimonial.loanAmount}
-                      </span>
-                    </div>
-                  )}
-
-                  {/* Author */}
-                  <div className="flex items-center gap-4 pt-4 border-t border-white/10">
-                    <div className="w-12 h-12 rounded-full bg-gradient-to-br from-[#ff6b35] to-[#ffd93d] flex items-center justify-center">
-                      <span className="text-white font-bold text-sm">
-                        {testimonial.name.split(' ').map(n => n[0]).join('')}
-                      </span>
-                    </div>
-                    <div>
-                      <p className="font-semibold text-white">{testimonial.name}</p>
-                      <p className="text-sm text-gray-500">
-                        {testimonial.business} • {testimonial.location}
-                      </p>
-                    </div>
-                  </div>
-                </motion.div>
               ))}
             </motion.div>
           </div>
@@ -841,25 +729,6 @@ export function TradePageContent({
                   </Button>
                 </motion.div>
               </Link>
-            </motion.div>
-
-            <motion.div variants={fadeInUp} transition={{ duration: 0.4 }}>
-              <a href="tel:08001234567">
-                <motion.div
-                  whileHover={{ scale: 1.05 }}
-                  whileTap={{ scale: 0.98 }}
-                  transition={{ type: "spring", stiffness: 400, damping: 17 }}
-                >
-                  <Button
-                    size="lg"
-                    variant="outline"
-                    className="border-2 border-white/80 bg-white/10 text-white hover:bg-white/20 font-bold text-lg px-10 py-7 rounded-xl backdrop-blur-sm"
-                  >
-                    <Phone className="mr-2 h-5 w-5" />
-                    Call 0800 123 4567
-                  </Button>
-                </motion.div>
-              </a>
             </motion.div>
           </motion.div>
         </div>

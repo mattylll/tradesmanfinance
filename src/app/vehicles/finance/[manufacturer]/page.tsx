@@ -1,7 +1,6 @@
 import { Metadata } from 'next'
 import { notFound } from 'next/navigation'
 import vehicleData from '@/data/vehicle-finance-database.json'
-import supplementaryData from '@/data/supplementary-data.json'
 import { VehicleManufacturerPageContent } from '@/components/vehicles/vehicle-manufacturer-page-content'
 
 type VehicleManufacturerPageProps = {
@@ -32,7 +31,7 @@ export async function generateMetadata({ params }: VehicleManufacturerPageProps)
 
   return {
     title: `${manufacturer.name} Van Finance | New & Used | Tradesman Finance`,
-    description: `Finance ${manufacturer.name} vans and vehicles. ${modelCount} models available. ${manufacturer.reputation}. 89% approval rate. Apply in 60 seconds.`,
+    description: `Finance ${manufacturer.name} vans and vehicles. ${modelCount} models available. ${manufacturer.reputation}. Apply in 60 seconds.`,
     keywords: `${manufacturer.name} van finance, ${manufacturer.name} finance, ${manufacturer.name} commercial vehicle finance`,
   }
 }
@@ -48,7 +47,6 @@ export default function VehicleManufacturerPage({ params }: VehicleManufacturerP
     <VehicleManufacturerPageContent
       manufacturer={manufacturer}
       manufacturerSlug={params.manufacturer}
-      contactPhone={supplementaryData.contact.phone}
     />
   )
 }

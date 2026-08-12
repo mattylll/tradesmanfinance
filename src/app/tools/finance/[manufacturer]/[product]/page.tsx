@@ -1,7 +1,6 @@
 import { Metadata } from 'next'
 import { notFound } from 'next/navigation'
 import manufacturerData from '@/data/tool-manufacturers-database.json'
-import supplementaryData from '@/data/supplementary-data.json'
 import { ProductPageContent } from '@/components/tools/product-page-content'
 
 type ProductPageProps = {
@@ -51,13 +50,12 @@ export async function generateMetadata({ params }: ProductPageProps): Promise<Me
     }
   }
 
-  const stats = (supplementaryData.application_stats as any)[params.manufacturer]
   const [minPrice] = product.typical_price.replace('£', '').split('-')
   const monthlyFrom = Math.round(parseInt(minPrice) / 24)
 
   return {
     title: `${product.name} Finance | ${manufacturer.name} | Tradesman Finance`,
-    description: `Finance ${product.name} from £${monthlyFrom}/month. ${product.typical_price} spread over 12-60 months. ${stats?.approval_rate || 89}% approval rate for UK tradespeople.`,
+    description: `Finance ${product.name} from £${monthlyFrom}/month. ${product.typical_price} spread over 12-60 months. Finance for UK tradespeople.`,
     keywords: `${product.name} finance, ${manufacturer.name} finance, ${product.trades.join(' finance, ')} finance`,
   }
 }
@@ -76,7 +74,6 @@ export default function ProductPage({ params }: ProductPageProps) {
     notFound()
   }
 
-  const stats = (supplementaryData.application_stats as any)[params.manufacturer]
 
   // Get related products (other products from same manufacturer)
   const relatedProducts = Object.entries(manufacturer.flagship_products || {})
@@ -87,21 +84,13 @@ export default function ProductPage({ params }: ProductPageProps) {
       ...prod,
     }))
 
-  // Get testimonials for this manufacturer and trade
-  const testimonials = supplementaryData.testimonials.filter(
-    (t: any) => t.brand === params.manufacturer && product.trades.includes(t.trade)
-  ).slice(0, 2)
-
   return (
     <ProductPageContent
       manufacturer={manufacturer}
       manufacturerSlug={params.manufacturer}
       product={product}
       productSlug={params.product}
-      stats={stats}
       relatedProducts={relatedProducts}
-      testimonials={testimonials}
-      contactPhone={supplementaryData.contact.phone}
     />
   )
 }

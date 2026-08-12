@@ -35,10 +35,10 @@ interface BlogPageContentProps {
 
 export function BlogPageContent({ posts }: BlogPageContentProps) {
   const stats = [
-    { icon: BookOpen, value: '50+', label: 'Expert Articles' },
-    { icon: Users, value: '10K+', label: 'Monthly Readers' },
-    { icon: TrendingUp, value: '£500M+', label: 'Finance Arranged' },
-    { icon: Lightbulb, value: '15+', label: 'Years Experience' },
+    { icon: BookOpen, value: `${posts.length}`, label: 'Expert Articles' },
+    { icon: Users, value: 'UK-Wide', label: 'Trade Coverage' },
+    { icon: TrendingUp, value: '£25k-£1m', label: 'Funding Range' },
+    { icon: Lightbulb, value: '24hrs', label: 'Decision Time' },
   ];
 
   const categories = [

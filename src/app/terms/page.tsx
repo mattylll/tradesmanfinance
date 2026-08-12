@@ -148,9 +148,8 @@ export default function TermsPage() {
               Finance House, Business Park, London EC1A 1BB.
             </p>
             <p>
-              We specialize in non-regulated business finance for trade companies across the UK.
-              Our team has over 25 years of combined experience in financial services, helping
-              thousands of tradesmen access the equipment finance, vehicle finance, and business
+              We specialize in non-regulated business finance for trade companies across the UK,
+              helping tradesmen access the equipment finance, vehicle finance, and business
               loans they need to grow their businesses.
             </p>
 
@@ -340,7 +339,6 @@ export default function TermsPage() {
             <ul>
               <li><strong>Email:</strong> <a href="mailto:legal@tradesmanfinance.co.uk">legal@tradesmanfinance.co.uk</a></li>
               <li><strong>Post:</strong> Tradesman Finance, Finance House, Business Park, London EC1A 1BB</li>
-              <li><strong>Phone:</strong> 0800 XXX XXXX</li>
             </ul>
           </motion.div>
         </div>

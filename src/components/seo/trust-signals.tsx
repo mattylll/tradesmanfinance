@@ -1,7 +1,7 @@
 'use client';
 
 import { companyCredentials, trustSignals } from '@/data/authors';
-import { Shield, Award, Lock, CheckCircle, Star, Users, Clock, TrendingUp } from 'lucide-react';
+import { Shield, Award, Lock, CheckCircle, Users, Clock, MapPin } from 'lucide-react';
 
 const iconMap: Record<string, React.ComponentType<{ className?: string }>> = {
   'shield': Shield,
@@ -40,23 +40,23 @@ export function TrustSignals({ variant = 'full', className = '' }: TrustSignalsP
       <div className={`grid grid-cols-2 md:grid-cols-4 gap-4 ${className}`}>
         <StatCard
           icon={<Users className="h-5 w-5" />}
-          value={trustSignals.customersHelped}
-          label="Customers Helped"
+          value="Trade only"
+          label="Who We Fund"
         />
         <StatCard
-          icon={<TrendingUp className="h-5 w-5" />}
-          value={trustSignals.fundingArranged}
-          label="Funding Arranged"
+          icon={<MapPin className="h-5 w-5" />}
+          value="UK-wide"
+          label="Coverage"
         />
         <StatCard
-          icon={<Star className="h-5 w-5" />}
-          value={trustSignals.averageRating.toString()}
-          label="Trustpilot Rating"
+          icon={<CheckCircle className="h-5 w-5" />}
+          value="Free"
+          label="No-Obligation Quote"
         />
         <StatCard
           icon={<Clock className="h-5 w-5" />}
           value={trustSignals.decisionTime}
-          label="Decision Time"
+          label="Typical Decision Time"
         />
       </div>
     );
@@ -69,24 +69,24 @@ export function TrustSignals({ variant = 'full', className = '' }: TrustSignalsP
       <div className="grid grid-cols-2 md:grid-cols-4 gap-4">
         <StatCard
           icon={<Users className="h-5 w-5" />}
-          value={trustSignals.customersHelped}
-          label="Customers Helped"
+          value="Trade only"
+          label="Who We Fund"
           highlight
         />
         <StatCard
-          icon={<TrendingUp className="h-5 w-5" />}
-          value={trustSignals.fundingArranged}
-          label="Funding Arranged"
+          icon={<MapPin className="h-5 w-5" />}
+          value="UK-wide"
+          label="Coverage"
         />
         <StatCard
-          icon={<Star className="h-5 w-5" />}
-          value={`${trustSignals.averageRating}★`}
-          label={`${trustSignals.reviewCount} Reviews`}
+          icon={<CheckCircle className="h-5 w-5" />}
+          value="Free"
+          label="No-Obligation Quote"
         />
         <StatCard
-          icon={<Shield className="h-5 w-5" />}
-          value={trustSignals.lenderPanel}
-          label="Lender Partners"
+          icon={<Clock className="h-5 w-5" />}
+          value={trustSignals.decisionTime}
+          label="Typical Decision Time"
         />
       </div>
 
@@ -145,15 +145,15 @@ export function FooterTrustBadges() {
     <div className="flex flex-wrap items-center justify-center gap-6 py-4">
       <div className="flex items-center gap-2 text-gray-400">
         <Shield className="h-4 w-4 text-[#ff6b35]" />
-        <span className="text-sm">25+ Years Experience</span>
+        <span className="text-sm">Founded by a broker with 25 years in financial services</span>
       </div>
       <div className="flex items-center gap-2 text-gray-400">
         <Award className="h-4 w-4 text-[#ffd93d]" />
-        <span className="text-sm">NACFB Member</span>
+        <span className="text-sm">Trade Finance Specialists</span>
       </div>
       <div className="flex items-center gap-2 text-gray-400">
-        <Star className="h-4 w-4 text-[#ffd93d] fill-[#ffd93d]" />
-        <span className="text-sm">{trustSignals.averageRating} Trustpilot</span>
+        <CheckCircle className="h-4 w-4 text-[#ffd93d]" />
+        <span className="text-sm">No-Obligation Quotes</span>
       </div>
       <div className="flex items-center gap-2 text-gray-400">
         <Lock className="h-4 w-4 text-green-500" />
@@ -164,7 +164,7 @@ export function FooterTrustBadges() {
 }
 
 /**
- * Generate Organization schema with credentials
+ * Generate Organization schema
  */
 export function generateTrustSchema(): string {
   return JSON.stringify({
@@ -173,22 +173,9 @@ export function generateTrustSchema(): string {
     name: 'Tradesman Finance UK',
     description: 'Specialist equipment finance and business loans for UK tradesmen',
     url: 'https://tradesmanfinance.co.uk',
-    foundingDate: `${new Date().getFullYear() - trustSignals.yearsInBusiness}`,
-    numberOfEmployees: {
-      '@type': 'QuantitativeValue',
-      value: '10-50',
+    areaServed: {
+      '@type': 'Country',
+      name: 'United Kingdom',
     },
-    aggregateRating: {
-      '@type': 'AggregateRating',
-      ratingValue: trustSignals.averageRating.toString(),
-      reviewCount: trustSignals.reviewCount.toString(),
-      bestRating: '5',
-      worstRating: '1',
-    },
-    hasCredential: companyCredentials.map(cred => ({
-      '@type': 'EducationalOccupationalCredential',
-      name: cred.name,
-      description: cred.description,
-    })),
   });
 }

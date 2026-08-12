@@ -17,7 +17,6 @@ import {
   Shield,
   Clock,
   Users,
-  Star,
   MapPin,
   FileCheck,
   Banknote,
@@ -28,9 +27,7 @@ import {
   Wrench,
   Building2,
   CreditCard,
-  Phone,
   Zap,
-  Quote,
   ChevronRight,
 } from "lucide-react";
 
@@ -140,39 +137,6 @@ export function HomePageContent() {
     { name: "Glasgow", slug: "glasgow", emoji: "⚙️" },
   ];
 
-  const testimonials = [
-    {
-      name: "James Wilson",
-      trade: "Electrician",
-      location: "Manchester",
-      rating: 5,
-      amount: "£45,000",
-      purpose: "Van & equipment",
-      quote: "Fantastic service! Got approved for my van finance within 24 hours. The team really understood what I needed.",
-      image: "JW",
-    },
-    {
-      name: "Sarah Mitchell",
-      trade: "Plumber",
-      location: "Birmingham",
-      rating: 5,
-      amount: "£28,000",
-      purpose: "Business expansion",
-      quote: "As a female plumber starting out, I was worried about getting finance. Tradesman Finance made it simple.",
-      image: "SM",
-    },
-    {
-      name: "David Thompson",
-      trade: "Builder",
-      location: "Leeds",
-      rating: 5,
-      amount: "£75,000",
-      purpose: "Equipment & materials",
-      quote: "Best rates I found anywhere. The application was straightforward and money in my account within days.",
-      image: "DT",
-    },
-  ];
-
   const processSteps = [
     {
       step: 1,
@@ -186,7 +150,7 @@ export function HomePageContent() {
       icon: Zap,
       title: "Instant Decision",
       description: "Get approved within 24 hours from our lending partners.",
-      detail: "92% approval rate",
+      detail: "All credit profiles considered",
     },
     {
       step: 3,
@@ -209,7 +173,7 @@ export function HomePageContent() {
     },
     {
       question: "Do I need a perfect credit score to get trade finance?",
-      answer: "No, we consider all credit backgrounds. While better credit scores may access lower rates, we work with tradesmen across all credit profiles. We look at your trading history, current work, and ability to repay - not just your credit score. Our approval rate is 92%."
+      answer: "No, we consider all credit backgrounds. While better credit scores may access lower rates, we work with tradesmen across all credit profiles. We look at your trading history, current work, and ability to repay - not just your credit score."
     },
     {
       question: "What trades do you provide finance for?",
@@ -241,7 +205,7 @@ export function HomePageContent() {
         highlightWords={["UK Tradesmen"]}
         description="Equipment finance, vehicle loans, cashflow solutions, and business funding. Everything you need to grow your trade business."
         primaryCTA={{ text: "Get Your Free Quote", href: "#quote-form" }}
-        secondaryCTA={{ text: "0800 123 4567", phone: "tel:08001234567" }}
+        secondaryCTA={{ text: "Talk to a Specialist", href: "/contact" }}
       />
 
       {/* === TRUST BAR === */}
@@ -249,10 +213,10 @@ export function HomePageContent() {
         <div className="container mx-auto px-4 py-5">
           <div className="flex flex-wrap items-center justify-center gap-x-10 gap-y-3">
             {[
-              { icon: Shield, text: "25+ Years Experience", highlight: true },
-              { icon: Star, text: "4.8★ Trustpilot", highlight: false },
-              { icon: Clock, text: "Same Day Decisions", highlight: false },
-              { icon: Users, text: "50,000+ Funded", highlight: false },
+              { icon: Shield, text: "Founded by a broker with 25 years in financial services", highlight: true },
+              { icon: Clock, text: "Fast Decisions", highlight: false },
+              { icon: Users, text: "Trade Businesses Only", highlight: false },
+              { icon: MapPin, text: "UK-Wide", highlight: false },
             ].map((item, index) => (
               <motion.div
                 key={index}
@@ -455,8 +419,8 @@ export function HomePageContent() {
               {/* Stats row */}
               <div className="grid grid-cols-3 gap-4">
                 {[
-                  { value: "£50M+", label: "Funded" },
-                  { value: "92%", label: "Approval" },
+                  { value: "Trade only", label: "Our Focus" },
+                  { value: "UK-wide", label: "Coverage" },
                   { value: "24hrs", label: "Decisions" },
                 ].map((stat, index) => (
                   <motion.div
@@ -712,111 +676,6 @@ export function HomePageContent() {
         </div>
       </section>
 
-      {/* === TESTIMONIALS - DARK DRAMATIC SECTION === */}
-      <section className="relative py-20 md:py-28 overflow-hidden">
-        {/* Dark gradient background */}
-        <div className="absolute inset-0 bg-gradient-to-br from-gray-950 via-gray-900 to-gray-950" />
-
-        {/* Quote pattern */}
-        <div className="absolute inset-0 opacity-[0.03]">
-          <Quote className="absolute top-20 left-10 w-32 h-32 text-white" />
-          <Quote className="absolute bottom-20 right-10 w-24 h-24 text-white rotate-180" />
-        </div>
-
-        <div className="container relative mx-auto px-4">
-          <motion.div
-            initial="hidden"
-            whileInView="visible"
-            viewport={{ once: true, margin: "-100px" }}
-            variants={fadeInUp}
-            transition={{ duration: 0.6 }}
-            className="text-center mb-16"
-          >
-            <div className="inline-flex items-center gap-2 px-4 py-2 rounded-full bg-[#ffd93d]/10 border border-[#ffd93d]/20 mb-6">
-              <Star className="h-4 w-4 text-[#ffd93d] fill-[#ffd93d]" />
-              <span className="text-sm font-medium text-[#ffd93d] tracking-wide uppercase">
-                500+ Verified Reviews
-              </span>
-            </div>
-            <h2
-              className="text-4xl md:text-5xl lg:text-6xl font-black text-white mb-6 tracking-tight"
-              style={{ fontFamily: "var(--font-industrial)" }}
-            >
-              Trusted by <span className="text-[#ffd93d]">Tradesmen</span>
-            </h2>
-            <p className="text-gray-400 text-lg max-w-2xl mx-auto">
-              Join thousands of tradesmen who have grown their businesses with our finance solutions.
-            </p>
-          </motion.div>
-
-          <motion.div
-            initial="hidden"
-            whileInView="visible"
-            viewport={{ once: true, margin: "-50px" }}
-            variants={staggerContainer}
-            className="grid gap-6 md:grid-cols-3 max-w-6xl mx-auto"
-          >
-            {testimonials.map((testimonial, index) => (
-              <motion.div
-                key={index}
-                variants={fadeInUp}
-                transition={{ duration: 0.5 }}
-              >
-                <motion.div
-                  whileHover={{ y: -5, scale: 1.02 }}
-                  transition={{ type: "spring", stiffness: 300, damping: 20 }}
-                  className="relative h-full"
-                >
-                  {/* Card */}
-                  <div className="relative bg-white/5 backdrop-blur-sm border border-white/10 rounded-2xl p-6 h-full hover:border-[#ffd93d]/30 transition-colors">
-                    {/* Stars */}
-                    <div className="flex gap-1 mb-4">
-                      {[...Array(testimonial.rating)].map((_, i) => (
-                        <Star
-                          key={i}
-                          className="h-5 w-5 text-[#ffd93d] fill-[#ffd93d]"
-                        />
-                      ))}
-                    </div>
-
-                    {/* Quote */}
-                    <blockquote className="text-gray-300 mb-6 leading-relaxed text-lg">
-                      &ldquo;{testimonial.quote}&rdquo;
-                    </blockquote>
-
-                    {/* Finance details */}
-                    <div className="flex gap-3 mb-6">
-                      <span className="text-xs font-semibold px-3 py-1.5 rounded-full bg-[#ff6b35]/10 text-[#ff6b35] border border-[#ff6b35]/20">
-                        {testimonial.amount}
-                      </span>
-                      <span className="text-xs font-semibold px-3 py-1.5 rounded-full bg-white/5 text-gray-400 border border-white/10">
-                        {testimonial.purpose}
-                      </span>
-                    </div>
-
-                    {/* Author */}
-                    <div className="flex items-center gap-4 pt-4 border-t border-white/10">
-                      <div className="w-12 h-12 rounded-full bg-gradient-to-br from-[#ff6b35] to-[#ffd93d] flex items-center justify-center">
-                        <span className="text-white font-bold text-sm">
-                          {testimonial.image}
-                        </span>
-                      </div>
-                      <div>
-                        <p className="font-semibold text-white">
-                          {testimonial.name}
-                        </p>
-                        <p className="text-sm text-gray-500">
-                          {testimonial.trade} • {testimonial.location}
-                        </p>
-                      </div>
-                    </div>
-                  </div>
-                </motion.div>
-              </motion.div>
-            ))}
-          </motion.div>
-        </div>
-      </section>
 
       {/* === QUOTE FORM SECTION === */}
       <section id="quote-form" className="relative py-20 md:py-28 overflow-hidden">
@@ -896,7 +755,7 @@ export function HomePageContent() {
                   </div>
                   <div>
                     <p className="font-bold text-gray-900 mb-1 text-lg">
-                      92% Approval Rate
+                      A Whole-of-Panel Search
                     </p>
                     <p className="text-gray-600">
                       We work with multiple lenders to find the right solution for your business.
@@ -1141,7 +1000,7 @@ export function HomePageContent() {
             </motion.div>
 
             <motion.div variants={fadeInUp} transition={{ duration: 0.4 }}>
-              <a href="tel:08001234567">
+              <Link href="/contact">
                 <motion.div
                   whileHover={{ scale: 1.05 }}
                   whileTap={{ scale: 0.98 }}
@@ -1152,11 +1011,11 @@ export function HomePageContent() {
                     variant="outline"
                     className="border-2 border-white/80 bg-white/10 text-white hover:bg-white/20 font-bold text-lg px-10 py-7 rounded-xl backdrop-blur-sm"
                   >
-                    <Phone className="mr-2 h-5 w-5" />
-                    Call 0800 123 4567
+                    Talk to a Specialist
+                    <ArrowRight className="ml-2 h-5 w-5" />
                   </Button>
                 </motion.div>
-              </a>
+              </Link>
             </motion.div>
           </motion.div>
         </div>
