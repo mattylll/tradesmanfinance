@@ -170,6 +170,17 @@ export function SiteFooter() {
               Tradesman Finance is a trading name. Specialist non-regulated business finance for UK trade companies.
             </p>
           </div>
+          <p className="mt-4 text-center text-sm text-muted-foreground sm:text-left">
+            Also from Lenzie Consulting:{' '}
+            <a
+              href="https://securedbusinessloans.co.uk/"
+              target="_blank"
+              rel="noopener noreferrer"
+              className="underline hover:text-foreground"
+            >
+              Secured Business Loans
+            </a>
+          </p>
         </div>
       </div>
     </footer>
