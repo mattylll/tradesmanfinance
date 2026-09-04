@@ -116,7 +116,8 @@ export function ContactForm({ className, compact = false }: ContactFormProps) {
       reset();
     } catch (err) {
       console.error("Form submission error:", err);
-      setError("Failed to submit form. Please try again or call us directly.");
+      const detail = err instanceof Error && err.message ? ` (${err.message})` : "";
+      setError(`Failed to submit form. Please try again or email us directly.${detail}`);
     } finally {
       setIsSubmitting(false);
     }
