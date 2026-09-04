@@ -76,7 +76,8 @@ export async function POST(request: NextRequest) {
 
   if (!KEY) {
     console.error("[lead] RESEND_API_KEY missing — lead NOT sent:", JSON.stringify(body));
-    return fail("Lead delivery not configured", 500);
+    
+return fail("Lead delivery not configured", 500);
   }
 
   const formType = typeof body.formType === "string" && body.formType ? body.formType : "enquiry";
@@ -121,11 +122,13 @@ export async function POST(request: NextRequest) {
     if (!r.ok) {
       const detail = await r.text();
       console.error(`[lead] Resend error ${r.status}: ${detail}`, JSON.stringify(body));
-      return fail(`Email delivery failed (${r.status})`, 502);
+      
+return fail(`Email delivery failed (${r.status})`, 502);
     }
   } catch (e) {
     console.error("[lead] send failed:", e instanceof Error ? e.message : e, JSON.stringify(body));
-    return fail("Email delivery failed", 502);
+    
+return fail("Email delivery failed", 502);
   }
 
   return NextResponse.json({ success: true });
