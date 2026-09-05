@@ -180,6 +180,24 @@ export function SiteFooter() {
             >
               Secured Business Loans
             </a>
+            {' | '}
+            <a
+              href="https://www.mbofinance.co.uk/"
+              target="_blank"
+              rel="noopener noreferrer"
+              className="underline hover:text-foreground"
+            >
+              Management buyout finance
+            </a>
+            {' | '}
+            <a
+              href="https://www.leveragedbuyoutfinance.co.uk/"
+              target="_blank"
+              rel="noopener noreferrer"
+              className="underline hover:text-foreground"
+            >
+              Leveraged buyout finance
+            </a>
           </p>
         </div>
       </div>
